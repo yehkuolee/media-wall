@@ -218,7 +218,12 @@ st.markdown("""
     align-items: center;
     gap: 8px;
 }
-.ptt-title { color: #b8cee8; font-size: .78rem; flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.ptt-title {
+    color: #b8cee8; font-size: .78rem; flex:1;
+    overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+    text-decoration: none;
+}
+.ptt-title:hover { color: #00c8ff; text-decoration: underline; }
 .ptt-push  { font-size: .75rem; font-weight: 800; min-width: 30px; text-align: right; color: #ff6b6b; }
 .ptt-push.boom  { color: #ff3838; }
 .ptt-push.green { color: #00cc70; }
@@ -447,7 +452,7 @@ def keyword_cloud_html(kws: list[str]) -> str:
     if not kws:
         return '<div style="color:#3a5a85;padding:30px;text-align:center">資料取得中...</div>'
     sizes = ["1.15rem", "1.0rem", "0.9rem", "0.82rem", "0.76rem"]
-    html = '<div class="kw-cloud">'
+    out = '<div class="kw-cloud">'
     for i, kw in enumerate(kws):
         if i < 5:
             cls, sz = "kw-tag kw-hot",  sizes[0]
@@ -457,9 +462,12 @@ def keyword_cloud_html(kws: list[str]) -> str:
             cls, sz = "kw-tag kw-cool", sizes[2]
         else:
             cls, sz = "kw-tag kw-cool", sizes[3]
-        html += f'<span class="{cls}" style="font-size:{sz}">{kw}</span>'
-    html += "</div>"
-    return html
+        kw_safe  = html_mod.escape(kw)
+        kw_query = html_mod.escape(requests.utils.quote(kw))
+        href = f"https://news.google.com/search?q={kw_query}&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+        out += f'<a class="{cls}" style="font-size:{sz};text-decoration:none;" href="{href}" target="_blank" rel="noopener">{kw_safe}</a>'
+    out += "</div>"
+    return out
 
 
 # ── Main ───────────────────────────────────────────────────────────
@@ -534,9 +542,11 @@ def main():
         st.markdown('<div class="sec-title">💬 PTT 八卦板 熱門文章</div>', unsafe_allow_html=True)
         if ptt_goss:
             for p in ptt_goss[:7]:
+                t = html_mod.escape(p['title'])
+                u = html_mod.escape(p['url'])
                 st.markdown(f"""
                 <div class="ptt-card">
-                    <div class="ptt-title" title="{p['title']}">{p['title']}</div>
+                    <a class="ptt-title" href="{u}" target="_blank" rel="noopener" title="{t}">{t}</a>
                     <div class="{ptt_push_class(p['push_num'])}">{p['push']}</div>
                 </div>""", unsafe_allow_html=True)
         else:
@@ -588,9 +598,11 @@ def main():
         st.markdown('<div class="sec-title">📈 PTT 股票板 熱門</div>', unsafe_allow_html=True)
         if ptt_stock:
             for p in ptt_stock[:6]:
+                t = html_mod.escape(p['title'])
+                u = html_mod.escape(p['url'])
                 st.markdown(f"""
                 <div class="ptt-card">
-                    <div class="ptt-title" title="{p['title']}">{p['title']}</div>
+                    <a class="ptt-title" href="{u}" target="_blank" rel="noopener" title="{t}">{t}</a>
                     <div class="{ptt_push_class(p['push_num'])}">{p['push']}</div>
                 </div>""", unsafe_allow_html=True)
         else:
