@@ -1,0 +1,8 @@
+streamlit>=1.30.0
+feedparser>=6.0.11
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+pytrends>=4.9.2
+pytz>=2024.1
+streamlit-autorefresh>=0.0.1
+lxml>=5.0.0
