@@ -57,6 +57,14 @@ SCRAPED_SOURCES = {
         "strip_time": True,   # 三立標題末尾夾有 HH:MM，需清除
         "base_url": "https://www.setn.com",
     },
+    "聯合報熱門": {
+        "url": "https://udn.com/rank/pv/2",
+        "pattern": "news/story",
+        "url_must_contain": "",
+        "min_len": 8,
+        "limit": 20,
+        "strip_time": False,
+    },
 }
 
 FALLBACK_KEYWORDS = [
@@ -622,7 +630,7 @@ def main():
     # ── Footer ──────────────────────────────────────────────────
     st.markdown(f"""
     <div class="mw-footer">
-        資料來源：Google Trends · RSS (Google 新聞 / CNA / UDN / ETtoday / Yahoo) · PTT &nbsp;｜&nbsp;
+        資料來源：Google Trends · RSS (Google 新聞 / CNA / UDN / ETtoday / Yahoo) · 聯合報熱門排行 · PTT &nbsp;｜&nbsp;
         更新時間：{now.strftime('%Y-%m-%d %H:%M:%S')} (台北 UTC+8) &nbsp;｜&nbsp;
         每 5 分鐘自動刷新
     </div>
