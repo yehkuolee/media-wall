@@ -19,6 +19,8 @@ try:
 except ImportError:
     HAS_PYTRENDS = False
 
+import xml.etree.ElementTree as ET
+
 TW_TZ = pytz.timezone("Asia/Taipei")
 
 RSS_FEEDS = {
@@ -293,14 +295,29 @@ st.markdown("""
 
 @st.cache_data(ttl=300, show_spinner=False)
 def fetch_keywords() -> list[str]:
-    if not HAS_PYTRENDS:
-        return FALLBACK_KEYWORDS
+    # 優先用 Google Trends RSS（公開，不需要登入）
     try:
-        pt = TrendReq(hl="zh-TW", tz=480, timeout=(10, 30))
-        df = pt.trending_searches(pn="taiwan")
-        return df[0].tolist()[:25]
+        r = requests.get(
+            "https://trends.google.com/trending/rss?geo=TW",
+            headers={"User-Agent": "Mozilla/5.0"},
+            timeout=10,
+        )
+        root = ET.fromstring(r.content)
+        ns = {"ht": "https://trends.google.com/trending/rss"}
+        titles = [item.find("title").text for item in root.iter("item") if item.find("title") is not None]
+        if titles:
+            return titles[:25]
     except Exception:
-        return FALLBACK_KEYWORDS
+        pass
+    # 備援：pytrends
+    if HAS_PYTRENDS:
+        try:
+            pt = TrendReq(hl="zh-TW", tz=480, timeout=(10, 30))
+            df = pt.trending_searches(pn="taiwan")
+            return df[0].tolist()[:25]
+        except Exception:
+            pass
+    return FALLBACK_KEYWORDS
 
 
 @st.cache_data(ttl=300, show_spinner=False)
