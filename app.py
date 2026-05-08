@@ -535,7 +535,7 @@ def main():
     # ── KPI Row ─────────────────────────────────────────────────
     k1, k2, k3, k4, k5 = st.columns(5)
     kpis = [
-        (k1, "🔥", "Google 熱搜關鍵字", str(len(keywords)), "▲ 即時趨勢", ""),
+        (k1, "🔥", "Google 即時急升搜尋", str(len(keywords)), "▲ 即時趨勢", ""),
         (k2, "📰", "今日新聞篇數",      f"{len(today_news):,}", f"▲ {len(source_counts)} 個媒體", ""),
         (k3, "📡", "RSS 文章總數",      f"{len(all_news):,}",  f"▲ 近期 {len(RSS_FEEDS)} 來源", ""),
         (k4, "💬", "PTT 八卦最高推文",  "爆" if max_push >= 100 else str(max_push), "▲ 板上人氣", "warn" if max_push < 30 else ""),
@@ -559,7 +559,7 @@ def main():
 
     # ── LEFT ──
     with left:
-        st.markdown('<div class="sec-title">🔥 Google 熱搜關鍵字雲</div>', unsafe_allow_html=True)
+        st.markdown('<div class="sec-title">🔥 Google 即時急升搜尋雲</div>', unsafe_allow_html=True)
         st.markdown(keyword_cloud_html(keywords), unsafe_allow_html=True)
 
         st.markdown("<div style='margin:10px 0'></div>", unsafe_allow_html=True)
