@@ -8,34 +8,35 @@ from pathlib import Path
 import pytz
 from playwright.async_api import async_playwright
 
-USERNAME = os.environ.get("THREADS_USERNAME", "")
-PASSWORD = os.environ.get("THREADS_PASSWORD", "")
+COOKIES_JSON = os.environ.get("THREADS_COOKIES", "")
 TW_TZ = pytz.timezone("Asia/Taipei")
 OUTPUT_DIR = Path(__file__).parent / "data"
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 
-async def dismiss_popups(page):
-    for selector in [
-        'button:has-text("現在不要")',
-        'button:has-text("Not Now")',
-        'button:has-text("稍後")',
-        'button:has-text("跳過")',
-        'div[role="button"]:has-text("現在不要")',
-    ]:
-        try:
-            el = page.locator(selector).first
-            if await el.is_visible(timeout=1500):
-                await el.click()
-                await page.wait_for_timeout(500)
-        except Exception:
-            pass
-
-
 async def capture():
-    if not USERNAME or not PASSWORD:
-        print("❌ THREADS_USERNAME / THREADS_PASSWORD 未設定", file=sys.stderr)
+    if not COOKIES_JSON:
+        print("❌ THREADS_COOKIES 未設定", file=sys.stderr)
         sys.exit(1)
+
+    try:
+        cookies = json.loads(COOKIES_JSON)
+    except json.JSONDecodeError:
+        print("❌ THREADS_COOKIES 不是合法 JSON", file=sys.stderr)
+        sys.exit(1)
+
+    # Cookie-Editor 匯出的格式需轉成 Playwright 格式
+    pw_cookies = []
+    for c in cookies:
+        cookie = {
+            "name":   c["name"],
+            "value":  c["value"],
+            "domain": c.get("domain", ".threads.com"),
+            "path":   c.get("path", "/"),
+        }
+        if "sameSite" in c and c["sameSite"] in ("Strict", "Lax", "None"):
+            cookie["sameSite"] = c["sameSite"]
+        pw_cookies.append(cookie)
 
     async with async_playwright() as p:
         browser = await p.chromium.launch(
@@ -52,156 +53,49 @@ async def capture():
             locale="zh-TW",
             timezone_id="Asia/Taipei",
         )
+
+        # 注入 cookie，跳過登入
+        await context.add_cookies(pw_cookies)
+        print(f"🍪 注入 {len(pw_cookies)} 個 cookie")
+
         page = await context.new_page()
 
-        # ── 登入 ──
-        print("🔐 前往登入頁...")
-        await page.goto("https://www.threads.com/login", wait_until="networkidle")
-        await page.wait_for_timeout(3000)
-
-        # Debug：先截圖看登入頁長什麼樣
-        await page.screenshot(path=str(OUTPUT_DIR / "debug_login.png"))
-        print(f"  📸 debug_login.png 已存（目前 URL: {page.url}）")
-
-        # 接受 cookie 同意彈窗（歐盟 GDPR 等）
-        for cookie_sel in [
-            'button:has-text("Allow all cookies")',
-            'button:has-text("接受所有")',
-            'button:has-text("Accept All")',
-            '[data-testid="cookie-policy-manage-dialog-accept-button"]',
-        ]:
-            try:
-                btn = page.locator(cookie_sel).first
-                if await btn.is_visible(timeout=1500):
-                    await btn.click()
-                    await page.wait_for_timeout(1500)
-                    print(f"  ✅ 接受 cookie: {cookie_sel}")
-                    break
-            except Exception:
-                pass
-
-        # 手機版登入頁會先出現「改以用戶名稱登入」，需要點一下才會出現輸入框
-        for username_btn_sel in [
-            'a:has-text("改以用戶名稱登入")',
-            'button:has-text("改以用戶名稱登入")',
-            'a:has-text("Log in with username")',
-            'button:has-text("Log in with username")',
-        ]:
-            try:
-                btn = page.locator(username_btn_sel).first
-                if await btn.is_visible(timeout=3000):
-                    await btn.click()
-                    await page.wait_for_timeout(2000)
-                    print(f"  ✅ 點擊「改以用戶名稱登入」({username_btn_sel})")
-                    break
-            except Exception:
-                pass
-
-        # 等待任意 input 出現（最多 15 秒）
-        try:
-            await page.wait_for_selector("input", timeout=15000)
-            print("  ✅ 偵測到 input 元素")
-        except Exception:
-            await page.screenshot(path=str(OUTPUT_DIR / "debug_no_input.png"))
-            # 印出頁面上所有可見文字，方便診斷
-            body_text = await page.evaluate("document.body.innerText")
-            print(f"  頁面文字前 500 字：{body_text[:500]}", file=sys.stderr)
-            print("❌ 15 秒內未出現任何 input，已存 debug_no_input.png", file=sys.stderr)
-            await browser.close()
-            sys.exit(1)
-
-        # 填帳號（多 selector fallback）
-        username_sel = None
-        for sel in [
-            'input[name="username"]',
-            'input[autocomplete="username"]',
-            'input[aria-label*="username" i]',
-            'input[aria-label*="使用者名稱"]',
-            'input[aria-label*="手機號碼"]',
-            'input[type="text"]',
-        ]:
-            try:
-                el = page.locator(sel).first
-                if await el.is_visible(timeout=2000):
-                    await el.fill(USERNAME)
-                    username_sel = sel
-                    print(f"  ✅ 帳號填入（selector: {sel}）")
-                    break
-            except Exception:
-                continue
-
-        if not username_sel:
-            await page.screenshot(path=str(OUTPUT_DIR / "debug_no_input.png"))
-            print("❌ 找不到帳號輸入框，已存 debug_no_input.png", file=sys.stderr)
-            await browser.close()
-            sys.exit(1)
-
-        # 填密碼，然後直接按 Enter 送出（避免 selector 打到錯的按鈕）
-        pwd_field = page.locator('input[type="password"]').first
-        await pwd_field.fill(PASSWORD)
-        await pwd_field.press("Enter")
-        print("  ✅ 密碼填入並按 Enter 送出")
-
-        try:
-            await page.wait_for_url(lambda url: "login" not in url, timeout=15000)
-            print(f"  ✅ URL 跳轉至：{page.url}")
-        except Exception:
-            await page.screenshot(path=str(OUTPUT_DIR / "debug_after_login.png"))
-            print("  ⚠️ 登入後未跳轉，已存 debug_after_login.png", file=sys.stderr)
-
+        # 直接前往搜尋頁
+        print("📱 前往 threads.com/search ...")
+        await page.goto("https://www.threads.com/search", wait_until="networkidle")
         await page.wait_for_timeout(4000)
-        await dismiss_popups(page)
 
-        # 驗證登入狀態：logged-in 的頁面不應出現「登入或註冊」
+        # 驗證登入狀態
         page_text = await page.evaluate("document.body.innerText")
         if "登入或註冊" in page_text or "Log in or sign up" in page_text:
-            await page.screenshot(path=str(OUTPUT_DIR / "debug_after_login.png"))
-            print("❌ 登入失敗（頁面仍顯示登入提示），已存 debug_after_login.png", file=sys.stderr)
+            await page.screenshot(path=str(OUTPUT_DIR / "debug_cookie_fail.png"))
+            print("❌ Cookie 無效或已過期，請重新從瀏覽器匯出並更新 THREADS_COOKIES Secret", file=sys.stderr)
             await browser.close()
             sys.exit(1)
         print("  ✅ 登入狀態驗證通過")
 
-        # ── 前往趨勢搜尋頁 ──
-        print("📱 前往 threads.com/search ...")
-        await page.goto("https://www.threads.com/search", wait_until="networkidle")
-        await page.wait_for_timeout(3000)
-        await dismiss_popups(page)
-
-        # 等待頁面穩定
-        await page.wait_for_timeout(4000)
-
-        # 關閉「試試完整的應用程式體驗」modal（X 按鈕或 Escape）
-        modal_closed = False
+        # 關閉可能出現的 app 推廣 modal
         for modal_sel in [
             '[aria-label="關閉"]',
             '[aria-label="Close"]',
             'div[role="dialog"] button',
-            'button[aria-label*="close" i]',
         ]:
             try:
                 btn = page.locator(modal_sel).first
                 if await btn.is_visible(timeout=2000):
                     await btn.click()
-                    modal_closed = True
                     print(f"  ✅ 關閉 modal（{modal_sel}）")
                     await page.wait_for_timeout(1000)
                     break
             except Exception:
                 pass
-        if not modal_closed:
-            # 嘗試 Escape 或點擊左上角 X（座標約 45, 45）
-            await page.keyboard.press("Escape")
-            await page.wait_for_timeout(500)
-            await page.mouse.click(45, 45)
-            await page.wait_for_timeout(1000)
-            print("  ⚠️ 嘗試 Escape + 座標點擊關閉 modal")
 
         await page.wait_for_timeout(2000)
 
-        # Debug：截圖搜尋頁確認內容
+        # Debug 截圖
         await page.screenshot(path=str(OUTPUT_DIR / "debug_search.png"))
 
-        # ── 截圖（桌面版，取左側趨勢欄）──
+        # ── 截圖（取左側趨勢欄）──
         screenshot_path = OUTPUT_DIR / "threads_trending.png"
         await page.screenshot(
             path=str(screenshot_path),
@@ -210,14 +104,12 @@ async def capture():
         print(f"📸 截圖已存：{screenshot_path}")
 
         # ── 抽取趨勢話題 ──
-        # 策略：找含「則貼文」計數的元素，再往上找父容器取標題與連結
         topics = await page.evaluate("""
             () => {
                 const results = [];
                 const seen = new Set();
                 const countRe = /[\d,.]+\s*[萬千百]?\s*則/;
 
-                // 找所有包含「則」計數的文字節點所在元素
                 const allEls = Array.from(document.querySelectorAll('*'));
                 const countEls = allEls.filter(el =>
                     el.children.length === 0 &&
@@ -226,13 +118,14 @@ async def capture():
                 );
 
                 for (const countEl of countEls) {
-                    // 往上找包含完整話題資訊的容器（有連結的那層）
                     let container = countEl;
                     let link = null;
                     for (let i = 0; i < 8; i++) {
                         if (!container.parentElement) break;
                         container = container.parentElement;
-                        const a = container.querySelector('a[href*="serp_type"], a[href*="search?q"]');
+                        const a = container.querySelector(
+                            'a[href*="serp_type"], a[href*="search?q"], a[href*="/search"]'
+                        );
                         if (a) { link = a; break; }
                     }
                     if (!link) continue;
@@ -249,7 +142,9 @@ async def capture():
                     if (title.length < 2 || title.length > 60) continue;
 
                     const countLine = lines.find(l => countRe.test(l)) || '';
-                    const desc = lines.find(l => l !== title && l !== countLine && l.length > 8) || '';
+                    const desc = lines.find(
+                        l => l !== title && l !== countLine && l.length > 8
+                    ) || '';
 
                     results.push({ title, description: desc, count: countLine, link: href });
                     if (results.length >= 8) break;
