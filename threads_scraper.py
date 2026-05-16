@@ -80,6 +80,23 @@ async def capture():
             except Exception:
                 pass
 
+        # 手機版登入頁會先出現「改以用戶名稱登入」，需要點一下才會出現輸入框
+        for username_btn_sel in [
+            'a:has-text("改以用戶名稱登入")',
+            'button:has-text("改以用戶名稱登入")',
+            'a:has-text("Log in with username")',
+            'button:has-text("Log in with username")',
+        ]:
+            try:
+                btn = page.locator(username_btn_sel).first
+                if await btn.is_visible(timeout=3000):
+                    await btn.click()
+                    await page.wait_for_timeout(2000)
+                    print(f"  ✅ 點擊「改以用戶名稱登入」({username_btn_sel})")
+                    break
+            except Exception:
+                pass
+
         # 等待任意 input 出現（最多 15 秒）
         try:
             await page.wait_for_selector("input", timeout=15000)
