@@ -30,7 +30,9 @@ echo "$(date '+%Y-%m-%d %H:%M:%S') 🚀 開始抓取 Threads 趨勢..."
 "$PYTHON3" threads_scraper.py
 
 # 推回 GitHub
+git stash --quiet 2>/dev/null || true
 git pull --rebase --quiet 2>&1 || true
+git stash pop --quiet 2>/dev/null || true
 git add data/
 if git diff --staged --quiet; then
     echo "$(date '+%Y-%m-%d %H:%M:%S') ℹ️  資料無變動，跳過 commit"

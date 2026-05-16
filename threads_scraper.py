@@ -104,7 +104,7 @@ async def capture():
         print(f"📸 截圖已存：{screenshot_path}")
 
         # ── 抽取趨勢話題 ──
-        topics = await page.evaluate("""
+        topics = await page.evaluate(r"""
             () => {
                 const results = [];
                 const seen = new Set();
