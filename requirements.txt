@@ -6,3 +6,4 @@ pytrends>=4.9.2
 pytz>=2024.1
 streamlit-autorefresh>=0.0.1
 lxml>=5.0.0
+playwright>=1.44.0

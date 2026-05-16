@@ -1,8 +1,10 @@
+import json
 import streamlit as st
 import feedparser
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
+from pathlib import Path
 import pytz
 import re
 import html as html_mod
@@ -216,6 +218,26 @@ st.markdown("""
 .news-meta       { color: #3a5a85; font-size: .67rem; margin-top: 3px; }
 .news-src        { color: #4a7aa8; font-weight: 600; }
 
+/* ── Threads card ── */
+.threads-card {
+    background: #0b1c36;
+    border: 1px solid #192f58;
+    border-radius: 6px;
+    padding: 7px 11px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+.threads-title {
+    color: #b8cee8; font-size: .78rem; flex:1;
+    overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+    text-decoration: none;
+}
+.threads-title:hover { color: #00c8ff; text-decoration: underline; }
+.threads-count { font-size: .72rem; font-weight: 700; min-width: 40px; text-align: right; color: #a78bfa; white-space: nowrap; }
+
 /* ── PTT card ── */
 .ptt-card {
     background: #0b1c36;
@@ -422,6 +444,17 @@ def fetch_ptt(board: str = "Gossiping", limit: int = 10) -> list[dict]:
         return []
 
 
+@st.cache_data(ttl=3600, show_spinner=False)
+def fetch_threads_trending() -> dict:
+    json_path = Path(__file__).parent / "data" / "threads_trending.json"
+    if not json_path.exists():
+        return {"updated_at": None, "topics": []}
+    try:
+        return json.loads(json_path.read_text())
+    except Exception:
+        return {"updated_at": None, "topics": []}
+
+
 # ── Helpers ────────────────────────────────────────────────────────
 
 def round_robin_top(all_news: list, n: int = 15) -> list:
@@ -520,17 +553,18 @@ def main():
 
     # ── Fetch all data ───────────────────────────────────────────
     with st.spinner("載入資料中..."):
-        keywords  = fetch_keywords()
-        all_news  = fetch_news()
-        ptt_goss  = fetch_ptt("Gossiping", 10)
-        ptt_stock = fetch_ptt("Stock", 6)
+        keywords      = fetch_keywords()
+        all_news      = fetch_news()
+        ptt_stock     = fetch_ptt("Stock", 6)
+        threads_data  = fetch_threads_trending()
 
     today = now.date()
     today_news = [n for n in all_news if n["pub"] and n["pub"].date() == today]
     source_counts: dict[str, int] = {}
     for n in all_news:
         source_counts[n["source"]] = source_counts.get(n["source"], 0) + 1
-    max_push = max((p["push_num"] for p in ptt_goss), default=0)
+    threads_topics = threads_data.get("topics", [])
+    threads_updated = threads_data.get("updated_at")
 
     # ── KPI Row ─────────────────────────────────────────────────
     k1, k2, k3, k4, k5 = st.columns(5)
@@ -538,7 +572,7 @@ def main():
         (k1, "🔥", "Google 即時急升搜尋", str(len(keywords)), "▲ 即時趨勢", ""),
         (k2, "📰", "今日新聞篇數",      f"{len(today_news):,}", f"▲ {len(source_counts)} 個媒體", ""),
         (k3, "📡", "RSS 文章總數",      f"{len(all_news):,}",  f"▲ 近期 {len(RSS_FEEDS)} 來源", ""),
-        (k4, "💬", "PTT 八卦最高推文",  "爆" if max_push >= 100 else str(max_push), "▲ 板上人氣", "warn" if max_push < 30 else ""),
+        (k4, "🧵", "Threads 趨勢話題", str(len(threads_topics)), "▲ 每小時更新", "warn" if not threads_topics else ""),
         (k5, "🕐", "最後更新",          now.strftime("%H:%M"), "▲ 每 5 分鐘刷新", ""),
     ]
     for col, icon, label, value, sub, sub_cls in kpis:
@@ -564,18 +598,28 @@ def main():
 
         st.markdown("<div style='margin:10px 0'></div>", unsafe_allow_html=True)
 
-        st.markdown('<div class="sec-title">💬 PTT 八卦板 熱門文章</div>', unsafe_allow_html=True)
-        if ptt_goss:
-            for p in ptt_goss[:7]:
-                t = html_mod.escape(p['title'])
-                u = html_mod.escape(p['url'])
+        st.markdown('<div class="sec-title">🧵 Threads 最新趨勢話題</div>', unsafe_allow_html=True)
+        if threads_topics:
+            for topic in threads_topics[:7]:
+                t = html_mod.escape(topic["title"])
+                u = html_mod.escape(topic.get("link", "#"))
+                count = html_mod.escape(topic.get("count", ""))
                 st.markdown(f"""
-                <div class="ptt-card">
-                    <a class="ptt-title" href="{u}" target="_blank" rel="noopener" title="{t}">{t}</a>
-                    <div class="{ptt_push_class(p['push_num'])}">{p['push']}</div>
+                <div class="threads-card">
+                    <a class="threads-title" href="{u}" target="_blank" rel="noopener" title="{t}">{t}</a>
+                    <div class="threads-count">{count}</div>
                 </div>""", unsafe_allow_html=True)
+            if threads_updated:
+                try:
+                    upd = datetime.fromisoformat(threads_updated).strftime('%H:%M')
+                    st.markdown(
+                        f'<div style="color:#2a4a6a;font-size:.62rem;text-align:right;margin-top:4px">更新：{upd}</div>',
+                        unsafe_allow_html=True,
+                    )
+                except Exception:
+                    pass
         else:
-            st.markdown('<div style="color:#3a5a85;padding:16px;text-align:center">PTT 資料暫時無法取得</div>', unsafe_allow_html=True)
+            st.markdown('<div style="color:#3a5a85;padding:16px;text-align:center">Threads 資料尚未抓取</div>', unsafe_allow_html=True)
 
     # ── CENTER ──
     with center:
