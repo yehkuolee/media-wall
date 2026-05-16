@@ -1,17 +1,4 @@
 {
-  "updated_at": "2026-05-16T11:10:22.579710+08:00",
-  "topics": [
-    {
-      "title": "登入",
-      "description": "《Threads 使用條款》",
-      "count": "",
-      "link": "https://www.threads.com/search"
-    },
-    {
-      "title": "試試完整的應用程式體驗",
-      "description": "解鎖更多功能並瞭解其他人正在談論的內容。",
-      "count": "",
-      "link": "https://applink.threads.com/search?ct=WebAppHeader"
-    }
-  ]
+  "updated_at": "2026-05-16T11:15:54.911877+08:00",
+  "topics": []
 }
