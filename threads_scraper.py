@@ -55,18 +55,71 @@ async def capture():
         page = await context.new_page()
 
         # ── 登入 ──
-        print("🔐 登入 Threads...")
+        print("🔐 前往登入頁...")
         await page.goto("https://www.threads.com/login", wait_until="domcontentloaded")
-        await page.wait_for_timeout(3000)
+        await page.wait_for_timeout(4000)
 
-        await page.locator('input[name="username"], input[autocomplete="username"]').first.fill(USERNAME)
-        await page.locator('input[name="password"], input[type="password"]').first.fill(PASSWORD)
+        # Debug：先截圖看登入頁長什麼樣
+        await page.screenshot(path=str(OUTPUT_DIR / "debug_login.png"))
+        print(f"  📸 debug_login.png 已存（目前 URL: {page.url}）")
+
+        # 接受 cookie 同意彈窗（歐盟 GDPR 等）
+        for cookie_sel in [
+            'button:has-text("Allow all cookies")',
+            'button:has-text("接受所有")',
+            'button:has-text("Accept All")',
+            '[data-testid="cookie-policy-manage-dialog-accept-button"]',
+        ]:
+            try:
+                btn = page.locator(cookie_sel).first
+                if await btn.is_visible(timeout=1500):
+                    await btn.click()
+                    await page.wait_for_timeout(1000)
+                    print(f"  ✅ 接受 cookie: {cookie_sel}")
+                    break
+            except Exception:
+                pass
+
+        # 填帳號（多 selector fallback）
+        username_sel = None
+        for sel in [
+            'input[name="username"]',
+            'input[autocomplete="username"]',
+            'input[aria-label*="username" i]',
+            'input[aria-label*="使用者名稱"]',
+            'input[aria-label*="手機號碼"]',
+            'input[type="text"]',
+        ]:
+            try:
+                el = page.locator(sel).first
+                if await el.is_visible(timeout=2000):
+                    await el.fill(USERNAME)
+                    username_sel = sel
+                    print(f"  ✅ 帳號填入（selector: {sel}）")
+                    break
+            except Exception:
+                continue
+
+        if not username_sel:
+            await page.screenshot(path=str(OUTPUT_DIR / "debug_no_input.png"))
+            print("❌ 找不到帳號輸入框，已存 debug_no_input.png", file=sys.stderr)
+            await browser.close()
+            sys.exit(1)
+
+        # 填密碼
+        await page.locator('input[type="password"]').first.fill(PASSWORD)
+        print("  ✅ 密碼填入")
+
+        # 送出登入
         await page.locator('button[type="submit"]').first.click()
+        print("  ✅ 點擊登入")
 
         try:
             await page.wait_for_url(lambda url: "login" not in url, timeout=15000)
+            print(f"  ✅ 登入成功，跳轉至：{page.url}")
         except Exception:
-            print("⚠️ 登入可能失敗，繼續嘗試...", file=sys.stderr)
+            await page.screenshot(path=str(OUTPUT_DIR / "debug_after_login.png"))
+            print("  ⚠️ 登入後未跳轉，已存 debug_after_login.png", file=sys.stderr)
 
         await page.wait_for_timeout(3000)
         await dismiss_popups(page)
