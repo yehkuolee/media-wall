@@ -555,7 +555,7 @@ def main():
     with st.spinner("載入資料中..."):
         keywords      = fetch_keywords()
         all_news      = fetch_news()
-        ptt_stock     = fetch_ptt("Stock", 6)
+        ptt_goss      = fetch_ptt("Gossiping", 10)
         threads_data  = fetch_threads_trending()
 
     today = now.date()
@@ -649,6 +649,21 @@ def main():
 
     # ── RIGHT ──
     with right:
+        st.markdown('<div class="sec-title">💬 PTT 八卦板 熱門</div>', unsafe_allow_html=True)
+        if ptt_goss:
+            for p in ptt_goss[:8]:
+                t = html_mod.escape(p['title'])
+                u = html_mod.escape(p['url'])
+                st.markdown(f"""
+                <div class="ptt-card">
+                    <a class="ptt-title" href="{u}" target="_blank" rel="noopener" title="{t}">{t}</a>
+                    <div class="{ptt_push_class(p['push_num'])}">{p['push']}</div>
+                </div>""", unsafe_allow_html=True)
+        else:
+            st.markdown('<div style="color:#3a5a85;padding:16px;text-align:center">暫時無法取得</div>', unsafe_allow_html=True)
+
+        st.markdown("<div style='margin:10px 0'></div>", unsafe_allow_html=True)
+
         st.markdown('<div class="sec-title">📊 媒體來源統計</div>', unsafe_allow_html=True)
         total = sum(source_counts.values()) or 1
         for src, cnt in sorted(source_counts.items(), key=lambda x: x[1], reverse=True):
@@ -661,21 +676,6 @@ def main():
             <div style="padding:0 4px;margin-bottom:6px;">
                 <div class="src-bar" style="width:{pct}%"></div>
             </div>""", unsafe_allow_html=True)
-
-        st.markdown("<div style='margin:10px 0'></div>", unsafe_allow_html=True)
-
-        st.markdown('<div class="sec-title">📈 PTT 股票板 熱門</div>', unsafe_allow_html=True)
-        if ptt_stock:
-            for p in ptt_stock[:6]:
-                t = html_mod.escape(p['title'])
-                u = html_mod.escape(p['url'])
-                st.markdown(f"""
-                <div class="ptt-card">
-                    <a class="ptt-title" href="{u}" target="_blank" rel="noopener" title="{t}">{t}</a>
-                    <div class="{ptt_push_class(p['push_num'])}">{p['push']}</div>
-                </div>""", unsafe_allow_html=True)
-        else:
-            st.markdown('<div style="color:#3a5a85;padding:16px;text-align:center">暫時無法取得</div>', unsafe_allow_html=True)
 
     # ── Ticker ──────────────────────────────────────────────────
     if all_news:
