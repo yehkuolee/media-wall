@@ -43,11 +43,11 @@ async def capture():
             args=["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"],
         )
         context = await browser.new_context(
-            viewport={"width": 390, "height": 844},
+            viewport={"width": 1280, "height": 900},
             user_agent=(
-                "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) "
-                "AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 "
-                "Mobile/15E148 Safari/604.1"
+                "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/124.0.0.0 Safari/537.36"
             ),
             locale="zh-TW",
             timezone_id="Asia/Taipei",
@@ -215,11 +215,11 @@ async def capture():
         # Debug：截圖搜尋頁確認內容
         await page.screenshot(path=str(OUTPUT_DIR / "debug_search.png"))
 
-        # ── 截圖 ──
+        # ── 截圖（桌面版，取左側趨勢欄）──
         screenshot_path = OUTPUT_DIR / "threads_trending.png"
         await page.screenshot(
             path=str(screenshot_path),
-            clip={"x": 0, "y": 0, "width": 390, "height": 750},
+            clip={"x": 0, "y": 0, "width": 680, "height": 900},
         )
         print(f"📸 截圖已存：{screenshot_path}")
 
