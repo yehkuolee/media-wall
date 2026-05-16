@@ -181,16 +181,10 @@ async def capture():
         await page.wait_for_timeout(3000)
         await dismiss_popups(page)
 
-        # 等待「最新趨勢話題」標題出現，確認內容已渲染
-        for heading in ["最新趨勢話題", "Trending now", "Trending"]:
-            try:
-                await page.wait_for_selector(f'text="{heading}"', timeout=8000)
-                print(f"  ✅ 趨勢區塊已載入（偵測到：{heading}）")
-                break
-            except Exception:
-                pass
-
-        await page.wait_for_timeout(2000)
+        # 等待頁面穩定後印出前 1500 字診斷
+        await page.wait_for_timeout(5000)
+        body_text = await page.evaluate("document.body.innerText")
+        print(f"  [搜尋頁文字前 1500 字]\n{body_text[:1500]}")
 
         # Debug：截圖搜尋頁確認內容
         await page.screenshot(path=str(OUTPUT_DIR / "debug_search.png"))
