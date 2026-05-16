@@ -177,9 +177,23 @@ async def capture():
 
         # ── 前往趨勢搜尋頁 ──
         print("📱 前往 threads.com/search ...")
-        await page.goto("https://www.threads.com/search", wait_until="domcontentloaded")
-        await page.wait_for_timeout(5000)
+        await page.goto("https://www.threads.com/search", wait_until="networkidle")
+        await page.wait_for_timeout(3000)
         await dismiss_popups(page)
+
+        # 等待「最新趨勢話題」標題出現，確認內容已渲染
+        for heading in ["最新趨勢話題", "Trending now", "Trending"]:
+            try:
+                await page.wait_for_selector(f'text="{heading}"', timeout=8000)
+                print(f"  ✅ 趨勢區塊已載入（偵測到：{heading}）")
+                break
+            except Exception:
+                pass
+
+        await page.wait_for_timeout(2000)
+
+        # Debug：截圖搜尋頁確認內容
+        await page.screenshot(path=str(OUTPUT_DIR / "debug_search.png"))
 
         # ── 截圖 ──
         screenshot_path = OUTPUT_DIR / "threads_trending.png"
@@ -190,25 +204,36 @@ async def capture():
         print(f"📸 截圖已存：{screenshot_path}")
 
         # ── 抽取趨勢話題 ──
+        # 策略：找含「則貼文」計數的元素，再往上找父容器取標題與連結
         topics = await page.evaluate("""
             () => {
                 const results = [];
                 const seen = new Set();
                 const countRe = /[\d,.]+\s*[萬千百]?\s*則/;
 
-                const links = Array.from(document.querySelectorAll('a[href*="search"]'));
-                for (const a of links) {
-                    const href = a.href;
-                    if (!href || seen.has(href)) continue;
-                    if (href.includes('/login') || href.includes('context=')) continue;
-                    seen.add(href);
+                // 找所有包含「則」計數的文字節點所在元素
+                const allEls = Array.from(document.querySelectorAll('*'));
+                const countEls = allEls.filter(el =>
+                    el.children.length === 0 &&
+                    countRe.test(el.innerText || '') &&
+                    (el.innerText || '').length < 30
+                );
 
-                    let container = a;
-                    for (let i = 0; i < 5; i++) {
+                for (const countEl of countEls) {
+                    // 往上找包含完整話題資訊的容器（有連結的那層）
+                    let container = countEl;
+                    let link = null;
+                    for (let i = 0; i < 8; i++) {
                         if (!container.parentElement) break;
                         container = container.parentElement;
-                        if (countRe.test(container.innerText)) break;
+                        const a = container.querySelector('a[href*="serp_type"], a[href*="search?q"]');
+                        if (a) { link = a; break; }
                     }
+                    if (!link) continue;
+
+                    const href = link.href;
+                    if (seen.has(href) || href.includes('/login')) continue;
+                    seen.add(href);
 
                     const lines = container.innerText.trim()
                         .split('\\n').map(l => l.trim()).filter(Boolean);
