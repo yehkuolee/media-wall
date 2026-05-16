@@ -231,12 +231,12 @@ st.markdown("""
     gap: 8px;
 }
 .threads-title {
-    color: #b8cee8; font-size: .78rem; flex:1;
-    overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
-    text-decoration: none;
+    color: #b8cee8; font-size: .78rem;
+    text-decoration: none; display: block; line-height: 1.4;
 }
 .threads-title:hover { color: #00c8ff; text-decoration: underline; }
-.threads-count { font-size: .72rem; font-weight: 700; min-width: 40px; text-align: right; color: #a78bfa; white-space: nowrap; }
+.threads-desc { color: #3a6a9a; font-size: .68rem; margin-top: 2px; line-height: 1.4; }
+.threads-count { font-size: .68rem; font-weight: 700; color: #a78bfa; margin-top: 3px; white-space: nowrap; }
 
 /* ── PTT card ── */
 .ptt-card {
@@ -601,12 +601,15 @@ def main():
         st.markdown('<div class="sec-title">🧵 Threads 最新趨勢話題</div>', unsafe_allow_html=True)
         if threads_topics:
             for topic in threads_topics[:4]:
-                t = html_mod.escape(topic["title"])
-                u = html_mod.escape(topic.get("link", "#"))
+                t    = html_mod.escape(topic["title"])
+                u    = html_mod.escape(topic.get("link", "#"))
+                desc = html_mod.escape(topic.get("description", ""))
                 count = html_mod.escape(topic.get("count", ""))
+                desc_html = f'<div class="threads-desc">{desc}</div>' if desc else ""
                 st.markdown(f"""
                 <div class="threads-card">
-                    <a class="threads-title" href="{u}" target="_blank" rel="noopener" title="{t}">{t}</a>
+                    <a class="threads-title" href="{u}" target="_blank" rel="noopener">{t}</a>
+                    {desc_html}
                     <div class="threads-count">{count}</div>
                 </div>""", unsafe_allow_html=True)
             if threads_updated:
