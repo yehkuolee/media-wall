@@ -56,8 +56,8 @@ async def capture():
 
         # ── 登入 ──
         print("🔐 前往登入頁...")
-        await page.goto("https://www.threads.com/login", wait_until="domcontentloaded")
-        await page.wait_for_timeout(4000)
+        await page.goto("https://www.threads.com/login", wait_until="networkidle")
+        await page.wait_for_timeout(3000)
 
         # Debug：先截圖看登入頁長什麼樣
         await page.screenshot(path=str(OUTPUT_DIR / "debug_login.png"))
@@ -74,11 +74,24 @@ async def capture():
                 btn = page.locator(cookie_sel).first
                 if await btn.is_visible(timeout=1500):
                     await btn.click()
-                    await page.wait_for_timeout(1000)
+                    await page.wait_for_timeout(1500)
                     print(f"  ✅ 接受 cookie: {cookie_sel}")
                     break
             except Exception:
                 pass
+
+        # 等待任意 input 出現（最多 15 秒）
+        try:
+            await page.wait_for_selector("input", timeout=15000)
+            print("  ✅ 偵測到 input 元素")
+        except Exception:
+            await page.screenshot(path=str(OUTPUT_DIR / "debug_no_input.png"))
+            # 印出頁面上所有可見文字，方便診斷
+            body_text = await page.evaluate("document.body.innerText")
+            print(f"  頁面文字前 500 字：{body_text[:500]}", file=sys.stderr)
+            print("❌ 15 秒內未出現任何 input，已存 debug_no_input.png", file=sys.stderr)
+            await browser.close()
+            sys.exit(1)
 
         # 填帳號（多 selector fallback）
         username_sel = None

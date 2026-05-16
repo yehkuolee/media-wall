@@ -28,12 +28,14 @@ jobs:
           playwright install-deps chromium
 
       - name: Capture Threads trending
+        continue-on-error: true
         env:
           THREADS_USERNAME: ${{ secrets.THREADS_USERNAME }}
           THREADS_PASSWORD: ${{ secrets.THREADS_PASSWORD }}
         run: python threads_scraper.py
 
       - name: Commit results
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
