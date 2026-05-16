@@ -139,12 +139,16 @@ async def capture():
                     if (!lines.length) continue;
 
                     const title = lines[0];
-                    if (title.length < 2 || title.length > 60) continue;
+                    if (title.length < 2 || title.length > 80) continue;
 
-                    const countLine = lines.find(l => countRe.test(l)) || '';
-                    const desc = lines.find(
-                        l => l !== title && l !== countLine && l.length > 8
-                    ) || '';
+                    // 格式：「描述 · X 萬 則貼文」，用最後一個 · 切開
+                    const fullLine = lines.find(l => countRe.test(l)) || '';
+                    let desc = '', countLine = fullLine;
+                    if (fullLine.includes('·')) {
+                        const lastDot = fullLine.lastIndexOf('·');
+                        desc = fullLine.substring(0, lastDot).trim();
+                        countLine = fullLine.substring(lastDot + 1).trim();
+                    }
 
                     results.push({ title, description: desc, count: countLine, link: href });
                     if (results.length >= 8) break;
