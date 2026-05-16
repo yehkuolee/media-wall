@@ -140,9 +140,30 @@ async def capture():
         await page.locator('input[type="password"]').first.fill(PASSWORD)
         print("  ✅ 密碼填入")
 
-        # 送出登入
-        await page.locator('button[type="submit"]').first.click()
-        print("  ✅ 點擊登入")
+        # 送出登入（嘗試多個 selector）
+        submitted = False
+        for submit_sel in [
+            'button[type="submit"]',
+            'button:has-text("登入")',
+            'button:has-text("Log in")',
+            'div[role="button"]:has-text("登入")',
+            'div[role="button"]:has-text("Log in")',
+        ]:
+            try:
+                btn = page.locator(submit_sel).first
+                if await btn.is_visible(timeout=3000):
+                    await btn.click()
+                    submitted = True
+                    print(f"  ✅ 點擊登入（selector: {submit_sel}）")
+                    break
+            except Exception:
+                continue
+
+        if not submitted:
+            await page.screenshot(path=str(OUTPUT_DIR / "debug_no_submit.png"))
+            print("❌ 找不到送出按鈕，已存 debug_no_submit.png", file=sys.stderr)
+            await browser.close()
+            sys.exit(1)
 
         try:
             await page.wait_for_url(lambda url: "login" not in url, timeout=15000)
