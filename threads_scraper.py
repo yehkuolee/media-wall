@@ -136,44 +136,30 @@ async def capture():
             await browser.close()
             sys.exit(1)
 
-        # 填密碼
-        await page.locator('input[type="password"]').first.fill(PASSWORD)
-        print("  ✅ 密碼填入")
-
-        # 送出登入（嘗試多個 selector）
-        submitted = False
-        for submit_sel in [
-            'button[type="submit"]',
-            'button:has-text("登入")',
-            'button:has-text("Log in")',
-            'div[role="button"]:has-text("登入")',
-            'div[role="button"]:has-text("Log in")',
-        ]:
-            try:
-                btn = page.locator(submit_sel).first
-                if await btn.is_visible(timeout=3000):
-                    await btn.click()
-                    submitted = True
-                    print(f"  ✅ 點擊登入（selector: {submit_sel}）")
-                    break
-            except Exception:
-                continue
-
-        if not submitted:
-            await page.screenshot(path=str(OUTPUT_DIR / "debug_no_submit.png"))
-            print("❌ 找不到送出按鈕，已存 debug_no_submit.png", file=sys.stderr)
-            await browser.close()
-            sys.exit(1)
+        # 填密碼，然後直接按 Enter 送出（避免 selector 打到錯的按鈕）
+        pwd_field = page.locator('input[type="password"]').first
+        await pwd_field.fill(PASSWORD)
+        await pwd_field.press("Enter")
+        print("  ✅ 密碼填入並按 Enter 送出")
 
         try:
             await page.wait_for_url(lambda url: "login" not in url, timeout=15000)
-            print(f"  ✅ 登入成功，跳轉至：{page.url}")
+            print(f"  ✅ URL 跳轉至：{page.url}")
         except Exception:
             await page.screenshot(path=str(OUTPUT_DIR / "debug_after_login.png"))
             print("  ⚠️ 登入後未跳轉，已存 debug_after_login.png", file=sys.stderr)
 
-        await page.wait_for_timeout(3000)
+        await page.wait_for_timeout(4000)
         await dismiss_popups(page)
+
+        # 驗證登入狀態：logged-in 的頁面不應出現「登入或註冊」
+        page_text = await page.evaluate("document.body.innerText")
+        if "登入或註冊" in page_text or "Log in or sign up" in page_text:
+            await page.screenshot(path=str(OUTPUT_DIR / "debug_after_login.png"))
+            print("❌ 登入失敗（頁面仍顯示登入提示），已存 debug_after_login.png", file=sys.stderr)
+            await browser.close()
+            sys.exit(1)
+        print("  ✅ 登入狀態驗證通過")
 
         # ── 前往趨勢搜尋頁 ──
         print("📱 前往 threads.com/search ...")
