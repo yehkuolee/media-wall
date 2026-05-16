@@ -181,10 +181,36 @@ async def capture():
         await page.wait_for_timeout(3000)
         await dismiss_popups(page)
 
-        # 等待頁面穩定後印出前 1500 字診斷
-        await page.wait_for_timeout(5000)
-        body_text = await page.evaluate("document.body.innerText")
-        print(f"  [搜尋頁文字前 1500 字]\n{body_text[:1500]}")
+        # 等待頁面穩定
+        await page.wait_for_timeout(4000)
+
+        # 關閉「試試完整的應用程式體驗」modal（X 按鈕或 Escape）
+        modal_closed = False
+        for modal_sel in [
+            '[aria-label="關閉"]',
+            '[aria-label="Close"]',
+            'div[role="dialog"] button',
+            'button[aria-label*="close" i]',
+        ]:
+            try:
+                btn = page.locator(modal_sel).first
+                if await btn.is_visible(timeout=2000):
+                    await btn.click()
+                    modal_closed = True
+                    print(f"  ✅ 關閉 modal（{modal_sel}）")
+                    await page.wait_for_timeout(1000)
+                    break
+            except Exception:
+                pass
+        if not modal_closed:
+            # 嘗試 Escape 或點擊左上角 X（座標約 45, 45）
+            await page.keyboard.press("Escape")
+            await page.wait_for_timeout(500)
+            await page.mouse.click(45, 45)
+            await page.wait_for_timeout(1000)
+            print("  ⚠️ 嘗試 Escape + 座標點擊關閉 modal")
+
+        await page.wait_for_timeout(2000)
 
         # Debug：截圖搜尋頁確認內容
         await page.screenshot(path=str(OUTPUT_DIR / "debug_search.png"))
