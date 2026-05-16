@@ -444,7 +444,7 @@ def fetch_ptt(board: str = "Gossiping", limit: int = 10) -> list[dict]:
         return []
 
 
-@st.cache_data(ttl=3600, show_spinner=False)
+@st.cache_data(ttl=300, show_spinner=False)
 def fetch_threads_trending() -> dict:
     json_path = Path(__file__).parent / "data" / "threads_trending.json"
     if not json_path.exists():
