@@ -94,7 +94,7 @@ st.markdown("""
 <style>
 #MainMenu, footer, header { visibility: hidden; }
 [data-testid="stAppViewContainer"] {
-    background: radial-gradient(ellipse at top, #0a1628 0%, #030912 60%);
+    background: radial-gradient(ellipse at top, #1a1a1e 0%, #0e0e10 60%);
 }
 [data-testid="stHeader"] { background: transparent; }
 .block-container { padding: 0.6rem 1rem !important; max-width: 100% !important; }
@@ -104,39 +104,39 @@ st.markdown("""
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(90deg, #041428 0%, #0b2545 50%, #041428 100%);
-    border: 1px solid #1a4080;
+    background: linear-gradient(90deg, #111114 0%, #1e1e24 50%, #111114 100%);
+    border: 1px solid #3a3a45;
     border-radius: 10px;
     padding: 12px 24px;
     margin-bottom: 12px;
-    box-shadow: 0 0 40px rgba(0,150,255,.12), inset 0 1px 0 rgba(255,255,255,.05);
+    box-shadow: 0 0 40px rgba(255,107,53,.08), inset 0 1px 0 rgba(255,255,255,.04);
 }
-.mw-title { font-size: 1.4rem; font-weight: 800; color: #fff; letter-spacing: 3px; }
-.mw-subtitle { font-size: .65rem; color: #4a6fa5; letter-spacing: 1px; margin-top: 2px; }
+.mw-title { font-size: 1.4rem; font-weight: 800; color: #f0ede8; letter-spacing: 3px; }
+.mw-subtitle { font-size: .65rem; color: #6a6875; letter-spacing: 1px; margin-top: 2px; }
 .mw-live { display: flex; align-items: center; gap: 8px; }
 .live-dot {
-    width: 10px; height: 10px; background: #00ff88;
-    border-radius: 50%; box-shadow: 0 0 8px #00ff88;
+    width: 10px; height: 10px; background: #ff6b35;
+    border-radius: 50%; box-shadow: 0 0 8px #ff6b35;
     animation: blink 1.6s ease-in-out infinite;
 }
 @keyframes blink {
-    0%,100% { opacity:1; box-shadow: 0 0 8px #00ff88; }
-    50%      { opacity:.4; box-shadow: 0 0 14px #00ff88; }
+    0%,100% { opacity:1; box-shadow: 0 0 8px #ff6b35; }
+    50%      { opacity:.4; box-shadow: 0 0 14px #ff6b35; }
 }
-.live-text { color: #00ff88; font-size: .8rem; font-weight: 700; letter-spacing: 1px; }
-.mw-time { color: #64b5f6; font-size: 1.15rem; font-weight: 700; font-family: monospace; text-align: right; }
-.mw-date { color: #3a6a9a; font-size: .7rem; text-align: right; }
+.live-text { color: #ff6b35; font-size: .8rem; font-weight: 700; letter-spacing: 1px; }
+.mw-time { color: #e0a87a; font-size: 1.15rem; font-weight: 700; font-family: monospace; text-align: right; }
+.mw-date { color: #5a5865; font-size: .7rem; text-align: right; }
 
 /* ── KPI card ── */
 .kpi-card {
-    background: linear-gradient(135deg, #0d1f3c 0%, #162d52 100%);
-    border: 1px solid #1e3a6e;
+    background: linear-gradient(135deg, #181818 0%, #202025 100%);
+    border: 1px solid #2a2a30;
     border-radius: 10px;
     padding: 14px 16px;
     text-align: center;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0,100,200,.08);
+    box-shadow: 0 4px 20px rgba(255,107,53,.05);
     height: 100%;
 }
 .kpi-card::before {
@@ -144,31 +144,31 @@ st.markdown("""
     position: absolute;
     top: 0; left: 10%; right: 10%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #00aaff, transparent);
+    background: linear-gradient(90deg, transparent, #ff6b35, transparent);
     border-radius: 2px;
 }
 .kpi-icon  { font-size: 1.3rem; margin-bottom: 3px; }
-.kpi-label { color: #5a7fa8; font-size: .68rem; margin-bottom: 5px; letter-spacing: .5px; }
-.kpi-value { color: #fff; font-size: 1.55rem; font-weight: 800; font-family: 'Courier New', monospace; line-height: 1.2; }
-.kpi-sub   { color: #00c87a; font-size: .7rem; margin-top: 5px; }
-.kpi-sub.warn { color: #ffd700; }
+.kpi-label { color: #6a6875; font-size: .68rem; margin-bottom: 5px; letter-spacing: .5px; }
+.kpi-value { color: #f0ede8; font-size: 1.55rem; font-weight: 800; font-family: 'Courier New', monospace; line-height: 1.2; }
+.kpi-sub   { color: #5aaa7a; font-size: .7rem; margin-top: 5px; }
+.kpi-sub.warn { color: #ffd166; }
 
 /* ── Section title ── */
 .sec-title {
-    color: #00aaff;
+    color: #ff6b35;
     font-size: .78rem;
     font-weight: 700;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    border-left: 3px solid #00aaff;
+    border-left: 3px solid #ff6b35;
     padding-left: 9px;
     margin-bottom: 9px;
 }
 
 /* ── Keyword cloud ── */
 .kw-cloud {
-    background: linear-gradient(135deg, #0d1f3c, #0f1e38);
-    border: 1px solid #1a3060;
+    background: linear-gradient(135deg, #181818, #1c1c20);
+    border: 1px solid #2a2a30;
     border-radius: 9px;
     padding: 14px 12px;
     display: flex;
@@ -185,14 +185,14 @@ st.markdown("""
     white-space: nowrap;
     line-height: 1.4;
 }
-.kw-hot  { background: rgba(255,80,80,.12);  border:1px solid rgba(255,80,80,.35);  color:#ff7070; }
-.kw-warm { background: rgba(255,190,0,.09);  border:1px solid rgba(255,190,0,.35);  color:#ffd060; }
-.kw-cool { background: rgba(0,150,255,.09);  border:1px solid rgba(0,150,255,.28);  color:#64b5f6; }
+.kw-hot  { background: rgba(255,107,53,.14);  border:1px solid rgba(255,107,53,.40);  color:#ff6b35; }
+.kw-warm { background: rgba(255,209,102,.10);  border:1px solid rgba(255,209,102,.35);  color:#ffd166; }
+.kw-cool { background: rgba(160,155,180,.09);  border:1px solid rgba(160,155,180,.28);  color:#a09bb8; }
 
 /* ── News card ── */
 .news-card {
-    background: linear-gradient(135deg, #0d1f3c, #0f1e38);
-    border: 1px solid #1a3060;
+    background: linear-gradient(135deg, #181818, #1c1c20);
+    border: 1px solid #2a2a30;
     border-radius: 8px;
     padding: 9px 13px;
     margin-bottom: 7px;
@@ -201,27 +201,27 @@ st.markdown("""
     gap: 10px;
     transition: border-color .18s, transform .18s;
 }
-.news-card:hover { border-color: #00aaff; transform: translateX(3px); }
-.news-rank       { color: #00aaff; font-weight: 800; font-size: 1rem; min-width: 22px; line-height: 1.5; }
-.news-rank.gold  { color: #ffd700; }
-.news-rank.silv  { color: #c0c0c0; }
+.news-card:hover { border-color: #ff6b35; transform: translateX(3px); }
+.news-rank       { color: #ff6b35; font-weight: 800; font-size: 1rem; min-width: 22px; line-height: 1.5; }
+.news-rank.gold  { color: #ffd166; }
+.news-rank.silv  { color: #c0bdb8; }
 .news-rank.brnz  { color: #cd7f32; }
 .news-body       {}
 .news-title-link {
     display: block;
-    color: #d8e8f8;
+    color: #e0ddd8;
     font-size: .83rem;
     line-height: 1.5;
     text-decoration: none;
 }
-.news-title-link:hover { color: #00c8ff; text-decoration: underline; }
-.news-meta       { color: #3a5a85; font-size: .67rem; margin-top: 3px; }
-.news-src        { color: #4a7aa8; font-weight: 600; }
+.news-title-link:hover { color: #ff8c55; text-decoration: underline; }
+.news-meta       { color: #5a5865; font-size: .67rem; margin-top: 3px; }
+.news-src        { color: #8a8795; font-weight: 600; }
 
 /* ── Threads card ── */
 .threads-card {
-    background: #0b1c36;
-    border: 1px solid #192f58;
+    background: #161618;
+    border: 1px solid #252528;
     border-radius: 6px;
     padding: 7px 11px;
     margin-bottom: 5px;
@@ -231,17 +231,17 @@ st.markdown("""
     gap: 8px;
 }
 .threads-title {
-    color: #b8cee8; font-size: .78rem;
+    color: #c8c5c0; font-size: .78rem;
     text-decoration: none; display: block; line-height: 1.4;
 }
-.threads-title:hover { color: #00c8ff; text-decoration: underline; }
-.threads-desc { color: #3a6a9a; font-size: .68rem; margin-top: 2px; line-height: 1.4; }
-.threads-count { font-size: .68rem; font-weight: 700; color: #a78bfa; margin-top: 3px; white-space: nowrap; }
+.threads-title:hover { color: #ff8c55; text-decoration: underline; }
+.threads-desc { color: #5a5865; font-size: .68rem; margin-top: 2px; line-height: 1.4; }
+.threads-count { font-size: .68rem; font-weight: 700; color: #b8a8e0; margin-top: 3px; white-space: nowrap; }
 
 /* ── PTT card ── */
 .ptt-card {
-    background: #0b1c36;
-    border: 1px solid #192f58;
+    background: #161618;
+    border: 1px solid #252528;
     border-radius: 6px;
     padding: 7px 11px;
     margin-bottom: 5px;
@@ -251,48 +251,48 @@ st.markdown("""
     gap: 8px;
 }
 .ptt-title {
-    color: #b8cee8; font-size: .78rem; flex:1;
+    color: #c8c5c0; font-size: .78rem; flex:1;
     overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
     text-decoration: none;
 }
-.ptt-title:hover { color: #00c8ff; text-decoration: underline; }
+.ptt-title:hover { color: #ff8c55; text-decoration: underline; }
 .ptt-push  { font-size: .75rem; font-weight: 800; min-width: 30px; text-align: right; color: #ff6b6b; }
 .ptt-push.boom  { color: #ff3838; }
-.ptt-push.green { color: #00cc70; }
+.ptt-push.green { color: #5aaa7a; }
 
 /* ── Source stat ── */
 .src-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #0b1c36;
-    border: 1px solid #192f58;
+    background: #161618;
+    border: 1px solid #252528;
     border-radius: 6px;
     padding: 7px 12px;
     margin-bottom: 5px;
 }
-.src-name  { color: #64b5f6; font-size: .78rem; font-weight: 600; }
-.src-count { color: #00cc70; font-size: .8rem; font-weight: 700; }
+.src-name  { color: #e0a87a; font-size: .78rem; font-weight: 600; }
+.src-count { color: #5aaa7a; font-size: .8rem; font-weight: 700; }
 .src-bar   {
     height: 3px;
-    background: linear-gradient(90deg, #00aaff, #0044aa);
+    background: linear-gradient(90deg, #ff6b35, #cc4415);
     border-radius: 2px;
     margin-top: 4px;
 }
 
 /* ── Ticker ── */
 .ticker-wrap {
-    background: #041020;
-    border: 1px solid #1a3060;
+    background: #0e0e10;
+    border: 1px solid #2a2a30;
     border-radius: 7px;
     padding: 7px 0;
     overflow: hidden;
     margin-top: 10px;
     white-space: nowrap;
 }
-.ticker-label { color: #00aaff; font-size: .72rem; font-weight: 700; padding: 0 12px; }
+.ticker-label { color: #ff6b35; font-size: .72rem; font-weight: 700; padding: 0 12px; }
 .ticker-text  {
-    color: #90b8d8;
+    color: #a8a5a0;
     font-size: .75rem;
     display: inline-block;
     animation: scroll-left 60s linear infinite;
@@ -303,12 +303,12 @@ st.markdown("""
 }
 
 /* ── Footer ── */
-.mw-footer { text-align:center; color:#1e3555; font-size:.62rem; margin-top:8px; }
+.mw-footer { text-align:center; color:#3a3845; font-size:.62rem; margin-top:8px; }
 
 /* scrollbar */
 ::-webkit-scrollbar       { width: 4px; }
-::-webkit-scrollbar-track { background: #041020; }
-::-webkit-scrollbar-thumb { background: #1a4080; border-radius: 2px; }
+::-webkit-scrollbar-track { background: #0e0e10; }
+::-webkit-scrollbar-thumb { background: #3a3a45; border-radius: 2px; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -508,7 +508,7 @@ def ptt_push_class(num: int) -> str:
 
 def keyword_cloud_html(kws: list[str]) -> str:
     if not kws:
-        return '<div style="color:#3a5a85;padding:30px;text-align:center">資料取得中...</div>'
+        return '<div style="color:#5a5865;padding:30px;text-align:center">資料取得中...</div>'
     sizes = ["1.15rem", "1.0rem", "0.9rem", "0.82rem", "0.76rem"]
     out = '<div class="kw-cloud">'
     for i, kw in enumerate(kws):
@@ -616,13 +616,13 @@ def main():
                 try:
                     upd = datetime.fromisoformat(threads_updated).strftime('%H:%M')
                     st.markdown(
-                        f'<div style="color:#2a4a6a;font-size:.62rem;text-align:right;margin-top:4px">更新：{upd}</div>',
+                        f'<div style="color:#4a4855;font-size:.62rem;text-align:right;margin-top:4px">更新：{upd}</div>',
                         unsafe_allow_html=True,
                     )
                 except Exception:
                     pass
         else:
-            st.markdown('<div style="color:#3a5a85;padding:16px;text-align:center">Threads 資料尚未抓取</div>', unsafe_allow_html=True)
+            st.markdown('<div style="color:#5a5865;padding:16px;text-align:center">Threads 資料尚未抓取</div>', unsafe_allow_html=True)
 
     # ── CENTER ──
     with center:
@@ -663,7 +663,7 @@ def main():
                     <div class="{ptt_push_class(p['push_num'])}">{p['push']}</div>
                 </div>""", unsafe_allow_html=True)
         else:
-            st.markdown('<div style="color:#3a5a85;padding:16px;text-align:center">暫時無法取得</div>', unsafe_allow_html=True)
+            st.markdown('<div style="color:#5a5865;padding:16px;text-align:center">暫時無法取得</div>', unsafe_allow_html=True)
 
         st.markdown("<div style='margin:10px 0'></div>", unsafe_allow_html=True)
 
