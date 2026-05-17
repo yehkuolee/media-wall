@@ -81,7 +81,7 @@ WEEKDAY = {0: "一", 1: "二", 2: "三", 3: "四", 4: "五", 5: "六", 6: "日"}
 
 # ── Page config ────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="媒體熱度監測牆",
+    page_title="現在紅什麼",
     layout="wide",
     initial_sidebar_state="collapsed",
 )
@@ -94,206 +94,219 @@ st.markdown("""
 <style>
 #MainMenu, footer, header { visibility: hidden; }
 [data-testid="stAppViewContainer"] {
-    background: radial-gradient(ellipse at top, #1a1a1e 0%, #0e0e10 60%);
+    background: #f5f2ed;
 }
 [data-testid="stHeader"] { background: transparent; }
 .block-container { padding: 0.6rem 1rem !important; max-width: 100% !important; }
 
-/* ── Header ── */
+/* ── Masthead ── */
 .mw-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(90deg, #111114 0%, #1e1e24 50%, #111114 100%);
-    border: 1px solid #3a3a45;
-    border-radius: 10px;
-    padding: 12px 24px;
-    margin-bottom: 12px;
-    box-shadow: 0 0 40px rgba(255,107,53,.08), inset 0 1px 0 rgba(255,255,255,.04);
+    background: #ffffff;
+    border-top: 5px solid #121212;
+    border-bottom: 2px solid #121212;
+    border-left: none; border-right: none;
+    border-radius: 0;
+    padding: 14px 24px;
+    margin-bottom: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10), 0 1px 4px rgba(0,0,0,0.06);
 }
-.mw-title { font-size: 1.4rem; font-weight: 800; color: #f0ede8; letter-spacing: 3px; }
-.mw-subtitle { font-size: .65rem; color: #6a6875; letter-spacing: 1px; margin-top: 2px; }
+.mw-title { font-family: Georgia, 'Times New Roman', serif; font-size: 1.6rem; font-weight: 700; color: #121212; letter-spacing: 2px; }
+.mw-subtitle { font-size: .63rem; color: #999; letter-spacing: 2px; text-transform: uppercase; margin-top: 3px; }
 .mw-live { display: flex; align-items: center; gap: 8px; }
 .live-dot {
-    width: 10px; height: 10px; background: #ff6b35;
-    border-radius: 50%; box-shadow: 0 0 8px #ff6b35;
+    width: 8px; height: 8px; background: #c41230;
+    border-radius: 50%;
     animation: blink 1.6s ease-in-out infinite;
 }
 @keyframes blink {
-    0%,100% { opacity:1; box-shadow: 0 0 8px #ff6b35; }
-    50%      { opacity:.4; box-shadow: 0 0 14px #ff6b35; }
+    0%,100% { opacity:1; }
+    50%      { opacity:.2; }
 }
-.live-text { color: #ff6b35; font-size: .8rem; font-weight: 700; letter-spacing: 1px; }
-.mw-time { color: #e0a87a; font-size: 1.15rem; font-weight: 700; font-family: monospace; text-align: right; }
-.mw-date { color: #5a5865; font-size: .7rem; text-align: right; }
+.live-text { color: #c41230; font-size: .72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+.mw-time { color: #121212; font-size: 1.1rem; font-weight: 700; font-family: 'Courier New', monospace; text-align: right; }
+.mw-date { color: #999; font-size: .67rem; text-align: right; letter-spacing: 1px; }
 
 /* ── KPI card ── */
 .kpi-card {
-    background: linear-gradient(135deg, #181818 0%, #202025 100%);
-    border: 1px solid #2a2a30;
-    border-radius: 10px;
+    background: #ffffff;
+    border: 1px solid #d8d5d0;
+    border-top: 3px solid #121212;
+    border-radius: 0;
     padding: 14px 16px;
     text-align: center;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(255,107,53,.05);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.05);
+    transition: transform .2s, box-shadow .2s;
     height: 100%;
 }
-.kpi-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 10%; right: 10%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #ff6b35, transparent);
-    border-radius: 2px;
-}
-.kpi-icon  { font-size: 1.3rem; margin-bottom: 3px; }
-.kpi-label { color: #6a6875; font-size: .68rem; margin-bottom: 5px; letter-spacing: .5px; }
-.kpi-value { color: #f0ede8; font-size: 1.55rem; font-weight: 800; font-family: 'Courier New', monospace; line-height: 1.2; }
-.kpi-sub   { color: #5aaa7a; font-size: .7rem; margin-top: 5px; }
-.kpi-sub.warn { color: #ffd166; }
+.kpi-card::before { display: none; }
+.kpi-icon  { font-size: 1.2rem; margin-bottom: 3px; }
+.kpi-label { color: #999; font-size: .63rem; margin-bottom: 5px; letter-spacing: 1.5px; text-transform: uppercase; }
+.kpi-value { color: #121212; font-size: 1.5rem; font-weight: 800; font-family: 'Courier New', monospace; line-height: 1.2; }
+.kpi-sub   { color: #2a7a4a; font-size: .7rem; margin-top: 5px; font-weight: 600; }
+.kpi-sub.warn { color: #c41230; }
 
 /* ── Section title ── */
 .sec-title {
-    color: #ff6b35;
-    font-size: .78rem;
+    color: #121212;
+    font-size: .70rem;
     font-weight: 700;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    border-left: 3px solid #ff6b35;
-    padding-left: 9px;
-    margin-bottom: 9px;
+    border-top: 2px solid #121212;
+    border-bottom: 1px solid #d8d5d0;
+    border-left: none;
+    padding: 5px 0;
+    margin-bottom: 10px;
 }
 
 /* ── Keyword cloud ── */
 .kw-cloud {
-    background: linear-gradient(135deg, #181818, #1c1c20);
-    border: 1px solid #2a2a30;
-    border-radius: 9px;
-    padding: 14px 12px;
+    background: #ffffff;
+    border: 1px solid #d8d5d0;
+    border-top: 2px solid #121212;
+    border-radius: 0;
+    padding: 12px 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.05);
     display: flex;
     flex-wrap: wrap;
-    gap: 7px;
-    min-height: 140px;
+    gap: 6px;
+    min-height: 130px;
     align-content: flex-start;
 }
 .kw-tag {
-    border-radius: 20px;
-    padding: 4px 11px;
+    border-radius: 2px;
+    padding: 3px 10px;
     cursor: default;
-    transition: all .18s;
+    transition: all .15s;
     white-space: nowrap;
     line-height: 1.4;
 }
-.kw-hot  { background: rgba(255,107,53,.14);  border:1px solid rgba(255,107,53,.40);  color:#ff6b35; }
-.kw-warm { background: rgba(255,209,102,.10);  border:1px solid rgba(255,209,102,.35);  color:#ffd166; }
-.kw-cool { background: rgba(160,155,180,.09);  border:1px solid rgba(160,155,180,.28);  color:#a09bb8; }
+.kw-hot  { background: rgba(196,18,48,.07);  border:1px solid rgba(196,18,48,.28);  color:#c41230; }
+.kw-warm { background: rgba(160,100,0,.06);  border:1px solid rgba(160,100,0,.25);  color:#a06400; }
+.kw-cool { background: rgba(30,70,150,.06);  border:1px solid rgba(30,70,150,.22);  color:#1e4696; }
 
 /* ── News card ── */
 .news-card {
-    background: linear-gradient(135deg, #181818, #1c1c20);
-    border: 1px solid #2a2a30;
-    border-radius: 8px;
-    padding: 9px 13px;
-    margin-bottom: 7px;
+    background: #ffffff;
+    border: 1px solid #e8e5e0;
+    border-left: 3px solid #d8d5d0;
+    border-radius: 0;
+    padding: 9px 12px;
+    margin-bottom: 5px;
     display: flex;
     align-items: flex-start;
     gap: 10px;
-    transition: border-color .18s, transform .18s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+    transition: transform .2s, box-shadow .2s, border-left-color .2s;
 }
-.news-card:hover { border-color: #ff6b35; transform: translateX(3px); }
-.news-rank       { color: #ff6b35; font-weight: 800; font-size: 1rem; min-width: 22px; line-height: 1.5; }
-.news-rank.gold  { color: #ffd166; }
-.news-rank.silv  { color: #c0bdb8; }
-.news-rank.brnz  { color: #cd7f32; }
+.news-card:hover { background: #ffffff; transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.11), 0 2px 5px rgba(0,0,0,0.06); border-left-color: #c41230; }
+.news-rank       { color: #c41230; font-weight: 800; font-size: .92rem; min-width: 22px; line-height: 1.6; font-family: 'Courier New', monospace; }
+.news-rank.gold  { color: #b8860b; }
+.news-rank.silv  { color: #888; }
+.news-rank.brnz  { color: #a0522d; }
 .news-body       {}
 .news-title-link {
     display: block;
-    color: #e0ddd8;
-    font-size: .83rem;
-    line-height: 1.5;
+    color: #121212;
+    font-size: .84rem;
+    line-height: 1.55;
     text-decoration: none;
+    font-family: Georgia, serif;
 }
-.news-title-link:hover { color: #ff8c55; text-decoration: underline; }
-.news-meta       { color: #5a5865; font-size: .67rem; margin-top: 3px; }
-.news-src        { color: #8a8795; font-weight: 600; }
+.news-title-link:hover { color: #c41230; }
+.news-meta       { color: #aaa; font-size: .64rem; margin-top: 2px; }
+.news-src        { color: #888; font-weight: 600; }
 
 /* ── Threads card ── */
 .threads-card {
-    background: #161618;
-    border: 1px solid #252528;
-    border-radius: 6px;
-    padding: 7px 11px;
-    margin-bottom: 5px;
+    background: #ffffff;
+    border: 1px solid #e8e5e0;
+    border-radius: 0;
+    padding: 8px 10px;
+    margin-bottom: 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+    transition: transform .2s, box-shadow .2s;
 }
+.threads-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.10), 0 2px 4px rgba(0,0,0,0.05); }
 .threads-title {
-    color: #c8c5c0; font-size: .78rem;
+    color: #1a1a1a; font-size: .78rem;
     text-decoration: none; display: block; line-height: 1.4;
 }
-.threads-title:hover { color: #ff8c55; text-decoration: underline; }
-.threads-desc { color: #5a5865; font-size: .68rem; margin-top: 2px; line-height: 1.4; }
-.threads-count { font-size: .68rem; font-weight: 700; color: #b8a8e0; margin-top: 3px; white-space: nowrap; }
+.threads-title:hover { color: #c41230; }
+.threads-desc { color: #888; font-size: .67rem; margin-top: 2px; line-height: 1.4; }
+.threads-count { font-size: .66rem; font-weight: 700; color: #aaa; margin-top: 3px; white-space: nowrap; }
 
 /* ── PTT card ── */
 .ptt-card {
-    background: #161618;
-    border: 1px solid #252528;
-    border-radius: 6px;
-    padding: 7px 11px;
-    margin-bottom: 5px;
+    background: #ffffff;
+    border: 1px solid #e8e5e0;
+    border-radius: 0;
+    padding: 8px 10px;
+    margin-bottom: 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+    transition: transform .2s, box-shadow .2s;
 }
+.ptt-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.10), 0 2px 4px rgba(0,0,0,0.05); }
 .ptt-title {
-    color: #c8c5c0; font-size: .78rem; flex:1;
+    color: #1a1a1a; font-size: .78rem; flex:1;
     overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
     text-decoration: none;
 }
-.ptt-title:hover { color: #ff8c55; text-decoration: underline; }
-.ptt-push  { font-size: .75rem; font-weight: 800; min-width: 30px; text-align: right; color: #ff6b6b; }
-.ptt-push.boom  { color: #ff3838; }
-.ptt-push.green { color: #5aaa7a; }
+.ptt-title:hover { color: #c41230; }
+.ptt-push  { font-size: .73rem; font-weight: 800; min-width: 30px; text-align: right; color: #c41230; }
+.ptt-push.boom  { color: #8b0000; }
+.ptt-push.green { color: #2a7a4a; }
 
 /* ── Source stat ── */
 .src-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #161618;
-    border: 1px solid #252528;
-    border-radius: 6px;
-    padding: 7px 12px;
-    margin-bottom: 5px;
+    background: #ffffff;
+    border: 1px solid #e8e5e0;
+    border-radius: 0;
+    padding: 6px 10px;
+    margin-bottom: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.03);
+    transition: transform .2s, box-shadow .2s;
 }
-.src-name  { color: #e0a87a; font-size: .78rem; font-weight: 600; }
-.src-count { color: #5aaa7a; font-size: .8rem; font-weight: 700; }
+.src-row:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.09), 0 1px 3px rgba(0,0,0,0.05); }
+.src-name  { color: #444; font-size: .76rem; font-weight: 600; }
+.src-count { color: #2a7a4a; font-size: .76rem; font-weight: 700; }
 .src-bar   {
-    height: 3px;
-    background: linear-gradient(90deg, #ff6b35, #cc4415);
-    border-radius: 2px;
-    margin-top: 4px;
+    height: 2px;
+    background: linear-gradient(90deg, #c41230, #880018);
+    border-radius: 0;
+    margin-top: 3px;
 }
 
 /* ── Ticker ── */
 .ticker-wrap {
-    background: #0e0e10;
-    border: 1px solid #2a2a30;
-    border-radius: 7px;
+    background: #121212;
+    border: none;
+    border-radius: 0;
     padding: 7px 0;
     overflow: hidden;
-    margin-top: 10px;
+    margin-top: 12px;
     white-space: nowrap;
 }
-.ticker-label { color: #ff6b35; font-size: .72rem; font-weight: 700; padding: 0 12px; }
+.ticker-label { color: #ffffff; font-size: .68rem; font-weight: 700; padding: 0 12px; letter-spacing: 2px; text-transform: uppercase; }
 .ticker-text  {
-    color: #a8a5a0;
-    font-size: .75rem;
+    color: #cccccc;
+    font-size: .74rem;
     display: inline-block;
     animation: scroll-left 60s linear infinite;
 }
@@ -303,12 +316,12 @@ st.markdown("""
 }
 
 /* ── Footer ── */
-.mw-footer { text-align:center; color:#3a3845; font-size:.62rem; margin-top:8px; }
+.mw-footer { text-align:center; color:#bbb; font-size:.62rem; margin-top:8px; }
 
 /* scrollbar */
 ::-webkit-scrollbar       { width: 4px; }
-::-webkit-scrollbar-track { background: #0e0e10; }
-::-webkit-scrollbar-thumb { background: #3a3a45; border-radius: 2px; }
+::-webkit-scrollbar-track { background: #f5f2ed; }
+::-webkit-scrollbar-thumb { background: #d8d5d0; border-radius: 2px; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -508,7 +521,7 @@ def ptt_push_class(num: int) -> str:
 
 def keyword_cloud_html(kws: list[str]) -> str:
     if not kws:
-        return '<div style="color:#5a5865;padding:30px;text-align:center">資料取得中...</div>'
+        return '<div style="color:#aaa;padding:30px;text-align:center">資料取得中...</div>'
     sizes = ["1.15rem", "1.0rem", "0.9rem", "0.82rem", "0.76rem"]
     out = '<div class="kw-cloud">'
     for i, kw in enumerate(kws):
@@ -537,8 +550,8 @@ def main():
     st.markdown(f"""
     <div class="mw-header">
         <div>
-            <div class="mw-title">📡 媒體熱度監測牆</div>
-            <div class="mw-subtitle">Public Media Heat Monitor · LifeOS</div>
+            <div class="mw-title">現在紅什麼</div>
+            <div class="mw-subtitle">即時媒體熱度監測 · LifeOS</div>
         </div>
         <div class="mw-live">
             <div class="live-dot"></div>
@@ -566,34 +579,12 @@ def main():
     threads_topics = threads_data.get("topics", [])
     threads_updated = threads_data.get("updated_at")
 
-    # ── KPI Row ─────────────────────────────────────────────────
-    k1, k2, k3, k4, k5 = st.columns(5)
-    kpis = [
-        (k1, "🔥", "Google 即時急升搜尋", str(len(keywords)), "▲ 即時趨勢", ""),
-        (k2, "📰", "今日新聞篇數",      f"{len(today_news):,}", f"▲ {len(source_counts)} 個媒體", ""),
-        (k3, "📡", "RSS 文章總數",      f"{len(all_news):,}",  f"▲ 近期 {len(RSS_FEEDS)} 來源", ""),
-        (k4, "🧵", "Threads 趨勢話題", str(len(threads_topics)), "▲ 每小時更新", "warn" if not threads_topics else ""),
-        (k5, "🕐", "最後更新",          now.strftime("%H:%M"), "▲ 每 5 分鐘刷新", ""),
-    ]
-    for col, icon, label, value, sub, sub_cls in kpis:
-        with col:
-            st.markdown(f"""
-            <div class="kpi-card">
-                <div class="kpi-icon">{icon}</div>
-                <div class="kpi-label">{label}</div>
-                <div class="kpi-value">{value}</div>
-                <div class="kpi-sub {sub_cls}">{sub}</div>
-            </div>
-            """, unsafe_allow_html=True)
-
-    st.markdown("<div style='margin:10px 0'></div>", unsafe_allow_html=True)
-
     # ── Main 3 columns ───────────────────────────────────────────
     left, center, right = st.columns([1.1, 2.1, 1.1])
 
     # ── LEFT ──
     with left:
-        st.markdown('<div class="sec-title">🔥 Google 即時急升搜尋雲</div>', unsafe_allow_html=True)
+        st.markdown('<div class="sec-title">🔍 Google 熱搜字</div>', unsafe_allow_html=True)
         st.markdown(keyword_cloud_html(keywords), unsafe_allow_html=True)
 
         st.markdown("<div style='margin:10px 0'></div>", unsafe_allow_html=True)
@@ -616,13 +607,13 @@ def main():
                 try:
                     upd = datetime.fromisoformat(threads_updated).strftime('%H:%M')
                     st.markdown(
-                        f'<div style="color:#4a4855;font-size:.62rem;text-align:right;margin-top:4px">更新：{upd}</div>',
+                        f'<div style="color:#aaa;font-size:.62rem;text-align:right;margin-top:4px">更新：{upd}</div>',
                         unsafe_allow_html=True,
                     )
                 except Exception:
                     pass
         else:
-            st.markdown('<div style="color:#5a5865;padding:16px;text-align:center">Threads 資料尚未抓取</div>', unsafe_allow_html=True)
+            st.markdown('<div style="color:#aaa;padding:16px;text-align:center">Threads 資料尚未抓取</div>', unsafe_allow_html=True)
 
     # ── CENTER ──
     with center:
@@ -663,7 +654,7 @@ def main():
                     <div class="{ptt_push_class(p['push_num'])}">{p['push']}</div>
                 </div>""", unsafe_allow_html=True)
         else:
-            st.markdown('<div style="color:#5a5865;padding:16px;text-align:center">暫時無法取得</div>', unsafe_allow_html=True)
+            st.markdown('<div style="color:#aaa;padding:16px;text-align:center">暫時無法取得</div>', unsafe_allow_html=True)
 
         st.markdown("<div style='margin:10px 0'></div>", unsafe_allow_html=True)
 
