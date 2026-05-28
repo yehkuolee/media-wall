@@ -1,39 +1,35 @@
 {
-<<<<<<< Updated upstream
-  "updated_at": "2026-05-28T09:05:21.120199+08:00",
-=======
-  "updated_at": "2026-05-28T09:05:20.556345+08:00",
->>>>>>> Stashed changes
+  "updated_at": "2026-05-28T10:05:19.135989+08:00",
   "topics": [
     {
-      "title": "紐西蘭打工度假600名額秒殺\n年度打工度假簽證今早開放申請，因競爭激烈導致網站一度當機 · 2 萬 則貼文",
-      "description": "紐西蘭打工度假600名額秒殺\n年度打工度假簽證今早開放申請，因競爭激烈導致網站一度當機",
-      "count": "2 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%B4%90%E8%A5%BF%E8%98%AD%E6%89%93%E5%B7%A5&serp_type=trends&trend_fbid=1295269649471428"
+      "title": "大學個人申請二階放榜\n各大學陸續公布個人申請二階正備取名單，考生心情緊張等待結果 · 7 千 則貼文",
+      "description": "大學個人申請二階放榜\n各大學陸續公布個人申請二階正備取名單，考生心情緊張等待結果",
+      "count": "7 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E4%BA%8C%E9%9A%8E%E6%94%BE%E6%A6%9C&serp_type=trends&trend_fbid=1437400584809570"
     },
     {
-      "title": "雅方雪糕包裝印簡體字\n品牌為外銷考量在包裝印繁簡中文，其聲明使用「大陸」一詞亦受檢視 · 1 千 則貼文",
-      "description": "雅方雪糕包裝印簡體字\n品牌為外銷考量在包裝印繁簡中文，其聲明使用「大陸」一詞亦受檢視",
+      "title": "四維國小老師墜樓身亡\n高雄四維國小嚴姓老師校內墜樓生前疑遭學生霸凌及家長投訴 · 4 萬 則貼文",
+      "description": "四維國小老師墜樓身亡\n高雄四維國小嚴姓老師校內墜樓生前疑遭學生霸凌及家長投訴",
+      "count": "4 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%9B%9B%E7%B6%AD%E5%9C%8B%E5%B0%8F&serp_type=trends&trend_fbid=1484626903322030"
+    },
+    {
+      "title": "AI半導體股成當沖熱門\n受輝達與台積電利多激勵，台指期夜盤創高，帶動AI與半導體類股的當沖熱潮 · 33 萬 則貼文",
+      "description": "AI半導體股成當沖熱門\n受輝達與台積電利多激勵，台指期夜盤創高，帶動AI與半導體類股的當沖熱潮",
+      "count": "33 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%95%B6%E6%B2%96&serp_type=trends&trend_fbid=979202964749773"
+    },
+    {
+      "title": "輔大申請入學二階放榜\n輔仁大學公布115學年度申請入學二階甄試榜單，錄取生須登記志願序 · 1 千 則貼文",
+      "description": "輔大申請入學二階放榜\n輔仁大學公布115學年度申請入學二階甄試榜單，錄取生須登記志願序",
       "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%9B%85%E6%96%B9&serp_type=trends&trend_fbid=1335759211995789"
+      "link": "https://www.threads.com/search?q=%E8%BC%94%E5%A4%A7&serp_type=trends&trend_fbid=2773948482964926"
     },
     {
-      "title": "國巨訂單增溫\n播客股癌分析被動元件產業，指龍頭廠國巨因AI需求，訂單出貨比已達1.3 · 13 萬 則貼文",
-      "description": "國巨訂單增溫\n播客股癌分析被動元件產業，指龍頭廠國巨因AI需求，訂單出貨比已達1.3",
-      "count": "13 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%82%A1%E7%99%8C&serp_type=trends&trend_fbid=979118521189034"
-    },
-    {
-      "title": "麥香娃娃限量開賣引搶購\n麥香與7-ELEVEN合作推限量娃娃盲盒，含紅茶、綠茶、奶茶及隱藏版共四款 · 31 萬 則貼文",
-      "description": "麥香娃娃限量開賣引搶購\n麥香與7-ELEVEN合作推限量娃娃盲盒，含紅茶、綠茶、奶茶及隱藏版共四款",
-      "count": "31 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%BA%A5%E9%A6%99%E5%A8%83%E5%A8%83&serp_type=trends&trend_fbid=1002353789454094"
-    },
-    {
-      "title": "台股夜盤一度大漲逾600點\n台股期貨夜盤27日行情劇烈震盪，指數衝破42000點後漲幅收斂 · 25 萬 則貼文",
-      "description": "台股夜盤一度大漲逾600點\n台股期貨夜盤27日行情劇烈震盪，指數衝破42000點後漲幅收斂",
-      "count": "25 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%A4%9C%E7%9B%A4&serp_type=trends&trend_fbid=1662849918289538"
+      "title": "北市府為輝達建變電所\n年底選戰前，北市府拍板為輝達建變電所，蔣萬安民調大幅領先對手 · 3 萬 則貼文",
+      "description": "北市府為輝達建變電所\n年底選戰前，北市府拍板為輝達建變電所，蔣萬安民調大幅領先對手",
+      "count": "3 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=1974839330088145"
     }
   ]
 }
