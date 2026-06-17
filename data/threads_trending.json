@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-06-18T06:05:21.229022+08:00",
+<<<<<<< Updated upstream
+  "updated_at": "2026-06-18T07:05:16.457151+08:00",
+=======
+  "updated_at": "2026-06-18T07:05:15.360591+08:00",
+>>>>>>> Stashed changes
   "topics": [
+    {
+      "title": "新款戰鬥陀螺開賣引發搶購\n《腕龍鞭打》戰鬥陀螺在萊爾富開賣，吸引玩家連夜排隊搶購 · 15 萬 則貼文",
+      "description": "新款戰鬥陀螺開賣引發搶購\n《腕龍鞭打》戰鬥陀螺在萊爾富開賣，吸引玩家連夜排隊搶購",
+      "count": "15 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%88%B0%E9%AC%A5%E9%99%80%E8%9E%BA&serp_type=trends&trend_fbid=1493544722015813"
+    },
+    {
+      "title": "全家福袋出清特價99元\n全家出清多款福袋，含玩具總動員等主題僅售99元 · 5 萬 則貼文",
+      "description": "全家福袋出清特價99元\n全家出清多款福袋，含玩具總動員等主題僅售99元",
+      "count": "5 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%85%A8%E5%AE%B6%E7%A6%8F%E8%A2%8B&serp_type=trends&trend_fbid=1474105287735687"
+    },
     {
       "title": "世界盃首戰遭剛果逼平\n葡萄牙世界盃首戰僅與剛果1:1戰平，球迷對其消極踢法及C羅的磨合狀況表達不滿 · 1 萬 則貼文",
       "description": "世界盃首戰遭剛果逼平\n葡萄牙世界盃首戰僅與剛果1:1戰平，球迷對其消極踢法及C羅的磨合狀況表達不滿",
@@ -14,22 +30,10 @@
       "link": "https://www.threads.com/search?q=%E8%81%AF%E6%BA%96%E6%9C%83&serp_type=trends&trend_fbid=2093553834925142"
     },
     {
-      "title": "萊爾富開賣陀螺現排隊人龍\n為搶購限量戰鬥陀螺新品，全台萊爾富門市湧現排隊人潮，有人半夜就開始等候 · 12 萬 則貼文",
-      "description": "萊爾富開賣陀螺現排隊人龍\n為搶購限量戰鬥陀螺新品，全台萊爾富門市湧現排隊人潮，有人半夜就開始等候",
-      "count": "12 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%90%8A%E7%88%BE%E5%AF%8C&serp_type=trends&trend_fbid=3591881880968585"
-    },
-    {
-      "title": "618優惠商品秒殺\n蝦皮618購物節AirPods特價秒殺，網友質疑活動真實性 · 6 萬 則貼文",
-      "description": "618優惠商品秒殺\n蝦皮618購物節AirPods特價秒殺，網友質疑活動真實性",
-      "count": "6 萬 則貼文",
-      "link": "https://www.threads.com/search?q=618&serp_type=trends&trend_fbid=1682957189588454"
-    },
-    {
-      "title": "Fed利率不變但轉鷹\nFed主席華許首場會議決議利率不變，點陣圖暗示或將升息 · 14 萬 則貼文",
-      "description": "Fed利率不變但轉鷹\nFed主席華許首場會議決議利率不變，點陣圖暗示或將升息",
-      "count": "14 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%8F%AF%E8%A8%B1&serp_type=trends&trend_fbid=1462053282389488"
+      "title": "凱恩重罰十二碼破門\n世界盃凱恩十二碼罰球射失，獲VAR改判重踢後成功破門 · 6 千 則貼文",
+      "description": "凱恩重罰十二碼破門\n世界盃凱恩十二碼罰球射失，獲VAR改判重踢後成功破門",
+      "count": "6 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%87%B1%E6%81%A9&serp_type=trends&trend_fbid=2446399132492371"
     }
   ]
 }
