@@ -1,35 +1,39 @@
 {
-  "updated_at": "2026-06-26T07:05:17.027966+08:00",
+<<<<<<< Updated upstream
+  "updated_at": "2026-06-26T08:05:22.751850+08:00",
+=======
+  "updated_at": "2026-06-26T08:05:21.569137+08:00",
+>>>>>>> Stashed changes
   "topics": [
     {
-      "title": "台南豪雨停班停課\n因應鋒面強降雨，台南市政府宣布26日停班停課，永康、仁德等多區已嚴重淹水 · 7 萬 則貼文",
-      "description": "台南豪雨停班停課\n因應鋒面強降雨，台南市政府宣布26日停班停課，永康、仁德等多區已嚴重淹水",
-      "count": "7 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E5%8D%97&serp_type=trends&trend_fbid=36922227164057612"
-    },
-    {
-      "title": "桃園豪雨致航班延誤取消停電\n桃園因豪雨致機場航班延誤取消且南崁地區亦發生停電 · 4 萬 則貼文",
-      "description": "桃園豪雨致航班延誤取消停電\n桃園因豪雨致機場航班延誤取消且南崁地區亦發生停電",
-      "count": "4 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%A1%83%E5%9C%92&serp_type=trends&trend_fbid=1076102511940810"
-    },
-    {
-      "title": "南台灣豪雨停班課\n西南風與颱風環流夾擊南台灣，高雄、台南、屏東因豪雨淹水，26日宣布停班停課 · 15 萬 則貼文",
-      "description": "南台灣豪雨停班課\n西南風與颱風環流夾擊南台灣，高雄、台南、屏東因豪雨淹水，26日宣布停班停課",
-      "count": "15 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8D%97%E9%83%A8%E8%B1%AA%E9%9B%A8&serp_type=trends&trend_fbid=1741407713528058"
-    },
-    {
-      "title": "德國隊世界盃爆冷不敵厄瓜多\n德國隊世界盃晉級後防守失誤，1比2爆冷敗給厄瓜多 · 1 萬 則貼文",
-      "description": "德國隊世界盃爆冷不敵厄瓜多\n德國隊世界盃晉級後防守失誤，1比2爆冷敗給厄瓜多",
+      "title": "德國爆冷敗給厄瓜多\n2026世界盃德國隊1比2輸球，雖仍晉級但後防與門將諾伊爾的表現引發不滿 · 1 萬 則貼文",
+      "description": "德國爆冷敗給厄瓜多\n2026世界盃德國隊1比2輸球，雖仍晉級但後防與門將諾伊爾的表現引發不滿",
       "count": "1 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%BE%B7%E5%9C%8B%E9%9A%8A&serp_type=trends&trend_fbid=1668674107754775"
+      "link": "https://www.threads.com/search?q=%E5%BE%B7%E5%9C%8B&serp_type=trends&trend_fbid=2245194456299896"
     },
     {
-      "title": "雷雨襲台南高屏停班課\n劇烈雷雨襲台，桃園蘆竹區傳出停電，新莊棒球賽事也因此保留 · 8 千 則貼文",
-      "description": "雷雨襲台南高屏停班課\n劇烈雷雨襲台，桃園蘆竹區傳出停電，新莊棒球賽事也因此保留",
-      "count": "8 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%9B%B7%E9%9B%A8&serp_type=trends&trend_fbid=1318713556590714"
+      "title": "高雄台南停班停課\n因西南風強降雨致災，高雄與台南市政府宣布26日停班停課 · 15 萬 則貼文",
+      "description": "高雄台南停班停課\n因西南風強降雨致災，高雄與台南市政府宣布26日停班停課",
+      "count": "15 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%B1%AA%E9%9B%A8%E5%81%9C%E8%AA%B2&serp_type=trends&trend_fbid=1366997308676200"
+    },
+    {
+      "title": "新竹暴雨淹水未停班課\n南部三縣市因豪雨停班課，新竹多處淹水卻照常上班上課 · 2 萬 則貼文",
+      "description": "新竹暴雨淹水未停班課\n南部三縣市因豪雨停班課，新竹多處淹水卻照常上班上課",
+      "count": "2 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%96%B0%E7%AB%B9&serp_type=trends&trend_fbid=1596452025372616"
+    },
+    {
+      "title": "高雄仁武豪雨成災\n受豪雨影響，高雄仁武多處路段淹水，市府宣布26日停班停課 · 1 千 則貼文",
+      "description": "高雄仁武豪雨成災\n受豪雨影響，高雄仁武多處路段淹水，市府宣布26日停班停課",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E4%BB%81%E6%AD%A6&serp_type=trends&trend_fbid=1171432131826738"
+    },
+    {
+      "title": "豪雨未停班課惹民怨\n桃園市長張善政因豪大雨未宣布停班課，遭網友質疑無法體察民情 · 36 萬 則貼文",
+      "description": "豪雨未停班課惹民怨\n桃園市長張善政因豪大雨未宣布停班課，遭網友質疑無法體察民情",
+      "count": "36 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%BC%B5%E5%96%84%E6%94%BF&serp_type=trends&trend_fbid=2000959967178320"
     }
   ]
 }
