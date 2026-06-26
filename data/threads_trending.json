@@ -1,39 +1,69 @@
 {
 <<<<<<< Updated upstream
-  "updated_at": "2026-06-26T08:05:22.751850+08:00",
-=======
-  "updated_at": "2026-06-26T08:05:21.569137+08:00",
->>>>>>> Stashed changes
+  "updated_at": "2026-06-26T10:05:19.705372+08:00",
   "topics": [
     {
-      "title": "德國爆冷敗給厄瓜多\n2026世界盃德國隊1比2輸球，雖仍晉級但後防與門將諾伊爾的表現引發不滿 · 1 萬 則貼文",
-      "description": "德國爆冷敗給厄瓜多\n2026世界盃德國隊1比2輸球，雖仍晉級但後防與門將諾伊爾的表現引發不滿",
+      "title": "台鐵豪雨部分停駛\n因豪雨淹水及死傷事故，台鐵西部幹線部分路段停駛或延誤 · 8 千 則貼文",
+      "description": "台鐵豪雨部分停駛\n因豪雨淹水及死傷事故，台鐵西部幹線部分路段停駛或延誤",
+      "count": "8 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E9%90%B5&serp_type=trends&trend_fbid=1537838221283807"
+    },
+    {
+      "title": "中正高中校長陳屍校內\n校長陸炳杉被發現倒臥校長室廁所身亡，警方初步排除外力介入 · 3 萬 則貼文",
+      "description": "中正高中校長陳屍校內\n校長陸炳杉被發現倒臥校長室廁所身亡，警方初步排除外力介入",
+      "count": "3 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E4%B8%AD%E6%AD%A3%E9%AB%98%E4%B8%AD&serp_type=trends&trend_fbid=1018799164075623"
+    },
+    {
+      "title": "南台灣豪雨停班停課\n高雄、臺南、屏東因豪雨停班課，打亂學校期末考 · 9 萬 則貼文",
+      "description": "南台灣豪雨停班停課\n高雄、臺南、屏東因豪雨停班課，打亂學校期末考",
+      "count": "9 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%B1%AA%E9%9B%A8%E5%81%87&serp_type=trends&trend_fbid=1545825966953065"
+    },
+    {
+      "title": "新竹暴雨淹水交通受阻\n暴雨襲新竹致多處淹水交通受阻，政府未宣布停班課 · 9 萬 則貼文",
+      "description": "新竹暴雨淹水交通受阻\n暴雨襲新竹致多處淹水交通受阻，政府未宣布停班課",
+      "count": "9 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%96%B0%E7%AB%B9%E6%B7%B9%E6%B0%B4&serp_type=trends&trend_fbid=1657437141983013"
+    },
+    {
+      "title": "台南暴雨淹水停班停課\n鋒面暴雨致台南多處淹水，永康、仁德等區水深及腰，鐵路交通一度中斷 · 7 萬 則貼文",
+      "description": "台南暴雨淹水停班停課\n鋒面暴雨致台南多處淹水，永康、仁德等區水深及腰，鐵路交通一度中斷",
+      "count": "7 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E5%8D%97&serp_type=trends&trend_fbid=1297754672341404"
+=======
+  "updated_at": "2026-06-26T09:05:23.834532+08:00",
+  "topics": [
+    {
+      "title": "林口國道連環車禍\n大貨車、遊覽車及自小客車於國道林口段追撞，醫院啟動傷患機制 · 5 千 則貼文",
+      "description": "林口國道連環車禍\n大貨車、遊覽車及自小客車於國道林口段追撞，醫院啟動傷患機制",
+      "count": "5 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%9E%97%E5%8F%A3&serp_type=trends&trend_fbid=2508368379611281"
+    },
+    {
+      "title": "豪雨假南放北不放\n因應豪雨，南部縣市緊急停班課，但北部民眾則需照常上班上課 · 26 萬 則貼文",
+      "description": "豪雨假南放北不放\n因應豪雨，南部縣市緊急停班課，但北部民眾則需照常上班上課",
+      "count": "26 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%81%9C%E7%8F%AD%E5%81%9C%E8%AA%B2&serp_type=trends&trend_fbid=3131413327069911"
+    },
+    {
+      "title": "內湖暴雨嚴重淹水\n立委沈伯洋深夜赴內湖勘災，暴雨使台北市府治水成效受關注 · 4 萬 則貼文",
+      "description": "內湖暴雨嚴重淹水\n立委沈伯洋深夜赴內湖勘災，暴雨使台北市府治水成效受關注",
+      "count": "4 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%85%A7%E6%B9%96%E6%B7%B9%E6%B0%B4&serp_type=trends&trend_fbid=1385613670128002"
+    },
+    {
+      "title": "中壢豪雨多處淹水\n中壢多處因豪雨淹水，但桃園市府未宣布停班停課 · 1 萬 則貼文",
+      "description": "中壢豪雨多處淹水\n中壢多處因豪雨淹水，但桃園市府未宣布停班停課",
       "count": "1 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%BE%B7%E5%9C%8B&serp_type=trends&trend_fbid=2245194456299896"
+      "link": "https://www.threads.com/search?q=%E4%B8%AD%E5%A3%A2&serp_type=trends&trend_fbid=1047818487593817"
     },
     {
-      "title": "高雄台南停班停課\n因西南風強降雨致災，高雄與台南市政府宣布26日停班停課 · 15 萬 則貼文",
-      "description": "高雄台南停班停課\n因西南風強降雨致災，高雄與台南市政府宣布26日停班停課",
-      "count": "15 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%B1%AA%E9%9B%A8%E5%81%9C%E8%AA%B2&serp_type=trends&trend_fbid=1366997308676200"
-    },
-    {
-      "title": "新竹暴雨淹水未停班課\n南部三縣市因豪雨停班課，新竹多處淹水卻照常上班上課 · 2 萬 則貼文",
-      "description": "新竹暴雨淹水未停班課\n南部三縣市因豪雨停班課，新竹多處淹水卻照常上班上課",
-      "count": "2 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%96%B0%E7%AB%B9&serp_type=trends&trend_fbid=1596452025372616"
-    },
-    {
-      "title": "高雄仁武豪雨成災\n受豪雨影響，高雄仁武多處路段淹水，市府宣布26日停班停課 · 1 千 則貼文",
-      "description": "高雄仁武豪雨成災\n受豪雨影響，高雄仁武多處路段淹水，市府宣布26日停班停課",
-      "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E4%BB%81%E6%AD%A6&serp_type=trends&trend_fbid=1171432131826738"
-    },
-    {
-      "title": "豪雨未停班課惹民怨\n桃園市長張善政因豪大雨未宣布停班課，遭網友質疑無法體察民情 · 36 萬 則貼文",
-      "description": "豪雨未停班課惹民怨\n桃園市長張善政因豪大雨未宣布停班課，遭網友質疑無法體察民情",
-      "count": "36 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%BC%B5%E5%96%84%E6%94%BF&serp_type=trends&trend_fbid=2000959967178320"
+      "title": "新竹強降雨釀多處淹水\n新竹26日因強降雨多處淹水交通受阻，民眾籲停班課 · 9 萬 則貼文",
+      "description": "新竹強降雨釀多處淹水\n新竹26日因強降雨多處淹水交通受阻，民眾籲停班課",
+      "count": "9 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%96%B0%E7%AB%B9%E6%B7%B9%E6%B0%B4&serp_type=trends&trend_fbid=2460335387726765"
+>>>>>>> Stashed changes
     }
   ]
 }
