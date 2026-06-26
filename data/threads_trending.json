@@ -1,39 +1,35 @@
 {
-<<<<<<< Updated upstream
-  "updated_at": "2026-06-26T11:05:18.348279+08:00",
-=======
-  "updated_at": "2026-06-26T11:05:17.828884+08:00",
->>>>>>> Stashed changes
+  "updated_at": "2026-06-26T12:05:18.559732+08:00",
   "topics": [
     {
-      "title": "蘋果Mac、iPad漲價\n蘋果無預警調漲售價，Mac Studio在台漲1萬7千元 · 13 萬 則貼文",
-      "description": "蘋果Mac、iPad漲價\n蘋果無預警調漲售價，Mac Studio在台漲1萬7千元",
-      "count": "13 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%98%8B%E6%9E%9C&serp_type=trends&trend_fbid=1342542478015331"
-    },
-    {
-      "title": "豪雨停班課南紡照常營業\n台南市因豪雨停班課，南紡等百貨仍要求員工冒險出勤 · 13 萬 則貼文",
-      "description": "豪雨停班課南紡照常營業\n台南市因豪雨停班課，南紡等百貨仍要求員工冒險出勤",
-      "count": "13 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8D%97%E7%B4%A1&serp_type=trends&trend_fbid=1514813417046323"
-    },
-    {
-      "title": "聯發科晶片全面漲價\n聯發科因應成本上漲全面調價並獲Google新訂單 · 23 萬 則貼文",
-      "description": "聯發科晶片全面漲價\n聯發科因應成本上漲全面調價並獲Google新訂單",
+      "title": "聯發科股價亮燈跌停\n台股盤中重挫，聯發科受賣壓衝擊跌停至3880元 · 23 萬 則貼文",
+      "description": "聯發科股價亮燈跌停\n台股盤中重挫，聯發科受賣壓衝擊跌停至3880元",
       "count": "23 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%81%AF%E7%99%BC%E7%A7%91&serp_type=trends&trend_fbid=2875948769430310"
+      "link": "https://www.threads.com/search?q=%E8%81%AF%E7%99%BC%E7%A7%91&serp_type=trends&trend_fbid=1364665802239072"
     },
     {
-      "title": "台南暴雨仁德災情嚴重\n仁德交流道因淹水雙向封閉，中山路與中正路水深及膝多車拋錨 · 3 千 則貼文",
-      "description": "台南暴雨仁德災情嚴重\n仁德交流道因淹水雙向封閉，中山路與中正路水深及膝多車拋錨",
+      "title": "湖口暴雨成災停班課\n新竹縣湖口鄉因暴雨引發淹水與土石流，已宣布停班停課 · 1 千 則貼文",
+      "description": "湖口暴雨成災停班課\n新竹縣湖口鄉因暴雨引發淹水與土石流，已宣布停班停課",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B9%96%E5%8F%A3&serp_type=trends&trend_fbid=1912431712799209"
+    },
+    {
+      "title": "仁德大淹水 民眾憶八八\n台南仁德、永康因特大豪雨嚴重淹水，災情慘重讓居民聯想起八八水災 · 3 千 則貼文",
+      "description": "仁德大淹水 民眾憶八八\n台南仁德、永康因特大豪雨嚴重淹水，災情慘重讓居民聯想起八八水災",
       "count": "3 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E4%BB%81%E5%BE%B7&serp_type=trends&trend_fbid=1022576423505814"
+      "link": "https://www.threads.com/search?q=%E4%BB%81%E5%BE%B7&serp_type=trends&trend_fbid=1746457576531436"
     },
     {
-      "title": "大阪暴雨成災 交通大亂\n大阪暴雨造成多處淹水與道路塌陷，JR西日本等多條電車路線停駛 · 7 萬 則貼文",
-      "description": "大阪暴雨成災 交通大亂\n大阪暴雨造成多處淹水與道路塌陷，JR西日本等多條電車路線停駛",
+      "title": "大阪京都暴雨引發淹水\n寢屋川及鴨川發布第四級警報，大阪府發布避難指示 · 7 萬 則貼文",
+      "description": "大阪京都暴雨引發淹水\n寢屋川及鴨川發布第四級警報，大阪府發布避難指示",
       "count": "7 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%A4%A7%E9%98%AA&serp_type=trends&trend_fbid=994337019871686"
+      "link": "https://www.threads.com/search?q=%E5%A4%A7%E9%98%AA&serp_type=trends&trend_fbid=1008625951762253"
+    },
+    {
+      "title": "華通股價持續下跌\n低軌衛星概念股華通股價下跌，投資人憂心資產縮水 · 28 萬 則貼文",
+      "description": "華通股價持續下跌\n低軌衛星概念股華通股價下跌，投資人憂心資產縮水",
+      "count": "28 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%8F%AF%E9%80%9A&serp_type=trends&trend_fbid=2825621851154983"
     }
   ]
 }
