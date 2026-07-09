@@ -1,39 +1,35 @@
 {
-<<<<<<< Updated upstream
-  "updated_at": "2026-07-09T07:05:22.421949+08:00",
-=======
-  "updated_at": "2026-07-09T07:05:20.625162+08:00",
->>>>>>> Stashed changes
+  "updated_at": "2026-07-09T08:05:19.154265+08:00",
   "topics": [
     {
-      "title": "巴威颱風逼近台灣\n預計週五晚間觸陸的龐大環流，將在週六對北台灣造成最劇烈影響，民眾正積極防颱並關注停班停課消息 · 13 萬 則貼文",
-      "description": "巴威颱風逼近台灣\n預計週五晚間觸陸的龐大環流，將在週六對北台灣造成最劇烈影響，民眾正積極防颱並關注停班停課消息",
-      "count": "13 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%B7%B4%E5%A8%81%E9%A2%B1%E9%A2%A8&serp_type=trends&trend_fbid=844782618713940"
+      "title": "蔣萬安防災撂重話\n臺北市長蔣萬安於防災會議要求各單位提前提報需求，其言論被指語氣過重、展現官威 · 2 萬 則貼文",
+      "description": "蔣萬安防災撂重話\n臺北市長蔣萬安於防災會議要求各單位提前提報需求，其言論被指語氣過重、展現官威",
+      "count": "2 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=1659206638480693"
+    },
+    {
+      "title": "高中新生報到前焦慮失眠\n新生關注重點為攜帶畢業證書正本，以及報到當日的穿著與文件 · 4 萬 則貼文",
+      "description": "高中新生報到前焦慮失眠\n新生關注重點為攜帶畢業證書正本，以及報到當日的穿著與文件",
+      "count": "4 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%96%B0%E7%94%9F%E5%A0%B1%E5%88%B0&serp_type=trends&trend_fbid=1643811156714575"
+    },
+    {
+      "title": "女網友稱交往18任嫁備胎\n一名女網友發文稱交往18任後嫁給備胎，遭質疑其感情觀與動機 · 3 千 則貼文",
+      "description": "女網友稱交往18任嫁備胎\n一名女網友發文稱交往18任後嫁給備胎，遭質疑其感情觀與動機",
+      "count": "3 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%82%99%E8%83%8E&serp_type=trends&trend_fbid=1542769424025217"
+    },
+    {
+      "title": "巴威颱風逼近台灣\n巴威颱風環流龐大，預計週五觸陸，北部與東部首當其衝 · 22 萬 則貼文",
+      "description": "巴威颱風逼近台灣\n巴威颱風環流龐大，預計週五觸陸，北部與東部首當其衝",
+      "count": "22 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%B7%B4%E5%A8%81%E9%A2%B1%E9%A2%A8&serp_type=trends&trend_fbid=1718403499362376"
     },
     {
       "title": "小珉遭控辱罵前女友\n網路主播小珉被控辱罵前女友，尋求復合後又被指使用交友軟體 · 74 萬 則貼文",
       "description": "小珉遭控辱罵前女友\n網路主播小珉被控辱罵前女友，尋求復合後又被指使用交友軟體",
       "count": "74 萬 則貼文",
       "link": "https://www.threads.com/search?q=%E5%B0%8F%E7%8F%89&serp_type=trends&trend_fbid=1427200042571939"
-    },
-    {
-      "title": "《母胎單身2》開播\nNetflix戀愛實境秀《母胎單身2》找來從未戀愛過的男女，觀察他們尋找愛情的過程 · 865 萬 則貼文",
-      "description": "《母胎單身2》開播\nNetflix戀愛實境秀《母胎單身2》找來從未戀愛過的男女，觀察他們尋找愛情的過程",
-      "count": "865 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%AF%8D%E8%83%8E%E5%96%AE%E8%BA%AB2&serp_type=trends&trend_fbid=1052519247381344"
-    },
-    {
-      "title": "Jerry指控Hook自導自演\n網友Jerry指控Hook英航糾紛自導自演，Hook獲退款後提告 · 1 萬 則貼文",
-      "description": "Jerry指控Hook自導自演\n網友Jerry指控Hook英航糾紛自導自演，Hook獲退款後提告",
-      "count": "1 萬 則貼文",
-      "link": "https://www.threads.com/search?q=Jerry&serp_type=trends&trend_fbid=1694372179009247"
-    },
-    {
-      "title": "7-ELEVEN鮮食含致癌物\n因代工廠使用問題油品，7-ELEVEN逾80款鮮食受影響下架 · 6 萬 則貼文",
-      "description": "7-ELEVEN鮮食含致癌物\n因代工廠使用問題油品，7-ELEVEN逾80款鮮食受影響下架",
-      "count": "6 萬 則貼文",
-      "link": "https://www.threads.com/search?q=7-ELEVEN&serp_type=trends&trend_fbid=1728853904921925"
     }
   ]
 }
