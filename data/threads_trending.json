@@ -1,39 +1,35 @@
 {
-<<<<<<< Updated upstream
-  "updated_at": "2026-07-10T09:05:16.526261+08:00",
-=======
-  "updated_at": "2026-07-10T09:05:15.776187+08:00",
->>>>>>> Stashed changes
+  "updated_at": "2026-07-10T10:05:15.192355+08:00",
   "topics": [
     {
-      "title": "合照曝光橙橙高中\nYouTuber橙橙就讀高中因合照曝光，其父親發文籲請外界勿透露學校資訊 · 8 千 則貼文",
-      "description": "合照曝光橙橙高中\nYouTuber橙橙就讀高中因合照曝光，其父親發文籲請外界勿透露學校資訊",
-      "count": "8 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%A9%99%E6%A9%99&serp_type=trends&trend_fbid=2067870514119189"
-    },
-    {
-      "title": "巴威颱風來襲全聯湧搶購潮\n因巴威颱風多縣市停班課，全聯湧現搶購人潮，貨架商品被掃空、員工難應付 · 38 萬 則貼文",
-      "description": "巴威颱風來襲全聯湧搶購潮\n因巴威颱風多縣市停班課，全聯湧現搶購人潮，貨架商品被掃空、員工難應付",
-      "count": "38 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%85%A8%E8%81%AF&serp_type=trends&trend_fbid=1907570983257480"
-    },
-    {
-      "title": "法國晉級四強\n法國隊在世界盃八強賽憑藉姆巴佩與登貝萊在下半場接連進球，以2比0擊敗摩洛哥成功晉級四強，準決賽將對決西班牙與比利時的勝方 · 1 萬 則貼文",
-      "description": "法國晉級四強\n法國隊在世界盃八強賽憑藉姆巴佩與登貝萊在下半場接連進球，以2比0擊敗摩洛哥成功晉級四強，準決賽將對決西班牙與比利時的勝方",
-      "count": "1 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B3%95%E5%9C%8B%E9%9A%8A&serp_type=trends&trend_fbid=2081189209099691"
-    },
-    {
-      "title": "五月天演唱會延期\n因應巴威颱風停班停課，五月天大巨蛋演唱會原定10日場次延至13日，11日場次改至12日中午 · 2 萬 則貼文",
-      "description": "五月天演唱會延期\n因應巴威颱風停班停課，五月天大巨蛋演唱會原定10日場次延至13日，11日場次改至12日中午",
-      "count": "2 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E4%BA%94%E6%9C%88%E5%A4%A9&serp_type=trends&trend_fbid=27377865998564956"
-    },
-    {
-      "title": "巴威颱風來襲10縣市停班課\n巴威颱風襲台，10縣市停班課，多家百貨影城亦宣布停業 · 15 萬 則貼文",
-      "description": "巴威颱風來襲10縣市停班課\n巴威颱風襲台，10縣市停班課，多家百貨影城亦宣布停業",
+      "title": "北市颱風假上午放晴\n巴威颱風來襲北市停班課，上午晴朗使市長蔣萬安的決策受矚目 · 15 萬 則貼文",
+      "description": "北市颱風假上午放晴\n巴威颱風來襲北市停班課，上午晴朗使市長蔣萬安的決策受矚目",
       "count": "15 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%A2%B1%E9%A2%A8%E5%81%87&serp_type=trends&trend_fbid=1630075018648042"
+      "link": "https://www.threads.com/search?q=%E9%A2%B1%E9%A2%A8%E5%81%87&serp_type=trends&trend_fbid=990052397269822"
+    },
+    {
+      "title": "紐約超夢團體戰提前開打\n《Pokémon GO》紐約活動推出專屬背景，玩家聚焦超夢團體戰的盾數與能量設定 · 46 萬 則貼文",
+      "description": "紐約超夢團體戰提前開打\n《Pokémon GO》紐約活動推出專屬背景，玩家聚焦超夢團體戰的盾數與能量設定",
+      "count": "46 萬 則貼文",
+      "link": "https://www.threads.com/search?q=Pok%C3%A9mon%20GO&serp_type=trends&trend_fbid=1553911853066251"
+    },
+    {
+      "title": "中和環球颱風天照開\n巴威颱風來襲北北基桃停班課，中和環球仍縮時營業，員工通勤安全引發擔憂 · 175 萬 則貼文",
+      "description": "中和環球颱風天照開\n巴威颱風來襲北北基桃停班課，中和環球仍縮時營業，員工通勤安全引發擔憂",
+      "count": "175 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E4%B8%AD%E5%92%8C%E7%92%B0%E7%90%83&serp_type=trends&trend_fbid=1729317104766094"
+    },
+    {
+      "title": "南港LaLaport照常營業\n台北市因巴威颱風停班停課，南港LaLaport照常營業且於當天早上才宣布營運資訊 · 1 千 則貼文",
+      "description": "南港LaLaport照常營業\n台北市因巴威颱風停班停課，南港LaLaport照常營業且於當天早上才宣布營運資訊",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=LaLaport&serp_type=trends&trend_fbid=1731332828195012"
+    },
+    {
+      "title": "創作者稱夫備胎遭批\n網路創作者稱夫為備胎，遭指為衝流量、行銷產品而不尊重伴侶 · 5 千 則貼文",
+      "description": "創作者稱夫備胎遭批\n網路創作者稱夫為備胎，遭指為衝流量、行銷產品而不尊重伴侶",
+      "count": "5 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%82%99%E8%83%8E&serp_type=trends&trend_fbid=1573032697691332"
     }
   ]
 }
