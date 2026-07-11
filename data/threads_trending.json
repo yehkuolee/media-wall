@@ -1,11 +1,18 @@
 {
-  "updated_at": "2026-07-11T07:05:20.452580+08:00",
+<<<<<<< Updated upstream
+  "updated_at": "2026-07-11T08:05:19.721590+08:00",
   "topics": [
     {
-      "title": "巴威颱風過境全台\n中度颱風巴威暴風圈籠罩全台，7月11日各地出現強風豪雨，北台灣已陸續傳出路樹倒塌與停電災情 · 63 萬 則貼文",
-      "description": "巴威颱風過境全台\n中度颱風巴威暴風圈籠罩全台，7月11日各地出現強風豪雨，北台灣已陸續傳出路樹倒塌與停電災情",
-      "count": "63 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%B7%B4%E5%A8%81%E9%A2%B1%E9%A2%A8&serp_type=trends&trend_fbid=2482767995537195"
+      "title": "英格蘭世界盃八強對決挪威\n英格蘭將於12日對決世界盃黑馬挪威，後者首度闖進八強 · 43 萬 則貼文",
+      "description": "英格蘭世界盃八強對決挪威\n英格蘭將於12日對決世界盃黑馬挪威，後者首度闖進八強",
+      "count": "43 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E4%B8%96%E7%95%8C%E7%9B%83&serp_type=trends&trend_fbid=1509424630927719"
+    },
+    {
+      "title": "巴威颱風襲台\n中度颱風巴威暴風圈達380公里，桃園以北防12級強陣風，桃機11日航班已全數取消 · 54 萬 則貼文",
+      "description": "巴威颱風襲台\n中度颱風巴威暴風圈達380公里，桃園以北防12級強陣風，桃機11日航班已全數取消",
+      "count": "54 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%B7%B4%E5%A8%81%E9%A2%B1%E9%A2%A8&serp_type=trends&trend_fbid=1043886181479027"
     },
     {
       "title": "比利時遭逆轉淘汰\n比利時因主力門將庫爾圖瓦傷退，在世界盃八強賽遭西班牙逆轉淘汰 · 1 萬 則貼文",
@@ -14,22 +21,43 @@
       "link": "https://www.threads.com/search?q=%E6%AF%94%E5%88%A9%E6%99%82&serp_type=trends&trend_fbid=1771161457454201"
     },
     {
-      "title": "西班牙2比1勝比利時\n西班牙2:1勝比利時晉級，但也吞下本屆賽事首顆失球 · 1 萬 則貼文",
+      "title": "西班牙2比1勝比利時\n西班牙2:1勝比利時晉級，但也吞下本屆賽事首顆失球 · 2 萬 則貼文",
       "description": "西班牙2比1勝比利時\n西班牙2:1勝比利時晉級，但也吞下本屆賽事首顆失球",
-      "count": "1 萬 則貼文",
+      "count": "2 萬 則貼文",
       "link": "https://www.threads.com/search?q=%E8%A5%BF%E7%8F%AD%E7%89%99&serp_type=trends&trend_fbid=1528780315605719"
+=======
+  "updated_at": "2026-07-10T12:05:19.147141+08:00",
+  "topics": [
+    {
+      "title": "大江颱風天照常營業\n巴威颱風來襲桃園多家百貨停業，大江購物中心照常營業遭員工指罔顧安全 · 1 千 則貼文",
+      "description": "大江颱風天照常營業\n巴威颱風來襲桃園多家百貨停業，大江購物中心照常營業遭員工指罔顧安全",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%A4%A7%E6%B1%9F&serp_type=trends&trend_fbid=1551744109773264"
     },
     {
-      "title": "脆友圈關係圖洗版\n免費工具Threads Circle依公開回覆數據，為用戶生成呈現互動頻率的同心圓關係圖 · 61 萬 則貼文",
-      "description": "脆友圈關係圖洗版\n免費工具Threads Circle依公開回覆數據，為用戶生成呈現互動頻率的同心圓關係圖",
-      "count": "61 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%84%86%E5%8F%8B%E5%9C%88&serp_type=trends&trend_fbid=1036202222287837"
+      "title": "法國隊晉級四強\n在本屆足球八強賽中，法國隊以2比0擊敗摩洛哥隊，前鋒姆巴佩等球員憑藉出色表現率隊挺進四強 · 3 萬 則貼文",
+      "description": "法國隊晉級四強\n在本屆足球八強賽中，法國隊以2比0擊敗摩洛哥隊，前鋒姆巴佩等球員憑藉出色表現率隊挺進四強",
+      "count": "3 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B3%95%E5%9C%8B%E9%9A%8A&serp_type=trends&trend_fbid=1339174791055756"
     },
     {
-      "title": "HAHABABY被指抄襲日牌\n二伯品牌設計疑抄SOU・SOU，日方關注四年後她開直播回應 · 75 萬 則貼文",
-      "description": "HAHABABY被指抄襲日牌\n二伯品牌設計疑抄SOU・SOU，日方關注四年後她開直播回應",
-      "count": "75 萬 則貼文",
-      "link": "https://www.threads.com/search?q=HAHABABY&serp_type=trends&trend_fbid=3071569983045667"
+      "title": "星巴克買一送一遇颱風假\n因應巴威颱風，北部多縣市停班課，民眾關心星巴克優惠活動是否照常舉行 · 40 萬 則貼文",
+      "description": "星巴克買一送一遇颱風假\n因應巴威颱風，北部多縣市停班課，民眾關心星巴克優惠活動是否照常舉行",
+      "count": "40 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%98%9F%E5%B7%B4%E5%85%8B&serp_type=trends&trend_fbid=1415826837054410"
+    },
+    {
+      "title": "母胎單身2首播\n韓國戀綜《母胎單身戀愛大作戰2》釋出前四集，展現男女嘉賓互動並由徐仁國進行點評 · 870 萬 則貼文",
+      "description": "母胎單身2首播\n韓國戀綜《母胎單身戀愛大作戰2》釋出前四集，展現男女嘉賓互動並由徐仁國進行點評",
+      "count": "870 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%AF%8D%E8%83%8E%E5%96%AE%E8%BA%AB2&serp_type=trends&trend_fbid=1431737952338525"
+    },
+    {
+      "title": "NMIXX高雄演唱會遇颱風\n強颱巴威來襲影響NMIXX高雄演唱會，部分粉絲班機已取消 · 8 千 則貼文",
+      "description": "NMIXX高雄演唱會遇颱風\n強颱巴威來襲影響NMIXX高雄演唱會，部分粉絲班機已取消",
+      "count": "8 千 則貼文",
+      "link": "https://www.threads.com/search?q=NMIXX&serp_type=trends&trend_fbid=1654859978955719"
+>>>>>>> Stashed changes
     }
   ]
 }
