@@ -1,35 +1,69 @@
 {
-  "updated_at": "2026-07-11T13:05:14.946346+08:00",
+<<<<<<< Updated upstream
+  "updated_at": "2026-07-14T05:06:04.236798+08:00",
   "topics": [
     {
-      "title": "颱風致台日停電\n颱風導致台日多地停電且全台逾2萬戶受影響，台電目前正全力搶修中 · 1 萬 則貼文",
-      "description": "颱風致台日停電\n颱風導致台日多地停電且全台逾2萬戶受影響，台電目前正全力搶修中",
-      "count": "1 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%81%9C%E9%9B%BB&serp_type=trends&trend_fbid=1551545049815469"
+      "title": "7-ELEVEN劣油案退款\n7-ELEVEN劣油案啟動退款，可透過發票載具 App 查詢，款項將匯入 OPENPOINT 零錢包 · 10 萬 則貼文",
+      "description": "7-ELEVEN劣油案退款\n7-ELEVEN劣油案啟動退款，可透過發票載具 App 查詢，款項將匯入 OPENPOINT 零錢包",
+      "count": "10 萬 則貼文",
+      "link": "https://www.threads.com/search?q=7-ELEVEN%E9%80%80%E6%AC%BE&serp_type=trends&trend_fbid=1056174743428918"
     },
     {
-      "title": "巴威颱風襲台，兩萬戶停電\n暴風圈於7月11日觸陸，巴威颱風帶來強風豪雨並造成全台逾2.3萬戶停電與淹水災情 · 1 萬 則貼文",
-      "description": "巴威颱風襲台，兩萬戶停電\n暴風圈於7月11日觸陸，巴威颱風帶來強風豪雨並造成全台逾2.3萬戶停電與淹水災情",
-      "count": "1 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%B7%B4%E5%A8%81%E9%A2%B1%E9%A2%A8&serp_type=trends&trend_fbid=2459964464499324"
+      "title": "銀色情人節掀自嘲放閃潮\n單身者幽默自嘲早點睡覺度過銀色情人節，情侶則分享贈送銀飾與遊戲角色等放閃方式 · 6 千 則貼文",
+      "description": "銀色情人節掀自嘲放閃潮\n單身者幽默自嘲早點睡覺度過銀色情人節，情侶則分享贈送銀飾與遊戲角色等放閃方式",
+      "count": "6 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%8A%80%E8%89%B2%E6%83%85%E4%BA%BA%E7%AF%80&serp_type=trends&trend_fbid=1536670741238837"
     },
     {
-      "title": "颱風天柴犬堅持出門\n巴威颱風期間，因柴犬堅持外出大小便，飼主被迫冒著風雨遛狗 · 7 千 則貼文",
-      "description": "颱風天柴犬堅持出門\n巴威颱風期間，因柴犬堅持外出大小便，飼主被迫冒著風雨遛狗",
-      "count": "7 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%9F%B4%E7%8A%AC&serp_type=trends&trend_fbid=1351709117124010"
+      "title": "川普言論衝擊全球股市\n川普對荷姆茲海峽的言論造成韓國KOSPI指數重挫並觸發熔斷 · 33 萬 則貼文",
+      "description": "川普言論衝擊全球股市\n川普對荷姆茲海峽的言論造成韓國KOSPI指數重挫並觸發熔斷",
+      "count": "33 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%85%A8%E7%90%83%E8%82%A1%E5%B8%82&serp_type=trends&trend_fbid=2001663593791010"
     },
     {
-      "title": "好市多照常營業\n巴威颱風襲台導致多縣市停班停課，在各大百貨公司紛紛暫停營業之際，美式賣場好市多維持營運，吸引大批民眾在開店前排隊搶購防颱物資 · 3 萬 則貼文",
-      "description": "好市多照常營業\n巴威颱風襲台導致多縣市停班停課，在各大百貨公司紛紛暫停營業之際，美式賣場好市多維持營運，吸引大批民眾在開店前排隊搶購防颱物資",
+      "title": "中聯致癌油品7-ELEVEN退款\n因中聯問題油品，7-ELEVEN將退款至OPENPOINT錢包，民眾可用發票載具查詢 · 84 萬 則貼文",
+      "description": "中聯致癌油品7-ELEVEN退款\n因中聯問題油品，7-ELEVEN將退款至OPENPOINT錢包，民眾可用發票載具查詢",
+      "count": "84 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E4%B8%AD%E8%81%AF%E6%B2%B9%E5%93%81&serp_type=trends&trend_fbid=1289231746619125"
+    },
+    {
+      "title": "民眾為受虐犬旺旺登廣告\n廣東4名男童虐殺犬隻，民眾集資於紐約、香港等地刊登廣告，呼籲中國設立動保法 · 16 萬 則貼文",
+      "description": "民眾為受虐犬旺旺登廣告\n廣東4名男童虐殺犬隻，民眾集資於紐約、香港等地刊登廣告，呼籲中國設立動保法",
+      "count": "16 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%99%90%E7%8B%97&serp_type=trends&trend_fbid=1723849691998770"
+=======
+  "updated_at": "2026-07-10T12:05:19.147141+08:00",
+  "topics": [
+    {
+      "title": "大江颱風天照常營業\n巴威颱風來襲桃園多家百貨停業，大江購物中心照常營業遭員工指罔顧安全 · 1 千 則貼文",
+      "description": "大江颱風天照常營業\n巴威颱風來襲桃園多家百貨停業，大江購物中心照常營業遭員工指罔顧安全",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%A4%A7%E6%B1%9F&serp_type=trends&trend_fbid=1551744109773264"
+    },
+    {
+      "title": "法國隊晉級四強\n在本屆足球八強賽中，法國隊以2比0擊敗摩洛哥隊，前鋒姆巴佩等球員憑藉出色表現率隊挺進四強 · 3 萬 則貼文",
+      "description": "法國隊晉級四強\n在本屆足球八強賽中，法國隊以2比0擊敗摩洛哥隊，前鋒姆巴佩等球員憑藉出色表現率隊挺進四強",
       "count": "3 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%A5%BD%E5%B8%82%E5%A4%9A&serp_type=trends&trend_fbid=1029477639593251"
+      "link": "https://www.threads.com/search?q=%E6%B3%95%E5%9C%8B%E9%9A%8A&serp_type=trends&trend_fbid=1339174791055756"
     },
     {
-      "title": "竹北因巴威颱風停班停課\n受巴威颱風影響，竹北宣布停班停課，遠東百貨等多間商家亦暫停營業 · 7 千 則貼文",
-      "description": "竹北因巴威颱風停班停課\n受巴威颱風影響，竹北宣布停班停課，遠東百貨等多間商家亦暫停營業",
-      "count": "7 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%AB%B9%E5%8C%97&serp_type=trends&trend_fbid=1815530619412731"
+      "title": "星巴克買一送一遇颱風假\n因應巴威颱風，北部多縣市停班課，民眾關心星巴克優惠活動是否照常舉行 · 40 萬 則貼文",
+      "description": "星巴克買一送一遇颱風假\n因應巴威颱風，北部多縣市停班課，民眾關心星巴克優惠活動是否照常舉行",
+      "count": "40 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%98%9F%E5%B7%B4%E5%85%8B&serp_type=trends&trend_fbid=1415826837054410"
+    },
+    {
+      "title": "母胎單身2首播\n韓國戀綜《母胎單身戀愛大作戰2》釋出前四集，展現男女嘉賓互動並由徐仁國進行點評 · 870 萬 則貼文",
+      "description": "母胎單身2首播\n韓國戀綜《母胎單身戀愛大作戰2》釋出前四集，展現男女嘉賓互動並由徐仁國進行點評",
+      "count": "870 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%AF%8D%E8%83%8E%E5%96%AE%E8%BA%AB2&serp_type=trends&trend_fbid=1431737952338525"
+    },
+    {
+      "title": "NMIXX高雄演唱會遇颱風\n強颱巴威來襲影響NMIXX高雄演唱會，部分粉絲班機已取消 · 8 千 則貼文",
+      "description": "NMIXX高雄演唱會遇颱風\n強颱巴威來襲影響NMIXX高雄演唱會，部分粉絲班機已取消",
+      "count": "8 千 則貼文",
+      "link": "https://www.threads.com/search?q=NMIXX&serp_type=trends&trend_fbid=1654859978955719"
+>>>>>>> Stashed changes
     }
   ]
 }
