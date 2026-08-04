@@ -1,57 +1,53 @@
 {
-<<<<<<< Updated upstream
-  "updated_at": "2026-08-04T08:05:17.485588+08:00",
-=======
-  "updated_at": "2026-08-04T08:05:15.851905+08:00",
->>>>>>> Stashed changes
+  "updated_at": "2026-08-04T09:05:21.686342+08:00",
   "topics": [
     {
-      "title": "白海豚環流擴大不排除發海警\n白海豚颱風持續西移且環流擴大，週五起影響台灣中北部，氣象署不排除發布海上警報 · 1 萬 則貼文",
-      "description": "白海豚環流擴大不排除發海警\n白海豚颱風持續西移且環流擴大，週五起影響台灣中北部，氣象署不排除發布海上警報",
+      "title": "AAA頒獎典禮高雄登場\n亞洲明星盛典12月進駐高雄世運，由張員瑛、池昌旭與成韓彬主持，TXT及RIIZE等團體確認出席 · 10 萬 則貼文",
+      "description": "AAA頒獎典禮高雄登場\n亞洲明星盛典12月進駐高雄世運，由張員瑛、池昌旭與成韓彬主持，TXT及RIIZE等團體確認出席",
+      "count": "10 萬 則貼文",
+      "link": "https://www.threads.com/search?q=AAA&serp_type=trends&trend_fbid=1410419504236478"
+    },
+    {
+      "title": "猛健樂減重成效與副作用\n使用者回報施打猛健樂後體重下降顯著，但部分案例出現嚴重嘔吐並送醫治療 · 10 萬 則貼文",
+      "description": "猛健樂減重成效與副作用\n使用者回報施打猛健樂後體重下降顯著，但部分案例出現嚴重嘔吐並送醫治療",
+      "count": "10 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%8C%9B%E5%81%A5%E6%A8%82&serp_type=trends&trend_fbid=943856882055910"
+    },
+    {
+      "title": "57歲女為穿搭槓網友\n一名57歲女性因黑絲襪配白鞋穿搭，深夜親自回應網友 · 20 萬 則貼文",
+      "description": "57歲女為穿搭槓網友\n一名57歲女性因黑絲襪配白鞋穿搭，深夜親自回應網友",
+      "count": "20 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%98%BF%E5%A7%A8%E7%A9%BF%E6%90%AD&serp_type=trends&trend_fbid=1451426913489558"
+    },
+    {
+      "title": "台指期夜盤重挫千點\n外資空單達9萬口，融資增逾80億衝擊市場 · 22 萬 則貼文",
+      "description": "台指期夜盤重挫千點\n外資空單達9萬口，融資增逾80億衝擊市場",
+      "count": "22 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4&serp_type=trends&trend_fbid=1392831186248088"
+    },
+    {
+      "title": "抹茶不雅影片流傳\n演算法推薦抹茶濾鏡及不雅影片，用戶稱內容噁心 · 1 萬 則貼文",
+      "description": "抹茶不雅影片流傳\n演算法推薦抹茶濾鏡及不雅影片，用戶稱內容噁心",
       "count": "1 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%99%BD%E6%B5%B7%E8%B1%9A&serp_type=trends&trend_fbid=3098313480508342"
+      "link": "https://www.threads.com/search?q=%E6%8A%B9%E8%8C%B6&serp_type=trends&trend_fbid=1045098518250952"
+    },
+    {
+      "title": "EZ WAY收費機制遭質疑\nEZ WAY收費機制遭立委質疑，但支持者認為能簡化報關、提升效率 · 1 萬 則貼文",
+      "description": "EZ WAY收費機制遭質疑\nEZ WAY收費機制遭立委質疑，但支持者認為能簡化報關、提升效率",
+      "count": "1 萬 則貼文",
+      "link": "https://www.threads.com/search?q=EZ%20WAY&serp_type=trends&trend_fbid=2026453507989979"
+    },
+    {
+      "title": "白海豚颱風逼近台灣\n白海豚颱風環流週五起影響北台灣，不排除發布海上警報 · 1 萬 則貼文",
+      "description": "白海豚颱風逼近台灣\n白海豚颱風環流週五起影響北台灣，不排除發布海上警報",
+      "count": "1 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%99%BD%E6%B5%B7%E8%B1%9A%E9%A2%B1%E9%A2%A8&serp_type=trends&trend_fbid=2164099034530187"
     },
     {
       "title": "小羊卡牌社涉詐檢警列重大刑案\n台北地檢署針對小羊卡牌社無預警停業分案偵辦，鄭姓負責人失聯且涉嫌詐騙金額達數億元 · 5 千 則貼文",
       "description": "小羊卡牌社涉詐檢警列重大刑案\n台北地檢署針對小羊卡牌社無預警停業分案偵辦，鄭姓負責人失聯且涉嫌詐騙金額達數億元",
       "count": "5 千 則貼文",
       "link": "https://www.threads.com/search?q=%E5%B0%8F%E7%BE%8A%E5%8D%A1%E7%89%8C%E7%A4%BE&serp_type=trends&trend_fbid=1333267801868668"
-    },
-    {
-      "title": "抓出軌證據大賽\n網友分享伴侶不忠經歷，包含搜證方式與報復手段 · 1 萬 則貼文",
-      "description": "抓出軌證據大賽\n網友分享伴侶不忠經歷，包含搜證方式與報復手段",
-      "count": "1 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%87%BA%E8%BB%8C&serp_type=trends&trend_fbid=1505260771627009"
-    },
-    {
-      "title": "林岱樺質疑EZ WAY收費機制\n民眾因個資疑慮發起不按確認鍵行動，林岱樺要求財政部清查App營運商收費情形 · 1 萬 則貼文",
-      "description": "林岱樺質疑EZ WAY收費機制\n民眾因個資疑慮發起不按確認鍵行動，林岱樺要求財政部清查App營運商收費情形",
-      "count": "1 萬 則貼文",
-      "link": "https://www.threads.com/search?q=EZ%20WAY&serp_type=trends&trend_fbid=1558348498474290"
-    },
-    {
-      "title": "王世堅任沈伯洋競總副主委\n沈伯洋獲民進黨力挺參選台北市長，王世堅出任競總副主委並與高嘉瑜合體掃街 · 16 萬 則貼文",
-      "description": "王世堅任沈伯洋競總副主委\n沈伯洋獲民進黨力挺參選台北市長，王世堅出任競總副主委並與高嘉瑜合體掃街",
-      "count": "16 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8C%97%E5%B8%82%E9%95%B7%E9%81%B8%E6%88%B0&serp_type=trends&trend_fbid=1434183545203240"
-    },
-    {
-      "title": "亞莉安娜9月巡演後暫別舞台\n亞莉安娜因長期面臨外貌與健康壓力，宣布於9月巡演結束後暫停演藝活動 · 18 萬 則貼文",
-      "description": "亞莉安娜9月巡演後暫別舞台\n亞莉安娜因長期面臨外貌與健康壓力，宣布於9月巡演結束後暫停演藝活動",
-      "count": "18 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E4%BA%9E%E8%8E%89%E5%AE%89%E5%A8%9C&serp_type=trends&trend_fbid=1381352993940612"
-    },
-    {
-      "title": "抹茶影片引發檢舉潮\n因影片內容為男性生殖器呈綠色，網友紛紛呼籲檢舉 · 1 萬 則貼文",
-      "description": "抹茶影片引發檢舉潮\n因影片內容為男性生殖器呈綠色，網友紛紛呼籲檢舉",
-      "count": "1 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%8A%B9%E8%8C%B6&serp_type=trends&trend_fbid=1036902585706727"
-    },
-    {
-      "title": "賣貨便八月推限量免運券\n7-ELEVEN賣貨便八月推出夏日慶典活動並發放限量免運券，但因數量有限導致使用者難以領取 · 42 萬 則貼文",
-      "description": "賣貨便八月推限量免運券\n7-ELEVEN賣貨便八月推出夏日慶典活動並發放限量免運券，但因數量有限導致使用者難以領取",
-      "count": "42 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%B3%A3%E8%B2%A8%E4%BE%BF&serp_type=trends&trend_fbid=3347356955452293"
     }
   ]
 }
