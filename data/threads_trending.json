@@ -1,53 +1,105 @@
 {
-  "updated_at": "2026-08-10T13:05:12.612562+08:00",
+<<<<<<< Updated upstream
+  "updated_at": "2026-08-10T14:05:12.835825+08:00",
   "topics": [
     {
-      "title": "台積電擬購友達廠房激勵台股\n台股衝破45,000點，台積電擬購友達廠房傳聞激勵面板雙虎漲停，電子權值股同步走揚 · 52 萬 則貼文",
-      "description": "台積電擬購友達廠房激勵台股\n台股衝破45,000點，台積電擬購友達廠房傳聞激勵面板雙虎漲停，電子權值股同步走揚",
-      "count": "52 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E7%A9%8D%E9%9B%BB&serp_type=trends&trend_fbid=1822652628718926"
+      "title": "方志友楊銘威宣布離婚\n經過深思熟慮與溝通，藝人方志友與楊銘威決定結束11年婚姻，未來將共同守護孩子成長 · 26 萬 則貼文",
+      "description": "方志友楊銘威宣布離婚\n經過深思熟慮與溝通，藝人方志友與楊銘威決定結束11年婚姻，未來將共同守護孩子成長",
+      "count": "26 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%96%B9%E5%BF%97%E5%8F%8B%20%E6%A5%8A%E9%8A%98%E5%A8%81&serp_type=trends&trend_fbid=1777141830288472"
     },
     {
-      "title": "慈濟採購疫苗遭詐10億\n慈濟購BNT疫苗遭詐10億元，檢方起訴後陳時中蔣萬安再掀攻防 · 7 萬 則貼文",
-      "description": "慈濟採購疫苗遭詐10億\n慈濟購BNT疫苗遭詐10億元，檢方起訴後陳時中蔣萬安再掀攻防",
+      "title": "NCT WISH台北見面會搶票\nNCT WISH見面會門票開賣，粉絲反映搶票難並提醒詐騙 · 2 千 則貼文",
+      "description": "NCT WISH台北見面會搶票\nNCT WISH見面會門票開賣，粉絲反映搶票難並提醒詐騙",
+      "count": "2 千 則貼文",
+      "link": "https://www.threads.com/search?q=NCT%20WISH&serp_type=trends&trend_fbid=1528034618584530"
+    },
+    {
+      "title": "南港文博會平日湧現排隊人潮\n展場一樓與四樓進場人流不斷，泰國品牌huhu及凱西等熱門攤位吸引大量民眾排隊 · 75 萬 則貼文",
+      "description": "南港文博會平日湧現排隊人潮\n展場一樓與四樓進場人流不斷，泰國品牌huhu及凱西等熱門攤位吸引大量民眾排隊",
+      "count": "75 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%96%87%E5%8D%9A%E6%9C%83&serp_type=trends&trend_fbid=1713629659912159"
+    },
+    {
+      "title": "BIGBANG出道20週年慶典\nYG娛樂於首爾舉辦20週年特展，同步推出《新款皇冠手燈》等紀念週邊 · 1 萬 則貼文",
+      "description": "BIGBANG出道20週年慶典\nYG娛樂於首爾舉辦20週年特展，同步推出《新款皇冠手燈》等紀念週邊",
+      "count": "1 萬 則貼文",
+      "link": "https://www.threads.com/search?q=BIGBANG&serp_type=trends&trend_fbid=38770457585886640"
+    },
+    {
+      "title": "高鐵列車行動電源冒煙\n台灣高鐵630次列車乘客行動電源冒煙，人員與乘客合力以礦泉水降溫，狀況順利解除 · 1 萬 則貼文",
+      "description": "高鐵列車行動電源冒煙\n台灣高鐵630次列車乘客行動電源冒煙，人員與乘客合力以礦泉水降溫，狀況順利解除",
+      "count": "1 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E7%81%A3%E9%AB%98%E9%90%B5&serp_type=trends&trend_fbid=1606686624496406"
+    },
+    {
+      "title": "彩演曝母親病重\n李彩演稱母親病況「非常非常重」，粉絲為其家人集氣加油 · 9 萬 則貼文",
+      "description": "彩演曝母親病重\n李彩演稱母親病況「非常非常重」，粉絲為其家人集氣加油",
+      "count": "9 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%BD%A9%E9%A0%98&serp_type=trends&trend_fbid=2842081372845844"
+    },
+    {
+      "title": "《愛你致死不渝》隱喻與細節分析\nInde Navarrette參演《愛你致死不渝》，片中貓咪隱喻成分析重點 · 218 萬 則貼文",
+      "description": "《愛你致死不渝》隱喻與細節分析\nInde Navarrette參演《愛你致死不渝》，片中貓咪隱喻成分析重點",
+      "count": "218 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E3%80%8A%E6%84%9B%E4%BD%A0%E8%87%B4%E6%AD%BB%E4%B8%8D%E6%B8%9D%E3%80%8B&serp_type=trends&trend_fbid=1749711652820128"
+    },
+    {
+      "title": "屏東托嬰中心男嬰疑窒息亡\n屏東天使心托嬰中心男嬰疑窒息亡，全案已進入司法程序 · 8 萬 則貼文",
+      "description": "屏東托嬰中心男嬰疑窒息亡\n屏東天使心托嬰中心男嬰疑窒息亡，全案已進入司法程序",
+      "count": "8 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%B1%8F%E6%9D%B1%E6%89%98%E5%AC%B0%E4%B8%AD%E5%BF%83&serp_type=trends&trend_fbid=2096450987749949"
+=======
+  "updated_at": "2026-08-10T09:05:12.550335+08:00",
+  "topics": [
+    {
+      "title": "處置股新制天數減半上路\n證交所縮短處置天數並加快撮合頻率，華星光受惠新制提前解禁成為當沖熱點 · 27 萬 則貼文",
+      "description": "處置股新制天數減半上路\n證交所縮短處置天數並加快撮合頻率，華星光受惠新制提前解禁成為當沖熱點",
+      "count": "27 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%99%95%E7%BD%AE%E8%82%A1%E6%96%B0%E5%88%B6&serp_type=trends&trend_fbid=1732397391298824"
+    },
+    {
+      "title": "白海豚颱風登陸中國\n白海豚登陸中國釀災，上海千航班取消並引西南風襲台 · 28 萬 則貼文",
+      "description": "白海豚颱風登陸中國\n白海豚登陸中國釀災，上海千航班取消並引西南風襲台",
+      "count": "28 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%99%BD%E6%B5%B7%E8%B1%9A&serp_type=trends&trend_fbid=1033722029562770"
+    },
+    {
+      "title": "文博會爆人潮現亂象\n2026文博會吸引人潮搶購，部分攤位因動線混亂及服務態度遭民眾反映 · 73 萬 則貼文",
+      "description": "文博會爆人潮現亂象\n2026文博會吸引人潮搶購，部分攤位因動線混亂及服務態度遭民眾反映",
+      "count": "73 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%96%87%E5%8D%9A%E6%9C%83&serp_type=trends&trend_fbid=928446686642019"
+    },
+    {
+      "title": "安琪首辦一日店長活動\nUni-Girls成員安琪於台南烘焙坊擔任一日店長，吸引大批粉絲到場互動簽名 · 16 萬 則貼文",
+      "description": "安琪首辦一日店長活動\nUni-Girls成員安琪於台南烘焙坊擔任一日店長，吸引大批粉絲到場互動簽名",
+      "count": "16 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%AE%89%E7%90%AA&serp_type=trends&trend_fbid=1085741313986015"
+    },
+    {
+      "title": "《荒糖戀愛》獲讚亦有批評\n丁海寅新劇節奏獲讚，惟劇情與鏡頭運用遭指有瑕疵 · 58 萬 則貼文",
+      "description": "《荒糖戀愛》獲讚亦有批評\n丁海寅新劇節奏獲讚，惟劇情與鏡頭運用遭指有瑕疵",
+      "count": "58 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%8D%92%E7%B3%96%E6%88%80%E6%84%9B&serp_type=trends&trend_fbid=1569672067938886"
+    },
+    {
+      "title": "BP首爾見面會限40人\n韓國女團BLACKPINK慶祝出道十週年，成員Jisoo針對首爾見面會人數限制公開致歉 · 6 萬 則貼文",
+      "description": "BP首爾見面會限40人\n韓國女團BLACKPINK慶祝出道十週年，成員Jisoo針對首爾見面會人數限制公開致歉",
+      "count": "6 萬 則貼文",
+      "link": "https://www.threads.com/search?q=BLACKPINK&serp_type=trends&trend_fbid=4430457830616209"
+    },
+    {
+      "title": "李彩領為母病重淚灑見面會\nITZY成員李彩領因母親病重在見面會落淚，姐姐李彩演與粉絲發文為其集氣祝福 · 9 萬 則貼文",
+      "description": "李彩領為母病重淚灑見面會\nITZY成員李彩領因母親病重在見面會落淚，姐姐李彩演與粉絲發文為其集氣祝福",
+      "count": "9 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%9D%8E%E5%BD%A9%E9%A0%98&serp_type=trends&trend_fbid=1045075201227914"
+    },
+    {
+      "title": "慈濟購疫苗遭詐10億\n慈濟基金會2021年採購BNT疫苗，遭律師與掮客詐騙約10.6億元 · 7 萬 則貼文",
+      "description": "慈濟購疫苗遭詐10億\n慈濟基金會2021年採購BNT疫苗，遭律師與掮客詐騙約10.6億元",
       "count": "7 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%85%88%E6%BF%9F&serp_type=trends&trend_fbid=1526295825343999"
-    },
-    {
-      "title": "aespa大巨蛋開唱\naespa演唱會門票售罄粉絲不滿高價黃牛票 · 2 萬 則貼文",
-      "description": "aespa大巨蛋開唱\naespa演唱會門票售罄粉絲不滿高價黃牛票",
-      "count": "2 萬 則貼文",
-      "link": "https://www.threads.com/search?q=aespa&serp_type=trends&trend_fbid=1039757638978993"
-    },
-    {
-      "title": "《不良一族尋愛記2》沖繩開拍\n日本戀愛實境秀第二季移師沖繩，曾為不良少年的男女成員在此尋求真愛並重啟人生 · 622 萬 則貼文",
-      "description": "《不良一族尋愛記2》沖繩開拍\n日本戀愛實境秀第二季移師沖繩，曾為不良少年的男女成員在此尋求真愛並重啟人生",
-      "count": "622 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E4%B8%8D%E8%89%AF%E4%B8%80%E6%97%8F&serp_type=trends&trend_fbid=1013132005055460"
-    },
-    {
-      "title": "TWICE定延離開JYP\n定延宣布不與JYP續約，未來將以演員身分活動並優先參與TWICE團體行程 · 13 萬 則貼文",
-      "description": "TWICE定延離開JYP\n定延宣布不與JYP續約，未來將以演員身分活動並優先參與TWICE團體行程",
-      "count": "13 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%AE%9A%E5%BB%B6&serp_type=trends&trend_fbid=1467376112102163"
-    },
-    {
-      "title": "變種吉娃娃文博會熱銷\n變種吉娃娃文博會周邊商品引發搶購，粉絲排隊領號碼牌 · 8 萬 則貼文",
-      "description": "變種吉娃娃文博會熱銷\n變種吉娃娃文博會周邊商品引發搶購，粉絲排隊領號碼牌",
-      "count": "8 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%AE%8A%E7%A8%AE%E5%90%89%E5%A8%83%E5%A8%83&serp_type=trends&trend_fbid=1024962793509682"
-    },
-    {
-      "title": "屏東托嬰中心男嬰窒息亡\n天使心托嬰中心一名三個月大男嬰疑遭棉被悶死，全案已進入司法調查 · 8 萬 則貼文",
-      "description": "屏東托嬰中心男嬰窒息亡\n天使心托嬰中心一名三個月大男嬰疑遭棉被悶死，全案已進入司法調查",
-      "count": "8 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%89%98%E5%AC%B0%E4%B8%AD%E5%BF%83&serp_type=trends&trend_fbid=1716244122799155"
-    },
-    {
-      "title": "NCT WISH林口辦見面會\n9月5日見面會，業者提供中南部粉絲接駁專車 · 2 萬 則貼文",
-      "description": "NCT WISH林口辦見面會\n9月5日見面會，業者提供中南部粉絲接駁專車",
-      "count": "2 萬 則貼文",
-      "link": "https://www.threads.com/search?q=NCT%20WISH&serp_type=trends&trend_fbid=1035947876001890"
+      "link": "https://www.threads.com/search?q=%E6%85%88%E6%BF%9F&serp_type=trends&trend_fbid=2359417544972846"
+>>>>>>> Stashed changes
     }
   ]
 }
