@@ -1,57 +1,53 @@
 {
-<<<<<<< Updated upstream
-  "updated_at": "2026-08-14T12:05:18.429024+08:00",
-=======
-  "updated_at": "2026-08-14T12:05:18.048585+08:00",
->>>>>>> Stashed changes
+  "updated_at": "2026-08-14T13:05:15.413852+08:00",
   "topics": [
     {
-      "title": "豪雨致成田機場交通受阻\n千葉縣破紀錄豪雨導致聯外鐵路停駛，大量旅客受困機場逾12小時 · 2 萬 則貼文",
-      "description": "豪雨致成田機場交通受阻\n千葉縣破紀錄豪雨導致聯外鐵路停駛，大量旅客受困機場逾12小時",
+      "title": "消防特考過關率創4年新高\n115年警察消防等特考第一試放榜，消防員過關率56.97%創四年新高 · 1 千 則貼文",
+      "description": "消防特考過關率創4年新高\n115年警察消防等特考第一試放榜，消防員過關率56.97%創四年新高",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%94%BE%E6%A6%9C&serp_type=trends&trend_fbid=4202254586586083"
+    },
+    {
+      "title": "李珠珢現身美容展掀起排隊熱潮\n韓籍啦啦隊員李珠珢受邀擔任isLeaf一日店長，吸引大批粉絲湧入台北美容展 · 8 萬 則貼文",
+      "description": "李珠珢現身美容展掀起排隊熱潮\n韓籍啦啦隊員李珠珢受邀擔任isLeaf一日店長，吸引大批粉絲湧入台北美容展",
+      "count": "8 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%BE%8E%E5%AE%B9%E5%B1%95&serp_type=trends&trend_fbid=1769440081175151"
+    },
+    {
+      "title": "貓咪大戰爭貓咪季抽卡重置\n手遊《貓咪大戰爭》貓咪季祭出9%超激稀有率，並於今日上午11點重置抽卡半價優惠 · 105 萬 則貼文",
+      "description": "貓咪大戰爭貓咪季抽卡重置\n手遊《貓咪大戰爭》貓咪季祭出9%超激稀有率，並於今日上午11點重置抽卡半價優惠",
+      "count": "105 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%B2%93%E5%92%AA%E5%A4%A7%E6%88%B0%E7%88%AD&serp_type=trends&trend_fbid=1376793213845131"
+    },
+    {
+      "title": "BABYMONSTER快閃店惹怨\nBABYMONSTER快閃店部分商品僅預購，引發排隊粉絲不滿 · 5 千 則貼文",
+      "description": "BABYMONSTER快閃店惹怨\nBABYMONSTER快閃店部分商品僅預購，引發排隊粉絲不滿",
+      "count": "5 千 則貼文",
+      "link": "https://www.threads.com/search?q=BABYMONSTER&serp_type=trends&trend_fbid=1757711422215996"
+    },
+    {
+      "title": "BIGBANG首爾20週年特展\n韓國團體BIGBANG在首爾舉辦《COSMOS》特展，現場發售紀念商品並出現排隊人潮 · 2 萬 則貼文",
+      "description": "BIGBANG首爾20週年特展\n韓國團體BIGBANG在首爾舉辦《COSMOS》特展，現場發售紀念商品並出現排隊人潮",
       "count": "2 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%88%90%E7%94%B0%E6%A9%9F%E5%A0%B4&serp_type=trends&trend_fbid=1593937479049196"
+      "link": "https://www.threads.com/search?q=BIGBANG&serp_type=trends&trend_fbid=2121239072071287"
     },
     {
-      "title": "中華電信全網障礙搶修中\n許多用戶回報Line無法連線，iPhone 17受影響，中華電信證實為全網障礙 · 1 千 則貼文",
-      "description": "中華電信全網障礙搶修中\n許多用戶回報Line無法連線，iPhone 17受影響，中華電信證實為全網障礙",
-      "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E4%B8%AD%E8%8F%AF%E9%9B%BB%E4%BF%A1&serp_type=trends&trend_fbid=2145895919671586"
+      "title": "千葉豪雨成田機場6千人受困\n日本千葉縣遭破紀錄豪雨襲擊，成田機場交通癱瘓導致約6600名旅客受困 · 5 萬 則貼文",
+      "description": "千葉豪雨成田機場6千人受困\n日本千葉縣遭破紀錄豪雨襲擊，成田機場交通癱瘓導致約6600名旅客受困",
+      "count": "5 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8D%83%E8%91%89%E8%B1%AA%E9%9B%A8&serp_type=trends&trend_fbid=2293181388096022"
     },
     {
-      "title": "115年警察特考今日放榜\n考選部公布警察及國安移民特考榜單，上午11時20分起開放網路查榜 · 25 萬 則貼文",
-      "description": "115年警察特考今日放榜\n考選部公布警察及國安移民特考榜單，上午11時20分起開放網路查榜",
-      "count": "25 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%AD%A6%E5%AF%9F%E7%89%B9%E8%80%83&serp_type=trends&trend_fbid=1777145330130724"
+      "title": "欣興股價千元關卡遇阻\n台股ABF載板族群表現兩極，南電強勢漲停而欣興則在千元關卡震盪，市場期盼下週解除處置後補漲 · 4 萬 則貼文",
+      "description": "欣興股價千元關卡遇阻\n台股ABF載板族群表現兩極，南電強勢漲停而欣興則在千元關卡震盪，市場期盼下週解除處置後補漲",
+      "count": "4 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%AC%A3%E8%88%88&serp_type=trends&trend_fbid=988548810806643"
     },
     {
-      "title": "陳幸妤證實與趙建銘離婚\n陳幸妤指控贈與前夫的診所房產，貸款仍登記在她名下 · 14 萬 則貼文",
-      "description": "陳幸妤證實與趙建銘離婚\n陳幸妤指控贈與前夫的診所房產，貸款仍登記在她名下",
-      "count": "14 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%99%B3%E5%B9%B8%E5%A6%A4&serp_type=trends&trend_fbid=1838705410846427"
-    },
-    {
-      "title": "634億無人機預算過關\n立法院通過總額634億元無人機預算，國民黨團表決前轉向支持 · 14 萬 則貼文",
-      "description": "634億無人機預算過關\n立法院通過總額634億元無人機預算，國民黨團表決前轉向支持",
-      "count": "14 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%84%A1%E4%BA%BA%E6%A9%9F&serp_type=trends&trend_fbid=886459704241928"
-    },
-    {
-      "title": "女巫店情慾菜名挑戰禁忌\n台北公館女巫店以情慾詞彙命名菜單，承襲1990年代女性主義思潮並挑戰社會禁忌 · 31 萬 則貼文",
-      "description": "女巫店情慾菜名挑戰禁忌\n台北公館女巫店以情慾詞彙命名菜單，承襲1990年代女性主義思潮並挑戰社會禁忌",
-      "count": "31 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%A5%B3%E5%B7%AB%E5%BA%97&serp_type=trends&trend_fbid=1117262917537164"
-    },
-    {
-      "title": "INFINITE見面會台北開賣\n韓國男團INFINITE台北見面會已開放購票，最高票價為新台幣6,100元 · 1 萬 則貼文",
-      "description": "INFINITE見面會台北開賣\n韓國男團INFINITE台北見面會已開放購票，最高票價為新台幣6,100元",
-      "count": "1 萬 則貼文",
-      "link": "https://www.threads.com/search?q=INFINITE&serp_type=trends&trend_fbid=1037321325672510"
-    },
-    {
-      "title": "Latency三成員退團\n樂團Latency三成員解約，僅剩熙淵一人留任 · 1 千 則貼文",
-      "description": "Latency三成員退團\n樂團Latency三成員解約，僅剩熙淵一人留任",
-      "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=Latency&serp_type=trends&trend_fbid=2123054328608488"
+      "title": "戰鬥陀螺X台灣採抽籤制販售\n代理商Funbox以LINE抽籤販售戰鬥陀螺X，玩家難以原價購入，與日本現貨供應形成對比 · 2 萬 則貼文",
+      "description": "戰鬥陀螺X台灣採抽籤制販售\n代理商Funbox以LINE抽籤販售戰鬥陀螺X，玩家難以原價購入，與日本現貨供應形成對比",
+      "count": "2 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%88%B0%E9%AC%A5%E9%99%80%E8%9E%BAX&serp_type=trends&trend_fbid=1401871335175042"
     }
   ]
 }
