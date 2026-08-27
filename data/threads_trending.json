@@ -1,57 +1,53 @@
 {
-<<<<<<< Updated upstream
-  "updated_at": "2026-08-28T06:05:18.866673+08:00",
-=======
-  "updated_at": "2026-08-28T06:05:17.954272+08:00",
->>>>>>> Stashed changes
+  "updated_at": "2026-08-28T07:05:41.495092+08:00",
   "topics": [
     {
-      "title": "圖奇全球大當機\n8月28日圖奇全球故障，用戶無法開啟網頁、直播卡頓且追隨名單消失 · 22 萬 則貼文",
-      "description": "圖奇全球大當機\n8月28日圖奇全球故障，用戶無法開啟網頁、直播卡頓且追隨名單消失",
+      "title": "台積電發放分紅揭露薪資\n台積電碩士新人年薪約220萬，部分工程師可達600萬 · 22 萬 則貼文",
+      "description": "台積電發放分紅揭露薪資\n台積電碩士新人年薪約220萬，部分工程師可達600萬",
       "count": "22 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%9C%96%E5%A5%87&serp_type=trends&trend_fbid=1112154204820180"
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E7%A9%8D%E9%9B%BB&serp_type=trends&trend_fbid=1018441207677079"
     },
     {
-      "title": "尼泊爾拉蘇瓦縣山洪土石流\n尼泊爾拉蘇瓦縣山洪土石流造成數百人失蹤，搜救因道路中斷受阻 · 23 萬 則貼文",
-      "description": "尼泊爾拉蘇瓦縣山洪土石流\n尼泊爾拉蘇瓦縣山洪土石流造成數百人失蹤，搜救因道路中斷受阻",
+      "title": "尼泊爾北部山洪土石流釀數百死\n尼泊爾北部山洪土石流釀數百死失蹤，軍方與救援隊持續搜救 · 23 萬 則貼文",
+      "description": "尼泊爾北部山洪土石流釀數百死\n尼泊爾北部山洪土石流釀數百死失蹤，軍方與救援隊持續搜救",
       "count": "23 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%B0%BC%E6%B3%8A%E7%88%BE&serp_type=trends&trend_fbid=1550485146828236"
+      "link": "https://www.threads.com/search?q=%E5%B0%BC%E6%B3%8A%E7%88%BE&serp_type=trends&trend_fbid=2209991709572401"
     },
     {
-      "title": "Netflix首播《GTA 6》預覽\nRockstar Games展示《GTA 6》實機畫面，大量人潮造成Netflix服務不穩 · 8 千 則貼文",
-      "description": "Netflix首播《GTA 6》預覽\nRockstar Games展示《GTA 6》實機畫面，大量人潮造成Netflix服務不穩",
-      "count": "8 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E3%80%8AGTA%206%E3%80%8B&serp_type=trends&trend_fbid=921110460545684"
-    },
-    {
-      "title": "《粽邪4：坤蒂拉娜》正式上映\n恐怖國片《粽邪4》首度赴印尼取景，觀眾對劇情與氛圍感受各異 · 364 萬 則貼文",
-      "description": "《粽邪4：坤蒂拉娜》正式上映\n恐怖國片《粽邪4》首度赴印尼取景，觀眾對劇情與氛圍感受各異",
+      "title": "《粽邪 4》上映後評價不佳\n台灣恐怖片《粽邪 4》上映後遭指劇情平淡，雖然陳雪甄演技獲讚，但驚嚇感被指不如《咒》 · 364 萬 則貼文",
+      "description": "《粽邪 4》上映後評價不佳\n台灣恐怖片《粽邪 4》上映後遭指劇情平淡，雖然陳雪甄演技獲讚，但驚嚇感被指不如《咒》",
       "count": "364 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E3%80%8A%E7%B2%BD%E9%82%AA4%E3%80%8B&serp_type=trends&trend_fbid=1546213113391953"
+      "link": "https://www.threads.com/search?q=%E3%80%8A%E7%B2%BD%E9%82%AA%204%E3%80%8B&serp_type=trends&trend_fbid=1702014810873452"
+    },
+    {
+      "title": "《GTA 6》實機畫面首播\nRockstar Games於Netflix公開26分鐘實機影片，並宣布11月19日發售 · 8 千 則貼文",
+      "description": "《GTA 6》實機畫面首播\nRockstar Games於Netflix公開26分鐘實機影片，並宣布11月19日發售",
+      "count": "8 千 則貼文",
+      "link": "https://www.threads.com/search?q=GTA%206&serp_type=trends&trend_fbid=1716682749448823"
+    },
+    {
+      "title": "Twitch發生全球大規模當機\nTwitch自27日起全球當機，影響直播，恰逢《俠盜獵車手6》預告釋出 · 1 萬 則貼文",
+      "description": "Twitch發生全球大規模當機\nTwitch自27日起全球當機，影響直播，恰逢《俠盜獵車手6》預告釋出",
+      "count": "1 萬 則貼文",
+      "link": "https://www.threads.com/search?q=Twitch&serp_type=trends&trend_fbid=1748787316166793"
+    },
+    {
+      "title": "陳綺貞版權官司獲判勝訴\n法院判決陳綺貞與鍾成虎經紀及授權關係不存在，鍾成虎須歸還分軌母帶 · 7 萬 則貼文",
+      "description": "陳綺貞版權官司獲判勝訴\n法院判決陳綺貞與鍾成虎經紀及授權關係不存在，鍾成虎須歸還分軌母帶",
+      "count": "7 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%99%B3%E7%B6%BA%E8%B2%9E&serp_type=trends&trend_fbid=1781914652932701"
+    },
+    {
+      "title": "濟州島失蹤女子身亡警遭羈押\n37歲女子Jang Miran失聯百日後確認身亡，承辦員警涉嫌謊稱平安結案遭羈押 · 4 萬 則貼文",
+      "description": "濟州島失蹤女子身亡警遭羈押\n37歲女子Jang Miran失聯百日後確認身亡，承辦員警涉嫌謊稱平安結案遭羈押",
+      "count": "4 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%BF%9F%E5%B7%9E%E5%B3%B6&serp_type=trends&trend_fbid=1820500675781872"
     },
     {
       "title": "《早春晴朗》Netflix奪冠\n井柏然與孫千主演，上演職場新人與毒舌上司的戀情 · 3 千 則貼文",
       "description": "《早春晴朗》Netflix奪冠\n井柏然與孫千主演，上演職場新人與毒舌上司的戀情",
       "count": "3 千 則貼文",
       "link": "https://www.threads.com/search?q=%E3%80%8A%E6%97%A9%E6%98%A5%E6%99%B4%E6%9C%97%E3%80%8B&serp_type=trends&trend_fbid=1385824990283287"
-    },
-    {
-      "title": "五熊潑油奈良國寶遭逮\n藝人五熊因涉嫌破壞奈良國寶，重返日本時在關西機場被捕 · 19 萬 則貼文",
-      "description": "五熊潑油奈良國寶遭逮\n藝人五熊因涉嫌破壞奈良國寶，重返日本時在關西機場被捕",
-      "count": "19 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E4%BA%94%E7%86%8A&serp_type=trends&trend_fbid=1399078685519370"
-    },
-    {
-      "title": "蔡阿嘎曾戲稱草間彌生抄襲\n草間彌生逝世，蔡阿嘎過往稱其抄襲、比倒讚的言行被重提 · 17 萬 則貼文",
-      "description": "蔡阿嘎曾戲稱草間彌生抄襲\n草間彌生逝世，蔡阿嘎過往稱其抄襲、比倒讚的言行被重提",
-      "count": "17 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%94%A1%E9%98%BF%E5%98%8E&serp_type=trends&trend_fbid=1603532531495773"
-    },
-    {
-      "title": "《狼者榮耀3》決賽首局開打\n《娛樂百分百》播出決賽首局 雨婷YC邱鋒澤展開狼人殺對決 · 5 萬 則貼文",
-      "description": "《狼者榮耀3》決賽首局開打\n《娛樂百分百》播出決賽首局 雨婷YC邱鋒澤展開狼人殺對決",
-      "count": "5 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%8B%BC%E8%80%85%E6%A6%AE%E8%80%80&serp_type=trends&trend_fbid=1405412948194860"
     }
   ]
 }
