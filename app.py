@@ -584,11 +584,6 @@ def main():
 
     # ── LEFT ──
     with left:
-        st.markdown('<div class="sec-title">🔍 Google 熱搜字</div>', unsafe_allow_html=True)
-        st.markdown(keyword_cloud_html(keywords), unsafe_allow_html=True)
-
-        st.markdown("<div style='margin:10px 0'></div>", unsafe_allow_html=True)
-
         st.markdown('<div class="sec-title">🧵 Threads 最新趨勢話題</div>', unsafe_allow_html=True)
         if threads_topics:
             for topic in threads_topics[:15]:
@@ -614,6 +609,11 @@ def main():
                     pass
         else:
             st.markdown('<div style="color:#aaa;padding:16px;text-align:center">Threads 資料尚未抓取</div>', unsafe_allow_html=True)
+
+        st.markdown("<div style='margin:10px 0'></div>", unsafe_allow_html=True)
+
+        st.markdown('<div class="sec-title">🔍 Google 熱搜字</div>', unsafe_allow_html=True)
+        st.markdown(keyword_cloud_html(keywords), unsafe_allow_html=True)
 
     # ── CENTER ──
     with center:
