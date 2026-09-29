@@ -591,7 +591,7 @@ def main():
 
         st.markdown('<div class="sec-title">🧵 Threads 最新趨勢話題</div>', unsafe_allow_html=True)
         if threads_topics:
-            for topic in threads_topics[:4]:
+            for topic in threads_topics[:15]:
                 t    = html_mod.escape(topic["title"])
                 u    = html_mod.escape(topic.get("link", "#"))
                 desc = html_mod.escape(topic.get("description", ""))

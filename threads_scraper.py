@@ -106,52 +106,29 @@ async def capture():
         # ── 抽取趨勢話題 ──
         topics = await page.evaluate(r"""
             () => {
+                // 「最新趨勢話題」每則都是 serp_type=trends 的連結，
+                // 內文兩行：標題 / 「描述 · X 則貼文」（部分話題沒有貼文數）
                 const results = [];
                 const seen = new Set();
                 const countRe = /[\d,.]+\s*[萬千百]?\s*則/;
 
-                const allEls = Array.from(document.querySelectorAll('*'));
-                const countEls = allEls.filter(el =>
-                    el.children.length === 0 &&
-                    countRe.test(el.innerText || '') &&
-                    (el.innerText || '').length < 30
-                );
-
-                for (const countEl of countEls) {
-                    let container = countEl;
-                    let link = null;
-                    for (let i = 0; i < 8; i++) {
-                        if (!container.parentElement) break;
-                        container = container.parentElement;
-                        const a = container.querySelector(
-                            'a[href*="serp_type"], a[href*="search?q"], a[href*="/search"]'
-                        );
-                        if (a) { link = a; break; }
-                    }
-                    if (!link) continue;
-
-                    const href = link.href;
-                    if (seen.has(href) || href.includes('/login')) continue;
-                    seen.add(href);
-
-                    const lines = container.innerText.trim()
-                        .split('\\n').map(l => l.trim()).filter(Boolean);
-                    if (!lines.length) continue;
+                for (const a of document.querySelectorAll('a[href*="serp_type=trends"]')) {
+                    const lines = (a.innerText || '').trim()
+                        .split('\n').map(l => l.trim()).filter(Boolean);
+                    if (!lines.length || seen.has(a.href)) continue;
+                    seen.add(a.href);
 
                     const title = lines[0];
-                    if (title.length < 2 || title.length > 80) continue;
-
-                    // 格式：「描述 · X 萬 則貼文」，用最後一個 · 切開
-                    const fullLine = lines.find(l => countRe.test(l)) || '';
-                    let desc = '', countLine = fullLine;
-                    if (fullLine.includes('·')) {
-                        const lastDot = fullLine.lastIndexOf('·');
-                        desc = fullLine.substring(0, lastDot).trim();
-                        countLine = fullLine.substring(lastDot + 1).trim();
+                    const second = lines.slice(1).join(' ');
+                    let desc = second, count = '';
+                    const lastDot = second.lastIndexOf('·');
+                    if (lastDot >= 0 && countRe.test(second.substring(lastDot + 1))) {
+                        desc = second.substring(0, lastDot).trim();
+                        count = second.substring(lastDot + 1).trim();
                     }
 
-                    results.push({ title, description: desc, count: countLine, link: href });
-                    if (results.length >= 8) break;
+                    results.push({ title, description: desc, count, link: a.href });
+                    if (results.length >= 15) break;
                 }
                 return results;
             }
