@@ -26,8 +26,12 @@ if [ -z "$PYTHON3" ]; then
     exit 1
 fi
 
+# 兩支爬蟲各自獨立，一支失敗不影響另一支推送
 echo "$(date '+%Y-%m-%d %H:%M:%S') 🚀 開始抓取 Threads 趨勢..."
-"$PYTHON3" threads_scraper.py
+"$PYTHON3" threads_scraper.py || echo "$(date '+%Y-%m-%d %H:%M:%S') ⚠️  Threads 抓取失敗" >&2
+
+echo "$(date '+%Y-%m-%d %H:%M:%S') 🚀 開始抓取 Google 熱搜..."
+"$PYTHON3" google_trends_scraper.py || echo "$(date '+%Y-%m-%d %H:%M:%S') ⚠️  Google 熱搜抓取失敗" >&2
 
 # 推回 GitHub
 git stash --quiet 2>/dev/null || true

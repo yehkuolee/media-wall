@@ -3,7 +3,7 @@ import streamlit as st
 import feedparser
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 import pytz
 import re
@@ -330,7 +330,18 @@ st.markdown("""
 
 @st.cache_data(ttl=300, show_spinner=False)
 def fetch_keywords() -> list[str]:
-    # 優先用 Google Trends RSS（公開，不需要登入）
+    # 優先讀本機排程爬的 Google Trends 網頁資料（與 trends.google.com.tw/trending 一致）
+    json_path = Path(__file__).parent / "data" / "google_trending.json"
+    try:
+        data = json.loads(json_path.read_text())
+        updated = datetime.fromisoformat(data["updated_at"])
+        if datetime.now(updated.tzinfo) - updated < timedelta(hours=3):
+            titles = [k["title"] for k in data.get("keywords", []) if k.get("title")]
+            if titles:
+                return titles[:25]
+    except Exception:
+        pass
+    # 備援：Google Trends RSS（公開，不需要登入）
     try:
         r = requests.get(
             "https://trends.google.com/trending/rss?geo=TW",
