@@ -1,0 +1,49 @@
+name: Google Trends Capture
+
+on:
+  # 每 15 分鐘爬 trends.google.com.tw/trending?geo=TW（GitHub 排程實際可能延遲數分鐘）
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: google-trends
+  cancel-in-progress: false
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python packages
+        run: pip install playwright pytz
+
+      - name: Install Playwright browser
+        run: playwright install --with-deps chromium
+
+      - name: Capture Google Trends
+        run: python google_trends_scraper.py
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/google_trending.json
+          git diff --staged --quiet && exit 0
+          git commit -m "chore: google trending $(TZ=Asia/Taipei date +'%Y-%m-%dT%H:%M')"
+          # 本機 Threads 排程也會推，衝突時重試
+          for i in 1 2 3; do
+            git pull --rebase && git push && exit 0
+            sleep 5
+          done
+          exit 1
