@@ -610,11 +610,6 @@ def main():
         else:
             st.markdown('<div style="color:#aaa;padding:16px;text-align:center">Threads 資料尚未抓取</div>', unsafe_allow_html=True)
 
-        st.markdown("<div style='margin:10px 0'></div>", unsafe_allow_html=True)
-
-        st.markdown('<div class="sec-title">🔍 Google 熱搜字</div>', unsafe_allow_html=True)
-        st.markdown(keyword_cloud_html(keywords), unsafe_allow_html=True)
-
     # ── CENTER ──
     with center:
         st.markdown('<div class="sec-title">📰 即時熱門新聞 Top 15（各媒體均攤）</div>', unsafe_allow_html=True)
@@ -643,6 +638,11 @@ def main():
 
     # ── RIGHT ──
     with right:
+        st.markdown('<div class="sec-title">🔍 Google 熱搜字</div>', unsafe_allow_html=True)
+        st.markdown(keyword_cloud_html(keywords), unsafe_allow_html=True)
+
+        st.markdown("<div style='margin:10px 0'></div>", unsafe_allow_html=True)
+
         st.markdown('<div class="sec-title">💬 PTT 八卦板 熱門</div>', unsafe_allow_html=True)
         if ptt_goss:
             for p in ptt_goss[:8]:
