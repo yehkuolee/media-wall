@@ -29,10 +29,7 @@ fi
 echo "$(date '+%Y-%m-%d %H:%M:%S') 🚀 開始抓取 Threads 趨勢..."
 "$PYTHON3" threads_scraper.py
 
-# 推回 GitHub（與 run_google.sh 共用鎖，避免同時操作 git）
-LOCK="/tmp/media-wall-git.lock"
-for _ in $(seq 1 60); do mkdir "$LOCK" 2>/dev/null && break; sleep 2; done
-trap 'rmdir "$LOCK" 2>/dev/null' EXIT
+# 推回 GitHub
 git stash --quiet 2>/dev/null || true
 git pull --rebase --quiet 2>&1 || true
 git stash pop --quiet 2>/dev/null || true
