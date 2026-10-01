@@ -47,3 +47,8 @@ jobs:
             sleep 5
           done
           exit 1
+
+      # 順便防 Streamlit Cloud 休眠（12 小時沒人看就睡），失敗不影響熱搜
+      - name: Keep Streamlit app awake
+        continue-on-error: true
+        run: python keepalive.py
