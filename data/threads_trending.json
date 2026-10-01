@@ -1,11 +1,53 @@
 {
-  "updated_at": "2026-10-01T08:05:19.936349+08:00",
+  "updated_at": "2026-10-01T09:05:16.440083+08:00",
   "topics": [
     {
-      "title": "《皮克敏》萬聖活動開跑",
-      "description": "萬聖節活動於《Pikmin Bloom》登場，可收集新飾品並推出新花卉「薊花」",
+      "title": "高雄捷運紅線異常延誤",
+      "description": "紅線列車異常降速，部分乘客於草衙至小港站間需換乘",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%AB%98%E9%9B%84%E6%8D%B7%E9%81%8B&serp_type=trends&trend_fbid=1539196314592838"
+    },
+    {
+      "title": "沈伯洋AI圖惹議 繪師應援",
+      "description": "台北市長參選人沈伯洋因AI主視覺致歉，意外吸引大批繪師創作同人圖應援",
+      "count": "6 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1606277897642588"
+    },
+    {
+      "title": "健康幣計畫正式上路",
+      "description": "滿18歲民眾完成疫苗接種與健檢等任務可累積健康幣，12月起可兌換商品",
+      "count": "529 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%81%A5%E5%BA%B7%E5%B9%A3&serp_type=trends&trend_fbid=1056192957237548"
+    },
+    {
+      "title": "謝和弦禁汪東城公開演唱",
+      "description": "謝和弦宣布不再授權《終極一班》歌詞，點名汪東城與TANK不得公開演唱",
+      "count": "191 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%AC%9D%E5%92%8C%E5%BC%A6&serp_type=trends&trend_fbid=1352206850073188"
+    },
+    {
+      "title": "台指期夜盤突破四萬八千點",
+      "description": "玻璃基板題材激勵面板股強勢漲停，美通膨降溫帶動台指期夜盤急拉",
+      "count": "879 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E6%8C%87%E6%9C%9F&serp_type=trends&trend_fbid=2360335778105967"
+    },
+    {
+      "title": "C羅宣布離開國家隊集訓營",
+      "description": "因與新帥意見不合，葡萄牙球星C羅在備戰丹麥前離開國家隊集訓營",
+      "count": "718 則貼文",
+      "link": "https://www.threads.com/search?q=C%E7%BE%85&serp_type=trends&trend_fbid=1086551957441121"
+    },
+    {
+      "title": "皮克敏手遊推出萬聖節活動",
+      "description": "手遊《皮克敏》更新介面與音樂，並推出彩繪玻璃皮克敏與限定服飾",
       "count": "3 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%9A%AE%E5%85%8B%E6%95%8F&serp_type=trends&trend_fbid=2574605053046523"
+      "link": "https://www.threads.com/search?q=%E7%9A%AE%E5%85%8B%E6%95%8F&serp_type=trends&trend_fbid=1088526593769154"
+    },
+    {
+      "title": "公費流感疫苗10月1日開打",
+      "description": "第一階段公費流感疫苗針對長者與孕婦等族群開打，接種可搭配健康幣計畫累積獎勵",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B5%81%E6%84%9F%E7%96%AB%E8%8B%97&serp_type=trends&trend_fbid=1652224006513204"
     },
     {
       "title": "錫蘭批星座無據點名唐綺陽",
@@ -20,12 +62,6 @@
       "link": "https://www.threads.com/search?q=%E7%BE%8E%E8%82%A1&serp_type=trends&trend_fbid=2407961986399323"
     },
     {
-      "title": "台指期夜盤衝上48,592點",
-      "description": "美國通膨降溫且經濟穩定刺激美股期指與台指期夜盤雙雙大漲",
-      "count": "834 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E6%8C%87%E6%9C%9F&serp_type=trends&trend_fbid=974971624886582"
-    },
-    {
       "title": "美光財報亮眼股價反跌",
       "description": "美光第四季營收與EPS優於預期，全年營收逾千億美元，但盤後股價衝高回落",
       "count": "1 千 則貼文",
@@ -34,14 +70,8 @@
     {
       "title": "庫洛白米遭控徘徊校園接觸學生",
       "description": "重機騎士庫洛白米遭指控在國高中校園附近徘徊並意圖接觸未成年學生",
-      "count": "10 則貼文",
+      "count": "11 則貼文",
       "link": "https://www.threads.com/search?q=%E5%BA%AB%E6%B4%9B%E7%99%BD%E7%B1%B3&serp_type=trends&trend_fbid=1583658949890197"
-    },
-    {
-      "title": "沈伯洋推臺北GTA遊戲",
-      "description": "沈伯洋為競選市長推活動與遊戲 競總10/4成立",
-      "count": "6 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1706608860419215"
     },
     {
       "title": "《無可替代》登串流收視冠軍",
@@ -52,44 +82,14 @@
     {
       "title": "薔薔表態傾向尋求代理孕母",
       "description": "藝人薔薔認為懷孕犧牲過大，開直播強調選擇合法代孕屬於個人自由",
-      "count": "1 千 則貼文",
+      "count": "2 千 則貼文",
       "link": "https://www.threads.com/search?q=%E8%96%94%E8%96%94&serp_type=trends&trend_fbid=1442110014510164"
     },
     {
       "title": "酪梨壽司經營模式轉變",
       "description": "親子網紅酪梨壽司減少商業合作與孩子露臉，其丈夫大白也分擔育兒家務",
-      "count": "89 則貼文",
+      "count": "97 則貼文",
       "link": "https://www.threads.com/search?q=%E9%85%AA%E6%A2%A8%E5%A3%BD%E5%8F%B8&serp_type=trends&trend_fbid=1053100427764611"
-    },
-    {
-      "title": "8591活動送200元蒸氣卡",
-      "description": "交易平台8591為DuYo舉辦活動並配合Steam特賣贈送200元蒸氣卡",
-      "count": "451 則貼文",
-      "link": "https://www.threads.com/search?q=8591&serp_type=trends&trend_fbid=1832862551404789"
-    },
-    {
-      "title": "陳念琴與曾頌恩挑戰閃身步",
-      "description": "源自安徽花鼓燈的閃身步獲體育界響應，拳擊手陳念琴與棒球員曾頌恩相繼仿跳",
-      "count": "7 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%96%83%E8%BA%AB%E6%AD%A5&serp_type=trends&trend_fbid=1411278467878000"
-    },
-    {
-      "title": "群創友達雙雙漲停",
-      "description": "群創以逾48萬張成交量奪冠，分析師杜金龍看好友達長線挑戰79.5元高點",
-      "count": "307 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%9D%A2%E6%9D%BF%E9%9B%99%E8%99%8E&serp_type=trends&trend_fbid=1629329815517924"
-    },
-    {
-      "title": "國道1號遊覽車起火",
-      "description": "國道1號新竹路段遊覽車起火，車上14名乘客提前疏散無人受傷",
-      "count": "972 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%81%8A%E8%A6%BD%E8%BB%8A&serp_type=trends&trend_fbid=28675608248745691"
-    },
-    {
-      "title": "楊勇緯亞運銅牌戰惜敗",
-      "description": "楊勇緯在名古屋亞運柔道銅牌戰，經黃金得分制後惜敗，與獎牌擦身而過",
-      "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%A5%8A%E5%8B%87%E7%B7%AF&serp_type=trends&trend_fbid=4464729213767501"
     }
   ]
 }
