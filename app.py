@@ -1,5 +1,6 @@
 import json
 import streamlit as st
+import streamlit.components.v1 as components
 import feedparser
 import requests
 from bs4 import BeautifulSoup
@@ -98,36 +99,6 @@ st.markdown("""
 }
 [data-testid="stHeader"] { background: transparent; }
 .block-container { padding: 0.6rem 1rem !important; max-width: 100% !important; }
-
-/* ── Masthead ── */
-.mw-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #ffffff;
-    border-top: 5px solid #121212;
-    border-bottom: 2px solid #121212;
-    border-left: none; border-right: none;
-    border-radius: 0;
-    padding: 14px 24px;
-    margin-bottom: 14px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.10), 0 1px 4px rgba(0,0,0,0.06);
-}
-.mw-title { font-family: Georgia, 'Times New Roman', serif; font-size: 1.6rem; font-weight: 700; color: #121212; letter-spacing: 2px; }
-.mw-subtitle { font-size: .63rem; color: #999; letter-spacing: 2px; text-transform: uppercase; margin-top: 3px; }
-.mw-live { display: flex; align-items: center; gap: 8px; }
-.live-dot {
-    width: 8px; height: 8px; background: #c41230;
-    border-radius: 50%;
-    animation: blink 1.6s ease-in-out infinite;
-}
-@keyframes blink {
-    0%,100% { opacity:1; }
-    50%      { opacity:.2; }
-}
-.live-text { color: #c41230; font-size: .72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
-.mw-time { color: #121212; font-size: 1.1rem; font-weight: 700; font-family: 'Courier New', monospace; text-align: right; }
-.mw-date { color: #999; font-size: .67rem; text-align: right; letter-spacing: 1px; }
 
 /* ── KPI card ── */
 .kpi-card {
@@ -552,13 +523,53 @@ def keyword_cloud_html(kws: list[str]) -> str:
     return out
 
 
+MASTHEAD_CSS = """
+.mw-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    border-top: 5px solid #121212;
+    border-bottom: 2px solid #121212;
+    border-left: none; border-right: none;
+    border-radius: 0;
+    padding: 14px 24px;
+    margin-bottom: 14px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10), 0 1px 4px rgba(0,0,0,0.06);
+}
+.mw-title { font-family: Georgia, 'Times New Roman', serif; font-size: 1.6rem; font-weight: 700; color: #121212; letter-spacing: 2px; }
+.mw-subtitle { font-size: .63rem; color: #999; letter-spacing: 2px; text-transform: uppercase; margin-top: 3px; }
+.mw-live { display: flex; align-items: center; gap: 8px; }
+.live-dot {
+    width: 8px; height: 8px; background: #c41230;
+    border-radius: 50%;
+    animation: blink 1.6s ease-in-out infinite;
+}
+@keyframes blink {
+    0%,100% { opacity:1; }
+    50%      { opacity:.2; }
+}
+.live-text { color: #c41230; font-size: .72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+.mw-time { color: #121212; font-size: 1.1rem; font-weight: 700; font-family: 'Courier New', monospace; text-align: right; }
+.mw-date { color: #999; font-size: .67rem; text-align: right; letter-spacing: 1px; }
+.mw-updated { color: #999; font-size: .67rem; text-align: right; letter-spacing: 1px; margin-top: 2px; }
+"""
+
+
 # ── Main ───────────────────────────────────────────────────────────
 
 def main():
     now = datetime.now(TW_TZ)
 
     # ── Header ──────────────────────────────────────────────────
-    st.markdown(f"""
+    # 用 components.html（iframe）渲染，時鐘才能用 JS 每秒跳動；st.markdown 不執行 script
+    components.html(f"""
+    <style>
+    html, body {{ margin: 0; padding: 0 1px; background: #f5f2ed;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Noto Sans TC", sans-serif; }}
+{MASTHEAD_CSS}
+    .mw-header {{ margin-bottom: 0; }}
+    </style>
     <div class="mw-header">
         <div>
             <div class="mw-title">現在紅什麼</div>
@@ -569,11 +580,27 @@ def main():
             <span class="live-text">LIVE 即時更新中</span>
         </div>
         <div>
-            <div class="mw-time">{now.strftime('%H:%M:%S')}</div>
-            <div class="mw-date">{now.strftime('%Y/%m/%d')} (週{WEEKDAY[now.weekday()]})</div>
+            <div class="mw-time" id="mw-clock">{now.strftime('%H:%M:%S')}</div>
+            <div class="mw-date" id="mw-date">{now.strftime('%Y/%m/%d')} (週{WEEKDAY[now.weekday()]})</div>
+            <div class="mw-updated">最後更新 {now.strftime('%H:%M:%S')}</div>
         </div>
     </div>
-    """, unsafe_allow_html=True)
+    <script>
+    const WD = "一二三四五六日";
+    function tick() {{
+        // 以台北時區取時間，不受觀看者電腦時區影響
+        const p = Object.fromEntries(new Intl.DateTimeFormat("en-CA", {{
+            timeZone: "Asia/Taipei", hourCycle: "h23", year: "numeric", month: "2-digit", day: "2-digit",
+            hour: "2-digit", minute: "2-digit", second: "2-digit", weekday: "short"
+        }}).formatToParts(new Date()).map(x => [x.type, x.value]));
+        const wd = WD["MonTueWedThuFriSatSun".indexOf(p.weekday) / 3];
+        document.getElementById("mw-clock").textContent = `${{p.hour}}:${{p.minute}}:${{p.second}}`;
+        document.getElementById("mw-date").textContent = `${{p.year}}/${{p.month}}/${{p.day}} (週${{wd}})`;
+    }}
+    tick();
+    setInterval(tick, 1000);
+    </script>
+    """, height=96)
 
     # ── Fetch all data ───────────────────────────────────────────
     with st.spinner("載入資料中..."):
