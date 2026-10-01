@@ -26,18 +26,28 @@ if [ -z "$PYTHON3" ]; then
     exit 1
 fi
 
+# 先同步遠端再抓，避免多台機器輪流推送時互相衝突
+git rebase --abort 2>/dev/null || true
+git pull --rebase --autostash --quiet 2>&1 || true
+
 echo "$(date '+%Y-%m-%d %H:%M:%S') 🚀 開始抓取 Threads 趨勢..."
 "$PYTHON3" threads_scraper.py
 
 # 推回 GitHub
-git stash --quiet 2>/dev/null || true
-git pull --rebase --quiet 2>&1 || true
-git stash pop --quiet 2>/dev/null || true
 git add data/
 if git diff --staged --quiet; then
     echo "$(date '+%Y-%m-%d %H:%M:%S') ℹ️  資料無變動，跳過 commit"
-else
-    git commit -m "chore: threads trending $(TZ=Asia/Taipei date +'%Y-%m-%dT%H:%M')"
-    git push
-    echo "$(date '+%Y-%m-%d %H:%M:%S') ✅ 已推送更新"
+    exit 0
 fi
+git commit --quiet -m "chore: threads trending $(TZ=Asia/Taipei date +'%Y-%m-%dT%H:%M')"
+# push 被拒（別台剛推過）就 rebase 重推；衝突時以本次抓到的資料為準（rebase 下 theirs = 本機 commit）
+for i in 1 2 3; do
+    if git push --quiet 2>&1; then
+        echo "$(date '+%Y-%m-%d %H:%M:%S') ✅ 已推送更新"
+        exit 0
+    fi
+    git pull --rebase --autostash -X theirs --quiet 2>&1 || git rebase --abort 2>/dev/null || true
+    sleep 5
+done
+echo "$(date '+%Y-%m-%d %H:%M:%S') ❌ 推送失敗 3 次" >&2
+exit 1
