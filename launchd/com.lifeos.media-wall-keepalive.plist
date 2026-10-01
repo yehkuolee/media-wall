@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- 舊 MacBook Pro 常開機：每 10 分鐘用瀏覽器造訪網站，防 Streamlit Cloud 休眠 -->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.lifeos.media-wall-keepalive</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>/Users/yeguoli/LifeOS/media-wall/keepalive.py</string>
+    </array>
+    <key>StartInterval</key>
+    <integer>600</integer>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/Users/yeguoli/Library/Logs/media-wall-keepalive.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/yeguoli/Library/Logs/media-wall-keepalive.err.log</string>
+</dict>
+</plist>
