@@ -599,6 +599,19 @@ def main():
     }}
     tick();
     setInterval(tick, 1000);
+
+    // 看門狗：每次刷新這個 iframe 都會重建，LOADED 跟著重設。
+    // 若超過 11 分鐘沒刷新（睡眠喚醒、背景分頁、連線斷掉導致 st_autorefresh 失效），整頁重載。
+    // iframe 沒有 allow-top-navigation，所以把 reload 腳本塞進父頁面執行。
+    const LOADED = Date.now();
+    setInterval(() => {{
+        if (Date.now() - LOADED < 11 * 60 * 1000) return;
+        try {{
+            const s = window.parent.document.createElement("script");
+            s.textContent = "window.location.reload()";
+            window.parent.document.head.appendChild(s);
+        }} catch (e) {{ window.parent.location.reload(); }}
+    }}, 30000);
     </script>
     """, height=96)
 
