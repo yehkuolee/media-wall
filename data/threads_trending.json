@@ -1,11 +1,65 @@
 {
-  "updated_at": "2026-10-01T17:05:16.260192+08:00",
+  "updated_at": "2026-10-01T18:05:14.471563+08:00",
   "topics": [
+    {
+      "title": "台灣開發者打造《臺北GTA》",
+      "description": "《臺北GTA》結合AI技術與在地元素 玩家不需下載即可免費遊玩",
+      "count": "150 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%87%BA%E5%8C%97GTA&serp_type=trends&trend_fbid=1089425273972533"
+    },
+    {
+      "title": "《挖掘者》涉辱華遭禁映",
+      "description": "湯姆克魯斯主演新片《挖掘者》，因含辱華內容在中國、香港與澳門遭禁映",
+      "count": "308 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%8C%96%E6%8E%98%E8%80%85&serp_type=trends&trend_fbid=1744880790146632"
+    },
+    {
+      "title": "沈伯洋啟動台北大洋流計畫",
+      "description": "台北市長參選人沈伯洋發起大洋流活動，發放虛擬船員證並串聯車隊掃街開講",
+      "count": "5 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E5%8C%97%E5%A4%A7%E6%B4%8B%E6%B5%81&serp_type=trends&trend_fbid=1732604057810380"
+    },
+    {
+      "title": "Pikmin Bloom萬聖節活動",
+      "description": "手機遊戲《Pikmin Bloom》展開萬聖節活動，推出全新彩繪玻璃飾品與新花朵薊花",
+      "count": "173 則貼文",
+      "link": "https://www.threads.com/search?q=Pikmin%20Bloom&serp_type=trends&trend_fbid=2057605124942234"
+    },
+    {
+      "title": "愛爾達頻道退出Hami運動館",
+      "description": "愛爾達宣布11月起調整與Hami Video合作，8個體育頻道將退出運動館方案",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%84%9B%E7%88%BE%E9%81%94&serp_type=trends&trend_fbid=1115154327548901"
+    },
+    {
+      "title": "50嵐店員主動做漸層飲",
+      "description": "顧客驚喜50嵐店員主動製作漸層飲料，並分享其每日點單",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=50%E5%B5%90&serp_type=trends&trend_fbid=2179814736244853"
+    },
+    {
+      "title": "薔薔稱考慮在合法國家代孕",
+      "description": "為維持長期保養的身體，薔薔表示未來考慮在合法國家尋求代孕",
+      "count": "2 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%96%94%E8%96%94&serp_type=trends&trend_fbid=1764671684796587"
+    },
     {
       "title": "政府健康幣計畫正式上路",
       "description": "民眾登入健保快易通APP並完成健檢或疫苗接種任務，可累積點數兌換商品",
-      "count": "881 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%81%A5%E5%BA%B7%E5%B9%A3&serp_type=trends&trend_fbid=2493132834505181"
+      "count": "867 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%81%A5%E5%BA%B7%E5%B9%A3&serp_type=trends&trend_fbid=1782489542953913"
+    },
+    {
+      "title": "《Unsleep》台北快閃店登場",
+      "description": "韓漫《Unsleep》快閃店於台北瓶蓋工廠開幕，吸引大批粉絲排隊且周邊迅速完售",
+      "count": "526 則貼文",
+      "link": "https://www.threads.com/search?q=Unsleep&serp_type=trends&trend_fbid=1161162026237118"
+    },
+    {
+      "title": "全家推49元《蠟筆小新》盲盒",
+      "description": "民眾交換全家《蠟筆小新》盲盒，為換得小新與阿呆角色",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%A0%9F%E7%AD%86%E5%B0%8F%E6%96%B0&serp_type=trends&trend_fbid=1601409608110373"
     },
     {
       "title": "世新大學學生發起投影抗議",
@@ -16,80 +70,26 @@
     {
       "title": "東京林檎蘋果糖引爆排隊潮",
       "description": "新光三越南西店日本展的東京林檎蘋果糖，排隊逾3小時、號碼牌傍晚才發",
-      "count": "830 則貼文",
+      "count": "895 則貼文",
       "link": "https://www.threads.com/search?q=%E8%98%8B%E6%9E%9C%E7%B3%96&serp_type=trends&trend_fbid=2741766566225736"
     },
     {
       "title": "《戰鬥陀螺 X》限量開賣",
       "description": "唐吉訶德等通路10/1限量開賣《戰鬥陀螺 X》吸引玩家排隊",
-      "count": "4 千 則貼文",
+      "count": "3 千 則貼文",
       "link": "https://www.threads.com/search?q=%E6%88%B0%E9%AC%A5%E9%99%80%E8%9E%BA&serp_type=trends&trend_fbid=1758944121852176"
     },
     {
       "title": "屎蛋唐尼聯名商品開賣半天完售",
       "description": "niko and...聯名屎蛋唐尼商品，開賣首日吸引大批民眾排隊搶購並迅速完售",
-      "count": "257 則貼文",
+      "count": "255 則貼文",
       "link": "https://www.threads.com/search?q=%E5%B1%8E%E8%9B%8B%E5%94%90%E5%B0%BC&serp_type=trends&trend_fbid=1043554468639577"
-    },
-    {
-      "title": "《皮克敏》推出萬聖節活動",
-      "description": "手遊《皮克敏》於10月1日展開萬聖節活動，新增彩繪玻璃與南瓜燈造型角色",
-      "count": "4 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%9A%AE%E5%85%8B%E6%95%8F&serp_type=trends&trend_fbid=2118872605502919"
     },
     {
       "title": "亞尼克黑巧克力生乳捲引搶購",
       "description": "亞尼克黑巧克力生乳捲新品上市吸引民眾於開賣首日搶購",
-      "count": "707 則貼文",
+      "count": "210 則貼文",
       "link": "https://www.threads.com/search?q=%E4%BA%9E%E5%B0%BC%E5%85%8B&serp_type=trends&trend_fbid=945706748596969"
-    },
-    {
-      "title": "錫蘭直播攻擊唐綺陽遭退訂",
-      "description": "錫蘭攻擊唐綺陽，被批數據不嚴謹、態度傲慢，遭網友退訂",
-      "count": "2 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%8C%AB%E8%98%AD&serp_type=trends&trend_fbid=2147689869114206"
-    },
-    {
-      "title": "國巨股價漲停重返600元",
-      "description": "受惠於AI伺服器強勁需求，被動元件大廠國巨股價攻上漲停並帶動族群齊漲",
-      "count": "6 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%9C%8B%E5%B7%A8&serp_type=trends&trend_fbid=977903668672400"
-    },
-    {
-      "title": "新光三越週年慶送寶可夢鑰匙圈",
-      "description": "拍攝寶可夢主題列車，可至新光三越免費兌換限定鍵帽鑰匙圈",
-      "count": "7 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%AF%B6%E5%8F%AF%E5%A4%A2&serp_type=trends&trend_fbid=1907522240621216"
-    },
-    {
-      "title": "荒野亂鬥聯名活動進度落後",
-      "description": "手遊《荒野亂鬥》與Duolingo合作即將截止，因進度落後玩家關注獎勵發放",
-      "count": "497 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%8D%92%E9%87%8E%E4%BA%82%E9%AC%A5&serp_type=trends&trend_fbid=2335328140534891"
-    },
-    {
-      "title": "《第五人格》亞運獎勵獨漏台港澳",
-      "description": "中國隊在名古屋亞運《第五人格》奪金後官方慶祝獎勵未發給台港澳玩家",
-      "count": "3 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%AC%AC%E4%BA%94%E4%BA%BA%E6%A0%BC&serp_type=trends&trend_fbid=1629875171862659"
-    },
-    {
-      "title": "國防部收緊兵役免役門檻",
-      "description": "兵役體位新標準將於10月31日上路，役男BMI須逾45或身高144公分以下才免役",
-      "count": "5 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%85%B5%E5%BD%B9&serp_type=trends&trend_fbid=2343354956475906"
-    },
-    {
-      "title": "天赦日巧逢一粒萬倍日",
-      "description": "10月1日迎來秋季唯一天赦日，巧逢日本一粒萬倍日形成罕見的雙重吉日",
-      "count": "1 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%A4%A9%E8%B5%A6%E6%97%A5&serp_type=trends&trend_fbid=1430896835634688"
-    },
-    {
-      "title": "崔傘自備椅排隊寶可夢快閃店",
-      "description": "ATEEZ成員崔傘被目擊自備折疊椅在首爾寶可夢快閃店前排隊，透露正在進行拍攝",
-      "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%B4%94%E5%82%98&serp_type=trends&trend_fbid=1393147219207070"
     }
   ]
 }
