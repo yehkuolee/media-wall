@@ -1,11 +1,71 @@
 {
-  "updated_at": "2026-10-03T00:05:17.955243+08:00",
+  "updated_at": "2026-10-03T01:05:13.320807+08:00",
   "topics": [
+    {
+      "title": "台指期夜盤飆漲創史高",
+      "description": "受美國非農就業數據不如預期影響，台指期夜盤強漲並一度觸及49000點",
+      "count": "366 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4&serp_type=trends&trend_fbid=1046474655056614"
+    },
+    {
+      "title": "中信兄弟最快10月3日封王",
+      "description": "中信兄弟點亮封王魔術數字M2，若3日勝且桃猿敗即可奪冠",
+      "count": "2 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E4%B8%AD%E4%BF%A1%E5%85%84%E5%BC%9F&serp_type=trends&trend_fbid=1147040704423497"
+    },
+    {
+      "title": "沈伯洋冒雨至師大夜市掃街",
+      "description": "沈伯洋至師大夜市掃街，支持者冒雨到場並以氣音取代口號",
+      "count": "6 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1866109697705760"
+    },
+    {
+      "title": "康乃爾女學生控兄弟會集體性侵",
+      "description": "前康乃爾女學生提告性侵案引發I am Jane Doe聲援活動",
+      "count": "4 萬 則貼文",
+      "link": "https://www.threads.com/search?q=Jane%20Doe&serp_type=trends&trend_fbid=1143210674800977"
+    },
+    {
+      "title": "林嘉珍與伴侶阿順因代孕互控",
+      "description": "藝人薔薔胞妹林嘉珍與代理孕母伴侶阿順因代孕費用及借款等金錢問題互相指控",
+      "count": "730 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%9E%97%E5%98%89%E7%8F%8D&serp_type=trends&trend_fbid=2156747305724866"
+    },
     {
       "title": "《傳說對決》流傳十週年福利序號",
       "description": "玩家兌換《傳說對決》十週年序號，拚手氣抽遊戲造型",
       "count": "1 千 則貼文",
       "link": "https://www.threads.com/search?q=%E5%82%B3%E8%AA%AA%E5%B0%8D%E6%B1%BA&serp_type=trends&trend_fbid=4627923300812021"
+    },
+    {
+      "title": "BMW iX3在台發表",
+      "description": "售價245萬元起，全新BMW iX3純電休旅正式登台",
+      "count": "3 千 則貼文",
+      "link": "https://www.threads.com/search?q=BMW%20iX3&serp_type=trends&trend_fbid=1643243894133135"
+    },
+    {
+      "title": "統一布丁推焦糖爆走丁丁",
+      "description": "萬聖節限定全黑布丁「焦糖爆走丁丁」10月13日起在7-ELEVEN開賣",
+      "count": "285 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%B5%B1%E4%B8%80%E5%B8%83%E4%B8%81&serp_type=trends&trend_fbid=1626892235807714"
+    },
+    {
+      "title": "李光洙Bubble訊息洗版",
+      "description": "李光洙開通Bubble，因訊息頻繁幽默吸引粉絲與偶像朝聖",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%9D%8E%E5%85%89%E6%B4%99&serp_type=trends&trend_fbid=2302934193872455"
+    },
+    {
+      "title": "浪子踢球掀起模仿熱潮",
+      "description": "源自安徽花鼓燈的浪子踢球與閃身步動作趣味十足，吸引職棒球員在上壘後跳舞慶祝",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B5%AA%E5%AD%90%E8%B8%A2%E7%90%83&serp_type=trends&trend_fbid=4558909087722660"
+    },
+    {
+      "title": "李珠珢最後一場應援落淚",
+      "description": "富邦悍將啦啦隊李珠珢於最後賽事落淚，隊友李皓禎上前擁抱安慰並陪同離場",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%9D%8E%E7%8F%A0%E7%8F%A2&serp_type=trends&trend_fbid=1402532362060171"
     },
     {
       "title": "Steam秋季特賣展開",
@@ -14,82 +74,22 @@
       "link": "https://www.threads.com/search?q=Steam&serp_type=trends&trend_fbid=1770885824150493"
     },
     {
-      "title": "沈伯洋公布教育政見",
-      "description": "民進黨參選人沈伯洋提出降低班級人數等教育政見，並與蘇巧慧同台造勢",
-      "count": "6 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1627756155663518"
+      "title": "Pikmin萬聖飾品登場",
+      "description": "《Pikmin Bloom》萬聖節活動開跑，全新彩繪玻璃飾品皮克敏可愛亮相",
+      "count": "169 則貼文",
+      "link": "https://www.threads.com/search?q=Pikmin%20Bloom&serp_type=trends&trend_fbid=1118233677527030"
     },
     {
-      "title": "美國非農就業僅增2.9萬人",
-      "description": "美國9月非農就業數據疲軟，失業率升至4.2%，推升美股期指與台指期夜盤",
-      "count": "834 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%9D%9E%E8%BE%B2%E5%B0%B1%E6%A5%AD&serp_type=trends&trend_fbid=2107151896855151"
+      "title": "日本麥當勞北海道停售10款漢堡",
+      "description": "因肉排品質未達標準，日本麥當勞北海道門市暫停供應大麥克等10款漢堡",
+      "count": "948 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%97%A5%E6%9C%AC%E9%BA%A5%E7%95%B6%E5%8B%9E&serp_type=trends&trend_fbid=1789532082356798"
     },
     {
-      "title": "《台北GTA》爆版權問題",
-      "description": "粉絲自製遊戲《台北GTA》因使用官方名稱尋求投資，面臨版權問題",
-      "count": "491 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E5%8C%97GTA&serp_type=trends&trend_fbid=2165147894397976"
-    },
-    {
-      "title": "林嘉珍與伴侶阿順因代孕互控",
-      "description": "藝人薔薔胞妹林嘉珍與代理孕母伴侶阿順因代孕費用及借款等金錢問題互相指控",
-      "count": "715 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%9E%97%E5%98%89%E7%8F%8D&serp_type=trends&trend_fbid=1410866654557048"
-    },
-    {
-      "title": "富邦悍將連8年無緣季後賽",
-      "description": "延長賽滿壘時張育成遭再見三振，富邦悍將以1比2不敵味全龍無緣季後賽",
-      "count": "4 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%AF%8C%E9%82%A6%E6%82%8D%E5%B0%87&serp_type=trends&trend_fbid=1865321867971806"
-    },
-    {
-      "title": "傅崐萁質詢要求交出政權",
-      "description": "傅崐萁質詢時稱「把政權給我們」，人民會帶來最新政府",
-      "count": "1 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%82%85%E5%B4%90%E8%90%81&serp_type=trends&trend_fbid=28854942654140305"
-    },
-    {
-      "title": "懸疑劇《消失的裂痕》上線",
-      "description": "楊謹華與張孝全在《消失的裂痕》中分飾兩角，精湛演技與揪心劇情獲好評",
-      "count": "151 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B6%88%E5%A4%B1%E7%9A%84%E8%A3%82%E7%97%95&serp_type=trends&trend_fbid=2407491316654471"
-    },
-    {
-      "title": "《FX戰士久留美》動畫開播",
-      "description": "以可愛畫風描繪殘酷外匯交易的《FX戰士久留美》開播，爆倉情節被觀眾稱為恐怖片",
-      "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=FX%E6%88%B0%E5%A3%AB%E4%B9%85%E7%95%99%E7%BE%8E&serp_type=trends&trend_fbid=1050573124681720"
-    },
-    {
-      "title": "杜拜航空副機師襲擊機長",
-      "description": "班機因副機師攻擊機長急墜 由休班機師接手迫降全員生還",
-      "count": "286 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%9D%9C%E6%8B%9C%E8%88%AA%E7%A9%BA&serp_type=trends&trend_fbid=1658457109218207"
-    },
-    {
-      "title": "閃身步浪子踢球掀挑戰潮",
-      "description": "源於非物質文化遺產的閃身步、浪子踢球等舞步，吸引運動員與藝人拍片挑戰",
-      "count": "",
-      "link": "https://www.threads.com/search?q=%E5%82%B3%E7%B5%B1%E8%88%9E%E6%AD%A5&serp_type=trends&trend_fbid=2163423827940721"
-    },
-    {
-      "title": "台灣多地突降大雨",
-      "description": "台中高雄等地突降大雨，連預報零降雨率地區也降下暴雨，打亂民眾行程",
-      "count": "6 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%A4%A7%E9%9B%A8&serp_type=trends&trend_fbid=1646402353857715"
-    },
-    {
-      "title": "蔣萬安團隊添5名發言人",
-      "description": "蔣萬安競選辦公室宣布王鴻薇與李彥秀等五名立委加入發言陣容",
-      "count": "3 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=1114360838198321"
-    },
-    {
-      "title": "股民用漲停小貓迷因慶祝大漲",
-      "description": "股民在股市大漲時發布跳舞小貓圖影慶祝，此迷因已成投資社群的趣味娛樂",
-      "count": "181 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%BC%B2%E5%81%9C%E5%B0%8F%E8%B2%93&serp_type=trends&trend_fbid=1083058434698547"
+      "title": "打貓保聖會舉行十週年遶境",
+      "description": "嘉義民雄打貓保聖會舉辦開光十週年遶境，現場施放高空煙火秀吸引大批民眾觀賞",
+      "count": "40 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%89%93%E8%B2%93%E4%BF%9D%E8%81%96%E6%9C%83&serp_type=trends&trend_fbid=1567484222072090"
     }
   ]
 }
