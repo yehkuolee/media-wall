@@ -28,15 +28,51 @@ TW_TZ = pytz.timezone("Asia/Taipei")
 
 RSS_FEEDS = {
     "Google 新聞": "https://news.google.com/rss?hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
-    "CNA 中央社": "https://www.cna.com.tw/rss/aall.aspx",
-    "UDN 聯合": "https://udn.com/rssfeed/news/2/0?ch=news",
-    "ETtoday": "https://feeds.feedburner.com/ettoday/roadnews",
-    "Yahoo 新聞": "https://tw.news.yahoo.com/rss",
-    "自由時報": "https://news.ltn.com.tw/rss/all.xml",
 }
 
-# 沒有標題的 RSS 或無 RSS，改爬頁面
+# 爬熱門排行頁（依頁面順序＝熱門排名）；selector 指定條目、title_sel / title_attr 指定標題位置
+# rss_fallback：爬不到 5 則（網站改版）時改用 RSS 最新新聞頂上
 SCRAPED_SOURCES = {
+    "CNA 中央社": {   # 舊 RSS（/rss/aall.aspx）已 404，改爬即時列表（中央社無熱門榜）
+        "url": "https://www.cna.com.tw/list/aall.aspx",
+        "selector": "#jsMainList li a",
+        "title_sel": "h2",
+        "pattern": "/news/",
+        "min_len": 8,
+        "limit": 20,
+        "strip_time": False,
+        "base_url": "https://www.cna.com.tw",
+    },
+    "自由時報": {
+        "url": "https://news.ltn.com.tw/list/breakingnews/popular",
+        "selector": "ul.list a[title]",
+        "pattern": "ltn.com.tw/news/",
+        "title_attr": True,
+        "min_len": 8,
+        "limit": 20,
+        "strip_time": False,
+        "rss_fallback": "https://news.ltn.com.tw/rss/all.xml",
+    },
+    "Yahoo 新聞": {
+        "url": "https://tw.news.yahoo.com/most-popular",
+        "selector": "a.mega-item-header-link",
+        "pattern": ".html",
+        "min_len": 8,
+        "limit": 20,
+        "strip_time": False,
+        "base_url": "https://tw.news.yahoo.com",
+        "rss_fallback": "https://tw.news.yahoo.com/rss",
+    },
+    "東森新聞": {
+        "url": "https://news.ebc.net.tw/hot",
+        "selector": "a.row_box",
+        "pattern": "/news/",
+        "title_attr": True,
+        "min_len": 8,
+        "limit": 20,
+        "strip_time": False,
+        "base_url": "https://news.ebc.net.tw",
+    },
     "壹蘋新聞網": {
         "url": "https://news.nextapple.com/realtime/hit",
         "pattern": "news.nextapple.com/",
@@ -54,8 +90,8 @@ SCRAPED_SOURCES = {
         "strip_time": False,
     },
     "三立新聞": {
-        "url": "https://www.setn.com/",
-        "pattern": "NewsID=",
+        "url": "https://www.setn.com/viewall/0",   # 三立「熱門」頁
+        "pattern": "setn.com/news/",
         "url_must_contain": "",
         "min_len": 8,
         "limit": 30,
@@ -350,8 +386,11 @@ def fetch_scraped_news() -> list[dict]:
             count = 0
             must = cfg.get("url_must_contain", "")
             base = cfg.get("base_url", "")
-            for a in soup.select("a[href]"):
-                raw_title = a.get_text(strip=True)
+            for a in soup.select(cfg.get("selector", "a[href]")):
+                title_el = a.select_one(cfg["title_sel"]) if cfg.get("title_sel") else None
+                raw_title = ((title_el.get_text(strip=True) if title_el else None)
+                             or (a.get("title") if cfg.get("title_attr") else None)
+                             or a.get_text(strip=True))
                 href = a.get("href", "")
                 if base and href.startswith("/"):
                     href = base + href
@@ -371,7 +410,16 @@ def fetch_scraped_news() -> list[dict]:
                     if count >= cfg["limit"]:
                         break
         except Exception:
-            continue
+            count = 0
+        if count < 5 and cfg.get("rss_fallback"):
+            items = [n for n in items if n["source"] != source]
+            try:
+                feed = feedparser.parse(requests.get(cfg["rss_fallback"], headers=headers, timeout=8).content)
+                for e in feed.entries[:cfg["limit"]]:
+                    items.append({"title": e.get("title", "").strip(), "link": e.get("link", "#"),
+                                  "source": source, "pub": None})
+            except Exception:
+                pass
     return items
 
 
@@ -736,7 +784,7 @@ def main():
     # ── Footer ──────────────────────────────────────────────────
     st.markdown(f"""
     <div class="mw-footer">
-        資料來源：Google Trends · RSS (Google 新聞 / CNA / UDN / ETtoday / Yahoo) · 聯合報熱門排行 · PTT &nbsp;｜&nbsp;
+        資料來源：Google Trends · RSS (Google 新聞) · 中央社即時 · 熱門排行（自由 / Yahoo / 東森 / 壹蘋 / 中時 / 聯合報 / 三立） · PTT &nbsp;｜&nbsp;
         更新時間：{now.strftime('%Y-%m-%d %H:%M:%S')} (台北 UTC+8) &nbsp;｜&nbsp;
         每 5 分鐘自動刷新
     </div>
