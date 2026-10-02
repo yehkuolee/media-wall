@@ -1,16 +1,28 @@
 {
-  "updated_at": "2026-10-02T22:59:53.894404+08:00",
+  "updated_at": "2026-10-03T03:49:26.120168+08:00",
   "keywords": [
+    {
+      "title": "nana 韓國",
+      "volume": "5,000+"
+    },
+    {
+      "title": "李多慧",
+      "volume": "2,000+"
+    },
     {
       "title": "紅包",
       "volume": "2萬+"
+    },
+    {
+      "title": "新光 三越",
+      "volume": "1,000+"
     },
     {
       "title": "工商時報",
       "volume": "1萬+"
     },
     {
-      "title": "nana 韓國",
+      "title": "蔡亦竹",
       "volume": "5,000+"
     },
     {
@@ -18,27 +30,11 @@
       "volume": "5,000+"
     },
     {
-      "title": "李多慧",
-      "volume": "1,000+"
-    },
-    {
-      "title": "黃仁勳",
-      "volume": "1,000+"
+      "title": "top",
+      "volume": "5,000+"
     },
     {
       "title": "明天的天氣",
-      "volume": "2萬+"
-    },
-    {
-      "title": "摩 斯 漢堡",
-      "volume": "2萬+"
-    },
-    {
-      "title": "非農就業數據",
-      "volume": "1,000+"
-    },
-    {
-      "title": "天氣預報",
       "volume": "2萬+"
     },
     {
@@ -46,47 +42,31 @@
       "volume": "5,000+"
     },
     {
-      "title": "top",
-      "volume": "5,000+"
-    },
-    {
       "title": "郭忠祐",
       "volume": "5,000+"
     },
     {
-      "title": "台北 市長 民 調",
-      "volume": "1萬+"
-    },
-    {
-      "title": "光 通訊",
+      "title": "黃仁勳",
       "volume": "2,000+"
     },
     {
-      "title": "吳奇隆",
-      "volume": "2,000+"
-    },
-    {
-      "title": "雷暴",
-      "volume": "1,000+"
-    },
-    {
-      "title": "netflix",
-      "volume": "2,000+"
+      "title": "天氣預報",
+      "volume": "2萬+"
     },
     {
       "title": "亞運lol",
       "volume": "1萬+"
     },
     {
-      "title": "非農",
-      "volume": "1,000+"
+      "title": "吳奇隆",
+      "volume": "2,000+"
     },
     {
-      "title": "國慶日",
-      "volume": "1,000+"
+      "title": "臺北市長",
+      "volume": "5,000+"
     },
     {
-      "title": "陳念琴",
+      "title": "光 通訊",
       "volume": "2,000+"
     },
     {
@@ -94,12 +74,32 @@
       "volume": "2,000+"
     },
     {
-      "title": "中信 兄弟",
-      "volume": "500+"
+      "title": "雷暴",
+      "volume": "1,000+"
     },
     {
       "title": "林郁婷",
       "volume": "2,000+"
+    },
+    {
+      "title": "陳念琴",
+      "volume": "2,000+"
+    },
+    {
+      "title": "非農",
+      "volume": "2,000+"
+    },
+    {
+      "title": "國慶日",
+      "volume": "1,000+"
+    },
+    {
+      "title": "netflix",
+      "volume": "2,000+"
+    },
+    {
+      "title": "聯上澐朗",
+      "volume": "200+"
     }
   ]
 }
