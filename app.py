@@ -329,6 +329,41 @@ st.markdown("""
 ::-webkit-scrollbar       { width: 4px; }
 ::-webkit-scrollbar-track { background: #f5f2ed; }
 ::-webkit-scrollbar-thumb { background: #d8d5d0; border-radius: 2px; }
+
+/* ── 深色模式（純黑看盤風）：標題列按鈕在 <html> 加上 mw-dark ── */
+html.mw-dark, html.mw-dark body, html.mw-dark .stApp,
+html.mw-dark [data-testid="stAppViewContainer"] { background: #000000; color: #e6e6e6; }
+html.mw-dark .kpi-card, html.mw-dark .kw-cloud, html.mw-dark .news-card, html.mw-dark .news-card:hover,
+html.mw-dark .threads-card, html.mw-dark .ptt-card, html.mw-dark .src-row {
+    background: #0b0b0b; border-color: #222222; box-shadow: none;
+}
+html.mw-dark .kw-cloud, html.mw-dark .kpi-card { border-top-color: #e6e6e6; }
+html.mw-dark .news-card       { border-left-color: #333333; }
+html.mw-dark .news-card:hover { border-left-color: #ff3b4e; box-shadow: 0 0 0 1px #ff3b4e33; }
+html.mw-dark .threads-card:hover, html.mw-dark .ptt-card:hover, html.mw-dark .src-row:hover { box-shadow: 0 0 0 1px #333333; }
+html.mw-dark .sec-title { color: #e6e6e6; border-top-color: #e6e6e6; border-bottom-color: #222222; }
+html.mw-dark .news-title-link, html.mw-dark .threads-title, html.mw-dark .ptt-title { color: #e6e6e6; }
+html.mw-dark .news-title-link:hover, html.mw-dark .threads-title:hover, html.mw-dark .ptt-title:hover { color: #ff3b4e; }
+html.mw-dark .news-rank       { color: #ff3b4e; }
+html.mw-dark .news-rank.gold  { color: #f5c542; }
+html.mw-dark .news-rank.silv  { color: #b0b0b0; }
+html.mw-dark .news-rank.brnz  { color: #d98a4e; }
+html.mw-dark .news-meta, html.mw-dark .threads-count { color: #6f6f6f; }
+html.mw-dark .news-src, html.mw-dark .threads-desc { color: #8a8a8a; }
+html.mw-dark .kw-hot  { background: rgba(255,59,78,.12);  border-color: rgba(255,59,78,.45);  color: #ff3b4e; }
+html.mw-dark .kw-warm { background: rgba(255,176,0,.10);  border-color: rgba(255,176,0,.40);  color: #ffb000; }
+html.mw-dark .kw-cool { background: rgba(56,189,248,.10); border-color: rgba(56,189,248,.35); color: #38bdf8; }
+html.mw-dark .ptt-push        { color: #ff3b4e; }
+html.mw-dark .ptt-push.boom   { color: #ff6b78; }
+html.mw-dark .ptt-push.green, html.mw-dark .src-count, html.mw-dark .kpi-sub { color: #22c55e; }
+html.mw-dark .src-name  { color: #c8c8c8; }
+html.mw-dark .src-bar   { background: linear-gradient(90deg, #ff3b4e, #8b0000); }
+html.mw-dark .ticker-wrap { background: #000000; border-top: 1px solid #222222; border-bottom: 1px solid #222222; }
+html.mw-dark .ticker-label { color: #ff3b4e; }
+html.mw-dark .ticker-text  { color: #f5c542; }
+html.mw-dark .mw-footer { color: #555555; }
+html.mw-dark ::-webkit-scrollbar-track { background: #000000; }
+html.mw-dark ::-webkit-scrollbar-thumb { background: #333333; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -601,6 +636,23 @@ MASTHEAD_CSS = """
 .mw-time { color: #121212; font-size: 1.1rem; font-weight: 700; font-family: 'Courier New', monospace; text-align: right; }
 .mw-date { color: #999; font-size: .67rem; text-align: right; letter-spacing: 1px; }
 .mw-updated { color: #999; font-size: .67rem; text-align: right; letter-spacing: 1px; margin-top: 2px; }
+.mw-right { display: flex; align-items: center; gap: 14px; }
+.mw-theme-btn {
+    width: 32px; height: 32px; border: 1px solid #d8d5d0; background: transparent;
+    border-radius: 50%; cursor: pointer; font-size: .95rem; line-height: 1; padding: 0;
+}
+.mw-theme-btn:hover { border-color: #c41230; }
+
+/* 深色模式 */
+html.mw-dark, html.mw-dark body { background: #000000 !important; }
+.mw-dark .mw-header { background: #0b0b0b; border-top-color: #e6e6e6; border-bottom-color: #222222; box-shadow: none; }
+.mw-dark .mw-title, .mw-dark .mw-time { color: #e6e6e6; }
+.mw-dark .mw-time { color: #22c55e; }
+.mw-dark .mw-subtitle, .mw-dark .mw-date, .mw-dark .mw-updated { color: #6f6f6f; }
+.mw-dark .live-dot { background: #ff3b4e; }
+.mw-dark .live-text { color: #ff3b4e; }
+.mw-dark .mw-theme-btn { border-color: #333333; }
+.mw-dark .mw-theme-btn:hover { border-color: #ff3b4e; }
 """
 
 
@@ -627,13 +679,37 @@ def main():
             <div class="live-dot"></div>
             <span class="live-text">LIVE 即時更新中</span>
         </div>
-        <div>
-            <div class="mw-time" id="mw-clock">{now.strftime('%H:%M:%S')}</div>
-            <div class="mw-date" id="mw-date">{now.strftime('%Y/%m/%d')} (週{WEEKDAY[now.weekday()]})</div>
-            <div class="mw-updated">最後更新 {now.strftime('%H:%M:%S')}</div>
+        <div class="mw-right">
+            <button class="mw-theme-btn" id="mw-theme-btn" title="切換深色／淺色">🌙</button>
+            <div>
+                <div class="mw-time" id="mw-clock">{now.strftime('%H:%M:%S')}</div>
+                <div class="mw-date" id="mw-date">{now.strftime('%Y/%m/%d')} (週{WEEKDAY[now.weekday()]})</div>
+                <div class="mw-updated">最後更新 {now.strftime('%H:%M:%S')}</div>
+            </div>
         </div>
     </div>
     <script>
+    // 深色模式：選擇存在父頁面 localStorage，沒選過就跟系統設定；
+    // 把 mw-dark 加在父頁面 <html>（主頁 CSS 用）和自己的 <html>（標題列用）
+    const THEME_KEY = "mw-theme";
+    function loadTheme() {{
+        try {{ const t = window.parent.localStorage.getItem(THEME_KEY); if (t) return t; }} catch (e) {{}}
+        return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }}
+    function applyTheme(t) {{
+        const dark = t === "dark";
+        document.documentElement.classList.toggle("mw-dark", dark);
+        try {{ window.parent.document.documentElement.classList.toggle("mw-dark", dark); }} catch (e) {{}}
+        document.getElementById("mw-theme-btn").textContent = dark ? "☀️" : "🌙";
+    }}
+    let theme = loadTheme();
+    applyTheme(theme);
+    document.getElementById("mw-theme-btn").addEventListener("click", () => {{
+        theme = theme === "dark" ? "light" : "dark";
+        try {{ window.parent.localStorage.setItem(THEME_KEY, theme); }} catch (e) {{}}
+        applyTheme(theme);
+    }});
+
     const WD = "一二三四五六日";
     function tick() {{
         // 以台北時區取時間，不受觀看者電腦時區影響
