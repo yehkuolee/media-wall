@@ -1,17 +1,83 @@
 {
-  "updated_at": "2026-10-03T22:05:13.197982+08:00",
+  "updated_at": "2026-10-03T23:05:12.653000+08:00",
   "topics": [
+    {
+      "title": "玉澤演台北見面會穿白袍熱舞",
+      "description": "在台北見面會上，韓國藝人玉澤演幸運刮中刮刮樂，更穿上白袍重現《BAD》震胸舞",
+      "count": "347 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%8E%89%E6%BE%A4%E6%BC%94&serp_type=trends&trend_fbid=1734548037604769"
+    },
     {
       "title": "王鴻薇指控卓榮泰違反選罷法",
       "description": "王鴻薇指控卓榮泰展示船員證違選罷法，沈伯洋反駁該法不適用個人",
       "count": "3 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%8E%8B%E9%B4%BB%E8%96%87&serp_type=trends&trend_fbid=39467547272888878"
+      "link": "https://www.threads.com/search?q=%E7%8E%8B%E9%B4%BB%E8%96%87&serp_type=trends&trend_fbid=1100323069062383"
     },
     {
-      "title": "中信兄弟擊敗富邦封王M1",
-      "description": "黃韋盛敲出關鍵清壘安打，助中信兄弟以3比0擊敗富邦悍將，封王魔術數字降至M1",
+      "title": "中信兄弟完封富邦魔術數字M1",
+      "description": "黃韋盛八局上敲出清壘三壘安打，助中信兄弟完封富邦悍將，下半季封王魔術數字降至M1",
       "count": "3 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E4%B8%AD%E4%BF%A1%E5%85%84%E5%BC%9F&serp_type=trends&trend_fbid=1839999150694652"
+      "link": "https://www.threads.com/search?q=%E4%B8%AD%E4%BF%A1%E5%85%84%E5%BC%9F&serp_type=trends&trend_fbid=2142292616652761"
+    },
+    {
+      "title": "捷運頭前庄站傳疑似持刀",
+      "description": "新北市警方獲報頭前庄站疑似有人持刀，派員到場未尋獲並通知三重警方協查",
+      "count": "117 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%A0%AD%E5%89%8D%E5%BA%84%E7%AB%99&serp_type=trends&trend_fbid=1463206285867981"
+    },
+    {
+      "title": "XCen賽後拒絕與奶綠握手",
+      "description": "在《傳說對決》賽事結束後，XCen未與奶綠握手直接離場，疑似源於選角或私下糾紛",
+      "count": "568 則貼文",
+      "link": "https://www.threads.com/search?q=XCen&serp_type=trends&trend_fbid=1090006483913017"
+    },
+    {
+      "title": "彭佳慧台北小巨蛋開唱",
+      "description": "迎接出道30週年，歌手彭佳慧在台北小巨蛋開唱並邀請許富凱擔任合唱嘉賓",
+      "count": "285 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%BD%AD%E4%BD%B3%E6%85%A7&serp_type=trends&trend_fbid=1661594345578262"
+    },
+    {
+      "title": "玩家體驗《台北GTA》在地玩法",
+      "description": "玩家在《台北GTA》體驗穿梭狹窄巷弄、炸毀公司，並撿拾槍枝防彈衣與消除通緝",
+      "count": "421 則貼文",
+      "link": "https://www.threads.com/search?q=%E3%80%8A%E5%8F%B0%E5%8C%97GTA%E3%80%8B&serp_type=trends&trend_fbid=1106414775207341"
+    },
+    {
+      "title": "蔣萬安指美沙冬美化毒品遭駁斥",
+      "description": "針對蔣萬安指責倡議美沙冬是美化毒品，沈伯洋與醫護駁斥該措施自馬英九時期已實施多年",
+      "count": "9 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%BE%8E%E6%B2%99%E5%86%AC&serp_type=trends&trend_fbid=918910911045693"
+    },
+    {
+      "title": "李多慧出席一日店長活動",
+      "description": "李多慧在一日店長活動中幽默示範放鬆與睡覺模樣，吸引大批粉絲到場爭相拍照",
+      "count": "706 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%9D%8E%E5%A4%9A%E6%85%A7&serp_type=trends&trend_fbid=28719654084351332"
+    },
+    {
+      "title": "寶可夢專列首航快閃店商品售罄",
+      "description": "新光三越與台鐵合作寶可夢專列首航，快閃店排隊時間過長且多數周邊迅速完售",
+      "count": "334 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%AF%B6%E5%8F%AF%E5%A4%A2%E5%88%97%E8%BB%8A&serp_type=trends&trend_fbid=3469355896575711"
+    },
+    {
+      "title": "全家OREO頭套掀搶購潮",
+      "description": "不少飼主致電全家門市搶購，並展示家中貓狗配戴OREO頭套的可愛模樣",
+      "count": "212 則貼文",
+      "link": "https://www.threads.com/search?q=OREO%E9%A0%AD%E5%A5%97&serp_type=trends&trend_fbid=4542722929343825"
+    },
+    {
+      "title": "利特與希澈高雄開唱",
+      "description": "Super Junior小分隊83z於高雄高流開唱，加碼獻唱安可曲並獲歌迷排字應援",
+      "count": "2 千 則貼文",
+      "link": "https://www.threads.com/search?q=83z&serp_type=trends&trend_fbid=1445400874172923"
+    },
+    {
+      "title": "勝騎士奪11勝暫居聯盟勝投王",
+      "description": "中信兄弟勝騎士中繼投6球無失分奪第11勝，並憑較低防禦率超越羅戈暫居榜首",
+      "count": "700 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8B%9D%E9%A8%8E%E5%A3%AB&serp_type=trends&trend_fbid=1086997704192835"
     },
     {
       "title": "台北捷運傳持刀事件列車停駛",
@@ -20,76 +86,10 @@
       "link": "https://www.threads.com/search?q=%E5%8F%B0%E5%8C%97%E6%8D%B7%E9%81%8B&serp_type=trends&trend_fbid=1109791514954310"
     },
     {
-      "title": "XCen賽後拒絕與奶綠握手",
-      "description": "在《傳說對決》賽事結束後，XCen未與奶綠握手直接離場，疑似源於選角或私下糾紛",
-      "count": "388 則貼文",
-      "link": "https://www.threads.com/search?q=XCen&serp_type=trends&trend_fbid=1091555286756274"
-    },
-    {
       "title": "桃園鐵玫瑰音樂節登場",
       "description": "為期兩天的免費音樂活動在桃園陽光劇場展開，首日卡司包含Ozone與蛋堡",
-      "count": "193 則貼文",
+      "count": "244 則貼文",
       "link": "https://www.threads.com/search?q=%E9%90%B5%E7%8E%AB%E7%91%B0%E9%9F%B3%E6%A8%82%E7%AF%80&serp_type=trends&trend_fbid=3304795146576391"
-    },
-    {
-      "title": "台灣開發者推出《臺北GTA》",
-      "description": "以生成式AI打造的開放世界網頁遊戲《臺北GTA》開放免費遊玩，重現西門町街景",
-      "count": "473 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%87%BA%E5%8C%97GTA&serp_type=trends&trend_fbid=1413812236841445"
-    },
-    {
-      "title": "蔣萬安指美沙冬美化毒品遭駁斥",
-      "description": "針對蔣萬安指責倡議美沙冬是美化毒品，沈伯洋與醫護駁斥該措施自馬英九時期已實施多年",
-      "count": "7 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%BE%8E%E6%B2%99%E5%86%AC&serp_type=trends&trend_fbid=2310544509771666"
-    },
-    {
-      "title": "高雄岡山醒村全區開園",
-      "description": "岡山醒村文化園區修復四年完工開園，舉辦台日交流祭、市集與張晨光參演大戲",
-      "count": "427 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%86%92%E6%9D%91&serp_type=trends&trend_fbid=2167328623847295"
-    },
-    {
-      "title": "沈伯洋蘇巧慧出席洋流慧聚",
-      "description": "沈伯洋與蘇巧慧現身三峽祖師廟，邊吃巧克力金牛角邊與民眾擊掌掃街",
-      "count": "7 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1142888544831934"
-    },
-    {
-      "title": "利特與希澈高雄開唱",
-      "description": "Super Junior小分隊83z於高雄高流開唱，加碼獻唱安可曲並獲歌迷排字應援",
-      "count": "2 千 則貼文",
-      "link": "https://www.threads.com/search?q=83z&serp_type=trends&trend_fbid=1394297972365671"
-    },
-    {
-      "title": "Owala水壺誠品補貨掀搶購潮",
-      "description": "台灣誠品書店陸續補貨Owala保溫水壺，各門市湧現排隊搶購與代購人潮",
-      "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=Owala&serp_type=trends&trend_fbid=1079929214654439"
-    },
-    {
-      "title": "勝騎士奪11勝暫居聯盟勝投王",
-      "description": "中信兄弟勝騎士中繼投6球無失分奪第11勝，並憑較低防禦率超越羅戈暫居榜首",
-      "count": "624 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8B%9D%E9%A8%8E%E5%A3%AB&serp_type=trends&trend_fbid=4090619807906102"
-    },
-    {
-      "title": "萬華警方突擊搜索同志酒吧",
-      "description": "台北市萬華分局突擊搜索西門町同志酒吧，帶走現場數十人並依法釐清案情",
-      "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=Commander%20D&serp_type=trends&trend_fbid=1402028278717863"
-    },
-    {
-      "title": "世界男友日粉絲曬偶像視角照",
-      "description": "10月3日適逢世界男友日，眾多粉絲紛紛曬出ATEEZ與TXT等偶像女友視角照片慶祝",
-      "count": "2 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E4%B8%96%E7%95%8C%E7%94%B7%E5%8F%8B%E6%97%A5&serp_type=trends&trend_fbid=1634958151666939"
-    },
-    {
-      "title": "茶商常行深遭館長員工毆打",
-      "description": "警方逮捕涉嫌施暴的館長旗下員工，受害茶商常行深因襲擊出現輕微腦震盪",
-      "count": "253 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%B8%B8%E8%A1%8C%E6%B7%B1&serp_type=trends&trend_fbid=1393959182867683"
     }
   ]
 }
