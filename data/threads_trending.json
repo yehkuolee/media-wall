@@ -1,6 +1,72 @@
 {
-  "updated_at": "2026-10-03T09:05:17.870294+08:00",
+  "updated_at": "2026-10-03T10:05:18.821989+08:00",
   "topics": [
+    {
+      "title": "蔣萬安延攬五立委任發言人",
+      "description": "為備戰台北市長選舉，蔣萬安競選辦公室宣布由王鴻薇與徐巧芯等五名立委出任發言人",
+      "count": "3 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=3172981683037354"
+    },
+    {
+      "title": "高雄女子墜樓壓傷消防員",
+      "description": "10月3日凌晨高雄諾貝爾大樓女子墜樓壓傷消防員，兩人送醫意識清楚",
+      "count": "11 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%AB%BE%E8%B2%9D%E7%88%BE%E5%A4%A7%E6%A8%93&serp_type=trends&trend_fbid=1676466433993546"
+    },
+    {
+      "title": "全家送OREO寵物頭套引搶購",
+      "description": "民眾為幫毛孩裝扮奔波門市，全家限量的OREO寵物頭套在不少店家迅速完售",
+      "count": "1 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%85%A8%E5%AE%B6&serp_type=trends&trend_fbid=28681464651506814"
+    },
+    {
+      "title": "全聯扣點換洗衣精掀兌換潮",
+      "description": "Persil迷你洗衣精在全聯推出扣點兌換活動，各門市配額迅速被換完",
+      "count": "5 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%85%A8%E8%81%AF&serp_type=trends&trend_fbid=1173257811691102"
+    },
+    {
+      "title": "田馥甄12月小巨蛋開唱",
+      "description": "田馥甄推出新專輯《要去什麼地方》，並規劃12月在台北小巨蛋舉辦同名演唱會",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%94%B0%E9%A6%A5%E7%94%84&serp_type=trends&trend_fbid=1084150827922456"
+    },
+    {
+      "title": "膠原蛋白添加雌激素恐增婦科風險",
+      "description": "純膠原蛋白本身無荷爾蒙，若額外添加雌激素或胎盤素等成分，恐增加婦科病變風險",
+      "count": "4 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%86%A0%E5%8E%9F%E8%9B%8B%E7%99%BD&serp_type=trends&trend_fbid=1050797208006364"
+    },
+    {
+      "title": "黃依川遭控涉權勢關係",
+      "description": "民眾發起台灣版「I am Jane Doe」行動，匿名聲援黃依川案受害者",
+      "count": "499 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%BB%83%E4%BE%9D%E5%B7%9D&serp_type=trends&trend_fbid=1139289255329976"
+    },
+    {
+      "title": "雲林艦水砲驅離中國漁船",
+      "description": "台灣海巡雲林艦在東沙海域以高壓水砲驅離越界中國漁船，並在對方失去動力後提供熱食",
+      "count": "3 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%9B%B2%E6%9E%97%E8%89%A6&serp_type=trends&trend_fbid=1838062740695039"
+    },
+    {
+      "title": "皮克敏萬聖節活動開跑",
+      "description": "《Pikmin Bloom》推出全新彩繪玻璃皮克敏，完成任務可獲花苗獎勵",
+      "count": "191 則貼文",
+      "link": "https://www.threads.com/search?q=Pikmin%20Bloom&serp_type=trends&trend_fbid=2184849782461706"
+    },
+    {
+      "title": "台北寶可夢中心開賣百變怪新品",
+      "description": "百變怪變裝系列新品開賣，台北寶可夢中心湧現排隊領取整理券人潮",
+      "count": "606 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%AF%B6%E5%8F%AF%E5%A4%A2%E4%B8%AD%E5%BF%83&serp_type=trends&trend_fbid=2009158786467349"
+    },
+    {
+      "title": "薔薔代理孕母涉及剝削與個人抉擇",
+      "description": "針對藝人薔薔尋求代理孕母，外界聚焦於女性身體剝削、生育風險與個人自主權",
+      "count": "3 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%96%94%E8%96%94&serp_type=trends&trend_fbid=1444469637608522"
+    },
     {
       "title": "楊植斗指沈伯洋混淆毒品定義",
       "description": "台北市議員楊植斗關切校園反毒，沈伯洋澄清過往論述是指醫學的美沙冬替代療法",
@@ -8,9 +74,15 @@
       "link": "https://www.threads.com/search?q=%E6%A5%8A%E6%A4%8D%E6%96%97&serp_type=trends&trend_fbid=2942915146075117"
     },
     {
+      "title": "Radiohead將在日開唱",
+      "description": "日本票務平台公布Radiohead演唱會抽選結果，樂團睽違19年再度於日本專場開唱",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=Radiohead&serp_type=trends&trend_fbid=1920435828929679"
+    },
+    {
       "title": "jhyt2857涉認知作戰",
       "description": "涉嫌進行認知作戰與洋流詐騙的境外帳號jhyt2857，目前面臨大量檢舉與封鎖",
-      "count": "51 則貼文",
+      "count": "67 則貼文",
       "link": "https://www.threads.com/search?q=jhyt2857&serp_type=trends&trend_fbid=1356648059874255"
     },
     {
@@ -18,78 +90,6 @@
       "description": "粉絲清晨湧入高雄巨蛋搶購PLAVE周邊，現場設有精美佈置與自發應援物",
       "count": "26 萬 則貼文",
       "link": "https://www.threads.com/search?q=PLAVE&serp_type=trends&trend_fbid=1080874911531638"
-    },
-    {
-      "title": "台灣開發者打造《臺北GTA》",
-      "description": "網頁遊戲《臺北GTA》重現台北街景與在地任務，開發者正修復系統並擴建地圖",
-      "count": "638 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%87%BA%E5%8C%97GTA&serp_type=trends&trend_fbid=1665452705251241"
-    },
-    {
-      "title": "薔薔完成凍卵擬尋求代孕",
-      "description": "藝人薔薔透露已完成凍卵，未來若生育將尋求合法代孕，並強調不願為婚姻犧牲身體",
-      "count": "3 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%96%94%E8%96%94&serp_type=trends&trend_fbid=1821680189006399"
-    },
-    {
-      "title": "德亞車業GT-R跑出7秒台",
-      "description": "桃園德亞車業赴泰國出賽，改裝GT-R跑出7.792秒突破去年紀錄",
-      "count": "41 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%BE%B7%E4%BA%9E%E8%BB%8A%E6%A5%AD&serp_type=trends&trend_fbid=2572307563213901"
-    },
-    {
-      "title": "高雄旗津將辦活動施放夜行風箏",
-      "description": "高雄旗津即將迎來熱鬧活動盛事，當地夜空也出現民眾施放夜行風箏的獨特景象",
-      "count": "314 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%97%97%E6%B4%A5&serp_type=trends&trend_fbid=1579196313950322"
-    },
-    {
-      "title": "杜拜航空副機師持刀襲擊機長",
-      "description": "副機師持刀襲擊機長致客機急墜，杜拜航空航班由休班機師接手後安全迫降",
-      "count": "257 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%9D%9C%E6%8B%9C%E8%88%AA%E7%A9%BA&serp_type=trends&trend_fbid=1610615657227110"
-    },
-    {
-      "title": "田馥甄將辦小巨蛋演唱會",
-      "description": "歌手田馥甄推出新專輯《要去什麼地方》，宣布12月在台北小巨蛋連開6場演唱會",
-      "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%94%B0%E9%A6%A5%E7%94%84&serp_type=trends&trend_fbid=28399586276378574"
-    },
-    {
-      "title": "小泰現身高雄LAMP親切互動",
-      "description": "《不良一族尋愛記2》小泰現身高雄LAMP，親切為粉絲簽名並贈送禮物",
-      "count": "2 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%B0%8F%E6%B3%B0&serp_type=trends&trend_fbid=28464610173209068"
-    },
-    {
-      "title": "全家贈OREO寵物頭套多店缺貨",
-      "description": "全家便利商店推買指定OREO送寵物頭套，吸睛造型掀起搶購熱潮致多門市缺貨",
-      "count": "1 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%85%A8%E5%AE%B6&serp_type=trends&trend_fbid=2391463174719282"
-    },
-    {
-      "title": "蔣萬安延攬5位立委任競選發言人",
-      "description": "因應沈伯洋等綠營選戰攻勢，台北市長蔣萬安陣營延攬王鴻薇等5位立委出任發言人",
-      "count": "3 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=997283223417085"
-    },
-    {
-      "title": "全聯攜手San-X推集點活動",
-      "description": "全聯推出積分樂活動，會員滿額可換購拉拉熊收納包與抱頸枕",
-      "count": "5 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%85%A8%E8%81%AF&serp_type=trends&trend_fbid=1638722954563465"
-    },
-    {
-      "title": "高雄諾貝爾大樓傳疑似墜樓",
-      "description": "高雄諾貝爾大樓傳出疑似墜樓意外，警消獲報後迅速趕抵現場展開救援",
-      "count": "",
-      "link": "https://www.threads.com/search?q=%E8%AB%BE%E8%B2%9D%E7%88%BE%E5%A4%A7%E6%A8%93&serp_type=trends&trend_fbid=1767491354368043"
-    },
-    {
-      "title": "崔勝鉉與林珍娜公開認愛",
-      "description": "韓國藝人崔勝鉉與林珍娜證實交往消息，獲得眾多粉絲祝福",
-      "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%B4%94%E5%8B%9D%E9%89%89&serp_type=trends&trend_fbid=1507590137821947"
     }
   ]
 }
