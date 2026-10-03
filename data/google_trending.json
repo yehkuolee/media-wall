@@ -1,21 +1,37 @@
 {
-  "updated_at": "2026-10-04T01:29:12.228935+08:00",
+  "updated_at": "2026-10-04T07:01:03.729930+08:00",
   "keywords": [
     {
-      "title": "克羅埃西亞 對 英格蘭",
+      "title": "旅遊",
+      "volume": "2萬+"
+    },
+    {
+      "title": "蔣萬安",
       "volume": "5,000+"
+    },
+    {
+      "title": "機車",
+      "volume": "5,000+"
+    },
+    {
+      "title": "mlb",
+      "volume": "2,000+"
     },
     {
       "title": "謝淑薇",
       "volume": "1萬+"
     },
     {
-      "title": "蔣萬安",
+      "title": "克羅埃西亞 對 英格蘭",
+      "volume": "5,000+"
+    },
+    {
+      "title": "道奇",
       "volume": "2,000+"
     },
     {
-      "title": "機車",
-      "volume": "5,000+"
+      "title": "西班牙 對 捷克",
+      "volume": "2,000+"
     },
     {
       "title": "民 調",
@@ -26,6 +42,50 @@
       "volume": "2,000+"
     },
     {
+      "title": "李 珠 珢",
+      "volume": "500+"
+    },
+    {
+      "title": "中信兄弟",
+      "volume": "5,000+"
+    },
+    {
+      "title": "魏平政競選總部",
+      "volume": "1,000+"
+    },
+    {
+      "title": "大谷翔平",
+      "volume": "200+"
+    },
+    {
+      "title": "nba",
+      "volume": "1,000+"
+    },
+    {
+      "title": "陳佩琪",
+      "volume": "500+"
+    },
+    {
+      "title": "馬筱梅",
+      "volume": "100+"
+    },
+    {
+      "title": "徐欣瑩",
+      "volume": "100+"
+    },
+    {
+      "title": "彭佳慧",
+      "volume": "100+"
+    },
+    {
+      "title": "遺產",
+      "volume": "100+"
+    },
+    {
+      "title": "劉喬安",
+      "volume": "100+"
+    },
+    {
       "title": "油价",
       "volume": "2,000+"
     },
@@ -34,72 +94,12 @@
       "volume": "2,000+"
     },
     {
-      "title": "明天的天氣",
-      "volume": "2萬+"
-    },
-    {
-      "title": "刘和然",
-      "volume": "1,000+"
-    },
-    {
-      "title": "立法院",
-      "volume": "1,000+"
-    },
-    {
-      "title": "amd",
-      "volume": "2,000+"
-    },
-    {
-      "title": "鸚哥魚",
-      "volume": "2,000+"
-    },
-    {
-      "title": "中華職棒",
-      "volume": "5,000+"
-    },
-    {
-      "title": "鄭朝方",
-      "volume": "1,000+"
-    },
-    {
-      "title": "nba",
-      "volume": "500+"
-    },
-    {
-      "title": "退休金",
-      "volume": "2,000+"
-    },
-    {
-      "title": "croatia vs england",
+      "title": "三立 新聞 網",
       "volume": "200+"
     },
     {
-      "title": "所得 替代 率",
-      "volume": "1,000+"
-    },
-    {
-      "title": "胆固醇",
-      "volume": "1,000+"
-    },
-    {
-      "title": "南亞科技",
-      "volume": "1,000+"
-    },
-    {
-      "title": "好 市 多",
-      "volume": "1,000+"
-    },
-    {
-      "title": "泡 麵",
-      "volume": "1,000+"
-    },
-    {
-      "title": "太子油飯",
-      "volume": "1,000+"
-    },
-    {
-      "title": "咖啡",
-      "volume": "1,000+"
+      "title": "明天的天氣",
+      "volume": "2萬+"
     }
   ]
 }
