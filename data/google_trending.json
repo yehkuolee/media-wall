@@ -1,48 +1,80 @@
 {
-  "updated_at": "2026-10-04T07:01:03.729930+08:00",
+  "updated_at": "2026-10-04T10:35:49.505654+08:00",
   "keywords": [
     {
-      "title": "旅遊",
-      "volume": "2萬+"
-    },
-    {
       "title": "蔣萬安",
-      "volume": "5,000+"
-    },
-    {
-      "title": "機車",
-      "volume": "5,000+"
+      "volume": "1萬+"
     },
     {
       "title": "mlb",
-      "volume": "2,000+"
+      "volume": "1萬+"
     },
     {
       "title": "謝淑薇",
       "volume": "1萬+"
     },
     {
-      "title": "克羅埃西亞 對 英格蘭",
+      "title": "nba",
       "volume": "5,000+"
-    },
-    {
-      "title": "道奇",
-      "volume": "2,000+"
     },
     {
       "title": "西班牙 對 捷克",
       "volume": "2,000+"
     },
     {
-      "title": "民 調",
+      "title": "mlb季後賽",
       "volume": "5,000+"
+    },
+    {
+      "title": "劉喬安",
+      "volume": "1,000+"
+    },
+    {
+      "title": "旅遊",
+      "volume": "2萬+"
+    },
+    {
+      "title": "沈伯洋競選總部",
+      "volume": "500+"
+    },
+    {
+      "title": "argentina vs burkina faso",
+      "volume": "500+"
+    },
+    {
+      "title": "李 珠 珢",
+      "volume": "1,000+"
+    },
+    {
+      "title": "機車",
+      "volume": "1萬+"
+    },
+    {
+      "title": "洋基",
+      "volume": "1,000+"
+    },
+    {
+      "title": "銀行",
+      "volume": "5,000+"
+    },
+    {
+      "title": "新北市",
+      "volume": "5,000+"
+    },
+    {
+      "title": "克羅埃西亞 對 英格蘭",
+      "volume": "5,000+"
+    },
+    {
+      "title": "凱爾·塔克",
+      "volume": "1,000+"
     },
     {
       "title": "傅子純",
       "volume": "2,000+"
     },
     {
-      "title": "李 珠 珢",
+      "title": "遺產",
       "volume": "500+"
     },
     {
@@ -50,56 +82,24 @@
       "volume": "5,000+"
     },
     {
-      "title": "魏平政競選總部",
-      "volume": "1,000+"
-    },
-    {
-      "title": "大谷翔平",
-      "volume": "200+"
-    },
-    {
-      "title": "nba",
-      "volume": "1,000+"
-    },
-    {
       "title": "陳佩琪",
-      "volume": "500+"
+      "volume": "1,000+"
     },
     {
       "title": "馬筱梅",
-      "volume": "100+"
+      "volume": "500+"
     },
     {
       "title": "徐欣瑩",
-      "volume": "100+"
+      "volume": "500+"
     },
     {
-      "title": "彭佳慧",
-      "volume": "100+"
+      "title": "大谷翔平",
+      "volume": "500+"
     },
     {
-      "title": "遺產",
-      "volume": "100+"
-    },
-    {
-      "title": "劉喬安",
-      "volume": "100+"
-    },
-    {
-      "title": "油价",
+      "title": "魏平政競選總部",
       "volume": "2,000+"
-    },
-    {
-      "title": "蔡天鳳",
-      "volume": "2,000+"
-    },
-    {
-      "title": "三立 新聞 網",
-      "volume": "200+"
-    },
-    {
-      "title": "明天的天氣",
-      "volume": "2萬+"
     }
   ]
 }
