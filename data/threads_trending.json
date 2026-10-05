@@ -1,6 +1,36 @@
 {
-  "updated_at": "2026-10-05T22:05:17.803522+08:00",
+  "updated_at": "2026-10-05T23:05:13.490731+08:00",
   "topics": [
+    {
+      "title": "蔣萬安為警搜同志酒吧致歉",
+      "description": "萬華警方搜索同志酒吧涉執法過當與言語羞辱，台北市長蔣萬安二度致歉並懲處涉案員警",
+      "count": "1 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%90%8C%E5%BF%97%E9%85%92%E5%90%A7&serp_type=trends&trend_fbid=28686458981014185"
+    },
+    {
+      "title": "俄羅斯女研究員打破試管身亡",
+      "description": "西伯利亞研究所人員疑因打破病菌試管染病身亡，官方緊急隔離近200名接觸者",
+      "count": "486 則貼文",
+      "link": "https://www.threads.com/search?q=%E4%BF%84%E7%BE%85%E6%96%AF%E7%A0%94%E7%A9%B6%E5%93%A1&serp_type=trends&trend_fbid=2869241223454855"
+    },
+    {
+      "title": "萬華員警莊晨星歧視身障遭懲處",
+      "description": "在西門町酒吧查緝勤務中發表不當言詞，萬華員警莊晨星遭懲處且過往違法搜查行為曝光",
+      "count": "819 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%8E%8A%E6%99%A8%E6%98%9F&serp_type=trends&trend_fbid=1558536986084696"
+    },
+    {
+      "title": "《荒野亂鬥》推古斯解謎活動",
+      "description": "透過調整收音機與保險箱等解謎步驟，即可在《荒野亂鬥》領取限定表情與獎勵",
+      "count": "426 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%8D%92%E9%87%8E%E4%BA%82%E9%AC%A5&serp_type=trends&trend_fbid=2601498506955578"
+    },
+    {
+      "title": "羅一鈞稱美沙冬非鼓勵吸毒",
+      "description": "衛福部疾管署長羅一鈞說明，美沙冬替代療法與清潔針具為公衛減害措施，並非鼓勵吸毒",
+      "count": "968 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%BE%85%E4%B8%80%E9%88%9E&serp_type=trends&trend_fbid=3638580842969220"
+    },
     {
       "title": "姚惠珍指沈伯洋領巾像少先隊",
       "description": "姚惠珍將沈伯洋橘色領巾比作少先隊，主持人王乃伃則澄清為船員造型穿搭",
@@ -14,21 +44,15 @@
       "link": "https://www.threads.com/search?q=Mr.Children&serp_type=trends&trend_fbid=1112090781553699"
     },
     {
-      "title": "俄女研究員疑打破鼠疫試管亡",
-      "description": "西伯利亞防疫所發生疑似鼠疫死亡事件，俄國緊急封鎖5家醫院並隔離近200人",
-      "count": "867 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%BC%A0%E7%96%AB&serp_type=trends&trend_fbid=1096624763135864"
-    },
-    {
       "title": "林口釣蝦場爆發肢體衝突",
       "description": "顧客於新北林口釣蝦場禁菸區違規抽菸演變為鬥毆，警方已將涉案人員帶回釐清",
-      "count": "6 千 則貼文",
+      "count": "7 千 則貼文",
       "link": "https://www.threads.com/search?q=%E9%87%A3%E8%9D%A6%E5%A0%B4&serp_type=trends&trend_fbid=2290821038385444"
     },
     {
       "title": "元大證券期貨系統大當機",
       "description": "投資先生App等系統故障，導致元大證券與期貨投資人無法送單及平倉",
-      "count": "112 則貼文",
+      "count": "118 則貼文",
       "link": "https://www.threads.com/search?q=%E5%85%83%E5%A4%A7%E8%AD%89%E5%88%B8&serp_type=trends&trend_fbid=1100787809361427"
     },
     {
@@ -52,44 +76,20 @@
     {
       "title": "貝佳頤球場遭性騷擾",
       "description": "樂天女孩貝佳頤在球場遭騷擾，外界呼籲球團禁止騷擾者進場以保護安全",
-      "count": "48 則貼文",
+      "count": "49 則貼文",
       "link": "https://www.threads.com/search?q=%E8%B2%9D%E4%BD%B3%E9%A0%A4&serp_type=trends&trend_fbid=1790985138920751"
     },
     {
       "title": "必勝客推大比薩特價198元",
       "description": "限時超值優惠開跑，必勝客13吋大比薩搭配副食或飲料特價198元並提供10種口味",
-      "count": "249 則貼文",
+      "count": "256 則貼文",
       "link": "https://www.threads.com/search?q=%E5%BF%85%E5%8B%9D%E5%AE%A2&serp_type=trends&trend_fbid=1569230781082489"
-    },
-    {
-      "title": "警搜同志酒吧蔣萬安致歉",
-      "description": "台北市警方搜索西門町同志酒吧涉執法過當，市長蔣萬安公開致歉並懲處六名官警",
-      "count": "3 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%A5%BF%E9%96%80%E7%94%BA%E9%85%92%E5%90%A7&serp_type=trends&trend_fbid=1809827676759215"
     },
     {
       "title": "大雨致輔大校園嚴重淹水",
       "description": "輔仁大學因大雨導致校區嚴重積水，學生自嘲涉水通行如同水軍訓練",
-      "count": "684 則貼文",
+      "count": "726 則貼文",
       "link": "https://www.threads.com/search?q=%E8%BC%94%E4%BB%81%E5%A4%A7%E5%AD%B8&serp_type=trends&trend_fbid=1861222101715355"
-    },
-    {
-      "title": "髙橋海人以KAITO名義活動",
-      "description": "髙橋海人以KAITO展開活動，開發商Crypton呼籲雙方支持者互相尊重",
-      "count": "578 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%AB%99%E6%A9%8B%E6%B5%B7%E4%BA%BA&serp_type=trends&trend_fbid=1877594953407326"
-    },
-    {
-      "title": "橫濱流星與廣瀨鈴將訪台宣傳",
-      "description": "電影《宛如星辰的你》在台上映，導演藤井道人偕主演橫濱流星與廣瀨鈴將於10月中訪台",
-      "count": "83 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%A9%AB%E6%BF%B1%E6%B5%81%E6%98%9F&serp_type=trends&trend_fbid=1133568695994378"
-    },
-    {
-      "title": "男子掏槍威嚇下秒褲子滑落",
-      "description": "兩方爆發激烈爭執，男子拔槍威嚇時褲子意外滑落至臀部，肅殺場面頓時化為滑稽鬧劇",
-      "count": "",
-      "link": "https://www.threads.com/search?q=%E6%8E%8F%E6%A7%8D%E7%94%B7%E5%AD%90&serp_type=trends&trend_fbid=2030186717635916"
     }
   ]
 }
