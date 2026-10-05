@@ -1,65 +1,83 @@
 {
-  "updated_at": "2026-10-06T00:05:14.130481+08:00",
+  "updated_at": "2026-10-06T01:05:17.710277+08:00",
   "topics": [
     {
-      "title": "台指期夜盤突破5萬點大關",
-      "description": "多頭買盤推升台指期夜盤率先破5萬點，台積電期貨與加權指數同創新高",
-      "count": "353 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4&serp_type=trends&trend_fbid=2284921468929471"
+      "title": "蔣萬安為警搜同志酒吧致歉",
+      "description": "北市警臨檢同志酒吧涉羞辱身障者 蔣萬安公開致歉並懲處失職人員",
+      "count": "1 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%90%8C%E5%BF%97%E9%85%92%E5%90%A7&serp_type=trends&trend_fbid=1446198720934830"
+    },
+    {
+      "title": "蔣萬安邀蔡康永出席競選活動",
+      "description": "面對台北市長蔣萬安公開邀請，蔡康永表示若收到具體邀約將配合服裝欣然出席",
+      "count": "2 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%94%A1%E5%BA%B7%E6%B0%B8&serp_type=trends&trend_fbid=2578055775996726"
+    },
+    {
+      "title": "沈伯洋首發競選報紙《順報》",
+      "description": "台北市長參選人沈伯洋於捷運站首發《順報》，並推出公車廣告主打台北順起來",
+      "count": "10 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1103145076021810"
+    },
+    {
+      "title": "大學生拍片示範逃課干擾課堂",
+      "description": "大學生在課堂示範逃課技巧以博取流量，相關行為未經請假便擅離並干擾教學秩序",
+      "count": "",
+      "link": "https://www.threads.com/search?q=%E9%80%83%E8%AA%B2%E5%BD%B1%E7%89%87&serp_type=trends&trend_fbid=1639901180972080"
+    },
+    {
+      "title": "回顧1998印尼排華暴動",
+      "description": "1998年印尼暴動中針對華人的性侵與掠奪暴行，使部分民眾對2004年大海嘯難以釋懷",
+      "count": "349 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8D%B0%E5%B0%BC%E6%8E%92%E8%8F%AF&serp_type=trends&trend_fbid=1106392688792318"
     },
     {
       "title": "BABYMONSTER將回歸",
       "description": "YG娛樂旗下女團BABYMONSTER宣布將於10月23日回歸並釋出日蝕預告海報",
-      "count": "2 千 則貼文",
-      "link": "https://www.threads.com/search?q=BABYMONSTER&serp_type=trends&trend_fbid=1061299676742999"
-    },
-    {
-      "title": "《荒野亂鬥》推出限時解謎活動",
-      "description": "玩家在《荒野亂鬥》完成調整時鐘等解密步驟即可獲得限定表情與寶物之星",
-      "count": "417 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%8D%92%E9%87%8E%E4%BA%82%E9%AC%A5&serp_type=trends&trend_fbid=4588512218058840"
-    },
-    {
-      "title": "郭哲榮看好國巨發文拒認輸",
-      "description": "國巨終場收平盤遭調侃，證券分析師郭哲榮公開表態不認輸並誓言打破魔咒",
-      "count": "128 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%83%AD%E5%93%B2%E6%A6%AE&serp_type=trends&trend_fbid=1575241154378499"
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=BABYMONSTER&serp_type=trends&trend_fbid=1670437447834041"
     },
     {
       "title": "俄研究員疑打破鼠疫試管病逝",
       "description": "西伯利亞實驗室疑外洩鼠疫桿菌，當地封鎖五家醫院並匡列近兩百人隔離",
       "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%BC%A0%E7%96%AB&serp_type=trends&trend_fbid=1986046635864603"
+      "link": "https://www.threads.com/search?q=%E9%BC%A0%E7%96%AB&serp_type=trends&trend_fbid=29136304662641913"
     },
     {
-      "title": "鄭勝換軍中演出IG粉絲暴增",
-      "description": "前ATBO成員鄭勝換隨軍演出，個人Instagram追蹤人數自3萬激增至18萬",
-      "count": "473 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%84%AD%E5%8B%9D%E6%8F%9B&serp_type=trends&trend_fbid=1410024974586513"
+      "title": "郭哲榮看好國巨發文拒認輸",
+      "description": "國巨終場收平盤遭調侃，證券分析師郭哲榮公開表態不認輸並誓言打破魔咒",
+      "count": "135 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%83%AD%E5%93%B2%E6%A6%AE&serp_type=trends&trend_fbid=2045725719397433"
+    },
+    {
+      "title": "醫界重申美沙冬為公衛措施",
+      "description": "蔣萬安與國民黨提及沈伯洋減害政策，醫界表示美沙冬與清潔針具為常態公衛防疫措施",
+      "count": "1 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%BE%8E%E6%B2%99%E5%86%AC&serp_type=trends&trend_fbid=1690665495981630"
     },
     {
       "title": "徐佳青遭控濫用公帑帶兒出訪",
       "description": "民眾黨團指僑委會委員長徐佳青以攝影官名義帶未成年兒子隨行出國",
-      "count": "537 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%BE%90%E4%BD%B3%E9%9D%92&serp_type=trends&trend_fbid=1642271477480041"
+      "count": "631 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%BE%90%E4%BD%B3%E9%9D%92&serp_type=trends&trend_fbid=1397700815777530"
     },
     {
-      "title": "蔣萬安邀蔡康永出席競總活動",
-      "description": "蔡康永出席沈伯洋造勢後獲蔣萬安邀請，他回應收到具體邀約將前往觀摩",
-      "count": "2 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%94%A1%E5%BA%B7%E6%B0%B8&serp_type=trends&trend_fbid=1102118649073523"
+      "title": "台指期夜盤突破5萬點大關",
+      "description": "多頭買盤推升台指期夜盤率先破5萬點，台積電期貨與加權指數同創新高",
+      "count": "355 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4&serp_type=trends&trend_fbid=2284921468929471"
     },
     {
-      "title": "醫界說明美沙冬屬醫療減害措施",
-      "description": "台北市長蔣萬安提及沈伯洋言論，醫界表示美沙冬屬醫療減害措施且蔣曾提案支持",
-      "count": "1 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%BE%8E%E6%B2%99%E5%86%AC&serp_type=trends&trend_fbid=2556718281513768"
+      "title": "《荒野亂鬥》推出限時解謎活動",
+      "description": "玩家在《荒野亂鬥》完成調整時鐘等解密步驟即可獲得限定表情與寶物之星",
+      "count": "395 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%8D%92%E9%87%8E%E4%BA%82%E9%AC%A5&serp_type=trends&trend_fbid=4588512218058840"
     },
     {
-      "title": "沈伯洋將舉辦聯合總部成立大會",
-      "description": "台北市長參選人沈伯洋與議員洪健益將於10月9日晚間在永吉國中前造勢",
-      "count": "10 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=954479920555513"
+      "title": "鄭勝換軍中演出IG粉絲暴增",
+      "description": "前ATBO成員鄭勝換隨軍演出，個人Instagram追蹤人數自3萬激增至18萬",
+      "count": "437 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%84%AD%E5%8B%9D%E6%8F%9B&serp_type=trends&trend_fbid=1410024974586513"
     },
     {
       "title": "林口釣蝦場檢舉抽菸遭圍毆",
@@ -70,26 +88,8 @@
     {
       "title": "美逮捕涉跟監賴清德長子華裔女",
       "description": "華裔女子張婉瑩涉嫌在西雅圖跟監總統賴清德長子，於洛杉磯機場搭機前遭美方逮捕",
-      "count": "890 則貼文",
+      "count": "928 則貼文",
       "link": "https://www.threads.com/search?q=%E5%BC%B5%E5%A9%89%E7%91%A9&serp_type=trends&trend_fbid=1081850961399836"
-    },
-    {
-      "title": "華通9月營收創高股價攻漲停",
-      "description": "華通9月營收達86.17億元創歷史新高，受低軌衛星升級帶動股價攻上漲停價248.5元",
-      "count": "8 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%8F%AF%E9%80%9A&serp_type=trends&trend_fbid=1085345777444658"
-    },
-    {
-      "title": "元大證券期貨系統大當機",
-      "description": "投資先生App等系統故障，導致元大證券與期貨投資人無法送單及平倉",
-      "count": "121 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%85%83%E5%A4%A7%E8%AD%89%E5%88%B8&serp_type=trends&trend_fbid=1735476577754412"
-    },
-    {
-      "title": "蔣萬安為警搜同志酒吧致歉",
-      "description": "萬華警方搜索同志酒吧涉執法過當與言語羞辱，台北市長蔣萬安二度致歉並懲處涉案員警",
-      "count": "1 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%90%8C%E5%BF%97%E9%85%92%E5%90%A7&serp_type=trends&trend_fbid=28686458981014185"
     }
   ]
 }
