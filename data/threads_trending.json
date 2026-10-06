@@ -1,95 +1,95 @@
 {
-  "updated_at": "2026-10-06T09:05:13.584199+08:00",
+  "updated_at": "2026-10-06T10:05:14.426974+08:00",
   "topics": [
     {
-      "title": "沈伯洋發行《順報》創刊號",
-      "description": "沈伯洋於忠孝復興站親自發放政策刊物《順報》千份創刊號全數發完",
-      "count": "9 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1440195494982937"
-    },
-    {
-      "title": "台股夜盤衝上5萬點新高",
-      "description": "台指期夜盤衝上5萬點大關，台積電夜盤觸及2600元且ADR達485.37美元",
-      "count": "3 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E8%82%A1&serp_type=trends&trend_fbid=1776855513642776"
-    },
-    {
-      "title": "台鐵列車故障雙向嚴重誤點",
-      "description": "受汐科至南港間列車故障影響，台鐵雙向大誤點致月台擠滿通勤族",
+      "title": "台鐵貨車故障致通勤列車延誤",
+      "description": "台鐵貨車於南港至汐止間故障，導致通勤列車延誤，目前已排除並恢復行車",
       "count": "2 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E9%90%B5&serp_type=trends&trend_fbid=1106661308681804"
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E9%90%B5&serp_type=trends&trend_fbid=2351940938885301"
     },
     {
-      "title": "俄研究所疑鼠疫外洩隔離近兩百人",
-      "description": "俄羅斯一所研究所傳研究員染肺鼠疫身亡，當地已封閉多所醫療機構並隔離近兩百名接觸者",
-      "count": "460 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%8D%E9%BC%A0%E7%96%AB%E7%A0%94%E7%A9%B6%E6%89%80&serp_type=trends&trend_fbid=2558425418003142"
-    },
-    {
-      "title": "初音回應KAITO標籤重複",
-      "description": "高橋海人個人活動與虛擬歌手KAITO標籤重複，初音官方呼籲互相尊重",
+      "title": "俄研究所疑病原外洩隔離200人",
+      "description": "伊爾庫茨克一名反鼠疫技術員肺炎猝逝，當地緊急隔離近200名接觸者並封閉醫院",
       "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=KAITO&serp_type=trends&trend_fbid=1110628701353365"
+      "link": "https://www.threads.com/search?q=%E9%BC%A0%E7%96%AB&serp_type=trends&trend_fbid=1095987399571757"
     },
     {
-      "title": "鴻海9月營收破兆創歷史新高",
-      "description": "受惠AI伺服器拉貨動能，鴻海9月營收達1兆1586億元並帶動ADR走高",
-      "count": "3 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%B4%BB%E6%B5%B7&serp_type=trends&trend_fbid=28467421132927640"
-    },
-    {
-      "title": "梅西將迎國家隊告別戰",
-      "description": "阿根廷隊於10月7日對陣貝南，家鄉羅薩里奧展示巨型球衣向梅西致敬",
-      "count": "471 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%A2%85%E8%A5%BF&serp_type=trends&trend_fbid=1889487238706880"
-    },
-    {
-      "title": "蔣萬安與沈伯洋交鋒減害政策",
-      "description": "針對美沙冬替代療法與反毒界線，雙方陣營展開政策交鋒，資深媒體人姚惠珍亦發表評析",
-      "count": "497 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E5%8C%97%E5%B8%82%E9%95%B7%E9%81%B8%E6%88%B0&serp_type=trends&trend_fbid=1082703691329093"
-    },
-    {
-      "title": "無菸釣蝦場爆發打架衝突",
-      "description": "無菸釣蝦場發生打架衝突，現場當事人拉扯露臀，甚至有人跳入蝦池內游泳",
-      "count": "4 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%87%A3%E8%9D%A6%E5%A0%B4&serp_type=trends&trend_fbid=2677108752710352"
-    },
-    {
-      "title": "全球聲援康乃爾大學性侵案",
-      "description": "康乃爾大學性侵案曝光後，全球發起Jane Doe行動保護受害者隱私與反肉搜",
-      "count": "3 萬 則貼文",
-      "link": "https://www.threads.com/search?q=Jane%20Doe&serp_type=trends&trend_fbid=996342100154884"
-    },
-    {
-      "title": "蔡康永出席沈伯洋競總成立大會",
-      "description": "蔡康永現身沈伯洋造勢活動遭部分廠商切割，以「風攜帶的種子留下來了」作結",
+      "title": "蔡康永出席沈伯洋競總成立",
+      "description": "台北市長參選人沈伯洋成立競總，蔡康永出席並透露有意訪談沈伯洋與蔣萬安",
       "count": "2 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%94%A1%E5%BA%B7%E6%B0%B8&serp_type=trends&trend_fbid=2952000978534126"
+      "link": "https://www.threads.com/search?q=%E8%94%A1%E5%BA%B7%E6%B0%B8&serp_type=trends&trend_fbid=1850678143034447"
     },
     {
-      "title": "粉絲重溫宣萱經典角色高希敏",
-      "description": "宣萱在《老婆大人》中飾演的高希敏深受喜愛，粉絲重溫劇照並期盼劇集重播",
-      "count": "194 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%AE%A3%E8%90%B1&serp_type=trends&trend_fbid=1041514315586589"
+      "title": "鼎元漲停成當沖與短線標的",
+      "description": "台股鼎元延續強勢漲停格局，市場多方鎖定百元以上價位進行當沖掛單",
+      "count": "6 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%BC%8E%E5%85%83&serp_type=trends&trend_fbid=28841913732070952"
     },
     {
-      "title": "華僑回憶1998印尼排華暴動",
-      "description": "印尼華僑回憶1998年暴動時目睹搶劫放火，指出當地人因貧富差距仇視華人",
-      "count": "492 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8D%B0%E5%B0%BC%E6%8E%92%E8%8F%AF&serp_type=trends&trend_fbid=3441168486053142"
+      "title": "華新科成當沖與短線交易熱門",
+      "description": "受AI伺服器需求與投信買超激勵，華新科股價在365元至396元之間震盪",
+      "count": "6 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%8F%AF%E6%96%B0%E7%A7%91&serp_type=trends&trend_fbid=2795401444191358"
     },
     {
-      "title": "康是美滿額贈Jennie聯名襪",
-      "description": "凡士林系列消費滿額即贈聯名襪，門市同步展售SUPER JUNIOR-D&E代言香氛",
-      "count": "2 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%BA%B7%E6%98%AF%E7%BE%8E&serp_type=trends&trend_fbid=3803974303101732"
+      "title": "星宇福岡航班遇宵禁旅客滯留",
+      "description": "星宇航空JX841航班因機件異常與福岡宵禁無法起飛，乘客深夜滯留自覓住宿",
+      "count": "575 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA&serp_type=trends&trend_fbid=2051754665466866"
     },
     {
-      "title": "聯電股價逆勢重挫",
-      "description": "聯電因擬發行18億美元海外可轉債，遭三大法人大舉拋售逾11萬張",
+      "title": "洋基首局發生3次守備失誤",
+      "description": "在對戰光芒的分區系列賽中，紐約洋基隊於首局接連發生三次守備失誤並導致失分",
+      "count": "855 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B4%8B%E5%9F%BA&serp_type=trends&trend_fbid=1569780521106502"
+    },
+    {
+      "title": "萬華分局搜索西門CD酒吧",
+      "description": "台北市萬華分局搜索西門町CD酒吧並帶走51人，律師與民團指控涉嫌違法搜索及強制罪",
+      "count": "4 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%90%AC%E8%8F%AF%E5%88%86%E5%B1%80&serp_type=trends&trend_fbid=2557980117957911"
+    },
+    {
+      "title": "聯電ADR盤中重挫約10%",
+      "description": "美股聯電ADR盤中跌幅達一成，持有與加碼的投資人對後續走勢表達擔憂",
       "count": "1 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%81%AF%E9%9B%BB&serp_type=trends&trend_fbid=2507692663086690"
+      "link": "https://www.threads.com/search?q=%E8%81%AF%E9%9B%BB&serp_type=trends&trend_fbid=1118334070853125"
+    },
+    {
+      "title": "沈伯洋團隊發放《順報》創刊號",
+      "description": "台北捷運站點出現排隊人潮領取沈伯洋團隊發放的《順報》政策白皮書",
+      "count": "9 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1108005008281327"
+    },
+    {
+      "title": "田馥甄小巨蛋演唱會開放登記",
+      "description": "田馥甄台北小巨蛋演唱會預計12月連唱6場，於10月6日至8日開放實名制登記抽選",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%94%B0%E9%A6%A5%E7%94%84&serp_type=trends&trend_fbid=1728639052598831"
+    },
+    {
+      "title": "群創友達股價劇烈震盪",
+      "description": "外資大幅調節群創與友達持股，投資人對後續逢低加碼或避開觀望看法分歧",
+      "count": "119 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%9D%A2%E6%9D%BF%E9%9B%99%E8%99%8E&serp_type=trends&trend_fbid=28423495124009883"
+    },
+    {
+      "title": "賴清德生日適逢台股創新高",
+      "description": "台指期突破5萬點創歷史新高，支持者於10月6日向總統賴清德獻上生日祝福",
+      "count": "9 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%B3%B4%E6%B8%85%E5%BE%B7&serp_type=trends&trend_fbid=1120678797042482"
+    },
+    {
+      "title": "公費流感與新冠疫苗同步開打",
+      "description": "醫療院所10月起展開公費接種，家長留意疫苗保護效果與幼兒發燒副作用",
+      "count": "771 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B5%81%E6%84%9F%E7%96%AB%E8%8B%97&serp_type=trends&trend_fbid=28647577548218389"
+    },
+    {
+      "title": "徐佳青遭控濫用公帑與特權",
+      "description": "民進黨徐佳青被指讓丈夫搭公務車並帶兒子出訪支領日支費，遭控涉嫌違法圖利",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%BE%90%E4%BD%B3%E9%9D%92&serp_type=trends&trend_fbid=1653911306449799"
     }
   ]
 }
