@@ -638,10 +638,21 @@ MASTHEAD_CSS = """
 .mw-updated { color: #999; font-size: .67rem; text-align: right; letter-spacing: 1px; margin-top: 2px; }
 .mw-right { display: flex; align-items: center; gap: 14px; }
 .mw-theme-btn {
-    width: 32px; height: 32px; border: 1px solid #d8d5d0; background: transparent;
-    border-radius: 50%; cursor: pointer; font-size: .95rem; line-height: 1; padding: 0;
+    display: flex; align-items: center; gap: 8px; border: none; background: transparent;
+    cursor: pointer; padding: 0; font: inherit;
 }
-.mw-theme-btn:hover { border-color: #c41230; }
+.mw-theme-label { color: #555; font-size: .72rem; font-weight: 700; letter-spacing: 1px; }
+.mw-switch {
+    position: relative; width: 36px; height: 20px; border-radius: 10px;
+    background: #d8d5d0; transition: background .2s;
+}
+.mw-switch::after {
+    content: ""; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px;
+    border-radius: 50%; background: #ffffff; box-shadow: 0 1px 3px rgba(0,0,0,.25); transition: transform .2s;
+}
+.mw-theme-btn[aria-checked="true"] .mw-switch { background: #22c55e; }
+.mw-theme-btn[aria-checked="true"] .mw-switch::after { transform: translateX(16px); }
+.mw-theme-btn:hover .mw-theme-label { color: #c41230; }
 
 /* 深色模式 */
 html.mw-dark, html.mw-dark body { background: #000000 !important; }
@@ -651,8 +662,8 @@ html.mw-dark, html.mw-dark body { background: #000000 !important; }
 .mw-dark .mw-subtitle, .mw-dark .mw-date, .mw-dark .mw-updated { color: #6f6f6f; }
 .mw-dark .live-dot { background: #ff3b4e; }
 .mw-dark .live-text { color: #ff3b4e; }
-.mw-dark .mw-theme-btn { border-color: #333333; }
-.mw-dark .mw-theme-btn:hover { border-color: #ff3b4e; }
+.mw-dark .mw-theme-label { color: #b0b0b0; }
+.mw-dark .mw-theme-btn:hover .mw-theme-label { color: #ff3b4e; }
 """
 
 
@@ -680,7 +691,7 @@ def main():
             <span class="live-text">LIVE 即時更新中</span>
         </div>
         <div class="mw-right">
-            <button class="mw-theme-btn" id="mw-theme-btn" title="切換深色／淺色">🌙</button>
+            <button class="mw-theme-btn" id="mw-theme-btn" role="switch" aria-checked="false" title="切換深色／淺色"><span class="mw-theme-label">深色模式</span><span class="mw-switch"></span></button>
             <div>
                 <div class="mw-time" id="mw-clock">{now.strftime('%H:%M:%S')}</div>
                 <div class="mw-date" id="mw-date">{now.strftime('%Y/%m/%d')} (週{WEEKDAY[now.weekday()]})</div>
@@ -700,7 +711,7 @@ def main():
         const dark = t === "dark";
         document.documentElement.classList.toggle("mw-dark", dark);
         try {{ window.parent.document.documentElement.classList.toggle("mw-dark", dark); }} catch (e) {{}}
-        document.getElementById("mw-theme-btn").textContent = dark ? "☀️" : "🌙";
+        document.getElementById("mw-theme-btn").setAttribute("aria-checked", dark);
     }}
     let theme = loadTheme();
     applyTheme(theme);
