@@ -300,27 +300,35 @@ st.markdown("""
     margin-top: 3px;
 }
 
-/* ── Ticker ── */
+/* ── Ticker（翻頁式，一次一則，滑鼠移上去暫停）── */
 .ticker-wrap {
+    display: flex;
+    align-items: center;
     background: #121212;
     border: none;
     border-radius: 0;
-    padding: 7px 0;
+    height: 34px;
     overflow: hidden;
-    margin-top: 12px;
+    margin: 0 0 14px 0;
     white-space: nowrap;
 }
-.ticker-label { color: #ffffff; font-size: .68rem; font-weight: 700; padding: 0 12px; letter-spacing: 2px; text-transform: uppercase; }
-.ticker-text  {
-    color: #cccccc;
-    font-size: .74rem;
-    display: inline-block;
-    animation: scroll-left 60s linear infinite;
+.ticker-label { color: #ffffff; font-size: .68rem; font-weight: 700; padding: 0 12px; letter-spacing: 2px; text-transform: uppercase; flex-shrink: 0; }
+.ticker-window { flex: 1; height: 34px; overflow: hidden; min-width: 0; }
+.ticker-list { display: block; }
+.ticker-wrap:hover .ticker-list { animation-play-state: paused; }
+.ticker-item {
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #cccccc !important;
+    font-size: .8rem;
+    text-decoration: none !important;
+    padding-right: 12px;
 }
-@keyframes scroll-left {
-    from { transform: translateX(80vw); }
-    to   { transform: translateX(-100%); }
-}
+.ticker-item:hover { color: #ffffff !important; text-decoration: underline !important; }
+.ticker-src { color: #888888; margin-right: 8px; }
 
 /* ── Footer ── */
 .mw-footer { text-align:center; color:#bbb; font-size:.62rem; margin-top:8px; }
@@ -360,7 +368,9 @@ html.mw-dark .src-name  { color: #c8c8c8; }
 html.mw-dark .src-bar   { background: linear-gradient(90deg, #ff3b4e, #8b0000); }
 html.mw-dark .ticker-wrap { background: #000000; border-top: 1px solid #222222; border-bottom: 1px solid #222222; }
 html.mw-dark .ticker-label { color: #ff3b4e; }
-html.mw-dark .ticker-text  { color: #f5c542; }
+html.mw-dark .ticker-item  { color: #f5c542 !important; }
+html.mw-dark .ticker-item:hover { color: #ffd76a !important; }
+html.mw-dark .ticker-src   { color: #8a8a8a; }
 html.mw-dark .mw-footer { color: #555555; }
 html.mw-dark ::-webkit-scrollbar-track { background: #000000; }
 html.mw-dark ::-webkit-scrollbar-thumb { background: #333333; }
@@ -606,6 +616,35 @@ def keyword_cloud_html(kws: list[str]) -> str:
     return out
 
 
+def ticker_html(items: list) -> str:
+    """翻頁式跑馬燈：每則停 4 秒後往上翻；最後補一份第一則，翻回開頭才不會跳。純 CSS，深色模式自動套用。"""
+    hold, flip = 4.0, 0.5
+    n = len(items)
+    total = n * (hold + flip)
+    frames = []
+    for i in range(n):
+        start = i * (hold + flip) / total * 100
+        end = (i * (hold + flip) + hold) / total * 100
+        frames.append(f"{start:.3f}%,{end:.3f}% {{ transform: translateY(-{i * 34}px); }}")
+    frames.append(f"100% {{ transform: translateY(-{n * 34}px); }}")
+    rows = ""
+    for n_ in items + items[:1]:
+        title = html_mod.escape(n_["title"] or "")
+        link = html_mod.escape(n_.get("link") or "#")
+        src = html_mod.escape(n_["source"])
+        rows += (f'<a class="ticker-item" href="{link}" target="_blank" rel="noopener" title="{title}">'
+                 f'<span class="ticker-src">📌 {src}</span>{title}</a>')
+    return f"""
+    <style>
+    @keyframes ticker-flip {{ {" ".join(frames)} }}
+    .ticker-list {{ animation: ticker-flip {total:.1f}s ease-in-out infinite; }}
+    </style>
+    <div class="ticker-wrap">
+        <span class="ticker-label">📡 熱門快訊</span>
+        <div class="ticker-window"><div class="ticker-list">{rows}</div></div>
+    </div>"""
+
+
 MASTHEAD_CSS = """
 .mw-header {
     display: flex;
@@ -765,6 +804,12 @@ def main():
     threads_topics = threads_data.get("topics", [])
     threads_updated = threads_data.get("updated_at")
 
+    # ── Ticker：放在標題列下方，翻頁式 ─────────────────────────
+    # 各媒體輪流取，跳過中間 Top 15 已出現的（第 16–35 則）
+    ticker_items = round_robin_top(all_news, 35)[15:] or all_news[:20]
+    if ticker_items:
+        st.markdown(ticker_html(ticker_items), unsafe_allow_html=True)
+
     # ── Main 3 columns ───────────────────────────────────────────
     left, center, right = st.columns([1.1, 2.1, 1.1])
 
@@ -856,17 +901,6 @@ def main():
             <div style="padding:0 4px;margin-bottom:6px;">
                 <div class="src-bar" style="width:{pct}%"></div>
             </div>""", unsafe_allow_html=True)
-
-    # ── Ticker ──────────────────────────────────────────────────
-    if all_news:
-        ticker = "  ｜  ".join(
-            f"📌 {n['source']}：{n['title'][:28]}" for n in all_news[:20]
-        )
-        st.markdown(f"""
-        <div class="ticker-wrap">
-            <span class="ticker-label">📡 最新</span>
-            <span class="ticker-text">{ticker}</span>
-        </div>""", unsafe_allow_html=True)
 
     # ── Footer ──────────────────────────────────────────────────
     st.markdown(f"""
