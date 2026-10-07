@@ -1,23 +1,29 @@
 {
-  "updated_at": "2026-10-08T06:05:18.028483+08:00",
+  "updated_at": "2026-10-08T07:05:17.371086+08:00",
   "topics": [
     {
-      "title": "台中望高寮傳重大意外",
-      "description": "台中望高寮傳出涉及兩人的重大意外事件，提醒民眾近期暫勿前往該處",
-      "count": "144 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%9C%9B%E9%AB%98%E5%AF%AE&serp_type=trends&trend_fbid=2252061308984918"
+      "title": "台中望高寮傳疑似嚴重意外",
+      "description": "現場兩名當事人安危受牽掛，各界祈禱平安並盼民眾暫勿前往望高寮",
+      "count": "162 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%9C%9B%E9%AB%98%E5%AF%AE&serp_type=trends&trend_fbid=2513806049113194"
+    },
+    {
+      "title": "錢怡君專訪沈伯洋評選戰應對",
+      "description": "沈伯洋登上《少康戰情室》受訪，提問人錢怡君針對政策交鋒並分析其應對表現",
+      "count": "4 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%8C%A2%E6%80%A1%E5%90%9B&serp_type=trends&trend_fbid=1586565035809853"
+    },
+    {
+      "title": "社區停車糾紛當事人刪除影片",
+      "description": "一名當事人在地下停車場與管委會主委爆發衝突，公開爭執過程後刪除貼文並封鎖網友",
+      "count": "36 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%81%9C%E8%BB%8A%E7%B3%BE%E7%B4%9B&serp_type=trends&trend_fbid=1437307378326292"
     },
     {
       "title": "外送員抓姦影片涉自導自演",
       "description": "男子拿炒飯砸人及外送員出手的抓姦影片，因未露臉且具帳號引流跡象涉行銷炒作",
-      "count": "141 則貼文",
+      "count": "144 則貼文",
       "link": "https://www.threads.com/search?q=%E6%8A%93%E5%A7%A6%E5%BD%B1%E7%89%87&serp_type=trends&trend_fbid=1128934712917750"
-    },
-    {
-      "title": "沈伯洋登《少康戰情室》受訪",
-      "description": "趙少康在政論節目專訪沈伯洋，並與錢怡君等人針對台北市選舉策略展開論述",
-      "count": "14 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1042139002201876"
     },
     {
       "title": "俄傳肺鼠疫美促公民離境",
@@ -34,19 +40,19 @@
     {
       "title": "繪師發布戀童畫作後刪文",
       "description": "曾參與國中教科書繪製的插畫師刪除相關畫作，過往涉及霸凌事件亦再次被提及",
-      "count": "343 則貼文",
+      "count": "359 則貼文",
       "link": "https://www.threads.com/search?q=%E8%AA%B2%E6%9C%AC%E7%B9%AA%E5%B8%AB&serp_type=trends&trend_fbid=1328495032555765"
     },
     {
       "title": "高雄左營萬年季蓮池潭登場",
       "description": "活動推出廟宇集章任務，吸引民眾走訪在地宮廟兌換火獅娃娃",
-      "count": "951 則貼文",
+      "count": "961 則貼文",
       "link": "https://www.threads.com/search?q=%E5%B7%A6%E7%87%9F%E8%90%AC%E5%B9%B4%E5%AD%A3&serp_type=trends&trend_fbid=2165444397339345"
     },
     {
       "title": "汪咪博士預防性下架相關產品",
       "description": "汪咪博士因滴劑及噴霧產品問題啟動內部調查，並預防性下架相關品項",
-      "count": "255 則貼文",
+      "count": "259 則貼文",
       "link": "https://www.threads.com/search?q=%E6%B1%AA%E5%92%AA%E5%8D%9A%E5%A3%AB&serp_type=trends&trend_fbid=1074331931885075"
     },
     {
@@ -58,7 +64,7 @@
     {
       "title": "Mingo移除台鋼雄鷹標籤",
       "description": "台鋼啦啦隊7人離隊後，韓籍成員朴旻曙發布舞蹈影片並刪除球隊標籤",
-      "count": "759 則貼文",
+      "count": "772 則貼文",
       "link": "https://www.threads.com/search?q=Mingo&serp_type=trends&trend_fbid=2706073266477169"
     },
     {
@@ -70,7 +76,7 @@
     {
       "title": "葉舒華出席釜山影展宣傳新片",
       "description": "以演員身分亮相釜山國際電影節，(G)I-DLE葉舒華宣傳新片《幸福快樂的日子》",
-      "count": "409 則貼文",
+      "count": "411 則貼文",
       "link": "https://www.threads.com/search?q=%E8%91%89%E8%88%92%E8%8F%AF&serp_type=trends&trend_fbid=1134640432442107"
     },
     {
@@ -82,14 +88,8 @@
     {
       "title": "台指期夜盤重挫失守5萬點",
       "description": "受美股走弱影響，台指期夜盤重挫逾600點並下探49298點",
-      "count": "258 則貼文",
+      "count": "264 則貼文",
       "link": "https://www.threads.com/search?q=%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4&serp_type=trends&trend_fbid=1483430213619071"
-    },
-    {
-      "title": "賀寶芙直銷商回應誇大療效指控",
-      "description": "面對誇大療效與分期債務等指責，賀寶芙直銷商出面強調商業模式合法正當",
-      "count": "2 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%B3%80%E5%AF%B6%E8%8A%99&serp_type=trends&trend_fbid=1105784202315741"
     }
   ]
 }
