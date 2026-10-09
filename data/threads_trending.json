@@ -1,6 +1,18 @@
 {
-  "updated_at": "2026-10-10T03:05:14.362652+08:00",
+  "updated_at": "2026-10-10T04:05:14.261749+08:00",
   "topics": [
+    {
+      "title": "深夜異常預告公開神祕影片",
+      "description": "帳號深夜異常預告在Telegram公開神祕影片，內容實為AI生成畫面",
+      "count": "4 萬 則貼文",
+      "link": "https://www.threads.com/search?q=october.live&serp_type=trends&trend_fbid=1367031301926822"
+    },
+    {
+      "title": "巴拿馬發生規模8.0強震",
+      "description": "巴拿馬凌晨發生強烈地震且持續餘震，太平洋周邊地區嚴加防範海嘯",
+      "count": "103 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%B7%B4%E6%8B%BF%E9%A6%AC%E5%9C%B0%E9%9C%87&serp_type=trends&trend_fbid=1088745910444289"
+    },
     {
       "title": "蝦皮雙十推限量1折券活動",
       "description": "蝦皮在雙十檔期祭出限量1折券吸引民眾整點搶購，有人成功搶到也有人結帳失效",
@@ -8,45 +20,27 @@
       "link": "https://www.threads.com/search?q=%E8%9D%A6%E7%9A%AE&serp_type=trends&trend_fbid=1603168560730205"
     },
     {
-      "title": "深夜異常涉詐騙遭退追近2萬人",
-      "description": "帳號深夜異常以神秘影片引流，因內容遭控為劣質AI涉詐騙，出現大量退追",
-      "count": "358 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B7%B1%E5%A4%9C%E7%95%B0%E5%B8%B8&serp_type=trends&trend_fbid=1371744048070443"
+      "title": "雙十國慶登場賴清德發表談話",
+      "description": "總統賴清德於國慶晚會致詞，大黑摩季等藝人同台演出慶祝生日",
+      "count": "3 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%9C%8B%E6%85%B6&serp_type=trends&trend_fbid=2345278309541651"
     },
     {
-      "title": "巴拿馬發生規模8.0強震",
-      "description": "太平洋海嘯警報中心研判，巴拿馬發生規模8.0地震恐在太平洋引發海嘯威脅",
-      "count": "78 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%B7%B4%E6%8B%BF%E9%A6%AC%E5%9C%B0%E9%9C%87&serp_type=trends&trend_fbid=1132710372519744"
+      "title": "優里台北小巨蛋開唱",
+      "description": "日本創作歌手優里在台北小巨蛋舉辦個唱，連唱《乾燥花》與《參宿四》掀全場大合唱",
+      "count": "5 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%84%AA%E9%87%8C&serp_type=trends&trend_fbid=1080820297905648"
     },
     {
       "title": "BIGBANG台北大巨蛋開唱",
       "description": "G-Dragon、太陽與大聲於台北大巨蛋合體，帶來經典歌曲吸引數萬歌迷",
       "count": "2 萬 則貼文",
-      "link": "https://www.threads.com/search?q=BIGBANG&serp_type=trends&trend_fbid=1111638554744911"
-    },
-    {
-      "title": "神秘倒數預告伺服器恐崩潰",
-      "description": "網路出現2026年10月10日神秘倒數，相關訊息警示伺服器恐隨時崩潰並呼籲切勿點擊連結",
-      "count": "26 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%A5%9E%E7%A7%98%E5%80%92%E6%95%B8&serp_type=trends&trend_fbid=1780453482897731"
-    },
-    {
-      "title": "雙十國慶全台湧現出遊潮",
-      "description": "各地舉辦煙火與光雕展演等慶祝活動，各大觀光景點湧現出遊人潮",
-      "count": "7 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%9B%99%E5%8D%81%E5%9C%8B%E6%85%B6&serp_type=trends&trend_fbid=3636132363207796"
-    },
-    {
-      "title": "優里台北小巨蛋開唱",
-      "description": "日本創作歌手優里演唱《乾燥花》等名曲，並在台上真誠分享心路歷程",
-      "count": "5 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%84%AA%E9%87%8C&serp_type=trends&trend_fbid=1058952180292664"
+      "link": "https://www.threads.com/search?q=BIGBANG&serp_type=trends&trend_fbid=2551701952008830"
     },
     {
       "title": "恐怖片《另一個媽咪》上映",
       "description": "溫子仁監製的《另一個媽咪》由潔西卡雀絲坦主演，主打五十個驚嚇點與家庭主題",
-      "count": "895 則貼文",
+      "count": "877 則貼文",
       "link": "https://www.threads.com/search?q=%E5%8F%A6%E4%B8%80%E5%80%8B%E5%AA%BD%E5%92%AA&serp_type=trends&trend_fbid=1111754117990990"
     },
     {
@@ -88,7 +82,7 @@
     {
       "title": "社工澄清性侵棉花棒採證說法",
       "description": "社工師說明自行以棉花棒採檢恐破壞檢體，性侵害驗傷須由責任醫院急診採樣",
-      "count": "59 則貼文",
+      "count": "61 則貼文",
       "link": "https://www.threads.com/search?q=modestus_kolin&serp_type=trends&trend_fbid=1806651147045873"
     }
   ]
