@@ -47,7 +47,7 @@ SCRAPED_SOURCES = {
     "自由時報": {
         "url": "https://news.ltn.com.tw/list/breakingnews/popular",
         "selector": "ul.list a[title]",
-        "pattern": "ltn.com.tw/news/",
+        "pattern": "ltn.com.tw/",
         "title_attr": True,
         "min_len": 8,
         "limit": 20,
@@ -67,7 +67,7 @@ SCRAPED_SOURCES = {
     "東森新聞": {
         "url": "https://news.ebc.net.tw/hot",
         "selector": "a.row_box",
-        "pattern": "/news/",
+        "pattern": "ebc.net.tw/",
         "title_attr": True,
         "min_len": 8,
         "limit": 20,
@@ -76,6 +76,7 @@ SCRAPED_SOURCES = {
     },
     "壹蘋新聞網": {
         "url": "https://news.nextapple.com/realtime/hit",
+        "selector": ".post-hot article h3 a",   # 熱門榜本體；頁首跑馬燈、輪播會重複
         "pattern": "news.nextapple.com/",
         "url_must_contain": "",
         "min_len": 10,
@@ -84,6 +85,7 @@ SCRAPED_SOURCES = {
     },
     "中國時報": {
         "url": "https://www.chinatimes.com/hotnews?chdtv",
+        "selector": ".articlebox-compact h3.title a",   # 排除右欄「即時新聞」
         "pattern": "chinatimes.com/",
         "url_must_contain": "/202",
         "min_len": 8,
@@ -91,16 +93,18 @@ SCRAPED_SOURCES = {
         "strip_time": False,
     },
     "三立新聞": {
-        "url": "https://www.setn.com/viewall/0",   # 三立「熱門」頁
+        "url": "https://www.setn.com/viewall/0",   # 三立「熱門即時新聞」頁
+        "selector": ".news_list_item .title_pc a",   # 主列表；頁首快訊輪播含業配，不抓
         "pattern": "setn.com/news/",
         "url_must_contain": "",
         "min_len": 8,
         "limit": 30,
-        "strip_time": True,   # 三立標題末尾夾有 HH:MM，需清除
+        "strip_time": False,
         "base_url": "https://www.setn.com",
     },
     "聯合報熱門": {
         "url": "https://udn.com/rank/pv/2",
+        "selector": "section.thumb-news .story-list__text h2 a",   # 排除頁首即時快訊橫幅
         "pattern": "news/story",
         "url_must_contain": "",
         "min_len": 8,
@@ -451,8 +455,8 @@ def fetch_scraped_news() -> list[dict]:
                 if (len(title) >= cfg["min_len"]
                         and cfg["pattern"] in href
                         and (not must or must in href)
-                        and title not in seen):
-                    seen.add(title)
+                        and title not in seen and href not in seen):
+                    seen.update((title, href))
                     items.append({
                         "title":  title,
                         "link":   href,
