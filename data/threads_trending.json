@@ -1,11 +1,41 @@
 {
-  "updated_at": "2026-10-11T03:05:13.321256+08:00",
+  "updated_at": "2026-10-11T04:05:13.922558+08:00",
   "topics": [
     {
-      "title": "名偵探柯南播出茜色的千秋樂",
-      "description": "最新篇章呈現服部平次與遠山和葉於展望台的場景，並搭配歌曲《渡月橋 ～想念你～》",
-      "count": "394 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%90%8D%E5%81%B5%E6%8E%A2%E6%9F%AF%E5%8D%97&serp_type=trends&trend_fbid=2114276635877996"
+      "title": "賓士小萬武嶺違停阻百車通行",
+      "description": "賓士車小萬在武嶺違規停車阻擋百輛車，因警員到場時已駛離且無法逕行舉發免受開罰",
+      "count": "120 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%B3%93%E5%A3%AB%E5%B0%8F%E8%90%AC&serp_type=trends&trend_fbid=28813151101637735"
+    },
+    {
+      "title": "韓國瑜國慶大會致詞警示假民主",
+      "description": "在國慶大會脫稿發言中，立法院長韓國瑜警示台灣民主絕不可成為假民主真獨裁",
+      "count": "3 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%9F%93%E5%9C%8B%E7%91%9C&serp_type=trends&trend_fbid=1103361122187921"
+    },
+    {
+      "title": "Foodpanda推中信卡優惠",
+      "description": "用戶訂閱pandapro輸入優惠碼刷中信卡享免費，但部分人遇系統錯誤付款失敗",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=Foodpanda&serp_type=trends&trend_fbid=2668133096949749"
+    },
+    {
+      "title": "台北101舉辦國慶無人機煙火秀",
+      "description": "國慶晚間台北101結合600台無人機與煙火，吸引大批民眾前往信義區觀賞",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E5%8C%97101&serp_type=trends&trend_fbid=2322952011835892"
+    },
+    {
+      "title": "《名偵探柯南》釋出特別宣傳片",
+      "description": "《名偵探柯南》播出「茜色的千秋樂」，官方釋出回顧服部平次與遠山和葉感情歷程的特別影片",
+      "count": "398 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%90%8D%E5%81%B5%E6%8E%A2%E6%9F%AF%E5%8D%97&serp_type=trends&trend_fbid=2525283731326916"
+    },
+    {
+      "title": "太陽台北開唱不慎搶拍",
+      "description": "BIGBANG成員太陽在台北開唱時意外搶拍，隨後迅速調整節奏順利接續演唱",
+      "count": "2 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%A4%AA%E9%99%BD&serp_type=trends&trend_fbid=1415665774005487"
     },
     {
       "title": "國慶煙火台東卑南溪登場",
@@ -16,26 +46,14 @@
     {
       "title": "橘色涮涮屋龍蝦上桌抽動遭抵制",
       "description": "顧客拍下分切龍蝦上桌仍發出聲響抽動，橘色涮涮屋料理方式被指不人道並遭抵制",
-      "count": "780 則貼文",
+      "count": "764 則貼文",
       "link": "https://www.threads.com/search?q=%E6%A9%98%E8%89%B2%E6%B6%AE%E6%B6%AE%E5%B1%8B&serp_type=trends&trend_fbid=1101001969378105"
-    },
-    {
-      "title": "台北101國慶煙火無人機展演",
-      "description": "台北101於國慶晚間升級展演規格，以煙火搭配排列火鍋等趣味圖樣的無人機演出",
-      "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E5%8C%97101&serp_type=trends&trend_fbid=1528862615670894"
     },
     {
       "title": "蝦皮推滿千折900元優惠券",
       "description": "因應10.10週年慶，蝦皮祭出滿千折900元優惠券吸引民眾整點搶購且迅速秒殺",
       "count": "1 千 則貼文",
       "link": "https://www.threads.com/search?q=%E8%9D%A6%E7%9A%AE%E8%B3%BC%E7%89%A9&serp_type=trends&trend_fbid=1461133992534823"
-    },
-    {
-      "title": "Foodpanda推首年免費",
-      "description": "訂閱Foodpanda年費輸入優惠碼刷中信卡享首年免費，大量兌換致系統壅塞",
-      "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=Foodpanda&serp_type=trends&trend_fbid=1288542966707943"
     },
     {
       "title": "沈伯洋展開洋流號車隊掃街",
@@ -72,24 +90,6 @@
       "description": "台北大巨蛋演唱會進入第2天，歌迷齊聲應援《謊言》，BIGBANG與現場互動熱絡",
       "count": "2 萬 則貼文",
       "link": "https://www.threads.com/search?q=BIGBANG&serp_type=trends&trend_fbid=1849751199515607"
-    },
-    {
-      "title": "諸羅搖滾音樂祭嘉義登場",
-      "description": "美秀集團及普通隊長等多組樂團登上諸羅搖滾接力開唱，樂迷分享演出歌單",
-      "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%AB%B8%E7%BE%85%E6%90%96%E6%BB%BE&serp_type=trends&trend_fbid=1809084820336515"
-    },
-    {
-      "title": "小萬武嶺違停致嚴重回堵",
-      "description": "車主小萬在合歡山武嶺違停造成百車回堵，自行駛離後因警方未當場查獲未被開罰",
-      "count": "9 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%B0%8F%E8%90%AC&serp_type=trends&trend_fbid=2135537497050121"
-    },
-    {
-      "title": "寶可夢開賣限定粉紅皮卡丘吊飾",
-      "description": "台北信義區推出限定款粉紅爆炸頭皮卡丘吊飾，門市發放整理券管制人潮",
-      "count": "6 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%9A%AE%E5%8D%A1%E4%B8%98&serp_type=trends&trend_fbid=1130524129394388"
     }
   ]
 }
