@@ -1,29 +1,77 @@
 {
-  "updated_at": "2026-10-10T08:05:17.382910+08:00",
+  "updated_at": "2026-10-10T09:05:17.184825+08:00",
   "topics": [
     {
-      "title": "魏汶萱遭控用小帳抹黑沈伯洋",
-      "description": "網紅四叉貓比對影片拍攝細節，指北市府副發言人魏汶萱疑似使用匿名小帳抹黑沈伯洋",
+      "title": "巴拿馬發生8.0淺層強震",
+      "description": "太平洋海嘯警報中心針對巴拿馬強震發布警報，評估海嘯威脅並監控餘震",
+      "count": "174 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%B7%B4%E6%8B%BF%E9%A6%AC%E5%9C%B0%E9%9C%87&serp_type=trends&trend_fbid=925143870432007"
+    },
+    {
+      "title": "雙十國慶民眾齊聚慶祝",
+      "description": "民眾與外籍人士參與升旗及總統府光雕秀，共同慶祝中華民國115歲生日",
+      "count": "1 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%9B%99%E5%8D%81%E5%9C%8B%E6%85%B6&serp_type=trends&trend_fbid=1729488628136085"
+    },
+    {
+      "title": "深夜異常涉發AI假影像遭檢舉",
+      "description": "帳號深夜異常引導民眾至Telegram，發布粗糙AI影像涉詐騙遭大量檢舉",
+      "count": "4 萬 則貼文",
+      "link": "https://www.threads.com/search?q=october.live&serp_type=trends&trend_fbid=1548014113792278"
+    },
+    {
+      "title": "周子瑜公開新造型並同框MINA",
+      "description": "TWICE周子瑜在問答中與MINA互選為鬼屋搭檔，並展示LV毛衣造型與新加坡F1照片",
       "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%AD%8F%E6%B1%B6%E8%90%B1&serp_type=trends&trend_fbid=1780341973011634"
+      "link": "https://www.threads.com/search?q=%E5%91%A8%E5%AD%90%E7%91%9C&serp_type=trends&trend_fbid=1086366460833676"
     },
     {
-      "title": "總統府國慶光雕展登場",
-      "description": "光雕展以「民主的台灣」為題回顧直選歷程，吸引民眾前往凱道觀賞",
-      "count": "188 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%9C%8B%E6%85%B6%E5%85%89%E9%9B%95&serp_type=trends&trend_fbid=1634157171825489"
+      "title": "高嘉瑜力挺沈伯洋參選台北市長",
+      "description": "面對外界質疑，高嘉瑜在政論節目堅定支持沈伯洋，政治預判與港湖基層實力獲肯定",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%AB%98%E5%98%89%E7%91%9C&serp_type=trends&trend_fbid=2496438170768728"
     },
     {
-      "title": "巴拿馬發生規模7.7強震",
-      "description": "氣象與海嘯預警機構提醒留意海嘯威脅，並嚴密監控巴拿馬強震後的餘震",
-      "count": "36 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%B7%B4%E6%8B%BF%E9%A6%AC%E5%BC%B7%E9%9C%87&serp_type=trends&trend_fbid=2555754824848031"
+      "title": "台灣星巴克調整客製化收費",
+      "description": "星巴克10月12日起實施新制，去冰補滿奶類或加配料均需加收15元",
+      "count": "5 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%98%9F%E5%B7%B4%E5%85%8B&serp_type=trends&trend_fbid=2614862185661317"
     },
     {
-      "title": "深夜異常解鎖AI影片遭抵制",
-      "description": "付費者發現深夜異常解鎖內容僅為AI生成影片，發起檢舉抵制導致粉絲流失近兩萬人",
-      "count": "383 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B7%B1%E5%A4%9C%E7%95%B0%E5%B8%B8&serp_type=trends&trend_fbid=1072992625614304"
+      "title": "國慶連假合歡山武嶺嚴重塞車",
+      "description": "台14甲線因大量遊客湧入賞景出現嚴重違停與塞車，民眾一度受困長達兩小時",
+      "count": "443 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%90%88%E6%AD%A1%E5%B1%B1&serp_type=trends&trend_fbid=952229977479330"
+    },
+    {
+      "title": "寶可夢索羅亞社群日將登場",
+      "description": "《Pokémon GO》索羅亞社群日登場，大安森林公園場次聚焦ABA抓法與夥伴設定",
+      "count": "926 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%B4%A2%E7%BE%85%E4%BA%9E&serp_type=trends&trend_fbid=1089241134113814"
+    },
+    {
+      "title": "四叉貓指魏汶萱抹黑沈伯洋",
+      "description": "四叉貓比對影片吊飾指出nanan.inno抹黑沈伯洋，該帳號已緊急關閉",
+      "count": "757 則貼文",
+      "link": "https://www.threads.com/search?q=nanan.inno&serp_type=trends&trend_fbid=1764555338094126"
+    },
+    {
+      "title": "攝影師公開客戶女童照評外貌",
+      "description": "高雄李姓攝影師公開客戶幼女照片發表挑媳婦言論，事後已更改個人帳號名稱",
+      "count": "",
+      "link": "https://www.threads.com/search?q=%E6%9D%8E%E5%A7%93%E6%94%9D%E5%BD%B1%E5%B8%AB&serp_type=trends&trend_fbid=1086308997445445"
+    },
+    {
+      "title": "寶可夢30週年活動台北登場",
+      "description": "信義區舉辦寶可夢遊行與見面會，並亮相限定粉紅皮卡丘及遊戲集章活動",
+      "count": "9 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%AF%B6%E5%8F%AF%E5%A4%A2&serp_type=trends&trend_fbid=2100572823890521"
+    },
+    {
+      "title": "梁禎元贈蛋糕券慶恩靜六週年",
+      "description": "為慶祝粉絲名公布六週年，ENHYPEN隊長梁禎元發送咖啡蛋糕券帶動請客風潮",
+      "count": "402 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%A2%81%E7%A6%8E%E5%85%83&serp_type=trends&trend_fbid=1026019510498529"
     },
     {
       "title": "台北龍江路公寓火警救出一女",
@@ -40,44 +88,8 @@
     {
       "title": "顧客控富錦樹倒酒污損愛馬仕",
       "description": "苗安妮指控富錦樹餐廳倒酒弄髒愛馬仕包，業者則發表聲明否認相關責任",
-      "count": "511 則貼文",
+      "count": "532 則貼文",
       "link": "https://www.threads.com/search?q=%E5%AF%8C%E9%8C%A6%E6%A8%B9&serp_type=trends&trend_fbid=1842095433475044"
-    },
-    {
-      "title": "優里台北小巨蛋開唱",
-      "description": "日本創作歌手優里在台北小巨蛋舉辦個唱，連唱《乾燥花》與《參宿四》掀全場大合唱",
-      "count": "5 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%84%AA%E9%87%8C&serp_type=trends&trend_fbid=1080820297905648"
-    },
-    {
-      "title": "BIGBANG台北大巨蛋開唱",
-      "description": "G-Dragon、太陽與大聲於台北大巨蛋合體，帶來經典歌曲吸引數萬歌迷",
-      "count": "2 萬 則貼文",
-      "link": "https://www.threads.com/search?q=BIGBANG&serp_type=trends&trend_fbid=2551701952008830"
-    },
-    {
-      "title": "神秘倒數預告伺服器恐崩潰",
-      "description": "網路出現2026年10月10日神秘倒數，相關訊息警示伺服器恐隨時崩潰並呼籲切勿點擊連結",
-      "count": "25 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%A5%9E%E7%A7%98%E5%80%92%E6%95%B8&serp_type=trends&trend_fbid=1780453482897731"
-    },
-    {
-      "title": "恐怖片《另一個媽咪》上映",
-      "description": "溫子仁監製的《另一個媽咪》由潔西卡雀絲坦主演，主打五十個驚嚇點與家庭主題",
-      "count": "856 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%A6%E4%B8%80%E5%80%8B%E5%AA%BD%E5%92%AA&serp_type=trends&trend_fbid=1111754117990990"
-    },
-    {
-      "title": "CORTIS於新加坡F1演出",
-      "description": "南韓男團CORTIS受邀赴新加坡F1大獎賽演出，並參訪紅牛車隊休息室",
-      "count": "1 萬 則貼文",
-      "link": "https://www.threads.com/search?q=CORTIS&serp_type=trends&trend_fbid=4702950169974635"
-    },
-    {
-      "title": "教師模擬遊戲呈現校事會議現狀",
-      "description": "玩家在遊戲《今天也要平安下班》扮演教師，常因瑣事被送校事會議，以高陣亡率呈現真實案例",
-      "count": "118 則貼文",
-      "link": "https://www.threads.com/search?q=%E4%BB%8A%E5%A4%A9%E4%B9%9F%E8%A6%81%E5%B9%B3%E5%AE%89%E4%B8%8B%E7%8F%AD&serp_type=trends&trend_fbid=4475124349368521"
     }
   ]
 }
