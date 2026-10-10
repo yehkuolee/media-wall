@@ -9,6 +9,7 @@ from pathlib import Path
 import pytz
 import re
 import html as html_mod
+from urllib.parse import quote
 
 try:
     from streamlit_autorefresh import st_autorefresh
@@ -291,6 +292,11 @@ st.markdown("""
     transition: transform .2s, box-shadow .2s;
 }
 .src-row:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.09), 0 1px 3px rgba(0,0,0,0.05); }
+a.src-row, a.src-row:hover { text-decoration: none; }
+.src-row.active { border-left: 3px solid #c41230; }
+.src-row.active .src-name { color: #c41230; }
+.src-back { display: inline-block; font-size: .72rem; color: #c41230; text-decoration: none; margin: 0 0 8px 2px; }
+.src-back:hover { text-decoration: underline; }
 .src-name  { color: #444; font-size: .76rem; font-weight: 600; }
 .src-count { color: #2a7a4a; font-size: .76rem; font-weight: 700; }
 .src-bar   {
@@ -365,6 +371,8 @@ html.mw-dark .ptt-push        { color: #ff3b4e; }
 html.mw-dark .ptt-push.boom   { color: #ff6b78; }
 html.mw-dark .ptt-push.green, html.mw-dark .src-count, html.mw-dark .kpi-sub { color: #22c55e; }
 html.mw-dark .src-name  { color: #c8c8c8; }
+html.mw-dark .src-row.active { border-left-color: #ff3b4e; }
+html.mw-dark .src-row.active .src-name, html.mw-dark .src-back { color: #ff3b4e; }
 html.mw-dark .src-bar   { background: linear-gradient(90deg, #ff3b4e, #8b0000); }
 html.mw-dark .ticker-wrap { background: #000000; border-top: 1px solid #222222; border-bottom: 1px solid #222222; }
 html.mw-dark .ticker-label { color: #ff3b4e; }
@@ -801,6 +809,10 @@ def main():
     source_counts: dict[str, int] = {}
     for n in all_news:
         source_counts[n["source"]] = source_counts.get(n["source"], 0) + 1
+    # 點右欄「媒體來源統計」會帶 ?src=媒體名，中間改列該媒體全部新聞
+    selected_src = st.query_params.get("src", "")
+    if selected_src not in source_counts:
+        selected_src = ""
     threads_topics = threads_data.get("topics", [])
     threads_updated = threads_data.get("updated_at")
 
@@ -843,9 +855,16 @@ def main():
 
     # ── CENTER ──
     with center:
-        st.markdown('<div class="sec-title">📰 即時熱門新聞 Top 15（各媒體均攤）</div>', unsafe_allow_html=True)
-        top15 = round_robin_top(all_news, 15)
-        for i, news in enumerate(top15):
+        if selected_src:
+            src_news = [n for n in all_news if n["source"] == selected_src]
+            st.markdown(f'<div class="sec-title">📰 {html_mod.escape(selected_src)}｜全部 {len(src_news)} 則</div>'
+                        '<a class="src-back" href="?" target="_self">← 回到 Top 15（各媒體均攤）</a>',
+                        unsafe_allow_html=True)
+            news_list = src_news
+        else:
+            st.markdown('<div class="sec-title">📰 即時熱門新聞 Top 15（各媒體均攤）</div>', unsafe_allow_html=True)
+            news_list = round_robin_top(all_news, 15)
+        for i, news in enumerate(news_list):
             rc = rank_class(i)
             rank_num = i + 1
             raw_title = news["title"] or "（標題載入中）"
@@ -893,11 +912,14 @@ def main():
         total = sum(source_counts.values()) or 1
         for src, cnt in sorted(source_counts.items(), key=lambda x: x[1], reverse=True):
             pct = int(cnt / total * 100)
+            # 再點一次已選的媒體＝取消，回到 Top 15
+            href = "?" if src == selected_src else "?src=" + quote(src)
+            active = " active" if src == selected_src else ""
             st.markdown(f"""
-            <div class="src-row">
-                <div class="src-name">{src}</div>
+            <a class="src-row{active}" href="{href}" target="_self" title="列出{html_mod.escape(src)}全部新聞">
+                <div class="src-name">{html_mod.escape(src)}</div>
                 <div class="src-count">{cnt} 則</div>
-            </div>
+            </a>
             <div style="padding:0 4px;margin-bottom:6px;">
                 <div class="src-bar" style="width:{pct}%"></div>
             </div>""", unsafe_allow_html=True)
