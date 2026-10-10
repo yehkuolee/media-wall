@@ -28,7 +28,8 @@ import xml.etree.ElementTree as ET
 TW_TZ = pytz.timezone("Asia/Taipei")
 
 RSS_FEEDS = {
-    "Google 新聞": "https://news.google.com/rss?hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+    # Google 新聞 2026-10-10 移除（已有 Google 熱搜字）
+    #     "Google 新聞": "https://news.google.com/rss?hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
 }
 
 # 爬熱門排行頁（依頁面順序＝熱門排名）；selector 指定條目、title_sel / title_attr 指定標題位置
@@ -931,7 +932,7 @@ def main():
     # ── Footer ──────────────────────────────────────────────────
     st.markdown(f"""
     <div class="mw-footer">
-        資料來源：Google Trends · RSS (Google 新聞) · 中央社即時 · 熱門排行（自由 / Yahoo / 東森 / 壹蘋 / 中時 / 聯合報 / 三立） · PTT &nbsp;｜&nbsp;
+        資料來源：Google Trends · 中央社即時 · 熱門排行（自由 / Yahoo / 東森 / 壹蘋 / 中時 / 聯合報 / 三立） · PTT &nbsp;｜&nbsp;
         更新時間：{now.strftime('%Y-%m-%d %H:%M:%S')} (台北 UTC+8) &nbsp;｜&nbsp;
         每 5 分鐘自動刷新
     </div>
