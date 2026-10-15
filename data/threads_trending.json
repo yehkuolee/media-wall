@@ -1,34 +1,58 @@
 {
-  "updated_at": "2026-10-15T07:05:14.647010+08:00",
+  "updated_at": "2026-10-15T08:05:13.880569+08:00",
   "topics": [
     {
-      "title": "沈伯洋團隊展開夜市掃街",
-      "description": "沈伯洋與團隊赴夜市及街頭拜票宣講政策，吸引眾多支持者到場互動",
+      "title": "印尼林火引發嚴重霾害",
+      "description": "受土地焚燒與林火影響，印尼空污指數破千且煙霾波及星馬",
+      "count": "26 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8D%B0%E5%B0%BC%E6%9E%97%E7%81%AB&serp_type=trends&trend_fbid=2373863170022083"
+    },
+    {
+      "title": "颱風薔琵將生成恐朝日本移動",
+      "description": "熱帶低壓預計增強為颱風薔琵並朝日本移動，巔峰強度恐達強烈颱風",
+      "count": "158 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%A2%B1%E9%A2%A8%E8%96%94%E7%90%B5&serp_type=trends&trend_fbid=2630932254020134"
+    },
+    {
+      "title": "民眾規劃返台投票力挺沈伯洋",
+      "description": "旅外與在地支持者表態將投給候選人沈伯洋，並引用苗博雅發言呼籲拉票",
       "count": "8 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=2245713579335502"
+      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=3452189671658561"
     },
     {
-      "title": "皇馬客場4比3逆轉勝羅馬",
-      "description": "皇家馬德里在歐冠比賽尾聲連續進球，終場以4比3逆轉擊敗羅馬",
-      "count": "183 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%9A%87%E5%AE%B6%E9%A6%AC%E5%BE%B7%E9%87%8C&serp_type=trends&trend_fbid=28676795328596588"
+      "title": "世新大學校慶晚會學生抗議",
+      "description": "學生團體不滿校務整併，於世新大學70週年校慶晚會內外抗議並遭保全帶離",
+      "count": "3 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E4%B8%96%E6%96%B0%E5%A4%A7%E5%AD%B8&serp_type=trends&trend_fbid=1476986371148069"
     },
     {
-      "title": "美國CPI超預期台指夜盤重挫",
-      "description": "美國9月通膨數據高於預期加劇利率擔憂，美股期貨與台指期夜盤應聲重挫",
-      "count": "391 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4&serp_type=trends&trend_fbid=1452463726801903"
+      "title": "美CPI超預期台股夜盤跳水",
+      "description": "美國9月通膨數據高於預期推升升息機率，美股期貨與台股夜盤期貨指數應聲重挫",
+      "count": "3 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E8%82%A1&serp_type=trends&trend_fbid=2553947281749472"
     },
     {
-      "title": "星宇航空線上旅展機票85折起",
-      "description": "星宇航空線上旅展起跑，全航線機票享85折起且聯名卡最高折3000元",
-      "count": "968 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA&serp_type=trends&trend_fbid=1138410921855343"
+      "title": "盛艾敬父母涉欠薪債務糾紛",
+      "description": "A2O LITE盛艾敬父母被指涉欠薪，母親發文致歉並強調責任由家長承擔",
+      "count": "295 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%9B%9B%E8%89%BE%E6%95%AC&serp_type=trends&trend_fbid=1113787384349967"
+    },
+    {
+      "title": "星宇航空旅展機票85折起",
+      "description": "配合ITF線上旅展，星宇航空即日起推出全航線機票85折起優惠促銷",
+      "count": "978 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA&serp_type=trends&trend_fbid=1421884610104519"
+    },
+    {
+      "title": "皇馬歐冠4比3逆轉勝羅馬",
+      "description": "歐冠賽事中皇家馬德里在比賽尾聲接連破門，最終以4比3逆轉擊敗羅馬",
+      "count": "186 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%9A%87%E5%AE%B6%E9%A6%AC%E5%BE%B7%E9%87%8C&serp_type=trends&trend_fbid=1127645899715394"
     },
     {
       "title": "藍格印刷飄帶印製尺寸糾紛",
       "description": "針對藍格印刷飄帶尺寸糾紛，業界說明合版印刷不包改稿，呼籲尊重完稿專業",
-      "count": "602 則貼文",
+      "count": "611 則貼文",
       "link": "https://www.threads.com/search?q=%E8%97%8D%E6%A0%BC%E5%8D%B0%E5%88%B7&serp_type=trends&trend_fbid=2093382407973613"
     },
     {
@@ -52,14 +76,8 @@
     {
       "title": "布雷克發文感謝球迷支持",
       "description": "統一獅洋投布雷克發文感謝球迷整季支持，球迷盼球團明年續約",
-      "count": "448 則貼文",
+      "count": "447 則貼文",
       "link": "https://www.threads.com/search?q=%E5%B8%83%E9%9B%B7%E5%85%8B&serp_type=trends&trend_fbid=28666866996256266"
-    },
-    {
-      "title": "颱風薔琵估生成朝日本移動",
-      "description": "遠洋熱帶性低氣壓預估增強為颱風薔琵，預測北轉朝日本移動且直接影響台灣機率低",
-      "count": "137 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%96%94%E7%90%B5%E9%A2%B1%E9%A2%A8&serp_type=trends&trend_fbid=2356491998420832"
     },
     {
       "title": "Owala台北快閃引搶購潮",
@@ -72,24 +90,6 @@
       "description": "網紅蒂蒂舉辦大蒂宮生日慶團購活動，多項商品迅速售罄且營業額創下破億元紀錄",
       "count": "1 萬 則貼文",
       "link": "https://www.threads.com/search?q=%E8%92%82%E8%92%82&serp_type=trends&trend_fbid=1831122998066873"
-    },
-    {
-      "title": "《寶可夢倖存者》通關攻略",
-      "description": "同人網頁遊戲《PokeSurvivor》玩家分享超夢技能搭配與通關攻略",
-      "count": "189 則貼文",
-      "link": "https://www.threads.com/search?q=PokeSurvivor&serp_type=trends&trend_fbid=2297467141098629"
-    },
-    {
-      "title": "宋雨琦經營唯粉引團粉不滿",
-      "description": "(G)I-DLE成員宋雨琦加入個人粉絲群並專注個人活動，令部分團粉感到失望",
-      "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%AE%8B%E9%9B%A8%E7%90%A6&serp_type=trends&trend_fbid=4663818470607556"
-    },
-    {
-      "title": "電視台禁轉發蔣萬安三連拍畫面",
-      "description": "蔣萬安在節目展現可愛三連拍，電視台通知禁止媒體截圖轉發且不予授權使用",
-      "count": "5 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=1104949949093589"
     }
   ]
 }
