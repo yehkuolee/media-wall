@@ -1,95 +1,95 @@
 {
-  "updated_at": "2026-10-15T13:05:14.072781+08:00",
+  "updated_at": "2026-10-15T14:05:13.348799+08:00",
   "topics": [
     {
-      "title": "7-11聯名Mardi開賣發光杯塞",
-      "description": "CITY CAFE聯名Mardi Mercredi，推出小雛菊與臘腸狗發光造型杯塞",
-      "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=Mardi%20Mercredi&serp_type=trends&trend_fbid=1457230192949582"
+      "title": "Owala信義快閃店湧排隊潮",
+      "description": "水壺品牌Owala在台北A11開設快閃店，吸引民眾排隊搶購並發放整理券",
+      "count": "3 千 則貼文",
+      "link": "https://www.threads.com/search?q=Owala&serp_type=trends&trend_fbid=28602331449461915"
     },
     {
-      "title": "徐巧芯在沈伯洋質詢前宣布休息",
-      "description": "立法院委員會開會時徐巧芯一度宣布休息一小時，隨後將時間改回五分鐘並恢復質詢",
-      "count": "6 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%BE%90%E5%B7%A7%E8%8A%AF&serp_type=trends&trend_fbid=1496729135618884"
+      "title": "印尼野火引發嚴重煙霾",
+      "description": "印尼焚燒土地造成有毒濃煙擴散至新馬，導致多地空品惡化且學校停課",
+      "count": "321 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8D%B0%E5%B0%BC%E7%85%99%E9%9C%BE&serp_type=trends&trend_fbid=29210835038500439"
+    },
+    {
+      "title": "台股大跌投資人調整正二策略",
+      "description": "面對台股大盤重挫，股民對槓桿ETF正二採取逢低加碼、評估停損或提前出清等不同作為",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%AD%A3%E4%BA%8C&serp_type=trends&trend_fbid=2380585172714933"
+    },
+    {
+      "title": "世新校慶學生抗議爆發推擠",
+      "description": "世新大學於小巨蛋辦校慶，學生團體抗議受教權受損並與維安人員發生衝突",
+      "count": "4 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E4%B8%96%E6%96%B0%E5%A4%A7%E5%AD%B8&serp_type=trends&trend_fbid=1116560041134366"
+    },
+    {
+      "title": "味全龍推捐血送台灣大賽門票",
+      "description": "味全龍與台北捐血中心合作推出捐血贈票活動，吸引大批球迷排隊兌換台灣大賽門票",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%91%B3%E5%85%A8%E9%BE%8D&serp_type=trends&trend_fbid=1090557323579635"
+    },
+    {
+      "title": "記憶體類股遭遇顯著賣壓",
+      "description": "長鑫存儲新架構進展加劇競爭擔憂，三星與南亞科等記憶體族群同步走跌",
+      "count": "3 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%A8%98%E6%86%B6%E9%AB%94&serp_type=trends&trend_fbid=1440626484666451"
+    },
+    {
+      "title": "小港醫院醫護合拍舞蹈影片",
+      "description": "高雄小港醫院副院長李永進與醫護人員身穿白袍，在院區拍攝舞蹈影片展現活力",
+      "count": "2 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%B0%8F%E6%B8%AF%E9%86%AB%E9%99%A2&serp_type=trends&trend_fbid=1848499236316412"
+    },
+    {
+      "title": "道奇不敵釀酒人面臨淘汰危機",
+      "description": "道奇在國聯冠軍賽第3戰遭釀酒人逆轉，以2比6吞敗並陷入0比3落後",
+      "count": "7 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%81%93%E5%A5%87&serp_type=trends&trend_fbid=1627339262506992"
+    },
+    {
+      "title": "台股重挫台達電同步大跌",
+      "description": "台股與電子族群走跌，台達電同步重挫，投資人評估逢低買進時機",
+      "count": "4 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E9%81%94%E9%9B%BB&serp_type=trends&trend_fbid=995781746903624"
+    },
+    {
+      "title": "《哥吉拉 -0.0》首映熱門場售罄",
+      "description": "《哥吉拉 -0.0》全台首映場開放預售，熱門場次迅速售罄且售票系統一度卡頓",
+      "count": "137 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%93%A5%E5%90%89%E6%8B%89-0.0&serp_type=trends&trend_fbid=1127611642997979"
+    },
+    {
+      "title": "日本蘋果糖登台掀排隊熱潮",
+      "description": "新光三越日本展引進東京林檎製飴所蘋果糖，台北與台中分店湧現搶領整理券人潮",
+      "count": "942 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%98%8B%E6%9E%9C%E7%B3%96&serp_type=trends&trend_fbid=1126254787033116"
+    },
+    {
+      "title": "坂本龍一北美館展熱門時段售罄",
+      "description": "北美館《坂本龍一｜觀音・聽時》展於OPENTIX開放預約，親民票價吸引民眾搶訂",
+      "count": "656 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%9D%82%E6%9C%AC%E9%BE%8D%E4%B8%80&serp_type=trends&trend_fbid=1579159494226752"
+    },
+    {
+      "title": "《傳說對決》更換十週年商店",
+      "description": "《傳說對決》將稀世商店改為十週年商店，且未提供稀世造型與自選品項",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%82%B3%E8%AA%AA%E5%B0%8D%E6%B1%BA&serp_type=trends&trend_fbid=1756938815420327"
+    },
+    {
+      "title": "薔琵颱風最快今日生成",
+      "description": "西北太平洋熱低壓最快今日增強為颱風薔琵，預估巔峰強度上看強烈颱風",
+      "count": "314 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%96%94%E7%90%B5%E9%A2%B1%E9%A2%A8&serp_type=trends&trend_fbid=1146688571268980"
     },
     {
       "title": "星宇航空線上旅展機票85折起",
-      "description": "配合ITF線上旅展，星宇航空推出涵蓋台北台中與高雄出發的機票優惠",
-      "count": "942 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA&serp_type=trends&trend_fbid=1068668862836935"
-    },
-    {
-      "title": "賴惠員為賈永婕穿著言論致歉",
-      "description": "賈永婕赴立院備詢穿著遭指不夠純樸，立委賴惠員公開致歉，賴清德強調專業不論穿著",
-      "count": "4 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%B3%88%E6%B0%B8%E5%A9%95&serp_type=trends&trend_fbid=1663250528715364"
-    },
-    {
-      "title": "蔡康永將出席蔣萬安競總成立大會",
-      "description": "蔡康永證實將以客人身分出席台北市長蔣萬安的競選總部成立大會，並在台下觀摩打氣",
-      "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%94%A1%E5%BA%B7%E6%B0%B8&serp_type=trends&trend_fbid=1442376747307553"
-    },
-    {
-      "title": "台積電舉行法人說明會",
-      "description": "台股早盤重挫逾千點，市場聚焦台積電法說會釋出的營運成果與展望",
-      "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E7%A9%8D%E9%9B%BB%E6%B3%95%E8%AA%AA%E6%9C%83&serp_type=trends&trend_fbid=1444375530960474"
-    },
-    {
-      "title": "股市下跌投資人加碼正二ETF",
-      "description": "股市行情走低之際，多位投資人進場加碼正二槓桿型ETF，評估停損與波動耗損風險",
-      "count": "35 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%AD%A3%E4%BA%8CETF&serp_type=trends&trend_fbid=1135077802319450"
-    },
-    {
-      "title": "印尼林火煙霾波及馬星等國",
-      "description": "蘇門答臘與婆羅洲林火延燒，跨境煙霾導致鄰國空氣品質惡化且部分學校停課",
-      "count": "41 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8D%B0%E5%B0%BC%E6%9E%97%E7%81%AB&serp_type=trends&trend_fbid=28549471768044455"
-    },
-    {
-      "title": "捐血換味全龍台灣大賽門票",
-      "description": "味全龍與台北捐血中心合作，民眾捐血即可兌換台灣大賽主場門票",
-      "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%91%B3%E5%85%A8%E9%BE%8D&serp_type=trends&trend_fbid=1836240801123727"
-    },
-    {
-      "title": "堆堆公布創作者審核結果",
-      "description": "委託媒合平台堆堆陸續發布審核結果，並針對作品完成度提供回饋",
-      "count": "878 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%A0%86%E5%A0%86&serp_type=trends&trend_fbid=2335709120535353"
-    },
-    {
-      "title": "大谷翔平改打六棒敲安",
-      "description": "國聯冠軍賽第三戰道奇2比6不敵釀酒人，大谷翔平改打第六棒並敲出安打",
-      "count": "2 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%A4%A7%E8%B0%B7%E7%BF%94%E5%B9%B3&serp_type=trends&trend_fbid=1130227949448733"
-    },
-    {
-      "title": "詹姆士派對出示單據澄清募款",
-      "description": "詹姆士派對因罹癌募款帳號遭凍結，拍片出示台大醫院單據與報告澄清",
-      "count": "21 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%A9%B9%E5%A7%86%E5%A3%AB%E6%B4%BE%E5%B0%8D&serp_type=trends&trend_fbid=2306996086837398"
-    },
-    {
-      "title": "國中生評蔣萬安鮮乳政策",
-      "description": "台北國中生受訪比較台南鮮乳配給量，並對市長蔣萬安政策與個人表現提出看法",
-      "count": "5 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=1405800001667952"
-    },
-    {
-      "title": "釀酒人退道奇 國聯冠軍賽聽牌",
-      "description": "釀酒人以6比2擊敗道奇取得系列賽聽牌，距晉級世界大賽僅差一勝",
-      "count": "2 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%87%80%E9%85%92%E4%BA%BA&serp_type=trends&trend_fbid=1154697450332462"
-    },
-    {
-      "title": "台表科股價突破300元",
-      "description": "在台股大盤重挫之際台表科逆勢走強，盤中股價最高觸及304.5元",
-      "count": "3 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E8%A1%A8%E7%A7%91&serp_type=trends&trend_fbid=1581269836551817"
+      "description": "星宇航空開跑ITF線上旅展，即日起至11月23日推出全航線85折起促銷",
+      "count": "936 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%98%9F%E5%AE%87%E8%88%AA%E7%A9%BA&serp_type=trends&trend_fbid=1734547978564231"
     }
   ]
 }
