@@ -1,23 +1,83 @@
 {
-  "updated_at": "2026-10-15T16:05:13.459813+08:00",
+  "updated_at": "2026-10-15T17:05:14.673914+08:00",
   "topics": [
     {
       "title": "台積電第3季獲利創歷史新高",
-      "description": "台積電公布第3季每股純益29.43元，營收與獲利皆創歷史新高且優於預期",
+      "description": "台積電法說會公布第3季每股純益29.43元，營收與淨利皆刷新歷史紀錄",
       "count": "1 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E7%A9%8D%E9%9B%BB&serp_type=trends&trend_fbid=1451221340299748"
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E7%A9%8D%E9%9B%BB&serp_type=trends&trend_fbid=1071465655715270"
+    },
+    {
+      "title": "賴惠員質詢賈永婕穿著後致歉",
+      "description": "立委賴惠員在立法院質詢指賈永婕穿著不夠純樸，隨後公開致歉並表示會深刻檢討",
+      "count": "3 萬 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%B3%B4%E6%83%A0%E5%93%A1&serp_type=trends&trend_fbid=2291321184987407"
+    },
+    {
+      "title": "薔琵颱風生成上看強颱",
+      "description": "關島東方熱帶低壓增強為颱風薔琵，預計持續朝西北西移動並於下週最接近台灣",
+      "count": "423 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%96%94%E7%90%B5%E9%A2%B1%E9%A2%A8&serp_type=trends&trend_fbid=1799688711065715"
+    },
+    {
+      "title": "外資單日賣超逾三千億創紀錄",
+      "description": "台股加權指數重挫逾千點，外資單日賣超達3025.55億元刷新歷史紀錄",
+      "count": "7 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%A4%96%E8%B3%87&serp_type=trends&trend_fbid=1110632811664748"
+    },
+    {
+      "title": "《傳說對決》稀世商店更名",
+      "description": "《傳說對決》揭曉活動內容，原稀世商店更名為十週年商店且未提供稀世造型",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%82%B3%E8%AA%AA%E5%B0%8D%E6%B1%BA&serp_type=trends&trend_fbid=2139095993660645"
+    },
+    {
+      "title": "沈伯洋應援洋流飄帶迅速發完",
+      "description": "支持者在捷運站與街頭發送沈伯洋應援飄帶，吸引眾多民眾排隊領取且迅速發完",
+      "count": "8 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B4%8B%E6%B5%81%E9%A3%84%E5%B8%B6&serp_type=trends&trend_fbid=1131225566003195"
+    },
+    {
+      "title": "勝利羽球特賣會湧排隊人潮",
+      "description": "羽球品牌勝利在台北南港舉辦特賣會，吸引大批民眾排隊搶購各類球拍與運動裝備",
+      "count": "39 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8B%9D%E5%88%A9%E7%89%B9%E8%B3%A3%E6%9C%83&serp_type=trends&trend_fbid=1783971949551399"
+    },
+    {
+      "title": "世新大學校慶學生抗議爆推擠",
+      "description": "世新大學在小巨蛋舉辦校慶晚會，學生因教學資源等問題在場外發起抗議並與保全推擠",
+      "count": "4 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E4%B8%96%E6%96%B0%E5%A4%A7%E5%AD%B8&serp_type=trends&trend_fbid=1458226912883814"
+    },
+    {
+      "title": "輔大掀奶蛙立牌打卡潮",
+      "description": "黃色奶蛙人形立牌在輔仁大學校園流動現身，吸引學生尋找並拍照合影",
+      "count": "90 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%BC%94%E5%A4%A7%E5%A5%B6%E8%9B%99&serp_type=trends&trend_fbid=2357417541677756"
+    },
+    {
+      "title": "Owala快閃店湧現搶購人潮",
+      "description": "Owala在台北信義A11舉辦快閃活動，現場因大批搶購人潮改發整理券入場",
+      "count": "3 千 則貼文",
+      "link": "https://www.threads.com/search?q=Owala&serp_type=trends&trend_fbid=1360999435900954"
+    },
+    {
+      "title": "《哥吉拉 -0.0》首映票開賣",
+      "description": "《哥吉拉 -0.0》全台聯合首映場開賣，各大影城線上與現場湧現搶購人潮",
+      "count": "609 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%93%A5%E5%90%89%E6%8B%89&serp_type=trends&trend_fbid=2142817093314173"
+    },
+    {
+      "title": "釀酒人擊敗道奇系列賽聽牌",
+      "description": "國聯冠軍賽第3戰釀酒人以6比2擊敗道奇，單場敲3轟取得3比0聽牌優勢",
+      "count": "2 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%87%80%E9%85%92%E4%BA%BA&serp_type=trends&trend_fbid=2252023055369562"
     },
     {
       "title": "田馥甄演唱會公布抽籤結果",
       "description": "田馥甄《要去什麼地方》小巨蛋演唱會採實名登記，售票系統陸續公布中選結果",
-      "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%94%B0%E9%A6%A5%E7%94%84&serp_type=trends&trend_fbid=1396312262218370"
-    },
-    {
-      "title": "賴惠員就賈永婕穿著發言致歉",
-      "description": "賈永婕赴立法院備詢被指穿著不夠純樸，立委賴惠員隨後為相關發言公開致歉",
-      "count": "4 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%B3%88%E6%B0%B8%E5%A9%95&serp_type=trends&trend_fbid=1653903816185708"
+      "count": "2 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%94%B0%E9%A6%A5%E7%94%84&serp_type=trends&trend_fbid=894033040397920"
     },
     {
       "title": "蔡康永出席蔣萬安活動不上台",
@@ -26,70 +86,10 @@
       "link": "https://www.threads.com/search?q=%E8%94%A1%E5%BA%B7%E6%B0%B8&serp_type=trends&trend_fbid=1608451184156212"
     },
     {
-      "title": "Owala快閃店吸引排隊搶購",
-      "description": "Owala於台北新光三越信義A11開設快閃店，吸引民眾排隊領整理券搶購",
-      "count": "3 千 則貼文",
-      "link": "https://www.threads.com/search?q=Owala&serp_type=trends&trend_fbid=1077772821707839"
-    },
-    {
       "title": "紅葉蛋糕快閃高雄漢神巨蛋",
       "description": "台北老字號紅葉蛋糕進駐高雄漢神巨蛋，每日開賣前即湧現大批民眾排隊搶購",
-      "count": "1 千 則貼文",
+      "count": "940 則貼文",
       "link": "https://www.threads.com/search?q=%E7%B4%85%E8%91%89%E8%9B%8B%E7%B3%95&serp_type=trends&trend_fbid=1561116905817508"
-    },
-    {
-      "title": "南亞及台塑集團股價大跌",
-      "description": "隨台股大盤走低，南亞與台塑集團個股重挫跳水，投資人面臨虧損與加碼抉擇",
-      "count": "2 萬 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8D%97%E4%BA%9E&serp_type=trends&trend_fbid=1069517802589331"
-    },
-    {
-      "title": "漢神洲際百貨週年慶預購開跑",
-      "description": "首日預購活動湧現大批人潮，漢神洲際百貨化妝品專櫃買氣熱絡，吸引眾多民眾選購",
-      "count": "104 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%BC%A2%E7%A5%9E%E6%B4%B2%E9%9A%9B%E7%99%BE%E8%B2%A8&serp_type=trends&trend_fbid=1140054811789498"
-    },
-    {
-      "title": "三麗鷗萬聖節盲盒補貨售罄",
-      "description": "網路商店補貨三麗鷗萬聖節絨毛吊飾，布丁狗等熱門款式迅速售罄帶動搶購",
-      "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E4%B8%89%E9%BA%97%E9%B7%97%E7%9B%B2%E7%9B%92&serp_type=trends&trend_fbid=1621998142757600"
-    },
-    {
-      "title": "80億分之1模擬遊戲生成命運",
-      "description": "人生模擬遊戲依據真實統計數據生成角色命運，呈現玩家出生背景至死因等經歷",
-      "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=80%E5%84%84%E5%88%86%E4%B9%8B1&serp_type=trends&trend_fbid=1099734269338445"
-    },
-    {
-      "title": "印尼林火引發跨國霾害",
-      "description": "印尼焚燒林地造成嚴重煙霾，有毒煙霧隨風跨境擴散波及新加坡與馬來西亞",
-      "count": "50 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8D%B0%E5%B0%BC%E6%9E%97%E7%81%AB&serp_type=trends&trend_fbid=1066426353061712"
-    },
-    {
-      "title": "創作者分享堆堆審核結果",
-      "description": "創作者紛紛分享商業委託平台「堆堆」的作品與過審結果，並交流門檻及把關標準",
-      "count": "1 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%A0%86%E5%A0%86&serp_type=trends&trend_fbid=1450369320364812"
-    },
-    {
-      "title": "世新大學辦70週年校慶晚會",
-      "description": "小巨蛋校慶晚會進行之際，場外世新大學學生抗議裁撤系辦並與黑衣保全推擠",
-      "count": "4 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E4%B8%96%E6%96%B0%E5%A4%A7%E5%AD%B8&serp_type=trends&trend_fbid=1072261335794562"
-    },
-    {
-      "title": "趙少康專訪立委沈伯洋",
-      "description": "趙少康在節目專訪立委沈伯洋，強調媒體應公平提供跨黨派發聲機會",
-      "count": "6 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%B6%99%E5%B0%91%E5%BA%B7&serp_type=trends&trend_fbid=1127877993254292"
-    },
-    {
-      "title": "必勝客推55元個人披薩特餐",
-      "description": "會員在必勝客官方應用程式輸入代碼，享55元夏威夷披薩套餐優惠，活動於15日截止",
-      "count": "756 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%BF%85%E5%8B%9D%E5%AE%A2&serp_type=trends&trend_fbid=1643192557281612"
     }
   ]
 }
