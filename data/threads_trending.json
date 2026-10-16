@@ -1,16 +1,70 @@
 {
-  "updated_at": "2026-10-16T12:05:11.779289+08:00",
+  "updated_at": "2026-10-16T13:05:12.888364+08:00",
   "topics": [
+    {
+      "title": "華通股價攻上漲停板",
+      "description": "台股上市公司華通股價亮燈漲停，部分投資人對後續震盪走勢與操作難度持審慎看法",
+      "count": "5 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%8F%AF%E9%80%9A&serp_type=trends&trend_fbid=4451794215081122"
+    },
+    {
+      "title": "特斯拉亮相全新Roadster",
+      "description": "新一代特斯拉Roadster跑車正式亮相，搭載推進系統展示特技並預計2028年生產",
+      "count": "1 萬 則貼文",
+      "link": "https://www.threads.com/search?q=Roadster&serp_type=trends&trend_fbid=2536069400214201"
+    },
+    {
+      "title": "釀酒人橫掃道奇奪國聯冠軍",
+      "description": "密爾瓦基釀酒人以4比0橫掃道奇拿下隊史首座國聯冠軍，睽違44年重返世界大賽",
+      "count": "4 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%87%80%E9%85%92%E4%BA%BA&serp_type=trends&trend_fbid=1667863498251847"
+    },
+    {
+      "title": "印尼森林野火引發煙霾危機",
+      "description": "印尼蘇門答臘等地野火引發橘色煙霾造成停課，並隨風波及新加坡",
+      "count": "122 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8D%B0%E5%B0%BC%E9%87%8E%E7%81%AB&serp_type=trends&trend_fbid=2383294022474648"
+    },
+    {
+      "title": "新北學生美展得獎作涉抄襲",
+      "description": "新北市學生美術比賽第二名畫作涉抄襲小紅書作品，教育局表示若屬實將取消資格",
+      "count": "873 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%BE%8E%E8%A1%93%E6%AF%94%E8%B3%BD&serp_type=trends&trend_fbid=2332874087506930"
+    },
+    {
+      "title": "台南火車站地面段最後營運",
+      "description": "因應鐵路地下化切換軌道，台南火車站地面段結束營運，地下新站10月17日通車",
+      "count": "1 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E5%8D%97%E7%81%AB%E8%BB%8A%E7%AB%99&serp_type=trends&trend_fbid=2324121598412230"
+    },
+    {
+      "title": "投資人評估富喬股價與毛利率",
+      "description": "在銅箔基板原料漲價趨勢下，市場評估具玻纖布料源的富喬毛利率提升幅度與財務表現",
+      "count": "6 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%AF%8C%E5%96%AC&serp_type=trends&trend_fbid=1076443155163326"
+    },
+    {
+      "title": "《傳說對決》推出女團造型配件",
+      "description": "遊戲《傳說對決》新增女團造型與堇 ECHO配件包，包含個性按鍵與頭像表情",
+      "count": "2 千 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%82%B3%E8%AA%AA%E5%B0%8D%E6%B1%BA&serp_type=trends&trend_fbid=1065356446540919"
+    },
+    {
+      "title": "賴清德接受游庭皓專訪",
+      "description": "在《游庭皓的財經皓角》節目中，賴清德針對AI產業發展與能源民生議題進行對談",
+      "count": "169 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B8%B8%E5%BA%AD%E7%9A%93&serp_type=trends&trend_fbid=1442539167814842"
+    },
     {
       "title": "大谷翔平開轟終結全壘打荒",
       "description": "洛杉磯道奇隊大谷翔平在國聯冠軍賽敲出3分全壘打，終結長達116個打席的全壘打荒",
-      "count": "3 千 則貼文",
+      "count": "4 千 則貼文",
       "link": "https://www.threads.com/search?q=%E5%A4%A7%E8%B0%B7%E7%BF%94%E5%B9%B3&serp_type=trends&trend_fbid=1130004722787251"
     },
     {
       "title": "矯正署聯展登場湧現搶購人潮",
       "description": "矯正署聯展在台中文創園區登場，吸引民眾排隊搶購監獄美食，台中女監巧克力迅速售罄",
-      "count": "83 則貼文",
+      "count": "130 則貼文",
       "link": "https://www.threads.com/search?q=%E7%9F%AF%E6%AD%A3%E7%BD%B2%E8%81%AF%E5%B1%95&serp_type=trends&trend_fbid=1119645590601978"
     },
     {
@@ -32,64 +86,10 @@
       "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=1150412504000385"
     },
     {
-      "title": "美術比賽參賽作品涉抄襲",
-      "description": "部分參賽畫作被指未經授權臨摹他人原創，外界呼籲主辦單位查證以維護競賽公平",
-      "count": "860 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%BE%8E%E8%A1%93%E6%AF%94%E8%B3%BD&serp_type=trends&trend_fbid=1642665950535986"
-    },
-    {
-      "title": "《傳說對決》推出遊戲回顧",
-      "description": "玩家透過《傳說對決》歷年親密羈絆回顧功能，重溫過往戀人與前任關係",
-      "count": "2 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%82%B3%E8%AA%AA%E5%B0%8D%E6%B1%BA&serp_type=trends&trend_fbid=1102956165813675"
-    },
-    {
       "title": "出現同格式辭職貼文",
       "description": "多篇內容皆以4小時後刪文及正式辭職為開頭，並稱將分享年過四十真實感受",
-      "count": "27 則貼文",
+      "count": "28 則貼文",
       "link": "https://www.threads.com/search?q=%E8%BE%AD%E8%81%B7%E8%B2%BC%E6%96%87&serp_type=trends&trend_fbid=1637102097885124"
-    },
-    {
-      "title": "男性回應Yes all men",
-      "description": "面對外界各項普遍指責，部分男性選擇以Yes all men回應，表達不再爭辯或自證清白",
-      "count": "368 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%94%B7%E6%80%A7%E5%9B%9E%E6%87%89&serp_type=trends&trend_fbid=1086754764195946"
-    },
-    {
-      "title": "盧秀燕發表全英文演說",
-      "description": "盧秀燕受邀於全球圓桌熱點會議，發表20分鐘全英文演說",
-      "count": "3 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%9B%A7%E7%A7%80%E7%87%95&serp_type=trends&trend_fbid=1124229186807011"
-    },
-    {
-      "title": "A2O LITE推出出道單曲",
-      "description": "李秀滿打造的跨國女團A2O LITE發行出道單曲《NEON》，成員年齡最低13歲",
-      "count": "4 千 則貼文",
-      "link": "https://www.threads.com/search?q=A2O%20LITE&serp_type=trends&trend_fbid=1125089520387488"
-    },
-    {
-      "title": "特斯拉發表新一代Roadster",
-      "description": "新一代Roadster結合推進器展示倒立行駛，加速至60英里可在1秒內完成",
-      "count": "6 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%89%B9%E6%96%AF%E6%8B%89&serp_type=trends&trend_fbid=1467472738591863"
-    },
-    {
-      "title": "實況主花輪拿外送遭踢出隊伍",
-      "description": "花輪因暫離拿外送被移出隊伍與語音後關閉直播，事後獲隊友找回",
-      "count": "446 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%8A%B1%E8%BC%AA&serp_type=trends&trend_fbid=1778081140096846"
-    },
-    {
-      "title": "薔琵颱風生成恐轉強颱",
-      "description": "薔琵颱風在西北太平洋持續增強向西移動，路徑預計下週可能接近台灣或日本海域",
-      "count": "807 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%96%94%E7%90%B5%E9%A2%B1%E9%A2%A8&serp_type=trends&trend_fbid=2375332423211082"
-    },
-    {
-      "title": "米津玄師將登台北大巨蛋開唱",
-      "description": "日本歌手米津玄師將於12月在台北大巨蛋開唱，門票採實名制抽選販售",
-      "count": "2 千 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%B1%B3%E6%B4%A5%E7%8E%84%E5%B8%AB&serp_type=trends&trend_fbid=1617414080053716"
     }
   ]
 }
