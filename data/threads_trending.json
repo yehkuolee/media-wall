@@ -1,29 +1,83 @@
 {
-  "updated_at": "2026-10-17T09:05:12.120055+08:00",
+  "updated_at": "2026-10-17T10:05:14.107349+08:00",
   "topics": [
     {
-      "title": "薔琵颱風持續增強恐達強颱",
-      "description": "各國預報顯示薔琵颱風路徑西修朝台灣及沖繩移動，強度恐達強烈颱風等級",
-      "count": "621 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%96%94%E7%90%B5%E9%A2%B1%E9%A2%A8&serp_type=trends&trend_fbid=1937159437258530"
+      "title": "特斯拉展示新款飛行跑車",
+      "description": "新款Roadster結合SpaceX噴射技術，示範倒掛行駛與凌空翻轉",
+      "count": "3 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E7%89%B9%E6%96%AF%E6%8B%89&serp_type=trends&trend_fbid=1613387249806760"
+    },
+    {
+      "title": "西門町甜甜圈店員與顧客爆衝突",
+      "description": "台北西門町甜甜圈店因排隊糾紛爆發肢體衝突，店家公開致歉後吸引民眾排隊朝聖",
+      "count": "220 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%A5%BF%E9%96%80%E7%94%BA%E7%94%9C%E7%94%9C%E5%9C%88%E5%BA%97&serp_type=trends&trend_fbid=1050341691369946"
     },
     {
       "title": "台南鐵路地下化首階段通車",
-      "description": "台南鐵路地下化第一階段通車，台南車站地面段末班車駛離後全面改行地下新站",
+      "description": "台南火車站地面段開出末班自強號，大批民眾湧入月台見證百年鐵道歷史",
       "count": "4 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E5%8D%97%E9%90%B5%E8%B7%AF%E5%9C%B0%E4%B8%8B%E5%8C%96&serp_type=trends&trend_fbid=1580870643785805"
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E5%8D%97%E9%90%B5%E8%B7%AF%E5%9C%B0%E4%B8%8B%E5%8C%96&serp_type=trends&trend_fbid=2549567132136976"
+    },
+    {
+      "title": "火影有嘻哈推角色饒舌對決",
+      "description": "創作者將《火影忍者》角色與劇情化為押韻歌詞，推出二次創作饒舌對決「火影有嘻哈」",
+      "count": "17 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%81%AB%E5%BD%B1%E6%9C%89%E5%98%BB%E5%93%88&serp_type=trends&trend_fbid=2613934309044848"
+    },
+    {
+      "title": "第9回雜貨女子博台北登場",
+      "description": "松山文創園區迎來雜貨女子博，入場門票搶手並吸引手帳愛好者",
+      "count": "154 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%9B%9C%E8%B2%A8%E5%A5%B3%E5%AD%90%E5%8D%9A&serp_type=trends&trend_fbid=2370055387102806"
+    },
+    {
+      "title": "Owala信義快閃店湧排隊人潮",
+      "description": "美國水壺品牌Owala在台北信義開設快閃店，吸引大批民眾清晨排隊搶購",
+      "count": "3 千則貼文",
+      "link": "https://www.threads.com/search?q=Owala&serp_type=trends&trend_fbid=1812703413376247"
+    },
+    {
+      "title": "台指期夜盤大跌1144點",
+      "description": "受美股重挫影響，台指期夜盤大跌1,144點，終場收在46,140點",
+      "count": "279 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4&serp_type=trends&trend_fbid=28427085343653612"
+    },
+    {
+      "title": "Radiohead日巡二抽扣款",
+      "description": "eplus針對Radiohead日本巡演二抽扣款，中籤歌迷陸續收到通知",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=Radiohead&serp_type=trends&trend_fbid=28813692838325202"
+    },
+    {
+      "title": "《逃出鯨吞》上映獲好評",
+      "description": "改編自小說的《逃出鯨吞》上映，深海逃生壓迫感與主演演技獲好評",
+      "count": "389 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%80%83%E5%87%BA%E9%AF%A8%E5%90%9E&serp_type=trends&trend_fbid=2304333960405763"
+    },
+    {
+      "title": "立院三讀長者健保全額補助",
+      "description": "依《老人福利法》修正，稅率未達20%的65歲以上長者將獲中央全額補助健保",
+      "count": "2 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E5%81%A5%E4%BF%9D%E8%A3%9C%E5%8A%A9&serp_type=trends&trend_fbid=1429505415964028"
+    },
+    {
+      "title": "蔡康永回應蔣萬安活動邀約",
+      "description": "蔣萬安稱未邀其上台表演，蔡康永發文提及通話被掛斷只剩嘟嘟聲",
+      "count": "7 千則貼文",
+      "link": "https://www.threads.com/search?q=%E8%94%A1%E5%BA%B7%E6%B0%B8&serp_type=trends&trend_fbid=1581031940444679"
+    },
+    {
+      "title": "薔琵颱風持續增強恐達強颱",
+      "description": "各國預報顯示薔琵颱風路徑西修朝台灣及沖繩移動，強度恐達強烈颱風等級",
+      "count": "642 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%96%94%E7%90%B5%E9%A2%B1%E9%A2%A8&serp_type=trends&trend_fbid=1937159437258530"
     },
     {
       "title": "台中爵士音樂節市民廣場登場",
       "description": "活動自10月16日起展開10天，吸引大批民眾野餐並欣賞國內外樂手演出",
-      "count": "851 則貼文",
+      "count": "855 則貼文",
       "link": "https://www.threads.com/search?q=%E5%8F%B0%E4%B8%AD%E7%88%B5%E5%A3%AB%E9%9F%B3%E6%A8%82%E7%AF%80&serp_type=trends&trend_fbid=4263180777280962"
-    },
-    {
-      "title": "西門町甜甜圈店爆發衝突",
-      "description": "台北西門町甜甜圈店因排隊問題發生糾紛，雙方互擲物品且店員跳出櫃檯追打",
-      "count": "7 千則貼文",
-      "link": "https://www.threads.com/search?q=%E7%94%9C%E7%94%9C%E5%9C%88%E5%BA%97&serp_type=trends&trend_fbid=1468426091810740"
     },
     {
       "title": "勝利體育特賣會吸引搶購",
@@ -32,64 +86,10 @@
       "link": "https://www.threads.com/search?q=%E5%8B%9D%E5%88%A9%E9%AB%94%E8%82%B2&serp_type=trends&trend_fbid=958478373514519"
     },
     {
-      "title": "蔡康永發文回應蔣萬安未邀上台",
-      "description": "蔣萬安表示本未邀請上台後，蔡康永發文寫下「這邊沒有京都人喔」提及雙方互動",
-      "count": "7 千則貼文",
-      "link": "https://www.threads.com/search?q=%E8%94%A1%E5%BA%B7%E6%B0%B8&serp_type=trends&trend_fbid=1667619254803160"
-    },
-    {
       "title": "高中英聽登場考生展開考前衝刺",
       "description": "隨著高中英語聽力測驗即將舉行，考生積極確認考場規定與應試策略，期盼取得理想成績",
-      "count": "148 則貼文",
+      "count": "168 則貼文",
       "link": "https://www.threads.com/search?q=%E9%AB%98%E4%B8%AD%E8%8B%B1%E8%81%BD&serp_type=trends&trend_fbid=4779113495707300"
-    },
-    {
-      "title": "台指期夜盤重挫逾千點",
-      "description": "受美股科技股走弱影響，台指期夜盤跌幅持續擴大，終場大跌超過千點",
-      "count": "266 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4&serp_type=trends&trend_fbid=1856999312326023"
-    },
-    {
-      "title": "特斯拉發表二代Roadster",
-      "description": "發表會展示結合火箭技術的第二代Roadster，呈現短暫騰空與空中翻轉等飛行功能",
-      "count": "3 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E7%89%B9%E6%96%AF%E6%8B%89&serp_type=trends&trend_fbid=1341193767944117"
-    },
-    {
-      "title": "立院三讀通過長者免健保",
-      "description": "《老人福利法》修正案通過，綜所稅率未達20%的65歲長者健保費由中央全額補助",
-      "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E8%80%81%E4%BA%BA%E7%A6%8F%E5%88%A9%E6%B3%95&serp_type=trends&trend_fbid=1088600247290286"
-    },
-    {
-      "title": "BOYNEXTDOOR韓服開場",
-      "description": "BOYNEXTDOOR全員穿韓服登《Music Bank》，帶來〈Animal〉開場演出",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=BOYNEXTDOOR&serp_type=trends&trend_fbid=4142609379364679"
-    },
-    {
-      "title": "《80億分之1》模擬人生抉擇",
-      "description": "網頁遊戲《80億分之1》依真實人口數據分配背景，讓玩家體驗求學就業等虛擬人生",
-      "count": "3 千則貼文",
-      "link": "https://www.threads.com/search?q=80%E5%84%84%E5%88%86%E4%B9%8B1&serp_type=trends&trend_fbid=1430621985706008"
-    },
-    {
-      "title": "《嫁金釵》開播田曦薇挑戰反派",
-      "description": "古裝劇《嫁金釵》正式開播，主演田曦薇一人分飾魏嬈與君黛兩角",
-      "count": "733 則貼文",
-      "link": "https://www.threads.com/search?q=%E3%80%8A%E5%AB%81%E9%87%91%E9%87%B5%E3%80%8B&serp_type=trends&trend_fbid=1424201479820427"
-    },
-    {
-      "title": "aespa劉知珉懷抱小狗",
-      "description": "女子團體aespa成員劉知珉在拍攝現場懷抱小狗波妞，互動溫柔可愛",
-      "count": "262 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8A%89%E7%9F%A5%E7%8F%89&serp_type=trends&trend_fbid=1595894285358708"
-    },
-    {
-      "title": "沈伯洋防詐文宣獲蔡康永接梗",
-      "description": "沈伯洋於防詐文宣使用「嘟嘟嘟，他很壞」，蔡康永與眾人隨後接梗引用",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%98%9F%E5%98%9F%E5%98%9F%E4%BB%96%E5%BE%88%E5%A3%9E&serp_type=trends&trend_fbid=2655237131593928"
     }
   ]
 }
