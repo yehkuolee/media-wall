@@ -1,35 +1,41 @@
 {
-  "updated_at": "2026-10-19T03:05:12.948541+08:00",
+  "updated_at": "2026-10-19T04:05:13.968920+08:00",
   "topics": [
+    {
+      "title": "桃園中壢傳學生霸凌家長提告",
+      "description": "針對桃園中壢學生霸凌事件，教育局與警方已介入調查且受害家長已提告",
+      "count": "6 千則貼文",
+      "link": "https://www.threads.com/search?q=%E4%B8%AD%E5%A3%A2%E9%9C%B8%E5%87%8C&serp_type=trends&trend_fbid=1464610478900576"
+    },
+    {
+      "title": "怕胖團閃亮傳聞與現場互動",
+      "description": "樂團怕胖團主唱兼吉他手閃亮傳出相關事件，歌迷亦分享收到其彈片的現場點滴",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E9%96%83%E4%BA%AE&serp_type=trends&trend_fbid=1115122104710800"
+    },
     {
       "title": "台北艋舺公園改建後重新開幕",
       "description": "艋舺公園翻新啟用改為半開放空間，面向龍山寺並調整座椅設施",
-      "count": "141 則貼文",
+      "count": "140 則貼文",
       "link": "https://www.threads.com/search?q=%E8%89%8B%E8%88%BA%E5%85%AC%E5%9C%92&serp_type=trends&trend_fbid=2301507834004782"
+    },
+    {
+      "title": "捲髮奶奶店員追打顧客",
+      "description": "台北西門町捲髮奶奶甜甜圈店爆發店員追打客人衝突，事後吸引大批人潮排隊",
+      "count": "776 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%8D%B2%E9%AB%AE%E5%A5%B6%E5%A5%B6&serp_type=trends&trend_fbid=1859365551753525"
     },
     {
       "title": "中壢路口連環車禍排除毒駕",
       "description": "桃園中壢一輛失控轎車衝撞停等紅燈車輛，警方調查排除毒駕，研判疑疲勞駕駛釀禍",
-      "count": "206 則貼文",
+      "count": "213 則貼文",
       "link": "https://www.threads.com/search?q=%E4%B8%AD%E5%A3%A2%E8%BB%8A%E7%A6%8D&serp_type=trends&trend_fbid=1115835944328225"
-    },
-    {
-      "title": "中壢男學生宮廟前遭集體圍毆",
-      "description": "桃園一名男學生在宮廟前遭多人拖行圍毆，受害家屬已提告且警方已介入調查",
-      "count": "6 千則貼文",
-      "link": "https://www.threads.com/search?q=%E4%B8%AD%E5%A3%A2%E9%9C%B8%E5%87%8C&serp_type=trends&trend_fbid=1844421643671258"
     },
     {
       "title": "法國全國抗議演變為暴力衝突",
       "description": "法國多地抗議演變為洗劫與縱火衝突，全法累計已有逾千人遭警方逮捕",
       "count": "7 千則貼文",
       "link": "https://www.threads.com/search?q=%E6%B3%95%E5%9C%8B%E6%8A%97%E8%AD%B0&serp_type=trends&trend_fbid=2378894612941965"
-    },
-    {
-      "title": "捲髮奶奶甜甜圈湧現排隊潮",
-      "description": "西門町捲髮奶奶甜甜圈店發生店員與顧客衝突後，大批民眾前往現場排隊以消費支持",
-      "count": "792 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%8D%B2%E9%AB%AE%E5%A5%B6%E5%A5%B6&serp_type=trends&trend_fbid=2244376942796986"
     },
     {
       "title": "江宏恩拍片力挺沈伯洋",
@@ -40,7 +46,7 @@
     {
       "title": "韓劇《百日謊言》開播",
       "description": "金裕貞主演諜報韓劇《百日謊言》，精湛演技獲得觀眾肯定",
-      "count": "122 則貼文",
+      "count": "120 則貼文",
       "link": "https://www.threads.com/search?q=%E7%99%BE%E6%97%A5%E8%AC%8A%E8%A8%80&serp_type=trends&trend_fbid=2474221603066620"
     },
     {
@@ -52,13 +58,13 @@
     {
       "title": "《嫁金釵》熱度破萬創紀錄",
       "description": "《嫁金釵》刷新優酷2026年破萬紀錄，主演田曦薇一人分飾兩角",
-      "count": "774 則貼文",
+      "count": "772 則貼文",
       "link": "https://www.threads.com/search?q=%E5%AB%81%E9%87%91%E9%87%B5&serp_type=trends&trend_fbid=1097376136425672"
     },
     {
       "title": "台中爵士音樂節登場湧人潮",
       "description": "市民廣場與勤美周邊舉辦台中爵士音樂節，民眾鋪野餐墊聽音樂同樂",
-      "count": "987 則貼文",
+      "count": "976 則貼文",
       "link": "https://www.threads.com/search?q=%E5%8F%B0%E4%B8%AD%E7%88%B5%E5%A3%AB%E9%9F%B3%E6%A8%82%E7%AF%80&serp_type=trends&trend_fbid=1134422839105569"
     },
     {
@@ -82,14 +88,8 @@
     {
       "title": "Fourth個人演唱會圓滿落幕",
       "description": "泰國藝人Fourth舉辦個人演唱會，多位好友現身力挺且演出順利落幕",
-      "count": "153 則貼文",
+      "count": "149 則貼文",
       "link": "https://www.threads.com/search?q=Fourth%20Nattawat&serp_type=trends&trend_fbid=2135837830350268"
-    },
-    {
-      "title": "國民情侶遭言語攻擊關閉帳號",
-      "description": "高中生國民情侶因分享沈伯洋飄帶遭謾罵，最終刪除應用程式並關閉帳號",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%9C%8B%E6%B0%91%E6%83%85%E4%BE%B6&serp_type=trends&trend_fbid=1143094028661265"
     }
   ]
 }
