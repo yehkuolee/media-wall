@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T05:29:25.466040+08:00",
+  "updated_at": "2026-10-19T07:33:13.754963+08:00",
   "keywords": [
     {
       "title": "法國暴動",
@@ -7,34 +7,26 @@
     },
     {
       "title": "發票",
-      "volume": "5,000+"
+      "volume": "1萬+"
+    },
+    {
+      "title": "吳德榮",
+      "volume": "2萬+"
     },
     {
       "title": "學生",
       "volume": "5,000+"
     },
     {
-      "title": "獼猴",
-      "volume": "5,000+"
-    },
-    {
-      "title": "吳德榮",
-      "volume": "1萬+"
-    },
-    {
-      "title": "股災",
-      "volume": "1萬+"
-    },
-    {
       "title": "蘇姿丰",
       "volume": "1萬+"
     },
     {
-      "title": "补贴",
-      "volume": "2,000+"
+      "title": "獼猴",
+      "volume": "5,000+"
     },
     {
-      "title": "江宏恩",
+      "title": "旺 宏 電子",
       "volume": "2,000+"
     },
     {
@@ -42,7 +34,39 @@
       "volume": "2,000+"
     },
     {
+      "title": "汽車",
+      "volume": "5,000+"
+    },
+    {
+      "title": "遺產",
+      "volume": "1,000+"
+    },
+    {
+      "title": "江宏恩",
+      "volume": "2,000+"
+    },
+    {
+      "title": "补贴",
+      "volume": "2,000+"
+    },
+    {
+      "title": "曾聖安",
+      "volume": "5,000+"
+    },
+    {
+      "title": "豐田 corolla",
+      "volume": "2,000+"
+    },
+    {
       "title": "皇家馬德里 對 塞維亞",
+      "volume": "1,000+"
+    },
+    {
+      "title": "新光 三越 台南 中山 店",
+      "volume": "2,000+"
+    },
+    {
+      "title": "洛杉磯湖人",
       "volume": "500+"
     },
     {
@@ -54,52 +78,28 @@
       "volume": "500+"
     },
     {
-      "title": "遺產",
-      "volume": "500+"
-    },
-    {
-      "title": "郭台銘",
-      "volume": "2,000+"
-    },
-    {
-      "title": "洛杉磯湖人",
-      "volume": "200+"
-    },
-    {
       "title": "公務員",
       "volume": "500+"
     },
     {
-      "title": "劉建國",
-      "volume": "500+"
-    },
-    {
-      "title": "madrid vs sevilla",
-      "volume": "100+"
-    },
-    {
-      "title": "vix 指數",
-      "volume": "500+"
-    },
-    {
-      "title": "村上宗隆",
-      "volume": "500+"
-    },
-    {
-      "title": "lol 世界賽",
-      "volume": "100+"
-    },
-    {
-      "title": "曾聖安",
+      "title": "年金",
       "volume": "2,000+"
+    },
+    {
+      "title": "營業額",
+      "volume": "500+"
+    },
+    {
+      "title": "三星",
+      "volume": "1,000+"
     },
     {
       "title": "沈伯洋 民 調",
       "volume": "2,000+"
     },
     {
-      "title": "汽車",
-      "volume": "5,000+"
+      "title": "郭台銘",
+      "volume": "2,000+"
     }
   ]
 }
