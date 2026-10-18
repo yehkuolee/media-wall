@@ -1,17 +1,21 @@
 {
-  "updated_at": "2026-10-19T00:54:06.016332+08:00",
+  "updated_at": "2026-10-19T03:08:19.176923+08:00",
   "keywords": [
     {
       "title": "法國暴動",
-      "volume": "2萬+"
+      "volume": "5萬+"
+    },
+    {
+      "title": "老年",
+      "volume": "1萬+"
     },
     {
       "title": "蘇姿丰",
       "volume": "1萬+"
     },
     {
-      "title": "老年",
-      "volume": "1萬+"
+      "title": "發票",
+      "volume": "5,000+"
     },
     {
       "title": "學生",
@@ -22,67 +26,31 @@
       "volume": "5,000+"
     },
     {
+      "title": "吳德榮",
+      "volume": "1萬+"
+    },
+    {
       "title": "長鑫儲存",
       "volume": "5,000+"
     },
     {
-      "title": "發票",
+      "title": "江宏恩",
       "volume": "2,000+"
     },
     {
-      "title": "颱風假",
-      "volume": "1萬+"
+      "title": "补贴",
+      "volume": "2,000+"
     },
     {
       "title": "曾聖安",
-      "volume": "5,000+"
+      "volume": "2,000+"
     },
     {
       "title": "新光 三越 台南 中山 店",
       "volume": "2,000+"
     },
     {
-      "title": "江宏恩",
-      "volume": "1,000+"
-    },
-    {
-      "title": "火灾",
-      "volume": "2,000+"
-    },
-    {
-      "title": "豐田 corolla",
-      "volume": "2,000+"
-    },
-    {
-      "title": "里茲聯 對 曼聯",
-      "volume": "1,000+"
-    },
-    {
-      "title": "諾丁漢森林 對 兵工廠",
-      "volume": "500+"
-    },
-    {
-      "title": "黃宣",
-      "volume": "1,000+"
-    },
-    {
-      "title": "三星",
-      "volume": "1,000+"
-    },
-    {
-      "title": "第三次世界大戰",
-      "volume": "500+"
-    },
-    {
-      "title": "中壢車禍",
-      "volume": "200+"
-    },
-    {
-      "title": "氣象局",
-      "volume": "2,000+"
-    },
-    {
-      "title": "劉建國",
+      "title": "洛杉磯湖人",
       "volume": "200+"
     },
     {
@@ -90,15 +58,47 @@
       "volume": "500+"
     },
     {
-      "title": "汽車",
-      "volume": "5,000+"
+      "title": "艾琳達",
+      "volume": "200+"
+    },
+    {
+      "title": "遺產",
+      "volume": "200+"
     },
     {
       "title": "股災",
       "volume": "1萬+"
     },
     {
-      "title": "补贴",
+      "title": "汽車",
+      "volume": "5,000+"
+    },
+    {
+      "title": "vix 指數",
+      "volume": "200+"
+    },
+    {
+      "title": "中壢",
+      "volume": "500+"
+    },
+    {
+      "title": "火灾",
+      "volume": "2,000+"
+    },
+    {
+      "title": "諾丁漢森林 對 兵工廠",
+      "volume": "1,000+"
+    },
+    {
+      "title": "桃園霸凌",
+      "volume": "500+"
+    },
+    {
+      "title": "高虹安",
+      "volume": "200+"
+    },
+    {
+      "title": "豐田 corolla",
       "volume": "2,000+"
     }
   ]
