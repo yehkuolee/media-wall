@@ -565,12 +565,14 @@ def fetch_threads_trending() -> dict:
 
 # ── ETtoday 交叉比對 ───────────────────────────────────────────────
 # Top 15 每則去找 ETtoday 有沒有相關新聞，標「ETtoday相關」附網址：
-# 1. 候選：ETtoday 新聞總覽（今天＋昨天）標題用字最像的 5 則，加上 ETtoday 站內搜尋的結果
+# 1. 候選：ETtoday 新聞總覽近 30 小時標題用字最像的 5 則，加上 ETtoday 站內搜尋的結果
 #    （搜尋詞由 AI 上一輪給，一次搜一個詞，關鍵字中間有空格會搜不到）
 # 2. Gemini 整批判斷候選是不是同一事件或同一則話題，同時替還沒對到的新聞想搜尋詞（下一輪拿去搜）
 # 免費額度：AI 最多每 10 分鐘問 1 次，判斷過的「標題＋候選」記住不重問；
 # 標題用字很像的（ET_TEXT_MIN）不管 AI 怎麼判都標；沒金鑰或 AI 失敗時就只剩這部分。
 ET_LIST_URL = "https://www.ettoday.net/news/news-list-{:%Y-%m-%d}-0.htm"
+ET_ROLL_URL = "https://www.ettoday.net/show_roll.php"
+ET_ROLL_MAX = 50  # 每次 10 則，約可回推 30 小時
 ET_SEARCH_URL = "https://www.ettoday.net/news_search/doSearch.php"
 ET_HEADERS = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
 ET_MODELS = ["gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-flash-lite-latest"]
@@ -578,21 +580,43 @@ ET_AI_GAP = 600
 ET_TEXT_MIN = 0.4
 
 
+def _et_parse(html: str) -> list[dict]:
+    """新聞總覽的列表項：[{title, link, time}]"""
+    items = []
+    for h3 in BeautifulSoup(html, "html.parser").select("h3"):
+        a, d = h3.select_one("a[href]"), h3.select_one(".date")
+        if a and a["href"].startswith("https://") and a.get_text(strip=True):
+            items.append({"title": a.get_text(strip=True), "link": a["href"], "time": d.get_text(strip=True) if d else ""})
+    return items
+
+
 @st.cache_data(ttl=600, show_spinner=False)
 def fetch_ettoday() -> list[dict]:
-    """ETtoday 新聞總覽今天＋昨天各最新 100 則（含星光雲、寵物雲、運動雲等子網站）"""
-    items, seen = [], set()
+    """ETtoday 新聞總覽近 30 小時（含星光雲、寵物雲、運動雲等子網站）。
+    總覽頁只放最新 100 則，往下捲由 show_roll.php 每次再給 10 則（offset 1 起），一路接到前一天"""
     now = datetime.now(TW_TZ)
-    for d in (now, now - timedelta(days=1)):
-        try:
-            soup = BeautifulSoup(requests.get(ET_LIST_URL.format(d), headers=ET_HEADERS, timeout=10).text, "html.parser")
-            for a in soup.select(".part_list_2 h3 a[href]"):
-                title, link = a.get_text(strip=True), a["href"]
-                if title and link.startswith("https://") and link not in seen:
-                    seen.add(link)
-                    items.append({"title": title, "link": link})
-        except Exception:
-            continue
+    oldest = (now - timedelta(hours=30)).strftime("%Y/%m/%d %H:%M")
+    items, seen = [], set()
+
+    def add(batch):
+        for it in batch:
+            if it["link"] not in seen:
+                seen.add(it["link"])
+                items.append(it)
+
+    try:
+        page = requests.get(ET_LIST_URL.format(now), headers=ET_HEADERS, timeout=10).text
+        add(_et_parse(page.split('class="part_list_2"', 1)[-1]))
+        for off in range(1, ET_ROLL_MAX + 1):
+            r = requests.post(ET_ROLL_URL, data={"offset": off, "tPage": "3", "tFile": f"{now:%Y%m%d}.xml",
+                                                 "tOt": "0", "tSi": "100", "tAr": "0"},
+                              headers={**ET_HEADERS, "Referer": "https://www.ettoday.net/news/news-list.htm"}, timeout=10)
+            batch = _et_parse(r.text) if r.text.strip() not in ("", "null") else []
+            add(batch)
+            if not batch or batch[-1]["time"] < oldest:
+                break
+    except Exception:
+        pass
     return items
 
 
