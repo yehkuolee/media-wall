@@ -1,6 +1,78 @@
 {
-  "updated_at": "2026-10-20T01:05:14.425070+08:00",
+  "updated_at": "2026-10-20T02:05:13.960089+08:00",
   "topics": [
+    {
+      "title": "民眾聚集武和宮抗議霸凌",
+      "description": "桃園中壢武和宮發生青少年遭圍毆事件，大批民眾聚集現場放鞭炮高喊反霸凌",
+      "count": "5 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%AD%A6%E5%92%8C%E5%AE%AE&serp_type=trends&trend_fbid=1778599383351466"
+    },
+    {
+      "title": "台籍女遊客命喪河口湖飯店",
+      "description": "一名台灣女性在富士河口湖町飯店身亡，警方在現場逮捕一名持刀的27歲台籍女子",
+      "count": "733 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B2%B3%E5%8F%A3%E6%B9%96&serp_type=trends&trend_fbid=1820542739033389"
+    },
+    {
+      "title": "IG推出聊天室自訂背景功能",
+      "description": "用戶可於Instagram聊天室上傳個人照片自訂背景，該功能採逐步推播",
+      "count": "47 萬則貼文",
+      "link": "https://www.threads.com/search?q=Instagram&serp_type=trends&trend_fbid=1444134884348858"
+    },
+    {
+      "title": "薔琵颱風提早北轉登陸機率降",
+      "description": "氣象署預測強颱薔琵提早北轉且登陸機率降低，最快21日晚間發布海警",
+      "count": "3 千則貼文",
+      "link": "https://www.threads.com/search?q=%E8%96%94%E7%90%B5%E9%A2%B1%E9%A2%A8&serp_type=trends&trend_fbid=2653755181728836"
+    },
+    {
+      "title": "趙少康專訪蔣萬安談選戰",
+      "description": "趙少康在節目中詢問蔣萬安選戰為何辛苦，並在對方列舉市政時苦笑表示要代為解答",
+      "count": "2 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E8%B6%99%E5%B0%91%E5%BA%B7&serp_type=trends&trend_fbid=1659462599038070"
+    },
+    {
+      "title": "TXT崔秀彬傳私生活照外流",
+      "description": "南韓男團TXT成員崔秀彬遭指控私生活照片外流，相關內容真實性目前未明",
+      "count": "3 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E5%B4%94%E7%A7%80%E5%BD%AC&serp_type=trends&trend_fbid=1428617842816626"
+    },
+    {
+      "title": "八曜和茶飲料現活蛞蝓停業清消",
+      "description": "台中東海門市飲料遭民眾反映有活蛞蝓，八曜和茶宣布停業清消，食安處將派員稽查",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%85%AB%E6%9B%9C%E5%92%8C%E8%8C%B6&serp_type=trends&trend_fbid=2118962882312469"
+    },
+    {
+      "title": "《嫁金釵》熱播田曦薇分飾兩角",
+      "description": "古裝劇《嫁金釵》持續熱播，田曦薇一人分飾真假千金魏嬈與君黛兩角",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E3%80%8A%E5%AB%81%E9%87%91%E9%87%B5%E3%80%8B&serp_type=trends&trend_fbid=1062486823500679"
+    },
+    {
+      "title": "死神千年血戰篇第49話播出",
+      "description": "《BLEACH死神 千年血戰篇》相隔一個月迎來倒數第二集第49話，展現大決戰場面",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%AD%BB%E7%A5%9E&serp_type=trends&trend_fbid=1658554775629128"
+    },
+    {
+      "title": "全台多所大學出現奶龍立牌",
+      "description": "成大等多所大專院校陸續出現迷因角色奶蛙與奶龍立牌，學生紛紛在校內放置與尋找",
+      "count": "45 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%A5%B6%E9%BE%8D%E7%AB%8B%E7%89%8C&serp_type=trends&trend_fbid=1102528309291610"
+    },
+    {
+      "title": "NMIXX發行第六張迷你專輯",
+      "description": "韓國女團NMIXX推出新專輯《Strange Muse》，主打歌登上音源榜前列",
+      "count": "5 千則貼文",
+      "link": "https://www.threads.com/search?q=NMIXX&serp_type=trends&trend_fbid=1415285308333776"
+    },
+    {
+      "title": "厄瓜多神父遭十字架砸中身亡",
+      "description": "厄瓜多瓜亞基爾一間教堂彌撒直播時，大型木製十字架脫落砸中桑切斯神父致死",
+      "count": "400 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%A1%91%E5%88%87%E6%96%AF%E7%A5%9E%E7%88%B6&serp_type=trends&trend_fbid=1126441016980673"
+    },
     {
       "title": "法國示威升級為全國暴動",
       "description": "法國抗議生活成本高漲的示威升級為暴力衝突，多處商家與公共設施遭縱火破壞",
@@ -8,88 +80,16 @@
       "link": "https://www.threads.com/search?q=%E6%B3%95%E5%9C%8B%E7%A4%BA%E5%A8%81&serp_type=trends&trend_fbid=1129865432765019"
     },
     {
-      "title": "中壢武和宮學生遭圍毆",
-      "description": "桃園中壢日前發生學生遭多人圍毆拖行事件，涉案少年已移送少年法庭處理",
-      "count": "5 千則貼文",
-      "link": "https://www.threads.com/search?q=%E4%B8%AD%E5%A3%A2%E9%9C%B8%E5%87%8C&serp_type=trends&trend_fbid=2535395793607917"
-    },
-    {
-      "title": "Instagram推聊天室自訂背景",
-      "description": "針對Instagram聊天室新推自訂背景功能，未支援用戶可重裝App嘗試開啟",
-      "count": "46 萬則貼文",
-      "link": "https://www.threads.com/search?q=Instagram&serp_type=trends&trend_fbid=1643628033842939"
-    },
-    {
       "title": "沈伯洋支持者籌辦造勢拉票",
       "description": "民進黨台北市長參選人沈伯洋支持者積極拉票，籌備嘉年華活動為選情凝聚聲勢",
-      "count": "10 萬則貼文",
+      "count": "9 萬則貼文",
       "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1846610623434690"
     },
     {
       "title": "可莉女孩舉辦年度徵選決選會",
       "description": "新竹可利工程師啦啦隊可莉女孩完成年度徵選，現場公布新賽季正選與練習生名單",
-      "count": "188 則貼文",
+      "count": "218 則貼文",
       "link": "https://www.threads.com/search?q=%E5%8F%AF%E8%8E%89%E5%A5%B3%E5%AD%A9&serp_type=trends&trend_fbid=1801171577876110"
-    },
-    {
-      "title": "85度C推出60公分超長蛋塔",
-      "description": "85度C開賣長約60公分的超長條造型蛋塔，單份售價158元吸引民眾排隊搶購",
-      "count": "606 則貼文",
-      "link": "https://www.threads.com/search?q=85%E5%BA%A6C&serp_type=trends&trend_fbid=1587674262541239"
-    },
-    {
-      "title": "大學校園掀起奶蛙立牌風潮",
-      "description": "政大與成大等校學生在校內放置大型奶蛙立牌，眾人紛紛接力移動並拍照打卡",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%A5%B6%E8%9B%99&serp_type=trends&trend_fbid=929717813331223"
-    },
-    {
-      "title": "紅果短劇掀起快節奏收看熱潮",
-      "description": "主打情緒刺激與快節奏的紅果短劇掀起收看熱潮，其AI生成內容被指缺乏敘事深度",
-      "count": "4 千則貼文",
-      "link": "https://www.threads.com/search?q=%E7%B4%85%E6%9E%9C%E7%9F%AD%E5%8A%87&serp_type=trends&trend_fbid=1505925764699876"
-    },
-    {
-      "title": "強烈颱風薔琵路徑提早北轉",
-      "description": "受高壓影響強烈颱風薔琵路徑提早北轉，本週中後期恐影響台灣北部及東部",
-      "count": "3 千則貼文",
-      "link": "https://www.threads.com/search?q=%E8%96%94%E7%90%B5%E9%A2%B1%E9%A2%A8&serp_type=trends&trend_fbid=28916509084624787"
-    },
-    {
-      "title": "趙少康專訪蔣萬安談選戰",
-      "description": "趙少康在節目中詢問蔣萬安選戰為何辛苦，並在對方列舉市政時苦笑表示要代為解答",
-      "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E8%B6%99%E5%B0%91%E5%BA%B7&serp_type=trends&trend_fbid=1812746429761109"
-    },
-    {
-      "title": "台股跌幅收斂終場跌289點",
-      "description": "台股盤中一度大跌逾900點，隨後跌幅收斂拉出長下影線，台積電終場拉回平盤",
-      "count": "4 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E8%82%A1&serp_type=trends&trend_fbid=4476907382556860"
-    },
-    {
-      "title": "微熱山丘標中國台灣遭抵制",
-      "description": "微熱山丘因包裝產地標為中國台灣且傳涉中資，民眾呼籲拒買並改選其他品牌",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%BE%AE%E7%86%B1%E5%B1%B1%E4%B8%98&serp_type=trends&trend_fbid=992081863159708"
-    },
-    {
-      "title": "高職統測模考英文難度偏高",
-      "description": "高職統測第一次模擬考英文科生詞多且難度偏高，學生答對題數低於預期",
-      "count": "30 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%B5%B1%E6%B8%AC%E6%A8%A1%E6%93%AC%E8%80%83&serp_type=trends&trend_fbid=1631112931850657"
-    },
-    {
-      "title": "TXT崔秀彬傳私生活照外流",
-      "description": "南韓男團TXT成員崔秀彬遭指控私生活照片外流，相關內容真實性目前未明",
-      "count": "3 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E5%B4%94%E7%A7%80%E5%BD%AC&serp_type=trends&trend_fbid=1603725671795337"
-    },
-    {
-      "title": "八曜和茶飲品現活蛞蝓",
-      "description": "顧客在八曜和茶台中東海門市飲品中發現活蛞蝓，業者致歉並宣布涉事門市暫停營業",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%85%AB%E6%9B%9C%E5%92%8C%E8%8C%B6&serp_type=trends&trend_fbid=1427029875559765"
     }
   ]
 }
