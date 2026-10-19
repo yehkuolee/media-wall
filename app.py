@@ -239,6 +239,9 @@ st.markdown("""
 .et-tag          { color: #fff; background: #c41230; font-weight: 600; border-radius: 3px; padding: 0 4px; margin-left: 4px; }
 .et-link         { color: #c41230; text-decoration: none; word-break: break-all; }
 .et-link:hover   { text-decoration: underline; }
+.surge-card      { border-left-color: #c41230; }
+.surge-why       { color: #c41230; font-size: .68rem; font-weight: 600; margin-top: 2px; }
+.surge-empty     { color: #aaa; font-size: .72rem; padding: 6px 2px 12px; }
 
 /* ── Threads card ── */
 .threads-card {
@@ -376,6 +379,8 @@ html.mw-dark .news-meta, html.mw-dark .threads-count { color: #6f6f6f; }
 html.mw-dark .news-src, html.mw-dark .threads-desc { color: #8a8a8a; }
 html.mw-dark .et-tag  { background: #ff3b4e; color: #000; }
 html.mw-dark .et-link { color: #ff3b4e; }
+html.mw-dark .surge-why { color: #ff3b4e; }
+html.mw-dark .surge-card { border-left-color: #ff3b4e; }
 html.mw-dark .kw-hot  { background: rgba(255,59,78,.12);  border-color: rgba(255,59,78,.45);  color: #ff3b4e; }
 html.mw-dark .kw-warm { background: rgba(255,176,0,.10);  border-color: rgba(255,176,0,.40);  color: #ffb000; }
 html.mw-dark .kw-cool { background: rgba(56,189,248,.10); border-color: rgba(56,189,248,.35); color: #38bdf8; }
@@ -482,7 +487,7 @@ def fetch_scraped_news() -> list[dict]:
                 feed = feedparser.parse(requests.get(cfg["rss_fallback"], headers=headers, timeout=8).content)
                 for e in feed.entries[:cfg["limit"]]:
                     items.append({"title": e.get("title", "").strip(), "link": e.get("link", "#"),
-                                  "source": source, "pub": None})
+                                  "source": source, "pub": None, "fallback": True})
             except Exception:
                 pass
     return items
@@ -736,6 +741,93 @@ def ettoday_matches(news_list: list) -> dict:
                     memo["words"][title] = words  # 下一輪拿去 ETtoday 站內搜尋
     # 標題用字很像的一律標（AI 偶爾會漏判；AI 還沒判斷到的也先靠這個）
     return {**best_text, **result}
+
+
+# ── 瀏覽暴衝偵測 ───────────────────────────────────────────────────
+# 各家熱門榜沒有公開瀏覽數，改用「名次變化」推測。每 9 分鐘以上記一次各家熱門榜名次，符合任一項就算暴衝：
+# 空降：上一輪不在榜、這輪直接進前 5；急升：約 30 分鐘內升 5 名以上且進前 10；
+# 多家同時上榜：同一話題同時在 3 家以上熱門榜前 10（標題用字相近的串成一群）。
+# 紀錄放記憶體：防休眠程式每 10 分鐘開一次網站會一直累積；重新部署會歸零，約 30 分鐘後才有「急升」。
+HOT_SOURCES = ["自由時報", "Yahoo 新聞", "東森新聞", "壹蘋新聞網", "中國時報", "聯合報熱門"]  # 中央社、三立是最新列表，不算
+SURGE_GAP = 540
+SURGE_KEEP = 7200
+SURGE_NEW_TOP = 5
+SURGE_JUMP, SURGE_JUMP_TOP = 5, 10
+SURGE_MULTI = 3
+
+
+@st.cache_resource
+def _rank_log() -> dict:
+    """所有訪客共用：[(時間, {媒體: [新聞，依名次]})]"""
+    return {"snaps": []}
+
+
+def record_ranks(all_news: list):
+    log, now = _rank_log(), time.time()
+    if log["snaps"] and now - log["snaps"][-1][0] < SURGE_GAP:
+        return
+    ranks: dict[str, list] = {}
+    for n in all_news:
+        if n["source"] in HOT_SOURCES and not n.get("fallback"):  # 退回 RSS 的是最新不是熱門，名次沒意義
+            ranks.setdefault(n["source"], []).append(n)
+    if ranks:
+        log["snaps"] = [s for s in log["snaps"] if now - s[0] <= SURGE_KEEP] + [(now, ranks)]
+
+
+def _nkey(n: dict) -> str:
+    return n.get("link") or n["title"]
+
+
+def detect_surges() -> list[dict]:
+    """[{news, reasons, best}]：原因多的、名次高的在前"""
+    snaps = _rank_log()["snaps"]
+    if not snaps:
+        return []
+    now_t, cur = snaps[-1]
+    prev = snaps[-2][1] if len(snaps) >= 2 else None
+    old_t, old = next(((t, s) for t, s in reversed(snaps[:-1]) if now_t - t >= 25 * 60), (None, None))
+    found: dict[str, dict] = {}
+
+    def add(n, why, rank):
+        f = found.setdefault(_nkey(n), {"news": n, "reasons": [], "best": 99})
+        f["reasons"].append(why)
+        f["best"] = min(f["best"], rank)
+
+    for src, lst in cur.items():
+        pr = {_nkey(x): i for i, x in enumerate(prev.get(src, []), 1)} if prev else {}
+        od = {_nkey(x): i for i, x in enumerate(old.get(src, []), 1)} if old else {}
+        for i, n in enumerate(lst, 1):
+            k = _nkey(n)
+            if pr and k not in pr and i <= SURGE_NEW_TOP:
+                add(n, f"{src} 空降第 {i} 名", i)
+            elif k in od and od[k] - i >= SURGE_JUMP and i <= SURGE_JUMP_TOP:
+                add(n, f"{src} {round((now_t - old_t) / 60)} 分鐘 {od[k]}→{i} 名", i)
+
+    # 多家同時上榜：各家前 10 名，標題用字相近的串成一群（同一話題各家寫法不同，用串連的）
+    tops = [(src, i, n, _grams(n["title"])) for src, lst in cur.items() for i, n in enumerate(lst[:10], 1)]
+    group = list(range(len(tops)))
+
+    def root(a):
+        while group[a] != a:
+            group[a] = group[group[a]]
+            a = group[a]
+        return a
+
+    for a in range(len(tops)):
+        for b in range(a + 1, len(tops)):
+            ga, gb = tops[a][3], tops[b][3]
+            if tops[a][0] != tops[b][0] and _overlap(ga, gb) >= 0.2 and len(ga & gb) >= 4:
+                group[root(a)] = root(b)
+    clusters: dict[int, list] = {}
+    for a, t in enumerate(tops):
+        clusters.setdefault(root(a), []).append(t)
+    for members in clusters.values():
+        srcs = list(dict.fromkeys(m[0] for m in members))
+        if len(srcs) >= SURGE_MULTI:
+            src, i, n, _ = min(members, key=lambda m: m[1])
+            add(n, f"{len(srcs)} 家熱門榜同時上榜（{'、'.join(srcs)}）", i)
+
+    return sorted(found.values(), key=lambda f: (-len(f["reasons"]), f["best"]))[:8]
 
 
 # ── Helpers ────────────────────────────────────────────────────────
@@ -1042,6 +1134,14 @@ def main():
 
     # ── CENTER ──
     with center:
+        record_ranks(all_news)
+        surges = detect_surges()
+        st.markdown('<div class="sec-title">🚀 瀏覽暴衝（熱門榜名次推測）</div>', unsafe_allow_html=True)
+        if not surges:
+            msg = ("名次紀錄累積中，約 10 分鐘後開始偵測" if len(_rank_log()["snaps"]) < 2
+                   else "目前沒有暴衝稿件")
+            st.markdown(f'<div class="surge-empty">{msg}</div>', unsafe_allow_html=True)
+        surge_slot = st.empty()
         if selected_src:
             src_news = [n for n in all_news if n["source"] == selected_src]
             st.markdown(f'<div class="sec-title">📰 {html_mod.escape(selected_src)}｜全部 {len(src_news)} 則</div>'
@@ -1051,7 +1151,24 @@ def main():
         else:
             st.markdown('<div class="sec-title">📰 即時熱門新聞 Top 15（各媒體均攤）</div>', unsafe_allow_html=True)
             news_list = round_robin_top(all_news, 15)
-        et_map = ettoday_matches(news_list)
+        et_map = ettoday_matches(news_list + [f["news"] for f in surges if f["news"] not in news_list])
+        if surges:
+            cards = ""
+            for f in surges:
+                n = f["news"]
+                et_url = et_map.get(n["title"])
+                et_html = (f' · <span class="et-tag">ETtoday相關</span> <a class="et-link" href="{html_mod.escape(et_url)}" '
+                           f'target="_blank" rel="noopener">{html_mod.escape(et_url)}</a>') if et_url else ''
+                cards += f"""
+            <div class="news-card surge-card">
+                <div class="news-rank">🚀</div>
+                <div class="news-body">
+                    <a class="news-title-link" href="{html_mod.escape(n.get('link') or '#')}" target="_blank" rel="noopener">{html_mod.escape(n['title'])}</a>
+                    <div class="surge-why">{html_mod.escape('｜'.join(f['reasons']))}</div>
+                    <div class="news-meta"><span class="news-src">📌 {html_mod.escape(n['source'])}</span>{et_html}</div>
+                </div>
+            </div>"""
+            surge_slot.markdown(cards, unsafe_allow_html=True)
         for i, news in enumerate(news_list):
             rc = rank_class(i)
             rank_num = i + 1
