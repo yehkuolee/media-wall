@@ -959,6 +959,7 @@ MASTHEAD_CSS = """
     50%      { opacity:.2; }
 }
 .live-text { color: #c41230; font-size: .72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+.mw-online { color: #555; font-size: .72rem; font-weight: 700; letter-spacing: 1px; margin-left: 10px; padding-left: 10px; border-left: 1px solid #d8d5d0; }
 .mw-time { color: #121212; font-size: 1.1rem; font-weight: 700; font-family: 'Courier New', monospace; text-align: right; }
 .mw-date { color: #999; font-size: .67rem; text-align: right; letter-spacing: 1px; }
 .mw-updated { color: #999; font-size: .67rem; text-align: right; letter-spacing: 1px; margin-top: 2px; }
@@ -987,16 +988,43 @@ html.mw-dark, html.mw-dark body { background: #000000 !important; }
 .mw-dark .mw-time { color: #22c55e; }
 .mw-dark .mw-subtitle, .mw-dark .mw-date, .mw-dark .mw-updated { color: #6f6f6f; }
 .mw-dark .live-dot { background: #ff3b4e; }
+.mw-dark .mw-online { color: #b0b0b0; border-left-color: #333; }
 .mw-dark .live-text { color: #ff3b4e; }
 .mw-dark .mw-theme-label { color: #b0b0b0; }
 .mw-dark .mw-theme-btn:hover .mw-theme-label { color: #ff3b4e; }
 """
 
 
+# ── 在線人數 ───────────────────────────────────────────────────────
+# 用 Streamlit 目前連線中的分頁數（關掉分頁就斷線、馬上扣掉）；
+# 防休眠程式和截圖用的無頭瀏覽器（HeadlessChrome）不算。畫面每 5 分鐘自動更新時才會刷新數字。
+@st.cache_resource
+def _viewer_bots() -> dict:
+    """所有訪客共用：{session_id: 是不是機器人}"""
+    return {}
+
+
+def online_count():
+    try:
+        from streamlit.runtime import get_instance
+        from streamlit.runtime.scriptrunner import get_script_run_ctx
+        ua = st.context.headers.get("User-Agent", "") or ""
+        bots = _viewer_bots()
+        bots[get_script_run_ctx().session_id] = "HeadlessChrome" in ua or "bot" in ua.lower()
+        active = [info.session.id for info in get_instance()._session_mgr.list_active_sessions()]
+        for sid in [k for k in bots if k not in active]:
+            bots.pop(sid, None)
+        return sum(1 for sid in active if not bots.get(sid, False))
+    except Exception:
+        return None  # Streamlit 內部介面改版就不顯示
+
+
 # ── Main ───────────────────────────────────────────────────────────
 
 def main():
     now = datetime.now(TW_TZ)
+    online = online_count()
+    online_html = f'<span class="mw-online">👀 {online} 人在線上</span>' if online else ''
 
     # ── Header ──────────────────────────────────────────────────
     # 用 components.html（iframe）渲染，時鐘才能用 JS 每秒跳動；st.markdown 不執行 script
@@ -1015,6 +1043,7 @@ def main():
         <div class="mw-live">
             <div class="live-dot"></div>
             <span class="live-text">LIVE 即時更新中</span>
+            {online_html}
         </div>
         <div class="mw-right">
             <button class="mw-theme-btn" id="mw-theme-btn" role="switch" aria-checked="false" title="切換深色／淺色"><span class="mw-theme-label">深色模式</span><span class="mw-switch"></span></button>
