@@ -1,23 +1,65 @@
 {
-  "updated_at": "2026-10-20T02:05:13.960089+08:00",
+  "updated_at": "2026-10-20T03:05:17.935053+08:00",
   "topics": [
     {
-      "title": "民眾聚集武和宮抗議霸凌",
-      "description": "桃園中壢武和宮發生青少年遭圍毆事件，大批民眾聚集現場放鞭炮高喊反霸凌",
-      "count": "5 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%AD%A6%E5%92%8C%E5%AE%AE&serp_type=trends&trend_fbid=1778599383351466"
+      "title": "中壢武和宮少年霸凌案移送法庭",
+      "description": "桃園中壢武和宮發生少年霸凌事件，民眾聚集聲援受害者，涉案少年已移送少年法庭",
+      "count": "4 千則貼文",
+      "link": "https://www.threads.com/search?q=%E4%B8%AD%E5%A3%A2%E9%9C%B8%E5%87%8C&serp_type=trends&trend_fbid=1464577505565707"
+    },
+    {
+      "title": "八曜和茶飲料現活蛞蝓門市停業",
+      "description": "八曜和茶東海門市遭反映飲品含蛞蝓後致歉停業，台中食安處將前往稽查",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%85%AB%E6%9B%9C%E5%92%8C%E8%8C%B6&serp_type=trends&trend_fbid=2087644565188717"
+    },
+    {
+      "title": "IVE公開新曲展開回歸",
+      "description": "韓國女團IVE公開新曲《Looks Can Kill》，正式展開回歸活動",
+      "count": "29 萬則貼文",
+      "link": "https://www.threads.com/search?q=IVE&serp_type=trends&trend_fbid=2131261757475755"
+    },
+    {
+      "title": "IG聊天室推出自訂背景",
+      "description": "Instagram推出聊天室自訂背景功能，部分用戶重新下載應用程式後啟用",
+      "count": "47 萬則貼文",
+      "link": "https://www.threads.com/search?q=Instagram&serp_type=trends&trend_fbid=1609429507644459"
+    },
+    {
+      "title": "《死神》播倒數第二集第49話",
+      "description": "電視動畫《BLEACH死神》播出第49話，在相隔約一個月後迎來高潮戰鬥",
+      "count": "319 則貼文",
+      "link": "https://www.threads.com/search?q=BLEACH%E6%AD%BB%E7%A5%9E&serp_type=trends&trend_fbid=1102681662368368"
+    },
+    {
+      "title": "TXT崔秀彬遭傳私照粉絲駁斥",
+      "description": "TXT崔秀彬遭流傳私密照片與傳聞，粉絲指特徵不符且畫面疑為AI生成以駁斥造謠",
+      "count": "3 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E5%B4%94%E7%A7%80%E5%BD%AC&serp_type=trends&trend_fbid=1698989061832104"
+    },
+    {
+      "title": "法國爆發大規模示威與暴動",
+      "description": "法國示威因教育與通膨擴大，部分行動演變為縱火及洗劫商家",
+      "count": "8 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B3%95%E5%9C%8B%E6%9A%B4%E5%8B%95&serp_type=trends&trend_fbid=1589232476567146"
+    },
+    {
+      "title": "沈伯洋投入台北市長選舉",
+      "description": "沈伯洋展開台北市長選戰，規劃掃街戰車加裝防彈玻璃維安並持續造勢",
+      "count": "9 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=3489774504537688"
+    },
+    {
+      "title": "台股重挫拉回夜盤翻紅",
+      "description": "台股盤中重挫逾900點後大幅拉回，台指期夜盤隨美股科技股走勢翻紅反彈",
+      "count": "4 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E8%82%A1&serp_type=trends&trend_fbid=2303263270429352"
     },
     {
       "title": "台籍女遊客命喪河口湖飯店",
       "description": "一名台灣女性在富士河口湖町飯店身亡，警方在現場逮捕一名持刀的27歲台籍女子",
-      "count": "733 則貼文",
+      "count": "736 則貼文",
       "link": "https://www.threads.com/search?q=%E6%B2%B3%E5%8F%A3%E6%B9%96&serp_type=trends&trend_fbid=1820542739033389"
-    },
-    {
-      "title": "IG推出聊天室自訂背景功能",
-      "description": "用戶可於Instagram聊天室上傳個人照片自訂背景，該功能採逐步推播",
-      "count": "47 萬則貼文",
-      "link": "https://www.threads.com/search?q=Instagram&serp_type=trends&trend_fbid=1444134884348858"
     },
     {
       "title": "薔琵颱風提早北轉登陸機率降",
@@ -32,33 +74,15 @@
       "link": "https://www.threads.com/search?q=%E8%B6%99%E5%B0%91%E5%BA%B7&serp_type=trends&trend_fbid=1659462599038070"
     },
     {
-      "title": "TXT崔秀彬傳私生活照外流",
-      "description": "南韓男團TXT成員崔秀彬遭指控私生活照片外流，相關內容真實性目前未明",
-      "count": "3 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E5%B4%94%E7%A7%80%E5%BD%AC&serp_type=trends&trend_fbid=1428617842816626"
-    },
-    {
-      "title": "八曜和茶飲料現活蛞蝓停業清消",
-      "description": "台中東海門市飲料遭民眾反映有活蛞蝓，八曜和茶宣布停業清消，食安處將派員稽查",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%85%AB%E6%9B%9C%E5%92%8C%E8%8C%B6&serp_type=trends&trend_fbid=2118962882312469"
-    },
-    {
       "title": "《嫁金釵》熱播田曦薇分飾兩角",
       "description": "古裝劇《嫁金釵》持續熱播，田曦薇一人分飾真假千金魏嬈與君黛兩角",
       "count": "1 千則貼文",
       "link": "https://www.threads.com/search?q=%E3%80%8A%E5%AB%81%E9%87%91%E9%87%B5%E3%80%8B&serp_type=trends&trend_fbid=1062486823500679"
     },
     {
-      "title": "死神千年血戰篇第49話播出",
-      "description": "《BLEACH死神 千年血戰篇》相隔一個月迎來倒數第二集第49話，展現大決戰場面",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%AD%BB%E7%A5%9E&serp_type=trends&trend_fbid=1658554775629128"
-    },
-    {
       "title": "全台多所大學出現奶龍立牌",
       "description": "成大等多所大專院校陸續出現迷因角色奶蛙與奶龍立牌，學生紛紛在校內放置與尋找",
-      "count": "45 則貼文",
+      "count": "43 則貼文",
       "link": "https://www.threads.com/search?q=%E5%A5%B6%E9%BE%8D%E7%AB%8B%E7%89%8C&serp_type=trends&trend_fbid=1102528309291610"
     },
     {
@@ -66,30 +90,6 @@
       "description": "韓國女團NMIXX推出新專輯《Strange Muse》，主打歌登上音源榜前列",
       "count": "5 千則貼文",
       "link": "https://www.threads.com/search?q=NMIXX&serp_type=trends&trend_fbid=1415285308333776"
-    },
-    {
-      "title": "厄瓜多神父遭十字架砸中身亡",
-      "description": "厄瓜多瓜亞基爾一間教堂彌撒直播時，大型木製十字架脫落砸中桑切斯神父致死",
-      "count": "400 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%A1%91%E5%88%87%E6%96%AF%E7%A5%9E%E7%88%B6&serp_type=trends&trend_fbid=1126441016980673"
-    },
-    {
-      "title": "法國示威升級為全國暴動",
-      "description": "法國抗議生活成本高漲的示威升級為暴力衝突，多處商家與公共設施遭縱火破壞",
-      "count": "3 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B3%95%E5%9C%8B%E7%A4%BA%E5%A8%81&serp_type=trends&trend_fbid=1129865432765019"
-    },
-    {
-      "title": "沈伯洋支持者籌辦造勢拉票",
-      "description": "民進黨台北市長參選人沈伯洋支持者積極拉票，籌備嘉年華活動為選情凝聚聲勢",
-      "count": "9 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1846610623434690"
-    },
-    {
-      "title": "可莉女孩舉辦年度徵選決選會",
-      "description": "新竹可利工程師啦啦隊可莉女孩完成年度徵選，現場公布新賽季正選與練習生名單",
-      "count": "218 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%AF%E8%8E%89%E5%A5%B3%E5%AD%A9&serp_type=trends&trend_fbid=1801171577876110"
     }
   ]
 }
