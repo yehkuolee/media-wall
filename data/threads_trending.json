@@ -1,59 +1,77 @@
 {
-  "updated_at": "2026-10-19T08:05:13.830137+08:00",
+  "updated_at": "2026-10-19T09:05:13.443869+08:00",
   "topics": [
     {
-      "title": "桃園中壢少年遭圍毆霸凌",
-      "description": "中壢武和宮前多名學生拖行毆打少年，警方已介入調查並將涉案人員移送法辦",
+      "title": "薔琵颱風估23日最接近台灣",
+      "description": "各家氣象模式預測薔琵颱風路徑仍有分歧，預估23日至24日最接近台灣並影響北部及東部",
+      "count": "2 千則貼文",
+      "link": "https://www.threads.com/search?q=%E8%96%94%E7%90%B5%E9%A2%B1%E9%A2%A8&serp_type=trends&trend_fbid=1825594498633821"
+    },
+    {
+      "title": "中壢武和宮前少年遭圍毆",
+      "description": "桃園武和宮前發生少年圍毆事件，警方已派員駐守現場並將涉案人員依法送辦",
+      "count": "3 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%AD%A6%E5%92%8C%E5%AE%AE&serp_type=trends&trend_fbid=2649497718823074"
+    },
+    {
+      "title": "Ben Simmons賽季報銷",
+      "description": "沙加緬度國王後衛Ben Simmons因阿基里斯腱撕裂，2026-27賽季提前報銷",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=Ben%20Simmons&serp_type=trends&trend_fbid=1429928951804081"
+    },
+    {
+      "title": "捲髮奶奶甜甜圈爆衝突後湧人潮",
+      "description": "西門町捲髮奶奶鮮奶脆皮甜甜圈在店員與顧客衝突後，連日湧現大批排隊力挺人潮",
+      "count": "709 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%8D%B2%E9%AB%AE%E5%A5%B6%E5%A5%B6&serp_type=trends&trend_fbid=1794821445180446"
+    },
+    {
+      "title": "法國多地爆發暴動衝突",
+      "description": "巴黎與里昂等法國多處街頭遭縱火與搶劫，公共設施受損且現場發射催淚彈",
       "count": "6 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%A1%83%E5%9C%92%E9%9C%B8%E5%87%8C&serp_type=trends&trend_fbid=1056216004105819"
+      "link": "https://www.threads.com/search?q=%E6%B3%95%E5%9C%8B%E6%9A%B4%E5%8B%95&serp_type=trends&trend_fbid=1507419541229331"
+    },
+    {
+      "title": "歌迷分享怕胖團閃亮演出互動",
+      "description": "樂迷提及怕胖團主唱閃亮相關風波，並分享在演出現場獲得其吉他彈片的難忘經歷",
+      "count": "260 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%80%95%E8%83%96%E5%9C%98&serp_type=trends&trend_fbid=4609820369290491"
+    },
+    {
+      "title": "中壢環北路發生連環車禍",
+      "description": "一輛轎車在桃園中壢高速衝撞停等紅燈車陣，造成多車受損並致數人受傷",
+      "count": "231 則貼文",
+      "link": "https://www.threads.com/search?q=%E4%B8%AD%E5%A3%A2%E8%BB%8A%E7%A6%8D&serp_type=trends&trend_fbid=1377656854440096"
     },
     {
       "title": "Fourth舉辦個人演唱會",
-      "description": "泰國藝人Fourth連辦3天個唱，女團Felizz與母親現身助陣",
+      "description": "泰國藝人Fourth舉辦個人演唱會，在舞台上與母親同台互動",
       "count": "8 千則貼文",
-      "link": "https://www.threads.com/search?q=Fourth&serp_type=trends&trend_fbid=975063401688707"
+      "link": "https://www.threads.com/search?q=Fourth&serp_type=trends&trend_fbid=1675755240792514"
     },
     {
-      "title": "西門町甜甜圈店員追打顧客",
-      "description": "台北西門町甜甜圈店因排隊糾紛發生店員追打顧客事件，事後門市湧現大批排隊人潮",
-      "count": "990 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%A5%BF%E9%96%80%E7%94%BA%E7%94%9C%E7%94%9C%E5%9C%88&serp_type=trends&trend_fbid=1643226100670392"
+      "title": "蘇春槐現身造勢力挺沈伯洋",
+      "description": "總統府資政蘇春槐出席造勢活動，公開表態支持民進黨台北市長參選人沈伯洋",
+      "count": "9 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1353352497867453"
     },
     {
-      "title": "薔琵颱風逼近台灣",
-      "description": "各預報模式對薔琵颱風路徑存分歧，預估週五至週六對台灣各地影響最明顯",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E8%96%94%E7%90%B5%E9%A2%B1%E9%A2%A8&serp_type=trends&trend_fbid=1098990666221073"
+      "title": "觀眾分享電視安裝紅果短劇方法",
+      "description": "透過下載工具取得APK檔案，民眾在電視設備上安裝並觀看紅果短劇",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E7%B4%85%E6%9E%9C%E7%9F%AD%E5%8A%87&serp_type=trends&trend_fbid=1433579035571394"
+    },
+    {
+      "title": "艋舺夜市傳持棍棒毆打長者",
+      "description": "長者於艋舺夜市遭持棍棒擊頭倒地，連同近期多起衝突加深治安憂慮",
+      "count": "165 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%89%8B%E8%88%BA%E5%A4%9C%E5%B8%82&serp_type=trends&trend_fbid=2084086398979753"
     },
     {
       "title": "國民情侶戴洋流飄帶遭出征",
       "description": "因分享配戴洋流飄帶，國民情侶遭到部分網友人身攻擊與辱罵",
       "count": "1 千則貼文",
       "link": "https://www.threads.com/search?q=%E5%9C%8B%E6%B0%91%E6%83%85%E4%BE%B6&serp_type=trends&trend_fbid=2570027343493945"
-    },
-    {
-      "title": "歌迷分享怕胖團演出互動",
-      "description": "怕胖團現場演出獲歌迷分享彈片紀念與互動經歷，相關活動安排亦受到多方檢視",
-      "count": "247 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%80%95%E8%83%96%E5%9C%98&serp_type=trends&trend_fbid=1830022731349713"
-    },
-    {
-      "title": "法國多地爆發大規模抗議",
-      "description": "法國民眾與學生抗議教育及生活成本問題，部分示威演變成縱火與衝突",
-      "count": "7 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B3%95%E5%9C%8B%E6%8A%97%E8%AD%B0&serp_type=trends&trend_fbid=1107837734974864"
-    },
-    {
-      "title": "艋舺公園改造完工重新開園",
-      "description": "台北市艋舺公園斥資逾2億元完成景觀改造，打造親水廣場並於10月17日正式開園",
-      "count": "137 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%89%8B%E8%88%BA%E5%85%AC%E5%9C%92&serp_type=trends&trend_fbid=1669637874689668"
-    },
-    {
-      "title": "中壢路口連環車禍排除毒駕",
-      "description": "桃園中壢一輛失控轎車衝撞停等紅燈車輛，警方調查排除毒駕，研判疑疲勞駕駛釀禍",
-      "count": "227 則貼文",
-      "link": "https://www.threads.com/search?q=%E4%B8%AD%E5%A3%A2%E8%BB%8A%E7%A6%8D&serp_type=trends&trend_fbid=1115835944328225"
     },
     {
       "title": "江宏恩拍片力挺沈伯洋",
@@ -64,32 +82,14 @@
     {
       "title": "韓劇《百日謊言》開播",
       "description": "金裕貞主演諜報韓劇《百日謊言》，精湛演技獲得觀眾肯定",
-      "count": "124 則貼文",
+      "count": "134 則貼文",
       "link": "https://www.threads.com/search?q=%E7%99%BE%E6%97%A5%E8%AC%8A%E8%A8%80&serp_type=trends&trend_fbid=2474221603066620"
-    },
-    {
-      "title": "沈伯洋投入台北市長選戰",
-      "description": "造勢與直播吸引約7萬人，沈伯洋參選台北市長獲蘇春槐返台站台",
-      "count": "9 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=2312866686203205"
     },
     {
       "title": "《嫁金釵》熱度破萬創紀錄",
       "description": "《嫁金釵》刷新優酷2026年破萬紀錄，主演田曦薇一人分飾兩角",
-      "count": "752 則貼文",
+      "count": "756 則貼文",
       "link": "https://www.threads.com/search?q=%E5%AB%81%E9%87%91%E9%87%B5&serp_type=trends&trend_fbid=1097376136425672"
-    },
-    {
-      "title": "台中爵士音樂節登場湧人潮",
-      "description": "市民廣場與勤美周邊舉辦台中爵士音樂節，民眾鋪野餐墊聽音樂同樂",
-      "count": "984 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E4%B8%AD%E7%88%B5%E5%A3%AB%E9%9F%B3%E6%A8%82%E7%AF%80&serp_type=trends&trend_fbid=1134422839105569"
-    },
-    {
-      "title": "吳怡農合體沈伯洋車隊掃街",
-      "description": "民進黨台北市長參選人沈伯洋合體吳怡農，在松山與信義展開車隊掃街造勢",
-      "count": "4 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%90%B3%E6%80%A1%E8%BE%B2&serp_type=trends&trend_fbid=3459636377550965"
     }
   ]
 }
