@@ -1,4 +1,6 @@
 import json
+import os
+import time
 import streamlit as st
 import streamlit.components.v1 as components
 import feedparser
@@ -234,6 +236,9 @@ st.markdown("""
 .news-title-link:hover { color: #c41230; }
 .news-meta       { color: #aaa; font-size: .64rem; margin-top: 2px; }
 .news-src        { color: #888; font-weight: 600; }
+.et-tag          { color: #fff; background: #c41230; font-weight: 600; border-radius: 3px; padding: 0 4px; margin-left: 4px; }
+.et-link         { color: #c41230; text-decoration: none; word-break: break-all; }
+.et-link:hover   { text-decoration: underline; }
 
 /* ── Threads card ── */
 .threads-card {
@@ -369,6 +374,8 @@ html.mw-dark .news-rank.silv  { color: #b0b0b0; }
 html.mw-dark .news-rank.brnz  { color: #d98a4e; }
 html.mw-dark .news-meta, html.mw-dark .threads-count { color: #6f6f6f; }
 html.mw-dark .news-src, html.mw-dark .threads-desc { color: #8a8a8a; }
+html.mw-dark .et-tag  { background: #ff3b4e; color: #000; }
+html.mw-dark .et-link { color: #ff3b4e; }
 html.mw-dark .kw-hot  { background: rgba(255,59,78,.12);  border-color: rgba(255,59,78,.45);  color: #ff3b4e; }
 html.mw-dark .kw-warm { background: rgba(255,176,0,.10);  border-color: rgba(255,176,0,.40);  color: #ffb000; }
 html.mw-dark .kw-cool { background: rgba(56,189,248,.10); border-color: rgba(56,189,248,.35); color: #38bdf8; }
@@ -554,6 +561,124 @@ def fetch_threads_trending() -> dict:
         return json.loads(json_path.read_text())
     except Exception:
         return {"updated_at": None, "topics": []}
+
+
+# ── ETtoday 交叉比對 ───────────────────────────────────────────────
+# Top 15 每則去找 ETtoday 有沒有同一事件的新聞：標題用字先挑 5 則候選，再請 Gemini 判斷是不是同一件事。
+# 免費額度：AI 最多每 10 分鐘問 1 次（整批一起問），判斷過的組合記住不重問；
+# 標題用字很像的（ET_TEXT_MIN）不管 AI 怎麼判都標；沒金鑰或 AI 失敗時就只剩這部分。
+ET_LIST_URL = "https://www.ettoday.net/news/news-list-{:%Y-%m-%d}-0.htm"
+ET_MODELS = ["gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-flash-lite-latest"]
+ET_AI_GAP = 600
+ET_TEXT_MIN = 0.4
+
+
+@st.cache_data(ttl=600, show_spinner=False)
+def fetch_ettoday() -> list[dict]:
+    """ETtoday 新聞總覽今天＋昨天（約 200 則，含星光雲、寵物雲、運動雲等子網站）"""
+    headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
+    items, seen = [], set()
+    now = datetime.now(TW_TZ)
+    for d in (now, now - timedelta(days=1)):
+        try:
+            soup = BeautifulSoup(requests.get(ET_LIST_URL.format(d), headers=headers, timeout=10).text, "html.parser")
+            for a in soup.select(".part_list_2 h3 a[href]"):
+                title, link = a.get_text(strip=True), a["href"]
+                if title and link.startswith("https://") and link not in seen:
+                    seen.add(link)
+                    items.append({"title": title, "link": link})
+        except Exception:
+            continue
+    return items
+
+
+def _grams(text: str) -> set:
+    t = re.sub(r"[\s\W_]+", "", text)
+    return {t[i:i + 2] for i in range(len(t) - 1)}
+
+
+def _overlap(a: set, b: set) -> float:
+    return len(a & b) / max(1, min(len(a), len(b)))
+
+
+@st.cache_resource
+def _et_memo() -> dict:
+    """所有訪客共用：判斷過的結果、上次問 AI 的時間"""
+    return {"judged": {}, "last_ai": 0.0}
+
+
+def _gemini_key() -> str:
+    try:
+        key = st.secrets.get("GEMINI_API_KEY", "")
+    except Exception:
+        key = ""
+    return key or os.environ.get("GEMINI_API_KEY", "")
+
+
+def _ask_gemini(batch: list, key: str):
+    """batch：[(新聞標題, [候選])] → {第幾則: 候選編號（0＝沒有）}；失敗回 None"""
+    lines = []
+    for i, (title, cands) in enumerate(batch, 1):
+        lines.append(f"新聞{i}：{title}")
+        lines += [f"  候選{j}：{c['title']}" for j, c in enumerate(cands, 1)]
+    prompt = ("以下每則新聞各附幾則 ETtoday 的新聞標題當候選。請判斷候選中有沒有報導「同一事件」的："
+              "要是同一件事（同一人物或對象、同一個發展）；只是同類主題、或同一人物的另一件事都不算。"
+              "每則新聞回傳 news＝新聞編號、match＝候選編號，沒有同一事件就填 0。\n\n" + "\n".join(lines))
+    body = {"contents": [{"parts": [{"text": prompt}]}],
+            "generationConfig": {"temperature": 0, "responseMimeType": "application/json",
+                                 "responseSchema": {"type": "ARRAY", "items": {"type": "OBJECT", "properties": {
+                                     "news": {"type": "INTEGER"}, "match": {"type": "INTEGER"}},
+                                     "required": ["news", "match"]}}}}
+    for model in ET_MODELS:
+        try:
+            r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+                              headers={"x-goog-api-key": key}, json=body, timeout=40)
+            if r.status_code != 200:
+                continue
+            arr = json.loads(r.json()["candidates"][0]["content"]["parts"][0]["text"])
+            return {int(x["news"]): int(x["match"]) for x in arr}
+        except Exception:
+            continue
+    return None
+
+
+def ettoday_matches(news_list: list) -> dict:
+    """{新聞標題: ETtoday 相關新聞網址}"""
+    et = fetch_ettoday()
+    if not et:
+        return {}
+    et_grams = [(e, _grams(e["title"])) for e in et]
+    memo, result, todo, best_text = _et_memo(), {}, [], {}
+    for n in news_list:
+        if "ettoday.net" in (n.get("link") or ""):
+            continue
+        g = _grams(n["title"])
+        scored = sorted(((_overlap(g, eg), e) for e, eg in et_grams), key=lambda x: -x[0])[:5]
+        cands = [e for sc, e in scored if sc >= 0.1]
+        if not cands:
+            continue
+        if scored[0][0] >= ET_TEXT_MIN:
+            best_text[n["title"]] = scored[0][1]["link"]
+        k = n["title"] + "|" + ",".join(c["link"] for c in cands)  # 候選換了（ETtoday 有新稿）才重問
+        if k in memo["judged"]:
+            if memo["judged"][k]:
+                result[n["title"]] = memo["judged"][k]
+        else:
+            todo.append((n["title"], cands, k))
+    key = _gemini_key()
+    if todo and key and time.time() - memo["last_ai"] >= ET_AI_GAP:
+        memo["last_ai"] = time.time()
+        ans = _ask_gemini([(t, c) for t, c, _ in todo], key)
+        if ans is not None:
+            if len(memo["judged"]) > 3000:
+                memo["judged"].clear()
+            for i, (title, cands, k) in enumerate(todo, 1):
+                j = ans.get(i, 0)
+                memo["judged"][k] = cands[j - 1]["link"] if 1 <= j <= len(cands) else ""
+                if memo["judged"][k]:
+                    result[title] = memo["judged"][k]
+    # 標題用字很像的一律標（AI 偶爾會漏判；AI 還沒判斷到的也先靠這個）
+    return {**best_text, **result}
 
 
 # ── Helpers ────────────────────────────────────────────────────────
@@ -869,6 +994,7 @@ def main():
         else:
             st.markdown('<div class="sec-title">📰 即時熱門新聞 Top 15（各媒體均攤）</div>', unsafe_allow_html=True)
             news_list = round_robin_top(all_news, 15)
+        et_map = ettoday_matches(news_list)
         for i, news in enumerate(news_list):
             rc = rank_class(i)
             rank_num = i + 1
@@ -878,6 +1004,9 @@ def main():
             source = html_mod.escape(news["source"])
             ago = time_ago(news["pub"])
             ago_html = f' · {html_mod.escape(ago)}' if ago else ''
+            et_url = et_map.get(news["title"])
+            et_html = (f' · <span class="et-tag">ETtoday相關</span> <a class="et-link" href="{html_mod.escape(et_url)}" '
+                       f'target="_blank" rel="noopener">{html_mod.escape(et_url)}</a>') if et_url else ''
             st.markdown(f"""
             <div class="news-card">
                 <div class="news-rank {rc}">{rank_num}</div>
@@ -886,7 +1015,7 @@ def main():
                         {display_title}
                     </a>
                     <div class="news-meta">
-                        <span class="news-src">📌 {source}</span>{ago_html}
+                        <span class="news-src">📌 {source}</span>{ago_html}{et_html}
                     </div>
                 </div>
             </div>""", unsafe_allow_html=True)
