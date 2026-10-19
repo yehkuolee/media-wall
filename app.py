@@ -564,10 +564,15 @@ def fetch_threads_trending() -> dict:
 
 
 # ── ETtoday 交叉比對 ───────────────────────────────────────────────
-# Top 15 每則去找 ETtoday 有沒有同一事件的新聞：標題用字先挑 5 則候選，再請 Gemini 判斷是不是同一件事。
-# 免費額度：AI 最多每 10 分鐘問 1 次（整批一起問），判斷過的組合記住不重問；
+# Top 15 每則去找 ETtoday 有沒有相關新聞，標「ETtoday相關」附網址：
+# 1. 候選：ETtoday 新聞總覽（今天＋昨天）標題用字最像的 5 則，加上 ETtoday 站內搜尋的結果
+#    （搜尋詞由 AI 上一輪給，一次搜一個詞，關鍵字中間有空格會搜不到）
+# 2. Gemini 整批判斷候選是不是同一事件或同一則話題，同時替還沒對到的新聞想搜尋詞（下一輪拿去搜）
+# 免費額度：AI 最多每 10 分鐘問 1 次，判斷過的「標題＋候選」記住不重問；
 # 標題用字很像的（ET_TEXT_MIN）不管 AI 怎麼判都標；沒金鑰或 AI 失敗時就只剩這部分。
 ET_LIST_URL = "https://www.ettoday.net/news/news-list-{:%Y-%m-%d}-0.htm"
+ET_SEARCH_URL = "https://www.ettoday.net/news_search/doSearch.php"
+ET_HEADERS = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
 ET_MODELS = ["gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-flash-lite-latest"]
 ET_AI_GAP = 600
 ET_TEXT_MIN = 0.4
@@ -575,13 +580,12 @@ ET_TEXT_MIN = 0.4
 
 @st.cache_data(ttl=600, show_spinner=False)
 def fetch_ettoday() -> list[dict]:
-    """ETtoday 新聞總覽今天＋昨天（約 200 則，含星光雲、寵物雲、運動雲等子網站）"""
-    headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
+    """ETtoday 新聞總覽今天＋昨天各最新 100 則（含星光雲、寵物雲、運動雲等子網站）"""
     items, seen = [], set()
     now = datetime.now(TW_TZ)
     for d in (now, now - timedelta(days=1)):
         try:
-            soup = BeautifulSoup(requests.get(ET_LIST_URL.format(d), headers=headers, timeout=10).text, "html.parser")
+            soup = BeautifulSoup(requests.get(ET_LIST_URL.format(d), headers=ET_HEADERS, timeout=10).text, "html.parser")
             for a in soup.select(".part_list_2 h3 a[href]"):
                 title, link = a.get_text(strip=True), a["href"]
                 if title and link.startswith("https://") and link not in seen:
@@ -589,6 +593,23 @@ def fetch_ettoday() -> list[dict]:
                     items.append({"title": title, "link": link})
         except Exception:
             continue
+    return items
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def search_ettoday(word: str) -> list[dict]:
+    """ETtoday 站內搜尋（新的在前），回傳前 5 則，標題後附日期"""
+    items = []
+    try:
+        r = requests.get(ET_SEARCH_URL, params={"keywords": word}, headers=ET_HEADERS, timeout=10)
+        for box in BeautifulSoup(r.text, "html.parser").select(".archive")[:5]:
+            a, d = box.select_one(".box_2 h2 a[href]"), box.select_one(".box_2 .date")
+            if a and a["href"].startswith("https://"):
+                day = re.search(r"\d{4}-\d{2}-\d{2}", d.get_text() if d else "")
+                items.append({"title": a.get_text(strip=True) + (f"（{day.group()}）" if day else ""),
+                              "link": a["href"]})
+    except Exception:
+        pass
     return items
 
 
@@ -603,8 +624,8 @@ def _overlap(a: set, b: set) -> float:
 
 @st.cache_resource
 def _et_memo() -> dict:
-    """所有訪客共用：判斷過的結果、上次問 AI 的時間"""
-    return {"judged": {}, "last_ai": 0.0}
+    """所有訪客共用：判斷過的結果、AI 給的搜尋詞、上次問 AI 的時間"""
+    return {"judged": {}, "words": {}, "last_ai": 0.0}
 
 
 def _gemini_key() -> str:
@@ -616,19 +637,23 @@ def _gemini_key() -> str:
 
 
 def _ask_gemini(batch: list, key: str):
-    """batch：[(新聞標題, [候選])] → {第幾則: 候選編號（0＝沒有）}；失敗回 None"""
+    """batch：[(新聞標題, [候選])] → {第幾則: (候選編號 0＝沒有, [搜尋詞])}；失敗回 None"""
     lines = []
     for i, (title, cands) in enumerate(batch, 1):
         lines.append(f"新聞{i}：{title}")
-        lines += [f"  候選{j}：{c['title']}" for j, c in enumerate(cands, 1)]
-    prompt = ("以下每則新聞各附幾則 ETtoday 的新聞標題當候選。請判斷候選中有沒有報導「同一事件」的："
-              "要是同一件事（同一人物或對象、同一個發展）；只是同類主題、或同一人物的另一件事都不算。"
-              "每則新聞回傳 news＝新聞編號、match＝候選編號，沒有同一事件就填 0。\n\n" + "\n".join(lines))
+        lines += [f"  候選{j}：{c['title']}" for j, c in enumerate(cands, 1)] or ["  （沒有候選）"]
+    prompt = ("以下每則新聞附幾則 ETtoday 的新聞標題當候選（有括號日期的是站內搜尋到的舊稿）。\n"
+              "1. match：候選中有沒有報導同一事件、或同一則話題的（同一人物或對象、同一件事或同一情境，"
+              "例如同一品牌試穿遇到的同一類店員反應）；同一人物的另一件事、只是同類主題都不算。填候選編號，沒有就填 0。\n"
+              "2. words：match 是 0 時，給 1～2 個最能在 ETtoday 站內搜到這則新聞的搜尋詞"
+              "（每個詞是不含空格的人名、品牌、地名或關鍵詞組，例如「UNIQLO試穿」「李文宗」）；match 不是 0 就給空陣列。\n\n"
+              + "\n".join(lines))
     body = {"contents": [{"parts": [{"text": prompt}]}],
             "generationConfig": {"temperature": 0, "responseMimeType": "application/json",
                                  "responseSchema": {"type": "ARRAY", "items": {"type": "OBJECT", "properties": {
-                                     "news": {"type": "INTEGER"}, "match": {"type": "INTEGER"}},
-                                     "required": ["news", "match"]}}}}
+                                     "news": {"type": "INTEGER"}, "match": {"type": "INTEGER"},
+                                     "words": {"type": "ARRAY", "items": {"type": "STRING"}}},
+                                     "required": ["news", "match", "words"]}}}}
     for model in ET_MODELS:
         try:
             r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
@@ -636,7 +661,8 @@ def _ask_gemini(batch: list, key: str):
             if r.status_code != 200:
                 continue
             arr = json.loads(r.json()["candidates"][0]["content"]["parts"][0]["text"])
-            return {int(x["news"]): int(x["match"]) for x in arr}
+            return {int(x["news"]): (int(x["match"]), [re.sub(r"\s+", "", w) for w in x.get("words", []) if w.strip()][:2])
+                    for x in arr}
         except Exception:
             continue
     return None
@@ -645,8 +671,6 @@ def _ask_gemini(batch: list, key: str):
 def ettoday_matches(news_list: list) -> dict:
     """{新聞標題: ETtoday 相關新聞網址}"""
     et = fetch_ettoday()
-    if not et:
-        return {}
     et_grams = [(e, _grams(e["title"])) for e in et]
     memo, result, todo, best_text = _et_memo(), {}, [], {}
     for n in news_list:
@@ -654,16 +678,22 @@ def ettoday_matches(news_list: list) -> dict:
             continue
         g = _grams(n["title"])
         scored = sorted(((_overlap(g, eg), e) for e, eg in et_grams), key=lambda x: -x[0])[:5]
-        cands = [e for sc, e in scored if sc >= 0.1]
-        if not cands:
-            continue
-        if scored[0][0] >= ET_TEXT_MIN:
+        if scored and scored[0][0] >= ET_TEXT_MIN:
             best_text[n["title"]] = scored[0][1]["link"]
-        k = n["title"] + "|" + ",".join(c["link"] for c in cands)  # 候選換了（ETtoday 有新稿）才重問
+        cands = [e for sc, e in scored if sc >= 0.1]
+        links = {c["link"] for c in cands}
+        words = memo["words"].get(n["title"], [])
+        for w in ["".join(words)] * (len(words) > 1) + words:  # 合起來先搜（「UNIQLO試穿」搜得到、分開搜不到）
+            for c in search_ettoday(w):
+                if c["link"] not in links:
+                    links.add(c["link"])
+                    cands.append(c)
+        cands = cands[:10]
+        k = n["title"] + "|" + ",".join(c["link"] for c in cands)  # 候選換了（有新稿或搜到東西）才重問
         if k in memo["judged"]:
             if memo["judged"][k]:
                 result[n["title"]] = memo["judged"][k]
-        else:
+        elif cands or n["title"] not in memo["words"]:  # 沒候選也要問一次，讓 AI 給搜尋詞
             todo.append((n["title"], cands, k))
     key = _gemini_key()
     if todo and key and time.time() - memo["last_ai"] >= ET_AI_GAP:
@@ -672,11 +702,14 @@ def ettoday_matches(news_list: list) -> dict:
         if ans is not None:
             if len(memo["judged"]) > 3000:
                 memo["judged"].clear()
+                memo["words"].clear()
             for i, (title, cands, k) in enumerate(todo, 1):
-                j = ans.get(i, 0)
+                j, words = ans.get(i, (0, []))
                 memo["judged"][k] = cands[j - 1]["link"] if 1 <= j <= len(cands) else ""
                 if memo["judged"][k]:
                     result[title] = memo["judged"][k]
+                elif words and title not in memo["words"]:
+                    memo["words"][title] = words  # 下一輪拿去 ETtoday 站內搜尋
     # 標題用字很像的一律標（AI 偶爾會漏判；AI 還沒判斷到的也先靠這個）
     return {**best_text, **result}
 
