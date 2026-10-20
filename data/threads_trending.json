@@ -1,95 +1,95 @@
 {
-  "updated_at": "2026-10-20T21:05:13.769467+08:00",
+  "updated_at": "2026-10-20T22:05:14.566646+08:00",
   "topics": [
     {
-      "title": "中壢武和宮少年遭圍毆霸凌",
-      "description": "桃園中壢武和宮發生少年圍毆事件，警方將涉案者送辦，市府限期拆除違建宮廟",
+      "title": "清華大學化學館傳火災爆炸",
+      "description": "清華大學化學館發生火災及爆炸，多輛消防車與救護車進駐校園救援",
+      "count": "83 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B8%85%E5%A4%A7%E5%8C%96%E5%AD%B8%E9%A4%A8&serp_type=trends&trend_fbid=28980932861517403"
+    },
+    {
+      "title": "TXT崔秀彬流傳私生活照片",
+      "description": "南韓男團TXT成員崔秀彬傳出私生活照片，粉絲計畫發起卡車示威要求公司出面維權",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E5%B4%94%E7%A7%80%E5%BD%AC&serp_type=trends&trend_fbid=1641081837745749"
+    },
+    {
+      "title": "中壢武和宮發生少年圍毆案",
+      "description": "桃園市府公告中壢武和宮為違建限期拆除，該處日前曾發生少年遭多人圍毆",
       "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E4%B8%AD%E5%A3%A2%E6%AD%A6%E5%92%8C%E5%AE%AE&serp_type=trends&trend_fbid=2128559951867205"
+      "link": "https://www.threads.com/search?q=%E4%B8%AD%E5%A3%A2%E6%AD%A6%E5%92%8C%E5%AE%AE&serp_type=trends&trend_fbid=4618902548429579"
     },
     {
-      "title": "台籍女遊客命喪日本河口湖飯店",
-      "description": "日本山梨縣河口湖飯店發生台籍旅客命案，警方逮捕同團持刀女子調查",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%B3%E5%8F%A3%E6%B9%96&serp_type=trends&trend_fbid=1425830682387851"
+      "title": "中信兄弟大巨蛋進場大排長龍",
+      "description": "台北大巨蛋開賽打至第二局，場外入口仍有球迷排隊無法順利進場",
+      "count": "8 千則貼文",
+      "link": "https://www.threads.com/search?q=%E4%B8%AD%E4%BF%A1%E5%85%84%E5%BC%9F&serp_type=trends&trend_fbid=2069533447108709"
     },
     {
-      "title": "Instagram推聊天室自訂背景",
-      "description": "Instagram開放上傳照片自訂聊天室底圖，許多用戶換上偶像或逗趣照片",
+      "title": "護理師模擬遊戲呈現輪班高壓",
+      "description": "一款模擬護理師輪班的網頁遊戲還原給藥與交班流程，高難度玩法展現第一線辛勞",
+      "count": "522 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%AD%B7%E7%90%86%E5%B8%AB%E9%81%8A%E6%88%B2&serp_type=trends&trend_fbid=4529340060544569"
+    },
+    {
+      "title": "IG開放自訂聊天室背景",
+      "description": "用戶可直接在Instagram上傳手機相簿照片設定為聊天室底圖",
       "count": "48 萬則貼文",
-      "link": "https://www.threads.com/search?q=Instagram&serp_type=trends&trend_fbid=2332572437555262"
+      "link": "https://www.threads.com/search?q=Instagram&serp_type=trends&trend_fbid=1879446423475025"
+    },
+    {
+      "title": "強颱薔琵路徑東修登陸機率降",
+      "description": "強烈颱風薔琵預測路徑持續東修並從東部海面北上，登陸台灣本島機率降低",
+      "count": "3 千則貼文",
+      "link": "https://www.threads.com/search?q=%E8%96%94%E7%90%B5%E9%A2%B1%E9%A2%A8&serp_type=trends&trend_fbid=1010065805436409"
+    },
+    {
+      "title": "沈伯洋接受王淺秋專訪",
+      "description": "沈伯洋受訪回應王淺秋犀利提問並說明政策，支持者呼籲外界切勿出征主持人",
+      "count": "6 千則貼文",
+      "link": "https://www.threads.com/search?q=%E7%8E%8B%E6%B7%BA%E7%A7%8B&serp_type=trends&trend_fbid=1393704979484034"
+    },
+    {
+      "title": "大學校園出現黃色奶娃立牌",
+      "description": "學生在多所大學校園尋找黃色奶娃立牌拍照，並自發接力搬運移動",
+      "count": "102 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%A5%B6%E5%A8%83%E7%AB%8B%E7%89%8C&serp_type=trends&trend_fbid=1571886584982007"
     },
     {
       "title": "蔣萬安接受《新聞面對面》專訪",
-      "description": "台北市長蔣萬安登上《新聞面對面》受訪，並在專訪前表示請大家拭目以待",
-      "count": "10 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=28836453162701837"
+      "description": "主持人謝震武與資深媒體人在政論節目中，針對市政政績與民調表現提問台北市長蔣萬安",
+      "count": "3 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%96%B0%E8%81%9E%E9%9D%A2%E5%B0%8D%E9%9D%A2&serp_type=trends&trend_fbid=1486799769935647"
     },
     {
-      "title": "清華大學化學館傳爆炸意外",
-      "description": "多輛消防與救護車進駐清華大學化學館處置意外事故",
-      "count": "689 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B8%85%E8%8F%AF%E5%A4%A7%E5%AD%B8&serp_type=trends&trend_fbid=1602253441632476"
+      "title": "台灣大賽第三戰味全龍迎戰兄弟",
+      "description": "中職台灣大賽第三戰登場，味全龍派出鋼龍先發，張政禹撲壘跑出關鍵安打帶動攻勢",
+      "count": "3 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%91%B3%E5%85%A8%E9%BE%8D&serp_type=trends&trend_fbid=3745116075657725"
     },
     {
-      "title": "康永哥訪談場景結合時事成迷因",
-      "description": "創作者將《康熙來了》場景結合時事，套用「他……欸，康永哥」句式製作迷因",
-      "count": "998 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%BA%B7%E6%B0%B8%E5%93%A5&serp_type=trends&trend_fbid=2633156170534059"
+      "title": "《死神》動畫播出第49集",
+      "description": "最新上線的《死神 千年血戰篇》第49集，劇中呈現大幅度的原創戰鬥場面改編",
+      "count": "2 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%AD%BB%E7%A5%9E&serp_type=trends&trend_fbid=990961989963704"
     },
     {
-      "title": "強颱薔琵逼近各地評估停班課",
-      "description": "高雄市長陳其邁表示南台灣影響以雨量為主，將依氣象署資料判斷是否停班停課",
-      "count": "4 千則貼文",
-      "link": "https://www.threads.com/search?q=%E9%A2%B1%E9%A2%A8%E5%81%87&serp_type=trends&trend_fbid=1398632975687364"
+      "title": "民眾聚集龍川五街警方戒備",
+      "description": "因傳桃園霸凌涉案者居龍川街，民眾赴龍川五街拍攝，警方已派員巡邏戒備",
+      "count": "157 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%BE%8D%E5%B7%9D%E4%BA%94%E8%A1%97&serp_type=trends&trend_fbid=1281904610743592"
     },
     {
-      "title": "肯德基推闇黑之吻蛋撻",
-      "description": "肯德基萬聖節全黑蛋撻搭配桑椹醬，食用後容易使嘴唇與雙手染色",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E8%82%AF%E5%BE%B7%E5%9F%BA&serp_type=trends&trend_fbid=1094837343529310"
-    },
-    {
-      "title": "中信兄弟換回《鬼滅之刃》頭貼",
-      "description": "中信兄弟球團更換《鬼滅之刃》主題頭貼，球迷紛紛響應換頭像為球隊集氣",
+      "title": "沈伯洋民調領先蔣萬安17%",
+      "description": "最新台北市長民調顯示，沈伯洋以50.3%支持度領先現任市長蔣萬安17個百分點",
       "count": "7 千則貼文",
-      "link": "https://www.threads.com/search?q=%E4%B8%AD%E4%BF%A1%E5%85%84%E5%BC%9F&serp_type=trends&trend_fbid=1402719458246886"
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E5%8C%97%E5%B8%82%E9%95%B7%E6%B0%91%E8%AA%BF&serp_type=trends&trend_fbid=4025191011123712"
     },
     {
-      "title": "法國多地爆發示威暴動",
-      "description": "法國多地示威暴動伴隨店鋪遭劫，當局對北部城市實施宵禁並加強管制",
-      "count": "8 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B3%95%E5%9C%8B%E6%9A%B4%E5%8B%95&serp_type=trends&trend_fbid=1582158290416933"
-    },
-    {
-      "title": "《電馭叛客：邊緣行者2》上架",
-      "description": "動畫《電馭叛客：邊緣行者2》全季10集於10月20日在Netflix獨家釋出",
-      "count": "860 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%9B%BB%E9%A6%AD%E5%8F%9B%E5%AE%A2&serp_type=trends&trend_fbid=1083561287816509"
-    },
-    {
-      "title": "85度C推60公分蛋塔掀搶購",
-      "description": "85度C開賣長達60公分的限定蛋塔，全台門市現貨迅速售罄並湧現預購訂單",
-      "count": "907 則貼文",
-      "link": "https://www.threads.com/search?q=85%E5%BA%A6C%E8%9B%8B%E5%A1%94&serp_type=trends&trend_fbid=1118096567395844"
-    },
-    {
-      "title": "澎湖男子冒領千萬發票遭逮",
-      "description": "男子持兩張千萬中獎發票赴銀行冒領未遂，檢警追查拘提三名涉案嫌犯並聲請羈押",
-      "count": "271 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%B5%B1%E4%B8%80%E7%99%BC%E7%A5%A8&serp_type=trends&trend_fbid=2622510494855463"
-    },
-    {
-      "title": "淘寶雙11活動正式開跑",
-      "description": "淘寶雙11促銷推出官方立減與疊券折扣，並擴大大型家具跨境直郵",
-      "count": "4 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B7%98%E5%AF%B6&serp_type=trends&trend_fbid=1683604326430312"
-    },
-    {
-      "title": "大學校園掀流動奶蛙立牌風潮",
-      "description": "多所大專院校學生在校內放置並移動奶蛙人形立牌，即時回報出沒地點",
-      "count": "74 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B5%81%E5%8B%95%E5%A5%B6%E8%9B%99&serp_type=trends&trend_fbid=1429383382694395"
+      "title": "紅果短劇被指恐降低專注力",
+      "description": "紅果短劇被指充斥套路恐影響專注力，支持者則視為放鬆消遣",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E7%B4%85%E6%9E%9C&serp_type=trends&trend_fbid=1125415250177176"
     }
   ]
 }
