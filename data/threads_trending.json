@@ -1,95 +1,83 @@
 {
-  "updated_at": "2026-10-20T08:05:17.767963+08:00",
+  "updated_at": "2026-10-20T09:05:16.132707+08:00",
   "topics": [
     {
-      "title": "IG開放聊天室自訂背景",
-      "description": "用戶可自行上傳照片更換Instagram私訊桌布，未出現該選項者可重新下載啟用",
+      "title": "Instagram推自訂背景",
+      "description": "Instagram開放上傳圖片換背景，未獲功能者可重新下載或由好友協助",
       "count": "47 萬則貼文",
-      "link": "https://www.threads.com/search?q=Instagram&serp_type=trends&trend_fbid=1642205810618416"
+      "link": "https://www.threads.com/search?q=Instagram&serp_type=trends&trend_fbid=2066836191373656"
     },
     {
-      "title": "中壢學生遭圍毆引群眾抗議",
-      "description": "針對中壢學生遭圍毆事件，數百民眾到場抗議，警方已將涉案少年移送少年法庭",
-      "count": "597 則貼文",
-      "link": "https://www.threads.com/search?q=%E4%B8%AD%E5%A3%A2%E9%9C%B8%E5%87%8C%E6%A1%88&serp_type=trends&trend_fbid=1121884846887181"
+      "title": "中壢男學生遭圍毆群眾聚集抗議",
+      "description": "桃園中壢武和宮發生學生遭圍毆事件，數百人到場聲援受害者，涉案人均已移送法辦",
+      "count": "4 千則貼文",
+      "link": "https://www.threads.com/search?q=%E4%B8%AD%E5%A3%A2%E9%9C%B8%E5%87%8C&serp_type=trends&trend_fbid=2675896936184787"
     },
     {
-      "title": "聊天室掀更換奶龍背景潮",
-      "description": "自訂背景功能推出後，許多人將聊天室換上奶龍圖片並分享桌布",
+      "title": "崔秀彬遭流傳疑似私密照",
+      "description": "TXT隊長崔秀彬遭散播疑似私密照，粉絲列舉特徵疑點指控為AI合成造謠",
+      "count": "3 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E5%B4%94%E7%A7%80%E5%BD%AC&serp_type=trends&trend_fbid=1462244229355993"
+    },
+    {
+      "title": "統測模擬考英文科難度偏高",
+      "description": "四技二專統測首場模擬考登場，高職考生反映英文科單字與克漏字難度超出預期",
+      "count": "23 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%B5%B1%E6%B8%AC%E6%A8%A1%E6%93%AC%E8%80%83&serp_type=trends&trend_fbid=1118500317203387"
+    },
+    {
+      "title": "薔琵颱風逼近最快週三發海警",
+      "description": "氣象署評估最快週三晚發布薔琵海警，週五至週六北部與東半部風雨最顯著",
+      "count": "3 千則貼文",
+      "link": "https://www.threads.com/search?q=%E8%96%94%E7%90%B5%E9%A2%B1%E9%A2%A8&serp_type=trends&trend_fbid=2293408188147009"
+    },
+    {
+      "title": "台北寶可夢中心湧排隊人潮",
+      "description": "限定商品開賣湧現人潮，台北寶可夢中心採一人一券並核對手章防代排",
+      "count": "830 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%AF%B6%E5%8F%AF%E5%A4%A2%E4%B8%AD%E5%BF%83&serp_type=trends&trend_fbid=2492862681124069"
+    },
+    {
+      "title": "八曜和茶等飲品驚現活蛞蝓",
+      "description": "八曜和茶與台中餐廳飲品接連被反映含有活蛞蝓，涉事業者致歉並暫停營業清消",
       "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%A5%B6%E9%BE%8D&serp_type=trends&trend_fbid=28800462316270147"
+      "link": "https://www.threads.com/search?q=%E5%85%AB%E6%9B%9C%E5%92%8C%E8%8C%B6&serp_type=trends&trend_fbid=1811285850017631"
     },
     {
-      "title": "蔣萬安受訪少康戰情室",
-      "description": "台北市長蔣萬安登上《少康戰情室》，趙少康於選情應答中多次協助代答",
-      "count": "8 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=3990009927805326"
+      "title": "柯案二審李文宗與李文娟認罪",
+      "description": "涉及柯文哲弊案的李文宗於二審就背信罪部分認罪，李文娟則當庭改口全部認罪",
+      "count": "9 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%9F%AF%E6%96%87%E5%93%B2&serp_type=trends&trend_fbid=2608887802888763"
     },
     {
-      "title": "粉絲力挺卡門反對退團",
-      "description": "針對退團要求，眾多粉絲發聲力挺Hearts2Hearts卡門並呼籲停止攻擊",
+      "title": "卡門遭要求退團粉絲發聲力挺",
+      "description": "Hearts2Hearts成員卡門遭要求退團，粉絲發聲力挺並呼籲維持八人陣容",
       "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8D%A1%E9%96%80&serp_type=trends&trend_fbid=1804469127247270"
+      "link": "https://www.threads.com/search?q=%E5%8D%A1%E9%96%80&serp_type=trends&trend_fbid=1116255224203954"
     },
     {
       "title": "多所大專院校出現奶娃立牌",
       "description": "成大與政大等多所大學校園出現奶娃立牌，吸引眾人前往尋找並合照打卡",
       "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%A5%B6%E5%A8%83&serp_type=trends&trend_fbid=1455029799908291"
-    },
-    {
-      "title": "民眾索取沈伯洋文宣《順報》",
-      "description": "許多民眾前往服務處等據點索取《順報》第一期，並詢問第二期時程與交流周邊小物",
-      "count": "870 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%A0%86%E5%A0%B1&serp_type=trends&trend_fbid=3660553387441210"
-    },
-    {
-      "title": "TXT崔秀彬流傳照疑AI偽造",
-      "description": "TXT隊長崔秀彬遭指控流傳私密照，比對手臂特徵及背景規格後被指為AI偽造",
-      "count": "3 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E5%B4%94%E7%A7%80%E5%BD%AC&serp_type=trends&trend_fbid=1146273037830788"
+      "link": "https://www.threads.com/search?q=%E5%A5%B6%E5%A8%83&serp_type=trends&trend_fbid=1114047988295769"
     },
     {
       "title": "台籍女客陳屍日本河口湖飯店",
       "description": "日本山梨縣河口湖飯店發生命案，隨團台籍女客身亡，警方逮捕在場持刀台籍女子",
-      "count": "21 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%B3%E5%8F%A3%E6%B9%96%E5%91%BD%E6%A1%88&serp_type=trends&trend_fbid=1742135113519725"
+      "count": "22 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B2%B3%E5%8F%A3%E6%B9%96%E5%91%BD%E6%A1%88&serp_type=trends&trend_fbid=1053188167767909"
     },
     {
-      "title": "民眾徹夜排隊搶購限定皮卡丘",
-      "description": "台北信義新天地A11湧入數百人，徹夜排隊領取粉紅爆炸頭皮卡丘入店整理券",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E7%9A%AE%E5%8D%A1%E4%B8%98&serp_type=trends&trend_fbid=1835015144164322"
+      "title": "奶蛙背景圖掀更換熱潮",
+      "description": "許多人將聊天室或桌布換成奶蛙圖片，並積極尋求與分享相關背景圖",
+      "count": "36 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%A5%B6%E8%9B%99%E8%83%8C%E6%99%AF&serp_type=trends&trend_fbid=1281828484084655"
     },
     {
-      "title": "《死神千年血戰篇》最新集播出",
-      "description": "《死神 千年血戰篇》動畫相隔一個月播出最新集數，內容大幅增添原創戰鬥場面",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%AD%BB%E7%A5%9E&serp_type=trends&trend_fbid=4139251673041612"
-    },
-    {
-      "title": "八曜和茶飲料現活蛞蝓門市停業",
-      "description": "八曜和茶東海門市遭反映飲品含蛞蝓後致歉停業，台中食安處將前往稽查",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%85%AB%E6%9B%9C%E5%92%8C%E8%8C%B6&serp_type=trends&trend_fbid=2087644565188717"
-    },
-    {
-      "title": "IVE公開新曲展開回歸",
-      "description": "韓國女團IVE公開新曲《Looks Can Kill》，正式展開回歸活動",
-      "count": "30 萬則貼文",
-      "link": "https://www.threads.com/search?q=IVE&serp_type=trends&trend_fbid=2131261757475755"
-    },
-    {
-      "title": "法國爆發大規模示威與暴動",
-      "description": "法國示威因教育與通膨擴大，部分行動演變為縱火及洗劫商家",
-      "count": "8 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B3%95%E5%9C%8B%E6%9A%B4%E5%8B%95&serp_type=trends&trend_fbid=1589232476567146"
-    },
-    {
-      "title": "台股重挫拉回夜盤翻紅",
-      "description": "台股盤中重挫逾900點後大幅拉回，台指期夜盤隨美股科技股走勢翻紅反彈",
-      "count": "4 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E8%82%A1&serp_type=trends&trend_fbid=2303263270429352"
+      "title": "沈伯洋推出競選刊物《順報》",
+      "description": "台北市長參選人沈伯洋推出《順報》，民眾前往競辦領取且有店家在店內陳列",
+      "count": "861 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%A0%86%E5%A0%B1&serp_type=trends&trend_fbid=1128706246514704"
     }
   ]
 }
