@@ -1,41 +1,53 @@
 {
-  "updated_at": "2026-10-21T07:05:17.290578+08:00",
+  "updated_at": "2026-10-21T08:05:15.934342+08:00",
   "topics": [
     {
-      "title": "台籍女旅客陳屍河口湖飯店",
-      "description": "一名台灣女旅客陳屍日本河口湖飯店客房，警方在現場逮捕涉案同團女子",
-      "count": "119 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%B3%E5%8F%A3%E6%B9%96%E5%91%BD%E6%A1%88&serp_type=trends&trend_fbid=1856918819096897"
-    },
-    {
-      "title": "IG推出聊天室自訂背景功能",
-      "description": "使用者可於Instagram聊天室上傳相片更換對話背景，自由搭配喜愛主題配色",
+      "title": "IG私訊開放自訂聊天背景",
+      "description": "Instagram推出私訊自訂背景功能，用戶可上傳相簿照片作為對話桌布",
       "count": "50 萬則貼文",
-      "link": "https://www.threads.com/search?q=Instagram&serp_type=trends&trend_fbid=1099662499349191"
+      "link": "https://www.threads.com/search?q=Instagram&serp_type=trends&trend_fbid=1626755478979701"
     },
     {
-      "title": "中壢少年圍毆案涉案者全送辦",
-      "description": "中壢武和宮前發生少年圍毆案，警方將涉案者移送少年法庭，市府亦限期拆除違建宮廟",
+      "title": "薔琵颱風路徑西修週五影響北東",
+      "description": "強烈颱風薔琵暴風圈預計週五影響基隆、雙北、桃園、宜蘭及花蓮等地區",
       "count": "3 千則貼文",
-      "link": "https://www.threads.com/search?q=%E4%B8%AD%E5%A3%A2%E9%9C%B8%E5%87%8C&serp_type=trends&trend_fbid=1581631283265789"
+      "link": "https://www.threads.com/search?q=%E8%96%94%E7%90%B5%E9%A2%B1%E9%A2%A8&serp_type=trends&trend_fbid=1107949341951918"
+    },
+    {
+      "title": "中壢霸凌案群眾包圍武和宮",
+      "description": "桃園中壢少年遭圍毆引發群眾聚集武和宮，警方已將涉案者送辦且市府限期拆除違建",
+      "count": "3 千則貼文",
+      "link": "https://www.threads.com/search?q=%E4%B8%AD%E5%A3%A2%E9%9C%B8%E5%87%8C&serp_type=trends&trend_fbid=2027320087928668"
+    },
+    {
+      "title": "謝震武專訪質疑蔣萬安背稿",
+      "description": "台北市長蔣萬安接受政論節目專訪，主持人謝震武當面針對「問A答B」與背稿進行追問",
+      "count": "11 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=1975145613152687"
+    },
+    {
+      "title": "許榮哲演講遭控踹桌責罵女學生",
+      "description": "亞洲大學演講傳出許榮哲涉嫌物化女性並踹桌，他回應製造衝突為教學與表演方式",
+      "count": "470 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%A8%B1%E6%A6%AE%E5%93%B2&serp_type=trends&trend_fbid=1135706945816131"
+    },
+    {
+      "title": "網友分享EZ Cam相機作品",
+      "description": "新款相機App EZ Cam主打獨特拍攝與調色，吸引民眾展示攝影成果",
+      "count": "39 則貼文",
+      "link": "https://www.threads.com/search?q=EZ%20Cam&serp_type=trends&trend_fbid=1594767212419256"
+    },
+    {
+      "title": "台女命喪日本河口湖飯店",
+      "description": "日本山梨縣河口湖畔飯店發生命案，一名台灣女性陳屍客房，同團女子因持刀遭逮",
+      "count": "133 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B2%B3%E5%8F%A3%E6%B9%96%E5%91%BD%E6%A1%88&serp_type=trends&trend_fbid=1610786470845049"
     },
     {
       "title": "淘寶雙11購物節正式開跑",
       "description": "年度促銷活動於10月20日晚間登場，淘寶雙11優惠持續至11月13日",
-      "count": "554 則貼文",
+      "count": "569 則貼文",
       "link": "https://www.threads.com/search?q=%E6%B7%98%E5%AF%B6%E9%9B%9911&serp_type=trends&trend_fbid=28080977148249038"
-    },
-    {
-      "title": "薔琵颱風北上恐影響北部東部",
-      "description": "隨著薔琵颱風逼近東部海域，暴風圈恐影響北部與東部，部分週末活動宣布取消或延期",
-      "count": "3 千則貼文",
-      "link": "https://www.threads.com/search?q=%E8%96%94%E7%90%B5%E9%A2%B1%E9%A2%A8&serp_type=trends&trend_fbid=1102235295756997"
-    },
-    {
-      "title": "蔣萬安接受《新聞面對面》專訪",
-      "description": "台北市長蔣萬安在節目回應市政與選情，主持人謝震武直指其回答未正面切題",
-      "count": "11 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=28477752961923969"
     },
     {
       "title": "古裝劇《嫁金釵》開播",
@@ -58,7 +70,7 @@
     {
       "title": "護理師網頁遊戲還原臨床工作",
       "description": "該遊戲模擬病房照護與給藥流程，真實呈現護理人員忙到沒空吃飯的高壓日常",
-      "count": "712 則貼文",
+      "count": "721 則貼文",
       "link": "https://www.threads.com/search?q=%E8%AD%B7%E7%90%86%E5%B8%AB%E9%81%8A%E6%88%B2&serp_type=trends&trend_fbid=1387742896458453"
     },
     {
@@ -78,18 +90,6 @@
       "description": "歌手林佳美為桃園市長候選人黃世杰寫助選曲，支持者將於埔心辦造勢",
       "count": "4 千則貼文",
       "link": "https://www.threads.com/search?q=%E9%BB%83%E4%B8%96%E6%9D%B0&serp_type=trends&trend_fbid=1125054099986901"
-    },
-    {
-      "title": "民眾在智慧電視安裝紅果短劇",
-      "description": "許多人於小米及Sony等智慧電視下載紅果TV，透過大螢幕觀賞短劇內容",
-      "count": "5 千則貼文",
-      "link": "https://www.threads.com/search?q=%E7%B4%85%E6%9E%9C%E7%9F%AD%E5%8A%87&serp_type=trends&trend_fbid=1669128081464666"
-    },
-    {
-      "title": "張堯拍片解析政治人物受訪應對",
-      "description": "YouTuber張堯發布評論影片，解析台北市長蔣萬安等政治人物的受訪談話與應對方式",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%BC%B5%E5%A0%AF&serp_type=trends&trend_fbid=1798532008058626"
     }
   ]
 }
