@@ -1,11 +1,77 @@
 {
-  "updated_at": "2026-10-21T08:05:17.445665+08:00",
+  "updated_at": "2026-10-21T09:05:15.843635+08:00",
   "topics": [
     {
-      "title": "IG私訊開放自訂聊天背景",
-      "description": "Instagram推出私訊自訂背景功能，用戶可上傳相簿照片作為對話桌布",
+      "title": "多處發放洋流飄帶供索取",
+      "description": "支持者與店家在多處發放洋流飄帶，民眾出示船員證領取並配戴",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B4%8B%E6%B5%81%E9%A3%84%E5%B8%B6&serp_type=trends&trend_fbid=2745955595801394"
+    },
+    {
+      "title": "法國示威活動演變成暴動",
+      "description": "法國多地抗議現場傳出縱火與洗劫，部分群眾並高舉巴勒斯坦旗幟",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B3%95%E5%9C%8B%E7%A4%BA%E5%A8%81&serp_type=trends&trend_fbid=1681528986736457"
+    },
+    {
+      "title": "台女遊日河口湖飯店遇害",
+      "description": "一名台灣女子陳屍日本河口湖飯店，警方在現場起獲菜刀並逮捕涉案同團室友",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B2%B3%E5%8F%A3%E6%B9%96&serp_type=trends&trend_fbid=1653456509553533"
+    },
+    {
+      "title": "謝震武專訪蔣萬安直問是否背稿",
+      "description": "主持人謝震武在《新聞面對面》專訪台北市長蔣萬安，詢問回答是否切合提問與背稿",
+      "count": "9 千則貼文",
+      "link": "https://www.threads.com/search?q=%E8%AC%9D%E9%9C%87%E6%AD%A6&serp_type=trends&trend_fbid=976723764871646"
+    },
+    {
+      "title": "線上擠霜淇淋遊戲爆紅",
+      "description": "網頁模擬擠霜淇淋小遊戲受到歡迎，吸引玩家分享成果並挑戰擠冰高度",
+      "count": "",
+      "link": "https://www.threads.com/search?q=%E6%93%A0%E9%9C%9C%E6%B7%87%E6%B7%8B%E9%81%8A%E6%88%B2&serp_type=trends&trend_fbid=3922002687952993"
+    },
+    {
+      "title": "《荒野亂鬥》排位賽出現代打",
+      "description": "手遊《荒野亂鬥》部分玩家疑花錢代打上大師段位，實戰操作不符影響對戰體驗",
+      "count": "451 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%8D%92%E9%87%8E%E4%BA%82%E9%AC%A5&serp_type=trends&trend_fbid=1103663242526126"
+    },
+    {
+      "title": "許榮哲亞大演講遭控踢桌罵學生",
+      "description": "作家許榮哲在亞洲大學演講遭控物化女性與踢桌罵人，他稱此為教學表演並拒絕致歉",
+      "count": "621 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%A8%B1%E6%A6%AE%E5%93%B2&serp_type=trends&trend_fbid=1565089975305001"
+    },
+    {
+      "title": "IG推出聊天室自訂背景",
+      "description": "使用者可在Instagram上傳照片自訂對話底圖，部分用戶反映更新後尚未顯示",
       "count": "50 萬則貼文",
-      "link": "https://www.threads.com/search?q=Instagram&serp_type=trends&trend_fbid=1626755478979701"
+      "link": "https://www.threads.com/search?q=Instagram&serp_type=trends&trend_fbid=1444713433763024"
+    },
+    {
+      "title": "中壢爆發少年集體霸凌",
+      "description": "桃園中壢少年遭圍毆霸凌，涉案者已移送少年法庭且事發宮廟違建限期拆除",
+      "count": "559 則貼文",
+      "link": "https://www.threads.com/search?q=%E4%B8%AD%E5%A3%A2%E9%9C%B8%E5%87%8C%E6%A1%88&serp_type=trends&trend_fbid=2010072539672485"
+    },
+    {
+      "title": "河北彩花登僑光科大校慶開唱",
+      "description": "河北彩花受邀出席僑光科大校慶演唱會，獻唱《First Love》等曲並與觀眾互動",
+      "count": "651 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B2%B3%E5%8C%97%E5%BD%A9%E8%8A%B1&serp_type=trends&trend_fbid=1116860480993181"
+    },
+    {
+      "title": "單厚之質疑蔣萬安2028動向",
+      "description": "單厚之在節目中當面詢問蔣萬安是否做好做滿任期，並談及2028年大選與施政政績",
+      "count": "4 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%96%AE%E5%8E%9A%E4%B9%8B&serp_type=trends&trend_fbid=2140187003251055"
+    },
+    {
+      "title": "黃宏軒怨選舉新聞擾民刪文致歉",
+      "description": "黃宏軒稱政治新聞擾民遭粉絲退追後刪文致歉，並澄清無特定立場且無投票資格",
+      "count": "90 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%BB%83%E5%AE%8F%E8%BB%92&serp_type=trends&trend_fbid=2349792629179787"
     },
     {
       "title": "薔琵颱風路徑西修週五影響北東",
@@ -14,82 +80,16 @@
       "link": "https://www.threads.com/search?q=%E8%96%94%E7%90%B5%E9%A2%B1%E9%A2%A8&serp_type=trends&trend_fbid=1107949341951918"
     },
     {
-      "title": "中壢霸凌案群眾包圍武和宮",
-      "description": "桃園中壢少年遭圍毆引發群眾聚集武和宮，警方已將涉案者送辦且市府限期拆除違建",
-      "count": "3 千則貼文",
-      "link": "https://www.threads.com/search?q=%E4%B8%AD%E5%A3%A2%E9%9C%B8%E5%87%8C&serp_type=trends&trend_fbid=2027320087928668"
-    },
-    {
-      "title": "謝震武專訪質疑蔣萬安背稿",
-      "description": "台北市長蔣萬安接受政論節目專訪，主持人謝震武當面針對「問A答B」與背稿進行追問",
-      "count": "11 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=1975145613152687"
-    },
-    {
-      "title": "許榮哲演講遭控踹桌責罵女學生",
-      "description": "亞洲大學演講傳出許榮哲涉嫌物化女性並踹桌，他回應製造衝突為教學與表演方式",
-      "count": "470 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%A8%B1%E6%A6%AE%E5%93%B2&serp_type=trends&trend_fbid=1135706945816131"
-    },
-    {
       "title": "網友分享EZ Cam相機作品",
       "description": "新款相機App EZ Cam主打獨特拍攝與調色，吸引民眾展示攝影成果",
-      "count": "39 則貼文",
+      "count": "38 則貼文",
       "link": "https://www.threads.com/search?q=EZ%20Cam&serp_type=trends&trend_fbid=1594767212419256"
-    },
-    {
-      "title": "台女命喪日本河口湖飯店",
-      "description": "日本山梨縣河口湖畔飯店發生命案，一名台灣女性陳屍客房，同團女子因持刀遭逮",
-      "count": "133 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%B3%E5%8F%A3%E6%B9%96%E5%91%BD%E6%A1%88&serp_type=trends&trend_fbid=1610786470845049"
     },
     {
       "title": "淘寶雙11購物節正式開跑",
       "description": "年度促銷活動於10月20日晚間登場，淘寶雙11優惠持續至11月13日",
-      "count": "569 則貼文",
+      "count": "575 則貼文",
       "link": "https://www.threads.com/search?q=%E6%B7%98%E5%AF%B6%E9%9B%9911&serp_type=trends&trend_fbid=28080977148249038"
-    },
-    {
-      "title": "古裝劇《嫁金釵》開播",
-      "description": "田曦薇與閆桉主演《嫁金釵》，圍繞替嫁與身世之謎展開緊湊劇情",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%AB%81%E9%87%91%E9%87%B5&serp_type=trends&trend_fbid=1430009665324608"
-    },
-    {
-      "title": "大學校園掀奶龍立牌風潮",
-      "description": "多所大專院校學生自發搬運奶龍與奶蛙立牌，在各系所校區間回報位置並拍照打卡",
-      "count": "82 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%A5%B6%E9%BE%8D%E7%AB%8B%E7%89%8C&serp_type=trends&trend_fbid=2068327297220729"
-    },
-    {
-      "title": "張政禹4打點助味全龍聽牌",
-      "description": "台灣大賽第3戰味全龍完封兄弟聽牌，張政禹貢獻4分打點及關鍵撲壘改判",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%BC%B5%E6%94%BF%E7%A6%B9&serp_type=trends&trend_fbid=1770915463961237"
-    },
-    {
-      "title": "護理師網頁遊戲還原臨床工作",
-      "description": "該遊戲模擬病房照護與給藥流程，真實呈現護理人員忙到沒空吃飯的高壓日常",
-      "count": "721 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%AD%B7%E7%90%86%E5%B8%AB%E9%81%8A%E6%88%B2&serp_type=trends&trend_fbid=1387742896458453"
-    },
-    {
-      "title": "《邊緣行者》第二季全十集上架",
-      "description": "動畫《電馭叛客：邊緣行者》第二季全劇十集上架，觀眾聚焦劇情節奏與風格差異",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E9%82%8A%E7%B7%A3%E8%A1%8C%E8%80%85&serp_type=trends&trend_fbid=1637347114760728"
-    },
-    {
-      "title": "小巨蛋演唱會歌迷求婚成功",
-      "description": "Charlie Puth在台北小巨蛋開唱，演唱期間台下歌迷求婚成功令他驚喜感動",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=Charlie%20Puth&serp_type=trends&trend_fbid=2391878818251118"
-    },
-    {
-      "title": "黃世杰投入桃園市長選戰",
-      "description": "歌手林佳美為桃園市長候選人黃世杰寫助選曲，支持者將於埔心辦造勢",
-      "count": "4 千則貼文",
-      "link": "https://www.threads.com/search?q=%E9%BB%83%E4%B8%96%E6%9D%B0&serp_type=trends&trend_fbid=1125054099986901"
     }
   ]
 }
