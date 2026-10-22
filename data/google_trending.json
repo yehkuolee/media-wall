@@ -1,20 +1,16 @@
 {
-  "updated_at": "2026-10-22T05:39:18.222736+08:00",
+  "updated_at": "2026-10-22T08:13:20.407851+08:00",
   "keywords": [
     {
       "title": "停班停課",
-      "volume": "10萬+"
+      "volume": "20萬+"
     },
     {
       "title": "黃逸豪",
       "volume": "2萬+"
     },
     {
-      "title": "陳 隨意",
-      "volume": "1萬+"
-    },
-    {
-      "title": "高鐵 宜蘭 站",
+      "title": "可樂 旅遊 河口湖",
       "volume": "1萬+"
     },
     {
@@ -22,7 +18,11 @@
       "volume": "1萬+"
     },
     {
-      "title": "可樂 旅遊 河口湖",
+      "title": "陳 隨意",
+      "volume": "1萬+"
+    },
+    {
+      "title": "拉亞漢堡",
       "volume": "1萬+"
     },
     {
@@ -30,11 +30,23 @@
       "volume": "5,000+"
     },
     {
-      "title": "拉亞漢堡",
+      "title": "高鐵 宜蘭 站",
       "volume": "1萬+"
     },
     {
       "title": "新聞",
+      "volume": "1萬+"
+    },
+    {
+      "title": "php 重大漏洞",
+      "volume": "5,000+"
+    },
+    {
+      "title": "現金",
+      "volume": "5,000+"
+    },
+    {
+      "title": "張凌赫",
       "volume": "5,000+"
     },
     {
@@ -50,24 +62,8 @@
       "volume": "2,000+"
     },
     {
-      "title": "身體",
-      "volume": "2,000+"
-    },
-    {
-      "title": "php 重大漏洞",
-      "volume": "2,000+"
-    },
-    {
       "title": "秦慧珠",
-      "volume": "2,000+"
-    },
-    {
-      "title": "武薩奇是什麼",
       "volume": "5,000+"
-    },
-    {
-      "title": "現金",
-      "volume": "2,000+"
     },
     {
       "title": "被動 元件",
@@ -78,28 +74,32 @@
       "volume": "2,000+"
     },
     {
-      "title": "彩票",
+      "title": "身體",
+      "volume": "2,000+"
+    },
+    {
+      "title": "熱火 對 灰狼",
+      "volume": "500+"
+    },
+    {
+      "title": "輝 達",
       "volume": "1,000+"
     },
     {
-      "title": "伊隆·馬斯克",
+      "title": "溫朗東",
       "volume": "1,000+"
     },
     {
-      "title": "詹子賢",
-      "volume": "5萬+"
+      "title": "lucero acosta",
+      "volume": "1,000+"
     },
     {
-      "title": "家庭 主婦",
-      "volume": "2,000+"
+      "title": "臺灣",
+      "volume": "500+"
     },
     {
-      "title": "軍事演習",
-      "volume": "2,000+"
-    },
-    {
-      "title": "尹昭德",
-      "volume": "2,000+"
+      "title": "meta財報",
+      "volume": "1,000+"
     }
   ]
 }
