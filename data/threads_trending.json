@@ -1,65 +1,95 @@
 {
-  "updated_at": "2026-10-22T20:05:13.750300+08:00",
+  "updated_at": "2026-10-22T21:05:18.415156+08:00",
   "topics": [
     {
-      "title": "颱風薔琵逼近 多縣市停班停課",
-      "description": "強烈颱風薔琵逼近，臺南、高雄、屏東及嘉義縣宣布10月23日停班停課",
-      "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E9%A2%B1%E9%A2%A8%E8%96%94%E7%90%B5&serp_type=trends&trend_fbid=2203697213862265"
+      "title": "北北基桃23日停班停課",
+      "description": "受颱風薔琵影響暴風圈侵襲率達百分之百，北北基桃宣布23日停止上班上課",
+      "count": "5 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8C%97%E5%8C%97%E5%9F%BA%E6%A1%83&serp_type=trends&trend_fbid=1807342857135571"
     },
     {
-      "title": "台中新光三越旁路樹倒塌砸車",
-      "description": "強風吹襲台中新光三越周邊路段，造成路樹倒塌並砸中車輛",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%96%B0%E5%85%89%E4%B8%89%E8%B6%8A&serp_type=trends&trend_fbid=1115944554317480"
-    },
-    {
-      "title": "土耳其冰淇淋3D遊戲獲熱烈挑戰",
-      "description": "玩家在網頁遊戲中化身攤販操控長棍躲避顧客抓取，比拼冰淇淋不被搶走的秒數紀錄",
-      "count": "69 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%9C%9F%E8%80%B3%E5%85%B6%E5%86%B0%E6%B7%87%E6%B7%8B%203D&serp_type=trends&trend_fbid=1777337029975757"
-    },
-    {
-      "title": "美光桃園工會展開罷工",
-      "description": "美光桃園工會因分潤協商未達共識展開24小時罷工，台中工會則與資方簽署協議",
-      "count": "882 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%BE%8E%E5%85%89%E5%B7%A5%E6%9C%83&serp_type=trends&trend_fbid=1111238364650386"
-    },
-    {
-      "title": "文化大學受颱風影響現強風",
-      "description": "受颱風影響文化大學周邊風勢強勁，學生反映強風足以將人吹走且無法撐傘",
+      "title": "日本河口湖發生台灣女客命案",
+      "description": "死者為空勤總隊長井延淵之女，涉案同團女子因旅途中購買菜刀已移送檢方偵辦",
       "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%96%87%E5%8C%96%E5%A4%A7%E5%AD%B8&serp_type=trends&trend_fbid=1785003959440457"
+      "link": "https://www.threads.com/search?q=%E6%B2%B3%E5%8F%A3%E6%B9%96%E5%91%BD%E6%A1%88&serp_type=trends&trend_fbid=2361356588000763"
     },
     {
-      "title": "高鐵南下對號座幾近完售",
-      "description": "受薔琵颱風逼近與光復節連假返鄉影響，高鐵南下車票幾近完售且車站湧現人潮",
-      "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E9%AB%98%E9%90%B5&serp_type=trends&trend_fbid=1164007772965988"
-    },
-    {
-      "title": "小琉球琉興號擱淺全員脫困",
-      "description": "小琉球公船琉興號進港時卡在消波塊擱淺，船上35名乘客全數平安脫困且公船已拖離",
-      "count": "14 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%90%89%E8%88%88%E8%99%9F&serp_type=trends&trend_fbid=1088909594053954"
-    },
-    {
-      "title": "張善政支持松山機場遷桃園",
-      "description": "桃園市長張善政呼籲中央地方研議松機遷建，並積極推動桃園市立醫院規劃",
-      "count": "7 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%BC%B5%E5%96%84%E6%94%BF&serp_type=trends&trend_fbid=2196101831261597"
-    },
-    {
-      "title": "沈伯洋推政策島互動網頁",
-      "description": "官網結合視覺化動畫與虛擬角色，以互動彩蛋呈現沈伯洋各項市政政見與時程",
+      "title": "沈伯洋發報後趕赴立院開會",
+      "description": "沈伯洋在捷運站發放《順報》後，上午準時抵達立法院外交及國防委員會出席會議",
       "count": "9 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1128565886343056"
+      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1940887497294974"
     },
     {
-      "title": "拉亞漢堡推三國無雙寵物頭套",
-      "description": "拉亞漢堡聯名《真・三國無雙》推出武將寵物頭套熱銷售罄，預計10月28日起陸續補貨",
+      "title": "沈伯洋推HEART政策島平台",
+      "description": "官網互動平台以遊戲化與動畫視覺化呈現各項政見時程，並設有沈伯洋角色彩蛋",
+      "count": "964 則貼文",
+      "link": "https://www.threads.com/search?q=HEART%E6%94%BF%E7%AD%96%E5%B3%B6&serp_type=trends&trend_fbid=1127706873536000"
+    },
+    {
+      "title": "冰淇淋模擬網頁小遊戲流行",
+      "description": "土耳其冰淇淋與擠冰淇淋等模擬網頁小遊戲吸引眾人挑戰高度與分數紀錄",
+      "count": "398 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%86%B0%E6%B7%87%E6%B7%8B%E5%B0%8F%E9%81%8A%E6%88%B2&serp_type=trends&trend_fbid=1120621140880483"
+    },
+    {
+      "title": "拉亞漢堡推三國武將寵物頭套",
+      "description": "拉亞漢堡聯名《真・三國無雙》推寵物頭套，門市缺貨預計10月28日起補貨",
       "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%8B%89%E4%BA%9E%E6%BC%A2%E5%A0%A1&serp_type=trends&trend_fbid=2649063758937393"
+      "link": "https://www.threads.com/search?q=%E6%8B%89%E4%BA%9E%E6%BC%A2%E5%A0%A1&serp_type=trends&trend_fbid=2641524976361003"
+    },
+    {
+      "title": "台中強風吹倒路樹砸車",
+      "description": "新光三越等台中周邊地區颳起強烈陣風，陸續傳出路樹遭吹倒砸車等路況災情",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E4%B8%AD%E5%BC%B7%E9%A2%A8&serp_type=trends&trend_fbid=1046087938459342"
+    },
+    {
+      "title": "小琉球琉興輪擱淺35人獲救",
+      "description": "公營交通船琉興輪在小琉球進港時受困消波塊，35名乘客已全數平安接駁且船體順利脫困",
+      "count": "",
+      "link": "https://www.threads.com/search?q=%E7%90%89%E8%88%88%E8%BC%AA&serp_type=trends&trend_fbid=1849703283113818"
+    },
+    {
+      "title": "蔣萬安視察防颱遭指未通知里長",
+      "description": "台北市長蔣萬安前往視察防颱整備，文山區華興里里長陳峙穎指控市府事前完全未通知",
+      "count": "8 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=1720593512372091"
+    },
+    {
+      "title": "高雄市宣布23日停班停課",
+      "description": "高雄市長陳其邁評估已達標準，為維護市民安全宣布23日全市停止上班上課",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E9%99%B3%E5%85%B6%E9%82%81&serp_type=trends&trend_fbid=1328965845877849"
+    },
+    {
+      "title": "薔琵颱風影響多家航空調整航班",
+      "description": "受薔琵颱風影響，台灣虎航與長榮等多家航空於10月22至24日調整或取消航班",
+      "count": "322 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E7%81%A3%E8%99%8E%E8%88%AA&serp_type=trends&trend_fbid=1765778871359877"
+    },
+    {
+      "title": "長榮馬拉松首日湧現排隊人潮",
+      "description": "長榮航空馬拉松開放領物資首日，跑者因憂心颱風影響而提前到場排隊",
+      "count": "22 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%95%B7%E6%A6%AE%E8%88%AA%E7%A9%BA%E9%A6%AC%E6%8B%89%E6%9D%BE&serp_type=trends&trend_fbid=1580121423437627"
+    },
+    {
+      "title": "桃園公車脫班動態不實",
+      "description": "桃園市公車頻脫班且動態不準，市長張善政擬推桃小巴因應司機荒",
+      "count": "2 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%A1%83%E5%9C%92%E5%85%AC%E8%BB%8A&serp_type=trends&trend_fbid=2052809288730423"
+    },
+    {
+      "title": "盛艾敬遭指公開搶話擋鏡頭",
+      "description": "A2O LITE成員盛艾敬在公開場合被指搶話擋人，部分人要求退團也有人為其緩頰",
+      "count": "3 千則貼文",
+      "link": "https://www.threads.com/search?q=%E7%9B%9B%E8%89%BE%E6%95%AC&serp_type=trends&trend_fbid=1133232519157577"
+    },
+    {
+      "title": "侯友宜指新北雨量達停班課標準",
+      "description": "因應颱風薔琵，侯友宜表示新北市部分地區週五預估雨量已達停班課標準，呼籲落實防颱",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E4%BE%AF%E5%8F%8B%E5%AE%9C&serp_type=trends&trend_fbid=4552778844990735"
     }
   ]
 }
