@@ -1,35 +1,83 @@
 {
-  "updated_at": "2026-10-23T11:05:18.199990+08:00",
+  "updated_at": "2026-10-23T12:05:14.451793+08:00",
   "topics": [
     {
-      "title": "薔琵颱風影響全台多家百貨停業",
-      "description": "因應薔琵颱風來襲，新光三越及遠東SOGO等全台多家百貨公司10月23日暫停營業一天",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E7%99%BE%E8%B2%A8%E5%85%AC%E5%8F%B8&serp_type=trends&trend_fbid=1105032922134476"
+      "title": "夢時代等多家高雄百貨暫停營業",
+      "description": "因應薔琵颱風停班停課，高雄夢時代、漢神百貨與新光三越等宣布10月23日暫停營業",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%A4%A2%E6%99%82%E4%BB%A3&serp_type=trends&trend_fbid=1621216266369547"
     },
     {
-      "title": "台中勤美廣告帆布遭強風吹落",
-      "description": "颱風強風吹斷台中勤美大型廣告帆布掉落路面，所幸未造成人員傷亡",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8B%A4%E7%BE%8E&serp_type=trends&trend_fbid=2980977818936874"
+      "title": "威秀影城颱風天照常營業",
+      "description": "威秀影城公告全台據點颱風天營業至下午5點，吸引民眾前往觀影與排隊消費",
+      "count": "604 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%A8%81%E7%A7%80%E5%BD%B1%E5%9F%8E&serp_type=trends&trend_fbid=1125887873507037"
     },
     {
-      "title": "好市多颱風天開賣新機湧排隊潮",
-      "description": "好市多於颱風假正常營業並開賣iPhone Duo，吸引北投與南屯等門市排隊人潮",
-      "count": "5 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%A5%BD%E5%B8%82%E5%A4%9A&serp_type=trends&trend_fbid=1410057724617548"
-    },
-    {
-      "title": "台南車站公共鋼琴吸引民眾彈奏",
-      "description": "民眾在台南火車站排隊彈奏公共鋼琴，並與各類樂器即興合奏吸引旅客圍觀",
+      "title": "台南車站公共鋼琴現即興合奏",
+      "description": "站內設置公共鋼琴吸引民眾彈奏，現場更結合二胡與小提琴展開即興合奏",
       "count": "3 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E5%8D%97%E8%BB%8A%E7%AB%99%E9%8B%BC%E7%90%B4&serp_type=trends&trend_fbid=4505875876334401"
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E5%8D%97%E8%BB%8A%E7%AB%99%E9%8B%BC%E7%90%B4&serp_type=trends&trend_fbid=1105925422338429"
     },
     {
-      "title": "吉伊卡哇ANA聯名商品開賣",
-      "description": "吉伊卡哇與全日空推出聯名周邊，眾多粉絲湧入官方網站排隊搶購吊飾與娃娃",
+      "title": "台東富岡漁港工程吊車翻覆落海",
+      "description": "受颱風強勁風浪影響，台東富岡漁港一輛大型工程吊車遭巨浪衝擊翻覆落入海中",
+      "count": "394 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%AF%8C%E5%B2%A1%E6%BC%81%E6%B8%AF&serp_type=trends&trend_fbid=1087457994128605"
+    },
+    {
+      "title": "颱風侵襲文化大學現強風豪雨",
+      "description": "文化大學在颱風期間出現強烈風雨，學生雨傘遭狂風吹翻，停車場機車亦受強風影響",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%96%87%E5%8C%96%E5%A4%A7%E5%AD%B8&serp_type=trends&trend_fbid=1646755160420967"
+    },
+    {
+      "title": "好市多全台門市湧現排隊人潮",
+      "description": "受颱風天照常營運與新機開賣影響，好市多全台多間門市一早湧入排隊人潮",
+      "count": "5 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%A5%BD%E5%B8%82%E5%A4%9A&serp_type=trends&trend_fbid=4623625167916882"
+    },
+    {
+      "title": "台籍女旅客在河口湖遇害",
+      "description": "空勤總隊長井延淵女兒在日本飯店遇害，涉案同團楊姓女子已遭當地警方逮捕",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B2%B3%E5%8F%A3%E6%B9%96%E5%91%BD%E6%A1%88&serp_type=trends&trend_fbid=2573410073124613"
+    },
+    {
+      "title": "颱風薔琵影響桃機航班異動",
+      "description": "強風暴雨伴隨颱風薔琵來襲，桃園機場多起航班取消延誤，航廈湧現候補人潮",
       "count": "4 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%90%89%E4%BC%8A%E5%8D%A1%E5%93%87&serp_type=trends&trend_fbid=1473933811272265"
+      "link": "https://www.threads.com/search?q=%E6%A1%83%E5%9C%92%E6%A9%9F%E5%A0%B4&serp_type=trends&trend_fbid=944394605083219"
+    },
+    {
+      "title": "新竹竹北回報颱風天餐飲營業",
+      "description": "颱風停班停課期間，新竹與竹北居民及店家互相回報正常營業餐飲資訊，協助採買物資",
+      "count": "2 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%96%B0%E7%AB%B9%E7%AB%B9%E5%8C%97&serp_type=trends&trend_fbid=2666585147115730"
+    },
+    {
+      "title": "76人克服29分落後逆轉勝騎士",
+      "description": "費城76人下半場加強防守展開反攻，最終以114比106逆轉擊敗騎士",
+      "count": "4 千則貼文",
+      "link": "https://www.threads.com/search?q=76%E4%BA%BA&serp_type=trends&trend_fbid=970429742253495"
+    },
+    {
+      "title": "高鐵加開列車疏運返鄉人潮",
+      "description": "因應颱風停班課湧現的返鄉人潮，高鐵加開9班全車自由座並延後收班",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E9%AB%98%E9%90%B5&serp_type=trends&trend_fbid=1620136436522937"
+    },
+    {
+      "title": "台東縣清晨緊急宣布停班停課",
+      "description": "受颱風薔琵影響，台東縣長饒慶鈴於清晨臨時逆轉決定，宣布全縣停止上班上課",
+      "count": "481 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%A5%92%E6%85%B6%E9%88%B4&serp_type=trends&trend_fbid=1082933904510145"
+    },
+    {
+      "title": "盛艾敬遭指公開活動推擠搶位",
+      "description": "女團A2O LITE盛艾敬被指推擠沈雅允，支持者澄清因階梯狹窄調整站位並已致歉",
+      "count": "3 千則貼文",
+      "link": "https://www.threads.com/search?q=%E7%9B%9B%E8%89%BE%E6%95%AC&serp_type=trends&trend_fbid=1137036198980019"
     }
   ]
 }
