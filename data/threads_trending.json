@@ -1,6 +1,48 @@
 {
-  "updated_at": "2026-10-25T03:05:13.345261+08:00",
+  "updated_at": "2026-10-25T04:05:14.628741+08:00",
   "topics": [
+    {
+      "title": "沈伯洋莊競程新竹車隊掃街",
+      "description": "沈伯洋與莊競程在新竹展開洋流號車隊掃街，自東大路出發前往南寮波光市集",
+      "count": "7 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1648973606947952"
+    },
+    {
+      "title": "海安商圈舉辦萬聖節活動",
+      "description": "大批民眾盛裝打扮參與台南海安商圈萬聖節活動，街頭踩街遊行並互動發送糖果",
+      "count": "228 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B5%B7%E5%AE%89%E5%95%86%E5%9C%88&serp_type=trends&trend_fbid=1142016448264832"
+    },
+    {
+      "title": "台中鈴蘭通散步納涼會登場",
+      "description": "鈴蘭通散步納涼會於台中舊城區展開，串聯市集、美食與踩街吸引民眾參與",
+      "count": "830 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%88%B4%E8%98%AD%E9%80%9A%E6%95%A3%E6%AD%A5%E7%B4%8D%E6%B6%BC%E6%9C%83&serp_type=trends&trend_fbid=1140473578381364"
+    },
+    {
+      "title": "《傳說對決》推好友回歸送造型",
+      "description": "玩家透過填寫邀請碼與回歸帳號助力獲取點數，以累積進度領取《傳說對決》造型獎勵",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E5%82%B3%E8%AA%AA%E5%B0%8D%E6%B1%BA&serp_type=trends&trend_fbid=2623601648141812"
+    },
+    {
+      "title": "《新手上路》獲觀眾好評",
+      "description": "Netflix台劇《新手上路》描寫育兒日常，以奇幻幽默情節獲好評",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E3%80%8A%E6%96%B0%E6%89%8B%E4%B8%8A%E8%B7%AF%E3%80%8B&serp_type=trends&trend_fbid=1004753322662475"
+    },
+    {
+      "title": "369率TES擊敗AL獲MVP",
+      "description": "在《英雄聯盟》世界賽中，TES上路選手369發揮出色，率隊擊敗AL並獲選MVP",
+      "count": "5 千則貼文",
+      "link": "https://www.threads.com/search?q=369&serp_type=trends&trend_fbid=2045295299499993"
+    },
+    {
+      "title": "網頁遊戲《鍋氣炒飯》掀熱潮",
+      "description": "玩家在《鍋氣炒飯》掌控火候與食材，依烹調成果獲得不同評分稱號",
+      "count": "82 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%8D%8B%E6%B0%A3%E7%82%92%E9%A3%AF&serp_type=trends&trend_fbid=2038063296907706"
+    },
     {
       "title": "米津玄師台北演唱會中信卡友搶票",
       "description": "米津玄師台北演唱會開放中國信託卡友優先購票，歌迷分享鼎鑽卡購票心得與相關流程",
@@ -14,39 +56,15 @@
       "link": "https://www.threads.com/search?q=%E7%81%AB%E7%A5%9E%E7%A5%AD&serp_type=trends&trend_fbid=1318290227016744"
     },
     {
-      "title": "台南海安商圈舉辦萬聖節活動",
-      "description": "台南海安商圈萬聖節活動登場，大批民眾創意變裝踩街、發放糖果並參與市集",
-      "count": "224 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B5%B7%E5%AE%89%E5%95%86%E5%9C%88&serp_type=trends&trend_fbid=1093534966643481"
-    },
-    {
-      "title": "台中鈴蘭通散步納涼會登場",
-      "description": "活動串聯台中舊城區多條街區，集結主題市集、美食攤位與變裝遊行吸引民眾參與",
-      "count": "815 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%88%B4%E8%98%AD%E9%80%9A%E6%95%A3%E6%AD%A5%E7%B4%8D%E6%B6%BC%E6%9C%83&serp_type=trends&trend_fbid=2287937498718536"
-    },
-    {
-      "title": "沈伯洋莊競程新竹車隊掃街",
-      "description": "洋流號車隊自東大路出發前往南寮漁港，沈伯洋與莊競程沿途設點發放小物",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B4%8B%E6%B5%81%E8%99%9F&serp_type=trends&trend_fbid=3976698502461690"
-    },
-    {
-      "title": "《傳說對決》推好友回歸送造型",
-      "description": "《傳說對決》祭出好友回歸活動，玩家踴躍分享代碼互助領取造型獎勵",
-      "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E5%82%B3%E8%AA%AA%E5%B0%8D%E6%B1%BA&serp_type=trends&trend_fbid=1857049039049907"
-    },
-    {
       "title": "台南火車站設鋼琴吸引民眾彈奏",
       "description": "台南火車站設置鋼琴，吸引眾多民眾與演奏者現場彈奏交流，成為音樂舞台",
-      "count": "6 千則貼文",
+      "count": "7 千則貼文",
       "link": "https://www.threads.com/search?q=%E5%8F%B0%E5%8D%97%E7%81%AB%E8%BB%8A%E7%AB%99&serp_type=trends&trend_fbid=989984233461505"
     },
     {
       "title": "撿手機模擬遊戲掀熱潮",
       "description": "玩家透過互動網頁模擬翻閱偶像的虛構相簿與對話，粉絲亦著手自製各團體專屬版本",
-      "count": "630 則貼文",
+      "count": "641 則貼文",
       "link": "https://www.threads.com/search?q=%E6%92%BF%E6%89%8B%E6%A9%9F&serp_type=trends&trend_fbid=1114269677658723"
     },
     {
@@ -54,24 +72,6 @@
       "description": "keshi推出新單曲《MISS ME》，歌詞描繪分手後難以釋懷的心碎心境",
       "count": "2 千則貼文",
       "link": "https://www.threads.com/search?q=keshi&serp_type=trends&trend_fbid=1528951242390220"
-    },
-    {
-      "title": "鍋氣炒飯小遊戲挑戰滿分",
-      "description": "玩家在鍋氣炒飯網頁遊戲中掌控火候與食材，挑戰滿分以解鎖各類炒飯結局",
-      "count": "82 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%8D%8B%E6%B0%A3%E7%82%92%E9%A3%AF&serp_type=trends&trend_fbid=938242332443313"
-    },
-    {
-      "title": "《新手上路》在串流平台上線",
-      "description": "陳意涵與劉冠廷主演的奇幻影集《新手上路》，已正式在串流平台上線",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E3%80%8A%E6%96%B0%E6%89%8B%E4%B8%8A%E8%B7%AF%E3%80%8B&serp_type=trends&trend_fbid=4603458249909927"
-    },
-    {
-      "title": "369率TES擊敗AL",
-      "description": "《英雄聯盟》世界大賽瑞士輪中，選手369發揮出色率TES以1比0擊敗AL",
-      "count": "5 千則貼文",
-      "link": "https://www.threads.com/search?q=369&serp_type=trends&trend_fbid=1769592704268171"
     },
     {
       "title": "明治雪吻巧克力超商上架",
