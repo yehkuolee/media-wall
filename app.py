@@ -654,7 +654,7 @@ def _overlap(a: set, b: set) -> float:
 @st.cache_resource
 def _et_memo() -> dict:
     """所有訪客共用：判斷過的結果、AI 給的搜尋詞、上次問 AI 的時間"""
-    return {"judged": {}, "words": {}, "last_ai": 0.0}
+    return {"judged": {}, "words": {}, "last_ai": 0.0, "v": 2}  # v：judged 存的格式改了就加 1，讓雲端舊快取作廢
 
 
 def _gemini_key() -> str:
