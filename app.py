@@ -237,7 +237,7 @@ st.markdown("""
 .news-meta       { color: #aaa; font-size: .64rem; margin-top: 2px; }
 .news-src        { color: #888; font-weight: 600; }
 .et-tag          { color: #fff; background: #c41230; font-weight: 600; border-radius: 3px; padding: 0 4px; margin-left: 4px; }
-.et-link         { color: #c41230; text-decoration: none; word-break: break-all; }
+.et-link         { color: #c41230; text-decoration: none; }
 .et-link:hover   { text-decoration: underline; }
 .surge-card      { border-left-color: #c41230; }
 .surge-why       { color: #c41230; font-size: .68rem; font-weight: 600; margin-top: 2px; }
@@ -698,7 +698,7 @@ def _ask_gemini(batch: list, key: str):
 
 
 def ettoday_matches(news_list: list) -> dict:
-    """{新聞標題: ETtoday 相關新聞網址}"""
+    """{新聞標題: ETtoday 相關新聞 {"title", "link"}}"""
     et = fetch_ettoday()
     et_grams = [(e, _grams(e["title"])) for e in et]
     memo, result, todo, best_text = _et_memo(), {}, [], {}
@@ -708,7 +708,7 @@ def ettoday_matches(news_list: list) -> dict:
         g = _grams(n["title"])
         scored = sorted(((_overlap(g, eg), e) for e, eg in et_grams), key=lambda x: -x[0])[:5]
         if scored and scored[0][0] >= ET_TEXT_MIN:
-            best_text[n["title"]] = scored[0][1]["link"]
+            best_text[n["title"]] = scored[0][1]
         cands = [e for sc, e in scored if sc >= 0.1]
         links = {c["link"] for c in cands}
         words = memo["words"].get(n["title"], [])
@@ -734,13 +734,21 @@ def ettoday_matches(news_list: list) -> dict:
                 memo["words"].clear()
             for i, (title, cands, k) in enumerate(todo, 1):
                 j, words = ans.get(i, (0, []))
-                memo["judged"][k] = cands[j - 1]["link"] if 1 <= j <= len(cands) else ""
+                memo["judged"][k] = cands[j - 1] if 1 <= j <= len(cands) else None
                 if memo["judged"][k]:
                     result[title] = memo["judged"][k]
                 elif words and title not in memo["words"]:
                     memo["words"][title] = words  # 下一輪拿去 ETtoday 站內搜尋
     # 標題用字很像的一律標（AI 偶爾會漏判；AI 還沒判斷到的也先靠這個）
     return {**best_text, **result}
+
+
+def et_tag_html(et) -> str:
+    """「ETtoday相關」標籤＋相關新聞標題（超連結）"""
+    if not et:
+        return ""
+    return (f' · <span class="et-tag">ETtoday相關</span> <a class="et-link" href="{html_mod.escape(et["link"])}" '
+            f'target="_blank" rel="noopener">{html_mod.escape(et["title"])}</a>')
 
 
 # ── 瀏覽暴衝偵測 ───────────────────────────────────────────────────
@@ -1185,9 +1193,7 @@ def main():
             cards = ""
             for f in surges:
                 n = f["news"]
-                et_url = et_map.get(n["title"])
-                et_html = (f' · <span class="et-tag">ETtoday相關</span> <a class="et-link" href="{html_mod.escape(et_url)}" '
-                           f'target="_blank" rel="noopener">{html_mod.escape(et_url)}</a>') if et_url else ''
+                et_html = et_tag_html(et_map.get(n["title"]))
                 cards += f"""
             <div class="news-card surge-card">
                 <div class="news-rank">🚀</div>
@@ -1207,9 +1213,7 @@ def main():
             source = html_mod.escape(news["source"])
             ago = time_ago(news["pub"])
             ago_html = f' · {html_mod.escape(ago)}' if ago else ''
-            et_url = et_map.get(news["title"])
-            et_html = (f' · <span class="et-tag">ETtoday相關</span> <a class="et-link" href="{html_mod.escape(et_url)}" '
-                       f'target="_blank" rel="noopener">{html_mod.escape(et_url)}</a>') if et_url else ''
+            et_html = et_tag_html(et_map.get(news["title"]))
             st.markdown(f"""
             <div class="news-card">
                 <div class="news-rank {rc}">{rank_num}</div>
