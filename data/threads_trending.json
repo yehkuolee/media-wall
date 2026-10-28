@@ -1,11 +1,29 @@
 {
-  "updated_at": "2026-10-29T06:05:18.132617+08:00",
+  "updated_at": "2026-10-29T07:05:17.762685+08:00",
   "topics": [
     {
-      "title": "Alphabet財報獲利低於預期",
-      "description": "Alphabet公布第三季財報，每股盈餘2.12美元低於預期，導致盤後股價下挫",
+      "title": "Google財報遜預期股價重挫",
+      "description": "Alphabet第三季每股盈餘2.12美元低於預期導致盤後重挫，但雲端營收大增",
       "count": "3 千則貼文",
-      "link": "https://www.threads.com/search?q=Alphabet&serp_type=trends&trend_fbid=1430730088636373"
+      "link": "https://www.threads.com/search?q=Alphabet&serp_type=trends&trend_fbid=1594360305770083"
+    },
+    {
+      "title": "蔣萬安偕妻子接受王偉忠專訪",
+      "description": "台北市長蔣萬安偕同妻子石舫亘登上王偉忠節目，面對犀利提問分享互動與應對",
+      "count": "8 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=1147056784541179"
+    },
+    {
+      "title": "台指期夜盤受美股財報影響劇震",
+      "description": "微軟財報一度帶動台指期夜盤漲300點，隨後受 Google 拖累轉跌",
+      "count": "620 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4&serp_type=trends&trend_fbid=2564173014079761"
+    },
+    {
+      "title": "T1擊敗MKOI晉級八強",
+      "description": "T1在《英雄聯盟》世界大賽擊敗MKOI，以3勝1敗戰績成功晉級八強",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=T1&serp_type=trends&trend_fbid=1155900033640901"
     },
     {
       "title": "法友模擬器吸引玩家角色扮演",
@@ -16,25 +34,19 @@
     {
       "title": "聯準會宣布維持利率不變",
       "description": "美國聯準會公布10月利率決議，基準利率維持在3.75%至4.00%不變",
-      "count": "849 則貼文",
+      "count": "863 則貼文",
       "link": "https://www.threads.com/search?q=%E8%81%AF%E6%BA%96%E6%9C%83&serp_type=trends&trend_fbid=2082812092364486"
-    },
-    {
-      "title": "蔣萬安偕妻接受王偉忠專訪",
-      "description": "台北市長蔣萬安受訪重申正面選舉，妻子石舫亘現身協助應答",
-      "count": "8 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=1147245147813534"
     },
     {
       "title": "各國避難物資指引非同時發布",
       "description": "多國政府儲備避難物資指引實為不同時期陸續發布，並非同時發出緊急呼籲",
-      "count": "677 則貼文",
+      "count": "682 則貼文",
       "link": "https://www.threads.com/search?q=%E9%81%BF%E9%9B%A3%E7%89%A9%E8%B3%87&serp_type=trends&trend_fbid=1429685372672219"
     },
     {
       "title": "歌手家家結束與相信音樂合作",
       "description": "在相信音樂合作逾十年後，歌手家家合約期滿且雙方未再續約",
-      "count": "1 千則貼文",
+      "count": "2 千則貼文",
       "link": "https://www.threads.com/search?q=%E5%AE%B6%E5%AE%B6&serp_type=trends&trend_fbid=2176024546603881"
     },
     {
@@ -46,7 +58,7 @@
     {
       "title": "西班牙高鐵相撞釀68死",
       "description": "托雷多省兩列高鐵相撞致多節車廂脫軌，造成至少68人罹難，馬德里部分鐵路已中斷",
-      "count": "206 則貼文",
+      "count": "216 則貼文",
       "link": "https://www.threads.com/search?q=%E8%A5%BF%E7%8F%AD%E7%89%99%E9%AB%98%E9%90%B5&serp_type=trends&trend_fbid=1108415795407687"
     },
     {
@@ -70,7 +82,7 @@
     {
       "title": "高中學測模擬考題目具挑戰",
       "description": "學測模擬考國文限制勿摘錄原文壓縮時間，數學與自然科題型繁複考驗考生",
-      "count": "142 則貼文",
+      "count": "140 則貼文",
       "link": "https://www.threads.com/search?q=%E5%AD%B8%E6%B8%AC%E6%A8%A1%E6%93%AC%E8%80%83&serp_type=trends&trend_fbid=1116991477599126"
     },
     {
@@ -78,18 +90,6 @@
       "description": "葛如鈞稱沈伯洋團隊政策島涉抄襲，後續說明專案為網友與AI共創",
       "count": "6 千則貼文",
       "link": "https://www.threads.com/search?q=%E8%91%9B%E5%A6%82%E9%88%9E&serp_type=trends&trend_fbid=1460634572631508"
-    },
-    {
-      "title": "華元推出四大天王趴踢箱",
-      "description": "新產品趴踢箱隨機附贈造型絨毛掛包盲袋，消費者紛紛開箱並尋求交換不同款式",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E8%8F%AF%E5%85%83&serp_type=trends&trend_fbid=1842286090261010"
-    },
-    {
-      "title": "支持者力挺莊競程選新竹市長",
-      "description": "支持者架設網站整理莊競程政見，並分享基層互動肯定其參選新竹市長",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E8%8E%8A%E7%AB%B6%E7%A8%8B&serp_type=trends&trend_fbid=1520008796653781"
     }
   ]
 }
