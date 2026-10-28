@@ -1,10 +1,22 @@
 {
-  "updated_at": "2026-10-29T05:05:18.371898+08:00",
+  "updated_at": "2026-10-29T06:05:17.951466+08:00",
   "topics": [
+    {
+      "title": "Alphabet財報獲利低於預期",
+      "description": "Alphabet公布第三季財報，每股盈餘2.12美元低於預期，導致盤後股價下挫",
+      "count": "3 千則貼文",
+      "link": "https://www.threads.com/search?q=Alphabet&serp_type=trends&trend_fbid=1430730088636373"
+    },
+    {
+      "title": "法友模擬器吸引玩家角色扮演",
+      "description": "玩家在法友模擬器體驗角色扮演與對話，紛紛分享遊玩進度及設定",
+      "count": "",
+      "link": "https://www.threads.com/search?q=%E6%B3%95%E5%8F%8B%E6%A8%A1%E6%93%AC%E5%99%A8&serp_type=trends&trend_fbid=1377094365490159"
+    },
     {
       "title": "聯準會宣布維持利率不變",
       "description": "美國聯準會公布10月利率決議，基準利率維持在3.75%至4.00%不變",
-      "count": "841 則貼文",
+      "count": "849 則貼文",
       "link": "https://www.threads.com/search?q=%E8%81%AF%E6%BA%96%E6%9C%83&serp_type=trends&trend_fbid=2082812092364486"
     },
     {
@@ -16,7 +28,7 @@
     {
       "title": "各國避難物資指引非同時發布",
       "description": "多國政府儲備避難物資指引實為不同時期陸續發布，並非同時發出緊急呼籲",
-      "count": "663 則貼文",
+      "count": "677 則貼文",
       "link": "https://www.threads.com/search?q=%E9%81%BF%E9%9B%A3%E7%89%A9%E8%B3%87&serp_type=trends&trend_fbid=1429685372672219"
     },
     {
@@ -34,7 +46,7 @@
     {
       "title": "西班牙高鐵相撞釀68死",
       "description": "托雷多省兩列高鐵相撞致多節車廂脫軌，造成至少68人罹難，馬德里部分鐵路已中斷",
-      "count": "199 則貼文",
+      "count": "206 則貼文",
       "link": "https://www.threads.com/search?q=%E8%A5%BF%E7%8F%AD%E7%89%99%E9%AB%98%E9%90%B5&serp_type=trends&trend_fbid=1108415795407687"
     },
     {
@@ -52,13 +64,13 @@
     {
       "title": "新竹車輛扯倒電線桿致交通壅塞",
       "description": "新竹市光復路車輛轉彎拉扯電線致號誌桿倒塌，雖無人受傷但造成現場嚴重塞車",
-      "count": "21 則貼文",
+      "count": "20 則貼文",
       "link": "https://www.threads.com/search?q=%E6%96%B0%E7%AB%B9%E8%BB%8A%E7%A6%8D&serp_type=trends&trend_fbid=1391719863034629"
     },
     {
       "title": "高中學測模擬考題目具挑戰",
       "description": "學測模擬考國文限制勿摘錄原文壓縮時間，數學與自然科題型繁複考驗考生",
-      "count": "141 則貼文",
+      "count": "142 則貼文",
       "link": "https://www.threads.com/search?q=%E5%AD%B8%E6%B8%AC%E6%A8%A1%E6%93%AC%E8%80%83&serp_type=trends&trend_fbid=1116991477599126"
     },
     {
@@ -70,7 +82,7 @@
     {
       "title": "華元推出四大天王趴踢箱",
       "description": "新產品趴踢箱隨機附贈造型絨毛掛包盲袋，消費者紛紛開箱並尋求交換不同款式",
-      "count": "1 千則貼文",
+      "count": "2 千則貼文",
       "link": "https://www.threads.com/search?q=%E8%8F%AF%E5%85%83&serp_type=trends&trend_fbid=1842286090261010"
     },
     {
@@ -78,18 +90,6 @@
       "description": "支持者架設網站整理莊競程政見，並分享基層互動肯定其參選新竹市長",
       "count": "1 千則貼文",
       "link": "https://www.threads.com/search?q=%E8%8E%8A%E7%AB%B6%E7%A8%8B&serp_type=trends&trend_fbid=1520008796653781"
-    },
-    {
-      "title": "東港警匪追逐通緝犯落網",
-      "description": "通緝犯在屏東東港駕車拒檢逃逸並擦撞路車，棄車逃跑後遭警方徒步壓制逮捕",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%9D%B1%E6%B8%AF&serp_type=trends&trend_fbid=1107854392092447"
-    },
-    {
-      "title": "成田機場航班延誤旅客滯留",
-      "description": "日本成田機場發生系統故障與航班停飛，多名乘客受宵禁影響被迫滯留退關",
-      "count": "763 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%88%90%E7%94%B0%E6%A9%9F%E5%A0%B4&serp_type=trends&trend_fbid=1442294791445719"
     }
   ]
 }
