@@ -1,9 +1,13 @@
 {
-  "updated_at": "2026-10-30T06:15:03.331559+08:00",
+  "updated_at": "2026-10-30T09:59:14.354271+08:00",
   "keywords": [
     {
       "title": "交通",
       "volume": "2萬+"
+    },
+    {
+      "title": "台股",
+      "volume": "1萬+"
     },
     {
       "title": "寒流",
@@ -14,35 +18,35 @@
       "volume": "1萬+"
     },
     {
+      "title": "x教授",
+      "volume": "5,000+"
+    },
+    {
+      "title": "91app",
+      "volume": "5,000+"
+    },
+    {
+      "title": "林煒",
+      "volume": "2,000+"
+    },
+    {
+      "title": "patrick stewart",
+      "volume": "2,000+"
+    },
+    {
       "title": "楊繡惠",
       "volume": "5,000+"
     },
     {
-      "title": "聯電 跌停",
-      "volume": "2,000+"
-    },
-    {
-      "title": "91app",
-      "volume": "2,000+"
-    },
-    {
-      "title": "周玉蔻",
-      "volume": "2,000+"
-    },
-    {
-      "title": "快 閃 記憶 體",
+      "title": "0050",
       "volume": "5,000+"
     },
     {
-      "title": "google股價",
-      "volume": "5,000+"
+      "title": "拓荒者 對 灰熊",
+      "volume": "2,000+"
     },
     {
-      "title": "中國信託金融控股",
-      "volume": "1,000+"
-    },
-    {
-      "title": "林煒",
+      "title": "synology",
       "volume": "2,000+"
     },
     {
@@ -50,56 +54,52 @@
       "volume": "5,000+"
     },
     {
-      "title": "竹 塘 鄉",
-      "volume": "5,000+"
-    },
-    {
-      "title": "莊淑芬",
+      "title": "幣安",
       "volume": "2,000+"
     },
     {
-      "title": "杜忠誥",
-      "volume": "5,000+"
+      "title": "intel",
+      "volume": "2,000+"
     },
     {
-      "title": "patrick stewart",
-      "volume": "500+"
+      "title": "老鷹 對 騎士",
+      "volume": "2,000+"
+    },
+    {
+      "title": "股市",
+      "volume": "1萬+"
     },
     {
       "title": "台中火災",
       "volume": "5,000+"
     },
     {
-      "title": "許志豪",
+      "title": "chatgpt",
+      "volume": "5,000+"
+    },
+    {
+      "title": "周玉蔻",
       "volume": "2,000+"
     },
     {
-      "title": "康寧公司",
+      "title": "聯電 跌停",
+      "volume": "5,000+"
+    },
+    {
+      "title": "友達 光電",
+      "volume": "5,000+"
+    },
+    {
+      "title": "2330",
       "volume": "2,000+"
-    },
-    {
-      "title": "董培倫",
-      "volume": "2,000+"
-    },
-    {
-      "title": "胡釋安",
-      "volume": "1,000+"
-    },
-    {
-      "title": "亞馬遜財報",
-      "volume": "500+"
     },
     {
       "title": "聯發科",
       "volume": "5,000+"
     },
     {
-      "title": "工程師",
-      "volume": "500+"
-    },
-    {
-      "title": "synology",
-      "volume": "1,000+"
+      "title": "保險",
+      "volume": "2,000+"
     }
   ]
 }
