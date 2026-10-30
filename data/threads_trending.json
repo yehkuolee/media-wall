@@ -1,29 +1,71 @@
 {
-  "updated_at": "2026-10-31T03:05:17.430757+08:00",
+  "updated_at": "2026-10-31T04:05:14.347387+08:00",
   "topics": [
-    {
-      "title": "傳說對決商城扣款未發造型",
-      "description": "傳說對決玩家在商城購買或兌換造型時，點券或活動代幣遭扣除卻未收到物品",
-      "count": "7 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%82%B3%E8%AA%AA%E5%B0%8D%E6%B1%BA&serp_type=trends&trend_fbid=2168182587122825"
-    },
-    {
-      "title": "高雄萬聖節於衛武營登場",
-      "description": "衛武營舉行高雄萬聖節活動，巨型南瓜燈光秀與市集吸引大批民眾盛裝參與",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E9%AB%98%E9%9B%84%E8%90%AC%E8%81%96%E7%AF%80&serp_type=trends&trend_fbid=2023560668356217"
-    },
-    {
-      "title": "高雄市長選戰柯志恩賴瑞隆交鋒",
-      "description": "國民黨候選人柯志恩與民進黨候選人賴瑞隆同台，針對市政政見、預算編列與政績展開攻防",
-      "count": "3 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E6%9F%AF%E5%BF%97%E6%81%A9&serp_type=trends&trend_fbid=2543208726188117"
-    },
     {
       "title": "Mercari系統異常取消訂單",
       "description": "日本二手平台Mercari促銷時系統故障，導致大量訂單遭取消並衍生退款與退券問題",
       "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=Mercari&serp_type=trends&trend_fbid=1112568035096431"
+      "link": "https://www.threads.com/search?q=Mercari&serp_type=trends&trend_fbid=28671213852579136"
+    },
+    {
+      "title": "Ray信義區合體幻藍小熊",
+      "description": "創作者Ray於台北信義區直播時巧遇幻藍小熊，雙方現場驚喜合體拍攝舞蹈挑戰影片",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=Ray&serp_type=trends&trend_fbid=866290309873968"
+    },
+    {
+      "title": "新北林口後湖發生火警",
+      "description": "新北市林口後湖地區竄出明顯火勢，消防單位出動數十輛消防車與多個分隊支援灌救",
+      "count": "",
+      "link": "https://www.threads.com/search?q=%E6%9E%97%E5%8F%A3%E7%81%AB%E8%AD%A6&serp_type=trends&trend_fbid=1104290555853605"
+    },
+    {
+      "title": "英特爾財測疲弱股價重挫近30%",
+      "description": "受電腦市場需求疲軟與工廠停工衝擊，英特爾公布第四季財測後市值蒸發逾千億美元",
+      "count": "2 千則貼文",
+      "link": "https://www.threads.com/search?q=%E8%8B%B1%E7%89%B9%E7%88%BE&serp_type=trends&trend_fbid=988877750965762"
+    },
+    {
+      "title": "新市北極殿建廟193年首建醮",
+      "description": "台南新市福壽巷北極殿舉行建廟193年首次建醮，恭送天師遶境吸引大批信眾",
+      "count": "37 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%96%B0%E5%B8%82%E5%8C%97%E6%A5%B5%E6%AE%BF&serp_type=trends&trend_fbid=4646960838856394"
+    },
+    {
+      "title": "《我永遠愛你》互動成迷因寶庫",
+      "description": "電視劇《我永遠愛你》大膽情話成迷因，林煒斯文外型獲封「上古許光漢」",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%88%91%E6%B0%B8%E9%81%A0%E6%84%9B%E4%BD%A0&serp_type=trends&trend_fbid=1767000025427022"
+    },
+    {
+      "title": "柯志恩賴瑞隆同台交鋒",
+      "description": "高雄市長候選人柯志恩與賴瑞隆同台，針對公視預算及《財劃法》等議題展開攻防",
+      "count": "2 千則貼文",
+      "link": "https://www.threads.com/search?q=%E9%AB%98%E9%9B%84%E5%B8%82%E9%95%B7%E9%81%B8%E8%88%89&serp_type=trends&trend_fbid=1633056648265499"
+    },
+    {
+      "title": "臺北白晝之夜圓山登場湧人潮",
+      "description": "2026臺北白晝之夜於圓山登場，結合萬聖節與市集吸引大批人潮並實施管制",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E7%99%BD%E6%99%9D%E4%B9%8B%E5%A4%9C&serp_type=trends&trend_fbid=4498616633721503"
+    },
+    {
+      "title": "民眾發揮創意變裝慶萬聖節",
+      "description": "民眾換上各式造型前往台北信義區及高雄衛武營等地參與活動，街頭洋溢濃厚節慶氛圍",
+      "count": "8 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E8%90%AC%E8%81%96%E7%AF%80&serp_type=trends&trend_fbid=1852163009475246"
+    },
+    {
+      "title": "《傳說對決》舉辦十週年活動",
+      "description": "官方為《傳說對決》十週年籌辦光雕秀與演唱會，並提供稀世造型及點券等獎勵",
+      "count": "7 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%82%B3%E8%AA%AA%E5%B0%8D%E6%B1%BA&serp_type=trends&trend_fbid=2252260602006281"
+    },
+    {
+      "title": "Tangle扭扭樂掀購買熱潮",
+      "description": "民眾前往誠品與玩具反斗城搶購Tangle扭扭樂，並呼籲留意代購溢價",
+      "count": "156 則貼文",
+      "link": "https://www.threads.com/search?q=Tangle%E6%89%AD%E6%89%AD%E6%A8%82&serp_type=trends&trend_fbid=994776473700113"
     },
     {
       "title": "台灣同志遊行登場各界力挺平權",
@@ -44,52 +86,10 @@
       "link": "https://www.threads.com/search?q=%E8%94%A1%E5%BA%B7%E6%B0%B8&serp_type=trends&trend_fbid=1511630640786565"
     },
     {
-      "title": "林口傳出火警下山交通受阻",
-      "description": "林口地區傳出火警並有多輛消防車前往，民眾行經山區下山交通受阻",
-      "count": "",
-      "link": "https://www.threads.com/search?q=%E6%9E%97%E5%8F%A3%E7%81%AB%E8%AD%A6&serp_type=trends&trend_fbid=4272172223080535"
-    },
-    {
-      "title": "英特爾美股單日暴跌近三成",
-      "description": "Intel美股出現劇烈崩跌，單日跌幅近三成且市值大幅蒸發",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E8%8B%B1%E7%89%B9%E7%88%BE&serp_type=trends&trend_fbid=1595410051796442"
-    },
-    {
-      "title": "信義區萬聖節湧入變裝人潮",
-      "description": "台北信義區舉辦萬聖節活動與遊行，吸引大量變裝民眾與藝人前往徒步區過節",
-      "count": "796 則貼文",
-      "link": "https://www.threads.com/search?q=%E4%BF%A1%E7%BE%A9%E5%8D%80%E8%90%AC%E8%81%96%E7%AF%80&serp_type=trends&trend_fbid=1789233298969799"
-    },
-    {
       "title": "Pinkoi瘋設祭花博登場",
       "description": "現場集結逾530個海內外設計品牌，出示或加入Pinkoi會員可免費入場",
       "count": "1 千則貼文",
       "link": "https://www.threads.com/search?q=Pinkoi%20%E7%98%8B%E8%A8%AD%E7%A5%AD&serp_type=trends&trend_fbid=1857662589000368"
-    },
-    {
-      "title": "《末路兼職》全劇上線",
-      "description": "Netflix韓國驚悚影集《末路兼職》全劇8集正式上線，由李宰旭與高旻示等人主演",
-      "count": "152 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%9C%AB%E8%B7%AF%E5%85%BC%E8%81%B7&serp_type=trends&trend_fbid=1124419116834006"
-    },
-    {
-      "title": "B.A.P粉絲捍衛哨子應援",
-      "description": "粉絲強調B.A.P為哨子應援始祖並沿用逾十年，呼籲外界尊重其傳統",
-      "count": "6 千則貼文",
-      "link": "https://www.threads.com/search?q=B.A.P&serp_type=trends&trend_fbid=2454668861732301"
-    },
-    {
-      "title": "林煒年輕外貌獲稱上古許光漢",
-      "description": "演員林煒早年主演《花系列》片段重現，其俊俏外型被指神似許光漢",
-      "count": "3 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%9E%97%E7%85%92&serp_type=trends&trend_fbid=970203912345170"
-    },
-    {
-      "title": "新市北極殿舉辦建醮遶境大典",
-      "description": "台南新市福壽巷北極殿展開清醮與遶境祭典，徹夜活動湧入大量朝聖人潮",
-      "count": "37 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%96%B0%E5%B8%82%E5%8C%97%E6%A5%B5%E6%AE%BF&serp_type=trends&trend_fbid=1165352622818905"
     }
   ]
 }
