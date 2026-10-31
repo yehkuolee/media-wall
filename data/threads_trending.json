@@ -1,11 +1,17 @@
 {
-  "updated_at": "2026-11-01T06:05:15.791846+08:00",
+  "updated_at": "2026-11-01T07:05:15.488278+08:00",
   "topics": [
     {
-      "title": "信義商圈萬聖節湧入扮裝人潮",
-      "description": "萬聖節期間台北信義商圈湧現大量人潮，民眾發揮創意扮演殭屍與皮克敏等角色熱鬧慶祝",
-      "count": "426 則貼文",
-      "link": "https://www.threads.com/search?q=%E4%BF%A1%E7%BE%A9%E5%95%86%E5%9C%88&serp_type=trends&trend_fbid=1775510933561940"
+      "title": "民眾萬聖節創意變裝上街慶祝",
+      "description": "民眾在萬聖節換上壽司與殭屍等造型走上街頭，聚集在台北信義區等地熱鬧慶祝",
+      "count": "20 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E8%90%AC%E8%81%96%E7%AF%80&serp_type=trends&trend_fbid=3676697169150711"
+    },
+    {
+      "title": "圓山活動湧人潮北捷延長營運",
+      "description": "台北圓山萬聖活動與白晝之夜吸引大批人潮，北捷加開列車並延長營運至凌晨兩點",
+      "count": "656 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%9C%93%E5%B1%B1%E8%8A%B1%E5%8D%9A&serp_type=trends&trend_fbid=1392808636257456"
     },
     {
       "title": "高雄鳳山發生火警",
@@ -32,12 +38,6 @@
       "link": "https://www.threads.com/search?q=%E4%BE%86%E7%A6%8F%E9%9B%9E%E8%9B%8B%E7%B3%95&serp_type=trends&trend_fbid=1124779926699733"
     },
     {
-      "title": "白晝之夜於圓山花博登場",
-      "description": "台北白晝之夜適逢萬聖節吸引大量人潮，市長蔣萬安也現身圓山花博與民眾互動",
-      "count": "4 千則貼文",
-      "link": "https://www.threads.com/search?q=%E7%99%BD%E6%99%9D%E4%B9%8B%E5%A4%9C&serp_type=trends&trend_fbid=1778350160059088"
-    },
-    {
       "title": "沈伯洋參與辯論會發表政見",
       "description": "民進黨台北市長候選人沈伯洋參與電視辯論會，會後持續針對各項市政議題發表政見",
       "count": "23 萬則貼文",
@@ -46,7 +46,7 @@
     {
       "title": "頑童MJ116突襲宣傳演唱會",
       "description": "為了宣傳演唱會，嘻哈團體頑童MJ116無預警現身舞台帶來歌曲演出",
-      "count": "40 則貼文",
+      "count": "42 則貼文",
       "link": "https://www.threads.com/search?q=%E9%A0%91%E7%AB%A5MJ116&serp_type=trends&trend_fbid=1509788767871528"
     },
     {
@@ -80,16 +80,16 @@
       "link": "https://www.threads.com/search?q=Vaundy&serp_type=trends&trend_fbid=1826766738566958"
     },
     {
-      "title": "高雄萬聖節活動衛武營登場",
-      "description": "衛武營迎來高雄萬聖節變裝人潮，市長陳其邁穿著垃圾車造型服裝登台同歡",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E9%AB%98%E9%9B%84%E8%90%AC%E8%81%96%E7%AF%80&serp_type=trends&trend_fbid=1431964348452535"
-    },
-    {
       "title": "藤井風高雄國家體育場開唱",
       "description": "日本歌手藤井風在演出中驚喜播放走訪高雄果貿市場與公園的在地影片",
       "count": "1 萬則貼文",
       "link": "https://www.threads.com/search?q=%E8%97%A4%E4%BA%95%E9%A2%A8&serp_type=trends&trend_fbid=28673648262307075"
+    },
+    {
+      "title": "衛武營萬聖節活動湧現爆滿人潮",
+      "description": "高雄衛武營展出巨型南瓜燈光秀與變裝走秀，眾多民眾同樂擠爆周邊捷運站",
+      "count": "4 千則貼文",
+      "link": "https://www.threads.com/search?q=%E8%A1%9B%E6%AD%A6%E7%87%9F&serp_type=trends&trend_fbid=1437940317763387"
     }
   ]
 }
