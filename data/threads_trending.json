@@ -1,16 +1,22 @@
 {
-  "updated_at": "2026-11-03T05:00:28.934884+08:00",
+  "updated_at": "2026-11-03T05:05:17.616455+08:00",
   "topics": [
     {
       "title": "元智大學宿舍凌晨響起火警",
       "description": "元智大學宿舍於凌晨兩點突發火災警報，導致住宿學生半夜被驚醒且無法入睡",
-      "count": "327 則貼文",
+      "count": "325 則貼文",
       "link": "https://www.threads.com/search?q=%E5%85%83%E6%99%BA%E5%A4%A7%E5%AD%B8&serp_type=trends&trend_fbid=1856614378693817"
+    },
+    {
+      "title": "美佛州商務客機墜毀9人罹難",
+      "description": "商務客機失事前曾通報結冰與亂流，在佛州失控急墜致機上9人全數罹難",
+      "count": "66 則貼文",
+      "link": "https://www.threads.com/search?q=%E4%BD%9B%E5%B7%9E%E5%A2%9C%E6%A9%9F&serp_type=trends&trend_fbid=2336117283459019"
     },
     {
       "title": "國泰世華App與網銀異常",
       "description": "國泰世華銀行系統出現異常與維修狀況，導致部分用戶無法登入App及使用轉帳等線上服務",
-      "count": "373 則貼文",
+      "count": "372 則貼文",
       "link": "https://www.threads.com/search?q=%E5%9C%8B%E6%B3%B0%E4%B8%96%E8%8F%AF&serp_type=trends&trend_fbid=2343898862818685"
     },
     {
@@ -18,12 +24,6 @@
       "description": "南臺科大大一學生在校園周邊遭無照酒駕累犯撞擊肇逃，送醫搶救後傷重不治",
       "count": "",
       "link": "https://www.threads.com/search?q=%E5%8D%97%E8%87%BA%E7%A7%91%E5%A4%A7&serp_type=trends&trend_fbid=1159399713102311"
-    },
-    {
-      "title": "美國佛州私人飛機墜毀9死",
-      "description": "一架私人噴射機在佛州遇積冰與亂流後失控下墜起火，造成機上9人罹難",
-      "count": "346 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%A7%81%E4%BA%BA%E5%99%B4%E5%B0%84%E6%A9%9F&serp_type=trends&trend_fbid=1679496470258058"
     },
     {
       "title": "《新聞面對面》專訪沈伯洋",
@@ -52,7 +52,7 @@
     {
       "title": "大慶及永靖夜市接連傳鬥毆",
       "description": "大慶夜市與永靖夜市接連發生衝突，波及牛排攤位器具，警方獲報隨即到場處置",
-      "count": "314 則貼文",
+      "count": "306 則貼文",
       "link": "https://www.threads.com/search?q=%E5%A4%9C%E5%B8%82%E9%AC%A5%E6%AF%86&serp_type=trends&trend_fbid=1121023580314067"
     },
     {
