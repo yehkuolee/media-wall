@@ -1,16 +1,58 @@
 {
-  "updated_at": "2026-11-03T02:05:17.145191+08:00",
+  "updated_at": "2026-11-03T03:05:13.806344+08:00",
   "topics": [
+    {
+      "title": "佛州私人噴射機墜毀9人罹難",
+      "description": "一架飛往巴哈馬的私人噴射機在佛州遭遇積冰後墜毀，機上9人全數罹難",
+      "count": "320 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%A7%81%E4%BA%BA%E5%99%B4%E5%B0%84%E6%A9%9F&serp_type=trends&trend_fbid=2138248830113183"
+    },
+    {
+      "title": "成功國宅里長發文宣挺羅智強",
+      "description": "台北市大安區成功國宅里長發送文宣支持立委羅智強，並傳出驅趕在社區發送飄帶的店家",
+      "count": "2 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%88%90%E5%8A%9F%E5%9C%8B%E5%AE%85%E9%87%8C%E9%95%B7&serp_type=trends&trend_fbid=1740790583656372"
+    },
+    {
+      "title": "南臺科大學生遭酒駕撞亡",
+      "description": "南臺科大男學生在校外遭無照酒駕累犯撞擊身亡，肇事駕駛遭法院裁定羈押",
+      "count": "",
+      "link": "https://www.threads.com/search?q=%E5%8D%97%E8%87%BA%E7%A7%91%E5%A4%A7&serp_type=trends&trend_fbid=1427354779599069"
+    },
+    {
+      "title": "元智大學宿舍凌晨響火警警報",
+      "description": "凌晨兩點左右元智大學宿舍廣播火警，大批住宿生緊急疏散至大樓外",
+      "count": "290 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%85%83%E6%99%BA%E5%A4%A7%E5%AD%B8&serp_type=trends&trend_fbid=1654203272721617"
+    },
+    {
+      "title": "大慶及永靖夜市接連傳鬥毆",
+      "description": "大慶夜市與永靖夜市接連發生衝突，波及牛排攤位器具，警方獲報隨即到場處置",
+      "count": "325 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%A4%9C%E5%B8%82%E9%AC%A5%E6%AF%86&serp_type=trends&trend_fbid=1121023580314067"
+    },
+    {
+      "title": "沈伯洋接受謝震武專訪",
+      "description": "謝震武在《新聞面對面》專訪沈伯洋，兩人針對選戰與市政等多項議題交換意見",
+      "count": "3 千則貼文",
+      "link": "https://www.threads.com/search?q=%E8%AC%9D%E9%9C%87%E6%AD%A6&serp_type=trends&trend_fbid=1065449806547946"
+    },
+    {
+      "title": "91APP爆資安事件影響百萬人",
+      "description": "電商系統商91APP發生資安事件波及近480萬人，官方致歉並開放受影響用戶申請補償",
+      "count": "337 則貼文",
+      "link": "https://www.threads.com/search?q=91APP&serp_type=trends&trend_fbid=1685850909990820"
+    },
     {
       "title": "彰化麥當勞顧客登門鞠躬道歉",
       "description": "在彰化麥當勞斥責店員的女顧客攜帶禮盒前往門市鞠躬，為情緒失控與不良示範致歉",
-      "count": "339 則貼文",
+      "count": "337 則貼文",
       "link": "https://www.threads.com/search?q=%E5%BD%B0%E5%8C%96%E9%BA%A5%E7%95%B6%E5%8B%9E&serp_type=trends&trend_fbid=1052538721179716"
     },
     {
       "title": "國泰網銀與App連線異常",
       "description": "國泰世華系統跳出異常提示並自動關閉，造成用戶無法順利登入及轉帳",
-      "count": "352 則貼文",
+      "count": "356 則貼文",
       "link": "https://www.threads.com/search?q=%E5%9C%8B%E6%B3%B0%E4%B8%96%E8%8F%AF&serp_type=trends&trend_fbid=1442609340663841"
     },
     {
@@ -22,7 +64,7 @@
     {
       "title": "7-11賣貨便限量免運券秒殺",
       "description": "7-11賣貨便推出限量免運券，開放領取即遭秒殺且系統一度當機",
-      "count": "186 則貼文",
+      "count": "160 則貼文",
       "link": "https://www.threads.com/search?q=%E8%B3%A3%E8%B2%A8%E4%BE%BF%E5%85%8D%E9%81%8B%E5%88%B8&serp_type=trends&trend_fbid=2517872552039560"
     },
     {
@@ -32,64 +74,22 @@
       "link": "https://www.threads.com/search?q=%E5%BE%90%E5%B7%A7%E8%8A%AF&serp_type=trends&trend_fbid=1643939984413142"
     },
     {
+      "title": "寶林案倖存者反駁蔣萬安",
+      "description": "寶林茶室食物中毒案唯一重症倖存者指出市府採證不足且業者脫產，至今仍未獲得賠償",
+      "count": "5 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%AF%B6%E6%9E%97%E8%8C%B6%E5%AE%A4&serp_type=trends&trend_fbid=1859001781937099"
+    },
+    {
       "title": "皮克敏路跑2027年登台",
       "description": "2027年3月皮克敏路跑將於高雄、台中及新北登場，路線全長3.5公里",
-      "count": "719 則貼文",
+      "count": "726 則貼文",
       "link": "https://www.threads.com/search?q=%E7%9A%AE%E5%85%8B%E6%95%8F%E8%B7%AF%E8%B7%91&serp_type=trends&trend_fbid=2295295344593283"
-    },
-    {
-      "title": "南台科大學生遭酒駕撞亡",
-      "description": "台南永康發生酒駕肇逃案，南台科大李姓學生遭廖男駕車撞擊送醫不治",
-      "count": "942 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8D%97%E5%8F%B0%E7%A7%91%E5%A4%A7&serp_type=trends&trend_fbid=996740546811347"
-    },
-    {
-      "title": "美佛州私人飛機墜毀9人罹難",
-      "description": "原定飛往巴哈馬的里爾60型私人噴射機在佛州失控墜毀，機上9人全數罹難",
-      "count": "61 則貼文",
-      "link": "https://www.threads.com/search?q=%E4%BD%9B%E5%B7%9E%E5%A2%9C%E6%A9%9F&serp_type=trends&trend_fbid=959632890200070"
     },
     {
       "title": "Jason Mraz座位混亂",
       "description": "昕澤文創主辦Jason Mraz台北演出，因座位標示不清致觀眾無位可坐",
-      "count": "919 則貼文",
+      "count": "943 則貼文",
       "link": "https://www.threads.com/search?q=Jason%20Mraz&serp_type=trends&trend_fbid=1638980837933419"
-    },
-    {
-      "title": "成功國宅里長驅趕發小物店家",
-      "description": "台北市成功國宅里長遭指驅趕店家並發放立委羅智強傳單",
-      "count": "4 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%88%90%E5%8A%9F%E5%9C%8B%E5%AE%85&serp_type=trends&trend_fbid=1521165449837347"
-    },
-    {
-      "title": "00878配息1.25元創新高",
-      "description": "國泰永續高股息宣布每單位配息1.25元創歷年新高，預計於11月17日除息",
-      "count": "981 則貼文",
-      "link": "https://www.threads.com/search?q=00878&serp_type=trends&trend_fbid=1520023350180137"
-    },
-    {
-      "title": "台指期夜盤急拉大漲",
-      "description": "受地緣政治降溫樂觀情緒帶動，台指期夜盤急拉大漲，美股期指同步走揚",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4&serp_type=trends&trend_fbid=977355841597456"
-    },
-    {
-      "title": "永靖夜市爆發群體鬥毆",
-      "description": "永靖夜市牛排攤在群毆中遭砸桌波及，警方獲報後迅速趕赴現場處置",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B0%B8%E9%9D%96%E5%A4%9C%E5%B8%82&serp_type=trends&trend_fbid=1167177769073824"
-    },
-    {
-      "title": "網紅呂芊X與代碼遭大量轉發",
-      "description": "提及台灣抖音網紅呂芊X與代碼1102的訊息，短時間內遭到頻繁複製與轉發",
-      "count": "45 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%91%82%E8%8A%8AX&serp_type=trends&trend_fbid=1066811699747487"
-    },
-    {
-      "title": "復古軟體延遲通重現經典介面",
-      "description": "復古通訊軟體延遲通重現即時通介面，吸引眾多使用者下載並號召互加好友",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%BB%B6%E9%81%B2%E9%80%9A&serp_type=trends&trend_fbid=2512512895894576"
     }
   ]
 }
