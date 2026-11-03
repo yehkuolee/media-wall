@@ -1,23 +1,65 @@
 {
-  "updated_at": "2026-11-03T07:05:15.894923+08:00",
+  "updated_at": "2026-11-03T08:05:17.501311+08:00",
   "topics": [
     {
-      "title": "美商務機佛州墜毀9人罹難",
-      "description": "載有9人的里爾60型商務機在佛州墜毀，曾回報結冰與亂流，機上人員全數罹難",
-      "count": "75 則貼文",
-      "link": "https://www.threads.com/search?q=%E4%BD%9B%E5%B7%9E%E5%A2%9C%E6%A9%9F&serp_type=trends&trend_fbid=1174211951614542"
+      "title": "延遲通登下載排行榜冠軍",
+      "description": "復刻經典即時通與MSN介面的懷舊軟體延遲通，吸引大量民眾下載體驗",
+      "count": "2 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%BB%B6%E9%81%B2%E9%80%9A&serp_type=trends&trend_fbid=1906600620752219"
+    },
+    {
+      "title": "永靖夜市爆發群眾砸椅衝突",
+      "description": "多名男子在彰化永靖夜市持塑膠椅互砸波及攤位，警方獲報後趕抵現場",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B0%B8%E9%9D%96%E5%A4%9C%E5%B8%82&serp_type=trends&trend_fbid=1628270828793929"
+    },
+    {
+      "title": "伊朗授權談判台指期夜盤飆漲",
+      "description": "伊朗最高領袖授權談判使油價走低，美股期貨與台指期夜盤同步急拉大漲",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4&serp_type=trends&trend_fbid=1422195563418896"
     },
     {
       "title": "瑞芳民宅夜間火警已撲滅",
       "description": "新北市瑞芳區民宅發生火警，消防人員出動馳援確認受困情形並撲滅火勢",
       "count": "",
-      "link": "https://www.threads.com/search?q=%E7%91%9E%E8%8A%B3%E7%81%AB%E8%AD%A6&serp_type=trends&trend_fbid=1150475830650960"
+      "link": "https://www.threads.com/search?q=%E7%91%9E%E8%8A%B3%E7%81%AB%E8%AD%A6&serp_type=trends&trend_fbid=1449955017271176"
     },
     {
-      "title": "台指期夜盤直線急拉大漲",
-      "description": "伊朗授權談判使地緣局勢緩和，美股期指走揚帶動台指期夜盤直線急拉大漲",
+      "title": "佛州私人噴射機墜毀9人罹難",
+      "description": "一架原定飛往巴哈馬的私人噴射機在佛州墜毀起火，機上9人全數罹難",
+      "count": "81 則貼文",
+      "link": "https://www.threads.com/search?q=%E4%BD%9B%E5%B7%9E%E7%A9%BA%E9%9B%A3&serp_type=trends&trend_fbid=1445951950844225"
+    },
+    {
+      "title": "酒駕撞死南臺科大生廖男遭羈押",
+      "description": "台南永康發生無照酒駕肇逃致死案，涉案廖姓累犯遭地院裁定羈押",
+      "count": "",
+      "link": "https://www.threads.com/search?q=%E5%8D%97%E8%87%BA%E7%A7%91%E5%A4%A7&serp_type=trends&trend_fbid=1912188019913931"
+    },
+    {
+      "title": "T1世界大賽八強將對決KC",
+      "description": "《英雄聯盟》世界大賽進入淘汰賽，衛冕軍T1將在八強對決KC並面臨晉級考驗",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=T1&serp_type=trends&trend_fbid=2746358529113007"
+    },
+    {
+      "title": "香港麥當勞推雙層板燒雞腿堡",
+      "description": "香港麥當勞推出含41克蛋白質的雙層板燒雞腿堡，指定套餐附贈健身房通行證",
+      "count": "434 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%A6%99%E6%B8%AF%E9%BA%A5%E7%95%B6%E5%8B%9E&serp_type=trends&trend_fbid=2158171981453381"
+    },
+    {
+      "title": "抹茶拿鐵加濃縮咖啡獲好評",
+      "description": "民眾嘗試將7-Eleven抹茶拿鐵加入濃縮咖啡，稱讚風味佳且有特價",
       "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4&serp_type=trends&trend_fbid=1809749553272587"
+      "link": "https://www.threads.com/search?q=%E6%8A%B9%E8%8C%B6%E6%8B%BF%E9%90%B5&serp_type=trends&trend_fbid=1481143817214358"
+    },
+    {
+      "title": "成功國宅發洋流飄帶遭驅趕",
+      "description": "台北市成功國宅店家發放洋流飄帶遭里長驅趕，支持者呼籲11月28日踴躍投票",
+      "count": "4 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%88%90%E5%8A%9F%E5%9C%8B%E5%AE%85&serp_type=trends&trend_fbid=1111405278524706"
     },
     {
       "title": "國泰世華網銀與App當機",
@@ -26,15 +68,9 @@
       "link": "https://www.threads.com/search?q=%E5%9C%8B%E6%B3%B0%E4%B8%96%E8%8F%AF&serp_type=trends&trend_fbid=1803256917545776"
     },
     {
-      "title": "南臺科大男大生遭酒駕撞亡",
-      "description": "南臺科大學生深夜在校外遭酒駕撞擊身亡，肇事逃逸駕駛已被警方逮捕",
-      "count": "",
-      "link": "https://www.threads.com/search?q=%E5%8D%97%E8%87%BA%E7%A7%91%E5%A4%A7&serp_type=trends&trend_fbid=1829810371773710"
-    },
-    {
       "title": "元智大學宿舍凌晨響起火警",
       "description": "元智大學宿舍於凌晨兩點突發火災警報，導致住宿學生半夜被驚醒且無法入睡",
-      "count": "342 則貼文",
+      "count": "358 則貼文",
       "link": "https://www.threads.com/search?q=%E5%85%83%E6%99%BA%E5%A4%A7%E5%AD%B8&serp_type=trends&trend_fbid=1856614378693817"
     },
     {
@@ -44,52 +80,16 @@
       "link": "https://www.threads.com/search?q=%E6%96%B0%E8%81%9E%E9%9D%A2%E5%B0%8D%E9%9D%A2&serp_type=trends&trend_fbid=2512021639289718"
     },
     {
-      "title": "女客斥責麥當勞店員後登門致歉",
-      "description": "彰化員林一名女顧客因玉米濃湯問題斥責麥當勞店員，事後帶著禮盒親自前往門市致歉",
-      "count": "8 千則貼文",
-      "link": "https://www.threads.com/search?q=%E9%BA%A5%E7%95%B6%E5%8B%9E&serp_type=trends&trend_fbid=2588016678331160"
-    },
-    {
       "title": "7-11賣貨便限量免運券秒殺",
       "description": "7-11賣貨便推出限量免運券，開放領取即遭秒殺且系統一度當機",
-      "count": "156 則貼文",
+      "count": "152 則貼文",
       "link": "https://www.threads.com/search?q=%E8%B3%A3%E8%B2%A8%E4%BE%BF%E5%85%8D%E9%81%8B%E5%88%B8&serp_type=trends&trend_fbid=1397786735464282"
-    },
-    {
-      "title": "成功國宅里長發文宣挺羅智強",
-      "description": "台北市大安區成功國宅里長發送文宣支持立委羅智強，並傳出驅趕在社區發送飄帶的店家",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%88%90%E5%8A%9F%E5%9C%8B%E5%AE%85%E9%87%8C%E9%95%B7&serp_type=trends&trend_fbid=1740790583656372"
-    },
-    {
-      "title": "大慶及永靖夜市接連傳鬥毆",
-      "description": "大慶夜市與永靖夜市接連發生衝突，波及牛排攤位器具，警方獲報隨即到場處置",
-      "count": "288 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%A4%9C%E5%B8%82%E9%AC%A5%E6%AF%86&serp_type=trends&trend_fbid=1121023580314067"
     },
     {
       "title": "91APP爆資安事件影響百萬人",
       "description": "電商系統商91APP發生資安事件波及近480萬人，官方致歉並開放受影響用戶申請補償",
-      "count": "342 則貼文",
+      "count": "353 則貼文",
       "link": "https://www.threads.com/search?q=91APP&serp_type=trends&trend_fbid=1685850909990820"
-    },
-    {
-      "title": "李四川造勢活動遭貼滿貼紙",
-      "description": "國民黨新北市長候選人李四川造勢時身上被貼滿貼紙，部分民眾關注其年齡與身體狀態",
-      "count": "4 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%9D%8E%E5%9B%9B%E5%B7%9D&serp_type=trends&trend_fbid=1455619016513961"
-    },
-    {
-      "title": "徐巧芯重返Threads發文",
-      "description": "立委徐巧芯重啟發文，部分民眾呼籲封鎖其帳號，亦有支持者表達歡迎",
-      "count": "6 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%BE%90%E5%B7%A7%E8%8A%AF&serp_type=trends&trend_fbid=1643939984413142"
-    },
-    {
-      "title": "寶林案倖存者反駁蔣萬安",
-      "description": "寶林茶室食物中毒案唯一重症倖存者指出市府採證不足且業者脫產，至今仍未獲得賠償",
-      "count": "5 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%AF%B6%E6%9E%97%E8%8C%B6%E5%AE%A4&serp_type=trends&trend_fbid=1859001781937099"
     }
   ]
 }
