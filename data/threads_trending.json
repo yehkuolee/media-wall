@@ -1,35 +1,83 @@
 {
-  "updated_at": "2026-11-04T07:05:17.940693+08:00",
+  "updated_at": "2026-11-04T08:05:15.576023+08:00",
   "topics": [
     {
-      "title": "湖口工業區工廠火警爆炸",
-      "description": "新竹縣湖口工廠凌晨起火伴隨爆炸聲，消防人員已到場搶救並籲居民緊閉門窗",
-      "count": "459 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B9%96%E5%8F%A3%E5%B7%A5%E6%A5%AD%E5%8D%80&serp_type=trends&trend_fbid=1461718496111576"
+      "title": "新竹湖口工廠凌晨火警爆炸",
+      "description": "新竹湖口工業區工廠凌晨起火爆炸伴隨濃煙，周邊震動強烈並波及住戶門窗",
+      "count": "501 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B9%96%E5%8F%A3%E5%B7%A5%E6%A5%AD%E5%8D%80&serp_type=trends&trend_fbid=2177320272996828"
     },
     {
-      "title": "美國期中選舉登場檢驗川普執政",
-      "description": "兩黨競爭參眾兩院主導權，此次選舉結果成為檢驗川普重返執政兩年的關鍵指標",
+      "title": "美國期中選舉登場陸續開票",
+      "description": "隨著美國期中選舉開票，資金回流半導體與AI類股，帶動費半指數及台積電ADR走揚",
       "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E7%BE%8E%E5%9C%8B%E6%9C%9F%E4%B8%AD%E9%81%B8%E8%88%89&serp_type=trends&trend_fbid=1768927547499446"
+      "link": "https://www.threads.com/search?q=%E7%BE%8E%E5%9C%8B%E6%9C%9F%E4%B8%AD%E9%81%B8%E8%88%89&serp_type=trends&trend_fbid=1097313709600390"
     },
     {
-      "title": "台指期夜盤大漲逾600點",
-      "description": "台股日間重挫逾1600點後，台指期夜盤受美股科技股帶動強勢反彈",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4&serp_type=trends&trend_fbid=1720740772812683"
+      "title": "台股期貨夜盤探底後強彈數百點",
+      "description": "伴隨融資餘額大減與外資動向變化，台股期貨夜盤探底後強勁反彈數百點",
+      "count": "232 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%9C%9F%E8%B2%A8%E5%A4%9C%E7%9B%A4&serp_type=trends&trend_fbid=2689157928211817"
     },
     {
-      "title": "aespa與小狗波妞親密互動",
-      "description": "Karina等成員在練習幕後親吻撫摸小狗波妞，展現奔跑與飛機耳萌樣",
+      "title": "7-ELEVEN抹茶拿鐵加濃縮",
+      "description": "消費者嘗試7-ELEVEN抹茶拿鐵加濃縮咖啡，有人盛讚風味極佳，也有人認為不如預期",
       "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=aespa&serp_type=trends&trend_fbid=1066946433015336"
+      "link": "https://www.threads.com/search?q=%E6%8A%B9%E8%8C%B6%E6%8B%BF%E9%90%B5&serp_type=trends&trend_fbid=1570613908206403"
     },
     {
-      "title": "立委徐巧芯帳號遭發起封鎖",
-      "description": "許多人封鎖立委徐巧芯帳號後，個人動態版面變得乾淨且假帳號大幅減少",
+      "title": "張俊傑涉共諜案偷渡出境",
+      "description": "高金素梅前主任張俊傑涉共諜案棄保潛逃，10月28日自基隆正濱漁港搭船出境",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%BC%B5%E4%BF%8A%E5%82%91&serp_type=trends&trend_fbid=2818936851833243"
+    },
+    {
+      "title": "曼聯3比2逆轉擊敗羅馬",
+      "description": "曼聯在歐冠落後兩球下連追三球，以3比2逆轉羅馬終結九場不勝",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%9B%BC%E8%81%AF&serp_type=trends&trend_fbid=1110503158285578"
+    },
+    {
+      "title": "麥當勞推酪梨醬滿福堡",
+      "description": "麥當勞推出期間限定酪梨醬滿福系列早餐，吸引許多民眾清晨前往門市嚐鮮",
+      "count": "483 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%85%AA%E6%A2%A8%E6%BB%BF%E7%A6%8F%E5%A0%A1&serp_type=trends&trend_fbid=1108748208831704"
+    },
+    {
+      "title": "Toyz發文「報數」掀跟風熱潮",
+      "description": "Toyz發布「報數」二字吸引數萬人按讚，並掀起網友發文響應的熱潮",
       "count": "4 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%BE%90%E5%B7%A7%E8%8A%AF&serp_type=trends&trend_fbid=1128012449984683"
+      "link": "https://www.threads.com/search?q=Toyz&serp_type=trends&trend_fbid=1453962816946299"
+    },
+    {
+      "title": "劉知珉與隊友愛犬親密互動",
+      "description": "aespa成員劉知珉分享與Winter寵物犬波妞親吻及咬吸管互動的畫面",
+      "count": "268 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8A%89%E7%9F%A5%E7%8F%89&serp_type=trends&trend_fbid=1683441343197988"
+    },
+    {
+      "title": "虐待柴犬影片流傳後迅速下架",
+      "description": "一段虐待柴犬的影片在五分鐘內遭下架，眾人呼籲追查施虐者並譴責其行為",
+      "count": "",
+      "link": "https://www.threads.com/search?q=%E8%99%90%E5%BE%85%E6%9F%B4%E7%8A%AC&serp_type=trends&trend_fbid=2431315651022750"
+    },
+    {
+      "title": "中華郵政首度聯名寶可夢",
+      "description": "全台6間主題郵局亮相，中華郵政開放7款寶可夢商品預購並將發行限量郵票",
+      "count": "516 則貼文",
+      "link": "https://www.threads.com/search?q=%E4%B8%AD%E8%8F%AF%E9%83%B5%E6%94%BF&serp_type=trends&trend_fbid=1597472509088501"
+    },
+    {
+      "title": "《再婚皇后》Disney+上線",
+      "description": "韓劇《再婚皇后》於Disney+提前公開前四集，由申敏兒與朱智勛等人主演",
+      "count": "526 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%86%8D%E5%A9%9A%E7%9A%87%E5%90%8E&serp_type=trends&trend_fbid=1479181934060314"
+    },
+    {
+      "title": "民眾封鎖立委羅智強徐巧芯",
+      "description": "為減少特定訊息擴散，民眾相繼封鎖與檢舉立委羅智強及徐巧芯等政治人物",
+      "count": "260 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%BE%85%E6%99%BA%E5%BC%B7%20%E5%BE%90%E5%B7%A7%E8%8A%AF&serp_type=trends&trend_fbid=1682522550141388"
     },
     {
       "title": "沈春華專訪蔣萬安談市政",
@@ -40,56 +88,8 @@
     {
       "title": "美佛州商務機墜毀9人罹難",
       "description": "一架私人商務機在美國佛州遭遇天候異常急墜，機上9人全數罹難",
-      "count": "82 則貼文",
+      "count": "75 則貼文",
       "link": "https://www.threads.com/search?q=%E4%BD%9B%E5%B7%9E%E5%A2%9C%E6%A9%9F&serp_type=trends&trend_fbid=29215386418072692"
-    },
-    {
-      "title": "《愛在山林間》第三季完結",
-      "description": "Netflix戀愛節目《愛在山林間》第三季完結，成熟世代配對故事令觀眾感動",
-      "count": "218 則貼文",
-      "link": "https://www.threads.com/search?q=%E3%80%8A%E6%84%9B%E5%9C%A8%E5%B1%B1%E6%9E%97%E9%96%93%E3%80%8B&serp_type=trends&trend_fbid=1970131517293496"
-    },
-    {
-      "title": "民眾發起行動聲援受害犬旺旺",
-      "description": "廣東揭陽受害犬旺旺獲民眾發起悼念行動，在香港等地發放小物呼籲善待動物",
-      "count": "4 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%97%BA%E6%97%BA&serp_type=trends&trend_fbid=2140333686567458"
-    },
-    {
-      "title": "宜蘭近海發生規模4.5地震",
-      "description": "宜蘭近海3日深夜發生規模4.5極淺層地震，最大震度4級且北部有感",
-      "count": "98 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%AE%9C%E8%98%AD%E5%9C%B0%E9%9C%87&serp_type=trends&trend_fbid=2375774106508471"
-    },
-    {
-      "title": "中華郵政推寶可夢聯名商品",
-      "description": "中華郵政首度推出寶可夢聯名郵票與周邊，預購開跑並設6間主題郵局",
-      "count": "510 則貼文",
-      "link": "https://www.threads.com/search?q=%E4%B8%AD%E8%8F%AF%E9%83%B5%E6%94%BF&serp_type=trends&trend_fbid=1701651181389738"
-    },
-    {
-      "title": "永豐網銀異常誤轉逾4000萬",
-      "description": "永豐銀行因網銀系統異常導致419名客戶遭誤轉逾4000萬元，目前款項已全數返還",
-      "count": "3 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B0%B8%E8%B1%90%E9%8A%80%E8%A1%8C&serp_type=trends&trend_fbid=2458611197875747"
-    },
-    {
-      "title": "德米格爾賽場衝撞送醫不治",
-      "description": "特內里費前鋒德米格爾在比賽中與對方門將相撞昏迷，送醫搶救無效享年30歲",
-      "count": "53 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%BE%B7%E7%B1%B3%E6%A0%BC%E7%88%BE&serp_type=trends&trend_fbid=2983893098643700"
-    },
-    {
-      "title": "《嫁金釵》迎來大結局",
-      "description": "古裝劇《嫁金釵》迎來大結局，主演田曦薇詮釋魏嬈等角色的演技表現獲觀眾讚賞",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%AB%81%E9%87%91%E9%87%B5&serp_type=trends&trend_fbid=1792236092063924"
-    },
-    {
-      "title": "沈伯洋現身《11點熱吵店》",
-      "description": "沈伯洋在沈玉琳主持的節目搜包環節中分享攜帶已故母親絲巾的故事",
-      "count": "212 則貼文",
-      "link": "https://www.threads.com/search?q=11%E9%BB%9E%E7%86%B1%E5%90%B5%E5%BA%97&serp_type=trends&trend_fbid=1708733143929747"
     }
   ]
 }
