@@ -1275,4 +1275,5 @@ def main():
     """, unsafe_allow_html=True)
 
 
-main()
+if __name__ == "__main__":  # streamlit run 時 __name__ 是 __main__；找哏 Agent import 時不跑畫面
+    main()
