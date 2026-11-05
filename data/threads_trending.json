@@ -1,6 +1,18 @@
 {
-  "updated_at": "2026-11-06T03:05:13.261514+08:00",
+  "updated_at": "2026-11-06T04:05:16.431900+08:00",
   "topics": [
+    {
+      "title": "台股指數單日重挫逾千點",
+      "description": "受美股科技股大跌衝擊，台股加權指數單日重挫逾千點且期指夜盤跌破四萬點",
+      "count": "5 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E8%82%A1&serp_type=trends&trend_fbid=1186395273810635"
+    },
+    {
+      "title": "桃園金沙酒店外傳槍響",
+      "description": "桃園金沙酒店外傳出爭執與疑似槍聲，多輛警車趕抵現場開槍嚇阻控制局勢",
+      "count": "85 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%87%91%E6%B2%99%E9%85%92%E5%BA%97&serp_type=trends&trend_fbid=1085989811121148"
+    },
     {
       "title": "王子璇在節目提及寫序往事",
       "description": "王子璇參與綜藝節目《後會友期》，在對談中回顧八年前為文吉兒寫書序的過往",
@@ -8,22 +20,10 @@
       "link": "https://www.threads.com/search?q=%E7%8E%8B%E5%AD%90%E7%92%87&serp_type=trends&trend_fbid=2159332078306383"
     },
     {
-      "title": "台指期夜盤跌逾千點失守4萬點",
-      "description": "受美股重挫影響，台指期夜盤大跌逾千點並失守4萬點大關",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4&serp_type=trends&trend_fbid=2282718328957924"
-    },
-    {
       "title": "美民主黨籲暫停先進AI開發",
       "description": "美國民主黨議員提案禁止人工超級智能並暫停開發，違規者最重可處20年監禁與解散企業",
       "count": "1 千則貼文",
       "link": "https://www.threads.com/search?q=AI%E7%9B%A3%E7%AE%A1&serp_type=trends&trend_fbid=4280635078894580"
-    },
-    {
-      "title": "台股劇烈震盪外資擴大賣超",
-      "description": "台股面臨大幅下跌且外資頻繁賣超千億，金管會密切關注國際市場變化",
-      "count": "5 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E8%82%A1&serp_type=trends&trend_fbid=1814134996492284"
     },
     {
       "title": "沈伯洋蘇巧慧登《女人我最大》",
@@ -34,7 +34,7 @@
     {
       "title": "郭哲榮公開1.5億元對帳單",
       "description": "面對台股波動，分析師郭哲榮公開1.5億元元大台灣50對帳單並呼籲國安基金進場",
-      "count": "369 則貼文",
+      "count": "376 則貼文",
       "link": "https://www.threads.com/search?q=%E9%83%AD%E5%93%B2%E6%A6%AE&serp_type=trends&trend_fbid=1690997439266841"
     },
     {
@@ -48,12 +48,6 @@
       "description": "台北市長候選人沈伯洋拜會前議長陳健治，請益市政與府會溝通協調經驗",
       "count": "9 萬則貼文",
       "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=2323299511763080"
-    },
-    {
-      "title": "桃園金沙酒店外傳槍響與鬥毆",
-      "description": "桃園金沙酒店外爆發爭吵鬥毆並傳槍聲，多名員警與警車隨即趕往現場處置",
-      "count": "76 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%87%91%E6%B2%99%E9%85%92%E5%BA%97&serp_type=trends&trend_fbid=1458226813135415"
     },
     {
       "title": "大園正隆造紙廠火警獲控制",
@@ -82,14 +76,20 @@
     {
       "title": "韓劇《再婚皇后》串流上線",
       "description": "申敏兒與李鍾碩主演的韓劇《再婚皇后》上線，宮廷場景與選角獲觀眾喜愛",
-      "count": "981 則貼文",
+      "count": "978 則貼文",
       "link": "https://www.threads.com/search?q=%E5%86%8D%E5%A9%9A%E7%9A%87%E5%90%8E&serp_type=trends&trend_fbid=1686737939681142"
     },
     {
       "title": "黃之鋒遭判處10年監禁",
       "description": "黃之鋒涉勾結外國勢力案遭香港高院判刑10年，預計服刑至2036年",
-      "count": "6 千則貼文",
+      "count": "7 千則貼文",
       "link": "https://www.threads.com/search?q=%E9%BB%83%E4%B9%8B%E9%8B%92&serp_type=trends&trend_fbid=1902263351154034"
+    },
+    {
+      "title": "《FX戰士久留美》開播股市連跌",
+      "description": "動畫《FX戰士久留美》開播適逢股市連跌，劇中寫實的投資失利情節令許多股民深感共鳴",
+      "count": "322 則貼文",
+      "link": "https://www.threads.com/search?q=FX%E6%88%B0%E5%A3%AB%E4%B9%85%E7%95%99%E7%BE%8E&serp_type=trends&trend_fbid=1842828210229825"
     }
   ]
 }
