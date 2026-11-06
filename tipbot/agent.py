@@ -700,13 +700,51 @@ def members_text() -> str:
     return "\n".join(out)[:4900]
 
 
+# ── 發問紀錄：每則私訊、群組裡的指令存 state/asks.jsonl，管理者傳「紀錄」「紀錄 名字」查看 ──
+
+def log_ask(ev: dict, text: str, cmd: str | None):
+    src = ev.get("source", {})
+    if src.get("type") != "user" and not cmd:
+        return  # 群組閒聊不記
+    rec = {"t": now().isoformat(timespec="seconds"), "uid": src.get("userId", ""),
+           "src": src.get("type"), "text": text[:200], "cmd": cmd or "help"}
+    with _members_lock, open(STATE / "asks.jsonl", "a") as f:
+        f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+
+
+def asks_text(who: str = "") -> str:
+    try:
+        lines = (STATE / "asks.jsonl").read_text().splitlines()
+    except FileNotFoundError:
+        return "還沒有發問紀錄"
+    mem = _read("members.json", {})
+    rows = []
+    for ln in lines:
+        r = json.loads(ln)
+        name = mem.get(r["uid"], {}).get("name") or "（未知名稱）"
+        if not who or who in name:
+            rows.append((r, name))
+    if not rows:
+        return f"找不到「{who}」的發問紀錄"
+    out = [f"📝 發問紀錄{'：' + who if who else ''}（共 {len(rows)} 則，列最近 50 則）"]
+    for r, name in rows[-50:][::-1]:
+        grp = "〔群組〕" if r["src"] != "user" else ""
+        out.append(f"{_md(r['t'])} {name}{grp}：{r['text']}")
+    if not who:
+        out.append("看某人：傳「紀錄 名字」")
+    return "\n".join(out)[:4900]
+
+
 def handle_event(ev: dict):
     text = ev.get("message", {}).get("text", "").strip() if ev.get("type") == "message" else ""
     try:
         _handle_event(ev)
     finally:
         try:
-            track_member(ev, parse_cmd(text, ev.get("source", {}).get("type") == "user") if text else None)
+            cmd = parse_cmd(text, ev.get("source", {}).get("type") == "user") if text else None
+            track_member(ev, cmd)
+            if text:
+                log_ask(ev, text, cmd)
         except Exception:
             log.warning("記錄使用者失敗\n%s", traceback.format_exc())
 
@@ -725,6 +763,9 @@ def _handle_event(ev: dict):
     text = ev["message"]["text"].strip()
     if text == "名單" and src.get("type") == "user" and uid == _read("owner.json", {}).get("userId"):
         return line_api("reply", {"replyToken": ev["replyToken"], "messages": [{"type": "text", "text": members_text()}]})
+    if text.split()[:1] == ["紀錄"] and src.get("type") == "user" and uid == _read("owner.json", {}).get("userId"):
+        return line_api("reply", {"replyToken": ev["replyToken"],
+                                  "messages": [{"type": "text", "text": asks_text(text[2:].strip())}]})
     cmd = parse_cmd(text, loose=src.get("type") == "user")
     if not cmd:
         if src.get("type") != "user":
