@@ -440,11 +440,31 @@ def topic_bubble(i, t):
     return _bubble(i, t["title"], t.get("et"), why, links, t.get("cat", ""))
 
 
-def parse_cmd(text: str):
-    """「哏」「未寫」「暴衝」「說明」，或加分類：「政治」「哏 政治」「未寫 政治」「政治未寫」→「未寫:政治」"""
+LOOSE_BASE = [("暴衝", ("暴衝",)), ("未寫", ("未寫", "沒寫", "漏")), ("哏", ("哏", "最新"))]  # 前面的優先
+
+
+def _loose_cmd(t: str):
+    """私訊用：一句話裡只要有指令字就照做，例如「今天政治有什麼沒寫的」→「未寫:政治」"""
+    text_mode = "清單" in t or "文字" in t
+    cat = next((CAT_ALIAS[a] for a in sorted(CAT_ALIAS, key=len, reverse=True) if a in t), "")
+    base = next((b for b, words in LOOSE_BASE if any(w in t for w in words)), "")
+    if base == "暴衝":
+        cmd = "暴衝"
+    elif base or cat or text_mode:
+        cmd = (base or "哏") + (f":{cat}" if cat else "")
+    else:
+        return "help" if any(w in t for w in ("說明", "help", "怎麼用")) else None
+    return f"清單/{cmd}" if text_mode else cmd
+
+
+def parse_cmd(text: str, loose: bool = False):
+    """「哏」「未寫」「暴衝」「說明」，或加分類：「政治」「哏 政治」「未寫 政治」「政治未寫」→「未寫:政治」
+    loose（私訊）：內容包含指令字就算；群組維持嚴格比對，免得大家聊天提到「政治」「最新」就被插嘴"""
     t = re.sub(r"\s+", "", text.strip().lower()).replace("梗", "哏").replace("哽", "哏")  # 常見錯字也認
     if t in COMMANDS:
         return COMMANDS[t]
+    if loose:
+        return _loose_cmd(t)
     for w in ("清單", "文字"):  # 「清單 政治」「清單 未寫」→「清單/哏:政治」：同樣內容的純文字版
         if w in t:
             inner = parse_cmd(t.replace(w, "", 1))
@@ -516,6 +536,7 @@ HELP = ("🔥 找哏小幫手\n"
         "　（政治、社會、生活、娛樂、財經、國際、體育、科技、寵物）\n"
         "・清單 → 最新哏的純文字版（電腦版 LINE 卡片不好滑時用）\n"
         "　加分類也行，例如「清單 政治」\n"
+        "直接打一句話也可以，例如「政治有什麼還沒寫的」\n"
         "清單每 10 分鐘更新（05:00～24:00）")
 
 COMMANDS = {"哏": "哏", "梗": "哏", "最新": "哏", "最新哏": "哏", "最新哏清單": "哏", "未寫": "未寫", "沒寫": "未寫", "漏": "未寫",
@@ -627,7 +648,7 @@ def handle_event(ev: dict):
         _handle_event(ev)
     finally:
         try:
-            track_member(ev, parse_cmd(text) if text else None)
+            track_member(ev, parse_cmd(text, ev.get("source", {}).get("type") == "user") if text else None)
         except Exception:
             log.warning("記錄使用者失敗\n%s", traceback.format_exc())
 
@@ -646,7 +667,7 @@ def _handle_event(ev: dict):
     text = ev["message"]["text"].strip()
     if text == "名單" and src.get("type") == "user" and uid == _read("owner.json", {}).get("userId"):
         return line_api("reply", {"replyToken": ev["replyToken"], "messages": [{"type": "text", "text": members_text()}]})
-    cmd = parse_cmd(text)
+    cmd = parse_cmd(text, loose=src.get("type") == "user")
     if not cmd:
         if src.get("type") != "user":
             return  # 群組裡別人聊天不插嘴
