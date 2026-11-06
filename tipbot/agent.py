@@ -217,17 +217,118 @@ def score_topic(members: list[dict], surge_links: dict) -> dict:
             "kinds": sorted({m["kind"] for m in members})}
 
 
+# ── 新聞分類：先看網址，看不出來再整批問 Gemini（問過的標題存 state/categories.json） ──────
+
+CATS = ["政治", "社會", "生活", "娛樂", "財經", "國際", "體育", "科技", "寵物"]
+CAT_ICON = {"政治": "🏛", "社會": "🚨", "生活": "🏠", "娛樂": "🎬", "財經": "💰", "國際": "🌏",
+            "體育": "⚾", "科技": "💻", "寵物": "🐾"}
+CAT_ALIAS = {**{c: c for c in CATS}, "健康": "生活", "醫療": "生活", "地方": "生活", "消費": "生活",
+             "兩岸": "國際", "大陸": "國際", "中國": "國際", "全球": "國際", "影劇": "娛樂", "星光": "娛樂",
+             "運動": "體育", "股市": "財經", "台股": "財經", "股票": "財經", "房產": "財經", "3c": "科技",
+             "毛孩": "寵物", "動物": "寵物"}
+# 網址路徑（或子網域）裡的分類字 → 類別；自由、東森、壹蘋、中央社、三立娛樂都靠這個
+URL_CAT = {
+    "politics": "政治", "def": "政治", "aipl": "政治",
+    "society": "社會", "asoc": "社會",
+    "life": "生活", "living": "生活", "local": "生活", "novelty": "生活", "health": "生活", "istyle": "生活",
+    "ahel": "生活", "aloc": "生活", "acul": "生活", "fun": "生活", "car": "生活",
+    "ent": "娛樂", "entertainment": "娛樂", "star": "娛樂", "amov": "娛樂",
+    "ec": "財經", "business": "財經", "finance": "財經", "money": "財經", "afe": "財經", "asc": "財經", "aie": "財經",
+    "world": "國際", "international": "國際", "china": "國際", "aopl": "國際", "acn": "國際",
+    "sports": "體育", "sport": "體育", "aspt": "體育",
+    "3c": "科技", "tech": "科技", "gadget": "科技", "ait": "科技",
+    "pet": "寵物", "pets": "寵物",
+}
+PET_RE = re.compile(r"(毛孩|寵物|貓咪|狗狗|浪浪|浪貓|浪犬|柴犬|柯基|動保|認養|飼主|汪星人|喵星人|貓奴)")
+
+
+def _url_cat(link: str) -> str:
+    m = re.match(r"https?://([^/]+)(/[^?#]*)?", link or "")
+    if not m:
+        return ""
+    host, path = m.group(1).lower(), (m.group(2) or "").lower()
+    if "yahoo" in host or "udn.com" in host or "chinatimes" in host:
+        return ""  # 網址沒有分類（或代碼還沒確認），交給 Gemini
+    sub = host.split(".")[0]
+    if sub in URL_CAT:
+        return URL_CAT[sub]
+    for seg in path.split("/"):
+        if seg in URL_CAT:
+            return URL_CAT[seg]
+    return ""
+
+
+def _ask_cats(titles: list) -> dict:
+    key = mw._gemini_key()
+    if not key or not titles:
+        return {}
+    prompt = ("把每則台灣新聞標題歸到一個類別：" + "、".join(CATS) + "。\n"
+              "國際包含兩岸與中國大陸；生活包含健康、醫療、交通、天氣、消費、地方；跟貓狗或動物有關的歸寵物；"
+              "股市、房市、產業歸財經；選舉、政策、政黨歸政治；犯罪、意外、司法歸社會；明星、網紅、影視歸娛樂。\n\n"
+              + "\n".join(f"{i}. {t}" for i, t in enumerate(titles, 1)))
+    body = {"contents": [{"parts": [{"text": prompt}]}],
+            "generationConfig": {"temperature": 0, "responseMimeType": "application/json",
+                                 "responseSchema": {"type": "ARRAY", "items": {"type": "OBJECT", "properties": {
+                                     "n": {"type": "INTEGER"}, "cat": {"type": "STRING", "enum": CATS}},
+                                     "required": ["n", "cat"]}}}}
+    for model in mw.ET_MODELS:
+        try:
+            r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+                              headers={"x-goog-api-key": key}, json=body, timeout=40)
+            if r.status_code != 200:
+                continue
+            arr = json.loads(r.json()["candidates"][0]["content"]["parts"][0]["text"])
+            return {titles[x["n"] - 1]: x["cat"] for x in arr if 1 <= x["n"] <= len(titles) and x["cat"] in CATS}
+        except Exception:
+            continue
+    log.warning("Gemini 分類失敗，這輪沒分類的先跳過")
+    return {}
+
+
+def categorize(topics: list, groups: dict):
+    """每個話題：成員網址分類投票，最多票的贏；都看不出來就用 Gemini 判斷代表標題"""
+    memo = _read("categories.json", {})
+    todo = []
+    for t in topics:
+        if PET_RE.search(t["title"]):
+            t["cat"] = "寵物"
+            continue
+        votes = {}
+        for m in groups[id(t)]:
+            c = _url_cat(m["link"])
+            if c:
+                votes[c] = votes.get(c, 0) + 1
+        if votes:
+            t["cat"] = max(votes, key=votes.get)
+        elif t["title"] in memo:
+            t["cat"] = memo[t["title"]]
+        else:
+            t["cat"] = ""
+            todo.append(t)
+    if todo:
+        ans = _ask_cats([t["title"] for t in todo])
+        for t in todo:
+            t["cat"] = ans.get(t["title"], "")
+        if ans:
+            if len(memo) > 3000:
+                memo = {}
+            memo.update(ans)
+            _write("categories.json", memo)
+
+
 def build_tips() -> dict:
     t0 = time.time()
     sig = collect()
     surge_links: dict[str, list] = {}
     for s in mw.detect_surges():
         surge_links.setdefault(s["news"].get("link"), []).extend(s["reasons"])
-    topics = [score_topic(g, surge_links) for g in cluster(sig)]
+    pairs = [(score_topic(g, surge_links), g) for g in cluster(sig)]
     # 只有單一來源、又只是「最新列表」的不算哏
-    topics = [t for t in topics if t["score"] >= 2]
-    topics.sort(key=lambda t: -t["score"])
-    topics = topics[:20]
+    pairs = [p for p in pairs if p[0]["score"] >= 2]
+    pairs.sort(key=lambda p: -p[0]["score"])
+    pairs = pairs[:50]  # 多留一些，分類查詢時每類才有東西
+    topics = [t for t, _ in pairs]
+    categorize(topics, {id(t): g for t, g in pairs})
     et = mw.ettoday_matches([{"title": t["title"], "link": t["link"]} for t in topics])
     for t in topics:
         m = et.get(t["title"])
@@ -283,16 +384,13 @@ def reply_text(cmd: str) -> str:
             out.append(f"{i}. {x['title']}\n   {'✅ ET 已寫' if x.get('et') else '❌ ET 未寫'}｜"
                        + "；".join(x["reasons"]) + f"\n   {x['link']}")
         return "\n\n".join(out)
-    topics = data["topics"]
-    if cmd == "未寫":
-        topics = [t for t in topics if not t.get("et")]
-        title = "🔥 ET 還沒寫的哏"
-    else:
-        title = "🔥 最新哏"
+    base, cat = _split(cmd)
+    topics = _filter(data["topics"], base, cat)
+    title = _title(base, cat)
     if not topics:
-        return f"{title}｜{head_time} 更新\n目前沒有{'還沒寫的' if cmd == '未寫' else ''}哏 👍{rest}"
+        return f"{title}｜{head_time} 更新\n目前沒有{'還沒寫的' if base == '未寫' else ''}哏 👍{rest}"
     out = [f"{title}｜{head_time} 更新（{_ago(data['updated_at'])}）{rest}"]
-    out += [fmt_topic(i, t) for i, t in enumerate(topics[:LIST_N], 1)]
+    out += [(f"[{t['cat']}] " if t.get("cat") else "") + fmt_topic(i, t) for i, t in enumerate(topics[:LIST_N], 1)]
     text = "\n\n".join(out)
     return text[:4900]
 
@@ -304,9 +402,10 @@ def _short(src: str) -> str:
             .replace("時報", "").replace("新聞", ""))[:8]
 
 
-def _bubble(i, title, et, why_lines, links):
+def _bubble(i, title, et, why_lines, links, cat=""):
     body = [
-        {"type": "text", "text": f"#{i}", "size": "xs", "color": "#999999"},
+        {"type": "text", "text": f"#{i}" + (f"｜{CAT_ICON.get(cat, '')} {cat}" if cat else ""),
+         "size": "xs", "color": "#999999"},
         {"type": "text", "text": title, "weight": "bold", "size": "md", "wrap": True, "maxLines": 4},
         {"type": "text", "text": "✅ ETtoday 已寫" if et else "❌ ETtoday 未寫", "size": "sm",
          "weight": "bold", "color": "#1a7f37" if et else "#c41230", "margin": "md"},
@@ -338,12 +437,48 @@ def topic_bubble(i, t):
     links += [(f"看{_short(l['source'])}", l["link"]) for l in t["links"]]
     if not t["links"] and t["link"]:
         links.append(("看來源", t["link"]))
-    return _bubble(i, t["title"], t.get("et"), why, links)
+    return _bubble(i, t["title"], t.get("et"), why, links, t.get("cat", ""))
+
+
+def parse_cmd(text: str):
+    """「哏」「未寫」「暴衝」「說明」，或加分類：「政治」「哏 政治」「未寫 政治」「政治未寫」→「未寫:政治」"""
+    t = re.sub(r"\s+", "", text.strip().lower())
+    if t in COMMANDS:
+        return COMMANDS[t]
+    for alias in sorted(CAT_ALIAS, key=len, reverse=True):
+        if alias in t:
+            rest = t.replace(alias, "", 1)
+            base = COMMANDS.get(rest) if rest else "哏"
+            if base in ("哏", "未寫"):
+                return f"{base}:{CAT_ALIAS[alias]}"
+            return None
+    return None
+
+
+def _split(cmd: str):
+    base, _, cat = cmd.partition(":")
+    return base, cat
+
+
+def _filter(topics, base, cat):
+    if base == "未寫":
+        topics = [t for t in topics if not t.get("et")]
+    if cat:
+        topics = [t for t in topics if t.get("cat") == cat]
+    return topics
+
+
+def _title(base, cat):
+    tag = f"{CAT_ICON.get(cat, '')} {cat}類" if cat else ""
+    if base == "未寫":
+        return f"🔥 {tag}ETtoday 還沒寫的哏" if cat else "🔥 ETtoday 還沒寫的哏"
+    return f"🔥 {tag}熱門哏" if cat else "🔥 最新哏"
 
 
 def reply_messages(cmd: str) -> list:
     """回覆用：一則標題文字＋一組卡片（最多 10 張）"""
     data = _read("latest.json", None)
+    base, cat = _split(cmd)
     if cmd == "help":
         return [{"type": "text", "text": HELP}]
     if not data:
@@ -357,10 +492,8 @@ def reply_messages(cmd: str) -> list:
                            ([("看 ETtoday", x["et"]["link"])] if x.get("et") else []) + [("看原文", x["link"])])
                    for i, x in enumerate(items[:10], 1)]
     else:
-        items = data["topics"]
-        if cmd == "未寫":
-            items = [t for t in items if not t.get("et")]
-        head = f"{'🔥 ETtoday 還沒寫的哏' if cmd == '未寫' else '🔥 最新哏'}｜{head_time} 更新（{_ago(data['updated_at'])}）{rest}"
+        items = _filter(data["topics"], base, cat)
+        head = f"{_title(base, cat)}｜{head_time} 更新（{_ago(data['updated_at'])}）{rest}"
         bubbles = [topic_bubble(i, t) for i, t in enumerate(items[:10], 1)]
     if not bubbles:
         return [{"type": "text", "text": reply_text(cmd)}]
@@ -373,6 +506,8 @@ HELP = ("🔥 找哏小幫手\n"
         "・哏 → 最新哏清單（依熱度排）\n"
         "・未寫 → 只看 ETtoday 還沒寫的\n"
         "・暴衝 → 競媒熱門榜排名衝最快的\n"
+        "・分類 → 傳「政治」「未寫 政治」只看該類\n"
+        "　（政治、社會、生活、娛樂、財經、國際、體育、科技、寵物）\n"
         "清單每 10 分鐘更新（05:00～24:00）")
 
 COMMANDS = {"哏": "哏", "梗": "哏", "最新": "哏", "未寫": "未寫", "沒寫": "未寫", "漏": "未寫",
@@ -484,7 +619,7 @@ def handle_event(ev: dict):
         _handle_event(ev)
     finally:
         try:
-            track_member(ev, COMMANDS.get(text.lower()) or ("名單" if text == "名單" else None))
+            track_member(ev, parse_cmd(text) if text else None)
         except Exception:
             log.warning("記錄使用者失敗\n%s", traceback.format_exc())
 
@@ -503,7 +638,7 @@ def _handle_event(ev: dict):
     text = ev["message"]["text"].strip()
     if text == "名單" and src.get("type") == "user" and uid == _read("owner.json", {}).get("userId"):
         return line_api("reply", {"replyToken": ev["replyToken"], "messages": [{"type": "text", "text": members_text()}]})
-    cmd = COMMANDS.get(text.lower())
+    cmd = parse_cmd(text)
     if not cmd:
         if src.get("type") != "user":
             return  # 群組裡別人聊天不插嘴
