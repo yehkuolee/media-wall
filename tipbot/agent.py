@@ -445,6 +445,10 @@ def parse_cmd(text: str):
     t = re.sub(r"\s+", "", text.strip().lower())
     if t in COMMANDS:
         return COMMANDS[t]
+    for w in ("清單", "文字"):  # 「清單 政治」「清單 未寫」→「清單/哏:政治」：同樣內容的純文字版
+        if w in t:
+            inner = parse_cmd(t.replace(w, "", 1))
+            return f"清單/{inner}" if inner and _split(inner)[0] in ("哏", "未寫", "暴衝") else None
     for alias in sorted(CAT_ALIAS, key=len, reverse=True):
         if alias in t:
             rest = t.replace(alias, "", 1)
@@ -481,8 +485,8 @@ def reply_messages(cmd: str) -> list:
     base, cat = _split(cmd)
     if cmd == "help":
         return [{"type": "text", "text": HELP}]
-    if cmd == "清單":  # 純文字直列版，電腦版 LINE 從上往下捲就好
-        return [{"type": "text", "text": reply_text("哏")}]
+    if cmd == "清單" or cmd.startswith("清單/"):  # 純文字直列版，電腦版 LINE 從上往下捲就好
+        return [{"type": "text", "text": reply_text(cmd[3:] or "哏")}]
     if not data:
         return [{"type": "text", "text": reply_text(cmd)}]
     head_time = datetime.fromisoformat(data["updated_at"]).strftime("%H:%M")
@@ -511,6 +515,7 @@ HELP = ("🔥 找哏小幫手\n"
         "・分類 → 傳類別名稱，例如「政治」只看該類\n"
         "　（政治、社會、生活、娛樂、財經、國際、體育、科技、寵物）\n"
         "・清單 → 最新哏的純文字版（電腦版 LINE 卡片不好滑時用）\n"
+        "　加分類也行，例如「清單 政治」\n"
         "清單每 10 分鐘更新（05:00～24:00）")
 
 COMMANDS = {"哏": "哏", "梗": "哏", "最新": "哏", "未寫": "未寫", "沒寫": "未寫", "漏": "未寫",
