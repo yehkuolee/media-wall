@@ -1,23 +1,35 @@
 {
-  "updated_at": "2026-11-07T03:05:12.036551+08:00",
+  "updated_at": "2026-11-07T04:05:13.856507+08:00",
   "topics": [
+    {
+      "title": "沈伯洋舉辦戒慎恐懼之夜",
+      "description": "沈伯洋以脫口秀形式與支持者互動，呼籲大家保持戒慎恐懼並互相照顧",
+      "count": "9 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1497732288887990"
+    },
+    {
+      "title": "篠崎泫與Toyz靠書信維繫感情",
+      "description": "Toyz在服刑期間細心整理信件，篠崎泫也印出文章寄送並自嘲兩人如同筆友",
+      "count": "559 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%AF%A0%E5%B4%8E%E6%B3%AB&serp_type=trends&trend_fbid=1460773132652555"
+    },
+    {
+      "title": "蔣萬安支持者在又一村門口喊口號",
+      "description": "蔣萬安赴遼寧夜市掃街時，支持者聚集在支持沈伯洋的又一村水餃門口大喊口號",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%88%E4%B8%80%E6%9D%91%E6%B0%B4%E9%A4%83&serp_type=trends&trend_fbid=1675537307488956"
+    },
+    {
+      "title": "告五人小巨蛋展開巡演",
+      "description": "告五人於台北小巨蛋舉辦首日演唱會，演出三小時並帶來多首經典曲目與點歌環節",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%91%8A%E4%BA%94%E4%BA%BA&serp_type=trends&trend_fbid=1684173949885020"
+    },
     {
       "title": "香港男子拍片拆穿女友出軌",
       "description": "香港一名男子在交往三週年當天以送驚喜為由，當面拆穿女友出軌餐廳老闆並公開影片",
-      "count": "104 則貼文",
+      "count": "100 則貼文",
       "link": "https://www.threads.com/search?q=%E9%A6%99%E6%B8%AF%E7%94%B7%E5%AD%90&serp_type=trends&trend_fbid=4700290906960295"
-    },
-    {
-      "title": "Toyz與篠崎泫持續書信往來",
-      "description": "篠崎泫將網友文章列印寄送給Toyz，兩人透過書信與會面持續保持互動",
-      "count": "11 則貼文",
-      "link": "https://www.threads.com/search?q=Toyz%E8%88%87%E7%AF%A0%E5%B4%8E%E6%B3%AB&serp_type=trends&trend_fbid=2206759829904304"
-    },
-    {
-      "title": "蔣萬安支持者包圍又一村水餃店",
-      "description": "蔣萬安掃街拜票時，支持者聚集在遼寧夜市又一村水餃門口大聲喊口號，造成店家恐懼",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%88%E4%B8%80%E6%9D%91%E6%B0%B4%E9%A4%83&serp_type=trends&trend_fbid=1621957176344961"
     },
     {
       "title": "《哥吉拉-0.0》正式上映",
@@ -30,12 +42,6 @@
       "description": "展場集結國內外航空祭出機票折扣與周邊，林保署也推限量玩偶吸引搶購",
       "count": "1 千則貼文",
       "link": "https://www.threads.com/search?q=ITF%E6%97%85%E5%B1%95&serp_type=trends&trend_fbid=1448143720101979"
-    },
-    {
-      "title": "告五人台北小巨蛋開唱",
-      "description": "告五人世界巡演台北站於小巨蛋登場，演出3小時並帶來近30首歌曲",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%91%8A%E4%BA%94%E4%BA%BA&serp_type=trends&trend_fbid=1846876006764819"
     },
     {
       "title": "延平中學校慶教師登台熱舞",
@@ -52,13 +58,13 @@
     {
       "title": "月入20萬能否負擔伴侶開銷",
       "description": "女性列出高額開銷指月薪20萬難共同生活，他人則認為不能代表無法支應日常",
-      "count": "914 則貼文",
+      "count": "947 則貼文",
       "link": "https://www.threads.com/search?q=%E6%9C%88%E5%85%A520%E8%90%AC&serp_type=trends&trend_fbid=1676240583981383"
     },
     {
       "title": "玩轉文具展世貿一館登場",
       "description": "台北世貿一館展開為期四天的文具手作展，現場展售眾多限定周邊與文創設計小物",
-      "count": "837 則貼文",
+      "count": "842 則貼文",
       "link": "https://www.threads.com/search?q=%E6%96%87%E5%85%B7%E5%B1%95&serp_type=trends&trend_fbid=2391007608393932"
     },
     {
@@ -66,12 +72,6 @@
       "description": "檢方指控立委高金素梅涉收中共1.7億元在台發展組織，依國安法等罪起訴求刑14年",
       "count": "8 千則貼文",
       "link": "https://www.threads.com/search?q=%E9%AB%98%E9%87%91%E7%B4%A0%E6%A2%85&serp_type=trends&trend_fbid=1131889453106011"
-    },
-    {
-      "title": "沈伯洋澄清非律師高考榜首",
-      "description": "沈伯洋在活動中澄清自己非2006年律師高考榜首，該屆榜首實為已故好友陳俊翰",
-      "count": "9 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=2329696837831946"
     },
     {
       "title": "蘇巧慧提重新規劃新北耶誕城",
@@ -82,7 +82,7 @@
     {
       "title": "名偵探柯南特別篇在台上映",
       "description": "《名偵探柯南 第30號殺人事件》11月6日全台上映，首週隨票贈A3海報",
-      "count": "510 則貼文",
+      "count": "514 則貼文",
       "link": "https://www.threads.com/search?q=%E5%90%8D%E5%81%B5%E6%8E%A2%E6%9F%AF%E5%8D%97&serp_type=trends&trend_fbid=1787633439179870"
     },
     {
