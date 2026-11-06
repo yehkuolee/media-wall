@@ -481,6 +481,8 @@ def reply_messages(cmd: str) -> list:
     base, cat = _split(cmd)
     if cmd == "help":
         return [{"type": "text", "text": HELP}]
+    if cmd == "清單":  # 純文字直列版，電腦版 LINE 從上往下捲就好
+        return [{"type": "text", "text": reply_text("哏")}]
     if not data:
         return [{"type": "text", "text": reply_text(cmd)}]
     head_time = datetime.fromisoformat(data["updated_at"]).strftime("%H:%M")
@@ -508,10 +510,11 @@ HELP = ("🔥 找哏小幫手\n"
         "・暴衝 → 競媒熱門榜排名衝最快的\n"
         "・分類 → 傳類別名稱，例如「政治」只看該類\n"
         "　（政治、社會、生活、娛樂、財經、國際、體育、科技、寵物）\n"
+        "・清單 → 最新哏的純文字版（電腦版 LINE 卡片不好滑時用）\n"
         "清單每 10 分鐘更新（05:00～24:00）")
 
 COMMANDS = {"哏": "哏", "梗": "哏", "最新": "哏", "未寫": "未寫", "沒寫": "未寫", "漏": "未寫",
-            "暴衝": "暴衝", "說明": "help", "help": "help", "?": "help", "？": "help"}
+            "暴衝": "暴衝", "清單": "清單", "文字": "清單", "說明": "help", "help": "help", "?": "help", "？": "help"}
 
 
 # ── LINE ───────────────────────────────────────────────────────────
