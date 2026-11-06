@@ -1,95 +1,89 @@
 {
-  "updated_at": "2026-11-06T08:05:18.879527+08:00",
+  "updated_at": "2026-11-06T09:05:17.122106+08:00",
   "topics": [
     {
-      "title": "美議員安薩里籲暫停先進AI研發",
-      "description": "民主黨眾議員安薩里呼籲暫停先進人工智慧研發，衝擊美股科技股與台積電ADR重挫",
-      "count": "517 則貼文",
-      "link": "https://www.threads.com/search?q=%E4%BA%9E%E8%96%A9%E6%98%8E%C2%B7%E5%AE%89%E8%96%A9%E9%87%8C&serp_type=trends&trend_fbid=2216984942560169"
+      "title": "港男紀念日當場指控女友出軌",
+      "description": "香港一名男子在交往三週年時假借送驚喜，當面指控女友出軌並將對質影片發布至網路",
+      "count": "103 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%A6%99%E6%B8%AF%E7%94%B7%E5%AD%90&serp_type=trends&trend_fbid=2348825169224930"
     },
     {
-      "title": "桃園寶山街金沙酒店周邊傳槍響",
-      "description": "現場因群眾衝突傳出多聲槍響，大批警車與救護車趕赴桃園寶山街金沙酒店周邊封路處置",
-      "count": "123 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%87%91%E6%B2%99%E9%85%92%E5%BA%97&serp_type=trends&trend_fbid=1155135996855841"
+      "title": "台美股市重挫投資人自嘲看極光",
+      "description": "台美股市與台指期夜盤重挫，投資人以看極光自嘲虧損數十萬至百萬元",
+      "count": "853 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E7%BE%8E%E8%82%A1%E5%B8%82&serp_type=trends&trend_fbid=1116731194664321"
     },
     {
-      "title": "美股重挫晶片與AI類股大跌",
-      "description": "受費城半導體與晶片類股重挫影響，美股大跌連帶使台指期夜盤同步崩跌",
-      "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E7%BE%8E%E8%82%A1&serp_type=trends&trend_fbid=3013363772353274"
+      "title": "美股重挫台股期貨夜盤大跌",
+      "description": "受美國選舉與AI監管法案影響美股重挫，台股期貨夜盤隨之大跌失守四萬點大關",
+      "count": "890 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E8%82%A1%E6%9C%9F%E8%B2%A8&serp_type=trends&trend_fbid=942578168723256"
+    },
+    {
+      "title": "黃之鋒遭加判10年徒刑",
+      "description": "香港高等法院依國安法判處黃之鋒10年徒刑，刑期大幅延長",
+      "count": "8 千則貼文",
+      "link": "https://www.threads.com/search?q=%E9%BB%83%E4%B9%8B%E9%8B%92&serp_type=trends&trend_fbid=1143469205074829"
+    },
+    {
+      "title": "股市下跌股民開玩笑揪睡公園",
+      "description": "面對股市下跌，許多股民開玩笑打聽公園空位並揪團睡公園",
+      "count": "2 千則貼文",
+      "link": "https://www.threads.com/search?q=%E8%82%A1%E5%B8%82%E4%B8%8B%E8%B7%8C&serp_type=trends&trend_fbid=1118100717699856"
+    },
+    {
+      "title": "《FX戰士久留美》被封股市魔咒",
+      "description": "每逢《FX 戰士久留美》更新日台美股常現跌勢，投資人將其封為久留美魔咒",
+      "count": "351 則貼文",
+      "link": "https://www.threads.com/search?q=FX%20%E6%88%B0%E5%A3%AB%E4%B9%85%E7%95%99%E7%BE%8E&serp_type=trends&trend_fbid=2599822867095446"
+    },
+    {
+      "title": "《哥吉拉-0.0》在台上映",
+      "description": "東寶發行《哥吉拉-0.0》在台上映，觀眾指IMAX場面震撼但文戲偏多",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%93%A5%E5%90%89%E6%8B%89-0.0&serp_type=trends&trend_fbid=2632750950506226"
+    },
+    {
+      "title": "永慶之夜演唱會高雄巨蛋開唱",
+      "description": "永慶房產集團在高雄巨蛋舉辦演唱會，邀請蕭敬騰與八三夭等歌手登台，吸引上萬觀眾入場",
+      "count": "480 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B0%B8%E6%85%B6%E4%B9%8B%E5%A4%9C&serp_type=trends&trend_fbid=1562124712632900"
+    },
+    {
+      "title": "桃園金沙酒店周邊傳槍響",
+      "description": "桃園寶山街金沙酒店周邊爆發衝突傳數聲槍響，大批警力獲報趕赴現場",
+      "count": "171 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%87%91%E6%B2%99%E9%85%92%E5%BA%97&serp_type=trends&trend_fbid=1803449094243416"
+    },
+    {
+      "title": "美議員推法案擬禁超級AI",
+      "description": "《禁止超級人工智慧法案》草案在美提出，擬暫停先進AI研發且違者最高判刑20年",
+      "count": "957 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%BE%8E%E5%9C%8BAI%E6%B3%95%E6%A1%88&serp_type=trends&trend_fbid=1475173067794917"
+    },
+    {
+      "title": "藍心湄節目力推台灣在地工藝",
+      "description": "藍心湄在《女人我最大》同台沈伯洋與蘇巧慧，大力推廣台灣製鞋與紡織產業",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E8%97%8D%E5%BF%83%E6%B9%84&serp_type=trends&trend_fbid=4115948122036406"
+    },
+    {
+      "title": "永安國小澄清午餐香鬆份量",
+      "description": "針對午餐香鬆標示2克，永安國小表示該克數為建議份量而非取用上限",
+      "count": "673 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B0%B8%E5%AE%89%E5%9C%8B%E5%B0%8F%E9%A6%99%E9%AC%86&serp_type=trends&trend_fbid=1847896599736425"
+    },
+    {
+      "title": "股市重挫槓桿正二投資面臨考驗",
+      "description": "面對市場劇烈波動，分析示警正二拉回拉長回本期，長期投資人則依現金流應對震盪",
+      "count": "134 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%AD%A3%E4%BA%8CETF&serp_type=trends&trend_fbid=1876970240400625"
     },
     {
       "title": "麥當勞推酪梨醬滿福堡",
       "description": "結合經典漢堡與酪梨醬，麥當勞期間限定開賣酪梨醬滿福系列吸引嘗鮮民眾",
-      "count": "917 則貼文",
+      "count": "875 則貼文",
       "link": "https://www.threads.com/search?q=%E9%85%AA%E6%A2%A8%E6%BB%BF%E7%A6%8F%E5%A0%A1&serp_type=trends&trend_fbid=2226472808222331"
-    },
-    {
-      "title": "TXT崔杋圭稱難代表團隊風格",
-      "description": "TXT成員崔杋圭自認無法代表團隊風格，粉絲紛紛表達支持並強調其不可或缺",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%B4%94%E6%9D%8B%E5%9C%AD&serp_type=trends&trend_fbid=1155571120152086"
-    },
-    {
-      "title": "股市下跌投資人自嘲看極光",
-      "description": "股市行情走跌虧損，投資人幽默比照出國旅費自嘲在市場看極光",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E8%82%A1%E5%B8%82%E4%B8%8B%E8%B7%8C&serp_type=trends&trend_fbid=2061580834518702"
-    },
-    {
-      "title": "台指期夜盤大跌失守四萬點",
-      "description": "受美股重挫影響台指期夜盤跌破四萬點，融資維持率下滑加劇市場追繳賣壓",
-      "count": "5 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E8%82%A1&serp_type=trends&trend_fbid=1794802685143963"
-    },
-    {
-      "title": "香港男子拍片揭發女友出軌",
-      "description": "香港一名男子假借送紀念日驚喜將女友帶至海邊，當場蒙眼揭發其出軌並將影片公開",
-      "count": "101 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%A6%99%E6%B8%AF%E7%94%B7%E5%AD%90&serp_type=trends&trend_fbid=1796544884886219"
-    },
-    {
-      "title": "《哥吉拉-0.0》在台上映",
-      "description": "日本電影《哥吉拉-0.0》在台灣上映，首映巨幕廳湧現觀影人潮與高滿座率",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%93%A5%E5%90%89%E6%8B%89-0.0&serp_type=trends&trend_fbid=1667929961340628"
-    },
-    {
-      "title": "沈伯洋蘇巧慧登《女人我最大》",
-      "description": "藍心湄在《女人我最大》合體沈伯洋與蘇巧慧，並提議將敬老卡改為至尊卡",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%A5%B3%E4%BA%BA%E6%88%91%E6%9C%80%E5%A4%A7&serp_type=trends&trend_fbid=1117690671165449"
-    },
-    {
-      "title": "王子璇在節目提及寫序往事",
-      "description": "王子璇參與綜藝節目《後會友期》，在對談中回顧八年前為文吉兒寫書序的過往",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E7%8E%8B%E5%AD%90%E7%92%87&serp_type=trends&trend_fbid=2159332078306383"
-    },
-    {
-      "title": "沈伯洋拜會前議長陳健治",
-      "description": "台北市長候選人沈伯洋拜會前議長陳健治，請益市政與府會溝通協調經驗",
-      "count": "8 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=2323299511763080"
-    },
-    {
-      "title": "大園正隆造紙廠火警獲控制",
-      "description": "桃園大園正隆造紙廠戶外紙料起火，消防出動搶救已控制火勢且未延燒",
-      "count": "",
-      "link": "https://www.threads.com/search?q=%E6%AD%A3%E9%9A%86%E9%80%A0%E7%B4%99%E5%BB%A0&serp_type=trends&trend_fbid=987720597741298"
-    },
-    {
-      "title": "台中大墩路傳火警",
-      "description": "大墩路十七街路口附近傳出火警與異味，警車已抵達現場展開處置",
-      "count": "",
-      "link": "https://www.threads.com/search?q=%E5%A4%A7%E5%A2%A9%E8%B7%AF%E7%81%AB%E8%AD%A6&serp_type=trends&trend_fbid=1527139529237349"
-    },
-    {
-      "title": "蔡英文造訪台中出席活動",
-      "description": "前總統蔡英文造訪台中受到熱情歡迎，並與立委蔡其昌及支持者幽默互動",
-      "count": "5 千則貼文",
-      "link": "https://www.threads.com/search?q=%E8%94%A1%E8%8B%B1%E6%96%87&serp_type=trends&trend_fbid=962642266606745"
     }
   ]
 }
