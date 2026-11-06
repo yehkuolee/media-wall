@@ -329,11 +329,26 @@ def build_tips() -> dict:
     pairs = pairs[:50]  # 多留一些，分類查詢時每類才有東西
     topics = [t for t, _ in pairs]
     categorize(topics, {id(t): g for t, g in pairs})
-    et = mw.ettoday_matches([{"title": t["title"], "link": t["link"]} for t in topics])
+    # Threads 熱搜：串進話題的直接沿用該話題的分類與 ET 比對，沒排進前 50 的另外一起比對
+    by_threads = {m["title"]: t for t, g in pairs for m in g if m["kind"] == "threads"}
+    th = mw.fetch_threads_trending()
+    th_items = [x for x in th.get("topics", [])[:15] if x.get("title")]
+    et = mw.ettoday_matches([{"title": t["title"], "link": t["link"]} for t in topics]
+                            + [{"title": x["title"], "link": x.get("link", "")} for x in th_items
+                               if x["title"] not in by_threads])
     for t in topics:
         m = et.get(t["title"])
         t["et"] = {"title": m["title"], "link": m["link"]} if m else None
+    threads = []
+    for i, x in enumerate(th_items, 1):
+        t = by_threads.get(x["title"])
+        m = None if t else et.get(x["title"])
+        threads.append({"rank": i, "title": x["title"], "desc": x.get("description", ""),
+                        "count": _threads_count(x.get("count", "")), "link": x.get("link", ""),
+                        "cat": t.get("cat", "") if t else "",
+                        "et": t["et"] if t else ({"title": m["title"], "link": m["link"]} if m else None)})
     data = {"updated_at": now().isoformat(), "topics": topics,
+            "threads": threads, "threads_at": th.get("updated_at"),
             "surges": [{"title": s["news"]["title"], "link": s["news"].get("link"), "reasons": s["reasons"],
                         "et": (lambda m: {"title": m["title"], "link": m["link"]} if m else None)(
                             et.get(s["news"]["title"]))}
@@ -369,6 +384,27 @@ def fmt_topic(i, t, with_links=True):
     return "\n".join(lines)
 
 
+def fmt_threads(i, x):
+    lines = [f"{i}. {x['title']}",
+             f"   {'✅ ET 已寫' if x.get('et') else '❌ ET 未寫'}｜Threads #{x['rank']}"
+             + (f"｜{x['count']:,} 則貼文" if x.get("count") else "")]
+    if x.get("desc"):
+        lines.append("   " + x["desc"][:60])
+    if x.get("et"):
+        lines.append(f"   ET：{x['et']['link']}")
+    if x.get("link"):
+        lines.append(f"   Threads：{x['link']}")
+    return "\n".join(lines)
+
+
+def _threads_head(data, base, cat):
+    at = data.get("threads_at")
+    at = datetime.fromisoformat(at).strftime("%H:%M") if at else "?"
+    tag = f"{CAT_ICON.get(cat, '')} {cat}類" if cat else ""
+    what = "ETtoday 還沒寫的 Threads 熱搜" if base.endswith("未寫") else "Threads 熱搜"
+    return f"🧵 {tag}{what}｜{at} 抓取（每小時更新）"
+
+
 def reply_text(cmd: str) -> str:
     data = _read("latest.json", None)
     if not data:
@@ -385,6 +421,12 @@ def reply_text(cmd: str) -> str:
                        + "；".join(x["reasons"]) + f"\n   {x['link']}")
         return "\n\n".join(out)
     base, cat = _split(cmd)
+    if base.startswith("threads"):
+        items = _filter(data.get("threads", []), base, cat)
+        head = _threads_head(data, base, cat)
+        if not items:
+            return f"{head}\n目前沒有{'還沒寫的' if base.endswith('未寫') else ''}話題 👍{rest}"
+        return "\n\n".join([head + rest] + [fmt_threads(i, x) for i, x in enumerate(items, 1)])[:4900]
     topics = _filter(data["topics"], base, cat)
     title = _title(base, cat)
     if not topics:
@@ -427,6 +469,14 @@ def _bubble(i, title, et, why_lines, links, cat=""):
     return bubble
 
 
+def threads_bubble(i, x):
+    why = [f"Threads 熱搜 #{x['rank']}" + (f"｜{x['count']:,} 則貼文" if x.get("count") else "")]
+    if x.get("desc"):
+        why.append(x["desc"][:80])
+    links = ([("看 ETtoday", x["et"]["link"])] if x.get("et") else []) + [("看 Threads", x.get("link", ""))]
+    return _bubble(i, x["title"], x.get("et"), why, links, x.get("cat", ""))
+
+
 def topic_bubble(i, t):
     why = [f"熱度 {t['score']}｜" + "｜".join(t["why"][:1])] + t["why"][1:]
     if t.get("threads_desc") and t["sources"] == 0:
@@ -441,6 +491,7 @@ def topic_bubble(i, t):
 
 
 LOOSE_BASE = [("暴衝", ("暴衝",)), ("未寫", ("未寫", "沒寫", "漏")), ("哏", ("哏", "最新"))]  # 前面的優先
+THREADS_WORDS = ("thread", "脆")
 
 
 def _loose_cmd(t: str):
@@ -450,6 +501,8 @@ def _loose_cmd(t: str):
     base = next((b for b, words in LOOSE_BASE if any(w in t for w in words)), "")
     if base == "暴衝":
         cmd = "暴衝"
+    elif any(w in t for w in THREADS_WORDS):  # 「脆上有什麼沒寫的」→「threads未寫」
+        cmd = "threads" + ("未寫" if base == "未寫" else "") + (f":{cat}" if cat else "")
     elif base or cat or text_mode:
         cmd = (base or "哏") + (f":{cat}" if cat else "")
     else:
@@ -468,12 +521,12 @@ def parse_cmd(text: str, loose: bool = False):
     for w in ("清單", "文字"):  # 「清單 政治」「清單 未寫」→「清單/哏:政治」：同樣內容的純文字版
         if w in t:
             inner = parse_cmd(t.replace(w, "", 1))
-            return f"清單/{inner}" if inner and _split(inner)[0] in ("哏", "未寫", "暴衝") else None
+            return f"清單/{inner}" if inner and _split(inner)[0] in ("哏", "未寫", "暴衝", "threads") else None
     for alias in sorted(CAT_ALIAS, key=len, reverse=True):
         if alias in t:
             rest = t.replace(alias, "", 1)
             base = COMMANDS.get(rest) if rest else "哏"
-            if base in ("哏", "未寫"):
+            if base in ("哏", "未寫", "threads"):
                 return f"{base}:{CAT_ALIAS[alias]}"
             return None
     return None
@@ -485,7 +538,7 @@ def _split(cmd: str):
 
 
 def _filter(topics, base, cat):
-    if base == "未寫":
+    if base.endswith("未寫"):  # 「未寫」或「threads未寫」
         topics = [t for t in topics if not t.get("et")]
     if cat:
         topics = [t for t in topics if t.get("cat") == cat]
@@ -517,6 +570,10 @@ def reply_messages(cmd: str) -> list:
         bubbles = [_bubble(i, x["title"], x.get("et"), x["reasons"],
                            ([("看 ETtoday", x["et"]["link"])] if x.get("et") else []) + [("看原文", x["link"])])
                    for i, x in enumerate(items[:10], 1)]
+    elif base.startswith("threads"):
+        items = _filter(data.get("threads", []), base, cat)
+        head = _threads_head(data, base, cat) + rest
+        bubbles = [threads_bubble(i, x) for i, x in enumerate(items[:10], 1)]
     else:
         items = _filter(data["topics"], base, cat)
         head = f"{_title(base, cat)}｜{head_time} 更新（{_ago(data['updated_at'])}）{rest}"
@@ -534,13 +591,14 @@ HELP = ("🔥 找哏小幫手\n"
         "・暴衝 → 競媒熱門榜排名衝最快的\n"
         "・分類 → 傳類別名稱，例如「政治」只看該類\n"
         "　（政治、社會、生活、娛樂、財經、國際、體育、科技、寵物）\n"
+        "・Threads 或 脆 → Threads 熱搜話題，標出 ETtoday 寫了沒\n"
         "・清單 → 最新哏的純文字版（電腦版 LINE 卡片不好滑時用）\n"
         "　加分類也行，例如「清單 政治」\n"
         "直接打一句話也可以，例如「政治有什麼還沒寫的」\n"
         "清單每 10 分鐘更新（05:00～24:00）")
 
 COMMANDS = {"哏": "哏", "梗": "哏", "最新": "哏", "最新哏": "哏", "最新哏清單": "哏", "未寫": "未寫", "沒寫": "未寫", "漏": "未寫",
-            "暴衝": "暴衝", "清單": "清單", "文字": "清單", "說明": "help", "help": "help", "?": "help", "？": "help"}
+            "暴衝": "暴衝", "threads": "threads", "thread": "threads", "脆": "threads", "清單": "清單", "文字": "清單", "說明": "help", "help": "help", "?": "help", "？": "help"}
 
 
 # ── LINE ───────────────────────────────────────────────────────────
