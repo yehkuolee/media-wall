@@ -47,3 +47,4 @@ LINE 官方帳號「ETtoday競媒監測器」（@164jhlis，輕用量免費方�
 - 重開：`launchctl kickstart -k gui/$(id -u)/com.lifeos.tipbot`
 - 改門檻：`.env` 加 `TIPBOT_PUSH_MIN_SCORE=10`（越小推越多），重開
 - 本月推了幾則：`cat tipbot/state/pushed.json`
+- 誰加了好友、問過幾次：管理者（推播對象）私訊 Bot 傳「名單」；完整資料在 `tipbot/state/members.json`（LINE 名稱一週更新一次，封鎖的會標 🚫；別人傳「名單」只會看到說明）

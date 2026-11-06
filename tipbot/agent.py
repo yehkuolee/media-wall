@@ -392,7 +392,104 @@ def line_api(path, body):
     return r
 
 
+# ── 使用者名單（誰加好友、誰常問）：存 state/members.json，管理者傳「名單」查看 ──────
+
+_members_lock = threading.Lock()
+WEEKDAY = "一二三四五六日"
+
+
+def line_get(path):
+    if not TOKEN:
+        return None
+    try:
+        r = requests.get(f"https://api.line.me/v2/bot/{path}", timeout=5,
+                         headers={"Authorization": f"Bearer {TOKEN}"})
+        return r.json() if r.status_code == 200 else None
+    except Exception:
+        return None
+
+
+def _profile_name(src: dict, uid: str) -> str:
+    t = src.get("type")
+    if t == "group":
+        p = line_get(f"group/{src.get('groupId')}/member/{uid}")
+    elif t == "room":
+        p = line_get(f"room/{src.get('roomId')}/member/{uid}")
+    else:
+        p = line_get(f"profile/{uid}")
+    return (p or {}).get("displayName", "")
+
+
+def track_member(ev: dict, cmd: str | None):
+    """記錄加好友／封鎖／發問；LINE 名稱一週更新一次，不扣推播額度"""
+    src = ev.get("source", {})
+    uid = src.get("userId", "")
+    if not uid:
+        return
+    typ, ts = ev.get("type"), now().isoformat(timespec="seconds")
+    with _members_lock:
+        mem = _read("members.json", {})
+        m = mem.setdefault(uid, {"name": "", "first_seen": ts, "asks": 0})
+        m["last_seen"] = ts
+        if typ == "follow":
+            m["followed_at"], m["status"] = ts, "好友"
+            m.pop("unfollowed_at", None)
+        elif typ == "unfollow":
+            m["unfollowed_at"], m["status"] = ts, "封鎖"
+        elif typ == "message" and cmd:
+            m["asks"] = m.get("asks", 0) + 1
+            m.setdefault("cmds", {})
+            m["cmds"][cmd] = m["cmds"].get(cmd, 0) + 1
+        if src.get("type") in ("group", "room"):
+            m["in_group"] = True
+        need_name = typ != "unfollow" and (not m.get("name") or
+                    (now() - datetime.fromisoformat(m.get("name_at", "2000-01-01T00:00:00+08:00"))).days >= 7)
+        _write("members.json", mem)
+    if need_name:
+        name = _profile_name(src, uid)  # 網路請求放在鎖外，不卡其他人
+        if name:
+            with _members_lock:
+                mem = _read("members.json", {})
+                if uid in mem:
+                    mem[uid].update(name=name, name_at=ts)
+                    _write("members.json", mem)
+            log.info("使用者 %s：%s", typ, name)
+
+
+def _md(iso):
+    d = datetime.fromisoformat(iso)
+    return f"{d.month}/{d.day}({WEEKDAY[d.weekday()]}) {d:%H:%M}"
+
+
+def members_text() -> str:
+    mem = _read("members.json", {})
+    if not mem:
+        return "還沒有人加入或發問"
+    rows = sorted(mem.values(), key=lambda m: m.get("followed_at") or m.get("first_seen", ""), reverse=True)
+    friends = [m for m in rows if m.get("status") != "封鎖"]
+    out = [f"👥 使用者名單：{len(friends)} 人（封鎖 {len(rows) - len(friends)} 人）"]
+    for m in rows[:40]:
+        name = m.get("name") or "（未知名稱）"
+        tag = "🚫" if m.get("status") == "封鎖" else "・"
+        out.append(f"{tag}{name}｜加入 {_md(m.get('followed_at') or m['first_seen'])}"
+                   f"｜問 {m.get('asks', 0)} 次｜最近 {_ago(m.get('last_seen', m['first_seen']))}")
+    if len(rows) > 40:
+        out.append(f"……還有 {len(rows) - 40} 人，完整名單在 tipbot/state/members.json")
+    return "\n".join(out)[:4900]
+
+
 def handle_event(ev: dict):
+    text = ev.get("message", {}).get("text", "").strip() if ev.get("type") == "message" else ""
+    try:
+        _handle_event(ev)
+    finally:
+        try:
+            track_member(ev, COMMANDS.get(text.lower()) or ("名單" if text == "名單" else None))
+        except Exception:
+            log.warning("記錄使用者失敗\n%s", traceback.format_exc())
+
+
+def _handle_event(ev: dict):
     src = ev.get("source", {})
     uid = src.get("userId", "")
     owner = _read("owner.json", {})
@@ -404,6 +501,8 @@ def handle_event(ev: dict):
     if ev.get("type") != "message" or ev.get("message", {}).get("type") != "text":
         return
     text = ev["message"]["text"].strip()
+    if text == "名單" and src.get("type") == "user" and uid == _read("owner.json", {}).get("userId"):
+        return line_api("reply", {"replyToken": ev["replyToken"], "messages": [{"type": "text", "text": members_text()}]})
     cmd = COMMANDS.get(text.lower())
     if not cmd:
         if src.get("type") != "user":
