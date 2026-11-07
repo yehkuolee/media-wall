@@ -596,6 +596,10 @@ HELP = ("🔥 找哏小幫手\n"
         "　加分類也行，例如「清單 政治」\n"
         "直接打一句話也可以，例如「政治有什麼還沒寫的」\n"
         "清單每 10 分鐘更新（05:00～24:00）")
+OWNER_HELP = ("\n\n管理者限定（只有你看得到）：\n"
+              "・名單 → 誰加了好友、各問過幾次\n"
+              "・紀錄 → 最近 50 則發問原文\n"
+              "　看某人：「紀錄 名字」")
 
 COMMANDS = {"哏": "哏", "梗": "哏", "最新": "哏", "最新哏": "哏", "最新哏清單": "哏", "未寫": "未寫", "沒寫": "未寫", "漏": "未寫",
             "暴衝": "暴衝", "threads": "threads", "thread": "threads", "脆": "threads", "清單": "清單", "文字": "清單", "說明": "help", "help": "help", "?": "help", "？": "help"}
@@ -772,6 +776,8 @@ def _handle_event(ev: dict):
             return  # 群組裡別人聊天不插嘴
         cmd = "help"
     log.info("回覆 %s：%s", src.get("type"), text)
+    if cmd == "help" and src.get("type") == "user" and uid == _read("owner.json", {}).get("userId"):
+        return line_api("reply", {"replyToken": ev["replyToken"], "messages": [{"type": "text", "text": HELP + OWNER_HELP}]})
     r = line_api("reply", {"replyToken": ev["replyToken"], "messages": reply_messages(cmd)})
     if r is not None and r.status_code == 400:  # 卡片格式被 LINE 退回時，改回純文字
         line_api("reply", {"replyToken": ev["replyToken"],
