@@ -1,12 +1,20 @@
 {
-  "updated_at": "2026-11-09T03:57:55.408761+08:00",
+  "updated_at": "2026-11-09T07:26:28.326643+08:00",
   "keywords": [
+    {
+      "title": "天氣",
+      "volume": "10萬+"
+    },
     {
       "title": "廖玉蕙",
       "volume": "5,000+"
     },
     {
-      "title": "李正皓",
+      "title": "公牛 對 76人",
+      "volume": "2,000+"
+    },
+    {
+      "title": "黃仁勳老婆",
       "volume": "5,000+"
     },
     {
@@ -14,35 +22,39 @@
       "volume": "2,000+"
     },
     {
-      "title": "徐欣瑩",
+      "title": "股災",
+      "volume": "1萬+"
+    },
+    {
+      "title": "nvidia",
       "volume": "2,000+"
     },
     {
-      "title": "明天的天氣",
-      "volume": "10萬+"
+      "title": "活塞 對 湖人",
+      "volume": "1,000+"
     },
     {
-      "title": "費玉清",
-      "volume": "1,000+"
+      "title": "蔣友柏",
+      "volume": "2,000+"
     },
     {
       "title": "補貼",
       "volume": "1,000+"
     },
     {
-      "title": "t1 blg",
-      "volume": "1,000+"
-    },
-    {
-      "title": "曼聯 對 阿斯頓維拉",
-      "volume": "1,000+"
-    },
-    {
       "title": "谷歌",
-      "volume": "500+"
+      "volume": "1,000+"
     },
     {
-      "title": "曼聯",
+      "title": "費玉清",
+      "volume": "1,000+"
+    },
+    {
+      "title": "張鈞甯",
+      "volume": "1,000+"
+    },
+    {
+      "title": "敗訴",
       "volume": "1,000+"
     },
     {
@@ -50,56 +62,44 @@
       "volume": "1,000+"
     },
     {
-      "title": "張鈞甯",
-      "volume": "500+"
-    },
-    {
-      "title": "鳥松火災",
+      "title": "生肖",
       "volume": "2,000+"
     },
     {
-      "title": "f1",
+      "title": "國巨股份有限公司",
+      "volume": "2,000+"
+    },
+    {
+      "title": "晶 圓",
       "volume": "1,000+"
     },
     {
-      "title": "motogp",
+      "title": "徐欣瑩",
+      "volume": "2,000+"
+    },
+    {
+      "title": "馬德里競技 對 巴塞隆納",
       "volume": "500+"
-    },
-    {
-      "title": "蔣友柏",
-      "volume": "500+"
-    },
-    {
-      "title": "勇士 對 魔術",
-      "volume": "2萬+"
-    },
-    {
-      "title": "新竹縣長候選人",
-      "volume": "500+"
-    },
-    {
-      "title": "柯文哲",
-      "volume": "500+"
-    },
-    {
-      "title": "劉鑾雄",
-      "volume": "100+"
-    },
-    {
-      "title": "man utd vs aston villa",
-      "volume": "1,000+"
     },
     {
       "title": "張啟楷",
       "volume": "2,000+"
     },
     {
-      "title": "晶 圓",
-      "volume": "5,000+"
+      "title": "man utd vs aston villa",
+      "volume": "1,000+"
     },
     {
-      "title": "拓荒者 對 馬刺",
-      "volume": "5,000+"
+      "title": "weather",
+      "volume": "500+"
+    },
+    {
+      "title": "nvidia 股價",
+      "volume": "200+"
+    },
+    {
+      "title": "曼聯 對 阿斯頓維拉",
+      "volume": "1,000+"
     }
   ]
 }
