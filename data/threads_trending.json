@@ -1,16 +1,40 @@
 {
-  "updated_at": "2026-11-09T03:05:12.901566+08:00",
+  "updated_at": "2026-11-09T04:05:14.261916+08:00",
   "topics": [
     {
-      "title": "高雄鳥松火警兩兄弟罹難",
-      "description": "鳥松區連棟鐵皮建物8日發生火災，受困二樓的兩名學生兄弟不幸罹難",
-      "count": "114 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%B3%A5%E6%9D%BE%E7%81%AB%E8%AD%A6&serp_type=trends&trend_fbid=1116805147938093"
+      "title": "高雄仁武發生火災",
+      "description": "高雄仁武一帶竄出濃煙與火勢，相關單位獲報後派遣消防隊前往處置",
+      "count": "16 則貼文",
+      "link": "https://www.threads.com/search?q=%E4%BB%81%E6%AD%A6%E7%81%AB%E7%81%BD&serp_type=trends&trend_fbid=28974345795550375"
+    },
+    {
+      "title": "EXO首爾安可演唱會影城直播",
+      "description": "韓國男團EXO在首爾舉行安可演唱會，最終場同步於各地影城進行海外直播",
+      "count": "323 則貼文",
+      "link": "https://www.threads.com/search?q=EXO%E6%BC%94%E5%94%B1%E6%9C%83&serp_type=trends&trend_fbid=1120479360581770"
+    },
+    {
+      "title": "孫淑媚首度登浪人祭演出",
+      "description": "金曲歌后孫淑媚在浪人祭演唱台語歌，現場樂迷接連進行開圈與死牆等互動",
+      "count": "908 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%AD%AB%E6%B7%91%E5%AA%9A&serp_type=trends&trend_fbid=1956317958678385"
+    },
+    {
+      "title": "月薪20萬都會養家開銷",
+      "description": "民眾列出房貸與育兒開銷，認為都會區月薪20萬養家仍吃緊，並分析收入門檻",
+      "count": "2 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%9C%88%E8%96%AA20%E8%90%AC&serp_type=trends&trend_fbid=2389775501767558"
+    },
+    {
+      "title": "F1巴西站Verstappen超車",
+      "description": "F1巴西大獎賽車手Max Verstappen自第21位起跑，雨戰中接連超車衝上第2位",
+      "count": "2 千則貼文",
+      "link": "https://www.threads.com/search?q=Max%20Verstappen&serp_type=trends&trend_fbid=1807182770546888"
     },
     {
       "title": "曼聯4比4戰平阿士東維拉",
       "description": "曼聯在英超主場兩度落後，最終於補時連進兩球以4比4戰平阿士東維拉",
-      "count": "1 千則貼文",
+      "count": "2 千則貼文",
       "link": "https://www.threads.com/search?q=%E6%9B%BC%E8%81%AF&serp_type=trends&trend_fbid=1854940929183467"
     },
     {
@@ -20,15 +44,9 @@
       "link": "https://www.threads.com/search?q=%E8%AD%B7%E7%90%86%E5%B8%AB%E5%9C%8B%E8%80%83&serp_type=trends&trend_fbid=1079779888428872"
     },
     {
-      "title": "EXO首爾舉行安可演唱會",
-      "description": "韓國男團EXO在首爾舉辦安可演唱會，帶來多首經典曲目並於多地影院同步直播",
-      "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=EXO&serp_type=trends&trend_fbid=1920719535562016"
-    },
-    {
       "title": "男子台鐵大吼騷擾女乘客遭驅離",
       "description": "女乘客在台鐵遭陌生男子大吼騷擾，同車乘客挺身制止並配合站務人員將其驅離",
-      "count": "41 則貼文",
+      "count": "45 則貼文",
       "link": "https://www.threads.com/search?q=%E5%8F%B0%E9%90%B5%E9%A8%B7%E6%93%BE&serp_type=trends&trend_fbid=1122172684133273"
     },
     {
@@ -42,12 +60,6 @@
       "description": "「一生必去--冰島，出發」被引用於旅遊標題與生活費開銷清單",
       "count": "",
       "link": "https://www.threads.com/search?q=%E5%86%B0%E5%B3%B6%E5%8F%A5%E5%9E%8B&serp_type=trends&trend_fbid=1812390849669004"
-    },
-    {
-      "title": "月薪20萬能否負擔家庭開銷",
-      "description": "民眾列出房貸與育兒等日常支出，分析月薪20萬元維持家庭生活與財務獨立的壓力",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%9C%88%E8%96%AA20%E8%90%AC&serp_type=trends&trend_fbid=1105021695471918"
     },
     {
       "title": "金智媛台北見面會感動落淚",
@@ -78,18 +90,6 @@
       "description": "近1300位學界人士連署挺沈伯洋，台大教授陳縕儂出席倡議AI人才投資",
       "count": "8 萬則貼文",
       "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1670279524671879"
-    },
-    {
-      "title": "BIGBANG曼谷開唱因雨取消",
-      "description": "因現場突降暴雨及雷電，BIGBANG曼谷演唱會中途取消並將辦理退款",
-      "count": "2 萬則貼文",
-      "link": "https://www.threads.com/search?q=BIGBANG&serp_type=trends&trend_fbid=1194682019890136"
-    },
-    {
-      "title": "南北貳路音樂節圓滿落幕",
-      "description": "活動邀玖壹壹與周湯豪等多組藝人接力演出，南北貳路音樂節於台中圓滿落幕",
-      "count": "4 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8D%97%E5%8C%97%E8%B2%B3%E8%B7%AF&serp_type=trends&trend_fbid=1806986550216601"
     }
   ]
 }
