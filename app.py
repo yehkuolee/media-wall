@@ -320,15 +320,19 @@ a.src-row, a.src-row:hover { text-decoration: none; }
 }
 
 /* ── 分類分頁（跟 LINE 找哏小幫手同一套分類）── */
-.cat-tabs { display: flex; flex-wrap: wrap; gap: 4px; margin: 0 0 12px; border-bottom: 2px solid #121212; }
-.cat-tab {
-    padding: 5px 12px; font-size: .78rem; font-weight: 600; color: #444 !important; text-decoration: none !important;
-    background: #ffffff; border: 1px solid #e8e5e0; border-bottom: none;
+/* st.segmented_control 換成分頁外觀；切換時只重跑內容，不重新載入整頁 */
+.st-key-cat_pick [data-testid="stButtonGroup"] { border-bottom: 2px solid #121212; width: 100%; gap: 4px; flex-wrap: wrap; }
+.st-key-cat_pick button {
+    border-radius: 0 !important; border: 1px solid #e8e5e0 !important; border-bottom: none !important;
+    background: #ffffff !important; color: #444 !important; font-weight: 600; min-height: 32px; padding: 0 12px;
 }
-.cat-tab:hover { color: #c41230 !important; }
-.cat-tab.active { background: #121212; color: #ffffff !important; border-color: #121212; }
-.cat-opt { font-size: .72rem; color: #c41230; text-decoration: none; margin: 0 0 8px 2px; display: inline-block; }
-.cat-opt:hover { text-decoration: underline; }
+.st-key-cat_pick button:hover { color: #c41230 !important; }
+.st-key-cat_pick button[kind$="Active"] { background: #121212 !important; color: #ffffff !important; border-color: #121212 !important; }
+.st-key-cat_pick button p { font-size: .78rem; }
+.st-key-cat_unwritten p { color: #c41230 !important; font-size: .75rem; font-weight: 600; }
+html.mw-dark .st-key-cat_unwritten p { color: #ff3b4e !important; }
+/* 重跑時舊內容不要變淡（看起來像閃一下） */
+[data-stale="true"] { opacity: 1 !important; transition: none !important; }
 .et-no { color: #c41230; border: 1px solid #c41230; font-weight: 600; border-radius: 3px; padding: 0 4px; margin-left: 4px; }
 .topic-why  { color: #888; font-size: .68rem; margin-top: 2px; }
 .topic-desc { color: #888; font-size: .68rem; margin-top: 2px; }
@@ -408,11 +412,10 @@ html.mw-dark .src-name  { color: #c8c8c8; }
 html.mw-dark .src-row.active { border-left-color: #ff3b4e; }
 html.mw-dark .src-row.active .src-name, html.mw-dark .src-back { color: #ff3b4e; }
 html.mw-dark .src-bar   { background: linear-gradient(90deg, #ff3b4e, #8b0000); }
-html.mw-dark .cat-tabs { border-bottom-color: #e6e6e6; }
-html.mw-dark .cat-tab { background: #0b0b0b; border-color: #222222; color: #c8c8c8 !important; }
-html.mw-dark .cat-tab:hover { color: #ff3b4e !important; }
-html.mw-dark .cat-tab.active { background: #e6e6e6; border-color: #e6e6e6; color: #000000 !important; }
-html.mw-dark .cat-opt { color: #ff3b4e; }
+html.mw-dark .st-key-cat_pick [data-testid="stButtonGroup"] { border-bottom-color: #e6e6e6; }
+html.mw-dark .st-key-cat_pick button { background: #0b0b0b !important; border-color: #222222 !important; color: #c8c8c8 !important; }
+html.mw-dark .st-key-cat_pick button:hover { color: #ff3b4e !important; }
+html.mw-dark .st-key-cat_pick button[kind$="Active"] { background: #e6e6e6 !important; border-color: #e6e6e6 !important; color: #000000 !important; }
 html.mw-dark .et-no { color: #ff3b4e; border-color: #ff3b4e; }
 html.mw-dark .topic-why, html.mw-dark .topic-desc, html.mw-dark .topic-links a { color: #8a8a8a; }
 html.mw-dark .topic-links a:hover { color: #ff3b4e; }
@@ -880,6 +883,19 @@ def category_topics() -> list:
     return tp.build_topics(_cat_memo())[0]
 
 
+def _sync_cat_url():
+    """切分頁／未寫開關時改網址（不重新載入），這樣網址還是可以直接分享"""
+    cat = st.session_state.get("cat_pick")
+    if cat in (None, "全部"):
+        st.session_state.cat_pick = "全部"  # 再點一次已選的會取消，當成回到全部
+        st.query_params.clear()
+        return
+    st.query_params.clear()
+    st.query_params["cat"] = cat
+    if st.session_state.get("cat_unwritten"):
+        st.query_params["et"] = "未寫"
+
+
 def topic_card_html(i: int, t: dict) -> str:
     et = t.get("et")
     et_html = et_tag_html(et) if et else ' · <span class="et-no">ETtoday未寫</span>'
@@ -1189,10 +1205,12 @@ def main():
         selected_src = ""
     # 分類分頁：?cat=政治（&et=未寫 只看 ETtoday 還沒寫的）；選了分類就不看單一媒體
     import topics as tp
-    selected_cat = st.query_params.get("cat", "")
-    if selected_cat not in tp.CATS:
-        selected_cat = ""
-    only_unwritten = bool(selected_cat) and st.query_params.get("et", "") == "未寫"
+    if "cat_pick" not in st.session_state:  # 第一次進來照網址；之後照分頁按鈕
+        q = st.query_params.get("cat", "")
+        st.session_state.cat_pick = q if q in tp.CATS else "全部"
+        st.session_state.cat_unwritten = st.query_params.get("et", "") == "未寫"
+    selected_cat = st.session_state.cat_pick if st.session_state.cat_pick in tp.CATS else ""
+    only_unwritten = bool(selected_cat) and st.session_state.get("cat_unwritten", False)
     if selected_cat:
         selected_src = ""
     threads_topics = threads_data.get("topics", [])
@@ -1204,11 +1222,9 @@ def main():
     if ticker_items:
         st.markdown(ticker_html(ticker_items), unsafe_allow_html=True)
 
-    tabs = [("全部", "?", not selected_cat)] + [
-        (f"{tp.CAT_ICON[c]} {c}", "?cat=" + quote(c), c == selected_cat) for c in tp.CATS]
-    st.markdown('<div class="cat-tabs">' + "".join(
-        f'<a class="cat-tab{" active" if on else ""}" href="{href}" target="_self">{label}</a>'
-        for label, href, on in tabs) + "</div>", unsafe_allow_html=True)
+    st.segmented_control("分類", ["全部"] + tp.CATS, key="cat_pick", on_change=_sync_cat_url,
+                         format_func=lambda c: c if c == "全部" else f"{tp.CAT_ICON[c]} {c}",
+                         label_visibility="collapsed")
 
     # ── Main 3 columns ───────────────────────────────────────────
     left, center, right = st.columns([1.1, 2.1, 1.1])
@@ -1251,12 +1267,10 @@ def main():
             for t in cat_all:
                 t["et"] = et_map.get(t["title"])
             shown = [t for t in cat_all if not t["et"]] if only_unwritten else cat_all
-            base = "?cat=" + quote(selected_cat)
-            toggle = (f'<a class="cat-opt" href="{base}" target="_self">← 看全部{selected_cat}話題</a>' if only_unwritten
-                      else f'<a class="cat-opt" href="{base}&et={quote("未寫")}" target="_self">只看ETtoday未寫 →</a>')
             what = "ETtoday還沒寫的" if only_unwritten else "熱門"
-            st.markdown(f'<div class="sec-title">{tp.CAT_ICON[selected_cat]} {selected_cat}｜{what}話題 {len(shown)} 則（依熱度排）</div>'
-                        + toggle, unsafe_allow_html=True)
+            st.markdown(f'<div class="sec-title">{tp.CAT_ICON[selected_cat]} {selected_cat}｜{what}話題 {len(shown)} 則（依熱度排）</div>',
+                        unsafe_allow_html=True)
+            st.toggle("只看ETtoday未寫", key="cat_unwritten", on_change=_sync_cat_url)
             if not shown:
                 st.markdown(f'<div class="surge-empty">目前沒有{what}{selected_cat}話題</div>', unsafe_allow_html=True)
             st.markdown("".join(topic_card_html(i, t) for i, t in enumerate(shown, 1)), unsafe_allow_html=True)
