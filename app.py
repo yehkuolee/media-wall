@@ -327,8 +327,9 @@ a.src-row, a.src-row:hover { text-decoration: none; }
     background: #ffffff !important; color: #444 !important; font-weight: 600; min-height: 32px; padding: 0 12px;
 }
 .st-key-cat_pick button:hover { color: #c41230 !important; }
-.st-key-cat_pick button[kind$="Active"] { background: #121212 !important; color: #ffffff !important; border-color: #121212 !important; }
+.st-key-cat_pick button[kind$="Active"], .st-key-cat_pick button[aria-checked="true"] { background: #121212 !important; color: #ffffff !important; border-color: #121212 !important; }
 .st-key-cat_pick button p { font-size: .78rem; }
+.st-key-cat_pick button[aria-checked="true"] p, .st-key-cat_pick button[kind$="Active"] p { color: inherit !important; }
 .st-key-cat_unwritten p { color: #c41230 !important; font-size: .75rem; font-weight: 600; }
 html.mw-dark .st-key-cat_unwritten p { color: #ff3b4e !important; }
 /* 重跑時舊內容不要變淡（看起來像閃一下） */
@@ -415,7 +416,7 @@ html.mw-dark .src-bar   { background: linear-gradient(90deg, #ff3b4e, #8b0000); 
 html.mw-dark .st-key-cat_pick [data-testid="stButtonGroup"] { border-bottom-color: #e6e6e6; }
 html.mw-dark .st-key-cat_pick button { background: #0b0b0b !important; border-color: #222222 !important; color: #c8c8c8 !important; }
 html.mw-dark .st-key-cat_pick button:hover { color: #ff3b4e !important; }
-html.mw-dark .st-key-cat_pick button[kind$="Active"] { background: #e6e6e6 !important; border-color: #e6e6e6 !important; color: #000000 !important; }
+html.mw-dark .st-key-cat_pick button[kind$="Active"], .st-key-cat_pick button[aria-checked="true"] { background: #e6e6e6 !important; border-color: #e6e6e6 !important; color: #000000 !important; }
 html.mw-dark .et-no { color: #ff3b4e; border-color: #ff3b4e; }
 html.mw-dark .topic-why, html.mw-dark .topic-desc, html.mw-dark .topic-links a { color: #8a8a8a; }
 html.mw-dark .topic-links a:hover { color: #ff3b4e; }
