@@ -24,6 +24,7 @@ import traceback
 from datetime import datetime
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from urllib.parse import quote
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
@@ -60,6 +61,7 @@ PUSH_MIN_SCORE = int(os.environ.get("TIPBOT_PUSH_MIN_SCORE", "12"))   # 超強�
 PUSH_PER_DAY = 3                 # 主動推播每天上限
 PUSH_PER_MONTH = 60              # 每月上限（LINE 輕用量免費 200 則，留安全空間）
 LIST_N = 8                       # 回覆清單最多幾則
+WALL_URL = os.environ.get("TIPBOT_WALL_URL", "https://media-wall-kyupypbavjip4jw2tsgida.streamlit.app/")  # 媒體牆網頁版
 SECRET = os.environ.get("LINE_CHANNEL_SECRET", "")
 TOKEN = os.environ.get("LINE_CHANNEL_ACCESS_TOKEN", "")
 TZ = mw.TW_TZ
@@ -324,6 +326,23 @@ def _title(base, cat):
     return f"🔥 {tag}熱門哏" if cat else "🔥 最新哏"
 
 
+def web_url(cmd: str) -> str:
+    """回覆對應的媒體牆網址：有分類就直接開那一類（未寫的開「只看未寫」），其他開首頁"""
+    base, cat = _split(cmd.removeprefix("清單/"))
+    if cat in CATS and not base.startswith("threads"):
+        return WALL_URL + "?cat=" + quote(cat) + ("&et=" + quote("未寫") if base == "未寫" else "")
+    return WALL_URL
+
+
+def with_web(messages: list, cmd: str) -> list:
+    """每則回覆最後附網頁版連結：最後一則是文字就接在後面，是卡片就多一則文字（一次回覆最多 5 則）"""
+    line = f"🌐 網頁版：{web_url(cmd)}"
+    last = messages[-1]
+    if last["type"] == "text" and len(last["text"]) + len(line) < 4990:
+        return messages[:-1] + [{**last, "text": last["text"] + "\n\n" + line}]
+    return (messages + [{"type": "text", "text": line}])[:5]
+
+
 def reply_messages(cmd: str) -> list:
     """回覆用：一則標題文字＋一組卡片（最多 10 張）"""
     data = _read("latest.json", None)
@@ -533,7 +552,7 @@ def _handle_event(ev: dict):
         _write("owner.json", {"userId": uid, "bound_at": now().isoformat()})
         log.info("綁定推播對象 %s", uid)
     if ev.get("type") == "follow":
-        return line_api("reply", {"replyToken": ev["replyToken"], "messages": [{"type": "text", "text": HELP}]})
+        return line_api("reply", {"replyToken": ev["replyToken"], "messages": with_web([{"type": "text", "text": HELP}], "help")})
     if ev.get("type") != "message" or ev.get("message", {}).get("type") != "text":
         return
     text = ev["message"]["text"].strip()
@@ -549,11 +568,11 @@ def _handle_event(ev: dict):
         cmd = "help"
     log.info("回覆 %s：%s", src.get("type"), text)
     if cmd == "help" and src.get("type") == "user" and uid == _read("owner.json", {}).get("userId"):
-        return line_api("reply", {"replyToken": ev["replyToken"], "messages": [{"type": "text", "text": HELP + OWNER_HELP}]})
-    r = line_api("reply", {"replyToken": ev["replyToken"], "messages": reply_messages(cmd)})
+        return line_api("reply", {"replyToken": ev["replyToken"], "messages": with_web([{"type": "text", "text": HELP + OWNER_HELP}], "help")})
+    r = line_api("reply", {"replyToken": ev["replyToken"], "messages": with_web(reply_messages(cmd), cmd)})
     if r is not None and r.status_code == 400:  # 卡片格式被 LINE 退回時，改回純文字
         line_api("reply", {"replyToken": ev["replyToken"],
-                           "messages": [{"type": "text", "text": HELP if cmd == "help" else reply_text(cmd)}]})
+                           "messages": with_web([{"type": "text", "text": HELP if cmd == "help" else reply_text(cmd)}], cmd)})
 
 
 def verify(body: bytes, sig: str) -> bool:
