@@ -416,7 +416,7 @@ html.mw-dark .src-bar   { background: linear-gradient(90deg, #ff3b4e, #8b0000); 
 html.mw-dark .st-key-cat_pick [data-testid="stButtonGroup"] { border-bottom-color: #e6e6e6; }
 html.mw-dark .st-key-cat_pick button { background: #0b0b0b !important; border-color: #222222 !important; color: #c8c8c8 !important; }
 html.mw-dark .st-key-cat_pick button:hover { color: #ff3b4e !important; }
-html.mw-dark .st-key-cat_pick button[kind$="Active"], .st-key-cat_pick button[aria-checked="true"] { background: #e6e6e6 !important; border-color: #e6e6e6 !important; color: #000000 !important; }
+html.mw-dark .st-key-cat_pick button[kind$="Active"], html.mw-dark .st-key-cat_pick button[aria-checked="true"] { background: #e6e6e6 !important; border-color: #e6e6e6 !important; color: #000000 !important; }
 html.mw-dark .et-no { color: #ff3b4e; border-color: #ff3b4e; }
 html.mw-dark .topic-why, html.mw-dark .topic-desc, html.mw-dark .topic-links a { color: #8a8a8a; }
 html.mw-dark .topic-links a:hover { color: #ff3b4e; }
