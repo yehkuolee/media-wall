@@ -319,6 +319,23 @@ a.src-row, a.src-row:hover { text-decoration: none; }
     margin-top: 3px;
 }
 
+/* ── 分類分頁（跟 LINE 找哏小幫手同一套分類）── */
+.cat-tabs { display: flex; flex-wrap: wrap; gap: 4px; margin: 0 0 12px; border-bottom: 2px solid #121212; }
+.cat-tab {
+    padding: 5px 12px; font-size: .78rem; font-weight: 600; color: #444 !important; text-decoration: none !important;
+    background: #ffffff; border: 1px solid #e8e5e0; border-bottom: none;
+}
+.cat-tab:hover { color: #c41230 !important; }
+.cat-tab.active { background: #121212; color: #ffffff !important; border-color: #121212; }
+.cat-opt { font-size: .72rem; color: #c41230; text-decoration: none; margin: 0 0 8px 2px; display: inline-block; }
+.cat-opt:hover { text-decoration: underline; }
+.et-no { color: #c41230; border: 1px solid #c41230; font-weight: 600; border-radius: 3px; padding: 0 4px; margin-left: 4px; }
+.topic-why  { color: #888; font-size: .68rem; margin-top: 2px; }
+.topic-desc { color: #888; font-size: .68rem; margin-top: 2px; }
+.topic-links { font-size: .66rem; margin-top: 2px; }
+.topic-links a { color: #888; text-decoration: none; margin-right: 10px; }
+.topic-links a:hover { color: #c41230; text-decoration: underline; }
+
 /* ── Ticker（翻頁式，一次一則，滑鼠移上去暫停）── */
 .ticker-wrap {
     display: flex;
@@ -391,6 +408,14 @@ html.mw-dark .src-name  { color: #c8c8c8; }
 html.mw-dark .src-row.active { border-left-color: #ff3b4e; }
 html.mw-dark .src-row.active .src-name, html.mw-dark .src-back { color: #ff3b4e; }
 html.mw-dark .src-bar   { background: linear-gradient(90deg, #ff3b4e, #8b0000); }
+html.mw-dark .cat-tabs { border-bottom-color: #e6e6e6; }
+html.mw-dark .cat-tab { background: #0b0b0b; border-color: #222222; color: #c8c8c8 !important; }
+html.mw-dark .cat-tab:hover { color: #ff3b4e !important; }
+html.mw-dark .cat-tab.active { background: #e6e6e6; border-color: #e6e6e6; color: #000000 !important; }
+html.mw-dark .cat-opt { color: #ff3b4e; }
+html.mw-dark .et-no { color: #ff3b4e; border-color: #ff3b4e; }
+html.mw-dark .topic-why, html.mw-dark .topic-desc, html.mw-dark .topic-links a { color: #8a8a8a; }
+html.mw-dark .topic-links a:hover { color: #ff3b4e; }
 html.mw-dark .ticker-wrap { background: #000000; border-top: 1px solid #222222; border-bottom: 1px solid #222222; }
 html.mw-dark .ticker-label { color: #ff3b4e; }
 html.mw-dark .ticker-item  { color: #f5c542 !important; }
@@ -838,6 +863,39 @@ def detect_surges() -> list[dict]:
     return sorted(found.values(), key=lambda f: (-len(f["reasons"]), f["best"]))[:8]
 
 
+# ── 分類分頁 ───────────────────────────────────────────────────────
+# 跟 LINE 找哏小幫手同一套邏輯（topics.py）：收訊號 → 串同話題 → 算熱度 → 前 50 名 → 分類，
+# 點分類只看該類，依熱度排；Gemini 分類各自問（雲端讀不到舊機 Bot 的紀錄），問過的記在記憶體。
+
+@st.cache_resource
+def _cat_memo() -> dict:
+    return {}
+
+
+@st.cache_data(ttl=600, show_spinner=False)
+def category_topics() -> list:
+    import topics as tp
+    from types import SimpleNamespace
+    tp.use(SimpleNamespace(**globals()))  # Streamlit 跑的是 __main__，把這支的函式打包傳進去
+    return tp.build_topics(_cat_memo())[0]
+
+
+def topic_card_html(i: int, t: dict) -> str:
+    et = t.get("et")
+    et_html = et_tag_html(et) if et else ' · <span class="et-no">ETtoday未寫</span>'
+    desc = (f'<div class="topic-desc">{html_mod.escape(t["threads_desc"][:80])}</div>'
+            if t.get("threads_desc") and t["sources"] == 0 else "")
+    links = "".join(f'<a href="{html_mod.escape(l["link"])}" target="_blank" rel="noopener">{html_mod.escape(l["source"])}</a>'
+                    for l in t["links"][:3])
+    # 整張卡片寫成一行：中間有空行的話 Markdown 會把後半段當成程式碼區塊
+    return (f'<div class="news-card"><div class="news-rank {rank_class(i - 1)}">{i}</div><div class="news-body">'
+            f'<a class="news-title-link" href="{html_mod.escape(t.get("link") or "#")}" target="_blank" rel="noopener">'
+            f'{html_mod.escape(t["title"])}</a>'
+            f'<div class="topic-why">熱度 {t["score"]}｜{html_mod.escape("｜".join(t["why"]))}</div>{desc}'
+            f'<div class="news-meta">{f"<span class=topic-links>{links}</span>{et_html}" if links else et_html.removeprefix(" · ")}</div>'
+            '</div></div>')
+
+
 # ── Helpers ────────────────────────────────────────────────────────
 
 def round_robin_top(all_news: list, n: int = 15) -> list:
@@ -1129,6 +1187,14 @@ def main():
     selected_src = st.query_params.get("src", "")
     if selected_src not in source_counts:
         selected_src = ""
+    # 分類分頁：?cat=政治（&et=未寫 只看 ETtoday 還沒寫的）；選了分類就不看單一媒體
+    import topics as tp
+    selected_cat = st.query_params.get("cat", "")
+    if selected_cat not in tp.CATS:
+        selected_cat = ""
+    only_unwritten = bool(selected_cat) and st.query_params.get("et", "") == "未寫"
+    if selected_cat:
+        selected_src = ""
     threads_topics = threads_data.get("topics", [])
     threads_updated = threads_data.get("updated_at")
 
@@ -1137,6 +1203,12 @@ def main():
     ticker_items = round_robin_top(all_news, 35)[15:] or all_news[:20]
     if ticker_items:
         st.markdown(ticker_html(ticker_items), unsafe_allow_html=True)
+
+    tabs = [("全部", "?", not selected_cat)] + [
+        (f"{tp.CAT_ICON[c]} {c}", "?cat=" + quote(c), c == selected_cat) for c in tp.CATS]
+    st.markdown('<div class="cat-tabs">' + "".join(
+        f'<a class="cat-tab{" active" if on else ""}" href="{href}" target="_self">{label}</a>'
+        for label, href, on in tabs) + "</div>", unsafe_allow_html=True)
 
     # ── Main 3 columns ───────────────────────────────────────────
     left, center, right = st.columns([1.1, 2.1, 1.1])
@@ -1172,60 +1244,77 @@ def main():
     # ── CENTER ──
     with center:
         record_ranks(all_news)
-        surges = detect_surges()
-        st.markdown('<div class="sec-title">🚀 瀏覽暴衝（熱門榜名次推測）</div>', unsafe_allow_html=True)
-        if not surges:
-            msg = ("名次紀錄累積中，約 10 分鐘後開始偵測" if len(_rank_log()["snaps"]) < 2
-                   else "目前沒有暴衝稿件")
-            st.markdown(f'<div class="surge-empty">{msg}</div>', unsafe_allow_html=True)
-        surge_slot = st.empty()
-        if selected_src:
-            src_news = [n for n in all_news if n["source"] == selected_src]
-            st.markdown(f'<div class="sec-title">📰 {html_mod.escape(selected_src)}｜全部 {len(src_news)} 則</div>'
-                        '<a class="src-back" href="?" target="_self">← 回到 Top 15（各媒體均攤）</a>',
-                        unsafe_allow_html=True)
-            news_list = src_news
+        if selected_cat:
+            with st.spinner("整理分類話題中..."):
+                cat_all = [dict(t) for t in category_topics() if t.get("cat") == selected_cat]
+                et_map = ettoday_matches([{"title": t["title"], "link": t["link"]} for t in cat_all])
+            for t in cat_all:
+                t["et"] = et_map.get(t["title"])
+            shown = [t for t in cat_all if not t["et"]] if only_unwritten else cat_all
+            base = "?cat=" + quote(selected_cat)
+            toggle = (f'<a class="cat-opt" href="{base}" target="_self">← 看全部{selected_cat}話題</a>' if only_unwritten
+                      else f'<a class="cat-opt" href="{base}&et={quote("未寫")}" target="_self">只看ETtoday未寫 →</a>')
+            what = "ETtoday還沒寫的" if only_unwritten else "熱門"
+            st.markdown(f'<div class="sec-title">{tp.CAT_ICON[selected_cat]} {selected_cat}｜{what}話題 {len(shown)} 則（依熱度排）</div>'
+                        + toggle, unsafe_allow_html=True)
+            if not shown:
+                st.markdown(f'<div class="surge-empty">目前沒有{what}{selected_cat}話題</div>', unsafe_allow_html=True)
+            st.markdown("".join(topic_card_html(i, t) for i, t in enumerate(shown, 1)), unsafe_allow_html=True)
         else:
-            st.markdown('<div class="sec-title">📰 即時熱門新聞 Top 15（各媒體均攤）</div>', unsafe_allow_html=True)
-            news_list = round_robin_top(all_news, 15)
-        et_map = ettoday_matches(news_list + [f["news"] for f in surges if f["news"] not in news_list])
-        if surges:
-            cards = ""
-            for f in surges:
-                n = f["news"]
-                et_html = et_tag_html(et_map.get(n["title"]))
-                cards += f"""
-            <div class="news-card surge-card">
-                <div class="news-rank">🚀</div>
-                <div class="news-body">
-                    <a class="news-title-link" href="{html_mod.escape(n.get('link') or '#')}" target="_blank" rel="noopener">{html_mod.escape(n['title'])}</a>
-                    <div class="surge-why">{html_mod.escape('｜'.join(f['reasons']))}</div>
-                    <div class="news-meta"><span class="news-src">📌 {html_mod.escape(n['source'])}</span>{et_html}</div>
-                </div>
-            </div>"""
-            surge_slot.markdown(cards, unsafe_allow_html=True)
-        for i, news in enumerate(news_list):
-            rc = rank_class(i)
-            rank_num = i + 1
-            raw_title = news["title"] or "（標題載入中）"
-            display_title = html_mod.escape(raw_title[:50] + "…" if len(raw_title) > 50 else raw_title)
-            link = html_mod.escape(news.get("link") or "#")
-            source = html_mod.escape(news["source"])
-            ago = time_ago(news["pub"])
-            ago_html = f' · {html_mod.escape(ago)}' if ago else ''
-            et_html = et_tag_html(et_map.get(news["title"]))
-            st.markdown(f"""
-            <div class="news-card">
-                <div class="news-rank {rc}">{rank_num}</div>
-                <div class="news-body">
-                    <a class="news-title-link" href="{link}" target="_blank" rel="noopener">
-                        {display_title}
-                    </a>
-                    <div class="news-meta">
-                        <span class="news-src">📌 {source}</span>{ago_html}{et_html}
+            surges = detect_surges()
+            st.markdown('<div class="sec-title">🚀 瀏覽暴衝（熱門榜名次推測）</div>', unsafe_allow_html=True)
+            if not surges:
+                msg = ("名次紀錄累積中，約 10 分鐘後開始偵測" if len(_rank_log()["snaps"]) < 2
+                       else "目前沒有暴衝稿件")
+                st.markdown(f'<div class="surge-empty">{msg}</div>', unsafe_allow_html=True)
+            surge_slot = st.empty()
+            if selected_src:
+                src_news = [n for n in all_news if n["source"] == selected_src]
+                st.markdown(f'<div class="sec-title">📰 {html_mod.escape(selected_src)}｜全部 {len(src_news)} 則</div>'
+                            '<a class="src-back" href="?" target="_self">← 回到 Top 15（各媒體均攤）</a>',
+                            unsafe_allow_html=True)
+                news_list = src_news
+            else:
+                st.markdown('<div class="sec-title">📰 即時熱門新聞 Top 15（各媒體均攤）</div>', unsafe_allow_html=True)
+                news_list = round_robin_top(all_news, 15)
+            et_map = ettoday_matches(news_list + [f["news"] for f in surges if f["news"] not in news_list])
+            if surges:
+                cards = ""
+                for f in surges:
+                    n = f["news"]
+                    et_html = et_tag_html(et_map.get(n["title"]))
+                    cards += f"""
+                <div class="news-card surge-card">
+                    <div class="news-rank">🚀</div>
+                    <div class="news-body">
+                        <a class="news-title-link" href="{html_mod.escape(n.get('link') or '#')}" target="_blank" rel="noopener">{html_mod.escape(n['title'])}</a>
+                        <div class="surge-why">{html_mod.escape('｜'.join(f['reasons']))}</div>
+                        <div class="news-meta"><span class="news-src">📌 {html_mod.escape(n['source'])}</span>{et_html}</div>
                     </div>
-                </div>
-            </div>""", unsafe_allow_html=True)
+                </div>"""
+                surge_slot.markdown(cards, unsafe_allow_html=True)
+            for i, news in enumerate(news_list):
+                rc = rank_class(i)
+                rank_num = i + 1
+                raw_title = news["title"] or "（標題載入中）"
+                display_title = html_mod.escape(raw_title[:50] + "…" if len(raw_title) > 50 else raw_title)
+                link = html_mod.escape(news.get("link") or "#")
+                source = html_mod.escape(news["source"])
+                ago = time_ago(news["pub"])
+                ago_html = f' · {html_mod.escape(ago)}' if ago else ''
+                et_html = et_tag_html(et_map.get(news["title"]))
+                st.markdown(f"""
+                <div class="news-card">
+                    <div class="news-rank {rc}">{rank_num}</div>
+                    <div class="news-body">
+                        <a class="news-title-link" href="{link}" target="_blank" rel="noopener">
+                            {display_title}
+                        </a>
+                        <div class="news-meta">
+                            <span class="news-src">📌 {source}</span>{ago_html}{et_html}
+                        </div>
+                    </div>
+                </div>""", unsafe_allow_html=True)
 
     # ── RIGHT ──
     with right:
