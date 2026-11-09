@@ -327,10 +327,10 @@ def _title(base, cat):
 
 
 def web_url(cmd: str) -> str:
-    """回覆對應的媒體牆網址：有分類就直接開那一類（未寫的開「只看未寫」），其他開首頁"""
+    """回覆對應的媒體牆網址：有分類就直接開那一類（列全部，不只未寫），其他開首頁"""
     base, cat = _split(cmd.removeprefix("清單/"))
     if cat in CATS and not base.startswith("threads"):
-        return WALL_URL + "?cat=" + quote(cat) + ("&et=" + quote("未寫") if base == "未寫" else "")
+        return WALL_URL + "?cat=" + quote(cat)
     return WALL_URL
 
 
