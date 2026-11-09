@@ -147,6 +147,8 @@ def fmt_topic(i, t, with_links=True):
         if t.get("et"):
             lines.append(f"   ET：{t['et']['link']}")
         for l in t["links"][:2]:
+            if l.get("gnews"):  # 熱搜字搜到的新聞，附標題才知道在講什麼
+                lines.append(f"   {l['source']}｜{l['title'][:40]}")
             lines.append(f"   {l['source']}：{l['link']}")
         if not t["links"] and t["link"]:
             lines.append(f"   {t['link']}")
@@ -250,6 +252,7 @@ def topic_bubble(i, t):
     why = [f"熱度 {t['score']}｜" + "｜".join(t["why"][:1])] + t["why"][1:]
     if t.get("threads_desc") and t["sources"] == 0:
         why.append(t["threads_desc"][:60])
+    why += [f"📰 {l['title'][:40]}（{l['source']}）" for l in t["links"] if l.get("gnews")]
     links = []
     if t.get("et"):
         links.append(("看 ETtoday", t["et"]["link"]))

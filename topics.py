@@ -8,6 +8,9 @@ from __future__ import annotations
 import json
 import logging
 import re
+import time
+import xml.etree.ElementTree as ET
+from urllib.parse import quote
 
 import requests
 
@@ -251,6 +254,33 @@ def categorize(topics: list, groups: dict, memo: dict) -> bool:
     return bool(ans)
 
 
+# ── 只有 Google 熱搜字、沒有媒體新聞的話題：用熱搜字搜 Google 新聞（近一天），附前 3 則 ──────
+GNEWS_URL = "https://news.google.com/rss/search?q={}+when:1d&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+GNEWS_TTL = 1800
+_gnews_cache: dict[str, tuple[float, list]] = {}
+
+
+def google_news(word: str) -> list[dict]:
+    """[{source, title, link, gnews}]；問過的 30 分鐘內不重問"""
+    hit = _gnews_cache.get(word)
+    if hit and time.time() - hit[0] < GNEWS_TTL:
+        return hit[1]
+    items = []
+    try:
+        r = requests.get(GNEWS_URL.format(quote(word)), headers={"User-Agent": "Mozilla/5.0"}, timeout=8)
+        for it in list(ET.fromstring(r.content).iter("item"))[:3]:
+            src = it.findtext("source") or "Google 新聞"
+            title = re.sub(r"\s+-\s+" + re.escape(src) + r"$", "", it.findtext("title") or "")  # 標題尾巴的「 - 媒體名」
+            if title and it.findtext("link"):
+                items.append({"source": src, "title": title, "link": it.findtext("link"), "gnews": True})
+    except Exception:
+        log.warning("Google 新聞搜尋失敗：%s", word)
+    if len(_gnews_cache) > 500:
+        _gnews_cache.clear()
+    _gnews_cache[word] = (time.time(), items)
+    return items
+
+
 def build_topics(memo: dict) -> tuple[list, list, int, bool]:
     """回傳 (話題前 50 名依熱度排, [(話題, 成員訊號)], 訊號筆數, memo 有沒有更新)"""
     sig = collect()
@@ -263,5 +293,8 @@ def build_topics(memo: dict) -> tuple[list, list, int, bool]:
     pairs.sort(key=lambda p: -p[0]["score"])
     pairs = pairs[:50]  # 多留一些，分類查詢時每類才有東西
     topics = [t for t, _ in pairs]
+    for t in topics:
+        if "google" in t["kinds"] and not t["links"]:
+            t["links"] = google_news(t["title"])
     changed = categorize(topics, {id(t): g for t, g in pairs}, memo)
     return topics, pairs, len(sig), changed

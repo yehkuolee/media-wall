@@ -337,6 +337,9 @@ html.mw-dark .st-key-cat_unwritten p { color: #ff3b4e !important; }
 .et-no { color: #c41230; border: 1px solid #c41230; font-weight: 600; border-radius: 3px; padding: 0 4px; margin-left: 4px; }
 .topic-why  { color: #888; font-size: .68rem; margin-top: 2px; }
 .topic-desc { color: #888; font-size: .68rem; margin-top: 2px; }
+.topic-news { font-size: .72rem; margin-top: 3px; color: #888; }
+.topic-news a { color: #333; text-decoration: none; }
+.topic-news a:hover { color: #c41230; text-decoration: underline; }
 .topic-links { font-size: .66rem; margin-top: 2px; }
 .topic-links a { color: #888; text-decoration: none; margin-right: 10px; }
 .topic-links a:hover { color: #c41230; text-decoration: underline; }
@@ -420,6 +423,8 @@ html.mw-dark .st-key-cat_pick button[kind$="Active"], html.mw-dark .st-key-cat_p
 html.mw-dark .et-no { color: #ff3b4e; border-color: #ff3b4e; }
 html.mw-dark .topic-why, html.mw-dark .topic-desc, html.mw-dark .topic-links a { color: #8a8a8a; }
 html.mw-dark .topic-links a:hover { color: #ff3b4e; }
+html.mw-dark .topic-news a { color: #c8c8c8; }
+html.mw-dark .topic-news a:hover { color: #ff3b4e; }
 html.mw-dark .ticker-wrap { background: #000000; border-top: 1px solid #222222; border-bottom: 1px solid #222222; }
 html.mw-dark .ticker-label { color: #ff3b4e; }
 html.mw-dark .ticker-item  { color: #f5c542 !important; }
@@ -902,8 +907,11 @@ def topic_card_html(i: int, t: dict) -> str:
     et_html = et_tag_html(et) if et else ' · <span class="et-no">ETtoday未寫</span>'
     desc = (f'<div class="topic-desc">{html_mod.escape(t["threads_desc"][:80])}</div>'
             if t.get("threads_desc") and t["sources"] == 0 else "")
+    gnews = [l for l in t["links"] if l.get("gnews")]  # 只有熱搜字的話題：列 Google 新聞搜到的標題
+    desc += "".join(f'<div class="topic-news">📰 <a href="{html_mod.escape(l["link"])}" target="_blank" rel="noopener">'
+                    f'{html_mod.escape(l["title"])}</a>（{html_mod.escape(l["source"])}）</div>' for l in gnews[:3])
     links = "".join(f'<a href="{html_mod.escape(l["link"])}" target="_blank" rel="noopener">{html_mod.escape(l["source"])}</a>'
-                    for l in t["links"][:3])
+                    for l in t["links"][:3] if not l.get("gnews"))
     # 整張卡片寫成一行：中間有空行的話 Markdown 會把後半段當成程式碼區塊
     return (f'<div class="news-card"><div class="news-rank {rank_class(i - 1)}">{i}</div><div class="news-body">'
             f'<a class="news-title-link" href="{html_mod.escape(t.get("link") or "#")}" target="_blank" rel="noopener">'
