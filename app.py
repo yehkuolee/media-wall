@@ -126,7 +126,7 @@ WEEKDAY = {0: "一", 1: "二", 2: "三", 3: "四", 4: "五", 5: "六", 6: "日"}
 
 # ── Page config ────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="現在紅什麼",
+    page_title="ETtoday競媒監測器",
     layout="wide",
     initial_sidebar_state="collapsed",
 )
@@ -1045,7 +1045,7 @@ def main():
     </style>
     <div class="mw-header">
         <div>
-            <div class="mw-title">現在紅什麼</div>
+            <div class="mw-title">ETtoday競媒監測器</div>
             <div class="mw-subtitle">即時媒體熱度監測 · LifeOS</div>
         </div>
         <div class="mw-live">
