@@ -1,58 +1,88 @@
 {
-  "updated_at": "2026-11-10T07:05:18.614551+08:00",
+  "updated_at": "2026-11-10T08:05:13.826940+08:00",
   "topics": [
     {
-      "title": "台灣各地氣溫驟降轉冷",
-      "description": "各地氣溫迅速下滑如同步入冬天，民眾紛紛拿出外套與羽絨衣禦寒",
-      "count": "4 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E5%A4%A9%E6%B0%A3&serp_type=trends&trend_fbid=1591160306117792"
+      "title": "國道1號麻豆段車禍全線封閉",
+      "description": "國道1號南向麻豆路段因大型車事故全線封閉，周邊交通受阻並進行拖吊排除",
+      "count": "204 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%9C%8B%E9%81%931%E8%99%9F&serp_type=trends&trend_fbid=1630633031772257"
     },
     {
-      "title": "《GTA 6》開放數位版預載",
-      "description": "《GTA 6》主機端容量約210GB並開放預載，預計於11月19日正式發售",
+      "title": "台灣各地氣溫驟降轉涼",
+      "description": "台中與南部多個縣市天氣迅速轉涼，民眾明顯感受寒意紛紛換上外套保暖",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E7%81%A3%E5%A4%A9%E6%B0%A3&serp_type=trends&trend_fbid=2047287269321753"
+    },
+    {
+      "title": "愛莉莎莎邀沈伯洋談市政",
+      "description": "YouTuber愛莉莎莎在《莎晨報》專訪民進黨台北市長候選人沈伯洋暢談市政",
       "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=GTA%206&serp_type=trends&trend_fbid=1739373800908514"
+      "link": "https://www.threads.com/search?q=%E6%84%9B%E8%8E%89%E8%8E%8E%E8%8E%8E&serp_type=trends&trend_fbid=2309150459861121"
     },
     {
-      "title": "沈伯洋澄清受訪發言好light",
-      "description": "立委沈伯洋說明受訪時說的是好light，意指提問內容較為輕鬆而非指問題很爛",
-      "count": "8 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1130410612805461"
+      "title": "皮克敏與全家推五週年聯名活動",
+      "description": "《Pikmin Bloom》與全家便利商店合作，於門市完成任務可領取限定花苗",
+      "count": "213 則貼文",
+      "link": "https://www.threads.com/search?q=Pikmin%20Bloom&serp_type=trends&trend_fbid=1075893625460309"
     },
     {
-      "title": "輝達黃仁勳坦承婚外情",
-      "description": "黃仁勳在致員工信中坦承婚外情並致歉，輝達董事會已啟動獨立調查釐清疑慮",
+      "title": "台中青海家樂福旁發生火災",
+      "description": "台中河南路二段與青海路一帶發生火警，多輛消防車與救護車前往救援",
+      "count": "41 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E4%B8%AD%E7%81%AB%E7%81%BD&serp_type=trends&trend_fbid=1581327047128796"
+    },
+    {
+      "title": "「你長得像我妹妹」迷因掀模仿",
+      "description": "「你長得像我妹妹」等多句迷因台詞熱傳，吸引許多人紛紛引用發文模仿",
+      "count": "556 則貼文",
+      "link": "https://www.threads.com/search?q=%E4%BD%A0%E9%95%B7%E5%BE%97%E5%83%8F%E6%88%91%E5%A6%B9%E5%A6%B9&serp_type=trends&trend_fbid=2122698671719159"
+    },
+    {
+      "title": "沈伯洋音檔light或爛辨識",
+      "description": "沈伯洋受訪語音聚焦light與爛的發音與音素差異，同時帶動詞彙融入日常造句現象",
       "count": "8 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E9%BB%83%E4%BB%81%E5%8B%B3&serp_type=trends&trend_fbid=1791253338794802"
+      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=3518813094959330"
+    },
+    {
+      "title": "黃仁勳坦承婚外情輝達啟動調查",
+      "description": "輝達執行長黃仁勳發內部信致歉婚外情，董事會已展開獨立調查釐清情報疑慮",
+      "count": "8 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E9%BB%83%E4%BB%81%E5%8B%B3&serp_type=trends&trend_fbid=3539695279537112"
+    },
+    {
+      "title": "U23世界盃台澳戰賽後爆發衝突",
+      "description": "台灣隊在U23世界盃對戰澳洲結束後，雙方爆發爭吵與衝突",
+      "count": "59 則貼文",
+      "link": "https://www.threads.com/search?q=U23%E4%B8%96%E7%95%8C%E7%9B%83&serp_type=trends&trend_fbid=1125943270058361"
+    },
+    {
+      "title": "新北三重超商樓上深夜火警",
+      "description": "三重區三陽路一處超商3樓深夜發生火警，消防單位出動多輛消防車趕赴現場灌救",
+      "count": "",
+      "link": "https://www.threads.com/search?q=%E4%B8%89%E9%87%8D%E7%81%AB%E8%AD%A6&serp_type=trends&trend_fbid=1796574314929047"
+    },
+    {
+      "title": "《俠盜獵車手6》開放預載",
+      "description": "容量逾200GB的《俠盜獵車手6》開放預載，預計11月19日發售",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=GTA%206&serp_type=trends&trend_fbid=1807604690496538"
     },
     {
       "title": "文字遊戲《同詞相遇》考驗默契",
       "description": "玩家在《同詞相遇》中藉由輸入聯想詞達成相同答案，作為測試思維契合度的交友方式",
-      "count": "411 則貼文",
+      "count": "407 則貼文",
       "link": "https://www.threads.com/search?q=%E5%90%8C%E8%A9%9E%E7%9B%B8%E9%81%87&serp_type=trends&trend_fbid=1613262839984770"
-    },
-    {
-      "title": "皮克敏攜手全家推聯名活動",
-      "description": "《Pikmin Bloom》與全家合作，玩家至指定門市可獲限定明信片與花苗",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E7%9A%AE%E5%85%8B%E6%95%8F&serp_type=trends&trend_fbid=2653823998421144"
-    },
-    {
-      "title": "「你長得像我妹妹」成熱門迷因",
-      "description": "民眾引用「干擾我的生活」等句子互相調侃，並廣泛應用於各類生活情境",
-      "count": "538 則貼文",
-      "link": "https://www.threads.com/search?q=%E4%BD%A0%E9%95%B7%E5%BE%97%E5%83%8F%E6%88%91%E5%A6%B9%E5%A6%B9&serp_type=trends&trend_fbid=2668788756893902"
     },
     {
       "title": "台指期夜盤跌逾500點後反彈",
       "description": "台股日間大漲後外資空單創高，台指期夜盤開盤跌逾500點後強勁反彈",
-      "count": "700 則貼文",
+      "count": "746 則貼文",
       "link": "https://www.threads.com/search?q=%E5%8F%B0%E6%8C%87%E6%9C%9F%E5%A4%9C%E7%9B%A4&serp_type=trends&trend_fbid=1070013569387381"
     },
     {
       "title": "秦慧珠至水餃店合影比3號",
       "description": "國民黨台北市議員秦慧珠前往又一村購買水餃，並在與店方合影時比出3號手勢",
-      "count": "7 千則貼文",
+      "count": "8 千則貼文",
       "link": "https://www.threads.com/search?q=%E7%A7%A6%E6%85%A7%E7%8F%A0&serp_type=trends&trend_fbid=1706573704401615"
     },
     {
@@ -60,36 +90,6 @@
       "description": "麥當勞App推出週年慶活動，輸入優惠碼可領6塊麥克鷄塊買一送一券並享抽獎",
       "count": "6 千則貼文",
       "link": "https://www.threads.com/search?q=%E9%BA%A5%E7%95%B6%E5%8B%9E&serp_type=trends&trend_fbid=1871590907612976"
-    },
-    {
-      "title": "Faker四強賽後稱享受比賽",
-      "description": "T1在《英雄聯盟》世界大賽止步四強後，Faker發訊稱很享受比賽且玩得開心",
-      "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=Faker&serp_type=trends&trend_fbid=2138777513509024"
-    },
-    {
-      "title": "Gino曝拍《紫禁之巔》無防護",
-      "description": "Gino透露拍攝偶像劇《紫禁之巔》時，曾在無防護措施下於繁忙十字路口車陣中取景",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=Gino&serp_type=trends&trend_fbid=3798886860285431"
-    },
-    {
-      "title": "伴侶月入20萬生活費負擔",
-      "description": "關於伴侶月入20萬元能否負擔生活費用的說法，觸及情侶開銷標準與經濟獨立看法",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%9C%88%E5%85%A520%E8%90%AC&serp_type=trends&trend_fbid=1405879804672265"
-    },
-    {
-      "title": "馬斯克在X發布中英貼文",
-      "description": "針對黃仁勳近期面臨的指控，外界揣測馬斯克在X發布的中英貼文意有所指",
-      "count": "4 千則貼文",
-      "link": "https://www.threads.com/search?q=%E9%A6%AC%E6%96%AF%E5%85%8B&serp_type=trends&trend_fbid=951469758043883"
-    },
-    {
-      "title": "沈伯洋登愛莉莎莎節目談市政",
-      "description": "愛莉莎莎邀請沈伯洋登上節目《莎晨報》，雙方就台北市政與城市發展等議題交流",
-      "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E6%84%9B%E8%8E%89%E8%8E%8E%E8%8E%8E&serp_type=trends&trend_fbid=2144355542954139"
     }
   ]
 }
