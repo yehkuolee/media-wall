@@ -333,9 +333,9 @@ def _title(base, cat):
 
 
 PROMPT_FILE = HERE / "指令.md"  # 社群貼文改寫新聞稿的 AI 指令（不進 git，repo 是公開的）
-# 同一份指令也包成 Claude Skill：https://tip.etwriter-ai.com/skill.zip（每次下載都從 指令.md 現做，兩邊永遠一致）
+# 同一份指令也包成 Claude Skill：https://tip.etwriter-ai.com/skill（每次下載都從 指令.md 現做，兩邊永遠一致）
 SKILL_NAME = "ettoday-social-rewrite"
-SKILL_URL = os.environ.get("TIPBOT_PUBLIC_URL", "https://tip.etwriter-ai.com") + "/skill.zip"
+SKILL_URL = os.environ.get("TIPBOT_PUBLIC_URL", "https://tip.etwriter-ai.com") + "/skill"  # LINE 按鈕不收 .zip 結尾的網址；下載下來檔名還是 .zip
 SKILL_HEAD = """---
 name: ettoday-social-rewrite
 description: 把臉書社團、Threads、PTT、Instagram、Dcard等社群貼文改寫成ETtoday網路即時新聞稿（標題＋6段＋2個小標，事實紀律、用語規則）。使用者貼上社群貼文素材（發文者、內文、留言、圖片說明），或要求「改寫成新聞」「轉成新聞稿」「寫成即時新聞」時使用。
@@ -672,7 +672,7 @@ class Handler(BaseHTTPRequestHandler):
         self.wfile.write(b)
 
     def do_GET(self):
-        if self.path.split("?")[0] == "/skill.zip":
+        if self.path.split("?")[0] in ("/skill", "/skill.zip"):
             try:
                 b = skill_zip()
             except FileNotFoundError:
