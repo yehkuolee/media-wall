@@ -1,23 +1,35 @@
 {
-  "updated_at": "2026-11-12T06:05:18.587711+08:00",
+  "updated_at": "2026-11-12T07:05:15.652391+08:00",
   "topics": [
     {
-      "title": "北市信義區永吉路大樓火災",
-      "description": "信義區永吉路一處大樓發生火警，起火處緊鄰消防分隊，民眾相互提醒留意周邊路況",
+      "title": "台北信義區永吉路大樓發生火災",
+      "description": "永吉路消防分隊上方及鄰近建物火勢猛烈並冒濃煙，民眾互相提醒行經周邊路段提早改道",
       "count": "114 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B0%B8%E5%90%89%E8%B7%AF%E7%81%AB%E7%81%BD&serp_type=trends&trend_fbid=1161388533366814"
+      "link": "https://www.threads.com/search?q=%E6%B0%B8%E5%90%89%E8%B7%AF%E7%81%AB%E7%81%BD&serp_type=trends&trend_fbid=1844028996913882"
+    },
+    {
+      "title": "時雨中學遭刺高三生宣告不治",
+      "description": "新北市瑞芳區時雨中學一名遭學弟刺傷的高三學生，送醫搶救48天後宣告不治",
+      "count": "10 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%99%82%E9%9B%A8%E4%B8%AD%E5%AD%B8&serp_type=trends&trend_fbid=2247216842805393"
+    },
+    {
+      "title": "沈伯洋《順報》第3期發放",
+      "description": "沈伯洋刊物《順報》第3期收錄唐綺陽運勢，於捷運站發放吸引民眾排隊索取",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E9%A0%86%E5%A0%B1&serp_type=trends&trend_fbid=1131094886308307"
+    },
+    {
+      "title": "土城金城路凌晨發生火警",
+      "description": "新北市土城區金城路三段凌晨發生火災，消防人員趕赴現場拉水線灌救",
+      "count": "30 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%9C%9F%E5%9F%8E%E7%81%AB%E8%AD%A6&serp_type=trends&trend_fbid=1888797175623119"
     },
     {
       "title": "羅大佑談未婚無子蔡英文回應",
       "description": "羅大佑專訪質疑無子女者難為下一代著想，蔡英文發文表示全力守護台灣孩子",
       "count": "11 萬則貼文",
       "link": "https://www.threads.com/search?q=%E7%BE%85%E5%A4%A7%E4%BD%91&serp_type=trends&trend_fbid=2152729868653639"
-    },
-    {
-      "title": "新北土城發生嚴重火警",
-      "description": "土城現場火勢猛烈，消防人員緊急出動搶救，民眾互相提醒注意安全",
-      "count": "20 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%9C%9F%E5%9F%8E%E7%81%AB%E8%AD%A6&serp_type=trends&trend_fbid=1449354066603091"
     },
     {
       "title": "《皮克敏》稱中國台灣遭抗議",
@@ -28,31 +40,25 @@
     {
       "title": "短劇《野佛》恐怖情節獲推薦",
       "description": "紅果短劇平台懸疑作品《野佛》吸引眾多觀眾收看，眾人對其驚悚程度感受各異",
-      "count": "499 則貼文",
+      "count": "498 則貼文",
       "link": "https://www.threads.com/search?q=%E9%87%8E%E4%BD%9B&serp_type=trends&trend_fbid=1681293623506584"
     },
     {
       "title": "《再婚皇后》第5與6集上線",
       "description": "由申敏兒與李鍾碩主演的韓劇《再婚皇后》釋出第5與6集",
-      "count": "754 則貼文",
+      "count": "753 則貼文",
       "link": "https://www.threads.com/search?q=%E3%80%8A%E5%86%8D%E5%A9%9A%E7%9A%87%E5%90%8E%E3%80%8B&serp_type=trends&trend_fbid=1088999064106264"
     },
     {
       "title": "《魔鬼的計謀3》播出前五集",
       "description": "節目集結張東民與河錫辰等強者，在《魔鬼的計謀3》中以複雜規則展開策略對決",
-      "count": "826 則貼文",
+      "count": "835 則貼文",
       "link": "https://www.threads.com/search?q=%E3%80%8A%E9%AD%94%E9%AC%BC%E7%9A%84%E8%A8%88%E8%AC%803%E3%80%8B&serp_type=trends&trend_fbid=1498542212228867"
-    },
-    {
-      "title": "《順報》收錄唐綺陽星座運勢",
-      "description": "沈伯洋推出新一期《順報》，首度收錄唐綺陽星座運勢並於台北多處車站發放",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E9%A0%86%E5%A0%B1&serp_type=trends&trend_fbid=1881673036335188"
     },
     {
       "title": "《RO 倖存者》掀起遊玩熱潮",
       "description": "玩家熱情分享《RO 倖存者》職業流派配點，並交流全螢幕打怪與爬塔攻略",
-      "count": "245 則貼文",
+      "count": "250 則貼文",
       "link": "https://www.threads.com/search?q=RO%20%E5%80%96%E5%AD%98%E8%80%85&serp_type=trends&trend_fbid=4209150019217470"
     },
     {
@@ -70,13 +76,13 @@
     {
       "title": "基泰協商錄影曝光李四川喊告",
       "description": "李正皓與受災戶公布基泰建設協商錄影，李四川競選團隊駁斥指控並表示將提告",
-      "count": "962 則貼文",
+      "count": "1 千則貼文",
       "link": "https://www.threads.com/search?q=%E5%9F%BA%E6%B3%B0%E5%A4%A7%E7%9B%B4&serp_type=trends&trend_fbid=1606270648182073"
     },
     {
       "title": "竹北大遠百火警緊急疏散",
       "description": "因1樓機房配電盤起火冒煙，竹北大遠百緊急疏散民眾，火勢撲滅且無人傷亡",
-      "count": "196 則貼文",
+      "count": "198 則貼文",
       "link": "https://www.threads.com/search?q=%E7%AB%B9%E5%8C%97%E5%A4%A7%E9%81%A0%E7%99%BE&serp_type=trends&trend_fbid=4166501860320133"
     },
     {
@@ -84,12 +90,6 @@
       "description": "獲政府補助的《異病偵探》主打本土製作，卻在中國宣傳時自稱為國產獨立遊戲",
       "count": "1 千則貼文",
       "link": "https://www.threads.com/search?q=%E7%95%B0%E7%97%85%E5%81%B5%E6%8E%A2&serp_type=trends&trend_fbid=1459045146370032"
-    },
-    {
-      "title": "《幻視任務》完結篇播出",
-      "description": "漫威影集《幻視任務》播出第八集完結篇，為電影宇宙後續發展埋下伏筆",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%B9%BB%E8%A6%96%E4%BB%BB%E5%8B%99&serp_type=trends&trend_fbid=28951043511201599"
     }
   ]
 }
