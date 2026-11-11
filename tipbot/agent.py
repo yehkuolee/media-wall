@@ -272,9 +272,7 @@ THREADS_WORDS = ("thread", "脆")
 
 def _loose_cmd(t: str):
     """私訊用：一句話裡只要有指令字就照做，例如「今天政治有什麼沒寫的」→「未寫:政治」"""
-    if "skill" in t or "技能" in t:  # 「skill怎麼裝」（t 已轉小寫）
-        return "skill"
-    if "指令" in t:  # 「給我改寫指令」
+    if "指令" in t or "skill" in t or "技能" in t:  # 「給我改寫指令」「skill給我」（t 已轉小寫）；SKILL 回的跟指令一樣
         return "指令"
     text_mode = "清單" in t or "文字" in t
     cat = next((CAT_ALIAS[a] for a in sorted(CAT_ALIAS, key=len, reverse=True) if a in t), "")
@@ -361,37 +359,9 @@ def prompt_messages() -> list:
         text = PROMPT_FILE.read_text().strip()
     except FileNotFoundError:
         return [{"type": "text", "text": "指令還沒設定好，請找管理者"}]
-    guide = ("📋社群貼文改寫新聞稿的AI指令（給Gemini、ChatGPT用）\n"
-             "長按下一則訊息→複製，貼給AI，再貼上貼文素材\n"
-             "用Claude的話，傳「SKILL」裝成技能更方便")
+    guide = "📋社群貼文改寫新聞稿的AI指令\n長按下一則訊息→複製，貼到Claude、Gemini或ChatGPT，再貼上貼文素材就能改寫"
     return [{"type": "text", "text": guide}, {"type": "text", "text": text[:5000]}]
 
-
-SKILL_STEPS = ["1.用電腦下載SKILL（zip檔）",
-               "2.claude.ai→設定（Settings）→功能（Capabilities），先打開「程式碼執行」",
-               "3.同一頁的技能（Skills）按上傳，選剛下載的zip（不用解壓縮）",
-               "4.開新對話，貼上貼文素材，說「改寫成新聞稿」就會照規則寫"]
-
-
-def skill_text() -> str:
-    return ("🧩社群貼文改寫新聞稿SKILL（Claude技能）\n裝一次，之後貼素材就自動照ETtoday規則改寫\n\n"
-            + "\n".join(SKILL_STEPS) + f"\n\n下載：{SKILL_URL}")
-
-
-def skill_messages() -> list:
-    """「SKILL」：卡片＋下載、一鍵複製連結兩顆按鈕（電腦版 LINE 點下載不方便時，複製連結貼到瀏覽器）"""
-    body = [{"type": "text", "text": "🧩社群貼文改寫新聞稿SKILL", "weight": "bold", "size": "md", "wrap": True},
-            {"type": "text", "text": "Claude技能，裝一次，之後貼素材就自動照ETtoday規則改寫",
-             "size": "xs", "color": "#555555", "wrap": True}]
-    body += [{"type": "text", "text": x, "size": "sm", "wrap": True, "margin": "md" if k == 0 else "sm"}
-             for k, x in enumerate(SKILL_STEPS)]
-    bubble = {"type": "bubble", "body": {"type": "box", "layout": "vertical", "spacing": "sm", "contents": body},
-              "footer": {"type": "box", "layout": "vertical", "spacing": "sm", "contents": [
-                  {"type": "button", "style": "primary", "color": "#c41230", "height": "sm",
-                   "action": {"type": "uri", "label": "下載SKILL", "uri": SKILL_URL}},
-                  {"type": "button", "style": "secondary", "height": "sm",
-                   "action": {"type": "clipboard", "label": "一鍵複製下載連結", "clipboardText": SKILL_URL}}]}}
-    return [{"type": "flex", "altText": "社群貼文改寫新聞稿SKILL", "contents": bubble}]
 
 
 def web_url(cmd: str) -> str:
@@ -404,7 +374,7 @@ def web_url(cmd: str) -> str:
 
 def with_web(messages: list, cmd: str) -> list:
     """每則回覆最後附網頁版連結：最後一則是文字就接在後面，是卡片就多一則文字（一次回覆最多 5 則）"""
-    if cmd in ("指令", "skill"):  # 指令全文要能整則複製；SKILL 跟媒體牆無關，都不接網址
+    if cmd == "指令":  # 指令全文要能整則複製，不接網址
         return messages
     line = f"🌐 網頁版：{web_url(cmd)}"
     last = messages[-1]
@@ -421,8 +391,6 @@ def reply_messages(cmd: str) -> list:
         return [{"type": "text", "text": HELP}]
     if cmd == "指令":
         return prompt_messages()
-    if cmd == "skill":
-        return skill_messages()
     if cmd == "清單" or cmd.startswith("清單/"):  # 純文字直列版，電腦版 LINE 從上往下捲就好
         return [{"type": "text", "text": reply_text(cmd[3:] or "哏")}]
     if not data:
@@ -459,8 +427,7 @@ HELP = ("🔥 找哏小幫手\n"
         "・Threads 或 脆 → Threads 熱搜話題，標出 ETtoday 寫了沒\n"
         "・清單 → 最新哏的純文字版（電腦版 LINE 卡片不好滑時用）\n"
         "　加分類也行，例如「清單 政治」\n"
-        "・SKILL → 社群貼文改寫新聞稿的Claude技能，附下載和安裝步驟\n"
-        "・指令 → 同一套改寫規則的全文，長按複製貼給Gemini、ChatGPT\n"
+        "・指令或SKILL → 社群貼文改寫新聞稿的AI指令，長按複製後貼給AI\n"
         "直接打一句話也可以，例如「政治有什麼還沒寫的」\n"
         "清單每 10 分鐘更新（05:00～24:00）")
 OWNER_HELP = ("\n\n管理者限定（只有你看得到）：\n"
@@ -469,7 +436,7 @@ OWNER_HELP = ("\n\n管理者限定（只有你看得到）：\n"
               "　看某人：「紀錄 名字」")
 
 COMMANDS = {"哏": "哏", "梗": "哏", "最新": "哏", "最新哏": "哏", "最新哏清單": "哏", "未寫": "未寫", "沒寫": "未寫", "漏": "未寫",
-            "暴衝": "暴衝", "threads": "threads", "thread": "threads", "脆": "threads", "清單": "清單", "文字": "清單", "說明": "help", "help": "help", "指令": "指令", "改寫指令": "指令", "skill": "skill", "skills": "skill", "技能": "skill", "?": "help", "？": "help"}
+            "暴衝": "暴衝", "threads": "threads", "thread": "threads", "脆": "threads", "清單": "清單", "文字": "清單", "說明": "help", "help": "help", "指令": "指令", "改寫指令": "指令", "skill": "指令", "skills": "指令", "技能": "指令", "?": "help", "？": "help"}
 
 
 # ── LINE ───────────────────────────────────────────────────────────
@@ -649,7 +616,7 @@ def _handle_event(ev: dict):
     if r is not None and r.status_code == 400:  # 卡片格式被 LINE 退回時，改回純文字
         line_api("reply", {"replyToken": ev["replyToken"],
                            "messages": with_web([{"type": "text", "text": HELP if cmd == "help" else
-                                                          skill_text() if cmd == "skill" else reply_text(cmd)}], cmd)})
+                                                          reply_text(cmd)}], cmd)})
 
 
 def verify(body: bytes, sig: str) -> bool:
