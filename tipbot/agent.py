@@ -270,6 +270,8 @@ THREADS_WORDS = ("thread", "脆")
 
 def _loose_cmd(t: str):
     """私訊用：一句話裡只要有指令字就照做，例如「今天政治有什麼沒寫的」→「未寫:政治」"""
+    if "指令" in t:  # 「給我改寫指令」
+        return "指令"
     text_mode = "清單" in t or "文字" in t
     cat = next((CAT_ALIAS[a] for a in sorted(CAT_ALIAS, key=len, reverse=True) if a in t), "")
     base = next((b for b, words in LOOSE_BASE if any(w in t for w in words)), "")
@@ -326,6 +328,19 @@ def _title(base, cat):
     return f"🔥 {tag}熱門哏" if cat else "🔥 最新哏"
 
 
+PROMPT_FILE = HERE / "指令.md"  # 社群貼文改寫新聞稿的 AI 指令（不進 git，repo 是公開的）
+
+
+def prompt_messages() -> list:
+    """「指令」：說明一則＋指令全文一則（單獨一則，長按就能整則複製，不夾別的字）"""
+    try:
+        text = PROMPT_FILE.read_text().strip()
+    except FileNotFoundError:
+        return [{"type": "text", "text": "指令還沒設定好，請找管理者"}]
+    return [{"type": "text", "text": "📋社群貼文改寫新聞稿的AI指令\n長按下一則訊息→複製，貼到Claude、Gemini或ChatGPT，再貼上貼文素材就能改寫"},
+            {"type": "text", "text": text[:5000]}]
+
+
 def web_url(cmd: str) -> str:
     """回覆對應的媒體牆網址：有分類就直接開那一類（列全部，不只未寫），其他開首頁"""
     base, cat = _split(cmd.removeprefix("清單/"))
@@ -336,6 +351,8 @@ def web_url(cmd: str) -> str:
 
 def with_web(messages: list, cmd: str) -> list:
     """每則回覆最後附網頁版連結：最後一則是文字就接在後面，是卡片就多一則文字（一次回覆最多 5 則）"""
+    if cmd == "指令":  # 指令全文要能整則複製，不接網址
+        return messages
     line = f"🌐 網頁版：{web_url(cmd)}"
     last = messages[-1]
     if last["type"] == "text" and len(last["text"]) + len(line) < 4990:
@@ -349,6 +366,8 @@ def reply_messages(cmd: str) -> list:
     base, cat = _split(cmd)
     if cmd == "help":
         return [{"type": "text", "text": HELP}]
+    if cmd == "指令":
+        return prompt_messages()
     if cmd == "清單" or cmd.startswith("清單/"):  # 純文字直列版，電腦版 LINE 從上往下捲就好
         return [{"type": "text", "text": reply_text(cmd[3:] or "哏")}]
     if not data:
@@ -385,6 +404,7 @@ HELP = ("🔥 找哏小幫手\n"
         "・Threads 或 脆 → Threads 熱搜話題，標出 ETtoday 寫了沒\n"
         "・清單 → 最新哏的純文字版（電腦版 LINE 卡片不好滑時用）\n"
         "　加分類也行，例如「清單 政治」\n"
+        "・指令 → 社群貼文改寫新聞稿的AI指令，長按複製後貼給AI\n"
         "直接打一句話也可以，例如「政治有什麼還沒寫的」\n"
         "清單每 10 分鐘更新（05:00～24:00）")
 OWNER_HELP = ("\n\n管理者限定（只有你看得到）：\n"
@@ -393,7 +413,7 @@ OWNER_HELP = ("\n\n管理者限定（只有你看得到）：\n"
               "　看某人：「紀錄 名字」")
 
 COMMANDS = {"哏": "哏", "梗": "哏", "最新": "哏", "最新哏": "哏", "最新哏清單": "哏", "未寫": "未寫", "沒寫": "未寫", "漏": "未寫",
-            "暴衝": "暴衝", "threads": "threads", "thread": "threads", "脆": "threads", "清單": "清單", "文字": "清單", "說明": "help", "help": "help", "?": "help", "？": "help"}
+            "暴衝": "暴衝", "threads": "threads", "thread": "threads", "脆": "threads", "清單": "清單", "文字": "清單", "說明": "help", "help": "help", "指令": "指令", "改寫指令": "指令", "?": "help", "？": "help"}
 
 
 # ── LINE ───────────────────────────────────────────────────────────

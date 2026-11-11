@@ -4,3 +4,4 @@ __pycache__/
 .DS_Store
 .streamlit/secrets.toml
 tipbot/state/
+tipbot/指令.md
