@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-11-13T04:05:13.305123+08:00",
+  "updated_at": "2026-11-13T05:01:13.531606+08:00",
   "topics": [
     {
-      "title": "無敵小柑Twitch遭停權",
-      "description": "Twitch實況主無敵小柑因違反社群規範遭到限制，目前無法進行直播",
-      "count": "146 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%84%A1%E6%95%B5%E5%B0%8F%E6%9F%91&serp_type=trends&trend_fbid=4434494530136841"
+      "title": "無敵小柑Twitch頻道遭限制",
+      "description": "實況主無敵小柑因直播內容尺度違反規範，其Twitch頻道遭到平台限制",
+      "count": "6 千則貼文",
+      "link": "https://www.threads.com/search?q=Twitch&serp_type=trends&trend_fbid=1675198540800393"
+    },
+    {
+      "title": "黃仁勳辭任輝達執行長",
+      "description": "輝達董事會宣布黃仁勳辭去執行長等職務，由財務長柯蕾絲暫代",
+      "count": "5 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E9%BB%83%E4%BB%81%E5%8B%B3&serp_type=trends&trend_fbid=1182177037483053"
     },
     {
       "title": "點擊愛心觸發蕾潔動態特效",
       "description": "在相關內容點擊愛心時會呈現蕾潔現身與跳舞等專屬視覺效果",
-      "count": "409 則貼文",
+      "count": "410 則貼文",
       "link": "https://www.threads.com/search?q=%E8%95%BE%E6%BD%94&serp_type=trends&trend_fbid=1009147061519313"
-    },
-    {
-      "title": "黃仁勳辭去輝達執行長",
-      "description": "輝達創辦人黃仁勳辭去總裁與執行長職務，結束長達33年領導生涯",
-      "count": "5 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E9%BB%83%E4%BB%81%E5%8B%B3&serp_type=trends&trend_fbid=1974333480614650"
     },
     {
       "title": "許飛與厲娜公開對談過往關係",
@@ -28,7 +28,7 @@
     {
       "title": "羅大佑專訪談政治與生育",
       "description": "羅大佑受訪發表對政治及生育議題看法，內容觸及社會問題與對下一代的焦慮",
-      "count": "11 萬則貼文",
+      "count": "10 萬則貼文",
       "link": "https://www.threads.com/search?q=%E7%BE%85%E5%A4%A7%E4%BD%91&serp_type=trends&trend_fbid=1467382316454572"
     },
     {
@@ -40,20 +40,14 @@
     {
       "title": "《魔鬼的計謀3》前五集上線",
       "description": "《魔鬼的計謀》第三季推出前五集，張東民展現策略佈局並進行股票遊戲對抗",
-      "count": "581 則貼文",
+      "count": "570 則貼文",
       "link": "https://www.threads.com/search?q=%E9%AD%94%E9%AC%BC%E7%9A%84%E8%A8%88%E8%AC%803&serp_type=trends&trend_fbid=1748657292897929"
     },
     {
       "title": "醫療劇《急診室的奇蹟》上線",
       "description": "霍建華與楊謹華主演的醫療影集《急診室的奇蹟》正式在Netflix上線播出",
-      "count": "276 則貼文",
+      "count": "279 則貼文",
       "link": "https://www.threads.com/search?q=%E3%80%8A%E6%80%A5%E8%A8%BA%E5%AE%A4%E7%9A%84%E5%A5%87%E8%B9%9F%E3%80%8B&serp_type=trends&trend_fbid=907410655700238"
-    },
-    {
-      "title": "Twitch出現清涼擦邊直播",
-      "description": "部分Twitch實況主以清涼著裝與擦邊舞蹈吸引觀眾，平台審核標準是否放寬成為焦點",
-      "count": "6 千則貼文",
-      "link": "https://www.threads.com/search?q=Twitch&serp_type=trends&trend_fbid=1437621371329962"
     },
     {
       "title": "亞冠賽首戰台灣隊迎戰日本",
@@ -76,7 +70,7 @@
     {
       "title": "同人遊戲RO倖存者吸引玩家",
       "description": "免費網頁遊戲《RO 倖存者》打怪具紓壓效果，玩家積極分享各職業配點與刷寶攻略",
-      "count": "332 則貼文",
+      "count": "333 則貼文",
       "link": "https://www.threads.com/search?q=RO%20%E5%80%96%E5%AD%98%E8%80%85&serp_type=trends&trend_fbid=1066965219693930"
     },
     {
@@ -88,8 +82,14 @@
     {
       "title": "梁文傑回應羅大佑外省人言論",
       "description": "針對羅大佑稱外省人受欺負，梁文傑表示自己身為外省人聽不懂對方發言",
-      "count": "813 則貼文",
+      "count": "841 則貼文",
       "link": "https://www.threads.com/search?q=%E6%A2%81%E6%96%87%E5%82%91&serp_type=trends&trend_fbid=1103554772494417"
+    },
+    {
+      "title": "蔡英文稱全力守護台灣孩子",
+      "description": "前總統蔡英文發文表示自己雖無子女，但用盡全力守護台灣的每一個孩子",
+      "count": "3 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E8%94%A1%E8%8B%B1%E6%96%87&serp_type=trends&trend_fbid=1671125331033072"
     }
   ]
 }
