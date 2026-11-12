@@ -615,7 +615,8 @@ ET_ROLL_MAX = 50  # 每次 10 則，約可回推 30 小時
 ET_SEARCH_URL = "https://www.ettoday.net/news_search/doSearch.php"
 ET_HEADERS = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
 ET_MODELS = ["gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-flash-lite-latest"]
-ET_AI_GAP = 600
+ET_AI_GAP = 540   # 比找哏 Bot 每 10 分鐘一輪略短，免得差幾毫秒就跳過一輪
+ET_NEG_TTL = 1800  # AI 判「沒寫」的 30 分鐘後重問（AI 偶爾漏判，不讓一次「沒有」卡死）
 ET_TEXT_MIN = 0.4
 
 
@@ -681,6 +682,11 @@ def _grams(text: str) -> set:
     return {t[i:i + 2] for i in range(len(t) - 1)}
 
 
+def _grams3(text: str) -> set:
+    t = re.sub(r"[\s\W_]+", "", text)
+    return {t[i:i + 3] for i in range(len(t) - 2)}
+
+
 def _overlap(a: set, b: set) -> float:
     return len(a & b) / max(1, min(len(a), len(b)))
 
@@ -704,10 +710,14 @@ def _ask_gemini(batch: list, key: str):
     lines = []
     for i, (title, cands) in enumerate(batch, 1):
         lines.append(f"新聞{i}：{title}")
-        lines += [f"  候選{j}：{c['title']}" for j, c in enumerate(cands, 1)] or ["  （沒有候選）"]
-    prompt = ("以下每則新聞附幾則 ETtoday 的新聞標題當候選（有括號日期的是站內搜尋到的舊稿）。\n"
+        lines += [f"  候選{j}：{c['title']}" + (f"（{c['time'][5:]}）" if c.get("time") else "")
+                  for j, c in enumerate(cands, 1)] or ["  （沒有候選）"]
+    prompt = ("以下每則新聞附幾則 ETtoday 的新聞標題當候選，括號是發稿時間或日期。\n"
               "1. match：候選中有沒有報導同一事件、或同一則話題的（同一人物或對象、同一件事或同一情境，"
-              "例如同一品牌試穿遇到的同一類店員反應）；同一人物的另一件事、只是同類主題都不算。填候選編號，沒有就填 0。\n"
+              "例如同一品牌試穿遇到的同一類店員反應）；同一人物的另一件事、只是同類主題都不算。"
+              "標題用字不同但講同一件事也算（例如「小五」與「第三起外遇」、「偷吃」與「親密關係」）。"
+              "同一人物的系列新進展（再爆另一起、又有新說法）要對到講同一個進展的那則，不要對到前一個進展的舊稿。"
+              "填候選編號，沒有就填 0。\n"
               "2. words：match 是 0 時，給 1～2 個最能在 ETtoday 站內搜到這則新聞的搜尋詞"
               "（每個詞是不含空格的人名、品牌、地名或關鍵詞組，例如「UNIQLO試穿」「李文宗」）；match 不是 0 就給空陣列。\n\n"
               + "\n".join(lines))
@@ -736,6 +746,7 @@ def ettoday_matches(news_list: list) -> dict:
     et = fetch_ettoday()
     et_grams = [(e, _grams(e["title"])) for e in et]
     memo, result, todo, best_text = _et_memo(), {}, [], {}
+    neg_at = memo.setdefault("neg_at", {})
     for n in news_list:
         if "ettoday.net" in (n.get("link") or ""):
             continue
@@ -753,7 +764,7 @@ def ettoday_matches(news_list: list) -> dict:
                     cands.append(c)
         cands = cands[:10]
         k = n["title"] + "|" + ",".join(c["link"] for c in cands)  # 候選換了（有新稿或搜到東西）才重問
-        if k in memo["judged"]:
+        if k in memo["judged"] and (memo["judged"][k] or time.time() - neg_at.get(k, 0) < ET_NEG_TTL):
             if memo["judged"][k]:
                 result[n["title"]] = memo["judged"][k]
         elif cands or n["title"] not in memo["words"]:  # 沒候選也要問一次，讓 AI 給搜尋詞
@@ -766,15 +777,47 @@ def ettoday_matches(news_list: list) -> dict:
             if len(memo["judged"]) > 3000:
                 memo["judged"].clear()
                 memo["words"].clear()
+                neg_at.clear()
             for i, (title, cands, k) in enumerate(todo, 1):
                 j, words = ans.get(i, (0, []))
                 memo["judged"][k] = cands[j - 1] if 1 <= j <= len(cands) else None
                 if memo["judged"][k]:
                     result[title] = memo["judged"][k]
-                elif words and title not in memo["words"]:
+                    continue
+                neg_at[k] = time.time()
+                if words and title not in memo["words"]:
                     memo["words"][title] = words  # 下一輪拿去 ETtoday 站內搜尋
     # 標題用字很像的一律標（AI 偶爾會漏判；AI 還沒判斷到的也先靠這個）
     return {**best_text, **result}
+
+
+def ettoday_check(title: str, alts: list = ()):
+    """單則仔細查 ETtoday 寫了沒（找哏 Bot 主動推播前用）：候選放寬到 12 則、單獨問 AI，
+    AI 說沒有就照它給的詞站內搜尋再問一次。最多問 2 次 AI，沒金鑰或失敗回 None"""
+    key = _gemini_key()
+    if not key:
+        return None
+    et = fetch_ettoday()
+    grams = [_grams(x) for x in [title, *alts]]
+    t3 = _grams3(title)
+    scored = sorted(((max(_overlap(g, _grams(e["title"])) for g in grams),
+                      len(t3 & _grams3(e["title"])), e) for e in et), key=lambda x: (-x[0], -x[1]))
+    cands = [e for sc, _, e in scored[:8] if sc >= 0.1]
+    cands += [e for _, n3, e in sorted(scored[8:300], key=lambda x: -x[1])[:4] if n3 >= 1]
+    for _ in range(2):
+        ans = _ask_gemini([(title, cands)], key)
+        if not ans:
+            return None
+        j, words = ans.get(1, (0, []))
+        if 1 <= j <= len(cands):
+            return cands[j - 1]
+        links = {c["link"] for c in cands}
+        extra = [c for w in ["".join(words)] * (len(words) > 1) + words for c in search_ettoday(w)
+                 if c["link"] not in links]
+        if not extra:
+            return None
+        cands = cands[:6] + list({c["link"]: c for c in extra}.values())[:6]
+    return None
 
 
 def et_tag_html(et) -> str:

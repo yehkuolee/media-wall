@@ -690,6 +690,20 @@ def maybe_push(data: dict):
     room = min(PUSH_PER_DAY - today_count, PUSH_PER_MONTH - st["month_count"])
     if not new or room <= 0:
         return
+    # 整批比對偶爾漏判（標題用字差很多，如「小五」對「第三起外遇」），推之前每則單獨再查一次
+    checked = []
+    for t in new[:5]:
+        m = mw.ettoday_check(t["title"], [x["title"] for x in t.get("links", []) if x["title"] != t["title"]])
+        if m:
+            t["et"] = {"title": m["title"], "link": m["link"]}
+            log.info("推播前複查：ET 已寫「%s」→「%s」", t["title"], m["title"])
+        else:
+            checked.append(t)
+    if len(checked) < len(new[:5]):
+        _write("latest.json", data)
+    new = checked
+    if not new:
+        return
     new = new[:3]  # 一次推播最多帶 3 個哏，算 1 則
     head = f"🚨 超強訊號｜{now():%H:%M}　ETtoday 還沒寫、熱度很高"
     r = line_api("push", {"to": owner, "messages": [
