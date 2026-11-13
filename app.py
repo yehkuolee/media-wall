@@ -612,7 +612,7 @@ def fetch_threads_trending() -> dict:
 # 標題用字很像的（ET_TEXT_MIN）不管 AI 怎麼判都標；沒金鑰或 AI 失敗時就只剩這部分。
 ET_LIST_URL = "https://www.ettoday.net/news/news-list-{:%Y-%m-%d}-0.htm"
 ET_ROLL_URL = "https://www.ettoday.net/show_roll.php"
-ET_ROLL_MAX = 50  # 每次 10 則，約可回推 30 小時
+ET_ROLL_MAX = 120  # 每次 10 則；大新聞日一天上千則，50 次只回推 26 小時，放寬到真的接到 30 小時
 ET_SEARCH_URL = "https://www.ettoday.net/news_search/doSearch.php"
 ET_HEADERS = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
 ET_MODELS = ["gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-flash-lite-latest"]
@@ -723,7 +723,8 @@ def _ask_gemini(batch: list, key: str, specific: bool = False):
               "填候選編號，沒有就填 0。\n"
               "2. words：match 是 0 時，給 1～2 個最能在 ETtoday 站內搜到這則新聞的搜尋詞"
               + ("（3～4 個，每個詞不含空格、2～6 字。站內搜尋要整串一字不差出現在標題才搜得到，"
-                 "所以用媒體標題常見的短說法，同一件事換幾種講法，例如「妻子聲明」「黃仁勳妻子」「黃仁勳道歉」「UNIQLO試穿」；"
+                 "所以用媒體標題常見的短說法，同一件事換幾種講法、同義詞也換著給（愛妻／妻子／老婆、出軌／外遇／偷吃），"
+                 "例如「妻子聲明」「黃仁勳妻子」「黃仁勳道歉」「UNIQLO試穿」；"
                  "要點出這則獨有的事，不要只給人名）" if specific else
                  "（每個詞是不含空格的人名、品牌、地名或關鍵詞組，例如「UNIQLO試穿」「李文宗」）")
               + "；match 不是 0 就給空陣列。\n\n" + "\n".join(lines))
@@ -798,8 +799,11 @@ def ettoday_matches(news_list: list) -> dict:
     return {**best_text, **result}
 
 
+ET_CHECK_CANDS = 60  # 單則複查最多給 AI 看幾則同主角近稿
+
+
 def ettoday_check(title: str, alts: list = ()):
-    """單則仔細查 ETtoday 寫了沒（找哏 Bot 主動推播前用）：候選放寬到 12 則、單獨問 AI，
+    """單則仔細查 ETtoday 寫了沒（Bot 推播前、媒體牆背景複查用）：同主角近稿最多 60 則全給 AI 看、單獨問，
     AI 說沒有就照它給的詞站內搜尋再問一次。最多問 2 次 AI，沒金鑰或失敗回 None"""
     key = _gemini_key()
     if not key:
@@ -810,7 +814,9 @@ def ettoday_check(title: str, alts: list = ()):
     scored = sorted(((max(_overlap(g, _grams(e["title"])) for g in grams),
                       len(t3 & _grams3(e["title"])), e) for e in et), key=lambda x: (-x[0], -x[1]))
     cands = [e for sc, _, e in scored[:8] if sc >= 0.1]
-    cands += [e for _, n3, e in sorted(scored[8:300], key=lambda x: -x[1])[:4] if n3 >= 1]
+    # 同主角一天可能幾十篇，只挑用字最像的會漏掉講同一件事、但用詞不同的那篇（「愛妻聲明」vs「妻子聲明」）；
+    # 單則複查只看這一則，把有共同三字詞（多半是人名）的近稿全給 AI 看
+    cands += [e for _, n3, e in sorted(scored[8:], key=lambda x: -x[1]) if n3 >= 1][:ET_CHECK_CANDS]
     for _ in range(2):
         ans = _ask_gemini([(title, cands)], key, specific=True)
         if not ans:
@@ -827,7 +833,7 @@ def ettoday_check(title: str, alts: list = ()):
                     extra.append(r[i])
         if not extra:
             return None
-        cands = cands[:4] + extra[:8]
+        cands = cands[:ET_CHECK_CANDS] + extra[:8]
     return None
 
 
