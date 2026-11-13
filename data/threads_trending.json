@@ -1,6 +1,24 @@
 {
-  "updated_at": "2026-11-14T04:05:13.312822+08:00",
+  "updated_at": "2026-11-14T04:59:22.005219+08:00",
   "topics": [
+    {
+      "title": "Whoop推共享生理數據功能",
+      "description": "健康手環Whoop推出社群功能，允許用戶互相關注並共享生理數據",
+      "count": "6 千則貼文",
+      "link": "https://www.threads.com/search?q=Whoop&serp_type=trends&trend_fbid=1508834134479831"
+    },
+    {
+      "title": "《急診室的奇蹟》被指醫療錯誤",
+      "description": "醫療劇《急診室的奇蹟》播出，劇中急救用血觀念與聽診器戴反等細節被指有誤",
+      "count": "726 則貼文",
+      "link": "https://www.threads.com/search?q=%E3%80%8A%E6%80%A5%E8%A8%BA%E5%AE%A4%E7%9A%84%E5%A5%87%E8%B9%9F%E3%80%8B&serp_type=trends&trend_fbid=1650610453426897"
+    },
+    {
+      "title": "宋雨琦表態支持一個中國",
+      "description": "(G)I-DLE成員宋雨琦轉發官媒貼文，公開表態支持一個中國與兩岸統一",
+      "count": "2 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%AE%8B%E9%9B%A8%E7%90%A6&serp_type=trends&trend_fbid=2335467500639891"
+    },
     {
       "title": "謝龍介表態支持邱臣遠",
       "description": "謝龍介宣布在竹北選戰支持候選人邱臣遠，推動藍白合作並呼籲集中選票",
@@ -14,22 +32,10 @@
       "link": "https://www.threads.com/search?q=%E9%8D%BE%E6%98%8E%E8%BB%92&serp_type=trends&trend_fbid=28278831578456557"
     },
     {
-      "title": "Whoop手環可互看生理數據",
-      "description": "Whoop手環互關後能查看睡眠與活動等生理數據，名人追蹤名單與互動也因此被整理",
+      "title": "《Doctor X》第11集播出",
+      "description": "金智媛主演韓劇《Doctor X》播出第11集，沉重劇情令觀眾心碎",
       "count": "5 千則貼文",
-      "link": "https://www.threads.com/search?q=Whoop&serp_type=trends&trend_fbid=2671401463273265"
-    },
-    {
-      "title": "《白色黑手黨時代》即將完結",
-      "description": "金智媛主演韓劇進入尾聲，第11集揭露暗黑醫療情節並即將播映完結篇",
-      "count": "33 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%99%BD%E8%89%B2%E9%BB%91%E6%89%8B%E9%BB%A8%E6%99%82%E4%BB%A3&serp_type=trends&trend_fbid=1654235762745930"
-    },
-    {
-      "title": "宋雨琦表態支持一個中國",
-      "description": "南韓女團(G)I-DLE成員宋雨琦轉發官媒貼文，公開表態支持一個中國立場",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%AE%8B%E9%9B%A8%E7%90%A6&serp_type=trends&trend_fbid=2225045694712962"
+      "link": "https://www.threads.com/search?q=Doctor%20X&serp_type=trends&trend_fbid=1620972422378972"
     },
     {
       "title": "李四川新北政見會交鋒蘇巧慧",
@@ -70,13 +76,13 @@
     {
       "title": "《魔鬼的計謀3》正式上線",
       "description": "韓國綜藝《魔鬼的計謀3》上線，集結河錫辰與神童等16位歷代強者同台競逐",
-      "count": "430 則貼文",
+      "count": "427 則貼文",
       "link": "https://www.threads.com/search?q=%E9%AD%94%E9%AC%BC%E7%9A%84%E8%A8%88%E8%AC%803&serp_type=trends&trend_fbid=29627171393546165"
     },
     {
       "title": "《RO 倖存者》湧入大量玩家",
       "description": "網頁遊戲《RO 倖存者》結合經典職業與生存玩法，因大量玩家湧入導致伺服器排隊",
-      "count": "379 則貼文",
+      "count": "378 則貼文",
       "link": "https://www.threads.com/search?q=RO%20%E5%80%96%E5%AD%98%E8%80%85&serp_type=trends&trend_fbid=4449296098656364"
     },
     {
@@ -84,12 +90,6 @@
       "description": "台中太平國中發生學生遭毆事件，校方與雙方家長已協商處理並持續追蹤後續照護",
       "count": "3 千則貼文",
       "link": "https://www.threads.com/search?q=%E5%A4%AA%E5%B9%B3%E5%9C%8B%E4%B8%AD&serp_type=trends&trend_fbid=954954397469617"
-    },
-    {
-      "title": "臺灣國際咖啡展南港登場",
-      "description": "國內外咖啡品牌與器具商齊聚台北，臺灣國際咖啡展吸引民眾品飲選購",
-      "count": "331 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%87%BA%E7%81%A3%E5%9C%8B%E9%9A%9B%E5%92%96%E5%95%A1%E5%B1%95&serp_type=trends&trend_fbid=1876744827016299"
     }
   ]
 }
