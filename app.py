@@ -705,8 +705,9 @@ def _gemini_key() -> str:
     return key or os.environ.get("GEMINI_API_KEY", "")
 
 
-def _ask_gemini(batch: list, key: str):
-    """batch：[(新聞標題, [候選])] → {第幾則: (候選編號 0＝沒有, [搜尋詞])}；失敗回 None"""
+def _ask_gemini(batch: list, key: str, specific: bool = False):
+    """batch：[(新聞標題, [候選])] → {第幾則: (候選編號 0＝沒有, [搜尋詞])}；失敗回 None
+    specific：要「這則獨有的事件詞」（單則複查用；主角新聞太多時，只搜人名會被淹沒）"""
     lines = []
     for i, (title, cands) in enumerate(batch, 1):
         lines.append(f"新聞{i}：{title}")
@@ -719,8 +720,10 @@ def _ask_gemini(batch: list, key: str):
               "同一人物的系列新進展（再爆另一起、又有新說法）要對到講同一個進展的那則，不要對到前一個進展的舊稿。"
               "填候選編號，沒有就填 0。\n"
               "2. words：match 是 0 時，給 1～2 個最能在 ETtoday 站內搜到這則新聞的搜尋詞"
-              "（每個詞是不含空格的人名、品牌、地名或關鍵詞組，例如「UNIQLO試穿」「李文宗」）；match 不是 0 就給空陣列。\n\n"
-              + "\n".join(lines))
+              + ("（2～3 個，每個詞不含空格、是「主角＋這則獨有的事」，例如「黃仁勳妻子聲明」「黃仁勳道歉」「UNIQLO試穿」，"
+                 "不要只給人名）" if specific else
+                 "（每個詞是不含空格的人名、品牌、地名或關鍵詞組，例如「UNIQLO試穿」「李文宗」）")
+              + "；match 不是 0 就給空陣列。\n\n" + "\n".join(lines))
     body = {"contents": [{"parts": [{"text": prompt}]}],
             "generationConfig": {"temperature": 0, "responseMimeType": "application/json",
                                  "responseSchema": {"type": "ARRAY", "items": {"type": "OBJECT", "properties": {
@@ -734,7 +737,7 @@ def _ask_gemini(batch: list, key: str):
             if r.status_code != 200:
                 continue
             arr = json.loads(r.json()["candidates"][0]["content"]["parts"][0]["text"])
-            return {int(x["news"]): (int(x["match"]), [re.sub(r"\s+", "", w) for w in x.get("words", []) if w.strip()][:2])
+            return {int(x["news"]): (int(x["match"]), [re.sub(r"\s+", "", w) for w in x.get("words", []) if w.strip()][:3 if specific else 2])
                     for x in arr}
         except Exception:
             continue
@@ -805,14 +808,14 @@ def ettoday_check(title: str, alts: list = ()):
     cands = [e for sc, _, e in scored[:8] if sc >= 0.1]
     cands += [e for _, n3, e in sorted(scored[8:300], key=lambda x: -x[1])[:4] if n3 >= 1]
     for _ in range(2):
-        ans = _ask_gemini([(title, cands)], key)
+        ans = _ask_gemini([(title, cands)], key, specific=True)
         if not ans:
             return None
         j, words = ans.get(1, (0, []))
         if 1 <= j <= len(cands):
             return cands[j - 1]
         links = {c["link"] for c in cands}
-        extra = [c for w in ["".join(words)] * (len(words) > 1) + words for c in search_ettoday(w)
+        extra = [c for w in words for c in search_ettoday(w)
                  if c["link"] not in links]
         if not extra:
             return None
