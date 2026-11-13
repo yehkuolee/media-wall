@@ -10,6 +10,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 import pytz
 import re
+import threading
 import html as html_mod
 from urllib.parse import quote
 
@@ -615,6 +616,7 @@ ET_ROLL_MAX = 50  # 每次 10 則，約可回推 30 小時
 ET_SEARCH_URL = "https://www.ettoday.net/news_search/doSearch.php"
 ET_HEADERS = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
 ET_MODELS = ["gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-flash-lite-latest"]
+ET_CHECK_MODELS = ["gemini-3.5-flash", "gemini-flash-latest"] + ET_MODELS  # 單則複查量少，先用判斷力較好的 Flash，塞車再退輕量版
 ET_AI_GAP = 540   # 比找哏 Bot 每 10 分鐘一輪略短，免得差幾毫秒就跳過一輪
 ET_NEG_TTL = 1800  # AI 判「沒寫」的 30 分鐘後重問（AI 偶爾漏判，不讓一次「沒有」卡死）
 ET_TEXT_MIN = 0.4
@@ -720,8 +722,9 @@ def _ask_gemini(batch: list, key: str, specific: bool = False):
               "同一人物的系列新進展（再爆另一起、又有新說法）要對到講同一個進展的那則，不要對到前一個進展的舊稿。"
               "填候選編號，沒有就填 0。\n"
               "2. words：match 是 0 時，給 1～2 個最能在 ETtoday 站內搜到這則新聞的搜尋詞"
-              + ("（2～3 個，每個詞不含空格、是「主角＋這則獨有的事」，例如「黃仁勳妻子聲明」「黃仁勳道歉」「UNIQLO試穿」，"
-                 "不要只給人名）" if specific else
+              + ("（3～4 個，每個詞不含空格、2～6 字。站內搜尋要整串一字不差出現在標題才搜得到，"
+                 "所以用媒體標題常見的短說法，同一件事換幾種講法，例如「妻子聲明」「黃仁勳妻子」「黃仁勳道歉」「UNIQLO試穿」；"
+                 "要點出這則獨有的事，不要只給人名）" if specific else
                  "（每個詞是不含空格的人名、品牌、地名或關鍵詞組，例如「UNIQLO試穿」「李文宗」）")
               + "；match 不是 0 就給空陣列。\n\n" + "\n".join(lines))
     body = {"contents": [{"parts": [{"text": prompt}]}],
@@ -730,14 +733,15 @@ def _ask_gemini(batch: list, key: str, specific: bool = False):
                                      "news": {"type": "INTEGER"}, "match": {"type": "INTEGER"},
                                      "words": {"type": "ARRAY", "items": {"type": "STRING"}}},
                                      "required": ["news", "match", "words"]}}}}
-    for model in ET_MODELS:
+    for model in ET_CHECK_MODELS if specific else ET_MODELS:
         try:
             r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
-                              headers={"x-goog-api-key": key}, json=body, timeout=40)
+                              headers={"x-goog-api-key": key}, json=body,
+                              timeout=15 if "lite" not in model else 40)  # Flash 塞車時會卡很久，早點換輕量版
             if r.status_code != 200:
                 continue
             arr = json.loads(r.json()["candidates"][0]["content"]["parts"][0]["text"])
-            return {int(x["news"]): (int(x["match"]), [re.sub(r"\s+", "", w) for w in x.get("words", []) if w.strip()][:3 if specific else 2])
+            return {int(x["news"]): (int(x["match"]), [re.sub(r"\s+", "", w) for w in x.get("words", []) if w.strip()][:4 if specific else 2])
                     for x in arr}
         except Exception:
             continue
@@ -811,16 +815,54 @@ def ettoday_check(title: str, alts: list = ()):
         ans = _ask_gemini([(title, cands)], key, specific=True)
         if not ans:
             return None
-        j, words = ans.get(1, (0, []))
+        j, words = ans.get(1) or next(iter(ans.values()), (0, []))  # 只問 1 則，AI 偶爾把編號填成 0
         if 1 <= j <= len(cands):
             return cands[j - 1]
-        links = {c["link"] for c in cands}
-        extra = [c for w in words for c in search_ettoday(w)
-                 if c["link"] not in links]
+        links, extra = {c["link"] for c in cands}, []
+        results = [search_ettoday(w) for w in words]
+        for i in range(5):  # 各詞的搜尋結果輪流取，免得前一個詞的結果把名額佔滿
+            for r in results:
+                if i < len(r) and r[i]["link"] not in links:
+                    links.add(r[i]["link"])
+                    extra.append(r[i])
         if not extra:
             return None
-        cands = cands[:6] + list({c["link"]: c for c in extra}.values())[:6]
+        cands = cands[:4] + extra[:8]
     return None
+
+
+ET_CHECK_N = 4         # 媒體牆每 ET_AI_GAP 最多單則複查幾則（每則問 AI 1～2 次，省免費額度）
+ET_CHECK_NEG_TTL = 3600  # 複查說「沒寫」的，1 小時後才再查
+
+
+def ettoday_recheck(news_list: list, et_map: dict) -> dict:
+    """整批比對說「沒寫」的，由上往下用 ettoday_check 單則複查（跟找哏 Bot 推播前同一套）；
+    在背景跑，結果記在共用 memo、所有訪客共享。回傳補上「已查到」結果的 et_map"""
+    memo, out, now_t = _et_memo(), dict(et_map), time.time()
+    checked = memo.setdefault("check", {})  # 標題 → (ET 稿或 None, 查的時間)
+    todo = []
+    for n in news_list:
+        t = n["title"]
+        if out.get(t) or "ettoday.net" in (n.get("link") or ""):
+            continue
+        hit, at = checked.get(t, (None, 0))
+        if hit:
+            out[t] = hit
+        elif now_t - at >= ET_CHECK_NEG_TTL and t not in todo:
+            todo.append(t)
+    if todo and _gemini_key() and now_t - memo.get("check_last", 0) >= ET_AI_GAP:
+        memo["check_last"] = now_t
+        if len(checked) > 2000:
+            checked.clear()
+
+        def run(titles):  # 背景跑（Flash 塞車時一則可能要 1、2 分鐘），結果下次重新整理就看得到
+            for t in titles:
+                try:
+                    checked[t] = (ettoday_check(t), time.time())
+                except Exception:
+                    pass
+        threading.Thread(target=run, args=(todo[:ET_CHECK_N],), daemon=True).start()
+    return out
 
 
 def et_tag_html(et) -> str:
@@ -1319,6 +1361,7 @@ def main():
             with st.spinner("整理分類話題中..."):
                 cat_all = [dict(t) for t in category_topics() if t.get("cat") == selected_cat]
                 et_map = ettoday_matches([{"title": t["title"], "link": t["link"]} for t in cat_all])
+                et_map = ettoday_recheck(cat_all, et_map)
             for t in cat_all:
                 t["et"] = et_map.get(t["title"])
             shown = [t for t in cat_all if not t["et"]] if only_unwritten else cat_all
@@ -1346,7 +1389,8 @@ def main():
             else:
                 st.markdown('<div class="sec-title">📰 即時熱門新聞 Top 15（各媒體均攤）</div>', unsafe_allow_html=True)
                 news_list = round_robin_top(all_news, 15)
-            et_map = ettoday_matches(news_list + [f["news"] for f in surges if f["news"] not in news_list])
+            check_list = [f["news"] for f in surges] + [n for n in news_list if n not in [f["news"] for f in surges]]
+            et_map = ettoday_recheck(check_list, ettoday_matches(check_list))  # 暴衝先查，再來是榜單由上往下
             if surges:
                 cards = ""
                 for f in surges:
