@@ -1,24 +1,48 @@
 {
-  "updated_at": "2026-11-15T02:51:47.013795+08:00",
+  "updated_at": "2026-11-15T06:50:07.312797+08:00",
   "keywords": [
-    {
-      "title": "無印良品",
-      "volume": "2萬+"
-    },
-    {
-      "title": "臺灣大專院校退場",
-      "volume": "2萬+"
-    },
     {
       "title": "蘇巧慧",
       "volume": "2萬+"
+    },
+    {
+      "title": "好市多",
+      "volume": "5,000+"
+    },
+    {
+      "title": "領空",
+      "volume": "5,000+"
+    },
+    {
+      "title": "停車",
+      "volume": "5,000+"
+    },
+    {
+      "title": "蔡康永",
+      "volume": "5,000+"
+    },
+    {
+      "title": "衛星",
+      "volume": "2,000+"
+    },
+    {
+      "title": "高庚杓",
+      "volume": "5,000+"
+    },
+    {
+      "title": "蔡黃汝",
+      "volume": "1萬+"
     },
     {
       "title": "唐新民",
       "volume": "1萬+"
     },
     {
-      "title": "高庚杓",
+      "title": "斑馬線",
+      "volume": "2,000+"
+    },
+    {
+      "title": "辦桌",
       "volume": "5,000+"
     },
     {
@@ -30,76 +54,52 @@
       "volume": "5,000+"
     },
     {
-      "title": "衛星",
+      "title": "blg",
       "volume": "2,000+"
     },
     {
-      "title": "停車",
-      "volume": "5,000+"
-    },
-    {
-      "title": "好市多",
-      "volume": "2,000+"
-    },
-    {
-      "title": "領空",
-      "volume": "5,000+"
-    },
-    {
-      "title": "蔡康永",
-      "volume": "2,000+"
-    },
-    {
-      "title": "mma",
-      "volume": "5,000+"
+      "title": "天氣",
+      "volume": "2萬+"
     },
     {
       "title": "曾聖安",
       "volume": "1萬+"
     },
     {
-      "title": "挪威 對 威爾斯",
-      "volume": "1,000+"
-    },
-    {
-      "title": "車侑城",
+      "title": "消費券",
       "volume": "2,000+"
     },
     {
-      "title": "美國停飛",
-      "volume": "5,000+"
-    },
-    {
-      "title": "斑馬線",
-      "volume": "1,000+"
-    },
-    {
-      "title": "ioi",
+      "title": "twitch",
       "volume": "2,000+"
-    },
-    {
-      "title": "辦桌",
-      "volume": "5,000+"
-    },
-    {
-      "title": "許淑華",
-      "volume": "1,000+"
-    },
-    {
-      "title": "邱進益",
-      "volume": "1,000+"
     },
     {
       "title": "李明依",
       "volume": "1,000+"
     },
     {
-      "title": "羅大佑事件",
+      "title": "財政部",
+      "volume": "2,000+"
+    },
+    {
+      "title": "炎亞綸",
       "volume": "1,000+"
     },
     {
-      "title": "比特幣",
-      "volume": "500+"
+      "title": "違規停車",
+      "volume": "2,000+"
+    },
+    {
+      "title": "挪威 對 威爾斯",
+      "volume": "2,000+"
+    },
+    {
+      "title": "棒球",
+      "volume": "2,000+"
+    },
+    {
+      "title": "邱進益",
+      "volume": "1,000+"
     }
   ]
 }
