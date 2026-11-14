@@ -1,40 +1,82 @@
 {
-  "updated_at": "2026-11-14T07:05:16.604408+08:00",
+  "updated_at": "2026-11-14T08:05:13.463548+08:00",
   "topics": [
     {
-      "title": "Whoop推共享生理數據功能",
-      "description": "健康手環Whoop推出社群功能，允許用戶互相關注並共享生理數據",
+      "title": "FAA通訊故障全美航班停飛",
+      "description": "因通訊系統故障，美國FAA下令全美機場實施地面停飛，離場航班暫停起飛",
+      "count": "172 則貼文",
+      "link": "https://www.threads.com/search?q=FAA%E5%81%9C%E9%A3%9B&serp_type=trends&trend_fbid=1123463407096575"
+    },
+    {
+      "title": "手作市集島國禮作台北登場",
+      "description": "島國禮作手作市集於台北國父紀念館登場，集結逾600組品牌吸引大批人潮",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%B3%B6%E5%9C%8B%E7%A6%AE%E4%BD%9C&serp_type=trends&trend_fbid=2401160334022840"
+    },
+    {
+      "title": "德德發文力挺黃世杰",
+      "description": "鄭運鵬之子德德以AI改圖邊緣化父親，幽默發文力挺候選人黃世杰",
+      "count": "4 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E5%BE%B7%E5%BE%B7&serp_type=trends&trend_fbid=1133635222649471"
+    },
+    {
+      "title": "國道一號泰山段車禍大回堵",
+      "description": "國道一號泰山路段發生大貨車追撞事故，造成南下車流嚴重回堵至汐止並癱瘓交通數小時",
+      "count": "467 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%9C%8B%E9%81%93%E4%B8%80%E8%99%9F&serp_type=trends&trend_fbid=2712439432535613"
+    },
+    {
+      "title": "宋雨琦表態支持一個中國",
+      "description": "南韓女團(G)I-DLE成員宋雨琦在微博轉發官媒貼文，表態支持國家統一立場",
+      "count": "2 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%AE%8B%E9%9B%A8%E7%90%A6&serp_type=trends&trend_fbid=1086118041146174"
+    },
+    {
+      "title": "黃世杰沈伯洋中壢掃街造勢",
+      "description": "黃世杰與沈伯洋在中壢進行聯合車隊掃街，吸引大量支持者聚集相挺",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E9%BB%83%E4%B8%96%E6%9D%B0&serp_type=trends&trend_fbid=1392549892730606"
+    },
+    {
+      "title": "《皮克敏》活動標記中國台灣",
+      "description": "手機遊戲《皮克敏》活動公告標註「中國台灣」，許多台灣玩家刪除帳號退坑",
+      "count": "9 千則貼文",
+      "link": "https://www.threads.com/search?q=%E7%9A%AE%E5%85%8B%E6%95%8F&serp_type=trends&trend_fbid=2317770838957044"
+    },
+    {
+      "title": "基泰大直施工圖遭灌漿掩埋",
+      "description": "北市建管處證實基泰大直施工圖因緊急灌漿遭掩埋，國土署強調應落實保管",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E5%9F%BA%E6%B3%B0%E5%A4%A7%E7%9B%B4&serp_type=trends&trend_fbid=1164067929611976"
+    },
+    {
+      "title": "《RO 倖存者》伺服器過載",
+      "description": "大量玩家湧入網頁遊戲《RO 倖存者》，導致伺服器過載並啟動排隊與人數限制",
+      "count": "375 則貼文",
+      "link": "https://www.threads.com/search?q=RO%20%E5%80%96%E5%AD%98%E8%80%85&serp_type=trends&trend_fbid=3693170070839302"
+    },
+    {
+      "title": "Whoop截圖遭用以推測藝人戀情",
+      "description": "有人藉Whoop手環截圖推測泰國藝人戀情，部分粉絲反駁帳號非實名且內容純屬造謠",
       "count": "5 千則貼文",
-      "link": "https://www.threads.com/search?q=Whoop&serp_type=trends&trend_fbid=981543174563306"
+      "link": "https://www.threads.com/search?q=Whoop&serp_type=trends&trend_fbid=2410908473053613"
+    },
+    {
+      "title": "鍾明軒發文曝遭網路霸凌",
+      "description": "鍾明軒坦言曾因害怕惡意解讀而陷入沉默，陳述自身近年承受網路霸凌與言論壓力",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E9%8D%BE%E6%98%8E%E8%BB%92&serp_type=trends&trend_fbid=1690768812663607"
     },
     {
       "title": "《急診室的奇蹟》被指醫療錯誤",
       "description": "醫療劇《急診室的奇蹟》播出，劇中急救用血觀念與聽診器戴反等細節被指有誤",
-      "count": "723 則貼文",
+      "count": "721 則貼文",
       "link": "https://www.threads.com/search?q=%E3%80%8A%E6%80%A5%E8%A8%BA%E5%AE%A4%E7%9A%84%E5%A5%87%E8%B9%9F%E3%80%8B&serp_type=trends&trend_fbid=1650610453426897"
-    },
-    {
-      "title": "宋雨琦表態支持一個中國",
-      "description": "(G)I-DLE成員宋雨琦轉發官媒貼文，公開表態支持一個中國與兩岸統一",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%AE%8B%E9%9B%A8%E7%90%A6&serp_type=trends&trend_fbid=2335467500639891"
-    },
-    {
-      "title": "謝龍介表態支持邱臣遠",
-      "description": "謝龍介宣布在竹北選戰支持候選人邱臣遠，推動藍白合作並呼籲集中選票",
-      "count": "7 千則貼文",
-      "link": "https://www.threads.com/search?q=%E8%AC%9D%E9%BE%8D%E4%BB%8B&serp_type=trends&trend_fbid=1750240506667054"
-    },
-    {
-      "title": "鍾明軒回顧專訪蔡英文經歷",
-      "description": "鍾明軒回顧2019年專訪蔡英文歷程並吐露心聲，期盼社會保有自由表達與理性對話空間",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E9%8D%BE%E6%98%8E%E8%BB%92&serp_type=trends&trend_fbid=28278831578456557"
     },
     {
       "title": "《Doctor X》第11集播出",
       "description": "金智媛主演韓劇《Doctor X》播出第11集，沉重劇情令觀眾心碎",
-      "count": "5 千則貼文",
+      "count": "6 千則貼文",
       "link": "https://www.threads.com/search?q=Doctor%20X&serp_type=trends&trend_fbid=1620972422378972"
     },
     {
@@ -44,52 +86,10 @@
       "link": "https://www.threads.com/search?q=%E6%9D%8E%E5%9B%9B%E5%B7%9D&serp_type=trends&trend_fbid=1106153678693195"
     },
     {
-      "title": "島國禮作市集國父紀念館登場",
-      "description": "手作市集島國禮作匯聚逾六百個攤位，於台北國父紀念館展出陶藝與飾品等多元創作",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%B3%B6%E5%9C%8B%E7%A6%AE%E4%BD%9C&serp_type=trends&trend_fbid=1165209569809953"
-    },
-    {
       "title": "LE SSERAFIM台北現蹤",
       "description": "LE SSERAFIM成員抵達台北，現身星巴克及夜市等地，粉絲呼籲維護隱私",
       "count": "2 千則貼文",
       "link": "https://www.threads.com/search?q=LE%20SSERAFIM&serp_type=trends&trend_fbid=1871798963817285"
-    },
-    {
-      "title": "木村拓哉北流開唱慶生",
-      "description": "木村拓哉在台北流行音樂中心舉辦演唱會，展現舞台魅力並與歌迷共度生日",
-      "count": "4 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%9C%A8%E6%9D%91%E6%8B%93%E5%93%89&serp_type=trends&trend_fbid=2251300775602399"
-    },
-    {
-      "title": "黃仁勳辭去輝達執行長職務",
-      "description": "輝達創辦人黃仁勳宣布辭去總裁與執行長職務，各界感謝其貢獻並擔憂公司未來",
-      "count": "7 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E9%BB%83%E4%BB%81%E5%8B%B3&serp_type=trends&trend_fbid=4202848103181714"
-    },
-    {
-      "title": "皮克敏手遊掀退坑抵制潮",
-      "description": "因官方公告將台灣標示為中國台灣地區，皮克敏玩家紛紛清除紀錄並註銷帳號抵制",
-      "count": "9 千則貼文",
-      "link": "https://www.threads.com/search?q=%E7%9A%AE%E5%85%8B%E6%95%8F&serp_type=trends&trend_fbid=1663254661909198"
-    },
-    {
-      "title": "《魔鬼的計謀3》正式上線",
-      "description": "韓國綜藝《魔鬼的計謀3》上線，集結河錫辰與神童等16位歷代強者同台競逐",
-      "count": "419 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%AD%94%E9%AC%BC%E7%9A%84%E8%A8%88%E8%AC%803&serp_type=trends&trend_fbid=29627171393546165"
-    },
-    {
-      "title": "《RO 倖存者》湧入大量玩家",
-      "description": "網頁遊戲《RO 倖存者》結合經典職業與生存玩法，因大量玩家湧入導致伺服器排隊",
-      "count": "381 則貼文",
-      "link": "https://www.threads.com/search?q=RO%20%E5%80%96%E5%AD%98%E8%80%85&serp_type=trends&trend_fbid=4449296098656364"
-    },
-    {
-      "title": "太平國中傳學生遭毆打霸凌",
-      "description": "台中太平國中發生學生遭毆事件，校方與雙方家長已協商處理並持續追蹤後續照護",
-      "count": "3 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%A4%AA%E5%B9%B3%E5%9C%8B%E4%B8%AD&serp_type=trends&trend_fbid=954954397469617"
     }
   ]
 }
