@@ -1,24 +1,40 @@
 {
-  "updated_at": "2026-11-14T02:45:57.488401+08:00",
+  "updated_at": "2026-11-14T08:04:36.369838+08:00",
   "keywords": [
     {
-      "title": "報酬 率",
-      "volume": "2萬+"
-    },
-    {
-      "title": "微軟",
-      "volume": "5萬+"
+      "title": "天氣",
+      "volume": "10萬+"
     },
     {
       "title": "普 發 2 萬",
+      "volume": "1萬+"
+    },
+    {
+      "title": "大學",
       "volume": "5,000+"
     },
     {
-      "title": "李四川",
-      "volume": "5,000+"
+      "title": "微軟當機",
+      "volume": "2萬+"
     },
     {
       "title": "陳沂",
+      "volume": "2,000+"
+    },
+    {
+      "title": "胡漢龑",
+      "volume": "2,000+"
+    },
+    {
+      "title": "交通 堵塞",
+      "volume": "5,000+"
+    },
+    {
+      "title": "馬 斯克 黃仁勳",
+      "volume": "5,000+"
+    },
+    {
+      "title": "張誠恩",
       "volume": "2,000+"
     },
     {
@@ -26,71 +42,31 @@
       "volume": "2,000+"
     },
     {
-      "title": "拓元",
+      "title": "雷暴",
+      "volume": "2,000+"
+    },
+    {
+      "title": "李四川",
       "volume": "5,000+"
     },
     {
-      "title": "明天的天氣",
-      "volume": "10萬+"
+      "title": "產假",
+      "volume": "5,000+"
     },
     {
-      "title": "胡漢龑",
+      "title": "發票",
       "volume": "2,000+"
     },
     {
-      "title": "大學",
-      "volume": "1,000+"
-    },
-    {
-      "title": "張誠恩",
+      "title": "thời tiết",
       "volume": "2,000+"
     },
     {
-      "title": "雷暴",
-      "volume": "500+"
-    },
-    {
-      "title": "郑明典",
-      "volume": "1,000+"
-    },
-    {
-      "title": "le sserafim 演唱會",
-      "volume": "1,000+"
+      "title": "weather",
+      "volume": "2,000+"
     },
     {
       "title": "兩岸和平倡議大會",
-      "volume": "1,000+"
-    },
-    {
-      "title": "異 病 偵探",
-      "volume": "1,000+"
-    },
-    {
-      "title": "無敵小柑影片",
-      "volume": "500+"
-    },
-    {
-      "title": "ppi",
-      "volume": "1,000+"
-    },
-    {
-      "title": "交通 堵塞",
-      "volume": "5,000+"
-    },
-    {
-      "title": "宗山壘",
-      "volume": "2,000+"
-    },
-    {
-      "title": "蹦闆",
-      "volume": "1,000+"
-    },
-    {
-      "title": "基泰大直",
-      "volume": "1,000+"
-    },
-    {
-      "title": "火球祭",
       "volume": "1,000+"
     },
     {
@@ -98,8 +74,32 @@
       "volume": "1,000+"
     },
     {
-      "title": "avril lavigne",
+      "title": "สภาพอากาศ",
+      "volume": "1,000+"
+    },
+    {
+      "title": "道歉",
+      "volume": "1,000+"
+    },
+    {
+      "title": "債券 市場",
+      "volume": "1,000+"
+    },
+    {
+      "title": "異 病 偵探",
+      "volume": "1,000+"
+    },
+    {
+      "title": "基泰大直",
+      "volume": "1,000+"
+    },
+    {
+      "title": "溜馬 對 尼克",
       "volume": "200+"
+    },
+    {
+      "title": "無印良品",
+      "volume": "500+"
     }
   ]
 }
