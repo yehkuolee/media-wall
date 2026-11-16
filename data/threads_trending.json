@@ -1,35 +1,47 @@
 {
-  "updated_at": "2026-11-17T03:05:14.437592+08:00",
+  "updated_at": "2026-11-17T04:05:13.672775+08:00",
   "topics": [
-    {
-      "title": "貼文點讚出現庫洛米特效",
-      "description": "許多人發現點擊愛心會顯示庫洛米圖案，紛紛實測並分享畫面",
-      "count": "540 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%BA%AB%E6%B4%9B%E7%B1%B3&serp_type=trends&trend_fbid=1080549251671856"
-    },
     {
       "title": "YG未列BLACKPINK合約",
       "description": "YG娛樂合約名單未列BLACKPINK，官方表示正持續商討團體活動",
       "count": "5 千則貼文",
-      "link": "https://www.threads.com/search?q=BLACKPINK&serp_type=trends&trend_fbid=2191169161782972"
+      "link": "https://www.threads.com/search?q=BLACKPINK&serp_type=trends&trend_fbid=3134492370275831"
+    },
+    {
+      "title": "Threads按讚出現酷洛米特效",
+      "description": "用戶點擊貼文愛心時會跳出三麗鷗酷洛米動畫，吸引眾人測試特殊效果",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E9%85%B7%E6%B4%9B%E7%B1%B3&serp_type=trends&trend_fbid=1625372535188157"
+    },
+    {
+      "title": "台北101點燈聲援黃仁勳",
+      "description": "科技公司合資在台北101外牆點燈，打出字樣表達對黃仁勳的聲援",
+      "count": "2 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E5%8C%97101&serp_type=trends&trend_fbid=1479851940685801"
+    },
+    {
+      "title": "川普表態不介意黃仁勳復職",
+      "description": "川普表示不介意黃仁勳復職，外界關注其是否於輝達財報前後回任執行長",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E9%BB%83%E4%BB%81%E5%8B%B3&serp_type=trends&trend_fbid=2346793462787670"
+    },
+    {
+      "title": "荳荳與黃宏軒公開戀情",
+      "description": "低調交往5年的藝人荳荳與黃宏軒分享交往影片正式認愛，獲得許多粉絲祝福",
+      "count": "966 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%8D%B3%E8%8D%B3&serp_type=trends&trend_fbid=970657512431899"
+    },
+    {
+      "title": "羅伯派汀森接任007",
+      "description": "米高梅影業宣布羅伯派汀森接棒丹尼爾克雷格，出演新一代007詹姆士龐德",
+      "count": "446 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%BE%85%E4%BC%AF%E6%B4%BE%E6%B1%80%E6%A3%AE&serp_type=trends&trend_fbid=1619147876680910"
     },
     {
       "title": "選舉公報送達選民檢視政見",
       "description": "選舉公報陸續寄達供選民檢視，台北市長候選人沈伯洋以待辦清單形式列出政見",
       "count": "4 千則貼文",
       "link": "https://www.threads.com/search?q=%E9%81%B8%E8%88%89%E5%85%AC%E5%A0%B1&serp_type=trends&trend_fbid=1136526235622595"
-    },
-    {
-      "title": "黃宏軒與荳荳公開認愛交往5年",
-      "description": "黃宏軒分享甜蜜紀錄影片回顧相處點滴，宣布與荳荳交往5年並獲得粉絲熱烈祝福",
-      "count": "278 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%BB%83%E5%AE%8F%E8%BB%92&serp_type=trends&trend_fbid=2377868799616636"
-    },
-    {
-      "title": "台北101點燈聲援黃仁勳",
-      "description": "科技公司合資在台北101外牆點燈，打出字樣表達對黃仁勳的聲援",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E5%8C%97101&serp_type=trends&trend_fbid=1707440147707487"
     },
     {
       "title": "葛如鈞質詢李洋行政中立",
@@ -44,12 +56,6 @@
       "link": "https://www.threads.com/search?q=%E6%9F%AF%E6%96%87%E5%93%B2&serp_type=trends&trend_fbid=3332176270300691"
     },
     {
-      "title": "羅伯派汀森接演新一代007",
-      "description": "亞馬遜米高梅宣布羅伯派汀森接任第七代龐德，將主演丹尼維勒納夫執導的007新作",
-      "count": "432 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%BE%85%E4%BC%AF%E6%B4%BE%E6%B1%80%E6%A3%AE&serp_type=trends&trend_fbid=1050385321432906"
-    },
-    {
       "title": "造勢男子倒地 賴清德跪地守候",
       "description": "民進黨台北造勢活動男子突倒地，經護理師急救與賴清德在旁守候，已恢復生命跡象",
       "count": "1 萬則貼文",
@@ -58,13 +64,13 @@
     {
       "title": "防彈少年團赴高雄歌迷籲勿接機",
       "description": "防彈少年團即將在高雄舉辦演唱會，粉絲呼籲勿至小港機場接機並保密班機資訊",
-      "count": "615 則貼文",
+      "count": "606 則貼文",
       "link": "https://www.threads.com/search?q=%E9%98%B2%E5%BD%88%E5%B0%91%E5%B9%B4%E5%9C%98&serp_type=trends&trend_fbid=28956940750653023"
     },
     {
       "title": "第69屆葛萊美公布入圍名單",
       "description": "南韓女團IVE與KiiiKiii入圍葛萊美最佳亞洲流行音樂演出獎",
-      "count": "983 則貼文",
+      "count": "996 則貼文",
       "link": "https://www.threads.com/search?q=%E8%91%9B%E8%90%8A%E7%BE%8E&serp_type=trends&trend_fbid=1855884302211486"
     },
     {
@@ -84,12 +90,6 @@
       "description": "台北市長候選人沈伯洋現身達美樂親手製作披薩，現場聚集大批民眾圍觀",
       "count": "12 萬則貼文",
       "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1672372377763598"
-    },
-    {
-      "title": "蔣萬安赴台南為謝龍介站台掃街",
-      "description": "台北市長蔣萬安前往台南力挺謝龍介，兩人合體車隊掃街拜票並發表守護水質等政見",
-      "count": "9 千則貼文",
-      "link": "https://www.threads.com/search?q=%E8%AC%9D%E9%BE%8D%E4%BB%8B&serp_type=trends&trend_fbid=1151031657687392"
     }
   ]
 }
