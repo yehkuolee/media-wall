@@ -1,95 +1,95 @@
 {
-  "updated_at": "2026-11-17T20:05:16.006806+08:00",
+  "updated_at": "2026-11-17T21:05:16.963602+08:00",
   "topics": [
-    {
-      "title": "JxJ台北演唱會開放會員預購",
-      "description": "SEVENTEEN分隊JxJ台北演唱會於遠大售票開放會員預購，歌迷分享搶票結果",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=JxJ&serp_type=trends&trend_fbid=1879058509893332"
-    },
-    {
-      "title": "唐新民選舉公報刊登年輕照片",
-      "description": "75歲的台北市長候選人唐新民在公報中使用年輕面貌照片，與實際外表差距甚大",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%94%90%E6%96%B0%E6%B0%91&serp_type=trends&trend_fbid=1110121168693532"
-    },
-    {
-      "title": "柯文哲受訪談羈押經歷哽咽落淚",
-      "description": "回顧台北看守所羈押歷程柯文哲激動落淚，蔣萬安表達心疼並強調司法非政治追殺工具",
-      "count": "3 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E6%9F%AF%E6%96%87%E5%93%B2&serp_type=trends&trend_fbid=1136328762316786"
-    },
-    {
-      "title": "LCK轉會期T1陣容調整",
-      "description": "LCK轉會期正式展開，T1進行新賽季陣容調整且前教練Roach有望回歸執教",
-      "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=T1&serp_type=trends&trend_fbid=4208533702611689"
-    },
-    {
-      "title": "何欣純換新妝容與造型",
-      "description": "台中市長參選人何欣純換上新造型，支持者讚亮眼也有人認為妝容太濃",
-      "count": "7 千則貼文",
-      "link": "https://www.threads.com/search?q=%E4%BD%95%E6%AC%A3%E7%B4%94&serp_type=trends&trend_fbid=1897498731391134"
-    },
-    {
-      "title": "景美女中加強查核服裝儀容",
-      "description": "景美女中學務處於校門口取締違規穿著，重申班服社服非正式校服且禁穿拖鞋",
-      "count": "186 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%99%AF%E7%BE%8E%E5%A5%B3%E4%B8%AD&serp_type=trends&trend_fbid=1122695790394406"
-    },
-    {
-      "title": "羅伯派汀森接任新一代007",
-      "description": "亞馬遜米高梅宣布由羅伯派汀森接任龐德，英國王室亦發文致意歡迎",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E7%BE%85%E4%BC%AF%E6%B4%BE%E6%B1%80%E6%A3%AE&serp_type=trends&trend_fbid=2672469546603001"
-    },
-    {
-      "title": "台灣11月28日舉行核電公投",
-      "description": "第22案公投11月28日登場，表決是否藉核電振興經濟並廢除「非核家園」政策",
-      "count": "780 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%A0%B8%E9%9B%BB%E5%85%AC%E6%8A%95&serp_type=trends&trend_fbid=1111512668183635"
-    },
-    {
-      "title": "高雄市長民調柯志恩領先賴瑞隆",
-      "description": "封關民調顯示柯志恩獲46.1%支持度，微幅領先賴瑞隆的44.6%，選情陷入拉鋸",
-      "count": "940 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%AB%98%E9%9B%84%E5%B8%82%E9%95%B7%E6%B0%91%E8%AA%BF&serp_type=trends&trend_fbid=1432326175721172"
-    },
-    {
-      "title": "BABYMONSTER換新造型",
-      "description": "韓國女團BABYMONSTER成員鄭雅賢換上金短髮，Chiquita則染回黑髮",
-      "count": "3 千則貼文",
-      "link": "https://www.threads.com/search?q=BABYMONSTER&serp_type=trends&trend_fbid=2551724305313016"
-    },
-    {
-      "title": "李洋赴立院備詢說明輔選",
-      "description": "運動部長李洋承諾建立新興運動國手選拔標準，並表示非公務時間輔選均遵循法規",
-      "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E6%9D%8E%E6%B4%8B&serp_type=trends&trend_fbid=1789141442342462"
-    },
-    {
-      "title": "戒慎恐懼物資免費發放",
-      "description": "發起者免費發放印有戒慎恐懼字樣的飄帶與徽章，並號召志工配送至醫院",
-      "count": "34 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%88%92%E6%85%8E%E6%81%90%E6%87%BC%E7%89%A9%E8%B3%87&serp_type=trends&trend_fbid=2913621385680355"
-    },
     {
       "title": "《神隱少女》重返全台大銀幕",
       "description": "紀念版《神隱少女》將於11月27日重登全台銀幕，ibon已開賣預售套票",
       "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E7%A5%9E%E9%9A%B1%E5%B0%91%E5%A5%B3&serp_type=trends&trend_fbid=1701933764861444"
+      "link": "https://www.threads.com/search?q=%E7%A5%9E%E9%9A%B1%E5%B0%91%E5%A5%B3&serp_type=trends&trend_fbid=1484661300229468"
     },
     {
-      "title": "寶可夢與Duolingo合作",
-      "description": "在Duolingo完成7天課程可於《Pokémon GO》兌換限時調查獲得特殊寶可夢",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=Pok%C3%A9mon%20GO&serp_type=trends&trend_fbid=2045000106887474"
+      "title": "網傳新竹巨城商場偷拍外流影像",
+      "description": "多則貼文聲稱持有新竹巨城商場偷拍與外流影像，並以聳動標題吸引點閱",
+      "count": "423 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%96%B0%E7%AB%B9%E5%B7%A8%E5%9F%8E&serp_type=trends&trend_fbid=1808829603703568"
     },
     {
-      "title": "聽海浪7分鐘不雅影片外流",
-      "description": "網路流傳「聽海浪」7分鐘不雅影片，各界呼籲停止散布與索取以防觸法",
+      "title": "柯文哲談看守所羈押落淚",
+      "description": "柯文哲受訪談北所經歷時哽咽，並發文感嘆被羈押期間最痛苦的是母親與妻子等家人",
+      "count": "3 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E6%9F%AF%E6%96%87%E5%93%B2&serp_type=trends&trend_fbid=1129967219439116"
+    },
+    {
+      "title": "「聽海浪」私密影片遭外流",
+      "description": "被稱為「聽海浪」的7分鐘海邊親密影片外流，各界呼籲停止轉發散播",
       "count": "7 千則貼文",
-      "link": "https://www.threads.com/search?q=%E8%81%BD%E6%B5%B7%E6%B5%AA&serp_type=trends&trend_fbid=1614543763314657"
+      "link": "https://www.threads.com/search?q=%E8%81%BD%E6%B5%B7%E6%B5%AA&serp_type=trends&trend_fbid=1680334546792475"
+    },
+    {
+      "title": "Pokémon GO聯手多鄰國",
+      "description": "多鄰國與Pokémon GO展開合作，完成7天課程可兌換特殊背景寶可夢",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=Pok%C3%A9mon%20GO&serp_type=trends&trend_fbid=1482065853805811"
+    },
+    {
+      "title": "JxJ台北小巨蛋門票開放預購",
+      "description": "SEVENTEEN淨漢與Joshua演出門票於遠大售票開賣，粉絲分享購票成果",
+      "count": "3 千則貼文",
+      "link": "https://www.threads.com/search?q=JxJ&serp_type=trends&trend_fbid=1135275185961640"
+    },
+    {
+      "title": "店家發放洋流飄帶應援沈伯洋",
+      "description": "各地支持者與友好店家提供多款洋流飄帶小物，供民眾前往指定據點領取為沈伯洋拉票",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B4%8B%E6%B5%81%E9%A3%84%E5%B8%B6&serp_type=trends&trend_fbid=1877780216686243"
+    },
+    {
+      "title": "台南永康晚間發生火警",
+      "description": "永康區中山南路與忠孝路口17日竄出濃煙，消防局已派員搶救",
+      "count": "",
+      "link": "https://www.threads.com/search?q=%E6%B0%B8%E5%BA%B7%E7%81%AB%E8%AD%A6&serp_type=trends&trend_fbid=4127500430887639"
+    },
+    {
+      "title": "玩家發起《GTA 6》按讚挑戰",
+      "description": "不少玩家與伴侶約定累積按讚數，以獲得資助購買《GTA 6》或PS5主機",
+      "count": "5 萬則貼文",
+      "link": "https://www.threads.com/search?q=GTA%206&serp_type=trends&trend_fbid=1672903290892059"
+    },
+    {
+      "title": "中模公布成績數A頂標僅47分",
+      "description": "高中模擬考中模公布成績與五標，其中數學A頂標為47分且換算為9級分",
+      "count": "844 則貼文",
+      "link": "https://www.threads.com/search?q=%E4%B8%AD%E6%A8%A1&serp_type=trends&trend_fbid=4020774631550764"
+    },
+    {
+      "title": "景美女中重申服裝儀容規範",
+      "description": "針對學生到校穿著，景美女中重申班服非正式校服並明文禁止穿著拖鞋",
+      "count": "208 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%99%AF%E7%BE%8E%E5%A5%B3%E4%B8%AD&serp_type=trends&trend_fbid=2589917391515331"
+    },
+    {
+      "title": "獅子座流星雨迎極大期",
+      "description": "適逢11月18日極大期，許多民眾相約夜間與凌晨觀賞獅子座流星雨",
+      "count": "156 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%8D%85%E5%AD%90%E5%BA%A7%E6%B5%81%E6%98%9F%E9%9B%A8&serp_type=trends&trend_fbid=1122051264155409"
+    },
+    {
+      "title": "台中樂團跨年演唱會開賣",
+      "description": "FOREVER YOUNG 2627'台中跨年門票開賣，吸引樂迷搶票與揪團同行",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=FOREVER%20YOUNG&serp_type=trends&trend_fbid=1422794770018438"
+    },
+    {
+      "title": "王鴻薇堂妹宣布拒投蔣萬安",
+      "description": "王鴻嬪因不滿拆除和平新生天橋，宣布市長拒投蔣萬安並表態支持苗博雅等人",
+      "count": "326 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%8E%8B%E9%B4%BB%E5%AC%AA&serp_type=trends&trend_fbid=2430859687719503"
+    },
+    {
+      "title": "何欣純新髮型亮相政見發表會",
+      "description": "台中市長候選人何欣純出席政見發表會，以全新髮型與妝容造型現身",
+      "count": "7 千則貼文",
+      "link": "https://www.threads.com/search?q=%E4%BD%95%E6%AC%A3%E7%B4%94&serp_type=trends&trend_fbid=1156572520113101"
     }
   ]
 }
