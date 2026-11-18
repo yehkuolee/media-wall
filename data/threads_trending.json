@@ -1,71 +1,35 @@
 {
-  "updated_at": "2026-11-18T11:05:16.488315+08:00",
+  "updated_at": "2026-11-18T12:05:18.612248+08:00",
   "topics": [
+    {
+      "title": "張啓楷遭爆在市區隨地小便",
+      "description": "民眾黨嘉義市長候選人張啓楷遭行車紀錄器拍下在人行道旁樹叢隨地小便",
+      "count": "3 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%BC%B5%E5%95%93%E6%A5%B7&serp_type=trends&trend_fbid=1140978885245910"
+    },
+    {
+      "title": "黃仁勳願回任輝達執行長遭拒",
+      "description": "輝達前執行長黃仁勳表態願重返接掌公司，但董事長瓊斯表示董事會無意讓他回任",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E9%BB%83%E4%BB%81%E5%8B%B3&serp_type=trends&trend_fbid=29176269792029967"
+    },
     {
       "title": "阿信推出新單曲《棠棣賦》",
       "description": "五月天阿信為電視劇獻唱主題曲《棠棣賦》，並向25年相伴的夥伴致謝",
-      "count": "633 則貼文",
+      "count": "785 則貼文",
       "link": "https://www.threads.com/search?q=%E6%A3%A0%E6%A3%A3%E8%B3%A6&serp_type=trends&trend_fbid=2381141555789786"
     },
     {
-      "title": "Doran宣布離開T1戰隊",
-      "description": "電競選手崔玄準透過通訊軟體發送道別訊息，向粉絲宣布離開T1戰隊的決定",
-      "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=Doran&serp_type=trends&trend_fbid=1445502364454425"
+      "title": "多蘭宣布離開T1戰隊",
+      "description": "英雄聯盟選手多蘭透過泡泡平台發送告別訊息，向粉絲傳達離開T1戰隊的決定",
+      "count": "4 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%A4%9A%E8%98%AD&serp_type=trends&trend_fbid=998731302694794"
     },
     {
-      "title": "蔡易餘立院衝突上演金蟬脫殼",
-      "description": "蔡易餘在立法院衝突中掙脫拉扯，露出印有「靈活的胖子」字樣的衣服",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E8%94%A1%E6%98%93%E9%A4%98&serp_type=trends&trend_fbid=2228906394359015"
-    },
-    {
-      "title": "沈伯洋赴台北花市拜票",
-      "description": "民進黨台北市長候選人沈伯洋前往內湖花市掃街，攤商致贈花圈迎接並熱情互動",
-      "count": "11 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=2365168610689903"
-    },
-    {
-      "title": "川頁文創突推SJ演出門票65折",
-      "description": "川頁文創在SJ演出前突釋門票並祭出65折優惠，原價購票消費者要求說明與補償",
-      "count": "138 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%B7%9D%E9%A0%81%E6%96%87%E5%89%B5&serp_type=trends&trend_fbid=1870238470655700"
-    },
-    {
-      "title": "SEVENTEEN分隊台北搶票",
-      "description": "SEVENTEEN小分隊JxJ將於台北小巨蛋開唱，官方會員優先購票已在遠大售票開跑",
-      "count": "806 則貼文",
-      "link": "https://www.threads.com/search?q=SEVENTEEN%20JxJ&serp_type=trends&trend_fbid=2027924927902520"
-    },
-    {
-      "title": "黃仁勳表態願回任執行長遭拒",
-      "description": "黃仁勳發聲明表態願回任，輝達董事會則表明無意恢復其執行長職位",
-      "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E9%BB%83%E4%BB%81%E5%8B%B3&serp_type=trends&trend_fbid=1163318562741829"
-    },
-    {
-      "title": "李秀姬遭控發布竄改沈伯洋公報圖",
-      "description": "李秀姬涉嫌發布竄改沈伯洋選舉公報圖片，部分民眾已向警方報案",
-      "count": "791 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%9D%8E%E7%A7%80%E5%A7%AC&serp_type=trends&trend_fbid=1001088019713564"
-    },
-    {
-      "title": "翡翠水庫設光電板成選戰攻防",
-      "description": "台北市長選戰聚焦翡翠水庫光電板，蔣萬安稱阻中央設施，公文顯示僅為可行性盤點",
-      "count": "2 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E7%BF%A1%E7%BF%A0%E6%B0%B4%E5%BA%AB%E5%85%89%E9%9B%BB&serp_type=trends&trend_fbid=1664607511739341"
-    },
-    {
-      "title": "羅智強指控烏山頭水庫光電未環評",
-      "description": "國民黨立委羅智強發文指烏山頭水庫設光電板未辦理環評，相關說法遭反方指不符事實",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E7%BE%85%E6%99%BA%E5%BC%B7&serp_type=trends&trend_fbid=2560004304479875"
-    },
-    {
-      "title": "台中捷運設備異常致列車延誤",
-      "description": "因列車與設備異常，台中捷運大慶站至高鐵台中站一度採單線雙向行駛",
+      "title": "王鴻薇堂妹表態拒投蔣萬安",
+      "description": "針對堂妹王鴻嬪因天橋拆除表態拒投蔣萬安，王鴻薇表示有把握拉回選票",
       "count": "3 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E4%B8%AD%E6%8D%B7%E9%81%8B&serp_type=trends&trend_fbid=1526717775945616"
+      "link": "https://www.threads.com/search?q=%E7%8E%8B%E9%B4%BB%E8%96%87&serp_type=trends&trend_fbid=1021077927727838"
     },
     {
       "title": "Zeus極可能重返老東家T1",
@@ -74,22 +38,58 @@
       "link": "https://www.threads.com/search?q=Zeus&serp_type=trends&trend_fbid=1530033132290008"
     },
     {
-      "title": "《偽裝戀愛》下週迎大結局",
-      "description": "任時完與薛仁雅主演的韓劇《偽裝戀愛》播出第10集，全劇共12集將於下週迎來大結局",
-      "count": "653 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%81%BD%E8%A3%9D%E6%88%80%E6%84%9B&serp_type=trends&trend_fbid=1942830803347828"
-    },
-    {
-      "title": "秦慧珠評蔣萬安遭要求黨紀處分",
-      "description": "台北市議員秦慧珠在節目談論蔣萬安與選情，部分支持者要求祭出黨紀處分或退黨",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E7%A7%A6%E6%85%A7%E7%8F%A0&serp_type=trends&trend_fbid=1463163901852618"
+      "title": "台鋼雄鷹顏郁軒獲球迷力挺",
+      "description": "台鋼雄鷹球員顏郁軒獲各隊球迷支持，眾人稱其為大哥並購買應援毛巾",
+      "count": "134 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%A1%8F%E9%83%81%E8%BB%92&serp_type=trends&trend_fbid=1679488413806629"
     },
     {
       "title": "台灣頻傳銀行帳戶盜轉",
       "description": "針對近期銀行帳戶遭盜轉事件，民眾關閉非約定轉帳與開啟即時通知自保",
-      "count": "410 則貼文",
+      "count": "443 則貼文",
       "link": "https://www.threads.com/search?q=%E9%8A%80%E8%A1%8C%E7%9B%9C%E8%BD%89&serp_type=trends&trend_fbid=28839446382418756"
+    },
+    {
+      "title": "沈伯洋赴台北花市拜票",
+      "description": "民進黨台北市長候選人沈伯洋前往內湖花市掃街，攤商致贈花圈迎接並熱情互動",
+      "count": "11 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=2365168610689903"
+    },
+    {
+      "title": "SEVENTEEN分隊台北搶票",
+      "description": "SEVENTEEN小分隊JxJ將於台北小巨蛋開唱，官方會員優先購票已在遠大售票開跑",
+      "count": "805 則貼文",
+      "link": "https://www.threads.com/search?q=SEVENTEEN%20JxJ&serp_type=trends&trend_fbid=2027924927902520"
+    },
+    {
+      "title": "羅智強指控烏山頭水庫光電未環評",
+      "description": "國民黨立委羅智強發文指烏山頭水庫設光電板未辦理環評，相關說法遭反方指不符事實",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E7%BE%85%E6%99%BA%E5%BC%B7&serp_type=trends&trend_fbid=2560004304479875"
+    },
+    {
+      "title": "BTS將於高雄世運開唱",
+      "description": "韓國男團BTS巡迴演唱會登陸高雄國家體育場，現場同步開賣週邊並展開應援",
+      "count": "7 萬則貼文",
+      "link": "https://www.threads.com/search?q=BTS&serp_type=trends&trend_fbid=1660975838810744"
+    },
+    {
+      "title": "謝龍介主張拆烏山頭水庫光電",
+      "description": "台南市長候選人謝龍介政見會主張拆烏山頭水庫光電板，並承諾未達標願受罷免",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E8%AC%9D%E9%BE%8D%E4%BB%8B&serp_type=trends&trend_fbid=1634785915008480"
+    },
+    {
+      "title": "《哈利波特：魔法覺醒》將停運",
+      "description": "手遊《哈利波特：魔法覺醒》因授權到期，宣布將於2027年3月關閉伺服器停止營運",
+      "count": "231 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%93%88%E5%88%A9%E6%B3%A2%E7%89%B9%EF%BC%9A%E9%AD%94%E6%B3%95%E8%A6%BA%E9%86%92&serp_type=trends&trend_fbid=1146645011680728"
+    },
+    {
+      "title": "秦慧珠政論言論遭藍營要求退黨",
+      "description": "台北市議員秦慧珠因政論節目發言，藍營支持者要求處分，綠營則籲集中選票支持民進黨",
+      "count": "2 千則貼文",
+      "link": "https://www.threads.com/search?q=%E7%A7%A6%E6%85%A7%E7%8F%A0&serp_type=trends&trend_fbid=29553604197628560"
     }
   ]
 }
