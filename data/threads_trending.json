@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T11:05:16.579656+08:00",
+  "updated_at": "2026-11-19T12:05:13.420569+08:00",
   "topics": [
     {
       "title": "張小燕指沈伯洋造勢穿和服",
@@ -10,26 +10,38 @@
     {
       "title": "BTS演唱會設ARMY專區",
       "description": "BTS在高雄世運主場館開唱，現場設立專屬會員禮攤位吸引歌迷前往",
-      "count": "401 則貼文",
+      "count": "439 則貼文",
       "link": "https://www.threads.com/search?q=ARMY%20ZONE&serp_type=trends&trend_fbid=1142065678741899"
     },
     {
+      "title": "張啓楷為路旁小便道歉受罰",
+      "description": "民眾黨張啓楷被爆在路旁隨地小便，隨後公開致歉並赴環保局認錯受罰",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E5%BC%B5%E5%95%93%E6%A5%B7&serp_type=trends&trend_fbid=1690766622708799"
+    },
+    {
       "title": "陳竹音涉反滲透法50萬交保",
-      "description": "陳竹音涉收受境外資助參選新北市議員，檢方複訊後諭令50萬元交保並限制出境",
-      "count": "611 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%99%B3%E7%AB%B9%E9%9F%B3&serp_type=trends&trend_fbid=2237791080137021"
+      "description": "新北市議員參選人陳竹音涉境外資助參選，檢方訊後依反滲透法諭令50萬元交保",
+      "count": "698 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%99%B3%E7%AB%B9%E9%9F%B3&serp_type=trends&trend_fbid=1147795171551511"
     },
     {
-      "title": "家長帶染諾羅病毒女兒赴日",
-      "description": "台灣家長明知女兒染諾羅病毒仍帶其赴日且未戴口罩，事後遭檢舉",
-      "count": "873 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%AB%BE%E7%BE%85%E7%97%85%E6%AF%92&serp_type=trends&trend_fbid=1688508639300059"
+      "title": "楊金龍稱第四季不排除升息",
+      "description": "因應台幣走貶與台股承壓，央行總裁楊金龍表示已進場調節且第四季不排除升息",
+      "count": "346 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%A5%8A%E9%87%91%E9%BE%8D&serp_type=trends&trend_fbid=2266343753931671"
     },
     {
-      "title": "沈伯洋赴濱江市場掃街拜票",
-      "description": "民進黨台北市長候選人沈伯洋前往濱江市場拜票，受到熱情支持者與攤商迎接",
-      "count": "11 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=2663680850727558"
+      "title": "台北動物園辦黑腳企鵝散步活動",
+      "description": "台北市立動物園首辦企鵝走路趣活動，安排黑腳企鵝戶外漫步吸引大批民眾排隊",
+      "count": "337 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%BB%91%E8%85%B3%E4%BC%81%E9%B5%9D&serp_type=trends&trend_fbid=1185544620798361"
+    },
+    {
+      "title": "台股震盪市場聚焦國安基金護盤",
+      "description": "面對台股震盪走跌，外界緊盯國安基金是否進場拉抬權值股及後續資金操作",
+      "count": "4 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%9C%8B%E5%AE%89%E5%9F%BA%E9%87%91&serp_type=trends&trend_fbid=1145356721225862"
     },
     {
       "title": "蔡康永分享應對謠言說話技巧",
@@ -38,58 +50,46 @@
       "link": "https://www.threads.com/search?q=%E8%94%A1%E5%BA%B7%E6%B0%B8&serp_type=trends&trend_fbid=1677616190673057"
     },
     {
+      "title": "《俠盜獵車手 6》正式發售",
+      "description": "睽違13年續作《俠盜獵車手 6》登PS5與Xbox平台，PC版時程尚未公布",
+      "count": "397 則貼文",
+      "link": "https://www.threads.com/search?q=%E4%BF%A0%E7%9B%9C%E7%8D%B5%E8%BB%8A%E6%89%8B%206&serp_type=trends&trend_fbid=1460655932918942"
+    },
+    {
+      "title": "徐欣瑩政見會主打科技全齡福利",
+      "description": "新竹縣長候選人徐欣瑩於政見發表會提出施政藍圖，著重科技發展與全齡照顧政策",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%BE%90%E6%AC%A3%E7%91%A9&serp_type=trends&trend_fbid=1814230266478602"
+    },
+    {
+      "title": "馬斯克力挺黃仁勳",
+      "description": "馬斯克在峰會上力挺黃仁勳，指輝達董事會撤換其職務的決定極不明智",
+      "count": "2 千則貼文",
+      "link": "https://www.threads.com/search?q=%E9%A6%AC%E6%96%AF%E5%85%8B&serp_type=trends&trend_fbid=3320853831636924"
+    },
+    {
+      "title": "家長帶染諾羅孩童赴日旅遊",
+      "description": "台灣家長明知孩子染諾羅仍赴日旅遊且未戴口罩，遭檢舉後已刪文關閉帳號",
+      "count": "930 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%AB%BE%E7%BE%85%E7%97%85%E6%AF%92&serp_type=trends&trend_fbid=1828984091625797"
+    },
+    {
+      "title": "沈伯洋赴濱江市場掃街拜票",
+      "description": "沈伯洋前往台北市濱江市場拜票，受到現場支持者與攤商熱烈歡迎並合照",
+      "count": "11 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1143726675230528"
+    },
+    {
       "title": "陳亭妃指光電報導斷章取義提告",
       "description": "針對水庫光電板發言被指不實，陳亭妃指控報導斷章取義並正式向警方報案提告記者",
       "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E9%99%B3%E4%BA%AD%E5%A6%83&serp_type=trends&trend_fbid=2208325986787365"
+      "link": "https://www.threads.com/search?q=%E9%99%B3%E4%BA%AD%E5%A6%83&serp_type=trends&trend_fbid=1611319563506352"
     },
     {
-      "title": "葉元之遭指模仿手語涉歧視",
-      "description": "國民黨立委葉元之因戲謔模仿手語，遭指輕視手語並涉及歧視聽障人士",
-      "count": "587 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%91%89%E5%85%83%E4%B9%8B&serp_type=trends&trend_fbid=1140385242138159"
-    },
-    {
-      "title": "《俠盜獵車手6》帶動主機買氣",
-      "description": "玩家在PS5等主機體驗《俠盜獵車手6》，帶動主機熱銷與藥局換購活動",
-      "count": "341 則貼文",
-      "link": "https://www.threads.com/search?q=%E4%BF%A0%E7%9B%9C%E7%8D%B5%E8%BB%8A%E6%89%8B6&serp_type=trends&trend_fbid=28587250137616775"
-    },
-    {
-      "title": "台北動物園首辦黑腳企鵝散步",
-      "description": "北市動物園推出企鵝走路趣活動，吸引大批民眾一早排隊朝聖",
-      "count": "179 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%BB%91%E8%85%B3%E4%BC%81%E9%B5%9D&serp_type=trends&trend_fbid=1752750975824074"
-    },
-    {
-      "title": "Gemini 4 Neon推出",
-      "description": "Google推出主打複雜程式設計與分析推理的Gemini 4 Neon模型",
-      "count": "5 千則貼文",
-      "link": "https://www.threads.com/search?q=Gemini%204&serp_type=trends&trend_fbid=1870226774001286"
-    },
-    {
-      "title": "NVIDIA拒黃仁勳回任執行長",
-      "description": "雖然黃仁勳表態願重返職位，NVIDIA董事會仍確認接受辭呈並著手物色接班人",
-      "count": "2 萬則貼文",
-      "link": "https://www.threads.com/search?q=NVIDIA&serp_type=trends&trend_fbid=2920461148337522"
-    },
-    {
-      "title": "wave to earth開唱",
-      "description": "韓國樂團wave to earth將於11月24日在台北TICC舉辦演唱會",
-      "count": "243 則貼文",
-      "link": "https://www.threads.com/search?q=wave%20to%20earth&serp_type=trends&trend_fbid=4105934439537402"
-    },
-    {
-      "title": "金南俊分享高雄85大樓應援照",
-      "description": "高雄85大樓首度點亮紫色燈海應援，BTS隊長金南俊特別發布照片親自認證",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E9%87%91%E5%8D%97%E4%BF%8A&serp_type=trends&trend_fbid=4503538296587359"
-    },
-    {
-      "title": "鄭朝方推出全手語政見短片",
-      "description": "新竹縣長候選人鄭朝方以手語與聽障人士溝通，發布全手語短片宣傳政見",
-      "count": "3 千則貼文",
-      "link": "https://www.threads.com/search?q=%E9%84%AD%E6%9C%9D%E6%96%B9&serp_type=trends&trend_fbid=1007603635747083"
+      "title": "大港開唱公布第三波陣容",
+      "description": "大港開唱釋出第三波演出名單，包含SiM與Tempalay等日本樂團",
+      "count": "251 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%A4%A7%E6%B8%AF%E9%96%8B%E5%94%B1&serp_type=trends&trend_fbid=2424142958121118"
     }
   ]
 }
