@@ -1,17 +1,65 @@
 {
-  "updated_at": "2026-11-19T13:05:20.647658+08:00",
+  "updated_at": "2026-11-19T14:05:13.122242+08:00",
   "topics": [
     {
-      "title": "黃偉哲說明烏山頭水庫光電案",
-      "description": "烏山頭水庫光電案由馬政府時期核准，黃偉哲強調水質合格且二期工程已解約",
-      "count": "3 千則貼文",
-      "link": "https://www.threads.com/search?q=%E9%BB%83%E5%81%89%E5%93%B2&serp_type=trends&trend_fbid=2198516707688267"
+      "title": "陳亭妃提告中天新聞及記者",
+      "description": "針對水庫光電板相關言論，立委陳亭妃已對中天新聞及記者提告",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E9%99%B3%E4%BA%AD%E5%A6%83&serp_type=trends&trend_fbid=1199614455752533"
     },
     {
-      "title": "張小燕質疑沈伯洋造勢穿和服",
-      "description": "唐湘龍透露張小燕質疑沈伯洋造勢服裝，網友指出該衣物實為日式法被",
+      "title": "柯文哲稱小草絕不投給沈伯洋",
+      "description": "針對柯文哲稱小草絕不投給自己，沈伯洋回應大家都能自主決定投票意向",
+      "count": "2 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E6%9F%AF%E6%96%87%E5%93%B2&serp_type=trends&trend_fbid=1126729393096246"
+    },
+    {
+      "title": "Suica企鵝退休紫色兔子接棒",
+      "description": "JR東日本宣布Suica企鵝將於2027年退休，由票選勝出的紫色兔子接棒第二代吉祥物",
+      "count": "2 千則貼文",
+      "link": "https://www.threads.com/search?q=%E7%B4%AB%E8%89%B2%E5%85%94%E5%AD%90&serp_type=trends&trend_fbid=1816681562713704"
+    },
+    {
+      "title": "張小燕稱看不懂沈伯洋造勢服飾",
+      "description": "唐湘龍透露張小燕私訊表示不解沈伯洋造勢穿日式服裝，有人指出該服飾實為法披",
       "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%BC%B5%E5%B0%8F%E7%87%95&serp_type=trends&trend_fbid=1817951152585561"
+      "link": "https://www.threads.com/search?q=%E5%BC%B5%E5%B0%8F%E7%87%95&serp_type=trends&trend_fbid=2283843505523113"
+    },
+    {
+      "title": "黃偉哲說明烏山頭水庫光電",
+      "description": "台南市長黃偉哲表示淨水場水質檢測合格，烏山頭水庫二期光電已完成解約",
+      "count": "3 千則貼文",
+      "link": "https://www.threads.com/search?q=%E9%BB%83%E5%81%89%E5%93%B2&serp_type=trends&trend_fbid=1004189606096582"
+    },
+    {
+      "title": "台股9檔AI股爆鉅額違約交割",
+      "description": "受台股重挫影響，9檔AI供應鏈個股爆出4.27億元違約交割，其中創意金額最高",
+      "count": "391 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%81%95%E7%B4%84%E4%BA%A4%E5%89%B2&serp_type=trends&trend_fbid=3018105118552493"
+    },
+    {
+      "title": "楊金龍被要求下台負責",
+      "description": "新台幣匯率貶破33元且未升息應對，央行總裁楊金龍被要求下台負責",
+      "count": "521 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%A5%8A%E9%87%91%E9%BE%8D&serp_type=trends&trend_fbid=29422870933974093"
+    },
+    {
+      "title": "葉元之模仿沈伯洋手語動作",
+      "description": "葉元之在節目中模仿嘲諷沈伯洋手語，遭指涉嫌歧視與羞辱聽障族群",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E8%91%89%E5%85%83%E4%B9%8B&serp_type=trends&trend_fbid=3751535808317415"
+    },
+    {
+      "title": "BTS高雄演唱會開放領小卡",
+      "description": "BTS高雄演唱會現場開放領取福利小卡，吸引大批歌迷提早前往排隊",
+      "count": "528 則貼文",
+      "link": "https://www.threads.com/search?q=ARMY%20ZONE&serp_type=trends&trend_fbid=4201179703506761"
+    },
+    {
+      "title": "北市動物園推黑腳企鵝散步",
+      "description": "臺北市立動物園推出黑腳企鵝散步活動，低溫24度以下外出吸引大批人潮排隊",
+      "count": "494 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%BB%91%E8%85%B3%E4%BC%81%E9%B5%9D&serp_type=trends&trend_fbid=2577863949303973"
     },
     {
       "title": "三麗鷗開賣飛耳狗狗系列週邊",
@@ -20,76 +68,28 @@
       "link": "https://www.threads.com/search?q=%E4%B8%89%E9%BA%97%E9%B7%97&serp_type=trends&trend_fbid=1130006712745803"
     },
     {
-      "title": "張啓楷為路旁小便道歉受罰",
-      "description": "民眾黨張啓楷被爆在路旁隨地小便，隨後公開致歉並赴環保局認錯受罰",
-      "count": "9 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%BC%B5%E5%95%93%E6%A5%B7&serp_type=trends&trend_fbid=1690766622708799"
-    },
-    {
-      "title": "北市動物園推黑腳企鵝散步",
-      "description": "臺北市立動物園推出黑腳企鵝散步活動，低溫24度以下外出吸引大批人潮排隊",
-      "count": "443 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%BB%91%E8%85%B3%E4%BC%81%E9%B5%9D&serp_type=trends&trend_fbid=1810592486823144"
-    },
-    {
-      "title": "BABYMONSTER加釋門票",
-      "description": "主辦單位釋出BABYMONSTER台北小巨蛋追加包廂座位與退票",
-      "count": "3 千則貼文",
-      "link": "https://www.threads.com/search?q=BABYMONSTER&serp_type=trends&trend_fbid=1698622661833066"
-    },
-    {
-      "title": "秦慧珠公開表明反共不反中",
-      "description": "台北市議員秦慧珠強調只認同中華民國，不支持共產黨與中華人民共和國",
+      "title": "秦慧珠強調正藍軍反共立場",
+      "description": "台北市議員秦慧珠除駁斥「蹭」蔣萬安，並重申正藍軍「反共不反中」立場",
       "count": "6 千則貼文",
-      "link": "https://www.threads.com/search?q=%E7%A7%A6%E6%85%A7%E7%8F%A0&serp_type=trends&trend_fbid=3434126373436527"
+      "link": "https://www.threads.com/search?q=%E7%A7%A6%E6%85%A7%E7%8F%A0&serp_type=trends&trend_fbid=1139942231951591"
     },
     {
-      "title": "葉元之模仿沈伯洋手語動作",
-      "description": "葉元之在節目中模仿嘲諷沈伯洋手語，遭指涉嫌歧視與羞辱聽障族群",
-      "count": "793 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%91%89%E5%85%83%E4%B9%8B&serp_type=trends&trend_fbid=3751535808317415"
+      "title": "台達電股價失守千元大關",
+      "description": "隨著股價持續走跌，台達電盤中跌入三位數行情，單張價格跌破百萬",
+      "count": "5 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E9%81%94%E9%9B%BB&serp_type=trends&trend_fbid=1707706101068912"
     },
     {
-      "title": "BTS高雄開唱粉絲排領阿米粽",
-      "description": "BTS高雄演唱會登場，歌迷前往世運主場館排隊領取阿米粽限定小卡套組",
-      "count": "647 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%98%BF%E7%B1%B3%E7%B2%BD&serp_type=trends&trend_fbid=1165391099478271"
+      "title": "大港開唱公布第三波陣容",
+      "description": "2027大港開唱第三波陣容公開，迎來SiM及Tempalay等四組日本樂團",
+      "count": "408 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%A4%A7%E6%B8%AF%E9%96%8B%E5%94%B1&serp_type=trends&trend_fbid=2215768912670120"
     },
     {
-      "title": "陳竹音涉反滲透法50萬交保",
-      "description": "新北市議員參選人陳竹音涉境外資助參選，檢方訊後依反滲透法諭令50萬元交保",
-      "count": "803 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%99%B3%E7%AB%B9%E9%9F%B3&serp_type=trends&trend_fbid=1147795171551511"
-    },
-    {
-      "title": "台股震盪市場聚焦國安基金護盤",
-      "description": "面對台股震盪走跌，外界緊盯國安基金是否進場拉抬權值股及後續資金操作",
-      "count": "4 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%9C%8B%E5%AE%89%E5%9F%BA%E9%87%91&serp_type=trends&trend_fbid=1145356721225862"
-    },
-    {
-      "title": "烏山頭水庫設置光電板",
-      "description": "烏山頭等水庫光電案聚焦招商、法規審定與免環評機制，以及賴清德的政策推動責任",
+      "title": "經濟部澄清水庫無設光電計畫",
+      "description": "針對水庫設置光電板疑慮，經濟部表示翡翠水庫等處無規劃且評估已中止",
       "count": "2 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B0%B4%E5%BA%AB%E5%85%89%E9%9B%BB&serp_type=trends&trend_fbid=1855988662216529"
-    },
-    {
-      "title": "沈伯洋赴濱江市場掃街拜票",
-      "description": "沈伯洋前往台北市濱江市場拜票，受到現場支持者與攤商熱烈歡迎並合照",
-      "count": "11 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1143726675230528"
-    },
-    {
-      "title": "王鴻嬪表態拒投蔣萬安",
-      "description": "王鴻薇堂妹王鴻嬪不滿天橋拆除與配套未兌現，公開表態拒投台北市長蔣萬安",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E7%8E%8B%E9%B4%BB%E5%AC%AA&serp_type=trends&trend_fbid=1792259355388839"
-    },
-    {
-      "title": "馬斯克力挺黃仁勳",
-      "description": "馬斯克在峰會上力挺黃仁勳，指輝達董事會撤換其職務的決定極不明智",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E9%A6%AC%E6%96%AF%E5%85%8B&serp_type=trends&trend_fbid=3320853831636924"
+      "link": "https://www.threads.com/search?q=%E6%B0%B4%E5%BA%AB%E5%85%89%E9%9B%BB&serp_type=trends&trend_fbid=1173681158940459"
     }
   ]
 }
