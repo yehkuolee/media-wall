@@ -1,29 +1,83 @@
 {
-  "updated_at": "2026-11-20T22:05:17.611380+08:00",
+  "updated_at": "2026-11-20T23:05:16.617683+08:00",
   "topics": [
+    {
+      "title": "BTS現身高雄厚得福用餐",
+      "description": "南韓團體BTS前往高雄厚得福餐廳用餐，吸引大批民眾與粉絲聚集圍觀",
+      "count": "13 萬則貼文",
+      "link": "https://www.threads.com/search?q=BTS&serp_type=trends&trend_fbid=2188971918496465"
+    },
     {
       "title": "台股重挫上市融資大減491億",
       "description": "台股重挫使上市融資餘額單日減少491.41億元，市場湧現追繳與斷頭賣壓",
-      "count": "720 則貼文",
+      "count": "729 則貼文",
       "link": "https://www.threads.com/search?q=%E8%9E%8D%E8%B3%87%E9%A4%98%E9%A1%8D&serp_type=trends&trend_fbid=1706338284260128"
     },
     {
-      "title": "立院三讀通過普發現金2萬元",
-      "description": "特別條例經立院三讀通過，政府將向全體國民普發現金2萬元且免納所得稅",
-      "count": "6 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%99%AE%E7%99%BC%E7%8F%BE%E9%87%91&serp_type=trends&trend_fbid=1951682066207917"
+      "title": "立法院三讀普發現金2萬元",
+      "description": "全體國民將獲普發現金2萬元且免納所得稅，相關特別條例已獲立法院三讀通過",
+      "count": "7 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%99%AE%E7%99%BC%E7%8F%BE%E9%87%91&serp_type=trends&trend_fbid=2109140976397534"
     },
     {
-      "title": "何欣純台中造勢晚會登場",
-      "description": "何欣純在台中烏日舉辦造勢晚會，賴清德到場助講吸引大批支持者湧入",
-      "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E4%BD%95%E6%AC%A3%E7%B4%94&serp_type=trends&trend_fbid=1114866058203049"
+      "title": "沈伯洋何欣純台中車隊掃街",
+      "description": "洋流欣潮車隊掃街在台中登場，沈伯洋與何欣純現身吸引支持者相挺",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B4%8B%E6%B5%81%E6%AC%A3%E6%BD%AE&serp_type=trends&trend_fbid=1627362115001216"
     },
     {
       "title": "王婉諭點名綠委缺席表決",
       "description": "立法院通過普發現金案，時代力量黨主席王婉諭列舉民進黨立委缺席投票名單",
-      "count": "215 則貼文",
+      "count": "229 則貼文",
       "link": "https://www.threads.com/search?q=%E7%8E%8B%E5%A9%89%E8%AB%AD&serp_type=trends&trend_fbid=1874029640686564"
+    },
+    {
+      "title": "Doran與Kanavi加盟DK",
+      "description": "《英雄聯盟》DK戰隊宣布Doran與Kanavi加盟，Siwoo離隊",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=Dplus%20KIA&serp_type=trends&trend_fbid=28106427685699515"
+    },
+    {
+      "title": "夏莉絲幼兒園爆虐童案",
+      "description": "針對夏莉絲幼兒園虐童案，北市府因業者缺席調解會宣布延期，並將依消保法處理",
+      "count": "6 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%A4%8F%E8%8E%89%E7%B5%B2%E5%B9%BC%E5%85%92%E5%9C%92&serp_type=trends&trend_fbid=1142318988170613"
+    },
+    {
+      "title": "徐欣瑩競辦人員遭檢警調查",
+      "description": "新竹縣長候選人徐欣瑩競辦人員遭檢警帶走，她前往縣警局抗議並呼籲公正辦案",
+      "count": "2 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%BE%90%E6%AC%A3%E7%91%A9&serp_type=trends&trend_fbid=1842268456800920"
+    },
+    {
+      "title": "圭賢遊高雄品嚐丹丹漢堡",
+      "description": "Super Junior圭賢發布高雄旅遊影片，以流利中文點餐並享用丹丹漢堡",
+      "count": "528 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%9C%AD%E8%B3%A2&serp_type=trends&trend_fbid=2068835530485204"
+    },
+    {
+      "title": "蔡其昌出席大洋流造勢開講",
+      "description": "蔡其昌在台中出席大洋流造勢晚會並登台開講，現場吸引大批支持者參與",
+      "count": "259 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%94%A1%E5%85%B6%E6%98%8C&serp_type=trends&trend_fbid=2440072256400367"
+    },
+    {
+      "title": "高雄愛河灣水舞訊號異常搶修",
+      "description": "高雄愛河灣為BTS應援的水舞展演因光纖受損訊號異常，現場無法正常噴水並全力搶修",
+      "count": "754 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%84%9B%E6%B2%B3%E7%81%A3%E6%B0%B4%E8%88%9E&serp_type=trends&trend_fbid=2529915804168591"
+    },
+    {
+      "title": "藤井風東京巨蛋辦鋼琴獨奏會",
+      "description": "日本歌手藤井風在東京巨蛋舉行鋼琴獨奏會，透過 YouTube 直播並即興彈唱多首曲目",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E8%97%A4%E4%BA%95%E9%A2%A8&serp_type=trends&trend_fbid=1146652997740318"
+    },
+    {
+      "title": "支持者號召投温世政反焚化爐",
+      "description": "南投縣長候選人温世政獲支持者號召返鄉投票，主打反對名間興建焚化爐以守護茶鄉",
+      "count": "4 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B8%A9%E4%B8%96%E6%94%BF&serp_type=trends&trend_fbid=2269268426971011"
     },
     {
       "title": "RESCENE登上MAMA舞台",
@@ -32,64 +86,10 @@
       "link": "https://www.threads.com/search?q=RESCENE&serp_type=trends&trend_fbid=2066064814108077"
     },
     {
-      "title": "藤井風東京巨蛋開唱線上直播",
-      "description": "藤井風於東京巨蛋舉辦鋼琴演奏會並同步全球直播，吸引逾50萬人同時觀看",
-      "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E8%97%A4%E4%BA%95%E9%A2%A8&serp_type=trends&trend_fbid=970154005862554"
-    },
-    {
-      "title": "Hearts2Hearts登MAMA",
-      "description": "Hearts2Hearts於2026 MAMA呈現特別編排舞台並獲獎",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=Hearts2Hearts&serp_type=trends&trend_fbid=4126442187659063"
-    },
-    {
-      "title": "珈琲與花物語市集水交社登場",
-      "description": "匯聚逾300組海內外品牌的森之市珈琲與花物語市集在台南水交社登場，活動免費入場",
-      "count": "224 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%A3%AE%E4%B9%8B%E5%B8%82&serp_type=trends&trend_fbid=3189411681391225"
-    },
-    {
-      "title": "Viper轉會期動向待定",
-      "description": "英雄聯盟選手Viper傳出可能續留BLG或加盟KRX，新賽季去向待官方確認",
-      "count": "5 千則貼文",
-      "link": "https://www.threads.com/search?q=Viper&serp_type=trends&trend_fbid=2339989616791410"
-    },
-    {
-      "title": "徐欣瑩競辦人員遭檢警調查",
-      "description": "新竹縣長候選人徐欣瑩競辦人員遭檢警帶走，她前往縣警局抗議並呼籲公正辦案",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%BE%90%E6%AC%A3%E7%91%A9&serp_type=trends&trend_fbid=1842268456800920"
-    },
-    {
-      "title": "烏日造勢晚會湧現大批人潮",
-      "description": "台中烏日舉辦造勢活動，周邊停車場客滿且台鐵新烏日站與捷運擠滿人潮",
-      "count": "566 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%83%8F%E6%97%A5%E9%80%A0%E5%8B%A2&serp_type=trends&trend_fbid=2132175104078865"
-    },
-    {
-      "title": "童子瑋支持者快閃發放應援物",
-      "description": "童子瑋支持者在基隆長庚與七堵車站快閃發放洋流飄帶，為造勢晚會及投票日催票",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E7%AB%A5%E5%AD%90%E7%91%8B&serp_type=trends&trend_fbid=1449094680735700"
-    },
-    {
-      "title": "蔡其昌出席台中造勢晚會",
-      "description": "立法委員蔡其昌在台中洋流欣潮晚會登台演講，現場支持者估算突破5萬人",
-      "count": "257 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%94%A1%E5%85%B6%E6%98%8C&serp_type=trends&trend_fbid=1170394978667607"
-    },
-    {
-      "title": "TREASURE獲MAMA獎項",
-      "description": "南韓男團TREASURE在大阪MAMA典禮奪得當天第二座獎項，並公開致謝YG團隊",
-      "count": "2 萬則貼文",
-      "link": "https://www.threads.com/search?q=TREASURE&serp_type=trends&trend_fbid=2538106383338625"
-    },
-    {
-      "title": "圭賢遊高雄品嚐丹丹漢堡",
-      "description": "Super Junior圭賢發布高雄旅遊影片，以流利中文點餐並享用丹丹漢堡",
-      "count": "505 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%9C%AD%E8%B3%A2&serp_type=trends&trend_fbid=2068835530485204"
+      "title": "台大NTU COOL延後上線",
+      "description": "台灣大學NTU COOL因資安維護延至晚間上線，導致學生無法繳交作業",
+      "count": "171 則貼文",
+      "link": "https://www.threads.com/search?q=NTU%20COOL&serp_type=trends&trend_fbid=1433714748933191"
     }
   ]
 }
