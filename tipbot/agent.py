@@ -701,7 +701,12 @@ def maybe_push(data: dict):
     # 整批比對偶爾漏判（標題用字差很多，如「小五」對「第三起外遇」），推之前每則單獨再查一次
     checked = []
     for t in new[:5]:
-        m = mw.ettoday_check(t["title"], [x["title"] for x in t.get("links", []) if x["title"] != t["title"]])
+        alts = [x["title"] for x in t.get("links", []) if x["title"] != t["title"]]
+        m = None
+        for _ in range(3):  # AI 答案會飄（同一則 4 次有 1 次說沒寫），任一次查到就算已寫
+            m = mw.ettoday_check(t["title"], alts)
+            if m:
+                break
         if m:
             t["et"] = {"title": m["title"], "link": m["link"]}
             hits[t["title"]] = {"title": m["title"], "link": m["link"], "t": time.time()}
