@@ -679,9 +679,17 @@ def maybe_push(data: dict):
     st["items"] = [x for x in st["items"] if time.time() - x["t"] < 86400 * 2]
     today_count = sum(1 for x in st["items"] if x.get("day") == today)
     pushed_grams = [mw._grams(x["title"]) for x in st["items"]]
+    # 複查過「ET 已寫」的記 3 天：AI 每輪答案會飄（08:21 查到、08:40 又說沒寫就推出去了），查到過就不再重判
+    hits = {k: v for k, v in _read("et_hits.json", {}).items() if time.time() - v["t"] < 86400 * 3}
+    hit_grams = [(mw._grams(k), v) for k, v in hits.items()]
     new = []
     for t in data["topics"]:
         if t["score"] < PUSH_MIN_SCORE or t.get("et"):
+            continue
+        tg = mw._grams(t["title"])
+        old = next((v for g, v in hit_grams if mw._overlap(tg, g) >= 0.5), None)
+        if old:
+            t["et"] = {"title": old["title"], "link": old["link"]}
             continue
         g = mw._grams(t["title"])
         if any(mw._overlap(g, pg) >= 0.3 for pg in pushed_grams):
@@ -696,11 +704,13 @@ def maybe_push(data: dict):
         m = mw.ettoday_check(t["title"], [x["title"] for x in t.get("links", []) if x["title"] != t["title"]])
         if m:
             t["et"] = {"title": m["title"], "link": m["link"]}
+            hits[t["title"]] = {"title": m["title"], "link": m["link"], "t": time.time()}
             log.info("推播前複查：ET 已寫「%s」→「%s」", t["title"], m["title"])
         else:
             checked.append(t)
     if len(checked) < len(new[:5]):
         _write("latest.json", data)
+        _write("et_hits.json", hits)
     new = checked
     if not new:
         return
