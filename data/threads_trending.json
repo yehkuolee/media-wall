@@ -1,29 +1,41 @@
 {
-  "updated_at": "2026-11-21T07:05:19.365049+08:00",
+  "updated_at": "2026-11-21T08:05:15.343693+08:00",
   "topics": [
+    {
+      "title": "美股重挫VIX指數衝破40",
+      "description": "半導體與科技類股遭遇賣壓，市場避險情緒升溫帶動VIX指數衝破40大關",
+      "count": "3 千則貼文",
+      "link": "https://www.threads.com/search?q=VIX&serp_type=trends&trend_fbid=1146902311226625"
+    },
+    {
+      "title": "金泰亨訪高雄開唱逛夜市",
+      "description": "防彈少年團成員金泰亨赴高雄開唱，並於演出空檔走訪在地夜市品嚐小吃",
+      "count": "4 千則貼文",
+      "link": "https://www.threads.com/search?q=%E9%87%91%E6%B3%B0%E4%BA%A8&serp_type=trends&trend_fbid=1492480722789847"
+    },
+    {
+      "title": "學者宣稱攜手AI證明黎曼猜想",
+      "description": "Anthropic數學家發布程式碼，宣稱與AI模型Claude合作證明了黎曼猜想",
+      "count": "586 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%BB%8E%E6%9B%BC%E7%8C%9C%E6%83%B3&serp_type=trends&trend_fbid=1163345239446857"
+    },
+    {
+      "title": "美股重挫道瓊大跌949點",
+      "description": "道瓊挫跌949點與標普雙雙陷入修正，那斯達克跌逾5%且輝達重挫近14%",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E7%BE%8E%E8%82%A1&serp_type=trends&trend_fbid=1293737122936574"
+    },
     {
       "title": "全球股市與台股重挫",
       "description": "全球與台灣股市遭遇劇烈崩跌，台股單週跌幅達17.5%且美股科技股重挫",
-      "count": "315 則貼文",
+      "count": "319 則貼文",
       "link": "https://www.threads.com/search?q=%E5%85%A8%E7%90%83%E8%82%A1%E7%81%BD&serp_type=trends&trend_fbid=2474031576748326"
     },
     {
-      "title": "金泰亨與家人聚餐獲歌迷尊重",
-      "description": "歌迷在餐廳巧遇防彈少年團金泰亨與家人聚餐，現場粉絲保持適當距離未拍照打擾",
-      "count": "4 千則貼文",
-      "link": "https://www.threads.com/search?q=%E9%87%91%E6%B3%B0%E4%BA%A8&serp_type=trends&trend_fbid=1120721490599633"
-    },
-    {
-      "title": "BTS訪高雄老江紅茶牛奶",
-      "description": "BTS成員造訪高雄老江紅茶牛奶品嘗火腿蛋吐司，吸引大批粉絲排隊朝聖",
-      "count": "790 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%80%81%E6%B1%9F%E7%B4%85%E8%8C%B6%E7%89%9B%E5%A5%B6&serp_type=trends&trend_fbid=4070987169861832"
-    },
-    {
-      "title": "輝達股價下挫跌破140美元",
-      "description": "受黃仁勳辭職與SEC調查影響，輝達股價持續下挫跌破140美元",
-      "count": "8 千則貼文",
-      "link": "https://www.threads.com/search?q=%E8%BC%9D%E9%81%94&serp_type=trends&trend_fbid=29292462563741124"
+      "title": "高雄寶可夢快閃店湧現夜排人潮",
+      "description": "新光三越左營店舉辦寶可夢快閃活動，吸引民眾通宵排隊搶購商品並發放整理券",
+      "count": "186 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%AF%B6%E5%8F%AF%E5%A4%A2%E5%BF%AB%E9%96%83%E5%BA%97&serp_type=trends&trend_fbid=2057071954878931"
     },
     {
       "title": "江啟臣神岡造勢侯盧站台",
@@ -32,64 +44,52 @@
       "link": "https://www.threads.com/search?q=%E6%B1%9F%E5%95%9F%E8%87%A3&serp_type=trends&trend_fbid=1687598763148230"
     },
     {
-      "title": "藤井風東京巨蛋辦演奏會",
-      "description": "日本歌手藤井風在東京巨蛋開鋼琴演奏會，線上同步直播吸引逾60萬人觀看",
-      "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E8%97%A4%E4%BA%95%E9%A2%A8&serp_type=trends&trend_fbid=1549744443711711"
-    },
-    {
       "title": "田柾國發布高雄Vlog",
       "description": "BTS成員田柾國發布高雄Vlog，以吉他曲配樂記錄在地風光展現台灣感性",
-      "count": "7 千則貼文",
+      "count": "8 千則貼文",
       "link": "https://www.threads.com/search?q=%E7%94%B0%E6%9F%BE%E5%9C%8B&serp_type=trends&trend_fbid=1148113977767998"
     },
     {
-      "title": "朴智旻造訪高雄觀光",
-      "description": "防彈少年團朴智旻現身高雄旗津看海品嚐在地蛋餅，並公開長文手寫信向粉絲致謝",
-      "count": "3 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%9C%B4%E6%99%BA%E6%97%BB&serp_type=trends&trend_fbid=2010361313668199"
-    },
-    {
-      "title": "秦慧珠遭解除黃復興常委職務",
-      "description": "黃國樑委員會因言論解除秦慧珠常委職務並停止支持，秦慧珠表示尊重且問心無愧",
-      "count": "7 千則貼文",
-      "link": "https://www.threads.com/search?q=%E7%A7%A6%E6%85%A7%E7%8F%A0&serp_type=trends&trend_fbid=4636794963229799"
-    },
-    {
-      "title": "沈伯洋何欣純台中合體掃街",
-      "description": "沈伯洋前往台中與何欣純搭乘洋流號展開車隊掃街，並共同出席晚間造勢活動",
-      "count": "6 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B%E4%BD%95%E6%AC%A3%E7%B4%94&serp_type=trends&trend_fbid=1169401382403824"
-    },
-    {
-      "title": "徐欣瑩競辦遭搜索赴地檢署抗議",
-      "description": "新竹檢警搜索立委徐欣瑩競辦，徐欣瑩團隊前往新竹地檢署靜坐絕食抗議",
+      "title": "輝達股價跌破140美元創新低",
+      "description": "前執行長黃仁勳辭任且遭SEC會計調查，輝達股價跌破140美元創一年新低",
       "count": "8 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%BE%90%E6%AC%A3%E7%91%A9&serp_type=trends&trend_fbid=1418722030022919"
+      "link": "https://www.threads.com/search?q=%E8%BC%9D%E9%81%94&serp_type=trends&trend_fbid=1791594928784881"
     },
     {
-      "title": "CL於MAMA頒獎典禮登台演出",
-      "description": "CL在2026 MAMA演唱經典歌曲，典禮後公開彩排影片獲觀眾熱烈讚賞",
-      "count": "3 萬則貼文",
-      "link": "https://www.threads.com/search?q=CL&serp_type=trends&trend_fbid=1419341093724851"
-    },
-    {
-      "title": "立法院三讀通過普發2萬元",
-      "description": "依三讀通過條例規定，政府將向全體國民每人普發2萬元且免納所得稅",
-      "count": "8 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%99%AE%E7%99%BC%E7%8F%BE%E9%87%91&serp_type=trends&trend_fbid=1115438901300916"
-    },
-    {
-      "title": "崔始源現身高雄休假",
-      "description": "Super Junior成員崔始源赴高雄度假，公開試駕推拿與吃鼎王麻辣鍋行程",
+      "title": "皮克敏標示中國台灣掀退坑潮",
+      "description": "《Pikmin Bloom》簡中公告標示中國台灣，官方澄清個資存於美國但未道歉",
       "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%B4%94%E5%A7%8B%E6%BA%90&serp_type=trends&trend_fbid=2163068294583195"
+      "link": "https://www.threads.com/search?q=%E7%9A%AE%E5%85%8B%E6%95%8F&serp_type=trends&trend_fbid=1864503804859238"
     },
     {
-      "title": "IVE奪MAMA最佳女子組合",
-      "description": "2026 MAMA最佳女子組合揭曉，IVE在佔比40%的評審分下勝出",
-      "count": "16 萬則貼文",
-      "link": "https://www.threads.com/search?q=MAMA&serp_type=trends&trend_fbid=989793813719515"
+      "title": "徐欣瑩赴地檢署絕食抗議",
+      "description": "助理遭檢警搜索調查，徐欣瑩率團隊赴地檢署靜坐絕食，指控司法介入選舉",
+      "count": "8 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%BE%90%E6%AC%A3%E7%91%A9&serp_type=trends&trend_fbid=1465525519039864"
+    },
+    {
+      "title": "CL睽違11年重返MAMA舞台",
+      "description": "CL於2026 MAMA首演新單曲《ICONIC》，並合體演出2NE1經典曲《Fire》",
+      "count": "3 萬則貼文",
+      "link": "https://www.threads.com/search?q=CL&serp_type=trends&trend_fbid=1124798577123394"
+    },
+    {
+      "title": "周曉芸涉收中資遭起訴",
+      "description": "民眾黨桃園市議員候選人周曉芸涉嫌收受中國資金，遭新北地檢署依反滲透法起訴",
+      "count": "2 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%91%A8%E6%9B%89%E8%8A%B8&serp_type=trends&trend_fbid=971009749082541"
+    },
+    {
+      "title": "何欣純台中造勢賴清德力挺",
+      "description": "民進黨台中市長候選人何欣純辦造勢晚會，總統賴清德等多位政壇人士前往站台力挺",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E4%BD%95%E6%AC%A3%E7%B4%94&serp_type=trends&trend_fbid=1650625313168883"
+    },
+    {
+      "title": "秦慧珠遭解除常委職務",
+      "description": "台北市議員秦慧珠遭黃復興黨部處分，並解除其常委職務",
+      "count": "7 千則貼文",
+      "link": "https://www.threads.com/search?q=%E7%A7%A6%E6%85%A7%E7%8F%A0&serp_type=trends&trend_fbid=1952442389527487"
     }
   ]
 }
