@@ -1,12 +1,6 @@
 {
-  "updated_at": "2026-11-25T06:05:19.391514+08:00",
+  "updated_at": "2026-11-25T07:05:16.048335+08:00",
   "topics": [
-    {
-      "title": "炎亞綸對活動安排表達不滿",
-      "description": "經紀公司晴空鳥隨後宣布聖誕活動，多位粉絲呼籲保持冷靜並停止互相抱怨",
-      "count": "664 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%82%8E%E4%BA%9E%E7%B6%B8&serp_type=trends&trend_fbid=1809191950187114"
-    },
     {
       "title": "黃仁勳復職翌日輝達股價重挫",
       "description": "黃仁勳重返輝達執行長隔日晶片股再度重挫，其後續仍面臨獨立調查與國會問詢",
@@ -14,82 +8,88 @@
       "link": "https://www.threads.com/search?q=%E8%BC%9D%E9%81%94&serp_type=trends&trend_fbid=1673017377562447"
     },
     {
-      "title": "沈伯洋提告傅崐萁判決敗訴",
-      "description": "因不滿傅崐萁指控收受索羅斯資助，沈伯洋向法院提告後遭判敗訴",
+      "title": "李四川林國春拜票志工失言",
+      "description": "李四川與林國春市場拜票時志工發表失言，林國春致歉並澄清非團隊授意",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E6%9D%8E%E5%9B%9B%E5%B7%9D&serp_type=trends&trend_fbid=1925971491723859"
+    },
+    {
+      "title": "沈伯洋澄清索羅斯基金會經費",
+      "description": "沈伯洋開直播說明學者時期申請索羅斯基金會研究經費未入私囊並駁斥謠言",
       "count": "14 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=3635804526582359"
+      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=2604760263359428"
+    },
+    {
+      "title": "蔣萬安展開台北車隊掃街",
+      "description": "台北市長蔣萬安率車隊前往中正與士林等區拜票，沿途民眾冒雨守候加油",
+      "count": "7 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=1129869126573905"
+    },
+    {
+      "title": "皇馬5比1逆轉擊敗PSV",
+      "description": "皇家馬德里在歐冠下半場連進五球，最終以5比1逆轉擊敗PSV恩荷芬拿下五連勝",
+      "count": "95 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%9A%87%E5%AE%B6%E9%A6%AC%E5%BE%B7%E9%87%8C&serp_type=trends&trend_fbid=1172619951789477"
+    },
+    {
+      "title": "炎亞綸對活動安排表達不滿",
+      "description": "經紀公司晴空鳥隨後宣布聖誕活動，多位粉絲呼籲保持冷靜並停止互相抱怨",
+      "count": "661 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%82%8E%E4%BA%9E%E7%B6%B8&serp_type=trends&trend_fbid=1809191950187114"
+    },
+    {
+      "title": "李永萍《新聞面對面》激烈發言",
+      "description": "李永萍受邀出席謝震武主持的《新聞面對面》，在節目中頻繁插話並發表激烈言論",
+      "count": "622 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%96%B0%E8%81%9E%E9%9D%A2%E5%B0%8D%E9%9D%A2&serp_type=trends&trend_fbid=2062751384387702"
+    },
+    {
+      "title": "中教大學生亮刀威脅老師",
+      "description": "課堂上一名臺中教育大學學生亮出美工刀威脅教師，並揚言要滅了對方",
+      "count": "183 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%87%BA%E4%B8%AD%E6%95%99%E8%82%B2%E5%A4%A7%E5%AD%B8&serp_type=trends&trend_fbid=3683531638479640"
+    },
+    {
+      "title": "柯達推SlideTag相框盲盒",
+      "description": "柯達推出結合彩色電子紙與防丟功能的SlideTag盲盒，帶動開箱與款式交換熱潮",
+      "count": "383 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%9F%AF%E9%81%94&serp_type=trends&trend_fbid=30377482385175487"
+    },
+    {
+      "title": "日本退稅新制11月1日實施",
+      "description": "日本退稅新制改為先付含稅價，旅客須於出境託運行李前在機場掃描護照確認",
+      "count": "412 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%97%A5%E6%9C%AC%E9%80%80%E7%A8%85&serp_type=trends&trend_fbid=2951151131923506"
+    },
+    {
+      "title": "蔣少宏直播為隊友衝突辯護",
+      "description": "味全龍蔣少宏在直播表示「推人怎麼了沒拿棒子打人」為隊友吉力吉撈·鞏冠辯護",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E8%94%A3%E5%B0%91%E5%AE%8F&serp_type=trends&trend_fbid=4138695636423090"
+    },
+    {
+      "title": "泰國清邁迎來天燈節盛會",
+      "description": "清邁天燈節吸引大批民眾齊聚，成千上萬盞天燈升空點亮夜空祈福",
+      "count": "598 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B8%85%E9%82%81%E5%A4%A9%E7%87%88%E7%AF%80&serp_type=trends&trend_fbid=1180617641057683"
+    },
+    {
+      "title": "中選會委員缺額恐致選務停擺",
+      "description": "中選會現有3席缺額，若再有4人任期屆滿將低於法定開會門檻，恐衝擊大選籌辦",
+      "count": "3 千則貼文",
+      "link": "https://www.threads.com/search?q=%E4%B8%AD%E9%81%B8%E6%9C%83&serp_type=trends&trend_fbid=1490197129757839"
+    },
+    {
+      "title": "哲凱歐冠遠射破門",
+      "description": "兵工廠前鋒哲凱在歐冠對陣多特蒙德時於上半場第10分鐘遠射破門，助隊取得領先",
+      "count": "334 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%93%B2%E5%87%B1&serp_type=trends&trend_fbid=1888988182283997"
     },
     {
       "title": "《GTA 6》正式推出",
       "description": "新遊戲上市後玩家分享開車搶劫體驗，黃仁勳破關迷因同步瘋傳",
       "count": "9 萬則貼文",
       "link": "https://www.threads.com/search?q=GTA%206&serp_type=trends&trend_fbid=1466648862108863"
-    },
-    {
-      "title": "哲凱歐冠遠射破門",
-      "description": "兵工廠前鋒哲凱在歐冠對陣多特蒙德時於上半場第10分鐘遠射破門，助隊取得領先",
-      "count": "322 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%93%B2%E5%87%B1&serp_type=trends&trend_fbid=1888988182283997"
-    },
-    {
-      "title": "全家三麗鷗聖誕盲袋開賣掀搶購",
-      "description": "全家開賣三麗鷗聖誕吊飾盲袋，消費者反映門市缺貨且出現預留與轉售情況",
-      "count": "452 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%85%A8%E5%AE%B6%E4%BE%BF%E5%88%A9%E5%95%86%E5%BA%97&serp_type=trends&trend_fbid=1919672515968856"
-    },
-    {
-      "title": "李永萍《新聞面對面》激烈發言",
-      "description": "李永萍受邀出席謝震武主持的《新聞面對面》，在節目中頻繁插話並發表激烈言論",
-      "count": "615 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%96%B0%E8%81%9E%E9%9D%A2%E5%B0%8D%E9%9D%A2&serp_type=trends&trend_fbid=1167990412501979"
-    },
-    {
-      "title": "水庫阿姨現身蔣萬安掃街現場",
-      "description": "力挺擋下翡翠水庫光電板的水庫阿姨現身車隊掃街，與蔣萬安同框合影致意",
-      "count": "504 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B0%B4%E5%BA%AB%E9%98%BF%E5%A7%A8&serp_type=trends&trend_fbid=1883372996134156"
-    },
-    {
-      "title": "蔣萬安稱開根號為微積分",
-      "description": "蔣萬安在影片將開根號運算稱為微積分，沈伯洋與創作者相繼分析該算式並解題",
-      "count": "7 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=1082595428167413"
-    },
-    {
-      "title": "日本退稅新制11月1日實施",
-      "description": "日本退稅新制改為先付含稅價，旅客須於出境託運行李前在機場掃描護照確認",
-      "count": "411 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%97%A5%E6%9C%AC%E9%80%80%E7%A8%85&serp_type=trends&trend_fbid=2951151131923506"
-    },
-    {
-      "title": "中教大學生亮刀威脅老師",
-      "description": "課堂上一名臺中教育大學學生亮出美工刀威脅教師，並揚言要滅了對方",
-      "count": "182 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%87%BA%E4%B8%AD%E6%95%99%E8%82%B2%E5%A4%A7%E5%AD%B8&serp_type=trends&trend_fbid=3683531638479640"
-    },
-    {
-      "title": "日本歌手tuki.展開巡演",
-      "description": "創作歌手tuki.陸續至福岡與大阪開唱，歌迷熱情分享現場心得與限定週邊",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=tuki.&serp_type=trends&trend_fbid=1776893000037713"
-    },
-    {
-      "title": "泰國清邁迎來天燈節盛會",
-      "description": "清邁天燈節吸引大批民眾齊聚，成千上萬盞天燈升空點亮夜空祈福",
-      "count": "577 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B8%85%E9%82%81%E5%A4%A9%E7%87%88%E7%AF%80&serp_type=trends&trend_fbid=1507726864595179"
-    },
-    {
-      "title": "SUGA隨團完成高雄演唱會",
-      "description": "BTS成員SUGA隨團於高雄世運主場館完成巡演，在彩排與演出環節展現豐富互動",
-      "count": "3 千則貼文",
-      "link": "https://www.threads.com/search?q=SUGA&serp_type=trends&trend_fbid=1102070169495809"
-    },
-    {
-      "title": "名間建焚化爐李易書遭控耍官威",
-      "description": "針對名間焚化爐預定地拍到石虎，南投環保局長李易書與地方溝通遭指耍官威與漠視生態",
-      "count": "582 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%9D%8E%E6%98%93%E6%9B%B8&serp_type=trends&trend_fbid=28875220792180993"
     }
   ]
 }
