@@ -1,41 +1,35 @@
 {
-  "updated_at": "2026-11-24T10:05:18.932767+08:00",
+  "updated_at": "2026-11-24T11:05:16.216362+08:00",
   "topics": [
+    {
+      "title": "民眾號召1128票投民進黨",
+      "description": "呼籲守護民主自由，民眾發起串聯號召11月28日投票力挺民進黨",
+      "count": "300 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B0%91%E9%80%B2%E9%BB%A8%E5%82%AC%E7%A5%A8&serp_type=trends&trend_fbid=1985455846171868"
+    },
     {
       "title": "沈伯洋遭質疑收索羅斯資助",
       "description": "沈伯洋相關組織被要求釐清與金融家索羅斯旗下基金會的資金關聯",
-      "count": "12 萬則貼文",
+      "count": "13 萬則貼文",
       "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1710831567243176"
-    },
-    {
-      "title": "阿信宣布小巨蛋辦個人演唱會",
-      "description": "五月天主唱阿信將於12月6日登台北小巨蛋舉辦專場演唱會，歌迷準備展開搶票",
-      "count": "5 千則貼文",
-      "link": "https://www.threads.com/search?q=%E9%98%BF%E4%BF%A1&serp_type=trends&trend_fbid=1470913771690706"
-    },
-    {
-      "title": "重置Gemini使用額度",
-      "description": "Google Antigravity重置Gemini額度，並開放Gemini 4 Carbon",
-      "count": "910 則貼文",
-      "link": "https://www.threads.com/search?q=Google%20Antigravity&serp_type=trends&trend_fbid=1624430912062840"
-    },
-    {
-      "title": "Threads推出專屬朋友功能",
-      "description": "新功能讓使用者建立上限50人的名單發布限定貼文，並開放追蹤者申請加入",
-      "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=Threads%20%E6%9C%8B%E5%8F%8B&serp_type=trends&trend_fbid=1937176320632243"
     },
     {
       "title": "黃仁勳回任輝達執行長",
       "description": "輝達董事會一致通過決議，正式宣布黃仁勳回任總裁暨執行長職務",
-      "count": "6 萬則貼文",
+      "count": "7 萬則貼文",
       "link": "https://www.threads.com/search?q=%E9%BB%83%E4%BB%81%E5%8B%B3&serp_type=trends&trend_fbid=29925591240461949"
     },
     {
-      "title": "全家推出三麗鷗聖誕加價購",
-      "description": "全家便利商店開賣三麗鷗聖誕白金版玩偶吊飾與收納盒，包含美樂蒂及帕恰狗款式",
-      "count": "4 千則貼文",
-      "link": "https://www.threads.com/search?q=%E4%B8%89%E9%BA%97%E9%B7%97&serp_type=trends&trend_fbid=1832429671294619"
+      "title": "蔣萬安將開根號稱作微積分",
+      "description": "台北市長蔣萬安在影片中展示開根號數學題，脫口稱其為很簡單的微積分",
+      "count": "7 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=2256940701907337"
+    },
+    {
+      "title": "《RO 倖存者》改版更新",
+      "description": "《RO 倖存者》取消Boss傷害上限並調整機制，玩家實測各職業通關配點",
+      "count": "390 則貼文",
+      "link": "https://www.threads.com/search?q=RO%20%E5%80%96%E5%AD%98%E8%80%85&serp_type=trends&trend_fbid=1403294384976911"
     },
     {
       "title": "好市多黑五次日推多項特價",
@@ -44,16 +38,22 @@
       "link": "https://www.threads.com/search?q=%E5%A5%BD%E5%B8%82%E5%A4%9A&serp_type=trends&trend_fbid=1124605553677188"
     },
     {
-      "title": "BTS在高雄舉辦世界巡迴演唱會",
-      "description": "BTS於11月19日至22日在高雄開唱，大批歌迷到場朝聖並分享觀演心得",
-      "count": "11 萬則貼文",
-      "link": "https://www.threads.com/search?q=BTS&serp_type=trends&trend_fbid=1178606224522099"
+      "title": "金南俊催票舊作被引用呼籲投票",
+      "description": "大眾引用BTS金南俊出道前催票歌曲，呼籲年輕族群11月28日出門投票",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E9%87%91%E5%8D%97%E4%BF%8A&serp_type=trends&trend_fbid=1465825688949339"
     },
     {
-      "title": "蔣萬安稱四則運算為微積分",
-      "description": "蔣萬安在車掃宣傳影片中展示手板題目並稱是微積分，實為開根號與四則運算",
-      "count": "7 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=1877111450133419"
+      "title": "Threads測試朋友名單功能",
+      "description": "Meta為Threads測試類似摯友名單功能，發文最多限50人瀏覽",
+      "count": "62 萬則貼文",
+      "link": "https://www.threads.com/search?q=Threads&serp_type=trends&trend_fbid=2079791969391892"
+    },
+    {
+      "title": "五月天阿信12月小巨蛋辦個唱",
+      "description": "五月天阿信宣布12月6日在台北小巨蛋舉辦個人專場演唱會，門票即將開賣",
+      "count": "2 千則貼文",
+      "link": "https://www.threads.com/search?q=%E4%BA%94%E6%9C%88%E5%A4%A9%E9%98%BF%E4%BF%A1&serp_type=trends&trend_fbid=1492770866058706"
     },
     {
       "title": "立院三讀通過每人普發2萬",
@@ -62,34 +62,34 @@
       "link": "https://www.threads.com/search?q=%E6%99%AE%E7%99%BC%E7%8F%BE%E9%87%91&serp_type=trends&trend_fbid=1452411660299872"
     },
     {
-      "title": "金馬獎宣傳與曝光度大幅降低",
-      "description": "2026年金馬獎落幕後民眾反映宣傳降低，翁曉玲刪除宣傳預算提案再度浮上檯面",
+      "title": "劉建國斗南遊行推育兒政策",
+      "description": "雲林縣長候選人劉建國在斗南舉辦徒步遊行，並提出產後育兒政策爭取支持",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8A%89%E5%BB%BA%E5%9C%8B&serp_type=trends&trend_fbid=1026452919716863"
+    },
+    {
+      "title": "《楓之谷》阿泰爾推出版本更新",
+      "description": "本次改版新增商場欄位擴充道具，同步調整職業技能並推出簽到加倍活動",
+      "count": "198 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%98%BF%E6%B3%B0%E7%88%BE&serp_type=trends&trend_fbid=1134307609507599"
+    },
+    {
+      "title": "Google AI Pro年費下殺5折",
+      "description": "Google推出黑色星期五優惠，Google AI Pro年繳方案降至半價3,250元",
+      "count": "2 萬則貼文",
+      "link": "https://www.threads.com/search?q=Google%20AI&serp_type=trends&trend_fbid=1142801921691444"
+    },
+    {
+      "title": "第63屆金馬獎得獎名單揭曉",
+      "description": "第63屆金馬獎圓滿落幕，劉冠廷以《雙囍》稱帝、袁澧林憑《第四幕》封后",
       "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E9%87%91%E9%A6%AC%E7%8D%8E&serp_type=trends&trend_fbid=1963462561297580"
+      "link": "https://www.threads.com/search?q=%E9%87%91%E9%A6%AC%E7%8D%8E&serp_type=trends&trend_fbid=1839928990762769"
     },
     {
       "title": "台灣12強奪冠滿兩週年",
       "description": "球迷在奪冠紀念日重溫台灣隊完封日本奪下隊史首座世界冠軍的精彩時刻",
-      "count": "46 則貼文",
+      "count": "58 則貼文",
       "link": "https://www.threads.com/search?q=12%E5%BC%B7%E6%A3%92%E7%90%83%E8%B3%BD&serp_type=trends&trend_fbid=1867785441338463"
-    },
-    {
-      "title": "Malcolm Todd開唱",
-      "description": "美國歌手Malcolm Todd首度在台開唱，吸引眾多歌迷觀演",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=Malcolm%20Todd&serp_type=trends&trend_fbid=1431962562255779"
-    },
-    {
-      "title": "柳營代天院啟建丙午科王醮",
-      "description": "臺南柳營代天院舉辦三年一科王醮活動，規劃迎王儀式與煙火秀吸引信眾參拜",
-      "count": "74 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%9F%B3%E7%87%9F%E4%BB%A3%E5%A4%A9%E9%99%A2&serp_type=trends&trend_fbid=1185446520722454"
-    },
-    {
-      "title": "亞洲明星盛典12月高雄登場",
-      "description": "高雄國家體育場將於12月5日至6日舉辦2026年亞洲明星盛典",
-      "count": "2 萬則貼文",
-      "link": "https://www.threads.com/search?q=AAA&serp_type=trends&trend_fbid=1146878991063383"
     }
   ]
 }
