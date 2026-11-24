@@ -705,9 +705,11 @@ def maybe_push(data: dict):
         m = None
         for _ in range(3):  # AI 答案會飄（同一則 4 次有 1 次說沒寫），任一次查到就算已寫
             m = mw.ettoday_check(t["title"], alts)
-            if m:
+            if m and m != mw.ET_ERR:
                 break
-        if m:
+        if m == mw.ET_ERR:  # Gemini 額度用完／塞車：不知道寫了沒，寧可這輪不推（11/24 06:01 就是這樣誤推）
+            log.warning("推播前複查：Gemini 用不了，「%s」這輪先不推", t["title"])
+        elif m:
             t["et"] = {"title": m["title"], "link": m["link"]}
             hits[t["title"]] = {"title": m["title"], "link": m["link"], "t": time.time()}
             log.info("推播前複查：ET 已寫「%s」→「%s」", t["title"], m["title"])

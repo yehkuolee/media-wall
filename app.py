@@ -820,15 +820,17 @@ def ettoday_matches(news_list: list) -> dict:
     return {**best_text, **result}
 
 
+ET_ERR = "error"  # ettoday_check 問不到 AI（沒金鑰、額度用完、全部塞車）：不能當成「沒寫」
 ET_CHECK_CANDS = 60  # 單則複查最多給 AI 看幾則同主角近稿
 
 
 def ettoday_check(title: str, alts: list = ()):
     """單則仔細查 ETtoday 寫了沒（Bot 推播前、媒體牆背景複查用）：同主角近稿最多 60 則全給 AI 看、單獨問，
-    AI 說沒有就照它給的詞站內搜尋再問一次。最多問 2 次 AI，沒金鑰或失敗回 None"""
+    AI 說沒有就照它給的詞站內搜尋再問一次。最多問 2 次 AI。
+    回 ET 稿＝已寫；None＝AI 確實判沒寫；ET_ERR＝AI 用不了（沒金鑰、額度用完），不知道寫了沒"""
     key = _gemini_key()
     if not key:
-        return None
+        return ET_ERR
     et = fetch_ettoday()
     grams = [_grams(x) for x in [title, *alts]]
     t3 = _grams3(title)
@@ -841,7 +843,7 @@ def ettoday_check(title: str, alts: list = ()):
     for _ in range(2):
         ans = _ask_gemini([(title, cands)], key, specific=True)
         if not ans:
-            return None
+            return ET_ERR
         j, words = ans.get(1) or next(iter(ans.values()), (0, []))  # 只問 1 則，AI 偶爾把編號填成 0
         if 1 <= j <= len(cands):
             return cands[j - 1]
@@ -885,7 +887,9 @@ def ettoday_recheck(news_list: list, et_map: dict) -> dict:
         def run(titles):  # 背景跑（Flash 塞車時一則可能要 1、2 分鐘），結果下次重新整理就看得到
             for t in titles:
                 try:
-                    checked[t] = (ettoday_check(t), time.time())
+                    res = ettoday_check(t)
+                    if res != ET_ERR:  # AI 用不了不算「查過沒寫」，下次再查
+                        checked[t] = (res, time.time())
                 except Exception:
                     pass
         threading.Thread(target=run, args=(todo[:ET_CHECK_N],), daemon=True).start()
