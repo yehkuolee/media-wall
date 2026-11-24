@@ -115,6 +115,15 @@ SCRAPED_SOURCES = {
         "limit": 20,
         "strip_time": False,
     },
+    "經濟日報": {   # 聯合報系財經版；每則有圖、文兩個連結，只取標題區那個
+        "url": "https://money.udn.com/rank/pv/1001/0",
+        "selector": "div.story__content a[data-slotname='list_最熱']",
+        "title_attr": True,
+        "pattern": "/money/story/",
+        "min_len": 8,
+        "limit": 20,
+        "strip_time": False,
+    },
 }
 
 FALLBACK_KEYWORDS = [
@@ -884,7 +893,7 @@ def et_tag_html(et) -> str:
 # 空降：上一輪不在榜、這輪直接進前 5；急升：約 30 分鐘內升 5 名以上且進前 10；
 # 多家同時上榜：同一話題同時在 3 家以上熱門榜前 10（標題用字相近的串成一群）。
 # 紀錄放記憶體：防休眠程式每 10 分鐘開一次網站會一直累積；重新部署會歸零，約 30 分鐘後才有「急升」。
-HOT_SOURCES = ["自由時報", "Yahoo 新聞", "東森新聞", "壹蘋新聞網", "中國時報", "聯合報熱門"]  # 中央社、三立是最新列表，不算
+HOT_SOURCES = ["自由時報", "Yahoo 新聞", "東森新聞", "壹蘋新聞網", "中國時報", "聯合報熱門", "經濟日報"]  # 中央社、三立是最新列表，不算
 SURGE_GAP = 540
 SURGE_KEEP = 7200
 SURGE_NEW_TOP = 5
@@ -1476,7 +1485,7 @@ def main():
     # ── Footer ──────────────────────────────────────────────────
     st.markdown(f"""
     <div class="mw-footer">
-        資料來源：Google Trends · 中央社即時 · 熱門排行（自由 / Yahoo / 東森 / 壹蘋 / 中時 / 聯合報 / 三立） · PTT &nbsp;｜&nbsp;
+        資料來源：Google Trends · 中央社即時 · 熱門排行（自由 / Yahoo / 東森 / 壹蘋 / 中時 / 聯合報 / 經濟日報 / 三立） · PTT &nbsp;｜&nbsp;
         更新時間：{now.strftime('%Y-%m-%d %H:%M:%S')} (台北 UTC+8) &nbsp;｜&nbsp;
         每 5 分鐘自動刷新
     </div>
