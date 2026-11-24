@@ -1,35 +1,29 @@
 {
-  "updated_at": "2026-11-24T16:05:20.823726+08:00",
+  "updated_at": "2026-11-24T17:05:19.009466+08:00",
   "topics": [
     {
-      "title": "台中教大男學生持刀威脅老師",
-      "description": "台中教育大學一名學生課堂持美工刀抵女師頸部，校方隨即制伏並由警方戒護送醫",
-      "count": "269 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E4%B8%AD%E6%95%99%E8%82%B2%E5%A4%A7%E5%AD%B8&serp_type=trends&trend_fbid=1814066969874259"
+      "title": "李到晛與林智妍宣布分手",
+      "description": "因《黑暗榮耀》結緣的李到晛與林智妍，因工作繁忙結束3年戀情並退回同事關係",
+      "count": "275 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%9D%8E%E5%88%B0%E6%99%9B&serp_type=trends&trend_fbid=2042313396337656"
     },
     {
-      "title": "蔣萬安直播誤稱開根號為微積分",
-      "description": "台北市長蔣萬安在直播解題時口誤，隨後受訪表示將開根號說成微積分是為求輕鬆做效果",
+      "title": "蔣萬安將開根號稱微積分",
+      "description": "台北市長蔣萬安在直播將開根號題目稱為微積分，受訪表示此舉只是在做效果",
       "count": "7 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=2389513215136546"
+      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=2030191447677751"
     },
     {
-      "title": "索羅斯基金會遭指資助沈伯洋",
-      "description": "開放社會基金會被指資助沈伯洋創辦的非政府組織，涉及境外勢力干預台灣政治",
-      "count": "6 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E7%B4%A2%E7%BE%85%E6%96%AF&serp_type=trends&trend_fbid=1471908091560421"
+      "title": "中教大男學生持刀威脅教師",
+      "description": "台中教育大學一名男學生在課堂持美工刀威脅教師遭制伏，警方已戒護送醫",
+      "count": "357 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E4%B8%AD%E6%95%99%E8%82%B2%E5%A4%A7%E5%AD%B8&serp_type=trends&trend_fbid=2205342833382597"
     },
     {
-      "title": "吉伊卡哇聖誕限定周邊售罄",
-      "description": "吉伊卡哇聖誕市集首日登場，水晶球與聖誕樹娃衣等多款限定周邊迅速完售",
-      "count": "4 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%90%89%E4%BC%8A%E5%8D%A1%E5%93%87&serp_type=trends&trend_fbid=2263666864194545"
-    },
-    {
-      "title": "晶豪科股價開高走低逆勢翻綠",
-      "description": "台股多數個股走強之際，IC設計廠晶豪科盤中股價開高走低並逆勢翻綠下跌",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%99%B6%E8%B1%AA%E7%A7%91&serp_type=trends&trend_fbid=1467521471471162"
+      "title": "沈伯洋澄清索羅斯資助款流向",
+      "description": "沈伯洋說明擔任理事長依法不支薪，相關經費全數交研究單位使用，絕無流入個人口袋",
+      "count": "13 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1465160478925386"
     },
     {
       "title": "可不可聯名BEAMS開賣",
@@ -38,58 +32,64 @@
       "link": "https://www.threads.com/search?q=%E5%8F%AF%E4%B8%8D%E5%8F%AF&serp_type=trends&trend_fbid=1860014488571725"
     },
     {
+      "title": "晶豪科股價開高走低逆勢翻綠",
+      "description": "台股多數個股走強之際，IC設計廠晶豪科盤中股價開高走低並逆勢翻綠下跌",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%99%B6%E8%B1%AA%E7%A7%91&serp_type=trends&trend_fbid=1467521471471162"
+    },
+    {
+      "title": "第63屆金馬獎圓滿落幕",
+      "description": "舒淇以《女孩》獲最佳新導演，金馬63圓滿落幕且各界紛紛分享參與經歷",
+      "count": "9 千則貼文",
+      "link": "https://www.threads.com/search?q=%E9%87%91%E9%A6%AC%E7%8D%8E&serp_type=trends&trend_fbid=1157085933719766"
+    },
+    {
+      "title": "吉伊卡哇聖誕市集首日商品售罄",
+      "description": "日本吉伊卡哇聖誕市集首日限定品迅速售罄，後續場次缺貨且現場環境欠佳",
+      "count": "4 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%90%89%E4%BC%8A%E5%8D%A1%E5%93%87&serp_type=trends&trend_fbid=973625768885345"
+    },
+    {
+      "title": "BTS高雄演唱MIC Drop",
+      "description": "BTS在高雄演唱會演出《MIC Drop》，歌迷齊聲大喊應援詞場面熱烈",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=MIC%20Drop&serp_type=trends&trend_fbid=2372936390174509"
+    },
+    {
+      "title": "Young K台北演唱會釋出轉讓",
+      "description": "Young K巡演《YOUNGEST》台北場即將登場，出現大量原價或降價轉讓門票",
+      "count": "4 千則貼文",
+      "link": "https://www.threads.com/search?q=Young%20K&serp_type=trends&trend_fbid=1125164170432255"
+    },
+    {
       "title": "蔣少宏談隊友推擠稱沒拿棒子打人",
       "description": "味全龍捕手蔣少宏在節目談吉力吉撈推擠戴培峰，表示推人怎麼了、沒有拿棒子打人",
-      "count": "971 則貼文",
+      "count": "1 千則貼文",
       "link": "https://www.threads.com/search?q=%E8%94%A3%E5%B0%91%E5%AE%8F&serp_type=trends&trend_fbid=1171945245518771"
     },
     {
-      "title": "台股大漲3310點創歷史紀錄",
-      "description": "受黃仁勳回任與美股激勵，台股大漲3310點收在40122點且台積電攻上漲停",
-      "count": "6 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E8%82%A1&serp_type=trends&trend_fbid=1162485709648805"
-    },
-    {
-      "title": "BTS高雄開唱粉絲熱情應援",
-      "description": "BTS於高雄開唱演出《MIC Drop》，震撼舞台讓歌迷在場內外齊喊應援",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=MIC%20Drop&serp_type=trends&trend_fbid=1123859157161418"
-    },
-    {
-      "title": "冠西電開高走低一度觸跌停",
-      "description": "台股大盤強勢走揚之際，冠西電早盤開高後急跌並一度觸及跌停價383元",
-      "count": "499 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%86%A0%E8%A5%BF%E9%9B%BB&serp_type=trends&trend_fbid=3001212006938640"
-    },
-    {
-      "title": "楓之谷Artale推騎士團改版",
-      "description": "《楓之谷Artale》推出皇家騎士團改版與經驗加倍活動，同步擴充欄位並釋出序號",
+      "title": "楓之谷Artale公開技能書掉落",
+      "description": "《楓之谷 Artale》皇家騎士團改版，野怪與樹王等BOSS技能書掉落資訊釋出",
       "count": "254 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%A5%93%E4%B9%8B%E8%B0%B7%20Artale&serp_type=trends&trend_fbid=1619229306171052"
+      "link": "https://www.threads.com/search?q=%E6%A5%93%E4%B9%8B%E8%B0%B7%20Artale&serp_type=trends&trend_fbid=2689217568168083"
     },
     {
-      "title": "史蒂夫羅傑斯回歸《復仇者5》",
-      "description": "漫威釋出《復仇者聯盟5》預告，揭露史蒂夫羅傑斯回歸聯手英雄對抗末日博士",
-      "count": "106 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B2%E8%92%82%E5%A4%AB%E7%BE%85%E5%82%91%E6%96%AF&serp_type=trends&trend_fbid=2289259321927856"
+      "title": "T1公布2027教練團名單",
+      "description": "由Roach回歸出任T1主教練，Easyhoon續約並引進UmTi",
+      "count": "8 千則貼文",
+      "link": "https://www.threads.com/search?q=T1&serp_type=trends&trend_fbid=1160121143181635"
     },
     {
-      "title": "第63屆金馬獎宣傳聲量不足",
-      "description": "第63屆金馬獎落幕後民眾反映宣傳不足，並指向文化部相關宣傳預算遭刪除",
-      "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E9%87%91%E9%A6%AC%E7%8D%8E&serp_type=trends&trend_fbid=1117918061110072"
+      "title": "漫威預告揭史蒂夫羅傑斯回歸",
+      "description": "《復仇者聯盟：末日崛起》釋出最終預告，呈現克里斯·伊凡飾演的史蒂夫·羅傑斯退隱日常",
+      "count": "113 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B2%E8%92%82%E5%A4%AB%C2%B7%E7%BE%85%E5%82%91%E6%96%AF&serp_type=trends&trend_fbid=1701419358661999"
     },
     {
-      "title": "76人不敵拓荒者中斷5連勝",
-      "description": "LeBron James攻下23分，但76人不敵拓荒者中斷5連勝",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=76%E4%BA%BA&serp_type=trends&trend_fbid=2185277142378865"
-    },
-    {
-      "title": "黃仁勳復職重返輝達執行長",
-      "description": "輝達董事會宣布創辦人黃仁勳回歸接任執行長，帶動股價單日飆漲逾31%",
-      "count": "9 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E9%BB%83%E4%BB%81%E5%8B%B3&serp_type=trends&trend_fbid=1456013625990070"
+      "title": "Gemini 4模型開放使用",
+      "description": "Antigravity開放Gemini 4 Carbon模型，並同步重置用戶配額",
+      "count": "4 萬則貼文",
+      "link": "https://www.threads.com/search?q=Gemini&serp_type=trends&trend_fbid=4179801515659037"
     }
   ]
 }
