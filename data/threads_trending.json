@@ -1,6 +1,12 @@
 {
-  "updated_at": "2026-11-24T12:05:33.143731+08:00",
+  "updated_at": "2026-11-24T13:05:13.293971+08:00",
   "topics": [
+    {
+      "title": "蔣萬安誤將開根號稱微積分",
+      "description": "蔣萬安在影片中介紹車掃手板，將開根號與四則運算算式口誤說成微積分",
+      "count": "7 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=2153775398864117"
+    },
     {
       "title": "索羅斯遭指控介入台灣政治",
       "description": "金融家索羅斯與開放社會基金會遭指控資助團體干涉台灣政治，相關說法亦遭反駁",
@@ -8,22 +14,28 @@
       "link": "https://www.threads.com/search?q=%E7%B4%A2%E7%BE%85%E6%96%AF&serp_type=trends&trend_fbid=1149005881182383"
     },
     {
+      "title": "可不可聯名BEAMS商品開賣",
+      "description": "可不可與BEAMS DESIGN聯名周邊開賣，買四杯可加購限定商品吸引排隊",
+      "count": "4 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%AF%E4%B8%8D%E5%8F%AF&serp_type=trends&trend_fbid=1881446619973511"
+    },
+    {
       "title": "支持者發起民進黨投票動員",
       "description": "隨地方選舉投票日接近，支持者提出票票民進黨口號，呼籲返鄉出門投票表達訴求",
-      "count": "448 則貼文",
+      "count": "477 則貼文",
       "link": "https://www.threads.com/search?q=%E6%B0%91%E9%80%B2%E9%BB%A8%E5%8B%95%E5%93%A1&serp_type=trends&trend_fbid=29878679075051220"
     },
     {
-      "title": "可不可聯名BEAMS推丹寧周邊",
-      "description": "可不可攜手BEAMS DESIGN推出限量丹寧周邊商品，開賣首日吸引民眾排隊搶購",
-      "count": "4 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%AF%E4%B8%8D%E5%8F%AF&serp_type=trends&trend_fbid=1415596980368879"
+      "title": "NEXZ台北演唱會公開售票資訊",
+      "description": "男團NEXZ亞巡台北場釋出票價與福利，最高VIP區為6880元並展開會員預售",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=NEXZ&serp_type=trends&trend_fbid=1156710573671229"
     },
     {
-      "title": "蔣萬安直播將開根號誤稱微積分",
-      "description": "台北市長蔣萬安展示數學手板時口誤稱開根號為微積分，現場提醒後更正",
-      "count": "7 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=2244384692773705"
+      "title": "吳崢陪同張耀中南屯車掃拜票",
+      "description": "吳崢前往台中南屯陪同市議員候選人張耀中車隊掃街與市場拜票，爭取選民支持",
+      "count": "419 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%BC%B5%E8%80%80%E4%B8%AD&serp_type=trends&trend_fbid=1889264618924726"
     },
     {
       "title": "方舟投資低點減持輝達錯失漲幅",
@@ -32,64 +44,52 @@
       "link": "https://www.threads.com/search?q=%E6%96%B9%E8%88%9F%E6%8A%95%E8%B3%87&serp_type=trends&trend_fbid=1868399454354333"
     },
     {
+      "title": "AAA公布紅毯福利中獎名單",
+      "description": "AAA公布紅毯等福利名單，觀眾須於機台開放領取實體票後核對稅號確認",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=AAA%202026&serp_type=trends&trend_fbid=2053247515378541"
+    },
+    {
+      "title": "張震嶽小巨蛋演唱會宣布加場",
+      "description": "張震嶽2027年台北演唱會將於4月16日加開場次，門票12月5日開賣",
+      "count": "378 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%BC%B5%E9%9C%87%E5%B6%BD&serp_type=trends&trend_fbid=1003810045557063"
+    },
+    {
+      "title": "第63屆金馬獎頒獎典禮落幕",
+      "description": "第63屆金馬獎於11月22日落幕，許多民眾反映事前缺乏宣傳與曝光",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E9%87%91%E9%A6%AC%E7%8D%8E&serp_type=trends&trend_fbid=1686878252824154"
+    },
+    {
+      "title": "沈伯洋直播談求學歷程",
+      "description": "求學經歷中數學常考滿分，沈伯洋自學微積分並在個體與總體經濟學皆獲99分",
+      "count": "13 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1553255400158223"
+    },
+    {
+      "title": "《阿泰爾》公布最新更新內容",
+      "description": "遊戲《阿泰爾》推出項鍊與寵物欄位擴充券，並新增寵物專屬組合效果",
+      "count": "230 則貼文",
+      "link": "https://www.threads.com/search?q=%E3%80%8A%E9%98%BF%E6%B3%B0%E7%88%BE%E3%80%8B&serp_type=trends&trend_fbid=1679667833508699"
+    },
+    {
+      "title": "BTS高雄演唱MIC Drop",
+      "description": "BTS在高雄舉辦演唱會演出《MIC Drop》，歌迷分享現場大合唱等熱烈應援",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=MIC%20Drop&serp_type=trends&trend_fbid=1152888610446762"
+    },
+    {
       "title": "好市多黑五特價吸排隊潮",
       "description": "好市多黑色購物節第二天推出家電與寢具折扣，全台門市吸引會員清晨排隊採購",
-      "count": "7 千則貼文",
+      "count": "6 千則貼文",
       "link": "https://www.threads.com/search?q=%E5%A5%BD%E5%B8%82%E5%A4%9A&serp_type=trends&trend_fbid=5018671211693136"
     },
     {
-      "title": "Threads測試朋友名單功能",
-      "description": "Meta為Threads測試類似摯友名單功能，發文最多限50人瀏覽",
-      "count": "62 萬則貼文",
-      "link": "https://www.threads.com/search?q=Threads&serp_type=trends&trend_fbid=2079791969391892"
-    },
-    {
-      "title": "朴智旻高雄開唱熱情互動送飛吻",
-      "description": "防彈少年團於高雄開唱，成員朴智旻在延伸舞台回應歌迷看板並送出飛吻",
+      "title": "Wendy發行迷你四輯",
+      "description": "Wendy推出個人迷你四輯《Gleam Hour》，收錄主打歌等六首曲目",
       "count": "4 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%9C%B4%E6%99%BA%E6%97%BB&serp_type=trends&trend_fbid=3981808135292881"
-    },
-    {
-      "title": "Google AI Pro年費下殺5折",
-      "description": "Google推出黑色星期五優惠，Google AI Pro年繳方案降至半價3,250元",
-      "count": "2 萬則貼文",
-      "link": "https://www.threads.com/search?q=Google%20AI&serp_type=trends&trend_fbid=1142801921691444"
-    },
-    {
-      "title": "金馬獎宣傳與曝光度大幅降低",
-      "description": "2026年金馬獎落幕後民眾反映宣傳降低，翁曉玲刪除宣傳預算提案再度浮上檯面",
-      "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E9%87%91%E9%A6%AC%E7%8D%8E&serp_type=trends&trend_fbid=2346149709258548"
-    },
-    {
-      "title": "金南俊催票舊作被引用呼籲投票",
-      "description": "大眾引用BTS金南俊出道前催票歌曲，呼籲年輕族群11月28日出門投票",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E9%87%91%E5%8D%97%E4%BF%8A&serp_type=trends&trend_fbid=1465825688949339"
-    },
-    {
-      "title": "《楓之谷Artale》改版更新",
-      "description": "《楓之谷 Artale》於11月24日更新，開放皇家騎士團並新增欄位擴充功能",
-      "count": "207 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%A5%93%E4%B9%8B%E8%B0%B7%20Artale&serp_type=trends&trend_fbid=1708771064182976"
-    },
-    {
-      "title": "立院三讀通過普發2萬草案",
-      "description": "立法院通過普發現金2萬元特別條例，明定特別預算生效後3個月內完成發放",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%99%AE%E7%99%BC%E7%8F%BE%E9%87%91&serp_type=trends&trend_fbid=1814819236463362"
-    },
-    {
-      "title": "沈伯洋直播談自學微積分",
-      "description": "沈伯洋在直播分享讀書方法，提及曾自學微積分且修讀經濟學考取99分",
-      "count": "13 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1640856607509501"
-    },
-    {
-      "title": "《RO 倖存者》改版更新",
-      "description": "《RO 倖存者》取消Boss傷害上限並調整機制，玩家實測各職業通關配點",
-      "count": "368 則貼文",
-      "link": "https://www.threads.com/search?q=RO%20%E5%80%96%E5%AD%98%E8%80%85&serp_type=trends&trend_fbid=1403294384976911"
+      "link": "https://www.threads.com/search?q=Wendy&serp_type=trends&trend_fbid=1672961237816361"
     }
   ]
 }
