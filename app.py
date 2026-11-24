@@ -124,6 +124,16 @@ SCRAPED_SOURCES = {
         "limit": 20,
         "strip_time": False,
     },
+    "鉅亨網": {   # 熱門頁先列「總覽」前 5，後面是外匯、台股…各分類榜；標題前面有「1.」要去掉
+        "url": "https://news.cnyes.com/trending",
+        "selector": "ol li a[href*='/news/id/']",
+        "pattern": "/news/id/",
+        "min_len": 8,
+        "limit": 20,
+        "strip_time": False,
+        "strip_rank": True,
+        "base_url": "https://news.cnyes.com",
+    },
 }
 
 FALLBACK_KEYWORDS = [
@@ -509,6 +519,8 @@ def fetch_scraped_news() -> list[dict]:
                 if base and href.startswith("/"):
                     href = base + href
                 title = re.sub(r'\d{1,2}:\d{2}$', '', raw_title).strip() if cfg.get("strip_time") else raw_title
+                if cfg.get("strip_rank"):
+                    title = re.sub(r'^\d+[.、]\s*', '', title)
                 if (len(title) >= cfg["min_len"]
                         and cfg["pattern"] in href
                         and (not must or must in href)
@@ -893,7 +905,7 @@ def et_tag_html(et) -> str:
 # 空降：上一輪不在榜、這輪直接進前 5；急升：約 30 分鐘內升 5 名以上且進前 10；
 # 多家同時上榜：同一話題同時在 3 家以上熱門榜前 10（標題用字相近的串成一群）。
 # 紀錄放記憶體：防休眠程式每 10 分鐘開一次網站會一直累積；重新部署會歸零，約 30 分鐘後才有「急升」。
-HOT_SOURCES = ["自由時報", "Yahoo 新聞", "東森新聞", "壹蘋新聞網", "中國時報", "聯合報熱門", "經濟日報"]  # 中央社、三立是最新列表，不算
+HOT_SOURCES = ["自由時報", "Yahoo 新聞", "東森新聞", "壹蘋新聞網", "中國時報", "聯合報熱門", "經濟日報", "鉅亨網"]  # 中央社、三立是最新列表，不算
 SURGE_GAP = 540
 SURGE_KEEP = 7200
 SURGE_NEW_TOP = 5
@@ -1485,7 +1497,7 @@ def main():
     # ── Footer ──────────────────────────────────────────────────
     st.markdown(f"""
     <div class="mw-footer">
-        資料來源：Google Trends · 中央社即時 · 熱門排行（自由 / Yahoo / 東森 / 壹蘋 / 中時 / 聯合報 / 經濟日報 / 三立） · PTT &nbsp;｜&nbsp;
+        資料來源：Google Trends · 中央社即時 · 熱門排行（自由 / Yahoo / 東森 / 壹蘋 / 中時 / 聯合報 / 經濟日報 / 鉅亨 / 三立） · PTT &nbsp;｜&nbsp;
         更新時間：{now.strftime('%Y-%m-%d %H:%M:%S')} (台北 UTC+8) &nbsp;｜&nbsp;
         每 5 分鐘自動刷新
     </div>
