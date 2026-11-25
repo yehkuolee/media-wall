@@ -158,6 +158,9 @@ if HAS_AUTOREFRESH:
 st.markdown("""
 <style>
 #MainMenu, footer, header { visibility: hidden; }
+html, body, .stApp, [data-testid="stAppViewContainer"], .stMarkdown, button {
+    font-family: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", Arial, sans-serif !important;
+}
 [data-testid="stAppViewContainer"] {
     background: #f3f3f3;
 }
@@ -226,18 +229,19 @@ st.markdown("""
 /* ── News card ── */
 .news-card {
     background: #ffffff;
-    border: 1px solid #ededed;
-    border-left: 3px solid #e2e2e2;
+    border: none;
+    border-bottom: 1px dotted #cfcfcf;
+    border-left: 3px solid transparent;
     border-radius: 0;
-    padding: 9px 12px;
-    margin-bottom: 5px;
+    padding: 10px 12px;
+    margin-bottom: 0;
     display: flex;
     align-items: flex-start;
     gap: 10px;
     box-shadow: none;
 }
 .news-card:hover { border-left-color: #e94c15; background: #fffaf7; }
-.news-rank       { color: #999999; font-weight: 800; font-size: .92rem; min-width: 22px; line-height: 1.6; font-family: 'Courier New', monospace; }
+.news-rank       { color: #999999; font-weight: 800; font-size: 1rem; min-width: 22px; line-height: 1.6; font-family: 'Courier New', monospace; }
 .news-rank.gold  { color: #e94c15; }
 .news-rank.silv  { color: #ed6d1e; }
 .news-rank.brnz  { color: #f08a4b; }
@@ -245,7 +249,8 @@ st.markdown("""
 .news-title-link {
     display: block;
     color: #121212;
-    font-size: .84rem;
+    font-size: .9rem;
+    font-weight: 600;
     line-height: 1.55;
     text-decoration: none;
     font-family: inherit;
@@ -1158,17 +1163,17 @@ MASTHEAD_CSS = """
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #ffffff;
+    background: #1b1b1b;
     border-top: 5px solid #e94c15;
-    border-bottom: 1px solid #e2e2e2;
+    border-bottom: 3px solid #e94c15;
     border-left: none; border-right: none;
     border-radius: 0;
     padding: 14px 24px;
     margin-bottom: 14px;
     box-shadow: none;
 }
-.mw-title { font-family: -apple-system, BlinkMacSystemFont, 'PingFang TC', 'Noto Sans TC', 'Microsoft JhengHei', sans-serif; font-size: 1.6rem; font-weight: 800; color: #e94c15; letter-spacing: 1px; }
-.mw-subtitle { font-size: .63rem; color: #999; letter-spacing: 2px; text-transform: uppercase; margin-top: 3px; }
+.mw-title { font-family: 'PingFang TC', 'Microsoft JhengHei', 'Noto Sans TC', Arial, sans-serif; font-size: 1.6rem; font-weight: 800; color: #ffffff; letter-spacing: 1px; }
+.mw-subtitle { font-size: .63rem; color: #aaa; letter-spacing: 2px; text-transform: uppercase; margin-top: 3px; }
 .mw-live { display: flex; align-items: center; gap: 8px; }
 .live-dot {
     width: 8px; height: 8px; background: #e94c15;
@@ -1180,19 +1185,19 @@ MASTHEAD_CSS = """
     50%      { opacity:.2; }
 }
 .live-text { color: #e94c15; font-size: .72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
-.mw-online { color: #555; font-size: .72rem; font-weight: 700; letter-spacing: 1px; margin-left: 10px; padding-left: 10px; border-left: 1px solid #e2e2e2; }
-.mw-time { color: #2e266f; font-size: 1.1rem; font-weight: 700; font-family: 'Courier New', monospace; text-align: right; }
-.mw-date { color: #999; font-size: .67rem; text-align: right; letter-spacing: 1px; }
-.mw-updated { color: #999; font-size: .67rem; text-align: right; letter-spacing: 1px; margin-top: 2px; }
+.mw-online { color: #ddd; font-size: .72rem; font-weight: 700; letter-spacing: 1px; margin-left: 10px; padding-left: 10px; border-left: 1px solid #555; }
+.mw-time { color: #ffffff; font-size: 1.1rem; font-weight: 700; font-family: 'Courier New', monospace; text-align: right; }
+.mw-date { color: #bbb; font-size: .67rem; text-align: right; letter-spacing: 1px; }
+.mw-updated { color: #bbb; font-size: .67rem; text-align: right; letter-spacing: 1px; margin-top: 2px; }
 .mw-right { display: flex; align-items: center; gap: 14px; }
 .mw-theme-btn {
     display: flex; align-items: center; gap: 8px; border: none; background: transparent;
     cursor: pointer; padding: 0; font: inherit;
 }
-.mw-theme-label { color: #555; font-size: .72rem; font-weight: 700; letter-spacing: 1px; }
+.mw-theme-label { color: #ddd; font-size: .72rem; font-weight: 700; letter-spacing: 1px; }
 .mw-switch {
     position: relative; width: 36px; height: 20px; border-radius: 10px;
-    background: #e2e2e2; transition: background .2s;
+    background: #666; transition: background .2s;
 }
 .mw-switch::after {
     content: ""; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px;
@@ -1200,12 +1205,12 @@ MASTHEAD_CSS = """
 }
 .mw-theme-btn[aria-checked="true"] .mw-switch { background: #22c55e; }
 .mw-theme-btn[aria-checked="true"] .mw-switch::after { transform: translateX(16px); }
-.mw-theme-btn:hover .mw-theme-label { color: #e94c15; }
+.mw-theme-btn:hover .mw-theme-label { color: #ff7a3d; }
 
 /* 深色模式 */
 html.mw-dark, html.mw-dark body { background: #000000 !important; }
 .mw-dark .mw-header { background: #0b0b0b; border-top-color: #e94c15; border-bottom-color: #222222; box-shadow: none; }
-.mw-dark .mw-title { color: #ff7a3d; }
+.mw-dark .mw-title { color: #ffffff; }
 .mw-dark .mw-time { color: #22c55e; }
 .mw-dark .mw-subtitle, .mw-dark .mw-date, .mw-dark .mw-updated { color: #6f6f6f; }
 .mw-dark .live-dot { background: #ff7a3d; }
