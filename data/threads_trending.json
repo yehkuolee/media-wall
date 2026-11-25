@@ -1,47 +1,35 @@
 {
-  "updated_at": "2026-11-25T23:05:13.585846+08:00",
+  "updated_at": "2026-11-26T00:05:13.650100+08:00",
   "topics": [
-    {
-      "title": "沈柏洋遭指收受境外基金會贊助",
-      "description": "在擔任相關職務期間，沈柏洋被指涉收受索羅斯旗下開放社會基金會境外資金",
-      "count": "5 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%88%E6%9F%8F%E6%B4%8B&serp_type=trends&trend_fbid=882102971648337"
-    },
-    {
-      "title": "全家開賣聖誕小樹娃包",
-      "description": "全家便利商店開賣聖誕小樹娃包，售價199元並可裝入約13公分娃娃",
-      "count": "284 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%81%96%E8%AA%95%E5%B0%8F%E6%A8%B9%E5%8C%85&serp_type=trends&trend_fbid=1684350219734889"
-    },
-    {
-      "title": "沈伯洋支持者自製應援物拉票",
-      "description": "台北市長候選人沈伯洋支持者製作玩偶與提袋，號召親友在11月28日投票支持",
-      "count": "17 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1619433032676181"
-    },
     {
       "title": "王鴻薇控封路 沈伯洋取消造勢",
       "description": "國民黨王鴻薇指責沈伯洋在仁愛路封路造勢擾民，沈伯洋隨後宣布取消選前之夜",
-      "count": "2 千則貼文",
+      "count": "3 千則貼文",
       "link": "https://www.threads.com/search?q=%E7%8E%8B%E9%B4%BB%E8%96%87&serp_type=trends&trend_fbid=996750639681752"
-    },
-    {
-      "title": "曠世奇派推醇抹茶雪糕",
-      "description": "杜老爺推出主打流心內餡的醇抹茶口味雪糕，吸引民眾前往超商購買嚐鮮",
-      "count": "112 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%9B%A0%E4%B8%96%E5%A5%87%E6%B4%BE&serp_type=trends&trend_fbid=2572927023212703"
-    },
-    {
-      "title": "國中割頸案二審判賠1782萬",
-      "description": "高院改判新北國中割頸案行凶少年與家長須連帶賠償被害家屬1782萬餘元",
-      "count": "188 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%9C%8B%E4%B8%AD%E7%94%9F%E5%89%B2%E9%A0%B8%E6%A1%88&serp_type=trends&trend_fbid=3786695751483549"
     },
     {
       "title": "蔣萬安選前借多處場地與路權",
       "description": "台北市長蔣萬安選前借用多處場地並實施封路，遭指防堵對手造勢並造成擾民",
-      "count": "8 萬則貼文",
+      "count": "9 萬則貼文",
       "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=29212922075024618"
+    },
+    {
+      "title": "何欣純舉辦北屯造勢晚會",
+      "description": "民進黨台中市長候選人何欣純在北屯造勢，賴清德與卓榮泰均現身力挺",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E4%BD%95%E6%AC%A3%E7%B4%94&serp_type=trends&trend_fbid=1079797931785650"
+    },
+    {
+      "title": "陳俞融籲集中選票簡嘉佑拚兩席",
+      "description": "台中市北區議員選舉，民進黨陳俞融呼籲集中選票守席次，新人簡嘉佑則力拚兩席全上",
+      "count": "218 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%99%B3%E4%BF%9E%E8%9E%8D&serp_type=trends&trend_fbid=1027464863046846"
+    },
+    {
+      "title": "台74線尖峰交管致嚴重塞車",
+      "description": "警方因官員車隊在尖峰時段管制台74線多處匝道，造成快速道路與周邊嚴重回堵",
+      "count": "149 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B074%E7%B7%9A&serp_type=trends&trend_fbid=1585389766949477"
     },
     {
       "title": "中教大學生持美工刀威脅教師",
@@ -50,46 +38,58 @@
       "link": "https://www.threads.com/search?q=%E5%8F%B0%E4%B8%AD%E6%95%99%E8%82%B2%E5%A4%A7%E5%AD%B8&serp_type=trends&trend_fbid=992461290144499"
     },
     {
-      "title": "國民黨翻出太陽花學運發文",
-      "description": "國民黨翻出2014年太陽花學運歷史紀錄，群眾回顧當年遭警方以水砲車與警棍驅離歷程",
-      "count": "6 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%A4%AA%E9%99%BD%E8%8A%B1&serp_type=trends&trend_fbid=4278499615616120"
-    },
-    {
-      "title": "陳俞融造勢喊集中選票",
-      "description": "陳俞融在台中造勢活動主打選情告急並呼籲不要分票，與簡嘉佑拚兩席全上訴求不同",
-      "count": "173 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%99%B3%E4%BF%9E%E8%9E%8D&serp_type=trends&trend_fbid=1877025130150816"
-    },
-    {
-      "title": "蕭煌奇苗栗開唱承諾回覆留言",
-      "description": "歌手蕭煌奇前往苗栗頭份演出，幽默表示回程將親自回覆歌迷留言",
-      "count": "226 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%95%AD%E7%85%8C%E5%A5%87&serp_type=trends&trend_fbid=1809412477017829"
-    },
-    {
-      "title": "麥當勞推出大份量霸牛堡",
-      "description": "台灣麥當勞開賣主打雙層牛肉的霸牛堡，單點169元且熱量約1100大卡",
-      "count": "487 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%9C%B8%E7%89%9B%E5%A0%A1&serp_type=trends&trend_fbid=2032323604123449"
-    },
-    {
-      "title": "陳嫺靜傳辦巡迴演出",
-      "description": "歌手陳嫺靜規劃前往北京、上海、廣州及成都等地開唱",
-      "count": "180 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%99%B3%E5%AB%BA%E9%9D%9C&serp_type=trends&trend_fbid=4605146386472773"
-    },
-    {
-      "title": "超級星光大道辦20週年同學會",
-      "description": "製作人詹仁雄號召林宥嘉與蕭敬騰等歌手及評審齊聚，慶祝《超級星光大道》20週年",
-      "count": "106 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%B6%85%E7%B4%9A%E6%98%9F%E5%85%89%E5%A4%A7%E9%81%93&serp_type=trends&trend_fbid=3019436358407437"
+      "title": "蔡英文陪何欣純台中車掃拜票",
+      "description": "前總統蔡英文現身台中豐原，陪同民進黨市長候選人何欣純車隊掃街拜票",
+      "count": "5 千則貼文",
+      "link": "https://www.threads.com/search?q=%E8%94%A1%E8%8B%B1%E6%96%87&serp_type=trends&trend_fbid=2536774500182754"
     },
     {
       "title": "《再婚皇后》第一季完結",
       "description": "《再婚皇后》播出第十集大結局正式完結首季，部分未完情節讓觀眾期盼推出續集",
-      "count": "540 則貼文",
+      "count": "595 則貼文",
       "link": "https://www.threads.com/search?q=%E5%86%8D%E5%A9%9A%E7%9A%87%E5%90%8E&serp_type=trends&trend_fbid=4553093428283163"
+    },
+    {
+      "title": "Top Barry將辦台北專場",
+      "description": "饒舌歌手Top Barry將於12月在台北舉辦專場演出並公布嘉賓名單",
+      "count": "232 則貼文",
+      "link": "https://www.threads.com/search?q=Top%20Barry&serp_type=trends&trend_fbid=1168807945603727"
+    },
+    {
+      "title": "麥當勞推出大份量霸牛堡",
+      "description": "台灣麥當勞開賣主打雙層牛肉的霸牛堡，單點169元且熱量約1100大卡",
+      "count": "541 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%9C%B8%E7%89%9B%E5%A0%A1&serp_type=trends&trend_fbid=2032323604123449"
+    },
+    {
+      "title": "民眾回顧太陽花學運歷史",
+      "description": "國民黨提及沈伯洋學運舊文，許多民眾重述太陽花與反核抗爭記憶",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%A4%AA%E9%99%BD%E8%8A%B1%E5%AD%B8%E9%81%8B&serp_type=trends&trend_fbid=29223140364007706"
+    },
+    {
+      "title": "Zeus重返T1簽約三年",
+      "description": "《英雄聯盟》戰隊T1宣布上路選手Zeus回歸，雙方簽署三年合約至2029年",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=Zeus&serp_type=trends&trend_fbid=1085362184535195"
+    },
+    {
+      "title": "曠世奇派推醇抹茶雪糕",
+      "description": "杜老爺推出主打流心內餡的醇抹茶口味雪糕，吸引民眾前往超商購買嚐鮮",
+      "count": "116 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%9B%A0%E4%B8%96%E5%A5%87%E6%B4%BE&serp_type=trends&trend_fbid=2572927023212703"
+    },
+    {
+      "title": "木柵忠順廟發放合流飄帶",
+      "description": "林家豪在木柵忠順廟發放限量200條合流飄帶，吸引民眾排隊領取",
+      "count": "108 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%BF%A0%E9%A0%86%E5%BB%9F&serp_type=trends&trend_fbid=1929982397983191"
+    },
+    {
+      "title": "《超級星光大道》20週年重聚",
+      "description": "詹仁雄號召林宥嘉與蕭敬騰等歌手評審舉辦同學會，合唱經典歌曲慶祝開播20週年",
+      "count": "122 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%B6%85%E7%B4%9A%E6%98%9F%E5%85%89%E5%A4%A7%E9%81%93&serp_type=trends&trend_fbid=4374894289489245"
     }
   ]
 }
