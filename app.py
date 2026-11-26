@@ -965,10 +965,12 @@ def detect_surges() -> list[dict]:
     old_t, old = next(((t, s) for t, s in reversed(snaps[:-1]) if now_t - t >= 25 * 60), (None, None))
     found: dict[str, dict] = {}
 
-    def add(n, why, rank):
-        f = found.setdefault(_nkey(n), {"news": n, "reasons": [], "best": 99})
+    def add(n, why, rank, fact=None):
+        f = found.setdefault(_nkey(n), {"news": n, "reasons": [], "best": 99, "facts": []})
         f["reasons"].append(why)
         f["best"] = min(f["best"], rank)
+        if fact:
+            f["facts"].append(fact)  # 給通知規則用的結構化資料（不用再解析文字）
 
     for src, lst in cur.items():
         pr = {_nkey(x): i for i, x in enumerate(prev.get(src, []), 1)} if prev else {}
@@ -976,9 +978,10 @@ def detect_surges() -> list[dict]:
         for i, n in enumerate(lst, 1):
             k = _nkey(n)
             if pr and k not in pr and i <= SURGE_NEW_TOP:
-                add(n, f"{src} 空降第 {i} 名", i)
+                add(n, f"{src} 空降第 {i} 名", i, {"type": "new", "src": src, "rank": i})
             elif k in od and od[k] - i >= SURGE_JUMP and i <= SURGE_JUMP_TOP:
-                add(n, f"{src} {round((now_t - old_t) / 60)} 分鐘 {od[k]}→{i} 名", i)
+                add(n, f"{src} {round((now_t - old_t) / 60)} 分鐘 {od[k]}→{i} 名", i,
+                    {"type": "jump", "src": src, "from": od[k], "to": i, "mins": round((now_t - old_t) / 60)})
 
     # 多家同時上榜：各家前 10 名，標題用字相近的串成一群（同一話題各家寫法不同，用串連的）
     tops = [(src, i, n, _grams(n["title"])) for src, lst in cur.items() for i, n in enumerate(lst[:10], 1)]
@@ -1002,7 +1005,7 @@ def detect_surges() -> list[dict]:
         srcs = list(dict.fromkeys(m[0] for m in members))
         if len(srcs) >= SURGE_MULTI:
             src, i, n, _ = min(members, key=lambda m: m[1])
-            add(n, f"{len(srcs)} 家熱門榜同時上榜（{'、'.join(srcs)}）", i)
+            add(n, f"{len(srcs)} 家熱門榜同時上榜（{'、'.join(srcs)}）", i, {"type": "multi", "n": len(srcs), "srcs": srcs})
 
     return sorted(found.values(), key=lambda f: (-len(f["reasons"]), f["best"]))[:8]
 
@@ -1513,6 +1516,18 @@ def main():
             <div style="padding:0 4px;margin-bottom:6px;">
                 <div class="src-bar" style="width:{pct}%"></div>
             </div>""", unsafe_allow_html=True)
+
+    # ── 通知規則（純程式比對，不用 AI）：整理事實清單交給瀏覽器端比對、發通知 ──
+    try:
+        import notify
+        facts_topics = [dict(t) for t in category_topics()[:notify.TOPIC_LIMIT] if t["score"] >= notify.TOPIC_FLOOR]
+        if facts_topics:
+            et_map = ettoday_recheck(facts_topics, ettoday_matches([{"title": t["title"], "link": t["link"]} for t in facts_topics]))
+            for t in facts_topics:
+                t["et"] = et_map.get(t["title"])
+        components.html(notify.script_html(notify.build_facts(detect_surges(), facts_topics)), height=0)
+    except Exception as e:  # 通知壞了不能拖垮整個網站
+        print("notify error:", e)
 
     # ── Footer ──────────────────────────────────────────────────
     st.markdown(f"""
