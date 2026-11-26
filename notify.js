@@ -2,7 +2,9 @@
 (function () {
   const P = window.parent, D = P.document;
   const KEY_CFG = "mw-notify-cfg", KEY_SEEN = "mw-notify-seen", KEY_SENT = "mw-notify-sent";
+  const CATS = ["政治", "社會", "生活", "娛樂", "財經", "國際", "體育", "科技", "寵物", "未分類"];
   const DEFAULTS = {
+    cats: CATS.slice(),
     enabled: false, dailyCap: 20, quietOn: true, quietFrom: 0, quietTo: 7,
     jump:   { on: true,  minUp: 5, within: 30 },
     hotNo:  { on: true,  minScore: 5 },
@@ -15,12 +17,13 @@
     set(k, v) { try { P.localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
   };
   const cfg = () => { const c = ls.get(KEY_CFG, {}); return Object.assign({}, DEFAULTS, c,
-    Object.fromEntries(Object.keys(DEFAULTS).filter(k => typeof DEFAULTS[k] === "object").map(k => [k, Object.assign({}, DEFAULTS[k], c[k] || {})]))); };
+    Object.fromEntries(Object.keys(DEFAULTS).filter(k => typeof DEFAULTS[k] === "object" && !Array.isArray(DEFAULTS[k])).map(k => [k, Object.assign({}, DEFAULTS[k], c[k] || {})]))); };
 
   // ── 規則（純比對）──────────────────────────────────────────
   function evaluate(f, c) {
     const out = [];
-    for (const s of f.surges || []) for (const x of s.facts || []) {
+    const ok = cat => (c.cats || CATS).includes(cat || "未分類");
+    for (const s of f.surges || []) if (ok(s.cat)) for (const x of s.facts || []) {
       if (x.type === "jump" && c.jump.on && x.from - x.to >= c.jump.minUp && x.mins <= c.jump.within + 10)
         out.push({ id: "jump|" + s.key + "|" + x.src, title: `🚀 ${x.src} ${x.mins} 分鐘 ${x.from}→${x.to} 名`, body: s.title, link: s.link });
       if (x.type === "new" && c.newTop.on && x.rank <= c.newTop.top)
@@ -29,6 +32,7 @@
         out.push({ id: "multi|" + s.key, title: `📣 ${x.n} 家熱門榜同時上榜`, body: s.title, link: s.link });
     }
     for (const t of f.topics || []) {
+      if (!ok(t.cat)) continue;
       if (c.hotNo.on && t.unwritten && t.score >= c.hotNo.minScore)
         out.push({ id: "hotno|" + t.key, title: `⚠️ ETtoday 未寫｜熱度 ${t.score}${t.cat ? "｜" + t.cat : ""}`, body: t.title, link: t.link });
       else if (c.hot.on && t.score >= c.hot.minScore)
@@ -116,14 +120,21 @@
         <label><input type="checkbox" id="mwn-m" ${c.multi.on ? "checked" : ""}> ${num("mwn-mn", c.multi.n, 3, 8)} 家以上熱門榜同時上榜</label>
         <label><input type="checkbox" id="mwn-t" ${c.hot.on ? "checked" : ""}> 熱度 ≥ ${num("mwn-ts", c.hot.minScore, 4, 30)}（不管 ETtoday 有沒有寫）</label>
         <hr>
+        <div class="sub" style="margin:0 0 2px">只通知這些分類（暴衝新聞若分不出類別，歸在「未分類」）</div>
+        <div id="mwn-cats" style="display:flex;flex-wrap:wrap;gap:2px 12px">${CATS.map(k => `<label style="margin:2px 0"><input type="checkbox" class="mwn-cat" value="${k}" ${(c.cats || CATS).includes(k) ? "checked" : ""}> ${k}</label>`).join("")}</div>
+        <div class="sub"><a href="#" id="mwn-all">全選</a>　<a href="#" id="mwn-none">全不選</a></div>
+        <hr>
         <label>每天最多 ${num("mwn-cap", c.dailyCap, 1, 200)} 則</label>
         <label><input type="checkbox" id="mwn-q" ${c.quietOn ? "checked" : ""}> 安靜時段 ${num("mwn-qf", c.quietFrom, 0, 23)} 點到 ${num("mwn-qt", c.quietTo, 0, 23)} 點不通知</label>
         <hr>
         <button class="act" id="mwn-save">儲存</button><button class="sec" id="mwn-test">測試通知</button>
         <div class="sub" style="margin-top:8px">規則全由程式比對，不使用 AI。設定存在這台裝置的瀏覽器。需要保持這個頁面或 App 在背景開著才收得到。</div>`;
       const g = id => D.getElementById(id), v = id => Number(g(id).value);
+      const setAll = v => D.querySelectorAll(".mwn-cat").forEach(x => { x.checked = v; });
+      g("mwn-all").onclick = e => { e.preventDefault(); setAll(true); };
+      g("mwn-none").onclick = e => { e.preventDefault(); setAll(false); };
       g("mwn-save").onclick = async () => {
-        const n = { enabled: g("mwn-en").checked, dailyCap: v("mwn-cap"), quietOn: g("mwn-q").checked, quietFrom: v("mwn-qf"), quietTo: v("mwn-qt"),
+        const n = { cats: [...D.querySelectorAll(".mwn-cat")].filter(x => x.checked).map(x => x.value), enabled: g("mwn-en").checked, dailyCap: v("mwn-cap"), quietOn: g("mwn-q").checked, quietFrom: v("mwn-qf"), quietTo: v("mwn-qt"),
           jump: { on: g("mwn-j").checked, within: v("mwn-jw"), minUp: v("mwn-ju") }, hotNo: { on: g("mwn-h").checked, minScore: v("mwn-hs") },
           newTop: { on: g("mwn-n").checked, top: v("mwn-nt") }, multi: { on: g("mwn-m").checked, n: v("mwn-mn") }, hot: { on: g("mwn-t").checked, minScore: v("mwn-ts") } };
         ls.set(KEY_CFG, n);

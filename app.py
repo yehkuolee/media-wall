@@ -1525,7 +1525,7 @@ def main():
             et_map = ettoday_recheck(facts_topics, ettoday_matches([{"title": t["title"], "link": t["link"]} for t in facts_topics]))
             for t in facts_topics:
                 t["et"] = et_map.get(t["title"])
-        components.html(notify.script_html(notify.build_facts(detect_surges(), facts_topics)), height=0)
+        components.html(notify.script_html(notify.build_facts(detect_surges(), facts_topics, category_topics())), height=0)
     except Exception as e:  # 通知壞了不能拖垮整個網站
         print("notify error:", e)
 

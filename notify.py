@@ -19,12 +19,29 @@ TOPIC_FLOOR = 4      # 熱度低於這個的話題不送進前端（UI 門檻最
 TOPIC_LIMIT = 15     # 只看熱度前 15 名，避免替一堆冷門話題比對 ETtoday
 
 
-def build_facts(surges: list, topics: list) -> dict:
-    """surges: detect_surges() 的結果；topics: 已經標好 et 的話題清單（依熱度排）"""
+CATS = ["政治", "社會", "生活", "娛樂", "財經", "國際", "體育", "科技", "寵物"]
+NO_CAT = "未分類"
+
+
+def _surge_cat(link: str, cat_by_link: dict) -> str:
+    """暴衝新聞沒有分類：先看它有沒有被串進某個話題（沿用話題的分類），再看網址，都不行就是未分類"""
+    import topics as tp
+    return cat_by_link.get(link) or tp._url_cat(link) or ""
+
+
+def build_facts(surges: list, topics: list, all_topics: list | None = None) -> dict:
+    """surges: detect_surges() 的結果；topics: 已經標好 et 的話題清單（依熱度排）；
+    all_topics: 全部話題（用來替暴衝新聞找分類）"""
+    cat_by_link = {}
+    for t in (all_topics or topics):
+        for l in [{"link": t.get("link")}] + list(t.get("links", [])):
+            if l.get("link") and t.get("cat"):
+                cat_by_link.setdefault(l["link"], t["cat"])
     return {
         "surges": [
             {"key": f["news"].get("link") or f["news"]["title"], "title": f["news"]["title"],
-             "link": f["news"].get("link", ""), "facts": f.get("facts", [])}
+             "link": f["news"].get("link", ""), "facts": f.get("facts", []),
+             "cat": _surge_cat(f["news"].get("link", ""), cat_by_link)}
             for f in surges
         ],
         "topics": [
@@ -52,6 +69,7 @@ DEFAULTS = {
     "newTop": {"on": False, "top": 3},
     "multi":  {"on": False, "n": 3},
     "hot":    {"on": False, "minScore": 8},
+    "cats":   CATS + [NO_CAT],   # 只通知勾選的分類
 }
 NTFY_URL = "https://ntfy.sh/"
 
@@ -69,7 +87,10 @@ def merged_cfg(user: dict) -> dict:
 def evaluate(f: dict, c: dict) -> list:
     """純規則比對 → [{id, title, body, link}]"""
     out = []
+    ok = lambda cat: (cat or NO_CAT) in c["cats"]
     for s in f.get("surges", []):
+        if not ok(s.get("cat")):
+            continue
         for x in s.get("facts", []):
             t = x["type"]
             if t == "jump" and c["jump"]["on"] and x["from"] - x["to"] >= c["jump"]["minUp"] and x["mins"] <= c["jump"]["within"] + 10:
@@ -81,6 +102,8 @@ def evaluate(f: dict, c: dict) -> list:
             if t == "multi" and c["multi"]["on"] and x["n"] >= c["multi"]["n"]:
                 out.append({"id": f"multi|{s['key']}", "title": f"📣 {x['n']} 家熱門榜同時上榜", "body": s["title"], "link": s["link"]})
     for t in f.get("topics", []):
+        if not ok(t.get("cat")):
+            continue
         cat = f"｜{t['cat']}" if t.get("cat") else ""
         if c["hotNo"]["on"] and t["unwritten"] and t["score"] >= c["hotNo"]["minScore"]:
             out.append({"id": f"hotno|{t['key']}", "title": f"⚠️ ETtoday 未寫｜熱度 {t['score']}{cat}", "body": t["title"], "link": t["link"]})
