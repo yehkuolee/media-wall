@@ -58,3 +58,10 @@ LINE 官方帳號「ETtoday競媒監測器」（@164jhlis，輕用量免費方�
 - 本月推了幾則：`cat tipbot/state/pushed.json`
 - 誰加了好友、問過幾次：管理者（推播對象）私訊 Bot 傳「名單」；完整資料在 `tipbot/state/members.json`（LINE 名稱一週更新一次，封鎖的會標 🚫；別人傳「名單」只會看到說明）
 - 誰問了什麼：管理者私訊傳「紀錄」（最近 50 則）或「紀錄 名字」（只看那個人）；存在 `tipbot/state/asks.jsonl`（私訊全記，群組只記指令，閒聊不記）
+
+## 手機／電腦推播（ntfy，規則全程式比對、不用 AI）
+
+- 規則在 `../notify.py`（網頁版的 `../notify.js` 是同一套，改門檻兩邊一起改）：名次 30 分鐘升 5 名以上、ETtoday 未寫且熱度 ≥ 5、空降前 N、多家同時上榜、熱度門檻；每天上限 20 則、0～7 點安靜（結束後補發）、同則 24 小時內不重推、第一次啟動只記錄不推
+- 開啟：`tipbot/.env` 加一行 `NTFY_TOPIC=一組難猜的英數字`（等於頻道密碼，**不要進 git**），重開 Bot；手機／電腦裝 ntfy App（或開 https://ntfy.sh/頻道名）訂閱同一個頻道名
+- 改門檻：建立 `tipbot/state/notify_cfg.json`，只寫要改的，例如 `{"hotNo": {"minScore": 7}, "jump": {"on": false}, "dailyCap": 10}`
+- 「ETtoday 未寫」推播前沿用原本的單則複查（Gemini），查不出來就下輪再說；已推紀錄 `tipbot/state/ntfy_sent.json`

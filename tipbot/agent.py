@@ -734,6 +734,39 @@ def maybe_push(data: dict):
         log.info("主動推播 %d 個哏（本月第 %d 則）", len(new), st["month_count"])
 
 
+# ── 手機／電腦推播（ntfy）：規則全是程式比對，不用 AI（ETtoday 複查沿用原本的 Gemini）──
+
+def maybe_ntfy(data: dict):
+    topic = os.environ.get("NTFY_TOPIC", "")
+    if not topic:
+        return
+    import notify
+    hits = {k: v for k, v in _read("et_hits.json", {}).items() if time.time() - v["t"] < 86400 * 3}
+    by_title = {t["title"]: t for t in data["topics"]}
+
+    def recheck(title):
+        if any(mw._overlap(mw._grams(title), mw._grams(k)) >= 0.5 for k in hits):
+            return True
+        alts = [x["title"] for x in by_title.get(title, {}).get("links", []) if x["title"] != title]
+        m = None
+        for _ in range(3):
+            m = mw.ettoday_check(title, alts)
+            if m and m != mw.ET_ERR:
+                break
+        if m == mw.ET_ERR:
+            return "later"
+        if m:
+            hits[title] = {"title": m["title"], "link": m["link"], "t": time.time()}
+            _write("et_hits.json", hits)
+            return True
+        return False
+
+    facts = notify.build_facts(mw.detect_surges(), data["topics"])
+    n = notify.push_ntfy(facts, STATE / "ntfy_sent.json", topic, _read("notify_cfg.json", {}), recheck=recheck)
+    if n:
+        log.info("ntfy 推播 %d 則", n)
+
+
 def loop():
     while True:
         try:
@@ -741,6 +774,10 @@ def loop():
                 data = build_tips()
                 if ACTIVE_HOURS[0] <= now().hour < ACTIVE_HOURS[1]:
                     maybe_push(data)
+                    try:
+                        maybe_ntfy(data)
+                    except Exception:
+                        log.error(traceback.format_exc())
         except Exception:
             log.error(traceback.format_exc())
         time.sleep(LOOP_EVERY - (time.time() % LOOP_EVERY))  # 對齊整 10 分鐘
