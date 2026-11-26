@@ -1,11 +1,29 @@
 {
-  "updated_at": "2026-11-27T00:05:13.820138+08:00",
+  "updated_at": "2026-11-27T01:05:15.504009+08:00",
   "topics": [
     {
-      "title": "網路流傳指涉王顯瑜爆料",
-      "description": "主播王顯瑜與沈伯洋遭流傳影像及爆料指涉，相關內容目前均缺乏證據支持",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E7%8E%8B%E9%A1%AF%E7%91%9C&serp_type=trends&trend_fbid=1841175447086371"
+      "title": "蔡康永發文暗諷政治後刪文",
+      "description": "蔡康永發文以收桌菜為喻被指暗諷政治，該篇貼文隨後已刪除",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E8%94%A1%E5%BA%B7%E6%B0%B8&serp_type=trends&trend_fbid=1116481751256290"
+    },
+    {
+      "title": "江啟臣赴台中旱溪夜市拜票",
+      "description": "國民黨台中市長候選人江啟臣走訪地方夜市，藝人李易同場現身旱溪夜市",
+      "count": "7 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B1%9F%E5%95%9F%E8%87%A3&serp_type=trends&trend_fbid=2060420154661333"
+    },
+    {
+      "title": "沈伯洋遭匿名影射性向",
+      "description": "代號藍色天空之匿名言論影射沈伯洋性向與私領域，被指缺乏證據抹黑",
+      "count": "30 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=3087532334923049"
+    },
+    {
+      "title": "賴瑞隆選前之夜更名隆洋之夜",
+      "description": "高雄市長候選人賴瑞隆將鳳山選前之夜更名為隆洋之夜，跨縣市串聯聲援台北市長候選人沈伯洋",
+      "count": "3 千則貼文",
+      "link": "https://www.threads.com/search?q=%E9%9A%86%E6%B4%8B%E4%B9%8B%E5%A4%9C&serp_type=trends&trend_fbid=1682152813542016"
     },
     {
       "title": "林智堅回新竹合體莊競程掃街",
@@ -14,10 +32,40 @@
       "link": "https://www.threads.com/search?q=%E6%9E%97%E6%99%BA%E5%A0%85&serp_type=trends&trend_fbid=1715878296723404"
     },
     {
-      "title": "呂捷赴台中造勢掃街",
-      "description": "歷史補教名師呂捷現身台中造勢助講並陪同車隊掃街，以風趣生動風格發表公開演說",
-      "count": "810 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%91%82%E6%8D%B7&serp_type=trends&trend_fbid=1152516630841272"
+      "title": "殷瑋登《新聞面對面》談市政",
+      "description": "殷瑋登上政論節目《新聞面對面》，針對路權與市政議題發表看法並與來賓交鋒",
+      "count": "979 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%AE%B7%E7%91%8B&serp_type=trends&trend_fbid=3691340181033113"
+    },
+    {
+      "title": "蘇清泉掃街拜票籲翻轉屏東",
+      "description": "國民黨屏東縣長候選人蘇清泉在選前持續掃街並發文，呼籲選民投票日踴躍出門",
+      "count": "547 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%98%87%E6%B8%85%E6%B3%89&serp_type=trends&trend_fbid=1707186607404128"
+    },
+    {
+      "title": "華人女發布西班牙獨旅邂逅影片",
+      "description": "網路創作者華人女分享在西班牙與男子搭訕結識並發生關係的過程，將其描繪為浪漫邂逅",
+      "count": "136 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%8F%AF%E4%BA%BA%E5%A5%B3&serp_type=trends&trend_fbid=1130046196447945"
+    },
+    {
+      "title": "謝龍介衝刺台南市長選舉",
+      "description": "台南市長選舉倒數，謝龍介陣營號召返鄉投票，其水庫光電與普發政見受到檢視",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E8%AC%9D%E9%BE%8D%E4%BB%8B&serp_type=trends&trend_fbid=1468370424682746"
+    },
+    {
+      "title": "麥當勞推台灣特色變色杯",
+      "description": "麥當勞推出四款結合地標文化的變色杯，採隨機供應吸引民眾交換湊齊全套",
+      "count": "101 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%BA%A5%E7%95%B6%E5%8B%9E%E8%AE%8A%E8%89%B2%E6%9D%AF&serp_type=trends&trend_fbid=1923286638698420"
+    },
+    {
+      "title": "沈玉琳稱統獨是假議題",
+      "description": "沈玉琳專訪黃國昌時表示統獨非台灣片面能決定，並分析憲政與媒體現況",
+      "count": "7 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B2%88%E7%8E%89%E7%90%B3&serp_type=trends&trend_fbid=2528720057653785"
     },
     {
       "title": "支持者呼籲返鄉力挺温世政",
@@ -26,70 +74,22 @@
       "link": "https://www.threads.com/search?q=%E6%B8%A9%E4%B8%96%E6%94%BF&serp_type=trends&trend_fbid=1145525874737764"
     },
     {
-      "title": "陳文茜質疑北市選前路權審查",
-      "description": "陳文茜轉發文章指台北市選前之夜路權標準不一，公開質疑蔣萬安市府未恪守行政中立",
-      "count": "655 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%99%B3%E6%96%87%E8%8C%9C&serp_type=trends&trend_fbid=1839795933835300"
-    },
-    {
-      "title": "沈伯洋蔡英文直播破25萬人",
-      "description": "台北市長候選人沈伯洋與前總統蔡英文合體線上直播，最高在線人數突破25萬人",
-      "count": "32 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=2504726883385224"
-    },
-    {
-      "title": "麥當勞推台灣特色變色杯",
-      "description": "麥當勞推出四款結合地標文化的變色杯，採隨機供應吸引民眾交換湊齊全套",
-      "count": "98 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%BA%A5%E7%95%B6%E5%8B%9E%E8%AE%8A%E8%89%B2%E6%9D%AF&serp_type=trends&trend_fbid=2209617156306184"
-    },
-    {
-      "title": "黃珊珊選前發文籲自由投票",
-      "description": "黃珊珊呼籲選民勿因恐懼或仇恨投票，應依據信念選出能讓台灣更好的人",
+      "title": "黃珊珊談投票籲做自由選民",
+      "description": "黃珊珊發文強調選民非藍非綠，呼籲大家勿因恐懼或仇恨投票，選出讓台灣更好的人",
       "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E9%BB%83%E7%8F%8A%E7%8F%8A&serp_type=trends&trend_fbid=1111259408406834"
+      "link": "https://www.threads.com/search?q=%E9%BB%83%E7%8F%8A%E7%8F%8A&serp_type=trends&trend_fbid=1172119201921666"
     },
     {
       "title": "萬家福推明治滿額送鑰匙圈",
       "description": "在萬家福購買明治商品滿299元即贈具錄音變聲功能的大聲公鑰匙圈",
-      "count": "800 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%90%AC%E5%AE%B6%E7%A6%8F&serp_type=trends&trend_fbid=1131232123160282"
+      "count": "812 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%90%AC%E5%AE%B6%E7%A6%8F&serp_type=trends&trend_fbid=1015422994286756"
     },
     {
-      "title": "江啟臣全力衝刺台中市長選戰",
-      "description": "國民黨台中市長候選人江啟臣選前持續車隊掃街與夜市拜票，全力動員爭取支持",
-      "count": "7 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B1%9F%E5%95%9F%E8%87%A3&serp_type=trends&trend_fbid=2572992833191449"
-    },
-    {
-      "title": "吳崢與葉元之節目言詞交鋒",
-      "description": "在《新聞面對面》中，吳崢詢問索羅斯全名，葉元之反問其祖母姓名展開互動",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%96%B0%E8%81%9E%E9%9D%A2%E5%B0%8D%E9%9D%A2&serp_type=trends&trend_fbid=1173540978484093"
-    },
-    {
-      "title": "孔曉振睽違9年訪台點燈",
-      "description": "韓國演員孔曉振相隔9年訪台，出席台北品牌聖誕點燈儀式並與劉冠廷合影",
-      "count": "452 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%AD%94%E6%9B%89%E6%8C%AF&serp_type=trends&trend_fbid=29211313255200702"
-    },
-    {
-      "title": "美光考慮暫停在台1.6兆投資",
-      "description": "謝金河透露美光因勞資僵局，美國董事會考慮暫停在台1.6兆元投資並關閉桃園廠",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E7%BE%8E%E5%85%89&serp_type=trends&trend_fbid=1176744261558488"
-    },
-    {
-      "title": "許信良中壢演講挺黃世杰",
-      "description": "民進黨前主席許信良於桃園中壢登台演講，公開力挺黃世杰並稱洋流是歷史洪流",
-      "count": "455 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%A8%B1%E4%BF%A1%E8%89%AF&serp_type=trends&trend_fbid=1614287110383790"
-    },
-    {
-      "title": "謝龍介辦選前之夜造勢",
-      "description": "國民黨台南市長候選人謝龍介舉行大遊行，黃國昌與陳之漢站台助講",
-      "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E8%AC%9D%E9%BE%8D%E4%BB%8B&serp_type=trends&trend_fbid=1613751783407404"
+      "title": "陳文茜質疑北市選前路權審查",
+      "description": "陳文茜轉發文章指台北市選前之夜路權標準不一，公開質疑蔣萬安市府未恪守行政中立",
+      "count": "677 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%99%B3%E6%96%87%E8%8C%9C&serp_type=trends&trend_fbid=1839795933835300"
     }
   ]
 }
