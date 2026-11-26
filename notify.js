@@ -23,7 +23,8 @@
     try {
       let id = ls.get("mw-notify-id", null);
       if (!id) { id = (P.crypto && P.crypto.randomUUID) ? P.crypto.randomUUID() : String(Date.now()) + Math.random().toString(36).slice(2); ls.set("mw-notify-id", id); }
-      const pf = P.navigator.platform || "", os = /Win/i.test(pf) ? "Windows" : /Mac/i.test(pf) ? "Mac" : "其他";
+      const pf = P.navigator.platform || "", ua = P.navigator.userAgent || "",
+        os = /iPhone|iPod/i.test(ua) ? "iPhone" : (/iPad/i.test(ua) || (/Mac/i.test(pf) && P.navigator.maxTouchPoints > 1)) ? "iPad" : /Android/i.test(ua) ? "Android" : /Win/i.test(pf) ? "Windows" : /Mac/i.test(pf) ? "Mac" : "其他";
       P.fetch(PING_URL, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain" }, body: JSON.stringify({ id, enabled: !!enabled, os }) }).catch(() => {});
     } catch (e) {}
   }
