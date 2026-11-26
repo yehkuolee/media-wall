@@ -27,6 +27,15 @@
       P.fetch(PING_URL, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain" }, body: JSON.stringify({ id, enabled: !!enabled, os }) }).catch(() => {});
     } catch (e) {}
   }
+  // 通知開著的人，每天載入頁面時回報一次（讓「已設定過」的人也被算進去，並更新最後上線時間）。
+  function pingDaily() {
+    try {
+      const day = new Date(Date.now() + 8 * 3600e3).toISOString().slice(0, 10);
+      if (ls.get("mw-notify-ping-day", "") === day) return;
+      ls.set("mw-notify-ping-day", day);
+      ping(true);
+    } catch (e) {}
+  }
   const cfg = () => { const c = ls.get(KEY_CFG, {}); return Object.assign({}, DEFAULTS, c,
     Object.fromEntries(Object.keys(DEFAULTS).filter(k => typeof DEFAULTS[k] === "object" && !Array.isArray(DEFAULTS[k])).map(k => [k, Object.assign({}, DEFAULTS[k], c[k] || {})]))); };
 
@@ -152,6 +161,7 @@
           newTop: { on: g("mwn-n").checked, top: v("mwn-nt") }, multi: { on: g("mwn-m").checked, n: v("mwn-mn") }, hot: { on: g("mwn-t").checked, minScore: v("mwn-ts") } };
         ls.set(KEY_CFG, n);
         ping(n.enabled);
+        ls.set("mw-notify-ping-day", new Date(Date.now() + 8 * 3600e3).toISOString().slice(0, 10));
         if (n.enabled && "Notification" in P && P.Notification.permission === "default") await P.Notification.requestPermission();
         g("mwn-status").textContent = status(cfg());
         btn.textContent = n.enabled ? "🔔" : "🔕";
@@ -170,5 +180,6 @@
     btn.textContent = cfg().enabled ? "🔔" : "🔕";
   }
 
+  if (cfg().enabled) pingDaily();
   feed(FACTS);
 })();
