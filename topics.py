@@ -138,7 +138,7 @@ def score_topic(members: list[dict], surge_links: dict) -> dict:
         score += 2 if push >= 50 else 1
         why.append("PTT " + ("爆" if push >= 100 else f"{push} 推"))
     if any(m["kind"] == "latest" for m in members) and not hot:
-        why.append("中央社/三立即時")
+        why.append("中央社即時")
 
     order = {"news": 0, "latest": 1, "ptt": 2, "threads": 3, "google": 4}
     rep = min(members, key=lambda m: (order[m["kind"]], m["rank"]))
