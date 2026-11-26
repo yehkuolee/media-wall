@@ -134,8 +134,12 @@
       g("mwn-test").onclick = async () => {
         if (!("Notification" in P)) return alert("這個瀏覽器不支援通知");
         if (P.Notification.permission === "default") await P.Notification.requestPermission();
-        if (P.Notification.permission === "granted") fire({ id: "test" + Date.now(), title: "🔔 測試通知", body: "收到這則代表通知功能正常", link: "" });
-        else alert("通知被封鎖了，請到瀏覽器網址列的鎖頭圖示開啟");
+        const out = g("mwn-status");
+        if (P.Notification.permission !== "granted") { out.textContent = "通知被封鎖了，請到瀏覽器網址列的鎖頭圖示開啟"; return; }
+        try {
+          fire({ id: "test" + Date.now(), title: "🔔 測試通知", body: "收到這則代表通知功能正常", link: "" });
+          out.textContent = "已送出測試通知。如果沒看到，請檢查 Mac「系統設定 → 通知 → Google Chrome」和「專注模式」";
+        } catch (e) { out.textContent = "發送失敗：" + e.message; }
       };
     }
     btn.textContent = cfg().enabled ? "🔔" : "🔕";
