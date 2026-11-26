@@ -16,6 +16,17 @@
     get(k, d) { try { const v = P.localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
     set(k, v) { try { P.localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
   };
+  // 匿名計數：儲存設定時回報「隨機編號、開關、作業系統」（不含個人資料）。網址留空就不送。
+  const PING_URL = "https://script.google.com/macros/s/AKfycbxtaKkcTcTMC6SESoMNdC4s4jR0NtVE-8XgW-uNlSivroB6joiUoE4RUUbig13XegQm/exec";
+  function ping(enabled) {
+    if (!PING_URL) return;
+    try {
+      let id = ls.get("mw-notify-id", null);
+      if (!id) { id = (P.crypto && P.crypto.randomUUID) ? P.crypto.randomUUID() : String(Date.now()) + Math.random().toString(36).slice(2); ls.set("mw-notify-id", id); }
+      const pf = P.navigator.platform || "", os = /Win/i.test(pf) ? "Windows" : /Mac/i.test(pf) ? "Mac" : "其他";
+      P.fetch(PING_URL, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain" }, body: JSON.stringify({ id, enabled: !!enabled, os }) }).catch(() => {});
+    } catch (e) {}
+  }
   const cfg = () => { const c = ls.get(KEY_CFG, {}); return Object.assign({}, DEFAULTS, c,
     Object.fromEntries(Object.keys(DEFAULTS).filter(k => typeof DEFAULTS[k] === "object" && !Array.isArray(DEFAULTS[k])).map(k => [k, Object.assign({}, DEFAULTS[k], c[k] || {})]))); };
 
@@ -140,6 +151,7 @@
           jump: { on: g("mwn-j").checked, within: v("mwn-jw"), minUp: v("mwn-ju") }, hotNo: { on: g("mwn-h").checked, minScore: v("mwn-hs") },
           newTop: { on: g("mwn-n").checked, top: v("mwn-nt") }, multi: { on: g("mwn-m").checked, n: v("mwn-mn") }, hot: { on: g("mwn-t").checked, minScore: v("mwn-ts") } };
         ls.set(KEY_CFG, n);
+        ping(n.enabled);
         if (n.enabled && "Notification" in P && P.Notification.permission === "default") await P.Notification.requestPermission();
         g("mwn-status").textContent = status(cfg());
         btn.textContent = n.enabled ? "🔔" : "🔕";
