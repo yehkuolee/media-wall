@@ -1,59 +1,65 @@
 {
-  "updated_at": "2026-11-27T04:05:13.531469+08:00",
+  "updated_at": "2026-11-27T05:05:14.170057+08:00",
   "topics": [
     {
-      "title": "北市路權申請0.35秒完成登記",
-      "description": "台北市集會路權系統出現開放後0.35秒即完成收件，涉及程式自動化或系統漏洞等技術推測",
+      "title": "BTS演唱會應援物開放免費領取",
+      "description": "防彈少年團演唱會結束後，有粉絲將現場剩餘的應援物及帆布袋開放線上登記領取",
+      "count": "7 萬則貼文",
+      "link": "https://www.threads.com/search?q=BTS&serp_type=trends&trend_fbid=2210557126510535"
+    },
+    {
+      "title": "北市路權申請現0.35秒紀錄",
+      "description": "台北市路權系統出現0.35秒登記紀錄，多步驟表單被指難以純靠手動瞬間送出",
       "count": "2 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E8%B7%AF%E6%AC%8A%E7%94%B3%E8%AB%8B&serp_type=trends&trend_fbid=2072020276788136"
+      "link": "https://www.threads.com/search?q=%E8%B7%AF%E6%AC%8A%E7%94%B3%E8%AB%8B&serp_type=trends&trend_fbid=29272247669109521"
     },
     {
-      "title": "《盧丹的惡魔》4K版在台上映",
-      "description": "導演肯・羅素經典作《盧丹的惡魔》4K版在台上映，戲院推出限量特典海報",
-      "count": "81 則貼文",
-      "link": "https://www.threads.com/search?q=%E7%9B%A7%E4%B8%B9%E7%9A%84%E6%83%A1%E9%AD%94&serp_type=trends&trend_fbid=2370511657059560"
-    },
-    {
-      "title": "沈伯洋直播合體蔡英文吸27萬人",
-      "description": "民進黨台北市長候選人沈伯洋取消實體造勢改辦線上直播，與蔡英文對談創下27萬人同時在線",
-      "count": "26 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1153415347059926"
-    },
-    {
-      "title": "塔利班禁官方文件登記女性姓名",
-      "description": "塔利班要求官方文件與醫療病歷不得登記女性本名，改以泛稱代替",
-      "count": "85 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%A1%94%E5%88%A9%E7%8F%AD&serp_type=trends&trend_fbid=1623027428977948"
-    },
-    {
-      "title": "曾聖凱控不雅影像深偽提告",
-      "description": "竹北市長候選人曾聖凱指流傳影像為AI深偽並提告，檢警介入搜索約談",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%9B%BE%E8%81%96%E5%87%B1&serp_type=trends&trend_fbid=1576863720914343"
-    },
-    {
-      "title": "蔡康永發文談吃屎後刪文",
-      "description": "蔡康永發文提及收桌與吃屎等字句，隨後將該篇貼文刪除",
+      "title": "支持者選前為候選人何欣純拉票",
+      "description": "地方選舉投票日前夕，支持者分享自製應援物並以「台中換欣」口號為候選人何欣純催票",
       "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E8%94%A1%E5%BA%B7%E6%B0%B8&serp_type=trends&trend_fbid=1182703610900342"
+      "link": "https://www.threads.com/search?q=%E4%BD%95%E6%AC%A3%E7%B4%94&serp_type=trends&trend_fbid=1475499867892131"
     },
     {
-      "title": "主播王顯瑜遭指控涉權勢剝削",
-      "description": "流傳名為藍色天空1010的私密影像，指控王顯瑜涉及私人關係與權勢剝削糾紛",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E7%8E%8B%E9%A1%AF%E7%91%9C&serp_type=trends&trend_fbid=1681835143614870"
+      "title": "曾聖凱澄清私密影像為AI偽造",
+      "description": "竹北市長候選人曾聖凱指流傳影像為AI深度偽造，已報警提告追究抹黑責任",
+      "count": "2 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%9B%BE%E8%81%96%E5%87%B1&serp_type=trends&trend_fbid=2699089853854858"
     },
     {
-      "title": "徐巧芯等人搶下選前路權",
-      "description": "徐巧芯與羅智強取得凱道等路權，沈伯洋陣營隨後宣布取消選前之夜大型造勢活動",
-      "count": "2 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E9%81%B8%E5%89%8D%E4%B9%8B%E5%A4%9C%E8%B7%AF%E6%AC%8A&serp_type=trends&trend_fbid=1147843101297145"
+      "title": "民眾詢問沈伯洋總部開票活動",
+      "description": "面對11月28日開票之夜，許多人詢問沈伯洋競選總部規劃並尋找觀看場所",
+      "count": "26 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1164626466011692"
     },
     {
-      "title": "《冰之城牆》揭主角情感進展",
-      "description": "動畫《冰之城牆》最新集描繪主角情感進展，多幕名場面令觀眾深感甜蜜",
-      "count": "349 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%86%B0%E4%B9%8B%E5%9F%8E%E7%89%86&serp_type=trends&trend_fbid=1445932157209146"
+      "title": "羅智強承認借下多處造勢路權",
+      "description": "羅智強表示多處選前造勢路權由蔣萬安團隊申請借下，並說明程式送件搶佔疑慮",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E7%BE%85%E6%99%BA%E5%BC%B7&serp_type=trends&trend_fbid=4691336777818545"
+    },
+    {
+      "title": "中國隊12強資格賽擊敗捷克",
+      "description": "在世界12強棒球資格賽中，中國隊靠著索旭迪5局無失分以6比1擊敗捷克隊奪首勝",
+      "count": "306 則貼文",
+      "link": "https://www.threads.com/search?q=12%E5%BC%B7%E8%B3%87%E6%A0%BC%E8%B3%BD&serp_type=trends&trend_fbid=2405383456873974"
+    },
+    {
+      "title": "陳文茜質疑蔣市府行政中立",
+      "description": "陳文茜轉發程詩郁探討路權申請的文章，向台北市長蔣萬安市府團隊提出行政中立詢問",
+      "count": "777 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%99%B3%E6%96%87%E8%8C%9C&serp_type=trends&trend_fbid=1614598113305756"
+    },
+    {
+      "title": "呂捷登台助選演說",
+      "description": "歷史名師呂捷於選戰期間登台助選，公開向台中選民發表系列演講",
+      "count": "773 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%91%82%E6%8D%B7&serp_type=trends&trend_fbid=1838073044095456"
+    },
+    {
+      "title": "拿坡里推199元披薩烤雞優惠",
+      "description": "拿坡里小披薩加翅腿優惠完售，官方改推外帶小披薩搭12入烤雞翅199元特價",
+      "count": "427 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%8B%BF%E5%9D%A1%E9%87%8C&serp_type=trends&trend_fbid=2621574128351791"
     },
     {
       "title": "江啟臣掃街衝刺台中市長選情",
@@ -62,34 +68,28 @@
       "link": "https://www.threads.com/search?q=%E6%B1%9F%E5%95%9F%E8%87%A3&serp_type=trends&trend_fbid=1841343443739592"
     },
     {
-      "title": "陳文茜質疑北市選前路權審查",
-      "description": "陳文茜轉發文章指台北市選前之夜路權標準不一，公開質疑蔣萬安市府未恪守行政中立",
-      "count": "760 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%99%B3%E6%96%87%E8%8C%9C&serp_type=trends&trend_fbid=1608243497739823"
-    },
-    {
-      "title": "葉元之與吳崢節目同台交鋒",
-      "description": "國民黨立委葉元之在《新聞面對面》與吳崢圍繞索羅斯姓名展開言詞互動",
-      "count": "4 千則貼文",
-      "link": "https://www.threads.com/search?q=%E8%91%89%E5%85%83%E4%B9%8B&serp_type=trends&trend_fbid=1766945691049482"
-    },
-    {
-      "title": "拿坡里推199元限時優惠",
-      "description": "拿坡里小披薩配炸雞特價199元熱銷完售，官方調整方案改推烤雞翅接力開賣",
-      "count": "418 則貼文",
-      "link": "https://www.threads.com/search?q=%E6%8B%BF%E5%9D%A1%E9%87%8C&serp_type=trends&trend_fbid=1941141187269577"
-    },
-    {
       "title": "《復仇者聯盟》釋出終極預告",
       "description": "漫威電影《復仇者聯盟：末日崛起》釋出終極預告，台灣宣布12月16日上映並開跑預售",
       "count": "1 千則貼文",
       "link": "https://www.threads.com/search?q=%E5%BE%A9%E4%BB%87%E8%80%85%E8%81%AF%E7%9B%9F&serp_type=trends&trend_fbid=4234003600232202"
     },
     {
-      "title": "彰化縣長選舉將於28日投票",
-      "description": "陳素月、魏平政與邱建富等候選人展開宣傳衝刺，各方呼籲彰化選民返鄉投票",
-      "count": "126 則貼文",
-      "link": "https://www.threads.com/search?q=%E5%BD%B0%E5%8C%96%E7%B8%A3%E9%95%B7%E9%81%B8%E8%88%89&serp_type=trends&trend_fbid=1093935447012573"
+      "title": "蔡康永發吃屎言論後刪除",
+      "description": "蔡康永發表提及「吃屎」文字後刪除，國民黨公開表達強烈反對與不滿",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E8%94%A1%E5%BA%B7%E6%B0%B8&serp_type=trends&trend_fbid=3308989392823423"
+    },
+    {
+      "title": "王顯瑜遭匿名指控感情糾紛",
+      "description": "匿名帳號發布私密影像與關係圖，指控主播王顯瑜涉及感情糾紛與政治人際網絡",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E7%8E%8B%E9%A1%AF%E7%91%9C&serp_type=trends&trend_fbid=2629954567506921"
+    },
+    {
+      "title": "《盧丹的惡魔》4K版在台上映",
+      "description": "導演肯・羅素經典作《盧丹的惡魔》4K版在台上映，戲院推出限量特典海報",
+      "count": "81 則貼文",
+      "link": "https://www.threads.com/search?q=%E7%9B%A7%E4%B8%B9%E7%9A%84%E6%83%A1%E9%AD%94&serp_type=trends&trend_fbid=2370511657059560"
     }
   ]
 }
