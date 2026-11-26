@@ -88,9 +88,9 @@
     P.__mwNotifyUI = true;
     const st = D.createElement("style");
     st.textContent = `
-      #mwn-btn{position:fixed;right:18px;bottom:18px;z-index:99999;width:46px;height:46px;border-radius:50%;border:none;
+      #mwn-btn{position:fixed;left:18px;bottom:18px;z-index:99999;width:46px;height:46px;border-radius:50%;border:none;
         background:#e94c15;color:#fff;font-size:20px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.3)}
-      #mwn-panel{position:fixed;right:18px;bottom:74px;z-index:99999;width:320px;max-height:78vh;overflow:auto;background:#fff;color:#222;
+      #mwn-panel{position:fixed;left:18px;bottom:74px;z-index:99999;width:320px;max-height:78vh;overflow:auto;background:#fff;color:#222;
         border:1px solid #ddd;border-top:4px solid #e94c15;padding:14px;font:13px/1.5 "PingFang TC","Microsoft JhengHei",Arial,sans-serif;display:none;box-shadow:0 4px 16px rgba(0,0,0,.25)}
       #mwn-panel h3{margin:0 0 6px;font-size:15px} #mwn-panel label{display:flex;align-items:center;gap:6px;margin:6px 0}
       #mwn-panel input[type=number]{width:54px;padding:2px 4px} #mwn-panel .sub{color:#888;font-size:12px;margin:2px 0 8px}
