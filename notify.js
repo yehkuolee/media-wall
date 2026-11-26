@@ -110,7 +110,7 @@
     function render() {
       const c = cfg();
       pn.innerHTML = `
-        <h3>🔔 通知設定</h3>
+        <div style="display:flex;justify-content:space-between;align-items:center"><h3>🔔 通知設定</h3><button id="mwn-x" title="關閉" aria-label="關閉通知設定" style="border:none;background:transparent;color:inherit;font-size:20px;line-height:1;cursor:pointer;padding:2px 6px">✕</button></div>
         <div class="sub" id="mwn-status">${status(c)}</div>
         <label><input type="checkbox" id="mwn-en" ${c.enabled ? "checked" : ""}> 開啟通知</label>
         <hr>
@@ -127,12 +127,14 @@
         <label>每天最多 ${num("mwn-cap", c.dailyCap, 1, 200)} 則</label>
         <label><input type="checkbox" id="mwn-q" ${c.quietOn ? "checked" : ""}> 安靜時段 ${num("mwn-qf", c.quietFrom, 0, 23)} 點到 ${num("mwn-qt", c.quietTo, 0, 23)} 點不通知</label>
         <hr>
-        <button class="act" id="mwn-save">儲存</button><button class="sec" id="mwn-test">測試通知</button>
+        <button class="act" id="mwn-save">儲存</button><button class="sec" id="mwn-test">測試通知</button><button class="sec" id="mwn-close" style="margin-left:6px">關閉</button>
         <div class="sub" style="margin-top:8px">規則全由程式比對，不使用 AI。設定存在這台裝置的瀏覽器。需要保持這個頁面或 App 在背景開著才收得到。</div>`;
       const g = id => D.getElementById(id), v = id => Number(g(id).value);
       const setAll = v => D.querySelectorAll(".mwn-cat").forEach(x => { x.checked = v; });
       g("mwn-all").onclick = e => { e.preventDefault(); setAll(true); };
       g("mwn-none").onclick = e => { e.preventDefault(); setAll(false); };
+      const closePanel = () => { pn.style.display = "none"; };
+      g("mwn-x").onclick = closePanel; g("mwn-close").onclick = closePanel;
       g("mwn-save").onclick = async () => {
         const n = { cats: [...D.querySelectorAll(".mwn-cat")].filter(x => x.checked).map(x => x.value), enabled: g("mwn-en").checked, dailyCap: v("mwn-cap"), quietOn: g("mwn-q").checked, quietFrom: v("mwn-qf"), quietTo: v("mwn-qt"),
           jump: { on: g("mwn-j").checked, within: v("mwn-jw"), minUp: v("mwn-ju") }, hotNo: { on: g("mwn-h").checked, minScore: v("mwn-hs") },
