@@ -27,13 +27,13 @@
       P.fetch(PING_URL, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain" }, body: JSON.stringify({ id, enabled: !!enabled, os }) }).catch(() => {});
     } catch (e) {}
   }
-  // 通知開著的人，每天載入頁面時回報一次（讓「已設定過」的人也被算進去，並更新最後上線時間）。
+  // 每天載入頁面時回報一次（不論通知開或關），讓所有使用者都被登記，並更新最後上線時間。
   function pingDaily() {
     try {
       const day = new Date(Date.now() + 8 * 3600e3).toISOString().slice(0, 10);
       if (ls.get("mw-notify-ping-day", "") === day) return;
       ls.set("mw-notify-ping-day", day);
-      ping(true);
+      ping(cfg().enabled);
     } catch (e) {}
   }
   const cfg = () => { const c = ls.get(KEY_CFG, {}); return Object.assign({}, DEFAULTS, c,
@@ -180,6 +180,6 @@
     btn.textContent = cfg().enabled ? "🔔" : "🔕";
   }
 
-  if (cfg().enabled) pingDaily();
+  pingDaily();
   feed(FACTS);
 })();
