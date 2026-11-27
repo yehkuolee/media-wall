@@ -1532,19 +1532,6 @@ def main():
                 <div class="src-bar" style="width:{pct}%"></div>
             </div>""", unsafe_allow_html=True)
 
-    # ── 診斷：網址加 ?dbg=1 → 只顯示給自己看「網站讀到的連線標頭」和地點判斷（不存、不外送）──
-    try:
-        if st.query_params.get("dbg") == "1":
-            hh = st.context.headers
-            st.info("🔧 診斷（只有你看得到）  \n"
-                    f"X-Forwarded-For：`{hh.get('X-Forwarded-For', '（沒有）')}`  \n"
-                    f"X-Real-Ip：`{hh.get('X-Real-Ip', '（沒有）')}`  \n"
-                    f"Forwarded：`{hh.get('Forwarded', '（沒有）')}`  \n"
-                    f"OFFICE_IPS 有設定：{'有' if (os.environ.get('OFFICE_IPS') or st.secrets.get('OFFICE_IPS', '')) else '沒有'}  \n"
-                    f"判斷結果：**{visitor_location()}**")
-    except Exception as e:
-        st.warning(f"診斷失敗：{e}")
-
     # ── 通知規則（純程式比對，不用 AI）：整理事實清單交給瀏覽器端比對、發通知 ──
     try:
         import notify
