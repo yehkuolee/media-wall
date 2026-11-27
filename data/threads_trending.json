@@ -1,29 +1,53 @@
 {
-  "updated_at": "2026-11-27T18:05:17.515752+08:00",
+  "updated_at": "2026-11-27T19:05:17.227706+08:00",
   "topics": [
     {
       "title": "蔣萬安車掃提早近4小時結束",
       "description": "台北市長蔣萬安進行全市車掃衝刺選情，車隊提早近4小時抵達終點並結束行程",
-      "count": "13 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=2239250920139840"
+      "count": "12 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=2083758415767253"
     },
     {
-      "title": "沈伯洋競總搭舞台籌備開票",
-      "description": "沈伯洋取消實體選前之夜後在競總前搭設舞台，全力籌備開票活動並呼籲民眾投票",
-      "count": "22 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1880215469840629"
+      "title": "賈永婕選前呼籲出門投票",
+      "description": "台北101董事長賈永婕發文呼籲民眾踴躍投票，並邀請收看沈伯洋直播",
+      "count": "252 則貼文",
+      "link": "https://www.threads.com/search?q=%E8%B3%88%E6%B0%B8%E5%A9%95&serp_type=trends&trend_fbid=1037604059369181"
     },
     {
-      "title": "陳凝觀節目設定被指重收視",
-      "description": "陳凝觀政論節目聚焦沈伯洋而非蔣萬安，評論走向被指多出於收視率與流量考量",
-      "count": "910 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%99%B3%E5%87%9D%E8%A7%80&serp_type=trends&trend_fbid=1828302855059637"
+      "title": "左營高鐵站湧現返鄉投票人潮",
+      "description": "投票日前夕高雄左營高鐵站擠滿旅客，捷運亦加開深夜班車協助疏運",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%B7%A6%E7%87%9F%E9%AB%98%E9%90%B5&serp_type=trends&trend_fbid=2291968318042495"
+    },
+    {
+      "title": "沈玉琳專訪黃國昌談統獨",
+      "description": "沈玉琳在訪談節目專訪民眾黨主席黃國昌談及統獨議題，影片迅速突破百萬次觀看",
+      "count": "8 千則貼文",
+      "link": "https://www.threads.com/search?q=%E9%BB%83%E5%9C%8B%E6%98%8C&serp_type=trends&trend_fbid=4731247280493698"
+    },
+    {
+      "title": "陳亭妃支持者投票前夕催票",
+      "description": "投票日前夕支持者喊出「妃起來」口號，呼籲選民返鄉投票全力支持陳亭妃",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E9%99%B3%E4%BA%AD%E5%A6%83&serp_type=trends&trend_fbid=1498326740024293"
     },
     {
       "title": "今年選舉疏運運能創新高",
       "description": "交通部指出選舉疏運運能超越歷屆，呼籲尚未購票的返鄉民眾可選擇臺鐵或客運",
-      "count": "302 則貼文",
+      "count": "323 則貼文",
       "link": "https://www.threads.com/search?q=%E9%81%B8%E8%88%89%E7%96%8F%E9%81%8B&serp_type=trends&trend_fbid=2608114936366961"
+    },
+    {
+      "title": "沈伯洋車隊掃街抵大安森林公園",
+      "description": "沈伯洋在台北進行選前車隊掃街，終點站大安森林公園聚集大批支持者揮旗迎接",
+      "count": "22 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E6%B2%88%E4%BC%AF%E6%B4%8B&serp_type=trends&trend_fbid=1461005718871330"
+    },
+    {
+      "title": "吳崢節目問葉元之索羅斯全名",
+      "description": "吳崢在《新聞面對面》與葉元之談及索羅斯，反問對方全名並回答喬治索羅斯",
+      "count": "5 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%90%B3%E5%B4%A2&serp_type=trends&trend_fbid=2368617643879136"
     },
     {
       "title": "李四川舉行選前之夜造勢",
@@ -32,64 +56,40 @@
       "link": "https://www.threads.com/search?q=%E6%9D%8E%E5%9B%9B%E5%B7%9D&serp_type=trends&trend_fbid=1454168456870256"
     },
     {
+      "title": "曾聖凱辦選前之夜造勢",
+      "description": "民進黨竹北市長候選人曾聖凱攜手鄭朝方舉行選前之夜，衝刺選戰爭取支持",
+      "count": "3 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%9B%BE%E8%81%96%E5%87%B1&serp_type=trends&trend_fbid=1133144516138383"
+    },
+    {
+      "title": "沈伯洋團隊推出政策島平台",
+      "description": "為將市政願景視覺化呈現，沈伯洋競選團隊推出「HEART 政策島」互動平台",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%94%BF%E7%AD%96%E5%B3%B6&serp_type=trends&trend_fbid=3123065901364444"
+    },
+    {
+      "title": "陳凝觀節目設定被指重收視",
+      "description": "陳凝觀政論節目聚焦沈伯洋而非蔣萬安，評論走向被指多出於收視率與流量考量",
+      "count": "960 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%99%B3%E5%87%9D%E8%A7%80&serp_type=trends&trend_fbid=2376246842915804"
+    },
+    {
+      "title": "烏山頭水庫光電成選戰焦點",
+      "description": "謝龍介承諾一年內拆除烏山頭水庫光電板，陳亭妃主張到期不續約並加強水質監督",
+      "count": "3 千則貼文",
+      "link": "https://www.threads.com/search?q=%E7%83%8F%E5%B1%B1%E9%A0%AD%E6%B0%B4%E5%BA%AB%E5%85%89%E9%9B%BB&serp_type=trends&trend_fbid=1617962723704803"
+    },
+    {
       "title": "林杏兒駁斥租借路權並提告",
       "description": "林杏兒駁斥申請北平東路路權並提告捍衛清白，蔣萬安也表示團隊無人租借",
-      "count": "390 則貼文",
+      "count": "350 則貼文",
       "link": "https://www.threads.com/search?q=%E6%9E%97%E6%9D%8F%E5%85%92&serp_type=trends&trend_fbid=1873921160462430"
     },
     {
-      "title": "高鐵北部三站實施自由座管制",
-      "description": "因應返鄉投票人潮，台灣高鐵於南港、台北及板橋站實施自由座分流並加開班次疏運",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E7%81%A3%E9%AB%98%E9%90%B5&serp_type=trends&trend_fbid=1503540721644054"
-    },
-    {
-      "title": "HYBE年曆快閃店登陸台灣",
-      "description": "HYBE藝人年曆快閃店12月登場，於高雄夢時代與台北新光三越設展販售周邊",
-      "count": "113 則貼文",
-      "link": "https://www.threads.com/search?q=HYBE%E5%BF%AB%E9%96%83%E5%BA%97&serp_type=trends&trend_fbid=1498046219162909"
-    },
-    {
-      "title": "金智媛登韓雜誌數位封面",
-      "description": "美妝品牌THE WHOO攜手金智媛拍攝畫報，以居家慵懶造型展現成熟優雅魅力",
-      "count": "286 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%87%91%E6%99%BA%E5%AA%9B&serp_type=trends&trend_fbid=30339524168968656"
-    },
-    {
-      "title": "葉元之與吳崢節目交鋒",
-      "description": "葉元之與吳崢在政論節目談及沈伯洋與索羅斯，隨後發文分享諧音名單調侃",
-      "count": "4 千則貼文",
-      "link": "https://www.threads.com/search?q=%E8%91%89%E5%85%83%E4%B9%8B&serp_type=trends&trend_fbid=1127650070070153"
-    },
-    {
-      "title": "國安基金傳下週退場或護盤",
-      "description": "面對外資賣超台股，市場傳國安基金下週退場或最後護盤，相關動向連結選舉",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%9C%8B%E5%AE%89%E5%9F%BA%E9%87%91&serp_type=trends&trend_fbid=1197433979502173"
-    },
-    {
-      "title": "陳世軒選前車隊掃街拜票",
-      "description": "新北市議員候選人陳世軒於投票前夕展開車隊掃街，支持者肯定其服務並呼籲投票",
-      "count": "720 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%99%B3%E4%B8%96%E8%BB%92&serp_type=trends&trend_fbid=1170080769292717"
-    },
-    {
-      "title": "韓品牌推車力巨人釘書機",
-      "description": "韓國HANILDI推出《進擊的巨人》車力巨人造型釘書機，預計12月中旬起出貨",
-      "count": "83 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%BB%8A%E5%8A%9B%E5%B7%A8%E4%BA%BA%E9%87%98%E6%9B%B8%E6%A9%9F&serp_type=trends&trend_fbid=1457914276490711"
-    },
-    {
-      "title": "左營高鐵站湧現返鄉人潮",
-      "description": "投票日前夕左營高鐵站擠滿搭車旅客，高捷加開深夜接駁列車協助疏運",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E5%B7%A6%E7%87%9F%E9%AB%98%E9%90%B5&serp_type=trends&trend_fbid=1691174692601639"
-    },
-    {
-      "title": "蔡康永選前發文比喻吃屎",
-      "description": "蔡康永在選前以吃屎為比喻發表觀點後刪文，陳鴻發文指其有公主病",
-      "count": "8 千則貼文",
-      "link": "https://www.threads.com/search?q=%E8%94%A1%E5%BA%B7%E6%B0%B8&serp_type=trends&trend_fbid=1086774024375276"
+      "title": "九合一選前選民發祭品文集氣",
+      "description": "九合一選前選民承諾若支持的候選人當選將提供免費諮詢、公益捐款或定居任教",
+      "count": "6 千則貼文",
+      "link": "https://www.threads.com/search?q=%E7%A5%AD%E5%93%81%E6%96%87&serp_type=trends&trend_fbid=2427744970966365"
     }
   ]
 }
