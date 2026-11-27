@@ -19,7 +19,7 @@
   // 匿名計數：儲存設定時回報「隨機編號、開關、作業系統」（不含個人資料）。網址留空就不送。
   const PING_URL = "https://script.google.com/macros/s/AKfycbxtaKkcTcTMC6SESoMNdC4s4jR0NtVE-8XgW-uNlSivroB6joiUoE4RUUbig13XegQm/exec";
   function ping(enabled) {
-    if (!PING_URL) return;
+    if (!PING_URL || P.navigator.webdriver || /HeadlessChrome/i.test(P.navigator.userAgent)) return;  // 自動化瀏覽器（keepalive、GitHub 排程、測試）不是真人，不登記
     try {
       let id = ls.get("mw-notify-id", null);
       if (!id) { id = (P.crypto && P.crypto.randomUUID) ? P.crypto.randomUUID() : String(Date.now()) + Math.random().toString(36).slice(2); ls.set("mw-notify-id", id); }
