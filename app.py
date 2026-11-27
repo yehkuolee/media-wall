@@ -933,6 +933,7 @@ def et_tag_html(et) -> str:
 
 # ── 瀏覽暴衝偵測 ───────────────────────────────────────────────────
 # 各家熱門榜沒有公開瀏覽數，改用「名次變化」推測。每 9 分鐘以上記一次各家熱門榜名次，符合任一項就算暴衝：
+# 停滯移除：列為暴衝後連續 2 次重整名次都沒往前就移除；
 # 空降：上一輪不在榜、這輪直接進前 5；急升：約 30 分鐘內升 5 名以上且進前 10；
 # 多家同時上榜：同一話題同時在 3 家以上熱門榜前 10（標題用字相近的串成一群）。
 # 紀錄放記憶體：防休眠程式每 10 分鐘開一次網站會一直累積；重新部署會歸零，約 30 分鐘後才有「急升」。
@@ -942,12 +943,13 @@ SURGE_KEEP = 7200
 SURGE_NEW_TOP = 5
 SURGE_JUMP, SURGE_JUMP_TOP = 5, 10
 SURGE_MULTI = 3
+SURGE_STALE = 2   # 列為暴衝後，接下來連續 2 次重整名次都沒有往前，就從暴衝榜移除
 
 
 @st.cache_resource
 def _rank_log() -> dict:
     """所有訪客共用：[(時間, {媒體: [新聞，依名次]})]"""
-    return {"snaps": []}
+    return {"snaps": [], "track": {}}
 
 
 def record_ranks(all_news: list):
@@ -1018,6 +1020,29 @@ def detect_surges() -> list[dict]:
             src, i, n, _ = min(members, key=lambda m: m[1])
             add(n, f"{len(srcs)} 家熱門榜同時上榜（{'、'.join(srcs)}）", i, {"type": "multi", "n": len(srcs), "srcs": srcs})
 
+    # 停滯移除：列為暴衝後，接下來 SURGE_STALE 次重整名次都沒有往前（持平或後退），就不再列為暴衝
+    track = _rank_log().setdefault("track", {})
+    here = {}
+    for lst in cur.values():
+        for i, x in enumerate(lst, 1):
+            here[_nkey(x)] = min(here.get(_nkey(x), 99), i)
+    for k in [k for k in track if k not in here]:
+        del track[k]  # 已掉出所有熱門榜，之後再上榜視為新的一輪
+    for k, f in list(found.items()):
+        rk = here.get(k, f["best"])
+        tr = track.get(k)
+        if tr is None:
+            track[k] = {"rank": rk, "stale": 0, "t": now_t, "dead": False}
+        elif tr["t"] < now_t:  # 新的一次重整才算一次
+            tr["t"] = now_t
+            if rk < tr["rank"]:
+                tr["rank"], tr["stale"] = rk, 0
+            else:
+                tr["stale"] += 1
+                if tr["stale"] >= SURGE_STALE:
+                    tr["dead"] = True
+        if track[k]["dead"]:
+            del found[k]
     return sorted(found.values(), key=lambda f: (-len(f["reasons"]), f["best"]))[:8]
 
 
