@@ -1233,6 +1233,21 @@ def _viewer_bots() -> dict:
     return {}
 
 
+def visitor_location() -> str:
+    """訪客在「辦公室」還是「外面」：伺服器讀連線 IP，跟 OFFICE_IPS 比對，**只回傳結果，IP 不存、不外送**。
+    OFFICE_IPS 放 Streamlit Secrets（或環境變數），逗號分隔；沒設或讀不到 IP 就回「未知」。"""
+    try:
+        h = st.context.headers
+        ip = ((h.get("X-Forwarded-For", "") or h.get("X-Real-Ip", "")).split(",")[0]).strip()
+        raw = os.environ.get("OFFICE_IPS") or st.secrets.get("OFFICE_IPS", "")
+        office = {x.strip() for x in str(raw).split(",") if x.strip()}
+        if not ip or not office:
+            return "未知"
+        return "辦公室" if ip in office else "外面"
+    except Exception:
+        return "未知"
+
+
 def online_count():
     try:
         from streamlit.runtime import get_instance
@@ -1525,7 +1540,7 @@ def main():
             et_map = ettoday_recheck(facts_topics, ettoday_matches([{"title": t["title"], "link": t["link"]} for t in facts_topics]))
             for t in facts_topics:
                 t["et"] = et_map.get(t["title"])
-        components.html(notify.script_html(notify.build_facts(detect_surges(), facts_topics, category_topics())), height=0)
+        components.html(notify.script_html(notify.build_facts(detect_surges(), facts_topics, category_topics()), visitor_location()), height=0)
     except Exception as e:  # 通知壞了不能拖垮整個網站
         print("notify error:", e)
 

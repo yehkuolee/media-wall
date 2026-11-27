@@ -52,11 +52,11 @@ def build_facts(surges: list, topics: list, all_topics: list | None = None) -> d
     }
 
 
-def script_html(facts: dict) -> str:
-    """零高度的 components.html 內容：把事實交給 notify.js 的 mwNotify.feed()"""
+def script_html(facts: dict, loc: str = "未知") -> str:
+    """零高度的 components.html 內容：把事實交給 notify.js 的 mwNotify.feed()；loc＝訪客在辦公室／外面／未知（人數統計用）"""
     js = (Path(__file__).parent / "notify.js").read_text(encoding="utf-8")
     data = json.dumps(facts, ensure_ascii=False).replace("</", "<\\/")
-    return f"<script>\nconst FACTS = {data};\n{js}\n</script>"
+    return f"<script>\nconst FACTS = {data};\nconst LOC = {json.dumps(loc, ensure_ascii=False)};\n{js}\n</script>"
 
 
 # ══ 背景推播（舊機 tipbot 每 10 分鐘呼叫；手機／電腦裝 ntfy App 收通知）══
