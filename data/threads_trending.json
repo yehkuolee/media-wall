@@ -1,11 +1,23 @@
 {
-  "updated_at": "2026-11-28T15:05:14.700921+08:00",
+  "updated_at": "2026-11-28T16:05:14.401140+08:00",
   "topics": [
     {
-      "title": "蔣萬安拍片吃泡麵配醬瓜",
-      "description": "台北市長蔣萬安分享吃泡麵配醬瓜畫面，受訪表示當時太餓已吃完整罐",
+      "title": "台北市投票率達63.26%",
+      "description": "截至下午3點台北市投票率達63.26%，投票預計於下午4點截止",
+      "count": "3 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E5%8C%97%E5%B8%82%E6%8A%95%E7%A5%A8%E7%8E%87&serp_type=trends&trend_fbid=2879095682488285"
+    },
+    {
+      "title": "蔣萬安吃泡麵用吃過筷子夾醬瓜",
+      "description": "台北市長蔣萬安發布宵夜影片以筷夾醬瓜，受訪時回應因太餓已將整罐吃完",
       "count": "11 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=1852655405749507"
+      "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=4550736181834224"
+    },
+    {
+      "title": "民眾呼籲前往投開票所監票",
+      "description": "投票日傳出選務違規疑慮，民眾呼籲下午四點開票時前往各投開票所監票錄影",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E4%B8%AD%E7%9B%A3%E7%A5%A8&serp_type=trends&trend_fbid=2340887373364101"
     },
     {
       "title": "民眾手背蓋投票印章留念",
@@ -14,52 +26,34 @@
       "link": "https://www.threads.com/search?q=%E6%8A%95%E7%A5%A8%E5%8D%B0%E7%AB%A0&serp_type=trends&trend_fbid=2035944587078408"
     },
     {
-      "title": "投票所傳未主動發公投票",
-      "description": "多處投票所選務人員未主動發放公投票，民眾反映少領無法補投，互相提醒當場核對",
-      "count": "2 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E5%85%AC%E6%8A%95%E7%A5%A8&serp_type=trends&trend_fbid=1503120731911217"
+      "title": "多組韓星抵達高雄小港機場",
+      "description": "MISAMO與少女時代等藝人抵達高雄小港機場，大批歌迷聚集大廳熱情接機",
+      "count": "411 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%B0%8F%E6%B8%AF%E6%A9%9F%E5%A0%B4&serp_type=trends&trend_fbid=2553396471811347"
     },
     {
-      "title": "馬刺逆轉湖人晉級NBA盃八強",
-      "description": "聖安東尼奧馬刺克服20分落後險勝湖人，奪得外卡資格挺進NBA盃八強",
-      "count": "100 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%A6%AC%E5%88%BA%E9%9A%8A&serp_type=trends&trend_fbid=1139752208803435"
-    },
-    {
-      "title": "黃偉哲完成投票並陪同賴清德",
-      "description": "台南市長黃偉哲於永康完成投票，隨後陪同總統賴清德赴安平國中投開票所",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E9%BB%83%E5%81%89%E5%93%B2&serp_type=trends&trend_fbid=1164038452873573"
-    },
-    {
-      "title": "游智彬遭控發文恐嚇張堯",
-      "description": "游智彬在網紅張堯下榻飯店訂房並發文詢問如何處置，遭指控涉人身威脅與性恐嚇",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B8%B8%E6%99%BA%E5%BD%AC&serp_type=trends&trend_fbid=3035406326804792"
-    },
-    {
-      "title": "民眾相約觀看九合一開票之夜",
-      "description": "九合一選舉投票日登場，許多民眾相約前往各地開票之夜轉播場所觀看即時結果",
+      "title": "民眾尋找九合一開票之夜活動",
+      "description": "九合一選舉投票日民眾陸續尋找台北與台南開票活動與直播店家，聚集等待結果",
       "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=%E9%96%8B%E7%A5%A8%E4%B9%8B%E5%A4%9C&serp_type=trends&trend_fbid=1021574174342807"
+      "link": "https://www.threads.com/search?q=%E9%96%8B%E7%A5%A8%E4%B9%8B%E5%A4%9C&serp_type=trends&trend_fbid=1838254853992220"
     },
     {
-      "title": "選票誤投票匭仍屬有效",
-      "description": "選務機關說明選票若誤投其他票匭仍屬有效，開票時將歸入正確票種依法計票",
-      "count": "",
-      "link": "https://www.threads.com/search?q=%E8%AA%A4%E6%8A%95%E7%A5%A8%E5%8C%AD&serp_type=trends&trend_fbid=2213431156262660"
+      "title": "台南投票所選務順暢獲讚",
+      "description": "民眾前往台南市各投票所投票，稱讚選務人員指引細心且流程順暢",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E5%8F%B0%E5%8D%97%E6%8A%95%E7%A5%A8&serp_type=trends&trend_fbid=1829839928226970"
     },
     {
       "title": "《藍色星原：旅謠》玩家分享心得",
       "description": "玩家分享《藍色星原：旅謠》實機體驗，涵蓋抽卡成果、角色養成與畫面表現評價",
-      "count": "565 則貼文",
+      "count": "454 則貼文",
       "link": "https://www.threads.com/search?q=%E8%97%8D%E8%89%B2%E6%98%9F%E5%8E%9F%EF%BC%9A%E6%97%85%E8%AC%A0&serp_type=trends&trend_fbid=1126109833503429"
     },
     {
-      "title": "民眾九合一選舉返鄉花蓮投票",
-      "description": "九合一選舉投票日民眾搭車返鄉花蓮投票，相互提醒攜帶證件並為家鄉加油",
-      "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E8%8A%B1%E8%93%AE&serp_type=trends&trend_fbid=1466927811591273"
+      "title": "黃旼炫不續約離開PLEDIS",
+      "description": "PLEDIS娛樂宣布與黃旼炫14年合作結束，NU'EST全體成員皆已離開公司",
+      "count": "671 則貼文",
+      "link": "https://www.threads.com/search?q=%E9%BB%83%E6%97%BC%E7%82%AB&serp_type=trends&trend_fbid=1916770789490295"
     },
     {
       "title": "Marc Márquez宣布退役",
@@ -68,28 +62,34 @@
       "link": "https://www.threads.com/search?q=Marc%20M%C3%A1rquez&serp_type=trends&trend_fbid=1335145338693125"
     },
     {
-      "title": "Anime1傳出關閉消息",
-      "description": "動畫網站Anime1傳出關閉，有人惋惜正版缺乏舊作，亦有人支持以合法管道收看",
-      "count": "884 則貼文",
-      "link": "https://www.threads.com/search?q=Anime1&serp_type=trends&trend_fbid=1460268262242560"
-    },
-    {
-      "title": "伊藤大海加盟大聯盟小熊隊",
-      "description": "火腿隊投手伊藤大海確定轉戰美職，成為小熊隊休賽季網羅的第二位日籍球員",
-      "count": "601 則貼文",
-      "link": "https://www.threads.com/search?q=%E4%BC%8A%E8%97%A4%E5%A4%A7%E6%B5%B7&serp_type=trends&trend_fbid=1476237844574498"
-    },
-    {
-      "title": "MISAMO啟程赴高雄開唱",
-      "description": "TWICE分隊MISAMO現身金浦機場啟程赴台，準備參加高雄巨蛋演唱會",
+      "title": "游智彬遭控發文恐嚇張堯",
+      "description": "游智彬在網紅張堯下榻飯店訂房並發文詢問如何處置，遭指控涉人身威脅與性恐嚇",
       "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=MISAMO&serp_type=trends&trend_fbid=2976724436041302"
+      "link": "https://www.threads.com/search?q=%E6%B8%B8%E6%99%BA%E5%BD%AC&serp_type=trends&trend_fbid=2545583005852677"
     },
     {
-      "title": "賈永婕現身沈伯洋直播表態支持",
-      "description": "台北101董事長賈永婕與賴清德同台現身直播，對沈伯洋公開表達支持與信任",
-      "count": "5 千則貼文",
-      "link": "https://www.threads.com/search?q=%E8%B3%88%E6%B0%B8%E5%A9%95&serp_type=trends&trend_fbid=1758363535261138"
+      "title": "選票誤投票匭仍屬有效",
+      "description": "選務機關說明選票若誤投其他票匭仍屬有效，開票時將歸入正確票種依法計票",
+      "count": "",
+      "link": "https://www.threads.com/search?q=%E8%AA%A4%E6%8A%95%E7%A5%A8%E5%8C%AD&serp_type=trends&trend_fbid=2213431156262660"
+    },
+    {
+      "title": "黃偉哲投票陪同賴清德",
+      "description": "台南市長黃偉哲一早完成投票，並陪同返回戶籍地的賴清德總統前往投開票所",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E9%BB%83%E5%81%89%E5%93%B2&serp_type=trends&trend_fbid=912726251850368"
+    },
+    {
+      "title": "投票日提醒帶三寶確認選票",
+      "description": "投票日民眾提醒攜帶身分證印章通知單，並於投票所確認領齊選票",
+      "count": "4 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E6%8A%95%E7%A5%A8%E6%97%A5&serp_type=trends&trend_fbid=1847909139864152"
+    },
+    {
+      "title": "aespa舉辦粉絲見面會",
+      "description": "南韓女團aespa舉辦粉絲見面會並同步推出抱枕與服飾等官方周邊",
+      "count": "4 千則貼文",
+      "link": "https://www.threads.com/search?q=aespa&serp_type=trends&trend_fbid=1829112074979555"
     }
   ]
 }
