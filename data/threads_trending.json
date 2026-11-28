@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-28T16:05:14.401140+08:00",
+  "updated_at": "2026-11-28T17:05:19.166303+08:00",
   "topics": [
     {
       "title": "台北市投票率達63.26%",
@@ -8,10 +8,40 @@
       "link": "https://www.threads.com/search?q=%E5%8F%B0%E5%8C%97%E5%B8%82%E6%8A%95%E7%A5%A8%E7%8E%87&serp_type=trends&trend_fbid=2879095682488285"
     },
     {
+      "title": "桃園16字候選人開票唱名",
+      "description": "桃園市議員開票時，16字候選人全名過長，選務人員詢問能否以簡稱唱票",
+      "count": "35 則貼文",
+      "link": "https://www.threads.com/search?q=16%E5%AD%97%E5%80%99%E9%81%B8%E4%BA%BA&serp_type=trends&trend_fbid=1861868264862574"
+    },
+    {
       "title": "蔣萬安吃泡麵用吃過筷子夾醬瓜",
       "description": "台北市長蔣萬安發布宵夜影片以筷夾醬瓜，受訪時回應因太餓已將整罐吃完",
-      "count": "11 萬則貼文",
+      "count": "10 萬則貼文",
       "link": "https://www.threads.com/search?q=%E8%94%A3%E8%90%AC%E5%AE%89&serp_type=trends&trend_fbid=4550736181834224"
+    },
+    {
+      "title": "蔡康永現身投票",
+      "description": "蔡康永在投票日完成投票，透露不打算觀看開票，計畫讀完數學書籍後再查看結果",
+      "count": "6 千則貼文",
+      "link": "https://www.threads.com/search?q=%E8%94%A1%E5%BA%B7%E6%B0%B8&serp_type=trends&trend_fbid=905807085940198"
+    },
+    {
+      "title": "崔始源昔日台語催票片段獲轉發",
+      "description": "適逢投票日，崔始源昔日在台演唱會以台語呼籲投票的畫面被廣泛轉發",
+      "count": "94 則貼文",
+      "link": "https://www.threads.com/search?q=%E5%B4%94%E5%A7%8B%E6%BA%90&serp_type=trends&trend_fbid=3246694942192386"
+    },
+    {
+      "title": "民眾蓋投票印章在手留念",
+      "description": "投票日許多民眾將圈選印章蓋在手上拍照留念，並詢問蓋在身上紀念的用意",
+      "count": "2 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E6%8A%95%E7%A5%A8%E5%8D%B0%E7%AB%A0&serp_type=trends&trend_fbid=1667277328136209"
+    },
+    {
+      "title": "椅子樂團十週年巡演台中登場",
+      "description": "椅子樂團於台中Legacy展開十週年巡演，歌迷透過電子轉讓或現場面交票券",
+      "count": "86 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%A4%85%E5%AD%90%E6%A8%82%E5%9C%98&serp_type=trends&trend_fbid=1133522852603882"
     },
     {
       "title": "民眾呼籲前往投開票所監票",
@@ -20,76 +50,46 @@
       "link": "https://www.threads.com/search?q=%E5%8F%B0%E4%B8%AD%E7%9B%A3%E7%A5%A8&serp_type=trends&trend_fbid=2340887373364101"
     },
     {
-      "title": "民眾手背蓋投票印章留念",
-      "description": "投票日不少民眾在手背或虎口蓋上圈選章，拍照留念作為投票認證",
-      "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E6%8A%95%E7%A5%A8%E5%8D%B0%E7%AB%A0&serp_type=trends&trend_fbid=2035944587078408"
-    },
-    {
       "title": "多組韓星抵達高雄小港機場",
       "description": "MISAMO與少女時代等藝人抵達高雄小港機場，大批歌迷聚集大廳熱情接機",
-      "count": "411 則貼文",
+      "count": "405 則貼文",
       "link": "https://www.threads.com/search?q=%E5%B0%8F%E6%B8%AF%E6%A9%9F%E5%A0%B4&serp_type=trends&trend_fbid=2553396471811347"
+    },
+    {
+      "title": "新竹投票所外現特定色帽聚集",
+      "description": "新竹縣多處投票所外疑現特定色帽違規助選，選委會表示經制止不聽最高罰200萬",
+      "count": "1 千則貼文",
+      "link": "https://www.threads.com/search?q=%E6%96%B0%E7%AB%B9%E7%B8%A3%E9%81%B8%E8%88%89&serp_type=trends&trend_fbid=1542029977752076"
+    },
+    {
+      "title": "新北市長候選人完成投票",
+      "description": "李四川與蘇巧慧於新北投票日完成投票，並呼籲選民把握時間出門行使公民權利",
+      "count": "941 則貼文",
+      "link": "https://www.threads.com/search?q=%E6%96%B0%E5%8C%97%E5%B8%82%E9%95%B7%E9%81%B8%E8%88%89&serp_type=trends&trend_fbid=4013768862263584"
+    },
+    {
+      "title": "粉絲為電競選手Zeka慶生",
+      "description": "電競選手Zeka迎來生日，粉絲舉辦應援咖啡廳與多項活動熱烈祝賀",
+      "count": "6 千則貼文",
+      "link": "https://www.threads.com/search?q=Zeka&serp_type=trends&trend_fbid=2310693739773067"
+    },
+    {
+      "title": "張善政桃園市長開票領先",
+      "description": "九合一選舉開票中，現任桃園市長張善政對決黃世杰並取得領先，有望順利連任",
+      "count": "1 萬則貼文",
+      "link": "https://www.threads.com/search?q=%E5%BC%B5%E5%96%84%E6%94%BF&serp_type=trends&trend_fbid=4575372022714575"
+    },
+    {
+      "title": "馬刺逆轉湖人晉級NBA盃八強",
+      "description": "馬刺克服20分落後以99比96逆轉湖人，取得外卡資格挺進NBA盃八強淘汰賽",
+      "count": "187 則貼文",
+      "link": "https://www.threads.com/search?q=NBA%E7%9B%83&serp_type=trends&trend_fbid=1864515958194863"
     },
     {
       "title": "民眾尋找九合一開票之夜活動",
       "description": "九合一選舉投票日民眾陸續尋找台北與台南開票活動與直播店家，聚集等待結果",
       "count": "2 千則貼文",
       "link": "https://www.threads.com/search?q=%E9%96%8B%E7%A5%A8%E4%B9%8B%E5%A4%9C&serp_type=trends&trend_fbid=1838254853992220"
-    },
-    {
-      "title": "台南投票所選務順暢獲讚",
-      "description": "民眾前往台南市各投票所投票，稱讚選務人員指引細心且流程順暢",
-      "count": "1 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E5%8F%B0%E5%8D%97%E6%8A%95%E7%A5%A8&serp_type=trends&trend_fbid=1829839928226970"
-    },
-    {
-      "title": "《藍色星原：旅謠》玩家分享心得",
-      "description": "玩家分享《藍色星原：旅謠》實機體驗，涵蓋抽卡成果、角色養成與畫面表現評價",
-      "count": "454 則貼文",
-      "link": "https://www.threads.com/search?q=%E8%97%8D%E8%89%B2%E6%98%9F%E5%8E%9F%EF%BC%9A%E6%97%85%E8%AC%A0&serp_type=trends&trend_fbid=1126109833503429"
-    },
-    {
-      "title": "黃旼炫不續約離開PLEDIS",
-      "description": "PLEDIS娛樂宣布與黃旼炫14年合作結束，NU'EST全體成員皆已離開公司",
-      "count": "671 則貼文",
-      "link": "https://www.threads.com/search?q=%E9%BB%83%E6%97%BC%E7%82%AB&serp_type=trends&trend_fbid=1916770789490295"
-    },
-    {
-      "title": "Marc Márquez宣布退役",
-      "description": "累計奪下10座世界冠軍的MotoGP車手Marc Márquez宣布退役",
-      "count": "2 千則貼文",
-      "link": "https://www.threads.com/search?q=Marc%20M%C3%A1rquez&serp_type=trends&trend_fbid=1335145338693125"
-    },
-    {
-      "title": "游智彬遭控發文恐嚇張堯",
-      "description": "游智彬在網紅張堯下榻飯店訂房並發文詢問如何處置，遭指控涉人身威脅與性恐嚇",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E6%B8%B8%E6%99%BA%E5%BD%AC&serp_type=trends&trend_fbid=2545583005852677"
-    },
-    {
-      "title": "選票誤投票匭仍屬有效",
-      "description": "選務機關說明選票若誤投其他票匭仍屬有效，開票時將歸入正確票種依法計票",
-      "count": "",
-      "link": "https://www.threads.com/search?q=%E8%AA%A4%E6%8A%95%E7%A5%A8%E5%8C%AD&serp_type=trends&trend_fbid=2213431156262660"
-    },
-    {
-      "title": "黃偉哲投票陪同賴清德",
-      "description": "台南市長黃偉哲一早完成投票，並陪同返回戶籍地的賴清德總統前往投開票所",
-      "count": "1 千則貼文",
-      "link": "https://www.threads.com/search?q=%E9%BB%83%E5%81%89%E5%93%B2&serp_type=trends&trend_fbid=912726251850368"
-    },
-    {
-      "title": "投票日提醒帶三寶確認選票",
-      "description": "投票日民眾提醒攜帶身分證印章通知單，並於投票所確認領齊選票",
-      "count": "4 萬則貼文",
-      "link": "https://www.threads.com/search?q=%E6%8A%95%E7%A5%A8%E6%97%A5&serp_type=trends&trend_fbid=1847909139864152"
-    },
-    {
-      "title": "aespa舉辦粉絲見面會",
-      "description": "南韓女團aespa舉辦粉絲見面會並同步推出抱枕與服飾等官方周邊",
-      "count": "4 千則貼文",
-      "link": "https://www.threads.com/search?q=aespa&serp_type=trends&trend_fbid=1829112074979555"
     }
   ]
 }
