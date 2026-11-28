@@ -117,6 +117,39 @@ SCRAPED_SOURCES = {
         "limit": 30,
         "strip_time": False,
     },
+    "鏡報": {   # 「最新」頁右側「熱門新聞」欄（10 則）
+        "url": "https://www.mirrordaily.news/section/latest",
+        "selector": "a.GTM-section_click_popular_article",
+        "title_sel": "figcaption",
+        "pattern": "/story/",
+        "url_must_contain": "",
+        "min_len": 8,
+        "limit": 10,
+        "strip_time": False,
+        "base_url": "https://www.mirrordaily.news",
+    },
+    "鏡週刊": {   # 首頁「熱門新聞」欄（約 6 則）
+        "url": "https://www.mirrormedia.mg/",
+        "selector": "a[data-story-list='cate_hotnews']",
+        "title_sel": "h3",
+        "pattern": "/story/",
+        "url_must_contain": "",
+        "min_len": 8,
+        "limit": 10,
+        "strip_time": False,
+        "base_url": "https://www.mirrormedia.mg",
+    },
+    "CTWANT": {   # 首頁右側「人氣新聞」欄（5 則）
+        "url": "https://www.ctwant.com/",
+        "selector": "#pc-sidebar-hot a",
+        "title_sel": "h3",
+        "pattern": "/article/",
+        "url_must_contain": "",
+        "min_len": 8,
+        "limit": 10,
+        "strip_time": False,
+        "base_url": "https://www.ctwant.com",
+    },
     "聯合報熱門": {
         "url": "https://udn.com/rank/pv/2",
         "selector": "section.thumb-news .story-list__text h2 a",   # 排除頁首即時快訊橫幅
@@ -937,7 +970,7 @@ def et_tag_html(et) -> str:
 # 空降：上一輪不在榜、這輪直接進前 5；急升：約 30 分鐘內升 5 名以上且進前 10；
 # 多家同時上榜：同一話題同時在 3 家以上熱門榜前 10（標題用字相近的串成一群）。
 # 紀錄放記憶體：防休眠程式每 10 分鐘開一次網站會一直累積；重新部署會歸零，約 30 分鐘後才有「急升」。
-HOT_SOURCES = ["自由時報", "Yahoo 新聞", "東森新聞", "壹蘋新聞網", "中國時報", "聯合報熱門", "經濟日報", "鉅亨網", "三立新聞", "NOWnews"]  # 中央社是最新列表，不算；三立 viewall/0 是「熱門即時新聞」（照熱度排，不是照時間）
+HOT_SOURCES = ["自由時報", "Yahoo 新聞", "東森新聞", "壹蘋新聞網", "中國時報", "聯合報熱門", "經濟日報", "鉅亨網", "三立新聞", "NOWnews", "鏡報", "鏡週刊", "CTWANT"]  # 中央社是最新列表，不算；三立 viewall/0 是「熱門即時新聞」（照熱度排，不是照時間）
 SURGE_GAP = 540
 SURGE_KEEP = 7200
 SURGE_NEW_TOP = 5
@@ -1568,7 +1601,7 @@ def main():
     # ── Footer ──────────────────────────────────────────────────
     st.markdown(f"""
     <div class="mw-footer">
-        資料來源：Google Trends · 中央社即時 · 熱門排行（自由 / Yahoo / 東森 / 壹蘋 / 中時 / 聯合報 / 經濟日報 / 鉅亨 / 三立 / NOWnews） · PTT &nbsp;｜&nbsp;
+        資料來源：Google Trends · 中央社即時 · 熱門排行（自由 / Yahoo / 東森 / 壹蘋 / 中時 / 聯合報 / 經濟日報 / 鉅亨 / 三立 / NOWnews / 鏡報 / 鏡週刊 / CTWANT） · PTT &nbsp;｜&nbsp;
         更新時間：{now.strftime('%Y-%m-%d %H:%M:%S')} (台北 UTC+8) &nbsp;｜&nbsp;
         每 5 分鐘自動刷新
     </div>
